@@ -40,6 +40,9 @@ scripts/                       # 构建/QA/发版脚本（占位）
 cd packages/LixiangCalendarCore && swift build && swift test
 ```
 
+> 开发机注意（本团队 workstation）：若 PATH 中 `/usr/local/bin/git` 架构不符（`Bad CPU type`），SwiftPM 拉依赖会失败；请让 `/usr/bin/git` 优先，例如：
+> `PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin swift build`
+
 ## 不在本阶段范围
 
 - App 产品代码（UI/业务逻辑/资源）——等 Sure 批准视觉方向与 mockup
