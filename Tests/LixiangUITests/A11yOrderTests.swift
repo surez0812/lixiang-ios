@@ -20,7 +20,13 @@ final class A11yOrderTests: XCTestCase {
         XCTAssertTrue(app.wait(for: .runningForeground, timeout: 20))
         let lines = tree(app)
         print("A11Y_TREE_BEGIN\n" + lines.joined(separator: "\n") + "\nA11Y_TREE_END")
-        let idx: (String) -> Int = { key in lines.firstIndex { $0.contains(key) } ?? -1 }
+        let legendRows = lines.filter { line in
+            let body = line.split(separator: "\t", maxSplits: 1).last.map(String.init) ?? line
+            guard !body.contains("/"), !body.contains("只讲") else { return false }
+            return ["喜神，", "财神，", "福神，", "阳贵，", "阴贵，", "煞方，"].contains { body.hasPrefix($0) }
+        }
+        print("A11Y_LEGEND_ROWS_BEGIN\n" + legendRows.joined(separator: "\n") + "\nA11Y_LEGEND_ROWS_END")
+        let idx: (String) -> Int = { key in legendRows.firstIndex { $0.contains("\(key)，") } ?? -1 }
         for key in ["喜神", "财神", "福神", "阳贵", "阴贵", "煞方"] {
             XCTAssertTrue(idx(key) >= 0, "缺 \(key) label")
         }
@@ -31,8 +37,7 @@ final class A11yOrderTests: XCTestCase {
         XCTAssertTrue(idx("阴贵") < idx("煞方"))
         // 无双读：每神/煞的「图例行 label」只出现一次（页脚说明含「喜神/财神/…」不计）
         for key in ["喜神", "财神", "福神", "阳贵", "阴贵", "煞方"] {
-            let rows = lines.filter { $0.contains("\(key)，") }
-            XCTAssertEqual(rows.count, 1, "\(key) 图例行出现重复（双读风险）")
+            XCTAssertEqual(legendRows.filter { $0.contains("\(key)，") }.count, 1, "\(key) 图例行出现重复（双读风险）")
         }
     }
 
