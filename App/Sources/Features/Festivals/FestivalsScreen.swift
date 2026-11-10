@@ -1,73 +1,236 @@
 import SwiftUI
 import LixiangCalendarCore
 
+/// F5 节俗索引（P2）：吸顶「下一篇解锁」横幅 + 月份分组 + 已过默认折叠 + manifest 状态机
 struct FestivalsScreen: View {
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
 
+    @State private var expandPast = false
+    @State private var refreshing = false
+    @State private var loadPhase: LoadPhase = .loading
+    @State private var retryToken = UUID()
+
+    enum LoadPhase: Equatable { case loading, ready, errorWithCache, errorNoCache }
+
+    private var mode: ContentNetworkMode { ContentNetworkMode(rawValue: state.debug.network ?? "normal") ?? .normal }
     private var groups: (past: [ContentIndexRow], today: [ContentIndexRow], upcoming: [ContentIndexRow]) {
-        state.indexGroups()
+        state.debug.emptyIndex ? ([], [], []) : state.indexGroups()
+    }
+    /// 下一篇解锁（横幅）
+    private var bannerRow: ContentIndexRow? { groups.upcoming.first }
+
+    private var allRows: [ContentIndexRow] {
+        groups.today + groups.upcoming + groups.past
     }
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 14) {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("按日子走").font(D1Theme.serif(30)).foregroundStyle(theme.ink)
-                    Text("节俗内容按日期解锁 · 按北京时间").font(.system(size: 10)).foregroundStyle(theme.ink3)
-                }
-                .padding(.top, 8)
-
-                section("即将到来", rows: groups.upcoming, tone: .jade)
-                section("今日解锁", rows: groups.today, tone: .accent)
-                section("已过 · 可回看", rows: groups.past, tone: .neutral)
+        VStack(spacing: 0) {
+            if let bannerRow {
+                banner(bannerRow)
             }
-            .padding(.horizontal, 16)
-            .padding(.bottom, 24)
+            if let note = phaseNote {
+                HStack(spacing: 6) {
+                    Image(systemName: "wifi.exclamationmark").font(.system(size: 10))
+                    Text(note).font(.system(size: 10, weight: .semibold))
+                }
+                .foregroundStyle(theme.jiText)
+                .padding(.horizontal, 12).padding(.vertical, 7)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(theme.jiBg)
+            }
+            ScrollView {
+                LazyVStack(alignment: .leading, spacing: 8, pinnedViews: [.sectionHeaders]) {
+                    content
+                }
+                .frame(maxWidth: 600, alignment: .leading)
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 16)
+                .padding(.bottom, 24)
+            }
+            .refreshable { await refresh() }
         }
         .background(ScreenBackground())
         .navigationTitle("")
         .navigationBarHidden(true)
+        .task(id: retryToken) { await simulatePhase() }
+        .onAppear {
+            if state.debug.expandPast { expandPast = true }
+        }
     }
 
+    // MARK: - 吸顶横幅
+    private func banner(_ row: ContentIndexRow) -> some View {
+        HStack(alignment: .center, spacing: 10) {
+            VStack(alignment: .leading, spacing: 2) {
+                Text("下一篇解锁 · \(row.title)").font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
+                Text("\(row.date.month)月\(row.date.day)日 · 00:00 后可见 · \(row.days ?? 0) 天")
+                    .font(.system(size: 10)).foregroundStyle(theme.ink3)
+            }
+            Spacer()
+            if let region = row.regionLabel {
+                Text(region).font(.system(size: 9)).foregroundStyle(theme.ink3)
+            }
+            D1Chip(text: "未到 \(row.days ?? 0) 天", tone: .jade)
+        }
+        .padding(.horizontal, 16).padding(.vertical, 10)
+        .background(theme.soft)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("下一篇解锁，\(row.title)，\(row.date.month)月\(row.date.day)日，还有\(row.days ?? 0)天")
+    }
+
+    // MARK: - 内容
     @ViewBuilder
-    private func section(_ title: String, rows: [ContentIndexRow], tone: D1Chip.Tone) -> some View {
-        if !rows.isEmpty {
-            VStack(alignment: .leading, spacing: 8) {
-                HStack(spacing: 6) {
-                    SectionLabel(text: title)
-                    Text("\(rows.count)").font(.system(size: 9)).foregroundStyle(theme.ink3)
+    private var content: some View {
+        switch loadPhase {
+        case .loading:
+            skeleton
+        case .errorNoCache:
+            errorCard
+        default:
+            if allRows.isEmpty {
+                emptyState
+            } else {
+                if !groups.today.isEmpty {
+                    monthSections(rows: groups.today, allowBannerSkip: false)
                 }
-                ForEach(rows) { row in
-                    NavigationLink(value: Route.content(row.contentID)) {
-                        rowView(row, tone: tone)
+                let upcoming = groups.upcoming.filter { $0.id != bannerRow?.id }
+                if !upcoming.isEmpty {
+                    monthSections(rows: upcoming, bannerMonth: bannerRow?.date)
+                }
+                if !groups.past.isEmpty {
+                    Section {
+                        if expandPast {
+                            monthSections(rows: groups.past, bannerMonth: nil)
+                        }
+                    } header: {
+                        pastHeader
                     }
-                    .buttonStyle(.plain)
                 }
             }
         }
     }
 
-    private func rowView(_ row: ContentIndexRow, tone: D1Chip.Tone) -> some View {
+    private func monthSections(rows: [ContentIndexRow], bannerMonth: LocalDate? = nil, allowBannerSkip: Bool = true) -> some View {
+        let grouped = Dictionary(grouping: rows) { "\($0.date.year)年\($0.date.month)月" }
+        let keys = grouped.keys.sorted { lhs, rhs in
+            (grouped[lhs]?.first?.date ?? LocalDate(1900, 1, 1)) < (grouped[rhs]?.first?.date ?? LocalDate(1900, 1, 1))
+        }
+        return ForEach(keys, id: \.self) { key in
+            Section {
+                ForEach(grouped[key] ?? []) { row in
+                    NavigationLink(value: Route.content(row.contentID)) {
+                        rowView(row)
+                    }
+                    .buttonStyle(.plain)
+                }
+                if let bannerMonth, "\(bannerMonth.year)年\(bannerMonth.month)月" == key, let bannerRow {
+                    HStack {
+                        Text("见顶部").font(.system(size: 10)).foregroundStyle(theme.ink3)
+                        Text(bannerRow.title).font(.system(size: 10)).foregroundStyle(theme.ink2)
+                        Spacer()
+                    }
+                    .padding(.vertical, 4)
+                }
+            } header: {
+                Text(key)
+                    .font(.system(size: 10, weight: .semibold)).tracking(1.2)
+                    .foregroundStyle(theme.ink3)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.vertical, 6)
+                    .background(theme.bg)
+                    .accessibilityAddTraits(.isHeader)
+            }
+        }
+    }
+
+    private var pastHeader: some View {
+        Button {
+            withAnimation { expandPast.toggle() }
+        } label: {
+            HStack {
+                Text("已过 · 可回看").font(.system(size: 10, weight: .semibold)).tracking(1.2).foregroundStyle(theme.ink3)
+                Text("\(groups.past.count) 条").font(.system(size: 9)).foregroundStyle(theme.ink3)
+                Spacer()
+                Text(expandPast ? "收起" : "展开").font(.system(size: 10, weight: .semibold)).foregroundStyle(theme.accentStrong)
+                Image(systemName: expandPast ? "chevron.up" : "chevron.down").font(.system(size: 9)).foregroundStyle(theme.accentStrong)
+            }
+            .padding(.vertical, 6)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(theme.bg)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("已过可回看，\(groups.past.count) 条，\(expandPast ? "收起" : "展开")")
+    }
+
+    private func rowView(_ row: ContentIndexRow) -> some View {
         D1Card(padding: 14) {
             VStack(alignment: .leading, spacing: 5) {
                 HStack {
-                    Text("\(row.date.month)月\(row.date.day)日")
-                        .font(D1Theme.serif(18)).foregroundStyle(theme.ink)
-                    Text("农历\(state.lunar(row.date).monthDayText)")
-                        .font(.system(size: 10)).foregroundStyle(theme.ink3)
+                    Text("\(row.date.month)月\(row.date.day)日").font(D1Theme.serif(18)).foregroundStyle(theme.ink)
+                    Text("农历\(state.lunar(row.date).monthDayText)").font(.system(size: 10)).foregroundStyle(theme.ink3)
                     Spacer()
                     D1Chip(text: chipText(row), tone: chipTone(row))
                 }
                 HStack(spacing: 6) {
                     Text(row.title).font(.system(size: 14, weight: .semibold)).foregroundStyle(theme.ink)
-                    if let region = row.regionLabel {
-                        Text(region).font(.system(size: 9)).foregroundStyle(theme.ink3)
-                    }
+                    if let region = row.regionLabel { Text(region).font(.system(size: 9)).foregroundStyle(theme.ink3) }
                 }
                 Text(row.teaser).font(.system(size: 11)).foregroundStyle(theme.ink2)
             }
         }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(row.title)，\(row.date.month)月\(row.date.day)日，农历\(state.lunar(row.date).monthDayText)，\(chipText(row))")
+    }
+
+    // MARK: - 状态
+    private var phaseNote: String? {
+        switch loadPhase {
+        case .errorWithCache: return "内容更新失败，正在使用已缓存内容"
+        case .errorNoCache: return nil
+        case .loading: return refreshing ? "更新中" : nil
+        case .ready: return refreshing ? "更新中" : nil
+        }
+    }
+
+    private var skeleton: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            ForEach(0..<4, id: \.self) { _ in
+                D1Card(padding: 14) {
+                    VStack(alignment: .leading, spacing: 6) {
+                        RoundedRectangle(cornerRadius: 4).fill(theme.soft).frame(width: 90, height: 12)
+                        RoundedRectangle(cornerRadius: 4).fill(theme.soft).frame(height: 10)
+                    }
+                }
+            }
+        }
+        .padding(.top, 8)
+    }
+
+    private var errorCard: some View {
+        D1Card {
+            VStack(alignment: .leading, spacing: 6) {
+                Text("内容暂时不可用").font(.system(size: 13, weight: .semibold)).foregroundStyle(theme.ink)
+                Text("检查网络后重试；已解锁状态不受影响。").font(.system(size: 11)).foregroundStyle(theme.ink2)
+                Button("重试") { retryToken = UUID() }
+                    .font(.system(size: 12, weight: .semibold))
+                    .frame(minWidth: 44, minHeight: 44)
+                    .padding(.horizontal, 10)
+                    .background(theme.accent, in: Capsule())
+                    .foregroundStyle(theme.onAccent)
+            }
+        }
+        .padding(.top, 8)
+    }
+
+    private var emptyState: some View {
+        D1Card {
+            VStack(alignment: .leading, spacing: 6) {
+                Text("未来 90 天暂无节俗内容").font(.system(size: 13, weight: .semibold)).foregroundStyle(theme.ink)
+                Text("内容按季度滚动补充；锁定/解锁规则不受影响。").font(.system(size: 11)).foregroundStyle(theme.ink2)
+            }
+        }
+        .padding(.top, 8)
     }
 
     private func chipText(_ row: ContentIndexRow) -> String {
@@ -84,5 +247,27 @@ struct FestivalsScreen: View {
         case .past: return .neutral
         case .locked: return .jade
         }
+    }
+
+    private func simulatePhase() async {
+        switch mode {
+        case .slow, .hang:
+            loadPhase = .loading
+            try? await Task.sleep(nanoseconds: 800_000_000)
+            loadPhase = .ready
+        case .error:
+            loadPhase = (state.debug.cacheState == "primed") ? .errorWithCache : .errorNoCache
+        case .offline:
+            loadPhase = (state.debug.cacheState == "primed") ? .errorWithCache : .errorNoCache
+        case .normal:
+            loadPhase = .ready
+        }
+    }
+
+    private func refresh() async {
+        refreshing = true
+        try? await Task.sleep(nanoseconds: 700_000_000)
+        loadPhase = .ready
+        refreshing = false
     }
 }

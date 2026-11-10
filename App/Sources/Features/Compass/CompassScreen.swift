@@ -32,6 +32,7 @@ struct CompassScreen: View {
                         legend(columns: 2).frame(maxWidth: .infinity)
                     }
                     .padding(16)
+                    .padding(.bottom, 24)
                 } else {
                     VStack(spacing: 12) {
                         if textOnly { textAlternative } else {
@@ -42,6 +43,7 @@ struct CompassScreen: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 8)
+                    .padding(.bottom, 24)
                 }
             }
         }
@@ -196,42 +198,63 @@ struct CompassScreen: View {
     // MARK: - 图例（文本替身；顺序 喜→财→福→阳贵→阴贵→煞）
     private func legend(columns: Int) -> some View {
         D1Card(padding: 0) {
-            LazyVGrid(columns: columns == 2
-                      ? [GridItem(.flexible(), spacing: 0, alignment: .leading),
-                         GridItem(.flexible(), spacing: 0, alignment: .leading)]
-                      : [GridItem(.flexible(), spacing: 0, alignment: .leading)],
-                      alignment: .leading, spacing: 0) {
-                ForEach(legendOrder) { deity in
-                    let entry = layout.present.first { $0.deity == deity }
-                    HStack(spacing: 10) {
-                        Text(deity.badgeCharacter)
-                            .font(.system(size: 10, weight: .semibold)).foregroundStyle(theme.ink)
-                            .frame(width: 22, height: 22)
-                            .background(Circle().fill(theme.card))
-                            .overlay(Circle().strokeBorder(color(for: deity), lineWidth: 1.4))
-                        Text(deity.title).font(.system(size: 12)).foregroundStyle(entry == nil ? theme.ink3 : theme.ink)
-                        Spacer()
-                        Text(entry?.direction.rawValue ?? "本日不在此位")
-                            .font(.system(size: 11)).foregroundStyle(entry == nil ? theme.ink3 : theme.ink2)
-                    }
-                    .padding(.horizontal, 16).padding(.vertical, 9)
-                    .accessibilityElement(children: .ignore)
-                    .accessibilityLabel(entry == nil ? "\(deity.title)，本日不在此位" : "\(deity.title)，\(entry!.direction.rawValue)")
-                    D1Divider().padding(.leading, 48)
+            if columns == 2 {
+                HStack(alignment: .top, spacing: 0) {
+                    legendColumn(Array(legendOrder.prefix(3)), includeSha: false)
+                    Rectangle().fill(theme.line).frame(width: 1)
+                    legendColumn(Array(legendOrder.suffix(2)), includeSha: true)
                 }
-                HStack(spacing: 10) {
-                    Text("煞").font(.system(size: 10, weight: .semibold)).foregroundStyle(theme.jiText)
-                        .frame(width: 22)
-                    Text("煞方").font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
-                    Spacer()
-                    Text(layout.sha.map { "\($0.rawValue) · 仅四正" } ?? "—")
-                        .font(.system(size: 11)).foregroundStyle(theme.ink2)
+            } else {
+                VStack(spacing: 0) {
+                    ForEach(legendOrder) { deity in legendRow(deity) }
+                    shaRow
                 }
-                .padding(.horizontal, 16).padding(.vertical, 9)
-                .accessibilityElement(children: .ignore)
-                .accessibilityLabel("煞方，\(layout.sha?.rawValue ?? "无")，仅四正")
             }
         }
+    }
+
+    @ViewBuilder
+    private func legendColumn(_ deities: [Deity], includeSha: Bool) -> some View {
+        VStack(spacing: 0) {
+            ForEach(deities) { deity in legendRow(deity) }
+            if includeSha { shaRow }
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    @ViewBuilder
+    private func legendRow(_ deity: Deity) -> some View {
+        let entry = layout.present.first { $0.deity == deity }
+        HStack(spacing: 8) {
+            Text(deity.badgeCharacter)
+                .font(.system(size: 10, weight: .semibold)).foregroundStyle(theme.ink)
+                .frame(width: 22, height: 22)
+                .background(Circle().fill(theme.card))
+                .overlay(Circle().strokeBorder(color(for: deity), lineWidth: 1.4))
+            Text(deity.title).font(.system(size: 12)).foregroundStyle(entry == nil ? theme.ink3 : theme.ink)
+            Spacer(minLength: 4)
+            Text(entry?.direction.rawValue ?? "本日不在此位")
+                .font(.system(size: 11)).foregroundStyle(entry == nil ? theme.ink3 : theme.ink2)
+                .lineLimit(1).minimumScaleFactor(0.8)
+        }
+        .padding(.horizontal, 12).padding(.vertical, 9)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(entry == nil ? "\(deity.title)，本日不在此位" : "\(deity.title)，\(entry!.direction.rawValue)")
+        D1Divider().padding(.leading, 42)
+    }
+
+    @ViewBuilder
+    private var shaRow: some View {
+        HStack(spacing: 8) {
+            Text("煞").font(.system(size: 10, weight: .semibold)).foregroundStyle(theme.jiText).frame(width: 22)
+            Text("煞方").font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
+            Spacer(minLength: 4)
+            Text(layout.sha.map { "\($0.rawValue) · 仅四正" } ?? "—")
+                .font(.system(size: 11)).foregroundStyle(theme.ink2).lineLimit(1).minimumScaleFactor(0.8)
+        }
+        .padding(.horizontal, 12).padding(.vertical, 9)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("煞方，\(layout.sha?.rawValue ?? "无")，仅四正")
     }
 
     private var legendOrder: [Deity] { [.xi, .cai, .fu, .yangGui, .yinGui] }

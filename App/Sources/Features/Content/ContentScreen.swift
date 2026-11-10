@@ -35,7 +35,7 @@ struct ContentScreen: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                ShareLink(item: siteURL, subject: Text("历象 · \(item?.title ?? "")"), message: Text(result.phase == .locked ? "未解锁 · 民俗内容将在解锁后可读" : "历象 · 民俗内容")) {
+                ShareLink(item: siteURL, subject: Text("历象 · \(item?.title ?? "")"), message: Text(lockShareMessage)) {
                     Image(systemName: "square.and.arrow.up")
                 }
             }
@@ -58,6 +58,13 @@ struct ContentScreen: View {
         }
         result = await repository.load(slug: contentID)
         loadedOnce = true
+    }
+
+    private var lockShareMessage: String {
+        if result.phase == .locked, let entry = result.entry {
+            return "历象 · \(item?.title ?? "") · \(entry.unlockDate.iso) 解锁后可读（不含正文）"
+        }
+        return "历象 · \(item?.title ?? "")"
     }
 
     // MARK: - 头卡（本地先渲染，不等 WebView）

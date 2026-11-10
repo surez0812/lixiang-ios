@@ -14,6 +14,9 @@ struct DebugOptions {
     var cacheState: String?       // primed | empty
     var typeScale: Double?        // 1.0 ... 2.0（Dynamic Type 注入）
     var contentVersion: String?   // mock 版本覆盖
+    var emptyIndex: Bool = false  // F5 空态
+    var expandPast: Bool = false  // F5 已过组默认展开
+    var deepLink: String?          // -LixiangDeepLink lixiang://ceremony/xiezao
 
     static func parse(_ arguments: [String] = ProcessInfo.processInfo.arguments) -> DebugOptions {
         #if DEBUG
@@ -32,6 +35,9 @@ struct DebugOptions {
             case "-LixiangCacheState": options.cacheState = next()
             case "-LixiangTypeScale": options.typeScale = next().flatMap(Double.init)
             case "-LixiangContentVersion": options.contentVersion = next()
+            case "-LixiangEmptyIndex": options.emptyIndex = next() == "1"
+            case "-LixiangExpandPast": options.expandPast = next() == "1"
+            case "-LixiangDeepLink": options.deepLink = next()
             case "-LixiangDebugHideDeity":
                 let raw = next() ?? ""
                 options.hiddenDeities = Set(raw.split(separator: ",").compactMap { Deity(rawValue: String($0).trimmingCharacters(in: .whitespaces)) })

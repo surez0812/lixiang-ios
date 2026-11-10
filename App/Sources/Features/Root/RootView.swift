@@ -6,6 +6,7 @@ enum Route: Hashable {
     case content(String)
     case compass(LocalDate)
     case sourceLicense(String)
+    case notFound(String)
 }
 
 struct RootView: View {
@@ -28,6 +29,7 @@ struct RootView: View {
                                 case .content(let id): ContentScreen(contentID: id)
                                 case .compass(let date): CompassScreen(date: date)
                                 case .sourceLicense(let slug): SourceLicenseScreen(slug: slug, entry: nil, item: ContentFixtures.all.first { $0.id == slug })
+                                case .notFound(let slug): NotFoundScreen(slug: slug)
                                 }
                             }
                     }
@@ -38,6 +40,7 @@ struct RootView: View {
                                 switch route {
                                 case .content(let id): ContentScreen(contentID: id)
                                 case .sourceLicense(let slug): SourceLicenseScreen(slug: slug, entry: nil, item: ContentFixtures.all.first { $0.id == slug })
+                                case .notFound(let slug): NotFoundScreen(slug: slug)
                                 default: EmptyView()
                                 }
                             }
@@ -49,12 +52,25 @@ struct RootView: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .safeAreaInset(edge: .bottom) { Color.clear.frame(height: 74) }
+            .safeAreaInset(edge: .bottom) { Color.clear.frame(height: 96) }
 
             D1TabBar(selected: $selectedTab)
         }
         .background(ScreenBackground())
+        .onOpenURL { handleDeepLink($0) }
         .onAppear(perform: applyDebugScreen)
+    }
+
+    private func handleDeepLink(_ url: URL) {
+        guard url.scheme == "lixiang", url.host == "ceremony" else { return }
+        let slug = url.path.trimmingCharacters(in: CharacterSet(charactersIn: "/"))
+        selectedTab = 1
+        if ContentFixtures.all.contains(where: { $0.id == slug }) {
+            // 未解锁/已解锁由 ContentScreen 按 UTC+8 判定；分享文案按状态脱敏
+            festivalsPath = NavigationPath([Route.content(slug)])
+        } else {
+            festivalsPath = NavigationPath([Route.notFound(slug.isEmpty ? "unknown" : slug)])
+        }
     }
 
     private func applyDebugScreen() {
@@ -70,6 +86,9 @@ struct RootView: View {
         if screen == "compass" || screen == "compass-a11y" {
             selectedTab = 0
             monthPath = NavigationPath([Route.compass(state.today)])
+        }
+        if screen == "deeplink", let raw = state.debug.deepLink, let url = URL(string: raw) {
+            handleDeepLink(url)
         }
         if screen == "source-license" {
             selectedTab = 1
