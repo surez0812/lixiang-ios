@@ -37,6 +37,8 @@ final class AppState: ObservableObject {
     let today: LocalDate
     /// 截图/测试注入“当前小时”（DEBUG）；nil = 系统时间
     let debugHour: Int?
+    /// DEBUG 罗盘缺位演示（防御路径）
+    let hiddenDeities: Set<Deity>
 
     private enum Keys {
         static let theme = "appearance"
@@ -60,6 +62,7 @@ final class AppState: ObservableObject {
         self.engine = LunarSwiftEngine()
         self.today = debug.date ?? BeijingTime.today()
         self.debugHour = debug.hour
+        self.hiddenDeities = debug.hiddenDeities
         self.cachedResolutions = nil
     }
 

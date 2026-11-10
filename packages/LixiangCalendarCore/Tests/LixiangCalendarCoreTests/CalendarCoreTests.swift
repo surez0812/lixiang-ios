@@ -238,3 +238,28 @@ private let authority2026: [(String, String, Int)] = [
     #expect(dongzhi?.days == 41)
     #expect(groups.upcoming.first?.date == LocalDate(2026, 12, 22)) // 冬至在最前
 }
+
+
+// MARK: - P2 罗盘数据（缺位/四正/无中宫）
+
+@Test func compassLayoutBasics() {
+    let day = engine.almanac(LocalDate(2026, 11, 11), hour: 12)
+    let layout = CompassBuilder.layout(for: day)
+    #expect(layout.present.count + layout.missing.count == 5)
+    #expect(layout.present.allSatisfy { $0.deity.allowedDirections.contains($0.direction) })
+    // 煞方仅四正
+    if let sha = layout.sha {
+        #expect([CompassDirection.north, .south, .east, .west].contains(sha))
+    }
+    // 无中宫：八方位枚举不含中
+    #expect(!CompassDirection.allCases.map(\.rawValue).contains("中"))
+}
+
+@Test func compassMissingIsReportedNotDrawn() {
+    let day = engine.almanac(LocalDate(2026, 11, 11), hour: 12)
+    let layout = CompassBuilder.layout(for: day, hidden: [.cai, .fu])
+    #expect(layout.missing.contains(.cai))
+    #expect(layout.missing.contains(.fu))
+    #expect(!layout.present.contains { $0.deity == .cai || $0.deity == .fu })
+    #expect(layout.present.count == 3)
+}

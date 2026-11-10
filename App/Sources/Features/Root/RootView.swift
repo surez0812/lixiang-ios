@@ -4,6 +4,7 @@ import LixiangCalendarCore
 enum Route: Hashable {
     case day(LocalDate)
     case content(String)
+    case compass(LocalDate)
 }
 
 struct RootView: View {
@@ -24,6 +25,7 @@ struct RootView: View {
                                 switch route {
                                 case .day(let date): DayDetailScreen(date: date)
                                 case .content(let id): ContentScreen(contentID: id)
+                                case .compass(let date): CompassScreen(date: date)
                                 }
                             }
                     }
@@ -61,6 +63,10 @@ struct RootView: View {
         if screen == "day" {
             selectedTab = 0
             monthPath = NavigationPath([Route.day(state.today)])
+        }
+        if screen == "compass" {
+            selectedTab = 0
+            monthPath = NavigationPath([Route.compass(state.today)])
         }
         if screen == "locked" || screen == "content" {
             selectedTab = 1

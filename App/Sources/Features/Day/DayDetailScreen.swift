@@ -148,7 +148,7 @@ struct DayDetailScreen: View {
     private var entries: some View {
         VStack(spacing: 8) {
             HStack(spacing: 8) {
-                entryRow("吉神罗盘", "数据已就绪 · 界面 P2")
+                NavigationLink(value: Route.compass(date)) { entryRow("吉神罗盘", "查看方位 ›") }
                 if let id = state.contentID(for: date) {
                     NavigationLink(value: Route.content(id)) { entryRow("民俗内容", "查看 ›") }
                 }

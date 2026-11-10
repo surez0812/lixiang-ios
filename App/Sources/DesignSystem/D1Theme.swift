@@ -24,6 +24,12 @@ struct D1Theme {
     var jiBg: Color
     var solarTermText: Color
     var festivalText: Color
+    // P2 罗盘五神色（design P2-F4-COMPASS §3）
+    var deityXi: Color
+    var deityCai: Color
+    var deityFu: Color
+    var deityYang: Color
+    var deityYin: Color
 
     static let light = D1Theme(
         bg: Color(hex: 0xFBF5EC), card: Color(hex: 0xFFFDF9), soft: Color(hex: 0xF6E7D6),
@@ -33,7 +39,9 @@ struct D1Theme {
         jiChip: Color(hex: 0x7E6A58), onJiChip: .white,
         yiText: Color(hex: 0x3F5A43), yiBg: Color(hex: 0xE7EFE3),
         jiText: Color(hex: 0x8A3E26), jiBg: Color(hex: 0xF6E2D8),
-        solarTermText: Color(hex: 0x5E7358), festivalText: Color(hex: 0xA85E3E)
+        solarTermText: Color(hex: 0x5E7358), festivalText: Color(hex: 0xA85E3E),
+        deityXi: Color(hex: 0xDE9B78), deityCai: Color(hex: 0xC79A5B), deityFu: Color(hex: 0x93A98E),
+        deityYang: Color(hex: 0x8FA3B8), deityYin: Color(hex: 0xB08CA8)
     )
     static let dark = D1Theme(
         bg: Color(hex: 0x241C16), card: Color(hex: 0x2E241C), soft: Color(hex: 0x3A2E24),
@@ -43,7 +51,9 @@ struct D1Theme {
         jiChip: Color(hex: 0xC7B5A2), onJiChip: Color(hex: 0x241C16),
         yiText: Color(hex: 0xC9DCC3), yiBg: Color(hex: 0x33402F),
         jiText: Color(hex: 0xF0B49A), jiBg: Color(hex: 0x3F2A22),
-        solarTermText: Color(hex: 0xA9BCA3), festivalText: Color(hex: 0xE8A886)
+        solarTermText: Color(hex: 0xA9BCA3), festivalText: Color(hex: 0xE8A886),
+        deityXi: Color(hex: 0xE8A886), deityCai: Color(hex: 0xD6AE72), deityFu: Color(hex: 0xA9BCA3),
+        deityYang: Color(hex: 0xA8BCD0), deityYin: Color(hex: 0xC9A8C2)
     )
 
     static func resolve(_ scheme: ColorScheme) -> D1Theme { scheme == .dark ? .dark : .light }

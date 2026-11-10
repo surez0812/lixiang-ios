@@ -9,6 +9,7 @@ struct DebugOptions {
     var contentID: String?
     var language: String?
     var hour: Int?
+    var hiddenDeities: Set<Deity> = []
 
     static func parse(_ arguments: [String] = ProcessInfo.processInfo.arguments) -> DebugOptions {
         #if DEBUG
@@ -23,6 +24,9 @@ struct DebugOptions {
             case "-LixiangTheme": options.theme = next()
             case "-LixiangContentID": options.contentID = next()
             case "-LixiangDebugHour": options.hour = next().flatMap(Int.init)
+            case "-LixiangDebugHideDeity":
+                let raw = next() ?? ""
+                options.hiddenDeities = Set(raw.split(separator: ",").compactMap { Deity(rawValue: String($0).trimmingCharacters(in: .whitespaces)) })
             case "-LixiangLang": options.language = next()
             default: break
             }
