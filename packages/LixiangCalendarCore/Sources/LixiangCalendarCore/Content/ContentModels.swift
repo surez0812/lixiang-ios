@@ -163,7 +163,7 @@ public enum ContentResolver {
         if sorted.contains(now) {
             return ContentStateInfo(state: .unlocked, anchor: now, nextUnlock: sorted.first(where: { $0 > now }), daysUntil: 0, isToday: true)
         }
-        if let last = sorted.last(where: { $0 < now }), now.daysBetween(last) <= 30 {
+        if let last = sorted.last(where: { $0 < now }), now.daysBetween(last) >= -30 {
             return ContentStateInfo(state: .past, anchor: last, nextUnlock: sorted.first(where: { $0 > now }), daysUntil: nil, isToday: false)
         }
         let next = sorted.first(where: { $0 > now })

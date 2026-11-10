@@ -3,6 +3,8 @@ import LixiangCalendarCore
 
 /// F5 节俗索引（P2）：吸顶「下一篇解锁」横幅 + 月份分组 + 已过默认折叠 + manifest 状态机
 struct FestivalsScreen: View {
+    var onOpenMonth: () -> Void = {}
+    var onOpenAnniversary: () -> Void = {}
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
 
@@ -26,7 +28,7 @@ struct FestivalsScreen: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            if let bannerRow {
+            if let bannerRow, loadPhase != .errorNoCache, !groups.upcoming.isEmpty {
                 banner(bannerRow)
             }
             if let note = phaseNote {
@@ -212,12 +214,20 @@ struct FestivalsScreen: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text("内容暂时不可用").font(.system(size: 13, weight: .semibold)).foregroundStyle(theme.ink)
                 Text("检查网络后重试；已解锁状态不受影响。").font(.system(size: 11)).foregroundStyle(theme.ink2)
-                Button("重试") { retryToken = UUID() }
-                    .font(.system(size: 12, weight: .semibold))
-                    .frame(minWidth: 44, minHeight: 44)
-                    .padding(.horizontal, 10)
-                    .background(theme.accent, in: Capsule())
-                    .foregroundStyle(theme.onAccent)
+                HStack(spacing: 10) {
+                    Button("重试") { retryToken = UUID() }
+                        .font(.system(size: 12, weight: .semibold))
+                        .frame(minWidth: 44, minHeight: 44)
+                        .padding(.horizontal, 10)
+                        .background(theme.accent, in: Capsule())
+                        .foregroundStyle(theme.onAccent)
+                    Button("去月历") { onOpenMonth() }
+                        .font(.system(size: 12, weight: .semibold))
+                        .frame(minWidth: 44, minHeight: 44)
+                        .padding(.horizontal, 10)
+                        .background(theme.soft, in: Capsule())
+                        .foregroundStyle(theme.ink2)
+                }
             }
         }
         .padding(.top, 8)
@@ -225,9 +235,23 @@ struct FestivalsScreen: View {
 
     private var emptyState: some View {
         D1Card {
-            VStack(alignment: .leading, spacing: 6) {
+            VStack(alignment: .leading, spacing: 10) {
                 Text("未来 90 天暂无节俗内容").font(.system(size: 13, weight: .semibold)).foregroundStyle(theme.ink)
                 Text("内容按季度滚动补充；锁定/解锁规则不受影响。").font(.system(size: 11)).foregroundStyle(theme.ink2)
+                HStack(spacing: 10) {
+                    Button("查看全部月份") { onOpenMonth() }
+                        .font(.system(size: 11, weight: .semibold))
+                        .frame(minHeight: 44)
+                        .padding(.horizontal, 14)
+                        .background(theme.accent, in: Capsule())
+                        .foregroundStyle(theme.onAccent)
+                    Button("去纪念日") { onOpenAnniversary() }
+                        .font(.system(size: 11, weight: .semibold))
+                        .frame(minHeight: 44)
+                        .padding(.horizontal, 14)
+                        .background(theme.soft, in: Capsule())
+                        .foregroundStyle(theme.ink2)
+                }
             }
         }
         .padding(.top, 8)

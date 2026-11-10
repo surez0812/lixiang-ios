@@ -123,7 +123,9 @@ actor ContentRepository {
         return try? JSONDecoder().decode(ContentManifest.self, from: data)
     }
     private func injectScale(_ html: String) -> String {
-        html.replacingOccurrences(of: "<body>", with: "<body style=\"--scale:\(String(format: "%.2f", typeScale))\">")
+        // CSS 变量必须定义在 html（:root）上；定义在 body 上不会作用于 html 的 font-size
+        html.replacingOccurrences(of: "<html lang=\"zh-Hans\">",
+                                  with: "<html lang=\"zh-Hans\" style=\"--scale:\(String(format: "%.2f", typeScale))\">")
     }
 }
 

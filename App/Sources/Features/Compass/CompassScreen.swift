@@ -32,7 +32,7 @@ struct CompassScreen: View {
                         legend(columns: 2).frame(maxWidth: .infinity)
                     }
                     .padding(16)
-                    .padding(.bottom, 24)
+                    .padding(.bottom, 120)
                 } else {
                     VStack(spacing: 12) {
                         if textOnly { textAlternative } else {
@@ -43,7 +43,7 @@ struct CompassScreen: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 8)
-                    .padding(.bottom, 24)
+                    .padding(.bottom, 120)
                 }
             }
         }

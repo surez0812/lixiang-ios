@@ -302,3 +302,18 @@ private let authority2026: [(String, String, Int)] = [
     #expect(ContentUnlock.state(unlockDate: unlock, now: LocalDate(2027, 1, 31)) == .past)
     #expect(ContentUnlock.daysUntil(unlockDate: unlock, now: LocalDate(2026, 11, 11)) == 80)
 }
+
+
+// MARK: - 回归：远期已过（>30 天）不应被当作“刚过”，应回到 locked（F7 locked 截图缺陷根因）
+
+@Test func stateInfoDoesNotTreatOldPastAsRecent() {
+    let resolutions = ContentResolver.resolve(items: [ContentFixtures.xieZao], now: LocalDate(2026, 11, 11),
+                                               engine: engine, pastDays: 370, futureDays: 420)
+    let info = resolutions[0].stateInfo(regionID: "north", now: LocalDate(2026, 11, 11))
+    #expect(info?.state == .locked)
+    #expect(info?.anchor == LocalDate(2027, 1, 30))
+    #expect(info?.daysUntil == 80)
+    // 近 30 天内已过仍为 past
+    let recent = resolutions[0].stateInfo(regionID: "north", now: LocalDate(2027, 2, 10))
+    #expect(recent?.state == .past)
+}

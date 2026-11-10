@@ -35,7 +35,8 @@ struct RootView: View {
                     }
                 case 1:
                     NavigationStack(path: $festivalsPath) {
-                        FestivalsScreen()
+                        FestivalsScreen(onOpenMonth: { selectedTab = 0 },
+                                        onOpenAnniversary: { selectedTab = 2 })
                             .navigationDestination(for: Route.self) { route in
                                 switch route {
                                 case .content(let id): ContentScreen(contentID: id)
