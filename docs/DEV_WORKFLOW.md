@@ -117,3 +117,13 @@ PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin swift test
 - 不建 Xcode 工程、不写 UI/业务代码（等视觉方向批准）。
 - 不改生产、不动 nginx/证书/内容服务（`ceremony/` 与官网上线窗口一起交 ops）。
 - 不碰其它产品仓库（`guqin-tuner`、`guqin-scores` 只读参考）。
+
+---
+
+## 12. 视觉批后开工顺序（Lead 2026-11-11 定）
+
+1. `project.yml` + **XcodeGen 2.46.0** 生成 `Lixiang.xcodeproj`（工程骨架，先不加业务逻辑）
+2. App 骨架：**4 Tab**（月历 / 民俗 / 纪念日 / 设置）+ 启动/依赖注入 + **本地通知权限说明文案**（首次请求时机与文案；不弹冷启动）
+3. 进 D1（核心历法接入 + 月历/日详情）
+4. D2 内容三态+B′ 管线 → D3 纪念日/通知/小组件 → D4 Duo 全姿态/iPad → QA
+5. `ceremony/` 静态目录 + 每日 cron：**随 lixiang 官网上线窗口一起交 ops**，开发期不单独动生产
