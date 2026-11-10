@@ -1,0 +1,96 @@
+# 历象 / Lixiang — XcodeGen spec（P1，Lead 2026-11-11 批准开工后入仓）
+# 生成：XcodeGen 2.46.0；`.xcodeproj` 入库、不手改；改本文件后重生成并一起提交。
+# 生成：XcodeGen 2.46.0（本机 <workspace>/.tools/xcodegen/2.46.0/bin/xcodegen）
+#   xcodegen generate --spec project.yml
+# 约定：`.xcodeproj` 入库、不手改；改本文件后重生成并一起提交。
+name: Lixiang
+options:
+  createIntermediateGroups: true
+  developmentLanguage: zh-Hans
+  groupSortPosition: top
+  # 允许的最小版本由 Config/Base.xcconfig 的 IPHONEOS_DEPLOYMENT_TARGET 决定（17.0）
+configFiles:
+  Debug: Config/Debug.xcconfig
+  Release: Config/Release.xcconfig
+packages:
+  # 历法内核：MIT，exact pin（与 packages/LixiangCalendarCore/Package.swift 一致）
+  LunarSwift:
+    url: https://github.com/6tail/lunar-swift
+    exactVersion: 1.1.9
+  # 我方领域层（本地包；源码在 packages/LixiangCalendarCore）
+  LixiangCalendarCore:
+    path: packages/LixiangCalendarCore
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    # 产品名/包名/版本以 Config/Base.xcconfig 为唯一来源
+targets:
+  Lixiang:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: App/Sources
+    resources:
+      - path: App/Resources
+    settings:
+      base:
+        PRODUCT_NAME: Lixiang
+        PRODUCT_BUNDLE_IDENTIFIER: $(LIXIANG_BUNDLE_ID)
+        MARKETING_VERSION: $(MARKETING_VERSION)
+        CURRENT_PROJECT_VERSION: $(CURRENT_PROJECT_VERSION)
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: "历象"   # en 由 App/Resources/InfoPlist.xcstrings 覆盖为 Lixiang
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        # iPhone 静态只允许竖屏；Duo 的 allButUpsideDown 由运行时 OrientationPolicy 放开（等 Duo discovery 后实现）
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait"
+        # iPad 四方向
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        # 签名团队在 G3 后按 Lead 指示填写；模拟器构建/测试一律 CODE_SIGNING_ALLOWED=NO
+        CODE_SIGN_STYLE: Automatic
+        # 无广告/无统计/无账号（PRD 2.3）：不声明 ATT/广告相关 Key
+    dependencies:
+      - package: LixiangCalendarCore
+        product: LixiangCalendarCore
+  LixiangTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Tests/LixiangTests
+    dependencies:
+      - target: Lixiang
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(LIXIANG_BUNDLE_ID).tests
+        GENERATE_INFOPLIST_FILE: YES
+  LixiangUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Tests/LixiangUITests
+    dependencies:
+      - target: Lixiang
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(LIXIANG_BUNDLE_ID).uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: Lixiang
+schemes:
+  Lixiang:
+    build:
+      targets:
+        Lixiang: all
+    run:
+      config: Debug
+      # DEBUG 启动参数（Release 忽略）见 docs/DEV_WORKFLOW.md §6
+    test:
+      config: Debug
+      targets:
+        - LixiangTests
+        - LixiangUITests
+    archive:
+      config: Release

@@ -1,0 +1,94 @@
+import SwiftUI
+import LixiangCalendarCore
+
+enum AppTheme: String, CaseIterable, Identifiable {
+    case system, light, dark
+    var id: String { rawValue }
+    var title: String {
+        switch self {
+        case .system: return "跟随系统"
+        case .light: return "浅色"
+        case .dark: return "深色"
+        }
+    }
+    var colorScheme: ColorScheme? {
+        switch self {
+        case .system: return nil
+        case .light: return .light
+        case .dark: return .dark
+        }
+    }
+}
+
+@MainActor
+final class AppState: ObservableObject {
+    @Published var theme: AppTheme {
+        didSet { UserDefaults.standard.set(theme.rawValue, forKey: Keys.theme) }
+    }
+    @Published var weekStart: WeekStart {
+        didSet { UserDefaults.standard.set(weekStart.rawValue, forKey: Keys.weekStart) }
+    }
+    @Published var showVernacular: Bool {
+        didSet { UserDefaults.standard.set(showVernacular, forKey: Keys.vernacular) }
+    }
+
+    let debug: DebugOptions
+    let engine: any CalendarEngine
+    let today: LocalDate
+
+    private enum Keys {
+        static let theme = "appearance"
+        static let weekStart = "weekStart"
+        static let vernacular = "showVernacular"
+    }
+
+    init(debug: DebugOptions = .parse()) {
+        self.debug = debug
+        if let forced = debug.theme, let t = AppTheme(rawValue: forced) {
+            self.theme = t
+        } else {
+            self.theme = AppTheme(rawValue: UserDefaults.standard.string(forKey: Keys.theme) ?? "") ?? .system
+        }
+        if let stored = UserDefaults.standard.object(forKey: Keys.weekStart) as? Int, let w = WeekStart(rawValue: stored) {
+            self.weekStart = w
+        } else {
+            self.weekStart = .monday
+        }
+        self.showVernacular = UserDefaults.standard.bool(forKey: Keys.vernacular)
+        self.engine = LunarSwiftEngine()
+        self.today = debug.date ?? BeijingTime.today()
+    }
+
+    func setTheme(_ theme: AppTheme) { self.theme = theme }
+
+    func almanac(_ date: LocalDate, hour: Int = 12) -> AlmanacDay { engine.almanac(date, hour: hour) }
+    func lunar(_ date: LocalDate) -> LunarDate { engine.lunarDate(date, hour: 12) }
+
+    func resolutions() -> [ContentResolution] {
+        ContentResolver.resolve(items: ContentFixtures.all, now: today, engine: engine)
+    }
+
+    func contentItem(id: String) -> ContentItem? { ContentFixtures.all.first { $0.id == id } }
+    func resolution(id: String) -> ContentResolution? { resolutions().first { $0.item.id == id } }
+
+    func nearestFestivalDays() -> (title: String, days: Int)? {
+        var best: (String, Int)?
+        for resolution in resolutions() {
+            for region in resolution.regions {
+                if let info = resolution.stateInfo(regionID: region.id, now: today),
+                   info.state == .locked, let days = info.daysUntil {
+                    if best == nil || days < best!.1 { best = (resolution.item.title, days) }
+                }
+            }
+        }
+        return best
+    }
+
+    func contentID(for date: LocalDate) -> String? {
+        let lunar = engine.lunarDate(date, hour: 12)
+        if lunar.month == 12, (23...29).contains(lunar.day) { return "xiezao" }
+        if lunar.jieQi == "清明" { return "qingming" }
+        if lunar.month == 12, lunar.day >= 29 { return "chuxi" }
+        return nil
+    }
+}

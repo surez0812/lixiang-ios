@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		124CF875588EF60300DE3EBB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9F8074A131889FFB85A95D /* RootView.swift */; };
+		23248C8DCA4707C173FD42C0 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBC8822DEACC03E39B84C18 /* Components.swift */; };
+		254DCB71305786C25EDC249A /* MonthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D421ECD4E84365F75CC9AE9A /* MonthScreen.swift */; };
+		39FF8AB136D23EB770A2BC4A /* DebugOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E56086DB32FA3B6F775654 /* DebugOptions.swift */; };
+		3ABC80F5BA369812487AA63D /* FestivalsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D409C092D16755B254E3B6 /* FestivalsScreen.swift */; };
+		5DC804F1EFB564515CFF5331 /* LixiangApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4253AFA341B81955B45311A4 /* LixiangApp.swift */; };
+		79D3CA12212D0B08D65B2AF6 /* LixiangCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9DC9A4CCDA5EEBBCD58D4361 /* LixiangCalendarCore */; };
+		8037EF70A0164B9BF1595EA5 /* ContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11B7E10505799D2B48A8039 /* ContentScreen.swift */; };
+		AE756168FD87DC8D978F2005 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788133271B6E5AF4FAB99C4D /* AppState.swift */; };
+		B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA72858D41F13FE75567AF /* SettingsScreen.swift */; };
+		C09B4B8A66D701731DC2F3D5 /* D1Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5CD61AB7918A75644AF7DC /* D1Theme.swift */; };
+		D1E2439EB3417175761B5D6E /* AnniversaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9C20186EACBA4CB717F53C /* AnniversaryScreen.swift */; };
+		E297799EA5E91021225B8A5D /* DayDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67673C4C6D224600887711F /* DayDetailScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BDAE5DC636B825659D88D58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8119527D8A0D3CB219EA1471 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5381C6CB2BC197096B63A3;
+			remoteInfo = Lixiang;
+		};
+		BD19C81604543392850E513E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8119527D8A0D3CB219EA1471 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5381C6CB2BC197096B63A3;
+			remoteInfo = Lixiang;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18A495372FE1481FE1F1B1DC /* LixiangUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LixiangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C033AA6AF0BC99EBEFDEE9 /* Lixiang.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Lixiang.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CBC8822DEACC03E39B84C18 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		23223E2D5C2083126F80B9B8 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		2FD6BD4029A2CD7592D87F9D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		4253AFA341B81955B45311A4 /* LixiangApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LixiangApp.swift; sourceTree = "<group>"; };
+		493E10C2B5747A8960FA078A /* LixiangCalendarCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LixiangCalendarCore; path = packages/LixiangCalendarCore; sourceTree = SOURCE_ROOT; };
+		64D409C092D16755B254E3B6 /* FestivalsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalsScreen.swift; sourceTree = "<group>"; };
+		69CA72858D41F13FE75567AF /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		76E56086DB32FA3B6F775654 /* DebugOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugOptions.swift; sourceTree = "<group>"; };
+		788133271B6E5AF4FAB99C4D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		7B9C20186EACBA4CB717F53C /* AnniversaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryScreen.swift; sourceTree = "<group>"; };
+		81F89938CBAE6DCFF2EC664C /* LixiangTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LixiangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67673C4C6D224600887711F /* DayDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailScreen.swift; sourceTree = "<group>"; };
+		D11B7E10505799D2B48A8039 /* ContentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentScreen.swift; sourceTree = "<group>"; };
+		D421ECD4E84365F75CC9AE9A /* MonthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthScreen.swift; sourceTree = "<group>"; };
+		DF9F8074A131889FFB85A95D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		FC5CD61AB7918A75644AF7DC /* D1Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1Theme.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A42FD56C1C815DA717325CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D3CA12212D0B08D65B2AF6 /* LixiangCalendarCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10368E33148216FCDB653127 /* LixiangUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LixiangUITests;
+			sourceTree = "<group>";
+		};
+		2291F4FB277C4E523553D293 /* Anniversary */ = {
+			isa = PBXGroup;
+			children = (
+				7B9C20186EACBA4CB717F53C /* AnniversaryScreen.swift */,
+			);
+			path = Anniversary;
+			sourceTree = "<group>";
+		};
+		241B087D49B937E6CE3F10F5 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				D11B7E10505799D2B48A8039 /* ContentScreen.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		38999125256D48B1DC4D171B /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				A67673C4C6D224600887711F /* DayDetailScreen.swift */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		43DEDB2A6FE976E0A69E96DE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				69CA72858D41F13FE75567AF /* SettingsScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		527B029D5A4B5BD1365361B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18C033AA6AF0BC99EBEFDEE9 /* Lixiang.app */,
+				81F89938CBAE6DCFF2EC664C /* LixiangTests.xctest */,
+				18A495372FE1481FE1F1B1DC /* LixiangUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C440841D93EC543CCDDCA8E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				73FBAA1B9289B8DDDC52A84E /* Sources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5D0BF347ABA31C5F8B7536DF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				23223E2D5C2083126F80B9B8 /* Debug.xcconfig */,
+				2FD6BD4029A2CD7592D87F9D /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		73FBAA1B9289B8DDDC52A84E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F2A2EF1132BC6DDB563DB091 /* App */,
+				9CF155100DF864F8BE868162 /* DesignSystem */,
+				8A0ED9EE47E065B3833EF4C7 /* Features */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7EB79160490018CA05327F30 /* Festivals */ = {
+			isa = PBXGroup;
+			children = (
+				64D409C092D16755B254E3B6 /* FestivalsScreen.swift */,
+			);
+			path = Festivals;
+			sourceTree = "<group>";
+		};
+		8121FA1EF37058F1D66225E4 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				493E10C2B5747A8960FA078A /* LixiangCalendarCore */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		86635CE97325D581A8A2A29D = {
+			isa = PBXGroup;
+			children = (
+				5C440841D93EC543CCDDCA8E /* App */,
+				5D0BF347ABA31C5F8B7536DF /* Config */,
+				8121FA1EF37058F1D66225E4 /* Packages */,
+				D6FFF1C924FCAEB6E01ABE0E /* Tests */,
+				527B029D5A4B5BD1365361B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8920B47FF6A86C27E9FA6FBC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				DF9F8074A131889FFB85A95D /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		8A0ED9EE47E065B3833EF4C7 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2291F4FB277C4E523553D293 /* Anniversary */,
+				BBD8EC9D8FBABD1069988530 /* Calendar */,
+				241B087D49B937E6CE3F10F5 /* Content */,
+				38999125256D48B1DC4D171B /* Day */,
+				7EB79160490018CA05327F30 /* Festivals */,
+				8920B47FF6A86C27E9FA6FBC /* Root */,
+				43DEDB2A6FE976E0A69E96DE /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		9CF155100DF864F8BE868162 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				1CBC8822DEACC03E39B84C18 /* Components.swift */,
+				FC5CD61AB7918A75644AF7DC /* D1Theme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		B9834D8C903BFA35AD98FBEB /* LixiangTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LixiangTests;
+			sourceTree = "<group>";
+		};
+		BBD8EC9D8FBABD1069988530 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				D421ECD4E84365F75CC9AE9A /* MonthScreen.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		D6FFF1C924FCAEB6E01ABE0E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B9834D8C903BFA35AD98FBEB /* LixiangTests */,
+				10368E33148216FCDB653127 /* LixiangUITests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F2A2EF1132BC6DDB563DB091 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				788133271B6E5AF4FAB99C4D /* AppState.swift */,
+				76E56086DB32FA3B6F775654 /* DebugOptions.swift */,
+				4253AFA341B81955B45311A4 /* LixiangApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23667549ADA1B8C6566C6511 /* LixiangTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC1CCB7941EC146B1625DEA8 /* Build configuration list for PBXNativeTarget "LixiangTests" */;
+			buildPhases = (
+				61463143EE0D56EE2CB3EDD1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DA4F423CE81782C0E4BC8C5 /* PBXTargetDependency */,
+			);
+			name = LixiangTests;
+			packageProductDependencies = (
+			);
+			productName = LixiangTests;
+			productReference = 81F89938CBAE6DCFF2EC664C /* LixiangTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E5381C6CB2BC197096B63A3 /* Lixiang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29FF1B6FCC579A6D033CE7D3 /* Build configuration list for PBXNativeTarget "Lixiang" */;
+			buildPhases = (
+				2CF855F34F73C5E4484EFEE2 /* Sources */,
+				1A42FD56C1C815DA717325CE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lixiang;
+			packageProductDependencies = (
+				9DC9A4CCDA5EEBBCD58D4361 /* LixiangCalendarCore */,
+			);
+			productName = Lixiang;
+			productReference = 18C033AA6AF0BC99EBEFDEE9 /* Lixiang.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2AC425CAEB5ECB35EDD6F3D /* LixiangUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7530BA3859DD7A8205FFD302 /* Build configuration list for PBXNativeTarget "LixiangUITests" */;
+			buildPhases = (
+				F90065C7428A145CCB4B4F13 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF5175CE69C9021735EE864 /* PBXTargetDependency */,
+			);
+			name = LixiangUITests;
+			packageProductDependencies = (
+			);
+			productName = LixiangUITests;
+			productReference = 18A495372FE1481FE1F1B1DC /* LixiangUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8119527D8A0D3CB219EA1471 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2E5381C6CB2BC197096B63A3 = {
+						ProvisioningStyle = Automatic;
+					};
+					E2AC425CAEB5ECB35EDD6F3D = {
+						TestTargetID = 2E5381C6CB2BC197096B63A3;
+					};
+				};
+			};
+			buildConfigurationList = F6840578B28293432DE64FF1 /* Build configuration list for PBXProject "Lixiang" */;
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 86635CE97325D581A8A2A29D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D7959A63E22D0F3D238C3D93 /* XCRemoteSwiftPackageReference "lunar-swift" */,
+				59D6FBD7B64E4E375694123C /* XCLocalSwiftPackageReference "packages/LixiangCalendarCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 527B029D5A4B5BD1365361B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E5381C6CB2BC197096B63A3 /* Lixiang */,
+				23667549ADA1B8C6566C6511 /* LixiangTests */,
+				E2AC425CAEB5ECB35EDD6F3D /* LixiangUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CF855F34F73C5E4484EFEE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E2439EB3417175761B5D6E /* AnniversaryScreen.swift in Sources */,
+				AE756168FD87DC8D978F2005 /* AppState.swift in Sources */,
+				23248C8DCA4707C173FD42C0 /* Components.swift in Sources */,
+				8037EF70A0164B9BF1595EA5 /* ContentScreen.swift in Sources */,
+				C09B4B8A66D701731DC2F3D5 /* D1Theme.swift in Sources */,
+				E297799EA5E91021225B8A5D /* DayDetailScreen.swift in Sources */,
+				39FF8AB136D23EB770A2BC4A /* DebugOptions.swift in Sources */,
+				3ABC80F5BA369812487AA63D /* FestivalsScreen.swift in Sources */,
+				5DC804F1EFB564515CFF5331 /* LixiangApp.swift in Sources */,
+				254DCB71305786C25EDC249A /* MonthScreen.swift in Sources */,
+				124CF875588EF60300DE3EBB /* RootView.swift in Sources */,
+				B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61463143EE0D56EE2CB3EDD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F90065C7428A145CCB4B4F13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DA4F423CE81782C0E4BC8C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E5381C6CB2BC197096B63A3 /* Lixiang */;
+			targetProxy = BD19C81604543392850E513E /* PBXContainerItemProxy */;
+		};
+		EDF5175CE69C9021735EE864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E5381C6CB2BC197096B63A3 /* Lixiang */;
+			targetProxy = 4BDAE5DC636B825659D88D58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		056C529151FB820F09946DB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LIXIANG_BUNDLE_ID).tests";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lixiang.app/Lixiang";
+			};
+			name = Release;
+		};
+		0AD5D6B36DF6FB0A7809EB96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23223E2D5C2083126F80B9B8 /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		667A2D170CFA1F282C235029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD6BD4029A2CD7592D87F9D /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		75EDF777AFD8F3B4F8C03E52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "历象";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LIXIANG_BUNDLE_ID)";
+				PRODUCT_NAME = Lixiang;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		82F98B0977FC92F5C695CF0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "历象";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LIXIANG_BUNDLE_ID)";
+				PRODUCT_NAME = Lixiang;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8604A237B7ED384035F0C524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LIXIANG_BUNDLE_ID).uitests";
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = Lixiang;
+			};
+			name = Debug;
+		};
+		D359F0F63BE7B71485C88ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LIXIANG_BUNDLE_ID).uitests";
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = Lixiang;
+			};
+			name = Release;
+		};
+		F72ED38F00E485E7C9E65B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LIXIANG_BUNDLE_ID).tests";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lixiang.app/Lixiang";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29FF1B6FCC579A6D033CE7D3 /* Build configuration list for PBXNativeTarget "Lixiang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82F98B0977FC92F5C695CF0E /* Debug */,
+				75EDF777AFD8F3B4F8C03E52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7530BA3859DD7A8205FFD302 /* Build configuration list for PBXNativeTarget "LixiangUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8604A237B7ED384035F0C524 /* Debug */,
+				D359F0F63BE7B71485C88ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F6840578B28293432DE64FF1 /* Build configuration list for PBXProject "Lixiang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD5D6B36DF6FB0A7809EB96 /* Debug */,
+				667A2D170CFA1F282C235029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FC1CCB7941EC146B1625DEA8 /* Build configuration list for PBXNativeTarget "LixiangTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72ED38F00E485E7C9E65B8E /* Debug */,
+				056C529151FB820F09946DB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		59D6FBD7B64E4E375694123C /* XCLocalSwiftPackageReference "packages/LixiangCalendarCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = packages/LixiangCalendarCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7959A63E22D0F3D238C3D93 /* XCRemoteSwiftPackageReference "lunar-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/6tail/lunar-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DC9A4CCDA5EEBBCD58D4361 /* LixiangCalendarCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LixiangCalendarCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8119527D8A0D3CB219EA1471 /* Project object */;
+}
