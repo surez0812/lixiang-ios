@@ -32,18 +32,18 @@ struct CompassScreen: View {
                         legend(columns: 2).frame(maxWidth: .infinity)
                     }
                     .padding(16)
-                    .padding(.bottom, 120)
+                    .padding(.bottom, 180)
                 } else {
                     VStack(spacing: 12) {
                         if textOnly { textAlternative } else {
                             compass(diameter: dialDiameter(for: geo.size.width, wide: false))
                         }
-                        legend(columns: 1)
+                        legend(columns: geo.size.width >= 420 ? 2 : 1)
                         footnote
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 8)
-                    .padding(.bottom, 120)
+                    .padding(.bottom, 180)
                 }
             }
         }
@@ -51,7 +51,6 @@ struct CompassScreen: View {
         .navigationTitle("吉神罗盘 · \(date.month)月\(date.day)日")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityElement(children: .contain)
-        .accessibilityLabel("吉神罗盘，\(date.month)月\(date.day)日，今日方位")
     }
 
     /// 盘径按容器（spec P2-F4 §2 新口径）：<320 → 280；320–700 → 300；>700 → 320
