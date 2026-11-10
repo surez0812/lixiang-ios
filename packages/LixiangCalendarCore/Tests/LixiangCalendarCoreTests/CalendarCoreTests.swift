@@ -263,3 +263,42 @@ private let authority2026: [(String, String, Int)] = [
     #expect(!layout.present.contains { $0.deity == .cai || $0.deity == .fu })
     #expect(layout.present.count == 3)
 }
+
+
+// MARK: - P2/F7 B′：manifest / 缓存键 / sha256 / 解锁判定
+
+@Test func manifestRoundTripAndCacheKey() throws {
+    let html = "<html><body>谢灶</body></html>"
+    let sha = SHA256.hex(html)
+    let entry = ManifestEntry(slug: "xiezao", title: "谢灶", unlockDate: LocalDate(2027, 1, 30),
+                              contentVersion: "v1.0.3", sha256: sha, updatedAt: "2026-11-11T00:00:00+08:00")
+    let manifest = ContentManifest(schemaVersion: 1, generatedAt: "2026-11-11T00:00:00+08:00", items: [entry])
+    let data = try JSONEncoder().encode(manifest)
+    let decoded = try JSONDecoder().decode(ContentManifest.self, from: data)
+    #expect(decoded.entry(slug: "xiezao")?.unlockDate == LocalDate(2027, 1, 30))
+    #expect(decoded.entry(slug: "xiezao")?.sha256 == sha)
+    let key = ContentCacheKey(slug: "xiezao", contentVersion: "v1.0.3", sha256: sha)
+    #expect(key.fileName.hasPrefix("xiezao_v1.0.3_"))
+}
+
+@Test func manifestParserValidation() throws {
+    let good = """
+    {"schemaVersion":1,"generatedAt":"2026-11-11T00:00:00+08:00","items":[
+      {"slug":"xiezao","title":"谢灶","unlockDate":"2027-01-30","contentVersion":"v1.0.3",
+       "sha256":"\(SHA256.hex("x"))","updatedAt":"2026-11-11"}]}
+    """
+    let manifest = try ManifestParser.parse(Data(good.utf8))
+    #expect(manifest.items.count == 1)
+    let bad = """
+    {"items":[{"slug":"x","title":"x","unlockDate":"2027-13-40","contentVersion":"v1","sha256":"short","updatedAt":"x"}]}
+    """
+    #expect(throws: ManifestError.self) { _ = try ManifestParser.parse(Data(bad.utf8)) }
+}
+
+@Test func contentUnlockUTC8Policy() {
+    let unlock = LocalDate(2027, 1, 30)
+    #expect(ContentUnlock.state(unlockDate: unlock, now: LocalDate(2027, 1, 29)) == .locked)
+    #expect(ContentUnlock.state(unlockDate: unlock, now: LocalDate(2027, 1, 30)) == .unlocked)
+    #expect(ContentUnlock.state(unlockDate: unlock, now: LocalDate(2027, 1, 31)) == .past)
+    #expect(ContentUnlock.daysUntil(unlockDate: unlock, now: LocalDate(2026, 11, 11)) == 80)
+}

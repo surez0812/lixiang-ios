@@ -10,6 +10,10 @@ struct DebugOptions {
     var language: String?
     var hour: Int?
     var hiddenDeities: Set<Deity> = []
+    var network: String?          // normal | offline | error | slow
+    var cacheState: String?       // primed | empty
+    var typeScale: Double?        // 1.0 ... 2.0（Dynamic Type 注入）
+    var contentVersion: String?   // mock 版本覆盖
 
     static func parse(_ arguments: [String] = ProcessInfo.processInfo.arguments) -> DebugOptions {
         #if DEBUG
@@ -24,6 +28,10 @@ struct DebugOptions {
             case "-LixiangTheme": options.theme = next()
             case "-LixiangContentID": options.contentID = next()
             case "-LixiangDebugHour": options.hour = next().flatMap(Int.init)
+            case "-LixiangNetwork": options.network = next()
+            case "-LixiangCacheState": options.cacheState = next()
+            case "-LixiangTypeScale": options.typeScale = next().flatMap(Double.init)
+            case "-LixiangContentVersion": options.contentVersion = next()
             case "-LixiangDebugHideDeity":
                 let raw = next() ?? ""
                 options.hiddenDeities = Set(raw.split(separator: ",").compactMap { Deity(rawValue: String($0).trimmingCharacters(in: .whitespaces)) })

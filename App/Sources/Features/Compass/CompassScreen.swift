@@ -12,18 +12,38 @@ struct CompassScreen: View {
 
     private var almanac: AlmanacDay { state.almanac(date, hour: state.debugHour ?? BeijingTime.hour(of: Date())) }
     private var layout: CompassLayout { CompassBuilder.layout(for: almanac, hidden: state.hiddenDeities) }
+    private var textOnly: Bool {
+        #if DEBUG
+        state.debug.screen == "compass-a11y"
+        #else
+        false
+        #endif
+    }
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: 12) {
-                compass
-                legend
-                Text("5 针：喜神/财神/福神/阳贵/阴贵；同方位按径向错开。缺位 = 本日不在此位（不画针）。传统方位示意，非风水/招财/吉凶预测。")
-                    .font(.system(size: 9)).foregroundStyle(theme.ink3)
-                    .padding(.horizontal, 4)
+        GeometryReader { geo in
+            ScrollView {
+                if geo.size.width >= 880 {
+                    // iPad 11/13、Duo 内屏横：盘左 + 图例右（图例两列）
+                    HStack(alignment: .top, spacing: 16) {
+                        if textOnly { textAlternative } else {
+                            compass(diameter: dialDiameter(for: geo.size.width, wide: true))
+                        }
+                        legend(columns: 2).frame(maxWidth: .infinity)
+                    }
+                    .padding(16)
+                } else {
+                    VStack(spacing: 12) {
+                        if textOnly { textAlternative } else {
+                            compass(diameter: dialDiameter(for: geo.size.width, wide: false))
+                        }
+                        legend(columns: 1)
+                        footnote
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 8)
+                }
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 8)
         }
         .background(ScreenBackground())
         .navigationTitle("吉神罗盘 · \(date.month)月\(date.day)日")
@@ -32,11 +52,30 @@ struct CompassScreen: View {
         .accessibilityLabel("吉神罗盘，\(date.month)月\(date.day)日，今日方位")
     }
 
+    /// 盘径按容器（spec P2-F4 §2 新口径）：<320 → 280；320–700 → 300；>700 → 320
+    private func dialDiameter(for width: CGFloat, wide: Bool) -> CGFloat {
+        if width < 320 { return 280 }
+        if width <= 700 { return 300 }
+        return 320
+    }
+
+    private var textAlternative: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text("吉神罗盘 · 文本替身").font(D1Theme.serif(24)).foregroundStyle(theme.ink)
+            Text("VoiceOver 朗读顺序：喜神 → 财神 → 福神 → 阳贵 → 阴贵 → 煞方；盘面为装饰（accessibilityHidden）。")
+                .font(.system(size: 10)).foregroundStyle(theme.ink3)
+        }
+    }
+
+    private var footnote: some View {
+        Text("5 针：喜神/财神/福神/阳贵/阴贵；同方位按径向错开。缺位 = 本日不在此位（不画针）。传统方位示意，非风水/招财/吉凶预测。")
+            .font(.system(size: 9)).foregroundStyle(theme.ink3)
+            .padding(.horizontal, 4)
+    }
+
     // MARK: - 盘
-    private var compass: some View {
+    private func compass(diameter: CGFloat) -> some View {
         GeometryReader { geo in
-            let width = geo.size.width
-            let diameter: CGFloat = min(width - 32, width > 700 ? 320 : (width > 340 ? 300 : 280))
             let R = diameter / 2
             let center = CGPoint(x: geo.size.width / 2, y: diameter / 2 + 6)
             ZStack {
@@ -66,7 +105,7 @@ struct CompassScreen: View {
                     SectorShape(center: center, radius: R * 0.97,
                                 startAngle: sha.angleDegrees - 12, endAngle: sha.angleDegrees + 12)
                         .fill(theme.jiText.opacity(0.10))
-                    SectorShape(center: center, radius: R * 0.97,
+                    SectorShape(center: center, radius: R - 8,
                                 startAngle: sha.angleDegrees - 12, endAngle: sha.angleDegrees + 12)
                         .stroke(theme.jiText, style: StrokeStyle(lineWidth: 1, dash: [3, 3]))
                     Text("煞 \(sha.rawValue.replacingOccurrences(of: "正", with: ""))")
@@ -102,7 +141,7 @@ struct CompassScreen: View {
             .frame(width: geo.size.width, height: diameter + 24)
             .accessibilityHidden(true)   // 盘为装饰，图例为文本替身
         }
-        .frame(height: 330)
+        .frame(width: diameter + 24, height: diameter + 24)
     }
 
     private func tick(center: CGPoint, radius: CGFloat, angle: Double) -> some View {
@@ -155,9 +194,13 @@ struct CompassScreen: View {
     }
 
     // MARK: - 图例（文本替身；顺序 喜→财→福→阳贵→阴贵→煞）
-    private var legend: some View {
+    private func legend(columns: Int) -> some View {
         D1Card(padding: 0) {
-            VStack(spacing: 0) {
+            LazyVGrid(columns: columns == 2
+                      ? [GridItem(.flexible(), spacing: 0, alignment: .leading),
+                         GridItem(.flexible(), spacing: 0, alignment: .leading)]
+                      : [GridItem(.flexible(), spacing: 0, alignment: .leading)],
+                      alignment: .leading, spacing: 0) {
                 ForEach(legendOrder) { deity in
                     let entry = layout.present.first { $0.deity == deity }
                     HStack(spacing: 10) {

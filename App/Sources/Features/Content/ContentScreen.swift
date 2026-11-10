@@ -1,129 +1,244 @@
 import SwiftUI
 import LixiangCalendarCore
 
+/// F7 · WebView + B′ 内容页（6 态：已解锁 / 离线已缓存 / 离线未缓存 / 加载 / 错误 / 锁定；来源与许可独立页）
 struct ContentScreen: View {
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
     let contentID: String
 
-    private var resolution: ContentResolution? { state.resolution(id: contentID) }
+    @State private var result = ContentLoadResult(phase: .loading)
+    @State private var loadedOnce = false
+    @State private var reloadToken = UUID()
+
+    private var item: ContentItem? { state.contentItem(id: contentID) }
+    private var siteURL: URL { URL(string: "https://lixiang.zhaoyao.xin/ceremony/\(contentID)")! }
+    private var scale: Double { min(max(state.debug.typeScale ?? 1.0, 1.0), 2.0) }
+    private var mode: ContentNetworkMode { ContentNetworkMode(rawValue: state.debug.network ?? "normal") ?? .normal }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 12) {
-                if let resolution {
-                    header(resolution)
-                    ForEach(resolution.regions) { region in
-                        regionCard(resolution: resolution, region: region)
-                    }
-                    complianceFooter
-                } else {
-                    Text("内容加载失败").foregroundStyle(theme.ink2)
+                if let banner = offlineBanner {
+                    bannerView(banner)
                 }
+                header
+                bodyContent
+                sourceLink
+                footer
             }
             .padding(.horizontal, 16)
-            .padding(.vertical, 12)
+            .padding(.bottom, 24)
         }
         .background(ScreenBackground())
-        .navigationTitle(resolution?.item.title ?? "民俗")
+        .navigationTitle(item?.title ?? "民俗")
         .navigationBarTitleDisplayMode(.inline)
-    }
-
-    private func header(_ resolution: ContentResolution) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(resolution.item.title).font(D1Theme.serif(30)).foregroundStyle(theme.ink)
-            HStack(spacing: 6) {
-                ForEach(resolution.item.category, id: \.self) { raw in
-                    D1Chip(text: categoryLabel(raw), tone: .neutral)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                ShareLink(item: siteURL, subject: Text("历象 · \(item?.title ?? "")"), message: Text(result.phase == .locked ? "未解锁 · 民俗内容将在解锁后可读" : "历象 · 民俗内容")) {
+                    Image(systemName: "square.and.arrow.up")
                 }
             }
-            Text(resolution.item.teaser).font(.system(size: 12)).foregroundStyle(theme.ink2)
         }
+        .task(id: reloadToken) { await load() }
     }
 
-    private func regionCard(resolution: ContentResolution, region: RegionalDate) -> some View {
-        let info = resolution.stateInfo(regionID: region.id, now: state.today)
+    // MARK: - 数据
+    private func load() async {
+        let sandbox = SandboxContentSource(engine: state.engine, now: state.today, mode: mode,
+                                           versionOverride: state.debug.contentVersion)
+        let primeSource: SandboxContentSource? = (state.debug.cacheState == "primed")
+            ? SandboxContentSource(engine: state.engine, now: state.today, mode: .normal,
+                                   versionOverride: state.debug.contentVersion)
+            : nil
+        let repository = ContentRepository(source: sandbox, now: state.today, mode: mode, typeScale: scale)
+        if let primeSource {
+            let primer = ContentRepository(source: primeSource, now: state.today, mode: .normal, typeScale: scale)
+            _ = await primer.load(slug: contentID)
+        }
+        result = await repository.load(slug: contentID)
+        loadedOnce = true
+    }
+
+    // MARK: - 头卡（本地先渲染，不等 WebView）
+    private var header: some View {
+        let entry = result.entry
         return D1Card {
-            VStack(alignment: .leading, spacing: 10) {
-                HStack {
-                    Text(resolution.item.regionalDates == nil ? "内容" : region.label)
-                        .font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
+            VStack(alignment: .leading, spacing: 8) {
+                HStack(alignment: .top, spacing: 10) {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(item?.title ?? contentID).font(D1Theme.serif(22 * min(scale, 1.4))).foregroundStyle(theme.ink)
+                        let regionLabel = item?.regionalDates?.first?.label
+                        if let regionLabel {
+                            Text(regionLabel).font(.system(size: 10)).foregroundStyle(theme.ink3)
+                        }
+                        Text("按北京时间（UTC+8）判定解锁").font(.system(size: 9)).foregroundStyle(theme.ink3)
+                    }
                     Spacer()
-                    if let info {
-                        switch info.state {
-                        case .unlocked: D1Chip(text: "今日已解锁", tone: .accent)
-                        case .past: D1Chip(text: "已过 · 可回看", tone: .neutral)
-                        case .locked: D1Chip(text: "未到 \(info.daysUntil ?? 0) 天", tone: .jade)
+                    VStack(alignment: .trailing, spacing: 2) {
+                        Text(entry?.contentVersion ?? "—").font(.system(size: 9, weight: .semibold)).foregroundStyle(theme.ink3)
+                        if let updated = entry?.updatedAt {
+                            Text("更新于 \(updated.prefix(10))").font(.system(size: 8)).foregroundStyle(theme.ink3)
                         }
                     }
                 }
-                if let info {
-                    switch info.state {
+                HStack(spacing: 6) {
+                    switch result.phase {
                     case .locked:
-                        lockedView(info)
-                    case .unlocked, .past:
-                        unlockedView(resolution, info: info)
+                        D1Chip(text: "未解锁", tone: .ji)
+                    case .offlineCached, .offlineUncached:
+                        D1Chip(text: "已解锁", tone: .yi)
+                    default:
+                        D1Chip(text: "已解锁", tone: .yi)
                     }
-                } else {
-                    Text("本年度无该日期").font(.system(size: 11)).foregroundStyle(theme.ink3)
+                    D1Chip(text: "网页内容", tone: .neutral)
+                    if result.cached { D1Chip(text: "已缓存", tone: .neutral) }
+                    else if result.phase == .ready { D1Chip(text: "未缓存", tone: .neutral) }
                 }
             }
         }
     }
 
-    private func lockedView(_ info: ContentStateInfo) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("民俗内容将在 \(info.anchor.iso) 00:00 后解锁")
-                .font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
-            Text("未到日期只显示名称、日期与一行主题；不展示准备清单、步骤或禁忌细节。")
-                .font(.system(size: 10)).foregroundStyle(theme.ink3)
-            Text("按北京时间判定 · 解锁前正文不下发、不随包、不可深链")
+    @ViewBuilder
+    private var bodyContent: some View {
+        switch result.phase {
+        case .loading:
+            loadingSkeleton
+        case .locked:
+            lockedBody
+        case .ready, .offlineCached:
+            if let html = result.html {
+                D1Card(padding: 8) {
+                    WebViewReader(html: html)
+                        .frame(minHeight: 520)
+                }
+            } else {
+                errorCard(message: "内容暂时无法加载")
+            }
+        case .offlineUncached:
+            offlineUncachedCard
+        case .error:
+            errorCard(message: "内容暂时无法加载", detail: "检查网络后重试；已缓存部分不会显示成旧正文。")
+        }
+    }
+
+    private var loadingSkeleton: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("加载中").font(.system(size: 10)).foregroundStyle(theme.ink3)
+            ForEach(0..<3, id: \.self) { i in
+                D1Card(padding: 14) {
+                    VStack(alignment: .leading, spacing: 8) {
+                        RoundedRectangle(cornerRadius: 4).fill(theme.soft).frame(width: 96, height: 12)
+                        RoundedRectangle(cornerRadius: 4).fill(theme.soft).frame(height: 10)
+                        RoundedRectangle(cornerRadius: 4).fill(theme.soft).frame(width: 220, height: 10)
+                        if i == 0 { RoundedRectangle(cornerRadius: 4).fill(theme.soft).frame(height: 10) }
+                    }
+                }
+            }
+            Text("正文加载前先显示本地头卡；骨架 ≥300ms 才出现，无白屏。")
                 .font(.system(size: 9)).foregroundStyle(theme.ink3)
         }
-        .padding(10)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(theme.soft, in: RoundedRectangle(cornerRadius: 14))
     }
 
-    private func unlockedView(_ resolution: ContentResolution, info: ContentStateInfo) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            if info.state == .past {
-                Text("已过 · 下次解锁 \(info.nextUnlock?.iso ?? "—")")
-                    .font(.system(size: 10)).foregroundStyle(theme.ink3)
-            }
-            ForEach(resolution.item.sections) { section in
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(section.title).font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
-                    ForEach(section.paragraphs, id: \.self) { p in
-                        Text(p).font(.system(size: 11)).foregroundStyle(theme.ink2)
+    private var lockedBody: some View {
+        VStack(spacing: 10) {
+            if let resolution = state.resolution(id: contentID) {
+                ForEach(resolution.regions) { region in
+                    let info = resolution.stateInfo(regionID: region.id, now: state.today)
+                    D1Card {
+                        VStack(alignment: .leading, spacing: 6) {
+                            HStack {
+                                Text(region.label).font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
+                                Spacer()
+                                if let info {
+                                    switch info.state {
+                                    case .locked: D1Chip(text: "未到 \(info.daysUntil ?? 0) 天", tone: .jade)
+                                    case .unlocked: D1Chip(text: "今日已解锁", tone: .accent)
+                                    case .past: D1Chip(text: "已过 · 可回看", tone: .neutral)
+                                    }
+                                }
+                            }
+                            if let info, info.state == .locked {
+                                Text("民俗内容将在 \(info.anchor.iso) 00:00 后解锁").font(.system(size: 11)).foregroundStyle(theme.ink2)
+                                Text("未解锁只显示名称、日期与一行主题；不展示准备清单、步骤或禁忌细节；不返回正文。")
+                                    .font(.system(size: 10)).foregroundStyle(theme.ink3)
+                            }
+                        }
                     }
                 }
             }
-            D1Divider()
-            VStack(alignment: .leading, spacing: 3) {
-                SectionLabel(text: "来源与许可")
-                ForEach(resolution.item.sources, id: \.title) { source in
-                    Text("\(source.kind) · \(source.title)\(source.note.map { " · \($0)" } ?? "")")
-                        .font(.system(size: 9)).foregroundStyle(theme.ink3)
+            Text("传统民俗文化内容；焚香烧纸请遵守当地消防与环保规定，不涉及宗教场所与教职人员。")
+                .font(.system(size: 9)).foregroundStyle(theme.ink3)
+        }
+    }
+
+    private var offlineUncachedCard: some View {
+        D1Card {
+            VStack(alignment: .leading, spacing: 6) {
+                Text("离线且未缓存").font(.system(size: 13, weight: .semibold)).foregroundStyle(theme.ink)
+                Text("联网后可读；已解锁状态不受影响。").font(.system(size: 11)).foregroundStyle(theme.ink2)
+                HStack(spacing: 10) {
+                    Button("重试") { reloadToken = UUID() }
+                        .font(.system(size: 11, weight: .semibold))
+                        .padding(.horizontal, 14).padding(.vertical, 8)
+                        .background(theme.accent, in: Capsule())
+                        .foregroundStyle(theme.onAccent)
+                    Text("去设置网络").font(.system(size: 10)).foregroundStyle(theme.ink3)
                 }
             }
         }
     }
 
-    private func categoryLabel(_ raw: String) -> String {
-        switch raw {
-        case "festival": return "节俗"
-        case "ritual": return "民俗做法"
-        case "ancestor": return "祭祖"
-        case "solar_term": return "节气"
-        case "custom": return "民俗"
-        default: return raw
+    private func errorCard(message: String, detail: String? = nil) -> some View {
+        D1Card {
+            VStack(alignment: .leading, spacing: 6) {
+                Text(message).font(.system(size: 13, weight: .semibold)).foregroundStyle(theme.ink)
+                if let detail { Text(detail).font(.system(size: 11)).foregroundStyle(theme.ink2) }
+                Button("重试") { reloadToken = UUID() }
+                    .font(.system(size: 11, weight: .semibold))
+                    .padding(.horizontal, 14).padding(.vertical, 8)
+                    .background(theme.accent, in: Capsule())
+                    .foregroundStyle(theme.onAccent)
+            }
         }
     }
 
-    private var complianceFooter: some View {
-        Text("传统民俗文化内容；焚香烧纸请遵守当地消防与环保规定，不涉及宗教场所与教职人员。只讲民俗文化，不做吉凶判断。")
+    private var offlineBanner: String? {
+        switch result.phase {
+        case .offlineCached: return "离线 · 显示已缓存内容（\(result.entry?.contentVersion ?? "—")）"
+        case .offlineUncached: return "离线 · 无缓存"
+        default: return nil
+        }
+    }
+
+    private func bannerView(_ text: String) -> some View {
+        HStack(spacing: 6) {
+            Image(systemName: "wifi.slash").font(.system(size: 10))
+            Text(text).font(.system(size: 10, weight: .semibold))
+        }
+        .foregroundStyle(theme.jiText)
+        .padding(.horizontal, 12).padding(.vertical, 7)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(theme.jiBg, in: RoundedRectangle(cornerRadius: 12))
+    }
+
+    private var sourceLink: some View {
+        NavigationLink {
+            SourceLicenseScreen(slug: contentID, entry: result.entry, item: item)
+        } label: {
+            D1Card(padding: 14) {
+                HStack {
+                    Text("来源与许可").font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
+                    Spacer()
+                    Image(systemName: "chevron.right").font(.system(size: 10)).foregroundStyle(theme.ink3)
+                }
+            }
+        }
+        .buttonStyle(.plain)
+    }
+
+    private var footer: some View {
+        Text("北京时间（UTC+8）解锁 · 网页静态发布（B′）· 未解锁正文不在服务器 · 版本新旧静默替换 · 配图 16:9 + alt")
             .font(.system(size: 9)).foregroundStyle(theme.ink3)
-            .padding(.top, 4)
     }
 }

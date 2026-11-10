@@ -5,6 +5,7 @@ enum Route: Hashable {
     case day(LocalDate)
     case content(String)
     case compass(LocalDate)
+    case sourceLicense(String)
 }
 
 struct RootView: View {
@@ -26,6 +27,7 @@ struct RootView: View {
                                 case .day(let date): DayDetailScreen(date: date)
                                 case .content(let id): ContentScreen(contentID: id)
                                 case .compass(let date): CompassScreen(date: date)
+                                case .sourceLicense(let slug): SourceLicenseScreen(slug: slug, entry: nil, item: ContentFixtures.all.first { $0.id == slug })
                                 }
                             }
                     }
@@ -35,6 +37,7 @@ struct RootView: View {
                             .navigationDestination(for: Route.self) { route in
                                 switch route {
                                 case .content(let id): ContentScreen(contentID: id)
+                                case .sourceLicense(let slug): SourceLicenseScreen(slug: slug, entry: nil, item: ContentFixtures.all.first { $0.id == slug })
                                 default: EmptyView()
                                 }
                             }
@@ -64,9 +67,14 @@ struct RootView: View {
             selectedTab = 0
             monthPath = NavigationPath([Route.day(state.today)])
         }
-        if screen == "compass" {
+        if screen == "compass" || screen == "compass-a11y" {
             selectedTab = 0
             monthPath = NavigationPath([Route.compass(state.today)])
+        }
+        if screen == "source-license" {
+            selectedTab = 1
+            festivalsPath = NavigationPath([Route.content(state.debug.contentID ?? "xiezao"),
+                                            Route.sourceLicense(state.debug.contentID ?? "xiezao")])
         }
         if screen == "locked" || screen == "content" {
             selectedTab = 1
