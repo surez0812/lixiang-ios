@@ -113,3 +113,82 @@ private let engine = LunarSwiftEngine()
     #expect(locked?.state == .locked)
     #expect(unlocked?.state == .unlocked)
 }
+
+
+// MARK: - FRD F1-02 / F2-03：非中国节日全过滤
+
+@Test func nonChineseFestivalsFiltered() {
+    let samples = ["2026-10-31", "2026-11-01", "2026-11-26", "2026-12-24", "2026-12-25"]
+    for iso in samples {
+        let date = LocalDate(iso)!
+        let day = engine.almanac(date, hour: 12)
+        for name in day.festivals {
+            #expect(!["万圣节", "万圣节前夜", "感恩节", "平安夜", "圣诞节", "情人节"].contains(name))
+        }
+    }
+    // 传统节日仍在：2026-11-24（下元节）标记存在
+    let day = engine.almanac(LocalDate(2026, 11, 23), hour: 12)
+    #expect(day.festivals.contains("下元节"))
+}
+
+@Test func festivalScopeFilterKeepsExpected() {
+    let raw = ["春节", "元宵节", "清明节", "中秋节", "除夕", "万圣节", "感恩节", "圣诞节", "情人节", "元旦", "国庆节"]
+    let filtered = FestivalFilter.filtered(raw, scope: .cn)
+    #expect(filtered.contains("春节"))
+    #expect(filtered.contains("元旦"))
+    #expect(!filtered.contains("万圣节"))
+    #expect(!filtered.contains("圣诞节"))
+    #expect(!filtered.contains("情人节"))
+}
+
+// MARK: - 权威源 fixture：2026 年 24 节气（香港天文学会《香港天文年曆 2026》）
+// 来源：handover/calendar-20261111/tech/evidence/06-solar-terms-2026-vs-HKAS.md
+// 口径：日期必须一致；时刻 ≤ ±2s（库四舍五入到秒）
+
+private let authority2026: [(String, String, Int)] = [
+    ("小寒", "2026-01-05", 9), ("大寒", "2026-01-20", 56), ("立春", "2026-02-04", 8),
+    ("雨水", "2026-02-18", 56), ("惊蛰", "2026-03-05", 0), ("春分", "2026-03-20", 59),
+    ("清明", "2026-04-05", 0), ("谷雨", "2026-04-20", 8), ("立夏", "2026-05-05", 44),
+    ("小满", "2026-05-21", 45), ("芒种", "2026-06-05", 21), ("夏至", "2026-06-21", 30),
+    ("小暑", "2026-07-07", 57), ("大暑", "2026-07-23", 5), ("立秋", "2026-08-07", 43),
+    ("处暑", "2026-08-23", 49), ("白露", "2026-09-07", 16), ("秋分", "2026-09-23", 14),
+    ("寒露", "2026-10-08", 17), ("霜降", "2026-10-23", 57), ("立冬", "2026-11-07", 5),
+    ("小雪", "2026-11-22", 21), ("大雪", "2026-12-07", 32), ("冬至", "2026-12-22", 14)
+]
+
+@Test func solarTerms2026DatesMatchAuthority() {
+    var found: [String: LocalDate] = [:]
+    var date = LocalDate(2026, 1, 1)
+    while date.year == 2026 {
+        if let term = engine.lunarDate(date).jieQi { found[term] = date }
+        date = date.adding(days: 1)
+    }
+    for (name, iso, _) in authority2026 {
+        #expect(found[name] == LocalDate(iso), "节气 \(name) 日期不一致")
+    }
+    #expect(found.count >= 24)
+}
+
+@Test func chineseNewYearAndEveAcrossYears() {
+    let expected: [(String, String, String)] = [
+        ("2026-02-17", "2026-02-16", "丙午"),  // 春节 / 除夕（腊月廿九）
+        ("2027-02-06", "2027-02-05", "丁未"),
+        ("2028-01-26", "2028-01-25", "戊申")
+    ]
+    for (cny, eve, ganzhi) in expected {
+        let cnyLunar = engine.lunarDate(LocalDate(cny)!)
+        let eveLunar = engine.lunarDate(LocalDate(eve)!)
+        #expect(cnyLunar.month == 1 && cnyLunar.day == 1)
+        #expect(cnyLunar.yearGanZhi == ganzhi)
+        #expect(eveLunar.month == 12 && eveLunar.day == 29)
+    }
+}
+
+
+@Test func yiJiDedupeRules() {
+    let r = YiJiItems.dedupe(yi: ["祭祀", " 祭祀 ", "开光", "嫁娶"], ji: ["祭祀", "开光", "动土", "动土"])
+    #expect(r.yi == ["祭祀", "开光", "嫁娶"])
+    #expect(r.ji == ["动土"])
+    #expect(r.duplicates.contains("祭祀"))
+    #expect(r.duplicates.contains("开光"))
+}

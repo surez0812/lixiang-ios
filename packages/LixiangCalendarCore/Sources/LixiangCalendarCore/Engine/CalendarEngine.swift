@@ -4,6 +4,7 @@ import LunarSwift
 public protocol CalendarEngine: Sendable {
     func lunarDate(_ date: LocalDate, hour: Int) -> LunarDate
     func almanac(_ date: LocalDate, hour: Int) -> AlmanacDay
+    var festivalScope: FestivalScope { get }
 }
 
 public extension CalendarEngine {
@@ -11,7 +12,8 @@ public extension CalendarEngine {
 }
 
 public struct LunarSwiftEngine: CalendarEngine {
-    public init() {}
+    public let festivalScope: FestivalScope
+    public init(festivalScope: FestivalScope = .cn) { self.festivalScope = festivalScope }
 
     private func makeSolar(_ d: LocalDate, hour: Int) -> Solar {
         Solar.fromYmdHms(year: d.year, month: d.month, day: d.day, hour: hour, minute: 0, second: 0)
@@ -38,7 +40,7 @@ public struct LunarSwiftEngine: CalendarEngine {
     public func almanac(_ date: LocalDate, hour: Int = 12) -> AlmanacDay {
         let solar = makeSolar(date, hour: hour)
         let l = solar.lunar
-        let festivals = l.festivals + l.otherFestivals + solar.festivals
+        let festivals = FestivalFilter.filtered(l.festivals + l.otherFestivals + solar.festivals, scope: festivalScope)
         let positions = DeityDirections(
             xi: CompassDirection(loose: l.dayPositionXiDesc) ?? .north,
             fu: CompassDirection(loose: l.dayPositionFuDesc) ?? .north,

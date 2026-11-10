@@ -25,6 +25,39 @@ public struct YiJiGroup: Identifiable, Hashable, Sendable {
     public var id: String { category.rawValue }
 }
 
+public enum YiJiItems {
+    /// 归一：trim + 全角/半角 + 去空格（用于完全同词去重）
+    public static func normalized(_ item: String) -> String {
+        item.trimmingCharacters(in: .whitespacesAndNewlines)
+            .replacingOccurrences(of: " ", with: "")
+            .replacingOccurrences(of: "\u{3000}", with: "")
+    }
+
+    /// 宜忌去重（FRD v1.2 / D1 细节修 §2）：
+    /// - 完全同词去重；同一词跨「宜/忌」只保留一次（宜优先，返回 duplicates 供数据健康度告警）
+    /// - 近义词不合并
+    public static func dedupe(yi: [String], ji: [String]) -> (yi: [String], ji: [String], duplicates: [String]) {
+        var seeYi = Set<String>()
+        var yiClean: [String] = []
+        for item in yi where item != "无" {
+            let key = normalized(item)
+            if seeYi.insert(key).inserted { yiClean.append(item) }
+        }
+        var duplicates: [String] = []
+        var jiClean: [String] = []
+        var seeJi = Set<String>()
+        for item in ji where item != "无" {
+            let key = normalized(item)
+            if seeYi.contains(key) {
+                if !duplicates.contains(item) { duplicates.append(item) }
+                continue
+            }
+            if seeJi.insert(key).inserted { jiClean.append(item) }
+        }
+        return (yiClean, jiClean, duplicates)
+    }
+}
+
 public enum YiJiGrouping {
     private static let keywordTable: [(YiJiCategory, [String])] = [
         (.worship, ["祭祀", "祈福", "求嗣", "斋醮", "开光", "酬神", "谢土", "解除", "沐浴", "平治道涂", "造庙", "入殓", "除服", "成服", "开生坟", "合寿木", "扫舍", "立券", "安香", "启钻"]),

@@ -57,7 +57,8 @@ struct DayDetailScreen: View {
     }
 
     private var yiJiCard: some View {
-        D1Card {
+        let deduped = YiJiItems.dedupe(yi: almanac.yi, ji: almanac.ji)
+        return D1Card {
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
                     SectionLabel(text: "宜忌")
@@ -67,42 +68,39 @@ struct DayDetailScreen: View {
                         .scaleEffect(0.75)
                     Text("白话").font(.system(size: 10)).foregroundStyle(theme.ink3)
                 }
-                yiJiColumn(kind: .yi, items: almanac.yi)
+                yiJiRow(kind: .yi, items: deduped.yi)
                 D1Divider()
-                yiJiColumn(kind: .ji, items: almanac.ji)
-                Button(expandYiJi ? "收起" : "展开全部") { withAnimation { expandYiJi.toggle() } }
-                    .font(.system(size: 11, weight: .semibold)).foregroundStyle(theme.accentStrong)
+                yiJiRow(kind: .ji, items: deduped.ji)
+                HStack {
+                    Button(expandYiJi ? "收起" : "展开全部") { withAnimation { expandYiJi.toggle() } }
+                        .font(.system(size: 11, weight: .semibold))
+                        .foregroundStyle(theme.accentStrong)
+                    Spacer()
+                    Text("共 \(deduped.yi.count) / \(deduped.ji.count) 项")
+                        .font(.system(size: 9)).foregroundStyle(theme.ink3)
+                }
+                if state.showVernacular {
+                    Text("白话：宜=传统历书认为适合做的事；忌=认为不太适合做的事，不是绝对禁令，传统历书流派间可能不同。")
+                        .font(.system(size: 10)).foregroundStyle(theme.ink3)
+                }
             }
         }
     }
 
-    private func yiJiColumn(kind: YiJiKind, items: [String]) -> some View {
-        let groups = YiJiGrouping.groups(for: items, kind: kind)
+    private func yiJiRow(kind: YiJiKind, items: [String]) -> some View {
+        let maxChips = 6
+        let shown = expandYiJi ? items : Array(items.prefix(maxChips))
+        let more = max(0, items.count - maxChips)
         return VStack(alignment: .leading, spacing: 6) {
             HStack(spacing: 6) {
                 Text(kind == .yi ? "宜" : "忌")
                     .font(.system(size: 12, weight: .bold))
-                    .foregroundStyle(kind == .yi ? theme.accentStrong : theme.ink)
-                ForEach(groups) { group in
-                    D1Chip(text: group.category.title, tone: kind == .yi ? .accent : .strong)
+                    .foregroundStyle(kind == .yi ? theme.yiText : theme.jiText)
+                    .frame(width: 18, alignment: .leading)
+                FlowChips(items: shown, tone: kind == .yi ? .yi : .ji)
+                if !expandYiJi && more > 0 {
+                    D1Chip(text: "+\(more)", tone: .neutral)
                 }
-            }
-            if expandYiJi {
-                ForEach(groups) { group in
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(group.category.title).font(.system(size: 9, weight: .semibold)).foregroundStyle(theme.ink3)
-                        Text(group.items.joined(separator: " · "))
-                            .font(.system(size: 11)).foregroundStyle(theme.ink2)
-                    }
-                }
-            } else {
-                Text(items.prefix(6).joined(separator: " · "))
-                    .font(.system(size: 11)).foregroundStyle(theme.ink2)
-                    .lineLimit(2)
-            }
-            if state.showVernacular {
-                Text(kind == .yi ? "白话：传统历书里认为适合做的事。" : "白话：传统历书里认为不太适合做的事，不是绝对禁令。")
-                    .font(.system(size: 10)).foregroundStyle(theme.ink3)
             }
         }
     }

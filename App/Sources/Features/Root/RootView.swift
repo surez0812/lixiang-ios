@@ -23,7 +23,7 @@ struct RootView: View {
                         }
                     }
             }
-            .tabItem { Label("月历", systemImage: "calendar") }
+            .tabItem { Label("月历", systemImage: "calendar").symbolVariant(.none) }
             .tag(0)
 
             NavigationStack(path: $festivalsPath) {
@@ -35,22 +35,25 @@ struct RootView: View {
                         }
                     }
             }
-            .tabItem { Label("民俗", systemImage: "book.closed") }
+            .tabItem { Label("民俗", systemImage: "scroll").symbolVariant(.none) }
             .tag(1)
 
             NavigationStack {
                 AnniversaryScreen()
             }
-            .tabItem { Label("纪念日", systemImage: "heart") }
+            .tabItem { Label("纪念日", systemImage: "heart").symbolVariant(.none) }
             .tag(2)
 
             NavigationStack {
                 SettingsScreen()
             }
-            .tabItem { Label("设置", systemImage: "gearshape") }
+            .tabItem { Label("设置", systemImage: "slider.horizontal.3").symbolVariant(.none) }
             .tag(3)
         }
-        .tint(D1Theme.resolve(state.theme.colorScheme ?? .light).accentStrong)
+        .tint(D1Theme.resolve(state.theme.colorScheme ?? .light).accent)
+        .onChange(of: state.theme) { _, _ in
+            TabBarStyle.apply(theme: D1Theme.resolve(state.theme.colorScheme ?? .light))
+        }
         .onAppear(perform: applyDebugScreen)
     }
 

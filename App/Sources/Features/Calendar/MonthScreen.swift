@@ -144,7 +144,7 @@ struct MonthScreen: View {
                 if let marker = cell.marker {
                     Text(marker.name)
                         .font(.system(size: 7, weight: .semibold))
-                        .foregroundStyle(marker.kind == .solarTerm ? theme.jade : theme.accentStrong)
+                        .foregroundStyle(marker.kind == .solarTerm ? theme.solarTermText : theme.festivalText)
                         .lineLimit(1)
                         .minimumScaleFactor(0.7)
                 } else {
