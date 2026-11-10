@@ -9,7 +9,9 @@ struct DayDetailScreen: View {
     @State private var expandYiJi = false
     @State private var expandMore = false
 
-    private var almanac: AlmanacDay { state.almanac(date, hour: BeijingTime.hour(of: Date())) }
+    private var almanac: AlmanacDay {
+        state.almanac(date, hour: state.debugHour ?? BeijingTime.hour(of: Date()))
+    }
 
     var body: some View {
         ScrollView {

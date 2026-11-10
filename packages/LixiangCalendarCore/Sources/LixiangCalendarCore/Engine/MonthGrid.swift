@@ -7,6 +7,9 @@ public struct GridDay: Hashable, Sendable {
     public var inCurrentMonth: Bool
     /// 月格第二行：初一显示月名（如「十月」），其余显示日（如「初三」）
     public var lunarLabel: String
+    /// 月格标签（优先级：节日名 > 节气 > 农历月/日）——D1 细节修 §1 / designer 复核
+    public var label: String
+    public var labelKind: DayMarker.Kind?
     public var marker: DayMarker?
 }
 
@@ -54,17 +57,17 @@ public enum MonthGridBuilder {
             } else {
                 label = lunar.dayInChinese
             }
+            let festivals = festivalNames(localDate)
             var marker: DayMarker?
-            if let term = lunar.jieQi {
+            if let f = festivals.first {
+                marker = DayMarker(kind: .festival, name: f)
+            } else if let term = lunar.jieQi {
                 marker = DayMarker(kind: .solarTerm, name: term)
-            } else {
-                let festivals = festivalNames(localDate)
-                if let f = festivals.first {
-                    marker = DayMarker(kind: .festival, name: f)
-                }
             }
+            let displayLabel = marker?.name ?? label
             cells.append(GridDay(date: localDate, lunar: lunar, isToday: localDate == today,
-                                 inCurrentMonth: inMonth, lunarLabel: label, marker: marker))
+                                 inCurrentMonth: inMonth, lunarLabel: label,
+                                 label: displayLabel, labelKind: marker?.kind, marker: marker))
         }
         return MonthGrid(year: year, month: month, days: cells, leadingBlanks: blanks)
     }

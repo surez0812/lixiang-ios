@@ -192,3 +192,49 @@ private let authority2026: [(String, String, Int)] = [
     #expect(r.duplicates.contains("祭祀"))
     #expect(r.duplicates.contains("开光"))
 }
+
+
+// MARK: - FRD v1.3：月格标签优先级（节日 > 节气 > 农历月名）
+
+@Test func monthGridLabelPriority() {
+    let grid = MonthGridBuilder.build(year: 2026, month: 11, weekStart: .monday, engine: engine, today: LocalDate(2026, 11, 11),
+                                      festivalNames: { date in
+                                          FestivalFilter.filtered(engine.almanac(date, hour: 12).festivals, scope: .cn)
+                                      })
+    let cells = Dictionary(uniqueKeysWithValues: grid.days.map { ($0.date, $0) })
+    #expect(cells[LocalDate(2026, 11, 9)]?.label == "寒衣节")   // 十月初一 + 寒衣节 → 节日优先
+    #expect(cells[LocalDate(2026, 11, 7)]?.label == "立冬")
+    #expect(cells[LocalDate(2026, 11, 22)]?.label == "小雪")
+    #expect(cells[LocalDate(2026, 11, 23)]?.label == "下元节")
+    // 无节日/节气的初一显示农历月名
+    let dec = MonthGridBuilder.build(year: 2026, month: 12, weekStart: .monday, engine: engine, today: LocalDate(2026, 11, 11),
+                                     festivalNames: { date in
+                                         FestivalFilter.filtered(engine.almanac(date, hour: 12).festivals, scope: .cn)
+                                     })
+    #expect(dec.days.contains { $0.date == LocalDate(2026, 12, 22) && $0.label == "冬至" })
+}
+
+// MARK: - 时辰时间注入（截图 09:41→巳时；01:17→丑时；23:xx→晚子）
+
+@Test func currentHourIndexByInjectedHour() {
+    let date = LocalDate(2026, 11, 11)
+    #expect(engine.almanac(date, hour: 9).currentHourIndex == 5)    // 巳时 09:00–10:59
+    #expect(engine.almanac(date, hour: 1).currentHourIndex == 1)    // 丑时 01:00–02:59
+    #expect(engine.almanac(date, hour: 23).currentHourIndex == 12)  // 晚子 23:00–23:59
+    #expect(engine.almanac(date, hour: 0).currentHourIndex == 0)    // 早子 00:00–00:59
+}
+
+// MARK: - 节俗索引三组 + 冬至 41 天 + 已过项
+
+@Test func contentIndexGroups() {
+    let resolutions = ContentResolver.resolve(items: ContentFixtures.all, now: LocalDate(2026, 11, 11),
+                                               engine: engine, pastDays: 370, futureDays: 420)
+    let groups = ContentIndexBuilder.build(resolutions: resolutions, now: LocalDate(2026, 11, 11))
+    #expect(groups.today.isEmpty)
+    #expect(!groups.past.isEmpty)                                  // 清明/除夕/谢灶已过可回看
+    #expect(groups.past.allSatisfy { $0.state == .past && $0.date < LocalDate(2026, 11, 11) })
+    let dongzhi = groups.upcoming.first { $0.contentID == "dongzhi" }
+    #expect(dongzhi?.date == LocalDate(2026, 12, 22))
+    #expect(dongzhi?.days == 41)
+    #expect(groups.upcoming.first?.date == LocalDate(2026, 12, 22)) // 冬至在最前
+}

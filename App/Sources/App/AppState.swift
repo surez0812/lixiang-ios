@@ -35,6 +35,8 @@ final class AppState: ObservableObject {
     let debug: DebugOptions
     let engine: any CalendarEngine
     let today: LocalDate
+    /// 截图/测试注入“当前小时”（DEBUG）；nil = 系统时间
+    let debugHour: Int?
 
     private enum Keys {
         static let theme = "appearance"
@@ -57,6 +59,8 @@ final class AppState: ObservableObject {
         self.showVernacular = UserDefaults.standard.bool(forKey: Keys.vernacular)
         self.engine = LunarSwiftEngine()
         self.today = debug.date ?? BeijingTime.today()
+        self.debugHour = debug.hour
+        self.cachedResolutions = nil
     }
 
     func setTheme(_ theme: AppTheme) { self.theme = theme }
@@ -64,8 +68,18 @@ final class AppState: ObservableObject {
     func almanac(_ date: LocalDate, hour: Int = 12) -> AlmanacDay { engine.almanac(date, hour: hour) }
     func lunar(_ date: LocalDate) -> LunarDate { engine.lunarDate(date, hour: 12) }
 
+    private var cachedResolutions: [ContentResolution]?
+
     func resolutions() -> [ContentResolution] {
-        ContentResolver.resolve(items: ContentFixtures.all, now: today, engine: engine)
+        if let cached = cachedResolutions { return cached }
+        let resolved = ContentResolver.resolve(items: ContentFixtures.all, now: today, engine: engine,
+                                               pastDays: 370, futureDays: 420)
+        cachedResolutions = resolved
+        return resolved
+    }
+
+    func indexGroups() -> (past: [ContentIndexRow], today: [ContentIndexRow], upcoming: [ContentIndexRow]) {
+        ContentIndexBuilder.build(resolutions: resolutions(), now: today)
     }
 
     func contentItem(id: String) -> ContentItem? { ContentFixtures.all.first { $0.id == id } }

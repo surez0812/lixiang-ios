@@ -8,6 +8,7 @@ struct DebugOptions {
     var theme: String?
     var contentID: String?
     var language: String?
+    var hour: Int?
 
     static func parse(_ arguments: [String] = ProcessInfo.processInfo.arguments) -> DebugOptions {
         #if DEBUG
@@ -21,6 +22,7 @@ struct DebugOptions {
             case "-LixiangDebugDate": options.date = next().flatMap(LocalDate.init)
             case "-LixiangTheme": options.theme = next()
             case "-LixiangContentID": options.contentID = next()
+            case "-LixiangDebugHour": options.hour = next().flatMap(Int.init)
             case "-LixiangLang": options.language = next()
             default: break
             }

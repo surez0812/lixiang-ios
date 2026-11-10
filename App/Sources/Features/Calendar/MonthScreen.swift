@@ -137,19 +137,11 @@ struct MonthScreen: View {
                             Circle().strokeBorder(theme.accentStrong, lineWidth: 1.5)
                         }
                     }
-                Text(cell.lunarLabel)
-                    .font(.system(size: 8))
-                    .foregroundStyle(cell.inCurrentMonth ? theme.ink3 : theme.line)
+                Text(cell.label)
+                    .font(.system(size: 7.5, weight: cell.labelKind == nil ? .regular : .semibold))
+                    .foregroundStyle(labelColor(cell))
                     .lineLimit(1)
-                if let marker = cell.marker {
-                    Text(marker.name)
-                        .font(.system(size: 7, weight: .semibold))
-                        .foregroundStyle(marker.kind == .solarTerm ? theme.solarTermText : theme.festivalText)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.7)
-                } else {
-                    Text(" ").font(.system(size: 7))
-                }
+                    .minimumScaleFactor(0.7)
             }
             .frame(maxWidth: .infinity, minHeight: 52)
             .contentShape(Rectangle())
@@ -166,6 +158,16 @@ struct MonthScreen: View {
             D1Chip(text: "纪念日", tone: .neutral)
             Spacer()
             Image(systemName: "magnifyingglass").foregroundStyle(theme.ink3)
+        }
+    }
+
+    private func labelColor(_ cell: GridDay) -> Color {
+        guard cell.inCurrentMonth else { return theme.line }
+        switch cell.labelKind {
+        case .festival: return theme.festivalText
+        case .solarTerm: return theme.solarTermText
+        case .internationalFestival: return theme.ink3
+        case nil: return theme.ink3
         }
     }
 
