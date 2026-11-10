@@ -1,0 +1,17 @@
+// 历象 / Lixiang — shared build settings.
+// Bundle ID 已定（Lead 2026-11-11）：xin.zhaoyao.lixiang；备案后不要改。
+LIXIANG_BUNDLE_ID = xin.zhaoyao.lixiang
+// 最低 iOS：17.0（已定；覆盖方式见 docs/DEV_WORKFLOW.md 实现阶段补充）
+LIXIANG_MIN_IOS = 17.0
+
+IPHONEOS_DEPLOYMENT_TARGET = $(LIXIANG_MIN_IOS)
+SWIFT_VERSION = 6.0
+TARGETED_DEVICE_FAMILY = 1,2
+// 版本号：提交审核前与 App Store Connect 逐字一致；build 号每次上传 +1。
+MARKETING_VERSION = 1.0
+CURRENT_PROJECT_VERSION = 1
+// App 显示名（InfoPlist.xcstrings 在实现阶段接入）
+LIXIANG_DISPLAY_NAME_ZH = 历象
+LIXIANG_DISPLAY_NAME_EN = Lixiang
+
+#include? "Local.xcconfig"
