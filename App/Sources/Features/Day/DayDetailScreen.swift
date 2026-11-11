@@ -199,6 +199,8 @@ struct DayDetailScreen: View {
                                     RoundedRectangle(cornerRadius: 3).strokeBorder(theme.ink, lineWidth: 1.6)
                                 }
                             }
+                            .accessibilityElement()
+                            .accessibilityLabel("\(shichenName(idx))，\(h.colorKind)，宜\(h.yiCount)忌\(h.jiCount)")
                     }
                 }
                 HStack(spacing: 12) {
@@ -206,6 +208,7 @@ struct DayDetailScreen: View {
                     Spacer()
                     Text("当前 \(currentShichenName) \(currentShichenRange)").d1Font(9).foregroundStyle(theme.ink3)
                 }
+                Text("平 = 宜忌并见/相近；传统参考，非吉凶预测。").d1Font(9).foregroundStyle(theme.ink3)
                 Button(showAllHours ? "收起时辰详情" : "展开 12 时段详情") { D1Motion.withAnimation { showAllHours.toggle() } }
                     .d1Font(10, weight: .semibold).foregroundStyle(theme.accentStrong)
             }
@@ -214,9 +217,13 @@ struct DayDetailScreen: View {
 
     private var mergedHours: [BandHour] {
         let src = almanac.hours
-        guard src.count >= 13 else { return src.map { BandHour(yi: $0.yi, ji: $0.ji) } }
-        var out: [BandHour] = [BandHour(yi: src[0].yi + src[12].yi, ji: src[0].ji + src[12].ji)]
-        out += src[1...11].map { BandHour(yi: $0.yi, ji: $0.ji) }
+        func counts(_ h: LunarHour) -> (Int, Int) {
+            (h.yi.filter { $0 != "无" }.count, h.ji.filter { $0 != "无" }.count)
+        }
+        guard src.count >= 13 else { return src.map { let c = counts($0); return BandHour(yiCount: c.0, jiCount: c.1) } }
+        let early = counts(src[0]); let late = counts(src[12])
+        var out: [BandHour] = [BandHour(yiCount: early.0 + late.0, jiCount: early.1 + late.1)]
+        out += src[1...11].map { let c = counts($0); return BandHour(yiCount: c.0, jiCount: c.1) }
         return out
     }
 
@@ -224,6 +231,13 @@ struct DayDetailScreen: View {
         guard let idx = almanac.currentHourIndex else { return -1 }
         if idx == 0 || idx == 12 { return 0 }
         return max(0, min(11, idx))
+    }
+
+    private func shichenName(_ idx: Int) -> String {
+        if idx == 0 { return "子时" }
+        let srcIdx = idx
+        guard srcIdx < almanac.hours.count else { return "—" }
+        return "\(almanac.hours[srcIdx].ganZhi)时"
     }
 
     private var currentShichenName: String {
@@ -471,16 +485,30 @@ private struct DisplayHour: Identifiable {
     let segments: [DisplaySegment]
 }
 
+/// 时辰色带（designer spec 8bfd6750 / 验收 3-7-2、4-7-1、2-8-2）：
+/// 单边覆盖：仅宜→绿、仅忌→朱；宜忌并见或双无→平（琥珀）
+/// 注：PM 文字中的 score(宜数−忌数) 版本与验收数字不一致，已按验收数字实现并在证据中给出两套分布
 struct BandHour {
-    var yi: [String]
-    var ji: [String]
+    var yiCount: Int
+    var jiCount: Int
+    var score: Int { yiCount - jiCount }
+    var colorKind: String {
+        if yiCount > 0 && jiCount == 0 { return "宜" }
+        if jiCount > 0 && yiCount == 0 { return "忌" }
+        return "平"
+    }
     func color(_ theme: D1Theme) -> Color {
-        let hasYi = !yi.isEmpty
-        let hasJi = !ji.isEmpty
-        if hasYi && hasJi { return theme.amber }
-        if hasYi { return theme.jade }
-        if hasJi { return theme.red }
-        return theme.amber
+        switch colorKind {
+        case "宜": return theme.jade
+        case "忌": return theme.red
+        default: return theme.amber
+        }
+    }
+    /// B′ 计数版（仅供证据对照）
+    var b2ColorKind: String {
+        if score >= 2 { return "宜" }
+        if score <= -2 { return "忌" }
+        return "平"
     }
 }
 
