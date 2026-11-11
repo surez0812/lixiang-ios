@@ -9,7 +9,7 @@ SWIFT_VERSION = 6.0
 TARGETED_DEVICE_FAMILY = 1,2
 // 版本号：提交审核前与 App Store Connect 逐字一致；build 号每次上传 +1。
 MARKETING_VERSION = 1.0
-CURRENT_PROJECT_VERSION = 2
+CURRENT_PROJECT_VERSION = 3
 // App 显示名（InfoPlist.xcstrings 在实现阶段接入）
 LIXIANG_DISPLAY_NAME_ZH = 历象
 LIXIANG_DISPLAY_NAME_EN = Lixiang
