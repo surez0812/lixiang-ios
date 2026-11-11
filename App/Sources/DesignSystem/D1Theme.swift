@@ -9,6 +9,7 @@ struct D1Theme {
     var bg3: Color
     var paper: Color
     var red: Color
+    var amber: Color
     var cream: Color
     var quote1: Color
     var quote2: Color
@@ -41,7 +42,7 @@ struct D1Theme {
 
     static let light = D1Theme(
         bg: Color(hex: 0xF7EBDC), bg1: Color(hex: 0xF7EBDC), bg2: Color(hex: 0xF1C795), bg3: Color(hex: 0xEBB878),
-        paper: Color(hex: 0xFFF8EC), red: Color(hex: 0xC0452C), cream: Color(hex: 0xFFF1D8),
+        paper: Color(hex: 0xFFF8EC), red: Color(hex: 0xC0452C), amber: Color(hex: 0xE8A34B), cream: Color(hex: 0xFFF1D8),
         quote1: Color(hex: 0xC0452C), quote2: Color(hex: 0xE07A3C),
         card: Color(hex: 0xFFF8EC), soft: Color(hex: 0xF6E0C2),
         ink: Color(hex: 0x3A2417), ink2: Color(hex: 0x7A4F35), ink3: Color(hex: 0xA67B58),
@@ -56,7 +57,7 @@ struct D1Theme {
     )
     static let dark = D1Theme(
         bg: Color(hex: 0x241710), bg1: Color(hex: 0x241710), bg2: Color(hex: 0x1D110C), bg3: Color(hex: 0x160D09),
-        paper: Color(hex: 0x2F2016), red: Color(hex: 0xF08A5C), cream: Color(hex: 0xFFEED4),
+        paper: Color(hex: 0x2F2016), red: Color(hex: 0xF08A5C), amber: Color(hex: 0xF0B25C), cream: Color(hex: 0xFFEED4),
         quote1: Color(hex: 0x731C0D), quote2: Color(hex: 0x8B2A1A),
         card: Color(hex: 0x2F2016), soft: Color(hex: 0x3A281B),
         ink: Color(hex: 0xF7E6CE), ink2: Color(hex: 0xD9B794), ink3: Color(hex: 0xB08A68),
