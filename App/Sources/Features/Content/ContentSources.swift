@@ -109,7 +109,7 @@ struct SandboxContentSource: ContentSource {
         @media (prefers-color-scheme: dark) { body { background: transparent; } }
         </style></head><body>
         <h1>\(escape(item.title))</h1>
-        <figure><div class="img" role="img" aria-label="配图占位（16:9）：待内容团队提供并登记许可">配图 16:9 · 待内容团队提供</div>
+        <figure><div class="img" role="img" aria-label="配图占位（16:9）">配图 16:9</div>
         <figcaption>图位 16:9 · 无来源不明图片</figcaption></figure>
         \(sections)
         <footer>内容版本 \(escape(version)) · 更新于 \(escape(updatedAt)) · 北京时间解锁 · 网页静态发布（B′）</footer>

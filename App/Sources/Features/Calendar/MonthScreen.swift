@@ -105,8 +105,9 @@ struct MonthScreen: View {
                     .foregroundStyle(theme.ink2)
                     .lineLimit(1).minimumScaleFactor(0.8)
                 Text(ganZhiLine)
-                    .d1Font(10)
+                    .d1Font(12, weight: .medium)
                     .foregroundStyle(theme.ink3)
+                    .lineSpacing(4)
                     .lineLimit(1).minimumScaleFactor(0.8)
                     .accessibilityLabel("干支 \(ganZhiLine)")
                 HStack(spacing: 6) {

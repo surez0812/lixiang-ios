@@ -92,11 +92,14 @@ struct DayDetailScreen: View {
                     .frame(width: 118, alignment: .leading)
                 VStack(alignment: .leading, spacing: 5) {
                     Text(datePhrase)
-                        .d1SerifFont(20, weight: .semibold)
+                        .d1SerifFont(22, weight: .semibold)
                         .foregroundStyle(theme.ink)
-                        .lineLimit(2)
-                    Text("星期\(date.weekdayChinese) · \(almanac.lunar.yearGanZhi)年 · \(almanac.lunar.monthGanZhi)月")
-                        .d1Font(10).foregroundStyle(theme.ink3)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.7)
+                        .frame(maxWidth: 330, alignment: .leading)
+                    Text("星期\(date.weekdayChinese) · \(almanac.lunar.yearGanZhi)年 · \(almanac.lunar.monthGanZhi)月 · \(almanac.lunar.dayGanZhi)日")
+                        .d1Font(11).foregroundStyle(theme.ink3)
+                        .lineLimit(2).fixedSize(horizontal: false, vertical: true)
                     HStack(spacing: 6) {
                         D1Chip(text: "宜 \(almanac.yi.prefix(2).joined(separator: " "))", tone: .yi)
                         D1Chip(text: "忌 \(almanac.ji.prefix(2).joined(separator: " "))", tone: .ji)
@@ -105,7 +108,7 @@ struct DayDetailScreen: View {
                 Spacer(minLength: 0)
             }
             .padding(14)
-            .frame(height: 150)
+            .frame(height: 146)
             .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
             .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6), lineWidth: 0.8))
             Text(sealText)
@@ -162,9 +165,18 @@ struct DayDetailScreen: View {
                         RoundedRectangle(cornerRadius: 3)
                             .fill(h.color(theme))
                             .frame(maxWidth: .infinity, minHeight: 14)
+                            .overlay(alignment: .top) {
+                                if idx == currentMergedIndex {
+                                    VStack(spacing: 0) {
+                                        Image(systemName: "arrowtriangle.down.fill").d1Font(7).foregroundStyle(theme.ink)
+                                        Spacer(minLength: 0)
+                                    }
+                                    .offset(y: -9)
+                                }
+                            }
                             .overlay {
                                 if idx == currentMergedIndex {
-                                    RoundedRectangle(cornerRadius: 3).strokeBorder(theme.ink, lineWidth: 1.4)
+                                    RoundedRectangle(cornerRadius: 3).strokeBorder(theme.ink, lineWidth: 1.6)
                                 }
                             }
                     }
@@ -443,8 +455,11 @@ struct BandHour {
     var yi: [String]
     var ji: [String]
     func color(_ theme: D1Theme) -> Color {
-        if !yi.isEmpty { return theme.jade }
-        if !ji.isEmpty { return theme.red }
+        let hasYi = !yi.isEmpty
+        let hasJi = !ji.isEmpty
+        if hasYi && hasJi { return theme.amber }
+        if hasYi { return theme.jade }
+        if hasJi { return theme.red }
         return theme.amber
     }
 }

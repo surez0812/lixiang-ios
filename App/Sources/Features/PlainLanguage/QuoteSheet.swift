@@ -11,6 +11,19 @@ struct QuoteSheet: View {
 
     private var almanac: AlmanacDay { state.almanac(date) }
 
+    /// 只展示公开信息：去掉括号内草稿/待核对说明（如「王弼本（qwen4 草稿，待双源核对）」→「王弼本」）
+    private var publicSource: String {
+        var text = quote.source
+        for marker in ["qwen", "Qwen", "草稿", "待双源", "待核对", "待核", "TODO"] {
+            text = text.replacingOccurrences(of: marker, with: "")
+        }
+        if let idx = text.firstIndex(where: { $0 == "（" || $0 == "(" }) {
+            text = String(text[..<idx])
+        }
+        text = text.trimmingCharacters(in: CharacterSet(charactersIn: " ，,·（）()"))
+        return text.isEmpty ? "王弼本" : text
+    }
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -22,7 +35,9 @@ struct QuoteSheet: View {
                                 .d1Font(11).foregroundStyle(theme.ink2)
                             Text("\(date.day)").d1SerifFont(40).foregroundStyle(theme.ink)
                         }
-                        .padding(14)
+                        .padding(8)
+                        .background(theme.paper.opacity(0.78), in: RoundedRectangle(cornerRadius: 10))
+                        .padding(12)
                     }
                     quoteCard
                     explainCard
@@ -93,7 +108,7 @@ struct QuoteSheet: View {
                             .overlay(Capsule().strokeBorder(theme.line, lineWidth: 1))
                     }.buttonStyle(.plain)
                 }
-                Text("原文：\(quote.source)").d1Font(9).foregroundStyle(theme.ink3)
+                Text("原文：\(publicSource)").d1Font(9).foregroundStyle(theme.ink3)
             }
         }
     }

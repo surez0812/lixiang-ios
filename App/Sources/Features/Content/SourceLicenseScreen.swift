@@ -31,7 +31,7 @@ struct SourceLicenseScreen: View {
                                 }
                             }
                         } else {
-                            Text("来源信息待内容团队补充（P2 真内容接入）").font(.system(size: 11)).foregroundStyle(theme.ink3)
+                            Text("暂无公开来源条目（随内容版本更新）").font(.system(size: 11)).foregroundStyle(theme.ink3)
                         }
                     }
                 }
