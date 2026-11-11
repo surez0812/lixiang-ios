@@ -104,6 +104,11 @@ struct MonthScreen: View {
                     .d1Font(11)
                     .foregroundStyle(theme.ink2)
                     .lineLimit(1).minimumScaleFactor(0.8)
+                Text(ganZhiLine)
+                    .d1Font(10)
+                    .foregroundStyle(theme.ink3)
+                    .lineLimit(1).minimumScaleFactor(0.8)
+                    .accessibilityLabel("干支 \(ganZhiLine)")
                 HStack(spacing: 6) {
                     if let f = nearestHoliday() {
                         D1Chip(text: "距\(f.title) \(f.days) 天", tone: .accent)
@@ -121,6 +126,15 @@ struct MonthScreen: View {
         .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6), lineWidth: 0.8))
         .accessibilityElement(children: .combine)
         .accessibilityLabel("\(today.month)月\(today.day)日，\(dateCardTitle)，\(dateCardSubtitle)")
+    }
+
+    /// 首页完整干支：年/月/日（闰月/月建按库表，不自算；缺项回退日干支）
+    private var ganZhiLine: String {
+        let y = almanac.lunar.yearGanZhi
+        let m = almanac.lunar.monthGanZhi
+        let d = almanac.lunar.dayGanZhi
+        guard !y.isEmpty, !m.isEmpty, !d.isEmpty else { return "\(d)日" }
+        return "\(y)年 · \(m)月 · \(d)日"
     }
 
     private var dateCardTitle: String {
