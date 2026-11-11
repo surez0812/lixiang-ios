@@ -1,470 +1,597 @@
 [
  {
-  "term": "开光",
-  "category": "仪式",
-  "zh": "给新物件做个象征性的启用仪式（民俗说法）",
-  "en": "hold a small ceremony to mark a new object as ready (folk custom)"
- },
- {
-  "term": "裁衣",
-  "category": "生活",
-  "zh": "添置或缝制衣物",
-  "en": "buy or make clothes"
- },
- {
-  "term": "安门",
-  "category": "居家",
-  "zh": "安装或更换门",
-  "en": "install or replace a door"
- },
- {
-  "term": "嫁娶",
-  "category": "人生",
-  "zh": "办婚礼、成家",
-  "en": "get married or hold a wedding"
- },
- {
-  "term": "冠笄",
-  "category": "人生",
-  "zh": "给孩子办成年礼",
-  "en": "hold a coming-of-age ceremony"
- },
- {
-  "term": "出行",
-  "category": "出行",
-  "zh": "出远门、开始一段行程",
-  "en": "take a trip or start a journey"
- },
- {
-  "term": "安床",
-  "category": "居家",
-  "zh": "安放或更换床铺",
-  "en": "set up or replace a bed"
- },
- {
-  "term": "结网",
-  "category": "劳作",
-  "zh": "做网具、铺开长期的事",
-  "en": "make nets or start something long-term"
- },
- {
-  "term": "修造",
-  "category": "居家",
-  "zh": "动工修缮房屋",
-  "en": "repair or renovate the house"
- },
- {
-  "term": "动土",
-  "category": "工程",
-  "zh": "开始挖土施工",
-  "en": "break ground for construction"
- },
- {
-  "term": "移徙",
-  "category": "居家",
-  "zh": "搬家、换住处",
-  "en": "move house"
- },
- {
-  "term": "祭祀",
-  "category": "仪式",
-  "zh": "按传统祭拜、缅怀",
-  "en": "make traditional offerings or remember ancestors"
- },
- {
-  "term": "祈福",
-  "category": "仪式",
-  "zh": "按传统许愿求平安",
-  "en": "make a traditional wish for peace"
- },
- {
-  "term": "安葬",
-  "category": "人生",
-  "zh": "安放逝者",
-  "en": "lay a loved one to rest"
- },
- {
-  "term": "伐木",
-  "category": "劳作",
-  "zh": "砍树、备木料",
-  "en": "cut trees or prepare timber"
- },
- {
-  "term": "求嗣",
-  "category": "人生",
-  "zh": "按传统祈愿生育",
-  "en": "make a traditional wish for a child"
- },
- {
-  "term": "开市",
-  "category": "生意",
-  "zh": "开张、开始营业",
-  "en": "open a shop or start business"
- },
- {
-  "term": "交易",
-  "category": "生意",
-  "zh": "谈买卖、成交",
-  "en": "make a deal or trade"
- },
- {
-  "term": "立券",
-  "category": "生意",
-  "zh": "签合同、立字据",
-  "en": "sign a contract or agreement"
- },
- {
-  "term": "纳财",
-  "category": "生意",
-  "zh": "收钱、进账",
-  "en": "receive payment or income"
- },
- {
-  "term": "纳畜",
-  "category": "农事",
-  "zh": "添置家畜",
-  "en": "take in livestock"
- },
- {
-  "term": "破土",
-  "category": "工程",
-  "zh": "开工挖土",
-  "en": "break ground"
- },
- {
-  "term": "起基",
-  "category": "工程",
-  "zh": "打地基",
-  "en": "lay the foundation"
- },
- {
-  "term": "竖柱",
-  "category": "工程",
-  "zh": "立柱、立框架",
-  "en": "raise pillars or frames"
- },
- {
   "term": "上梁",
-  "category": "工程",
-  "zh": "架屋梁",
-  "en": "raise the roof beam"
- },
- {
-  "term": "盖屋",
-  "category": "工程",
-  "zh": "盖房顶",
-  "en": "build or roof a house"
- },
- {
-  "term": "合脊",
-  "category": "工程",
-  "zh": "做屋顶脊线",
-  "en": "finish the roof ridge"
- },
- {
-  "term": "掘井",
-  "category": "工程",
-  "zh": "挖井、打井",
-  "en": "dig a well"
- },
- {
-  "term": "开渠",
-  "category": "工程",
-  "zh": "挖水渠",
-  "en": "dig a channel"
- },
- {
-  "term": "放水",
-  "category": "农事",
-  "zh": "引水、放水",
-  "en": "release or channel water"
- },
- {
-  "term": "扫舍",
-  "category": "居家",
-  "zh": "打扫屋子",
-  "en": "clean the house"
- },
- {
-  "term": "理发",
-  "category": "生活",
-  "zh": "剪头发",
-  "en": "get a haircut"
- },
- {
-  "term": "沐浴",
-  "category": "生活",
-  "zh": "洗澡、清洁身体",
-  "en": "bathe or cleanse"
- },
- {
-  "term": "针灸",
-  "category": "健康",
-  "zh": "做针灸",
-  "en": "have acupuncture"
- },
- {
-  "term": "治病",
-  "category": "健康",
-  "zh": "看病、治疗",
-  "en": "see a doctor or seek treatment"
- },
- {
-  "term": "栽种",
-  "category": "农事",
-  "zh": "种花种菜种树",
-  "en": "plant flowers, vegetables or trees"
- },
- {
-  "term": "纳采",
-  "category": "婚俗",
-  "zh": "提亲、送彩礼",
-  "en": "make a marriage proposal"
- },
- {
-  "term": "订盟",
-  "category": "婚俗",
-  "zh": "订婚、定亲",
-  "en": "get engaged"
- },
- {
-  "term": "会亲友",
-  "category": "社交",
-  "zh": "见朋友、走亲戚",
-  "en": "meet friends or relatives"
- },
- {
-  "term": "入学",
-  "category": "学习",
-  "zh": "入学、开始学习",
-  "en": "start school or a course"
- },
- {
-  "term": "赴任",
-  "category": "工作",
-  "zh": "到岗、上任",
-  "en": "take up a new post"
- },
- {
-  "term": "求医",
-  "category": "健康",
-  "zh": "找医生看诊",
-  "en": "consult a doctor"
- },
- {
-  "term": "拆卸",
-  "category": "工程",
-  "zh": "拆掉旧结构",
-  "en": "take down old structures"
- },
- {
-  "term": "入殓",
-  "category": "人生",
-  "zh": "为逝者更衣入棺",
-  "en": "prepare a loved one for burial"
- },
- {
-  "term": "成服",
-  "category": "人生",
-  "zh": "丧礼中穿孝服",
-  "en": "put on mourning attire"
- },
- {
-  "term": "除服",
-  "category": "人生",
-  "zh": "脱孝服、结束守孝",
-  "en": "end mourning"
- },
- {
-  "term": "移柩",
-  "category": "人生",
-  "zh": "迁动棺木",
-  "en": "move a coffin"
- },
- {
-  "term": "谢土",
-  "category": "仪式",
-  "zh": "答谢土地的传统仪式",
-  "en": "traditional rite thanking the land"
- },
- {
-  "term": "修坟",
-  "category": "人生",
-  "zh": "修整坟墓",
-  "en": "tend a grave"
- },
- {
-  "term": "合帐",
-  "category": "居家",
-  "zh": "挂帐、布置床帐",
-  "en": "set up bed curtains"
- },
- {
-  "term": "造仓",
-  "category": "农事",
-  "zh": "建粮仓",
-  "en": "build a granary"
- },
- {
-  "term": "平治道涂",
-  "category": "工程",
-  "zh": "修整道路",
-  "en": "repair roads"
- },
- {
-  "term": "整手足甲",
-  "category": "生活",
-  "zh": "修剪指甲",
-  "en": "trim nails"
- },
- {
-  "term": "补垣塞穴",
-  "category": "居家",
-  "zh": "修补墙洞、堵缝隙",
-  "en": "patch walls and fill gaps"
- },
- {
-  "term": "破屋坏垣",
-  "category": "工程",
-  "zh": "拆旧屋、拆墙",
-  "en": "demolish old walls or buildings"
- },
- {
-  "term": "造庙",
-  "category": "工程",
-  "zh": "建庙宇",
-  "en": "build a temple"
- },
- {
-  "term": "入宅",
-  "category": "居家",
-  "zh": "搬进新家",
-  "en": "move into a new home"
- },
- {
-  "term": "分居",
-  "category": "家庭",
-  "zh": "分开居住",
-  "en": "live apart"
- },
- {
-  "term": "进人口",
-  "category": "家庭",
-  "zh": "家里添人（收养/雇请）",
-  "en": "add a member to the household"
- },
- {
-  "term": "出货财",
-  "category": "生意",
-  "zh": "出货、支出大笔钱",
-  "en": "ship goods or spend a large sum"
- },
- {
-  "term": "经络",
-  "category": "劳作",
-  "zh": "做纺织、布线一类细活",
-  "en": "do textile or wiring work"
- },
- {
-  "term": "酝酿",
-  "category": "生活",
-  "zh": "酿酒、做发酵食物",
-  "en": "brew or ferment food"
- },
- {
-  "term": "开池",
-  "category": "工程",
-  "zh": "挖水池",
-  "en": "dig a pond"
- },
- {
-  "term": "置产",
-  "category": "居家",
-  "zh": "买房买地",
-  "en": "buy property"
- },
- {
-  "term": "修门",
-  "category": "居家",
-  "zh": "修门",
-  "en": "repair doors"
- },
- {
-  "term": "造车器",
-  "category": "劳作",
-  "zh": "造车、做器具",
-  "en": "make vehicles or tools"
- },
- {
-  "term": "修饰垣墙",
-  "category": "居家",
-  "zh": "粉刷修整墙面",
-  "en": "paint or repair walls"
- },
- {
-  "term": "筑堤防",
-  "category": "工程",
-  "zh": "修堤坝",
-  "en": "build embankments"
- },
- {
-  "term": "开生坟",
-  "category": "人生",
-  "zh": "提前修寿坟",
-  "en": "prepare a burial plot in advance"
- },
- {
-  "term": "启攒",
-  "category": "人生",
-  "zh": "迁葬、起骨",
-  "en": "move a grave"
- },
- {
-  "term": "求财",
-  "category": "生意",
-  "zh": "求收入、谋财路",
-  "en": "seek income"
- },
- {
-  "term": "词讼",
-  "category": "事务",
-  "zh": "打官司、处理纠纷",
-  "en": "go to court or settle disputes"
- },
- {
-  "term": "安碓硙",
-  "category": "劳作",
-  "zh": "安放石磨一类器具",
-  "en": "install a mill or grinder"
- },
- {
-  "term": "造畜稠",
-  "category": "农事",
-  "zh": "搭牲畜棚",
-  "en": "build a livestock shed"
- },
- {
-  "term": "牧养",
-  "category": "农事",
-  "zh": "放牧、养牲畜",
-  "en": "graze or raise livestock"
- },
- {
-  "term": "教牛马",
-  "category": "农事",
-  "zh": "训练牛马",
-  "en": "train cattle or horses"
+  "zh": "装好房顶主梁",
+  "en": "Install the main roof beam"
  },
  {
   "term": "上表章",
-  "category": "事务",
-  "zh": "递文书、上报",
-  "en": "submit documents or reports"
+  "zh": "向上级递交报告或申请",
+  "en": "Submit reports or requests to superiors"
+ },
+ {
+  "term": "习艺",
+  "zh": "报名学一门新手艺",
+  "en": "Learn a new skill or craft"
+ },
+ {
+  "term": "交易",
+  "zh": "签合同付款完成买卖",
+  "en": "Sign contracts and finalize purchases"
+ },
+ {
+  "term": "伐木",
+  "zh": "修剪院子里多余的树枝",
+  "en": "Trim overgrown branches in the yard"
+ },
+ {
+  "term": "会亲友",
+  "zh": "约亲戚朋友吃饭叙旧",
+  "en": "Get together with family and friends"
+ },
+ {
+  "term": "作梁",
+  "zh": "安装房顶主梁木",
+  "en": "Install the main roof beam"
+ },
+ {
+  "term": "作灶",
+  "zh": "装好厨房灶台开火做饭",
+  "en": "Set up kitchen stove and cook"
+ },
+ {
+  "term": "修坟",
+  "zh": "去墓地清理杂草、修整墓碑",
+  "en": "Tidy the grave and clear weeds"
+ },
+ {
+  "term": "修造",
+  "zh": "动手装修翻新房子",
+  "en": "Start home renovation work"
+ },
+ {
+  "term": "修门",
+  "zh": "修理或更换家门",
+  "en": "Repair or replace doors at home"
+ },
+ {
+  "term": "修饰垣墙",
+  "zh": "修补墙面、粉刷围墙",
+  "en": "Patch walls and repaint fences"
+ },
+ {
+  "term": "入学",
+  "zh": "去新学校报到注册",
+  "en": "Register and start at a new school"
+ },
+ {
+  "term": "入宅",
+  "zh": "搬进新家正式入住",
+  "en": "Move into your new home"
+ },
+ {
+  "term": "入殓",
+  "zh": "整理逝者遗容穿戴衣物",
+  "en": "Dress and prepare the deceased"
+ },
+ {
+  "term": "冠笄",
+  "zh": "办成人礼或拍纪念照",
+  "en": "Plan a coming-of-age party or photos"
+ },
+ {
+  "term": "出火",
+  "zh": "把旧炉灶搬到新位置",
+  "en": "Move stove to a new spot"
+ },
+ {
+  "term": "出行",
+  "zh": "出门旅行或出差办事",
+  "en": "Go on a trip or travel for work"
+ },
+ {
+  "term": "出货财",
+  "zh": "发货收款清点库存",
+  "en": "Ship goods and collect payments"
+ },
+ {
+  "term": "分居",
+  "zh": "和家人分开各住一处",
+  "en": "Live apart from family members"
+ },
+ {
+  "term": "割蜜",
+  "zh": "去蜂箱采收新鲜蜂蜜",
+  "en": "Harvest fresh honey from beehives"
+ },
+ {
+  "term": "动土",
+  "zh": "开挖地基平整土地",
+  "en": "Break ground for construction"
+ },
+ {
+  "term": "取渔",
+  "zh": "带上渔具去河边钓鱼",
+  "en": "Go fishing by the river"
+ },
+ {
+  "term": "合寿木",
+  "zh": "提前定制老人棺木",
+  "en": "Pre-order a coffin for elders"
+ },
+ {
+  "term": "合帐",
+  "zh": "挂好新窗帘或装床帘",
+  "en": "Hang new curtains or bed canopy"
+ },
+ {
+  "term": "合脊",
+  "zh": "封好屋脊接缝",
+  "en": "Seal the roof ridge joints"
+ },
+ {
+  "term": "启攒",
+  "zh": "迁坟拾骨、整理先人遗骸",
+  "en": "Relocate remains to a new gravesite"
+ },
+ {
+  "term": "启钻",
+  "zh": "开旧坟捡骨重新安葬",
+  "en": "Open old grave to rebury remains"
+ },
+ {
+  "term": "坏垣",
+  "zh": "拆除旧围墙或隔断墙",
+  "en": "Tear down old walls or partitions"
+ },
+ {
+  "term": "塑绘",
+  "zh": "画肖像或给雕塑上色",
+  "en": "Paint portraits or color sculptures"
+ },
+ {
+  "term": "塞穴",
+  "zh": "封堵墙洞和鼠蚁洞口",
+  "en": "Seal wall holes and pest burrows"
+ },
+ {
+  "term": "嫁娶",
+  "zh": "办婚礼、领证、摆酒席",
+  "en": "Hold a wedding or register marriage"
+ },
+ {
+  "term": "安床",
+  "zh": "摆好床铺换新床单",
+  "en": "Set up bed with fresh sheets"
+ },
+ {
+  "term": "安机械",
+  "zh": "安装调试新机器设备",
+  "en": "Install and set up new machinery"
+ },
+ {
+  "term": "安碓硙",
+  "zh": "安装调试碾米磨面设备",
+  "en": "Install or repair grain milling equipment"
+ },
+ {
+  "term": "安碓磑",
+  "zh": "装好石磨准备用",
+  "en": "Set up the stone mill"
+ },
+ {
+  "term": "安葬",
+  "zh": "整理故人遗物妥善收纳",
+  "en": "Sort and store departed one's belongings"
+ },
+ {
+  "term": "安门",
+  "zh": "安装或更换家里的房门",
+  "en": "Install or replace doors at home"
+ },
+ {
+  "term": "安香",
+  "zh": "摆好香炉点上线香",
+  "en": "Place incense burner, light sticks"
+ },
+ {
+  "term": "定磉",
+  "zh": "放稳柱底石墩",
+  "en": "Set column base stones in place"
+ },
+ {
+  "term": "平治道涂",
+  "zh": "修补门前坑洼路面",
+  "en": "Fix potholes on your driveway"
+ },
+ {
+  "term": "开仓",
+  "zh": "打开粮仓取粮备货",
+  "en": "Open storage, take out grain"
+ },
+ {
+  "term": "开光",
+  "zh": "给新物件做首次清洁启用",
+  "en": "Clean and activate a new item"
+ },
+ {
+  "term": "开厕",
+  "zh": "挖坑搭建卫生间",
+  "en": "Dig pit, build a toilet"
+ },
+ {
+  "term": "开市",
+  "zh": "新店开张上架首批商品",
+  "en": "Launch your shop and list products"
+ },
+ {
+  "term": "开柱眼",
+  "zh": "在木柱上凿出榫孔",
+  "en": "Cut mortise holes in wood posts"
+ },
+ {
+  "term": "开池",
+  "zh": "开挖鱼塘或泳池",
+  "en": "Dig a new pond or swimming pool"
+ },
+ {
+  "term": "开渠",
+  "zh": "挖一条引水沟渠",
+  "en": "Dig a channel to divert water"
+ },
+ {
+  "term": "开生坟",
+  "zh": "提前选好墓地并规划布局",
+  "en": "Pre-select and plan a burial plot"
+ },
+ {
+  "term": "归宁",
+  "zh": "回娘家看望爸妈",
+  "en": "Visit your parents' home"
+ },
+ {
+  "term": "归岫",
+  "zh": "把祖先牌位安置妥当",
+  "en": "Place the ancestral tablet properly"
+ },
+ {
+  "term": "成服",
+  "zh": "穿上丧服参加告别仪式",
+  "en": "Wear mourning clothes for farewell"
+ },
+ {
+  "term": "扫舍",
+  "zh": "打扫房间清理角落积灰",
+  "en": "Deep clean your home"
+ },
+ {
+  "term": "拆卸",
+  "zh": "拆掉旧墙或旧棚子",
+  "en": "Tear down old walls or sheds"
+ },
+ {
+  "term": "挂匾",
+  "zh": "给新店挂上招牌门头",
+  "en": "Hang up your new shop sign"
+ },
+ {
+  "term": "捕捉",
+  "zh": "去池塘河边抓鱼捞虾",
+  "en": "Go fishing or catch shrimp"
+ },
+ {
+  "term": "掘井",
+  "zh": "在院子里挖口水井",
+  "en": "Dig a water well in the yard"
+ },
+ {
+  "term": "探病",
+  "zh": "去医院或家里看望病人",
+  "en": "Visit someone who is sick"
+ },
+ {
+  "term": "放水",
+  "zh": "开闸往田里灌水",
+  "en": "Open the gate to irrigate fields"
+ },
+ {
+  "term": "教牛马",
+  "zh": "训练牛马适应耕作骑乘",
+  "en": "Train cattle or horses for farm work"
+ },
+ {
+  "term": "整手足甲",
+  "zh": "剪指甲、做手部足部护理",
+  "en": "Trim nails, do a manicure or pedicure"
+ },
+ {
+  "term": "斋醮",
+  "zh": "在家安静吃素清清肠胃",
+  "en": "Eat a quiet vegetarian meal at home"
+ },
+ {
+  "term": "断蚁",
+  "zh": "清理家中蚂蚁窝和虫巢",
+  "en": "Clear ant nests around the house"
+ },
+ {
+  "term": "普渡",
+  "zh": "做顿饭请邻居朋友一起吃",
+  "en": "Cook a meal and invite neighbors over"
+ },
+ {
+  "term": "架马",
+  "zh": "搭脚手架准备装修施工",
+  "en": "Set up scaffolding for renovation work"
+ },
+ {
+  "term": "栽种",
+  "zh": "在阳台种花或给绿植换盆",
+  "en": "Plant flowers or repot plants"
+ },
+ {
+  "term": "求医",
+  "zh": "去医院挂号看病做检查",
+  "en": "See a doctor and get medical checkups"
  },
  {
   "term": "求医疗病",
-  "category": "健康",
-  "zh": "看医生治病",
-  "en": "seek medical treatment"
+  "zh": "预约看病检查身体治疗",
+  "en": "See a doctor or start medical treatment"
+ },
+ {
+  "term": "求嗣",
+  "zh": "和家人商量备孕计划",
+  "en": "Discuss family planning with partner"
+ },
+ {
+  "term": "求财",
+  "zh": "谈生意、催回款、找赚钱机会",
+  "en": "Chase payments and pitch new deals"
+ },
+ {
+  "term": "沐浴",
+  "zh": "泡个澡好好放松一下",
+  "en": "Take a relaxing bath"
+ },
+ {
+  "term": "治病",
+  "zh": "去医院检查治疗身体不适",
+  "en": "See a doctor for checkup"
+ },
+ {
+  "term": "牧养",
+  "zh": "放牧喂养家中禽畜",
+  "en": "Graze and feed your livestock today"
+ },
+ {
+  "term": "理发",
+  "zh": "去理发店剪个新发型",
+  "en": "Get a haircut"
+ },
+ {
+  "term": "畋猎",
+  "zh": "去郊外钓鱼或户外捕猎",
+  "en": "Go fishing or hunting outdoors"
+ },
+ {
+  "term": "盖屋",
+  "zh": "给房子封顶铺瓦",
+  "en": "Build and finish the rooftop"
+ },
+ {
+  "term": "破土",
+  "zh": "开挖地基、动第一锹土",
+  "en": "Break ground for construction"
+ },
+ {
+  "term": "破屋",
+  "zh": "拆除旧房子或废旧棚屋",
+  "en": "Tear down an old shed or building"
+ },
+ {
+  "term": "破屋坏垣",
+  "zh": "拆除旧墙和废弃房屋",
+  "en": "Tear down old walls and sheds"
+ },
+ {
+  "term": "祈福",
+  "zh": "去公园散步放松身心",
+  "en": "Take a relaxing walk outdoors"
+ },
+ {
+  "term": "祭祀",
+  "zh": "—（禁用：宗教类术语）",
+  "en": "— (blocked: religious term)"
+ },
+ {
+  "term": "移徙",
+  "zh": "打包搬家入住新居",
+  "en": "Pack up and move house"
+ },
+ {
+  "term": "移柩",
+  "zh": "将棺木转移到安葬地点",
+  "en": "Move coffin to the burial site"
+ },
+ {
+  "term": "立券",
+  "zh": "签合同、办协议手续",
+  "en": "Sign contracts or agreements"
+ },
+ {
+  "term": "立碑",
+  "zh": "给亲人墓地立一块石碑",
+  "en": "Place a headstone at a family grave"
+ },
+ {
+  "term": "竖柱",
+  "zh": "立柱子、搭房屋框架",
+  "en": "Erect pillars or frame structure"
+ },
+ {
+  "term": "筑堤",
+  "zh": "检查防水加固挡水设施",
+  "en": "Check and reinforce water barriers"
+ },
+ {
+  "term": "筑堤防",
+  "zh": "检查加固防水挡水设施",
+  "en": "Inspect and reinforce flood barriers"
+ },
+ {
+  "term": "纳婿",
+  "zh": "和伴侣家人正式见面吃饭",
+  "en": "Meet your partner's family formally"
+ },
+ {
+  "term": "纳畜",
+  "zh": "买宠物或接新动物回家",
+  "en": "Buy pets or bring animals home"
+ },
+ {
+  "term": "纳财",
+  "zh": "收款、催账、存钱入账",
+  "en": "Collect payments or deposit money"
+ },
+ {
+  "term": "纳采",
+  "zh": "带上礼物去对方家提亲",
+  "en": "Propose marriage with gifts at their home"
+ },
+ {
+  "term": "经络",
+  "zh": "做理疗疏通身体",
+  "en": "Get a massage or physical therapy"
+ },
+ {
+  "term": "结网",
+  "zh": "整理渔具检查网线",
+  "en": "Check and mend fishing nets"
+ },
+ {
+  "term": "置产",
+  "zh": "买房买地办手续",
+  "en": "Buy property or sign a real estate deal"
+ },
+ {
+  "term": "行丧",
+  "zh": "参加追悼会送别逝者",
+  "en": "Attend a memorial service"
+ },
+ {
+  "term": "补垣",
+  "zh": "修补围墙围栏破损处",
+  "en": "Repair broken walls or fences"
+ },
+ {
+  "term": "补垣塞穴",
+  "zh": "补墙面裂缝，堵孔洞防虫鼠",
+  "en": "Patch wall cracks, seal holes against pests"
+ },
+ {
+  "term": "裁衣",
+  "zh": "量尺寸、裁剪布料做衣服",
+  "en": "Measure and cut fabric for clothes"
+ },
+ {
+  "term": "解除",
+  "zh": "大扫除清理家中杂物",
+  "en": "Deep clean and declutter home"
+ },
+ {
+  "term": "订盟",
+  "zh": "和对象交换戒指定下婚约",
+  "en": "Exchange rings and seal your engagement"
+ },
+ {
+  "term": "词讼",
+  "zh": "递交诉状、出庭应诉打官司",
+  "en": "File lawsuits or attend court hearings"
+ },
+ {
+  "term": "诸事不宜",
+  "zh": "今天别启动新计划休息就好",
+  "en": "Skip new plans; just rest today"
+ },
+ {
+  "term": "谢土",
+  "zh": "新房完工后清扫整理收尾",
+  "en": "Clean up after construction is done"
+ },
+ {
+  "term": "赴任",
+  "zh": "到新单位正式上岗",
+  "en": "Report to your new job and start work"
+ },
+ {
+  "term": "起基",
+  "zh": "打地基、浇筑基础工程",
+  "en": "Lay building foundation"
+ },
+ {
+  "term": "进人口",
+  "zh": "迎接新生儿或领养孩子",
+  "en": "Welcome a newborn or adopt a child"
+ },
+ {
+  "term": "造仓",
+  "zh": "添置收纳柜，整理储物间",
+  "en": "Set up shelves, organize storage room"
+ },
+ {
+  "term": "造庙",
+  "zh": "—（禁宗教词，跳过）",
+  "en": "— (skip)"
+ },
+ {
+  "term": "造桥",
+  "zh": "规划或推进架桥项目",
+  "en": "Plan or advance a bridge project"
+ },
+ {
+  "term": "造畜稠",
+  "zh": "搭建或修缮禽畜圈舍",
+  "en": "Build or repair animal pens and coops"
+ },
+ {
+  "term": "造船",
+  "zh": "启动船只建造或定制",
+  "en": "Start building or ordering a boat"
+ },
+ {
+  "term": "造车器",
+  "zh": "购买或组装车辆",
+  "en": "Buy or assemble a vehicle"
+ },
+ {
+  "term": "酝酿",
+  "zh": "构思新计划做准备",
+  "en": "Brainstorm and plan your next project"
+ },
+ {
+  "term": "针灸",
+  "zh": "预约做一次肩颈理疗",
+  "en": "Book a neck therapy session"
+ },
+ {
+  "term": "问名",
+  "zh": "交换双方基本信息了解对方",
+  "en": "Exchange basic info to know each other"
+ },
+ {
+  "term": "除服",
+  "zh": "脱下丧服收起白色孝布",
+  "en": "Remove and store mourning garments"
+ },
+ {
+  "term": "雕刻",
+  "zh": "动手做木雕石雕手工创作",
+  "en": "Do wood or stone carving by hand"
+ },
+ {
+  "term": "馀事勿取",
+  "zh": "只处理日常小事别折腾大事",
+  "en": "Handle routine tasks only, skip big moves"
  }
 ]

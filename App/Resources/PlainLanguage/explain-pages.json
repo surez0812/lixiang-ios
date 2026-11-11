@@ -1,66 +1,58 @@
 [
  {
   "term": "zhishen",
-  "title": "值神",
-  "what": "传统历书给每天配的一位「当值神」，常见有青龙、明堂、天刑等。",
-  "means": "只是当天的一个标签，传统上用来区分日子类型。",
-  "how": "想了解当天属性时看一眼即可，不必据此做决定。",
-  "en": "The \"duty deity\" is a traditional daily label; treat it as a day-type tag, not a verdict."
+  "what": "老黄历里把一天分成十二个\"值班员\"，轮流上岗，青龙、明堂、天刑就是其中几位的名号，合在一起叫\"值神\"。简单说，就是古人给每天安排了一个象征性的管理角色。",
+  "means": "今天翻黄历看到的那个值神名字，只是这套循环轮到了谁而已，跟天气一样按固定节奏转圈，并不代表今天会发生什么特别的事。",
+  "how": "把它当成了解传统计时文化的小窗口就好——看看名字、查查故事，喝茶聊天时多一个有趣的话题，不必拿它来决定要不要出门或做重要选择。",
+  "en": "EN: \"Zhishen\" is a rotating symbolic guardian assigned to each day in the traditional Chinese almanac—think of it as folklore's way of naming the days, not a forecast."
  },
  {
-  "term": "jianchu",
-  "title": "建除十二神",
-  "what": "建、除、满、平、定、执、破、危、成、收、开、闭十二个循环标记。",
-  "means": "表示这一天在传统分类里属「建日/除日…」等一类。",
-  "how": "看上面对应的一句解释，知道它描述哪类日子就行。",
-  "en": "The twelve day-officers are a repeating classification; each names a kind of day, not a prediction."
+  "term": "建除十二神",
+  "what": "建除十二神是传统历书里给每天轮流贴的一个标签，一共十二个——建、除、满、平、定、执、破、危、成、收、开、闭，按固定顺序循环，用来把日子大致分分类。",
+  "means": "今天翻到哪个字，只是老辈人安排生活节奏的一种参考方式，就像给自己的日程加个小提示，不必当成必须遵守的规矩。",
+  "how": "可以把它当作一个有趣的日历小注脚：比如\"收\"日提醒自己整理一下手头的事，\"开\"日给自己打打气尝试点新东西——纯粹当生活小灵感就好。",
+  "en": "EN: The Twelve Day Officers are a repeating cycle of labels in traditional Chinese almanacs, used as informal daily rhythm cues rather than fortune predictions."
  },
  {
-  "term": "xiu",
-  "title": "二十八星宿",
-  "what": "古人把天空分成 28 个区域，每天对应一个。",
-  "means": "当天对应某个星宿，是历法标记之一。",
-  "how": "当作传统文化信息看，不影响实际安排。",
-  "en": "The 28 lunar mansions are traditional sky divisions; one is assigned to each day as a calendar marker."
+  "term": "二十八星宿",
+  "what": "古人把月亮每晚经过的星空分成二十八个区域，叫\"二十八星宿\"，每天轮流对应其中一个，就像给日子贴上一张星空标签。",
+  "means": "今天轮到哪个星宿，可以当作一个观察夜空、了解传统天文的小窗口，感受古人记录时间的方式。",
+  "how": "查一下今天对应的星宿名字，晚上抬头找找它大致在天空哪个方向，也可以把这个小知识讲给朋友听。",
+  "en": "EN: The 28 Lunar Mansions are an ancient Chinese sky map dividing the moon's path into 28 zones, one assigned to each day in a repeating cycle."
  },
  {
-  "term": "taishen",
-  "title": "胎神",
-  "what": "民俗里认为与孕妇和居家动土相关的方位/位置说法。",
-  "means": "今天胎神在某个方位，属民俗提醒。",
-  "how": "家里有孕妇时，动土/搬动大件可参考民俗避开；身体不适请看医生，不要依赖此说。",
-  "en": "\"Foetal deity\" is a folk custom about where not to disturb the home; it is not medical advice."
+  "term": "胎神",
+  "what": "民间老说法里，\"胎神\"是守护孕妇和胎儿的一位家宅小神灵，传统认为它每天待的位置不一样——有时在门边、有时在灶台旁、有时在床脚。",
+  "means": "过去人们翻黄历看\"胎神占方\"，就是为了知道今天家里哪个角落别敲敲打打、别搬大件家具，怕惊动了这位守护神；说白了，这套讲究给孕期生活加了一层\"小心轻放\"的提醒。",
+  "how": "如果家里长辈在意这个，了解一下当天说法、顺着老人心意就好，不必紧张；真正关乎孕妈和宝宝健康的事，请以医生和正规产检的建议为准。",
+  "en": "EN: Taishen is a folk belief about a guardian spirit for pregnant women, said to occupy different spots at home each day; treat it as cultural tradition, not medical guidance."
  },
  {
   "term": "pengzu",
-  "title": "彭祖百忌",
-  "what": "旧时用天干地支提醒某些日子不宜做某类事的口诀。",
-  "means": "今天的天干地支对应一条旧口诀。",
-  "how": "当民俗知识了解；重要事情按常识和实际情况决定。",
-  "en": "The Pengzu taboos are old mnemonic sayings tied to the day's stem and branch; treat them as folklore."
+  "what": "彭祖百忌是一组流传很久的民间口诀，把十天干、十二地支各配上一句\"今天不宜做某事\"的提醒，比如逢甲日不开仓、逢子日不问卜，古人翻黄历时常拿它当生活备忘。",
+  "means": "放到今天看，它更像老祖宗整理的一份\"日常注意清单\"——提醒你做事讲节奏、别什么都挤在一天干，背后的意思其实是\"该准备时准备，该休息时休息\"。",
+  "how": "你可以把它当作一种有趣的文化小习惯：翻日历时顺便看一眼当天的口诀，想想有没有什么拖了很久该收拾的事，或者给自己一个慢下来的理由，不必当真照搬，轻松了解就好。",
+  "en": "EN: Pengzu Baiji is an old folk almanac rhyme pairing each day's Heavenly Stem and Earthly Branch with a practical \"avoid doing X\" reminder—treat it as cultural trivia, not literal guidance."
  },
  {
-  "term": "chongsha",
-  "title": "冲煞",
-  "what": "「冲」指与当天相冲的属相，「煞」指民俗里的不利方位。",
-  "means": "今天某个属相的人「被冲」，传统上建议缓一缓大事；煞方在某个方向。",
-  "how": "属相被冲时，可把重要安排错开一天；不必因此取消正常生活。",
-  "en": "\"Clash\" names a zodiac sign said to be at odds with the day; \"sha\" is a direction to avoid by custom. Neither is a prediction."
+  "term": "冲煞",
+  "what": "老黄历里常写\"冲某属相、煞某方\"，意思是当天的日子跟某个生肖\"犯冲\"，同时有个方向被认为不太顺当。",
+  "means": "它只是传统择日的一种参考标记，提醒属那个生肖的人或要往那个方向办事的人多留个心，不代表一定会出什么事。",
+  "how": "如果你在意，可以把重要安排稍微错开那天或那个方向；不在意的话正常生活就好，别让它影响心情和判断。",
+  "en": "EN: Chongsha is a folk almanac note flagging a zodiac clash and an unfavorable direction for the day—just a traditional reminder, not a prediction."
  },
  {
-  "term": "nayin-wuxing",
-  "title": "纳音五行",
-  "what": "把干支组合归入金木水火土五类的一套传统说法。",
-  "means": "今天这一组干支对应某种五行属性。",
-  "how": "作为文化标签了解即可，不用于判断吉凶。",
-  "en": "Nayin assigns each stem-branch pair to one of the five phases; it is a cultural label, not a fortune rating."
+  "term": "纳音五行",
+  "what": "纳音是中国古代的一种分类方法，把天干地支的每一组搭配归到金、木、水、火、土五个类别里。比如\"甲子乙丑\"被归为\"海中金\"，\"丙寅丁卯\"被归为\"炉中火\"，一共三十种名称，每两年共享一个。它最初和古代音律有关，后来广泛用于命理、择日等传统体系中，算是一套给时间\"贴标签\"的老办法。",
+  "means": "今天我们接触纳音，大多是在翻看老黄历、了解传统婚俗或读古典小说时碰到的。它更多是一种文化常识——知道长辈说的\"我是金命\"大概指什么，或者理解古建筑、器物命名里为什么会出现\"大海水\"\"松柏木\"这类词，就够了。",
+  "how": "如果你对传统文化感兴趣，可以把纳音当作一个有趣的分类游戏来了解：查查自己出生年份对应哪个纳音名称，读读那些形象的比喻（\"剑锋金\"\"大驿土\"\"天河水\"），感受一下古人怎么用自然意象来描述抽象概念。当作文化知识储备即可，不需要用它来做生活决策。",
+  "en": "EN: Nayin is an ancient Chinese system that assigns one of five elements (metal, wood, water, fire, earth) to each pair of years in the 60-year cycle, using poetic nature-based names."
  },
  {
   "term": "shichen",
-  "title": "十二时辰",
-  "what": "古人把一天分成 12 个时段，每段两小时（子时含早子/晚子）。",
-  "means": "今天每个时辰有各自的宜忌说法（时家宜忌 ≠ 日家宜忌）。",
-  "how": "看当前时辰卡了解这个时段的传统提示；按实际日程安排为主。",
-  "en": "The twelve double-hours are traditional time slots; their \"hourly\" advice is separate from the day's advice."
+  "what": "十二时辰是古人把一天分成十二段的计时方式，每段大约两小时，用地支命名（子、丑、寅……），比如\"午时\"大致对应中午前后。它是传统生活节奏的刻度，和按天划分的择日体系不是一回事。",
+  "means": "今天我们已经用二十四小时制，但中医养生文章、古装剧、老黄历里仍然频繁出现时辰说法；了解它能帮你读懂这些内容，也能感受古人\"跟着天色过日子\"的时间观。",
+  "how": "看到\"某时辰宜做某事\"的说法，可以当作民俗文化来欣赏，不必当成行动指令；如果涉及吃药、作息调整，还是以医生建议和自身实际感受为准。",
+  "en": "EN: Shichen divides a day into twelve two-hour blocks named by Earthly Branchs—an old timekeeping grid still seen in period dramas and traditional wellness texts, distinct from day-based almanac systems."
  }
 ]

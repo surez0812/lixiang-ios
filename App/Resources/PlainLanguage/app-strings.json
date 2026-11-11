@@ -1,0 +1,157 @@
+[
+ {
+  "key": "tab_calendar",
+  "zh": "月历",
+  "en": "Calendar"
+ },
+ {
+  "key": "tab_almanac",
+  "zh": "民俗",
+  "en": "Almanac"
+ },
+ {
+  "key": "tab_countdown",
+  "zh": "倒计日",
+  "en": "Countdown"
+ },
+ {
+  "key": "tab_settings",
+  "zh": "设置",
+  "en": "Settings"
+ },
+ {
+  "key": "heading_auspicious",
+  "zh": "宜",
+  "en": "Auspicious"
+ },
+ {
+  "key": "heading_inauspicious",
+  "zh": "忌",
+  "en": "Inauspicious"
+ },
+ {
+  "key": "label_good_for",
+  "zh": "宜",
+  "en": "Good for"
+ },
+ {
+  "key": "label_avoid",
+  "zh": "忌",
+  "en": "Avoid"
+ },
+ {
+  "key": "section_hours",
+  "zh": "时辰",
+  "en": "Hours"
+ },
+ {
+  "key": "countdown_empty_title",
+  "zh": "暂无倒计日",
+  "en": "No countdowns yet"
+ },
+ {
+  "key": "countdown_empty_message",
+  "zh": "添加一个倒计日，开始记录重要时刻。",
+  "en": "Add a countdown to start tracking important moments."
+ },
+ {
+  "key": "countdown_empty_action",
+  "zh": "添加倒计日",
+  "en": "Add Countdown"
+ },
+ {
+  "key": "settings_appearance",
+  "zh": "外观",
+  "en": "Appearance"
+ },
+ {
+  "key": "settings_theme",
+  "zh": "主题",
+  "en": "Theme"
+ },
+ {
+  "key": "theme_follow_system",
+  "zh": "跟随系统",
+  "en": "Follow System"
+ },
+ {
+  "key": "theme_light",
+  "zh": "浅色",
+  "en": "Light"
+ },
+ {
+  "key": "theme_dark",
+  "zh": "深色",
+  "en": "Dark"
+ },
+ {
+  "key": "settings_notifications",
+  "zh": "通知",
+  "en": "Notifications"
+ },
+ {
+  "key": "settings_data",
+  "zh": "数据",
+  "en": "Data"
+ },
+ {
+  "key": "settings_about",
+  "zh": "关于",
+  "en": "About"
+ },
+ {
+  "key": "settings_privacy_policy",
+  "zh": "隐私政策",
+  "en": "Privacy Policy"
+ },
+ {
+  "key": "settings_version",
+  "zh": "版本",
+  "en": "Version"
+ },
+ {
+  "key": "countdown_add",
+  "zh": "新增倒计日",
+  "en": "Add Countdown"
+ },
+ {
+  "key": "countdown_title",
+  "zh": "标题",
+  "en": "Title"
+ },
+ {
+  "key": "countdown_calendar_type",
+  "zh": "历法",
+  "en": "Calendar Type"
+ },
+ {
+  "key": "calendar_lunar",
+  "zh": "农历",
+  "en": "Lunar"
+ },
+ {
+  "key": "calendar_gregorian",
+  "zh": "公历",
+  "en": "Gregorian"
+ },
+ {
+  "key": "countdown_leap_month",
+  "zh": "闰月",
+  "en": "Leap Month"
+ },
+ {
+  "key": "countdown_repeat_yearly",
+  "zh": "每年重复",
+  "en": "Repeat Yearly"
+ },
+ {
+  "key": "countdown_one_time",
+  "zh": "一次性",
+  "en": "One-Time"
+ },
+ {
+  "key": "countdown_reminder",
+  "zh": "提醒",
+  "en": "Reminder"
+ }
+]
