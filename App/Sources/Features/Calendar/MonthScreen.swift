@@ -45,8 +45,14 @@ struct MonthScreen: View {
         .onAppear {
             if displayYear == 0 { displayYear = today.year; displayMonth = today.month }
             #if DEBUG
-            if state.debug.countdownDetail, let first = state.countdownStore.items.first {
-                countdownDetail = first
+            if let raw = state.debug.countdownDetailDate,
+               let parts = Optional(raw.split(separator: "-").compactMap { Int($0) }), parts.count == 3 {
+                let target = LocalDate(parts[0], parts[1], parts[2])
+                countdownDetail = state.countdownStore.items.first { item in
+                    AnniversaryResolver.occurrence(for: item, now: target, engine: state.engine)?.date == target
+                } ?? state.countdownStore.items.first
+            } else if state.debug.countdownDetail {
+                countdownDetail = state.countdownStore.items.first
             }
             #endif
         }

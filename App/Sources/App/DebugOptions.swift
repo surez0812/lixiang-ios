@@ -21,6 +21,7 @@ struct DebugOptions {
     var debugTerm: String?         // -LixiangDebugTerm 开光
     var countdownForm: Bool = false
     var countdownDetail: Bool = false
+    var countdownDetailDate: String?
     var scrollBottom: Bool = false
     var quoteSheet: Bool = false
     var scrollShichen: Bool = false
@@ -50,6 +51,7 @@ struct DebugOptions {
             case "-LixiangDebugTerm": options.debugTerm = next()
             case "-LixiangCountdownForm": options.countdownForm = next() == "1"
             case "-LixiangCountdownDetail": options.countdownDetail = next() == "1"
+            case "-LixiangCountdownDetailDate": options.countdownDetailDate = next()
             case "-LixiangScrollBottom": options.scrollBottom = next() == "1"
             case "-LixiangQuoteSheet": options.quoteSheet = next() == "1"
             case "-LixiangScrollShichen": options.scrollShichen = next() == "1"
