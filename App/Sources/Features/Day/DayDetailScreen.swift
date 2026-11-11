@@ -103,6 +103,16 @@ struct DayDetailScreen: View {
                 if !expandYiJi && more > 0 {
                     D1Chip(text: "+\(more)", tone: .neutral)
                 }
+                if state.showVernacular {
+                    VStack(alignment: .leading, spacing: 2) {
+                        ForEach(shown, id: \.self) { term in
+                            if let t = state.plainLanguage.term(named: term) {
+                                Text("· \(term) — \(t.zh)").d1Font(9).foregroundStyle(theme.ink3)
+                            }
+                        }
+                    }
+                    .padding(.top, 2)
+                }
             }
         }
     }

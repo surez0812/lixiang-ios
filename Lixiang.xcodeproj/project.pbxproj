@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BA6016FEC090D5F71A7623 /* QuoteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2588121BE27A986FD5F923 /* QuoteSheet.swift */; };
+		05C5E1385679BE460EAAFB01 /* GlossaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */; };
 		0902E2445F46B7FA0B213970 /* A11yOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB3BFDF1D630B7D7D5361 /* A11yOrderTests.swift */; };
 		0CEF0F2879B005C3EE4C6495 /* D1Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD648C90F8CAA06F52C9C455 /* D1Font.swift */; };
 		124CF875588EF60300DE3EBB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9F8074A131889FFB85A95D /* RootView.swift */; };
@@ -18,6 +20,7 @@
 		3ABC80F5BA369812487AA63D /* FestivalsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D409C092D16755B254E3B6 /* FestivalsScreen.swift */; };
 		4961A2C52973706909F582C0 /* SourceLicenseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5FAB3FD05EDDE5ACAA2B79 /* SourceLicenseScreen.swift */; };
 		5DC804F1EFB564515CFF5331 /* LixiangApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4253AFA341B81955B45311A4 /* LixiangApp.swift */; };
+		64FC9C5E7534E6985EA1E01B /* PlainLanguageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A8C7FBB0FB0D22F603ACE5 /* PlainLanguageLoader.swift */; };
 		776F6261214379761CB1EF3E /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD67E5E2CFFCBF2F70AD9D /* ContentRepository.swift */; };
 		79D3CA12212D0B08D65B2AF6 /* LixiangCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9DC9A4CCDA5EEBBCD58D4361 /* LixiangCalendarCore */; };
 		8037EF70A0164B9BF1595EA5 /* ContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11B7E10505799D2B48A8039 /* ContentScreen.swift */; };
@@ -68,9 +71,12 @@
 		76E56086DB32FA3B6F775654 /* DebugOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugOptions.swift; sourceTree = "<group>"; };
 		788133271B6E5AF4FAB99C4D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		7B9C20186EACBA4CB717F53C /* AnniversaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryScreen.swift; sourceTree = "<group>"; };
+		81A8C7FBB0FB0D22F603ACE5 /* PlainLanguageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainLanguageLoader.swift; sourceTree = "<group>"; };
 		81F89938CBAE6DCFF2EC664C /* LixiangTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LixiangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B2588121BE27A986FD5F923 /* QuoteSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteSheet.swift; sourceTree = "<group>"; };
 		9C9F1437119438744247A6E3 /* WebViewReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewReader.swift; sourceTree = "<group>"; };
 		A67673C4C6D224600887711F /* DayDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailScreen.swift; sourceTree = "<group>"; };
+		A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryScreen.swift; sourceTree = "<group>"; };
 		ADAAB3BFDF1D630B7D7D5361 /* A11yOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A11yOrderTests.swift; sourceTree = "<group>"; };
 		D11B7E10505799D2B48A8039 /* ContentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentScreen.swift; sourceTree = "<group>"; };
 		D14E3D415B91FC17BB2DC101 /* CompassScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassScreen.swift; sourceTree = "<group>"; };
@@ -228,10 +234,21 @@
 				241B087D49B937E6CE3F10F5 /* Content */,
 				38999125256D48B1DC4D171B /* Day */,
 				7EB79160490018CA05327F30 /* Festivals */,
+				9258FBD4E617D0769D3A930A /* PlainLanguage */,
 				8920B47FF6A86C27E9FA6FBC /* Root */,
 				43DEDB2A6FE976E0A69E96DE /* Settings */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		9258FBD4E617D0769D3A930A /* PlainLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */,
+				81A8C7FBB0FB0D22F603ACE5 /* PlainLanguageLoader.swift */,
+				9B2588121BE27A986FD5F923 /* QuoteSheet.swift */,
+			);
+			path = PlainLanguage;
 			sourceTree = "<group>";
 		};
 		9CF155100DF864F8BE868162 /* DesignSystem */ = {
@@ -400,10 +417,13 @@
 				E297799EA5E91021225B8A5D /* DayDetailScreen.swift in Sources */,
 				39FF8AB136D23EB770A2BC4A /* DebugOptions.swift in Sources */,
 				3ABC80F5BA369812487AA63D /* FestivalsScreen.swift in Sources */,
+				05C5E1385679BE460EAAFB01 /* GlossaryScreen.swift in Sources */,
 				5DC804F1EFB564515CFF5331 /* LixiangApp.swift in Sources */,
 				254DCB71305786C25EDC249A /* MonthScreen.swift in Sources */,
 				E15412DFF5DEED7D78DC1F05 /* NotFoundScreen.swift in Sources */,
 				F981B4DE21313B9FEF498D8F /* NotificationScheduler.swift in Sources */,
+				64FC9C5E7534E6985EA1E01B /* PlainLanguageLoader.swift in Sources */,
+				04BA6016FEC090D5F71A7623 /* QuoteSheet.swift in Sources */,
 				124CF875588EF60300DE3EBB /* RootView.swift in Sources */,
 				B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */,
 				4961A2C52973706909F582C0 /* SourceLicenseScreen.swift in Sources */,

@@ -34,6 +34,7 @@ final class AppState: ObservableObject {
 
     let debug: DebugOptions
     let engine: any CalendarEngine
+    let plainLanguage: PlainLanguagePack = PlainLanguageLoader.load()
     let today: LocalDate
     /// 截图/测试注入“当前小时”（DEBUG）；nil = 系统时间
     let debugHour: Int?

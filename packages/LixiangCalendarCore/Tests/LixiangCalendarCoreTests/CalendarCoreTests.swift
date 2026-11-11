@@ -352,3 +352,27 @@ private let authority2026: [(String, String, Int)] = [
     let leap = AnniversaryResolver.occurrence(for: leapBirthday, now: LocalDate(2025, 1, 1), engine: engine)
     #expect(leap?.date == LocalDate(2025, 7, 25))  // 2025 闰六月初一
 }
+
+// MARK: - M-2 白话/解释/道德经数据层
+
+@Test func plainLanguagePackDeterministicQuote() {
+    let quotes = [
+        DaodejingQuote(chapter: 1, quote: "道可道，非常道", zh: "能说清楚的道，往往不是最根本的道。", en: "The Way that can be told...", source: "王弼本"),
+        DaodejingQuote(chapter: 2, quote: "有无相生，难易相成", zh: "有和无、难和易互相衬出。", en: "Being and non-being...", source: "王弼本")
+    ]
+    let pack = PlainLanguagePack(quotes: quotes, terms: [], pages: [])
+    let a = pack.quote(for: LocalDate(2026, 11, 11))
+    let b = pack.quote(for: LocalDate(2026, 11, 11))
+    #expect(a == b)                       // 确定性
+    #expect([1, 2].contains(a?.chapter ?? -1))
+    #expect(pack.quote(for: LocalDate(2026, 11, 12)) != nil)
+}
+
+@Test func plainLanguageMappingsAndPages() {
+    let pack = PlainLanguagePack(quotes: [],
+        terms: [PlainTerm(term: "开光", category: "仪式", zh: "给新物件做个象征性启用仪式", en: "consecrate")],
+        pages: [ExplainPage(term: "zhishen", title: "值神", what: "w", means: "m", how: "h", en: "e")])
+    #expect(pack.term(named: "开光")?.category == "仪式")
+    #expect(pack.page(titled: "值神")?.term == "zhishen")
+    #expect(pack.term(named: "不存在") == nil)
+}

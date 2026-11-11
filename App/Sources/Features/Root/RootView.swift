@@ -7,6 +7,8 @@ enum Route: Hashable {
     case compass(LocalDate)
     case sourceLicense(String)
     case notFound(String)
+    case glossary
+    case explain(String)
 }
 
 struct RootView: View {
@@ -30,6 +32,8 @@ struct RootView: View {
                                 case .compass(let date): CompassScreen(date: date)
                                 case .sourceLicense(let slug): SourceLicenseScreen(slug: slug, entry: nil, item: ContentFixtures.all.first { $0.id == slug })
                                 case .notFound(let slug): NotFoundScreen(slug: slug)
+                                case .glossary: GlossaryScreen()
+                                case .explain(let term): ExplainPageView(page: state.plainLanguage.pages.first { $0.term == term } ?? ExplainPage(term: term, title: term, what: "", means: "", how: "", en: ""))
                                 }
                             }
                     }
@@ -42,6 +46,8 @@ struct RootView: View {
                                 case .content(let id): ContentScreen(contentID: id)
                                 case .sourceLicense(let slug): SourceLicenseScreen(slug: slug, entry: nil, item: ContentFixtures.all.first { $0.id == slug })
                                 case .notFound(let slug): NotFoundScreen(slug: slug)
+                                case .glossary: GlossaryScreen()
+                                case .explain(let term): ExplainPageView(page: state.plainLanguage.pages.first { $0.term == term } ?? ExplainPage(term: term, title: term, what: "", means: "", how: "", en: ""))
                                 default: EmptyView()
                                 }
                             }
@@ -83,6 +89,14 @@ struct RootView: View {
         if screen == "day" {
             selectedTab = 0
             monthPath = NavigationPath([Route.day(state.today)])
+        }
+        if screen == "glossary" {
+            selectedTab = 0
+            monthPath = NavigationPath([Route.glossary])
+        }
+        if screen == "explain" {
+            selectedTab = 0
+            monthPath = NavigationPath([Route.glossary, Route.explain("zhishen")])
         }
         if screen == "compass" || screen == "compass-a11y" {
             selectedTab = 0

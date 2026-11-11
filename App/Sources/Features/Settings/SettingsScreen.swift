@@ -20,6 +20,11 @@ struct SettingsScreen: View {
                     }
                     .tint(theme.accent)
                 }
+                group("术语与解释") {
+                    NavigationLink { GlossaryScreen() } label: {
+                        settingRow("术语解释", value: "8 页白话", chevron: true)
+                    }.buttonStyle(.plain)
+                }
                 group("提醒") {
                     settingRow("倒计日提醒", value: "在倒计日页管理", chevron: false)
                 }

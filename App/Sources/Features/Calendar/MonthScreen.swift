@@ -6,6 +6,7 @@ struct MonthScreen: View {
     @Environment(\.d1) private var theme
     @State private var displayYear: Int = 0
     @State private var displayMonth: Int = 0
+    @State private var showQuote = false
     @State private var selectedDate: LocalDate?
 
     private var today: LocalDate { state.today }
@@ -73,12 +74,22 @@ struct MonthScreen: View {
                             .d1Font(11).foregroundStyle(theme.ink2).lineLimit(1)
                     }
                 }
-                NavigationLink(value: Route.day(today)) {
-                    HStack(spacing: 4) {
-                        Text("详解").d1Font(11, weight: .semibold)
-                        Image(systemName: "chevron.right").d1Font(9, weight: .semibold)
+                HStack(spacing: 12) {
+                    NavigationLink(value: Route.day(today)) {
+                        HStack(spacing: 4) {
+                            Text("详解").d1Font(11, weight: .semibold)
+                            Image(systemName: "chevron.right").d1Font(9, weight: .semibold)
+                        }
+                        .foregroundStyle(theme.accentStrong)
                     }
-                    .foregroundStyle(theme.accentStrong)
+                    Spacer()
+                    if let q = state.plainLanguage.quote(for: today) {
+                        Button {
+                            showQuote = true
+                        } label: {
+                            Text("「\(q.quote)」").d1Font(10).foregroundStyle(theme.ink3).lineLimit(1)
+                        }
+                    }
                 }
             }
         }
