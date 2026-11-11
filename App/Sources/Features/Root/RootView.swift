@@ -9,6 +9,8 @@ enum Route: Hashable {
     case notFound(String)
     case glossary
     case explain(String)
+    case about
+    case privacy(String)
 }
 
 struct RootView: View {
@@ -34,6 +36,8 @@ struct RootView: View {
                                 case .notFound(let slug): NotFoundScreen(slug: slug)
                                 case .glossary: GlossaryScreen()
                                 case .explain(let term): ExplainPageView(page: state.plainLanguage.pages.first { $0.term == term } ?? ExplainPage(term: term, title: term, what: "", means: "", how: "", en: ""))
+                                case .about: AboutScreen()
+                                case .privacy(let resource): PrivacyScreen(title: resource == "privacy" ? "隐私政策" : (resource == "user-terms" ? "用户条款" : "支持"), resource: resource)
                                 }
                             }
                     }
@@ -48,6 +52,8 @@ struct RootView: View {
                                 case .notFound(let slug): NotFoundScreen(slug: slug)
                                 case .glossary: GlossaryScreen()
                                 case .explain(let term): ExplainPageView(page: state.plainLanguage.pages.first { $0.term == term } ?? ExplainPage(term: term, title: term, what: "", means: "", how: "", en: ""))
+                                case .about: AboutScreen()
+                                case .privacy(let resource): PrivacyScreen(title: resource == "privacy" ? "隐私政策" : (resource == "user-terms" ? "用户条款" : "支持"), resource: resource)
                                 default: EmptyView()
                                 }
                             }
@@ -89,6 +95,14 @@ struct RootView: View {
         if screen == "day" {
             selectedTab = 0
             monthPath = NavigationPath([Route.day(state.today)])
+        }
+        if screen == "about" {
+            selectedTab = 0
+            monthPath = NavigationPath([Route.about])
+        }
+        if screen == "privacy" {
+            selectedTab = 0
+            monthPath = NavigationPath([Route.about, Route.privacy("privacy")])
         }
         if screen == "glossary" {
             selectedTab = 0
