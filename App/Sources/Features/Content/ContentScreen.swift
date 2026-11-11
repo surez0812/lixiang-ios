@@ -5,6 +5,7 @@ import LixiangCalendarCore
 struct ContentScreen: View {
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
+    @Environment(\.colorScheme) private var colorScheme
     let contentID: String
 
     @State private var result = ContentLoadResult(phase: .loading)
@@ -116,7 +117,10 @@ struct ContentScreen: View {
         case .ready, .offlineCached:
             if let html = result.html {
                 D1Card(padding: 8) {
-                    WebViewReader(html: html)
+                    WebViewReader(html: html, isDark: colorScheme == .dark,
+                                  backgroundHex: colorScheme == .dark ? "#241C16" : "#FBF5EC",
+                                  inkHex: colorScheme == .dark ? "#F3E8DA" : "#3A3028",
+                                  ink2Hex: colorScheme == .dark ? "#C7B5A2" : "#5C544A")
                         .frame(minHeight: 520)
                 }
             } else {
@@ -182,12 +186,16 @@ struct ContentScreen: View {
     private var offlineUncachedCard: some View {
         D1Card {
             VStack(alignment: .leading, spacing: 6) {
-                Text("离线且未缓存").d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
+                HStack(spacing: 6) {
+                    Image(systemName: "wifi.slash").d1Font(12, weight: .semibold).foregroundStyle(theme.jiText)
+                    Text("离线且未缓存").d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
+                }
                 Text("联网后可读；已解锁状态不受影响。").d1Font(11).foregroundStyle(theme.ink2)
                 HStack(spacing: 10) {
-                    Button("重试") { reloadToken = UUID() }
+                    Button("重新连接") { reloadToken = UUID() }
                         .d1Font(11, weight: .semibold)
-                        .padding(.horizontal, 14).padding(.vertical, 8)
+                        .frame(minHeight: 44)
+                        .padding(.horizontal, 14)
                         .background(theme.accent, in: Capsule())
                         .foregroundStyle(theme.onAccent)
                     Text("去设置网络").d1Font(10).foregroundStyle(theme.ink3)
@@ -199,11 +207,15 @@ struct ContentScreen: View {
     private func errorCard(message: String, detail: String? = nil) -> some View {
         D1Card {
             VStack(alignment: .leading, spacing: 6) {
-                Text(message).d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
+                HStack(spacing: 6) {
+                    Image(systemName: "exclamationmark.triangle").d1Font(12, weight: .semibold).foregroundStyle(theme.accentStrong)
+                    Text(message).d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
+                }
                 if let detail { Text(detail).d1Font(11).foregroundStyle(theme.ink2) }
                 Button("重试") { reloadToken = UUID() }
                     .d1Font(11, weight: .semibold)
-                    .padding(.horizontal, 14).padding(.vertical, 8)
+                    .frame(minHeight: 44)
+                    .padding(.horizontal, 14)
                     .background(theme.accent, in: Capsule())
                     .foregroundStyle(theme.onAccent)
             }

@@ -46,9 +46,9 @@ struct CountdownScreen: View {
             ToolbarItem(placement: .topBarTrailing) {
                 HStack(spacing: 12) {
                     if let url = store.exportURL() {
-                        ShareLink(item: url) { Image(systemName: "square.and.arrow.up") }
+                        ShareLink(item: url) { Image(systemName: "square.and.arrow.up") }.accessibilityIdentifier("countdown-export")
                     }
-                    Button { editing = nil; showForm = true } label: { Image(systemName: "plus") }
+                    Button { editing = nil; showForm = true } label: { Image(systemName: "plus") }.accessibilityIdentifier("countdown-add")
                 }
             }
         }
@@ -71,7 +71,6 @@ struct CountdownScreen: View {
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 2) {
-            Text("倒计日").d1SerifFont(30).foregroundStyle(theme.ink)
             Text("记一个日子 · 按北京时间").d1Font(10).foregroundStyle(theme.ink3)
         }
     }
@@ -101,7 +100,7 @@ struct CountdownScreen: View {
                 D1Card(padding: 14) {
                     VStack(alignment: .leading, spacing: 4) {
                         HStack {
-                            Text(item.title).d1Font(14, weight: .semibold).foregroundStyle(theme.ink)
+                            Text(item.title).d1Font(14, weight: .semibold).foregroundStyle(theme.ink).accessibilityIdentifier("countdown-row-\(item.title)")
                             Text(calendarLabel(item)).d1Font(9).foregroundStyle(theme.ink3)
                             Spacer()
                             Button { editing = item; showForm = true } label: { Image(systemName: "pencil").d1Font(11) }
@@ -128,7 +127,7 @@ struct CountdownScreen: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("还没有倒计日").d1SerifFont(20).foregroundStyle(theme.ink)
                 Text("记一个日子，之后会在这一天提醒你。支持公历/农历、每年重复、2/29 规则。").d1Font(11).foregroundStyle(theme.ink2)
-                Button("记一个日子") { editing = nil; showForm = true }
+                Button("记一个日子") { editing = nil; showForm = true }.accessibilityIdentifier("countdown-add-empty")
                     .d1Font(12, weight: .semibold)
                     .frame(minHeight: 44).padding(.horizontal, 14)
                     .background(theme.accent, in: Capsule()).foregroundStyle(theme.onAccent)
@@ -163,7 +162,7 @@ struct CountdownForm: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section("名称") { TextField("例如：生日、结婚纪念日", text: $title) }
+                Section("名称") { TextField("例如：生日、结婚纪念日", text: $title).accessibilityIdentifier("countdown-title") }
                 Section("历法") {
                     Picker("历法", selection: $calendar) {
                         Text("公历").tag(AnniversaryCalendar.gregorian)
@@ -203,7 +202,7 @@ struct CountdownForm: View {
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) { Button("取消") { dismiss() } }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("保存") { save() }.disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
+                    Button("保存") { save() }.disabled(title.trimmingCharacters(in: .whitespaces).isEmpty).accessibilityIdentifier("countdown-save")
                 }
             }
             .onAppear(perform: load)
