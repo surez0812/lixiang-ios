@@ -19,18 +19,20 @@ public struct Anniversary: Identifiable, Codable, Hashable, Sendable {
     public var reminderMinute: Int
     public var note: String
     public var createdAt: Date
+    /// 可选小图标（SF Symbols 名，默认 star）
+    public var icon: String?
 
     public init(id: UUID = UUID(), title: String, calendar: AnniversaryCalendar = .gregorian,
                 month: Int, day: Int, isLeapMonth: Bool = false,
                 repeatRule: AnniversaryRepeat = .yearly, feb29Policy: Feb29Policy = .feb28,
                 reminderEnabled: Bool = false, reminderHour: Int = 9, reminderMinute: Int = 0,
-                note: String = "", createdAt: Date = Date()) {
+                note: String = "", createdAt: Date = Date(), icon: String? = nil) {
         self.id = id; self.title = title; self.calendar = calendar
         self.month = month; self.day = day; self.isLeapMonth = isLeapMonth
         self.repeatRule = repeatRule; self.feb29Policy = feb29Policy
         self.reminderEnabled = reminderEnabled
         self.reminderHour = reminderHour; self.reminderMinute = reminderMinute
-        self.note = note; self.createdAt = createdAt
+        self.note = note; self.createdAt = createdAt; self.icon = icon
     }
 }
 

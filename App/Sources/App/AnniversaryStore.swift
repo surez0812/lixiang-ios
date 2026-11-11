@@ -51,7 +51,9 @@ final class AnniversaryStore: ObservableObject {
             Anniversary(title: "生日", calendar: .lunar, month: 1, day: 1, repeatRule: .yearly,
                         reminderEnabled: true, note: "农历正月初一"),
             Anniversary(title: "纪念日", calendar: .gregorian, month: 12, day: 22, repeatRule: .yearly,
-                        reminderEnabled: false)
+                        reminderEnabled: false),
+            Anniversary(title: "出行", calendar: .gregorian, month: 11, day: 20, repeatRule: .yearly,
+                        reminderEnabled: false, icon: "airplane")
         ]
         save()
     }

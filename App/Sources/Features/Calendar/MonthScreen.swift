@@ -8,12 +8,14 @@ struct MonthScreen: View {
     @State private var displayMonth: Int = 0
     @State private var showQuote = false
     @State private var selectedDate: LocalDate?
+    @State private var countdownDetail: Anniversary?
 
     private var today: LocalDate { state.today }
 
     var body: some View {
         ScrollView {
             VStack(spacing: 12) {
+                SolarTermArtView(date: today, maxHeight: 126)
                 todayCard
                 monthCard
                 toolsBar
@@ -27,6 +29,9 @@ struct MonthScreen: View {
         .navigationBarHidden(true)
         .onAppear {
             if displayYear == 0 { displayYear = today.year; displayMonth = today.month }
+        }
+        .navigationDestination(item: $countdownDetail) { item in
+            CountdownDetailScreen(item: item)
         }
     }
 
@@ -45,6 +50,8 @@ struct MonthScreen: View {
                             .d1Font(10, weight: .semibold)
                             .tracking(1.4)
                             .foregroundStyle(theme.ink3)
+                        Text("\(almanac.lunar.dayGanZhi)日")
+                            .d1Font(10).foregroundStyle(theme.ink3)
                     }
                     VStack(alignment: .leading, spacing: 6) {
                         Text("星期\(today.weekdayChinese) · 农历\(almanac.lunar.monthDayText)")
@@ -90,6 +97,14 @@ struct MonthScreen: View {
                             Text("「\(q.quote)」").d1Font(10).foregroundStyle(theme.ink3).lineLimit(1)
                         }
                     }
+                }
+                NavigationLink(value: Route.compass(today)) {
+                    HStack(spacing: 4) {
+                        Image(systemName: "safari").d1Font(10)
+                        Text("吉神罗盘").d1Font(10, weight: .semibold)
+                        Image(systemName: "chevron.right").d1Font(9)
+                    }
+                    .foregroundStyle(theme.ink2)
                 }
             }
         }
@@ -156,6 +171,19 @@ struct MonthScreen: View {
             }
             .frame(maxWidth: .infinity, minHeight: 52)
             .contentShape(Rectangle())
+            .overlay(alignment: .topTrailing) {
+                if let marker = countdownMarker(cell.date) {
+                    Button { countdownDetail = marker } label: {
+                        Image(systemName: marker.icon ?? "star")
+                            .d1Font(8)
+                            .foregroundStyle(theme.accentStrong)
+                            .frame(width: 16, height: 16)
+                            .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("倒计日：\(marker.title)")
+                }
+            }
         }
         .buttonStyle(.plain)
     }
@@ -169,6 +197,12 @@ struct MonthScreen: View {
             D1Chip(text: "倒计日", tone: .neutral)
             Spacer()
             Image(systemName: "magnifyingglass").foregroundStyle(theme.ink3)
+        }
+    }
+
+    private func countdownMarker(_ date: LocalDate) -> Anniversary? {
+        state.countdownStore.items.first { item in
+            AnniversaryResolver.occurrence(for: item, now: date, engine: state.engine)?.date == date
         }
     }
 

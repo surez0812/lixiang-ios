@@ -1,0 +1,194 @@
+[
+  {
+    "slug": "lichun",
+    "zh": "立春",
+    "date": "2/4",
+    "season": "spring",
+    "source": "wanx-clean+manual-swallow-redraw",
+    "cost": 0.4
+  },
+  {
+    "slug": "yushui",
+    "zh": "雨水",
+    "date": "2/19",
+    "season": "spring",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "jingzhe",
+    "zh": "惊蛰",
+    "date": "3/5",
+    "season": "spring",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "chunfen",
+    "zh": "春分",
+    "date": "3/20",
+    "season": "spring",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "qingming",
+    "zh": "清明",
+    "date": "4/5",
+    "season": "spring",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "guyu",
+    "zh": "谷雨",
+    "date": "4/20",
+    "season": "spring",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "lixia",
+    "zh": "立夏",
+    "date": "5/5",
+    "season": "summer",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "xiaoman",
+    "zh": "小满",
+    "date": "5/21",
+    "season": "summer",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "mangzhong",
+    "zh": "芒种",
+    "date": "6/5",
+    "season": "summer",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "xiazhi",
+    "zh": "夏至",
+    "date": "6/21",
+    "season": "summer",
+    "source": "refined-final",
+    "cost": 0
+  },
+  {
+    "slug": "xiaoshu",
+    "zh": "小暑",
+    "date": "7/7",
+    "season": "summer",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "dashu",
+    "zh": "大暑",
+    "date": "7/23",
+    "season": "summer",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "liqiu",
+    "zh": "立秋",
+    "date": "8/7",
+    "season": "autumn",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "chushu",
+    "zh": "处暑",
+    "date": "8/23",
+    "season": "autumn",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "bailu",
+    "zh": "白露",
+    "date": "9/7",
+    "season": "autumn",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "qiufen",
+    "zh": "秋分",
+    "date": "9/23",
+    "season": "autumn",
+    "source": "refined-final",
+    "cost": 0
+  },
+  {
+    "slug": "hanlu",
+    "zh": "寒露",
+    "date": "10/8",
+    "season": "autumn",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "shuangjiang",
+    "zh": "霜降",
+    "date": "10/23",
+    "season": "autumn",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "lidong",
+    "zh": "立冬",
+    "date": "11/7",
+    "season": "winter",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "xiaoxue",
+    "zh": "小雪",
+    "date": "11/22",
+    "season": "winter",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "daxue",
+    "zh": "大雪",
+    "date": "12/7",
+    "season": "winter",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "dongzhi",
+    "zh": "冬至",
+    "date": "12/22",
+    "season": "winter",
+    "source": "refined-final",
+    "cost": 0
+  },
+  {
+    "slug": "xiaohan",
+    "zh": "小寒",
+    "date": "1/5",
+    "season": "winter",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  },
+  {
+    "slug": "dahan",
+    "zh": "大寒",
+    "date": "1/20",
+    "season": "winter",
+    "source": "wanx-turbo-20261111",
+    "cost": 0.2
+  }
+]

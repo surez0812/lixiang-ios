@@ -5,7 +5,7 @@ import LixiangCalendarCore
 struct CountdownScreen: View {
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
-    @StateObject private var store = AnniversaryStore(seed: DebugOptions.parse().seedCountdown)
+    private var store: AnniversaryStore { state.countdownStore }
     @State private var showForm = false
     @State private var editing: Anniversary?
     @State private var pendingDelete: Anniversary?
@@ -67,6 +67,18 @@ struct CountdownScreen: View {
             Button("取消", role: .cancel) {}
         } message: { Text("删除后不可恢复；可先导出 JSON 备份。") }
         .task { await NotificationScheduler.reschedule(items: store.items, engine: state.engine, now: state.today) }
+        .onAppear {
+            #if DEBUG
+            if state.debug.countdownForm { editing = nil; showForm = true }
+            #endif
+        }
+        .background(
+            NavigationLink(isActive: Binding(
+                get: { state.debug.countdownDetail && state.countdownStore.items.first != nil },
+                set: { _ in })) {
+                if let first = state.countdownStore.items.first { CountdownDetailScreen(item: first) }
+            } label: { EmptyView() }
+        )
     }
 
     private var header: some View {
@@ -100,6 +112,7 @@ struct CountdownScreen: View {
                 D1Card(padding: 14) {
                     VStack(alignment: .leading, spacing: 4) {
                         HStack {
+                            Image(systemName: item.icon ?? "star").d1Font(11).foregroundStyle(theme.accentStrong)
                             Text(item.title).d1Font(14, weight: .semibold).foregroundStyle(theme.ink).accessibilityIdentifier("countdown-row-\(item.title)")
                             Text(calendarLabel(item)).d1Font(9).foregroundStyle(theme.ink3)
                             Spacer()
@@ -158,6 +171,7 @@ struct CountdownForm: View {
     @State private var reminderEnabled = false
     @State private var reminderHour = 9
     @State private var note = ""
+    @State private var iconName = "star"
 
     var body: some View {
         NavigationStack {
@@ -182,6 +196,21 @@ struct CountdownForm: View {
                     }
                     Picker("月", selection: $month) { ForEach(1...12, id: \.self) { Text("\($0)月").tag($0) } }
                     Picker("日", selection: $day) { ForEach(1...31, id: \.self) { Text("\($0)日").tag($0) } }
+                }
+                Section("图标") {
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 6), spacing: 8) {
+                        ForEach(["star", "birthday.cake", "heart", "airplane", "book", "gift", "flag", "sparkles", "graduationcap", "house"], id: \.self) { name in
+                            Button { iconName = name } label: {
+                                Image(systemName: name)
+                                    .d1Font(18)
+                                    .foregroundStyle(iconName == name ? theme.onAccent : theme.ink2)
+                                    .frame(width: 40, height: 40)
+                                    .background(iconName == name ? theme.accent : theme.soft, in: RoundedRectangle(cornerRadius: 10))
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityLabel("图标 \(name)")
+                        }
+                    }
                 }
                 Section("重复") {
                     Picker("重复", selection: $repeatRule) {
@@ -213,7 +242,7 @@ struct CountdownForm: View {
         guard let item else { return }
         title = item.title; calendar = item.calendar; month = item.month; day = item.day
         isLeapMonth = item.isLeapMonth; repeatRule = item.repeatRule; feb29Policy = item.feb29Policy
-        reminderEnabled = item.reminderEnabled; reminderHour = item.reminderHour; note = item.note
+        reminderEnabled = item.reminderEnabled; reminderHour = item.reminderHour; note = item.note; iconName = item.icon ?? "star"
     }
 
     private func save() {
@@ -221,7 +250,7 @@ struct CountdownForm: View {
                            month: month, day: day, isLeapMonth: calendar == .lunar && isLeapMonth,
                            repeatRule: repeatRule, feb29Policy: feb29Policy,
                            reminderEnabled: reminderEnabled, reminderHour: reminderHour,
-                           reminderMinute: 0, note: note))
+                           reminderMinute: 0, note: note, icon: iconName))
         dismiss()
     }
 }

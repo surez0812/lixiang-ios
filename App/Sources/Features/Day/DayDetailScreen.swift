@@ -19,6 +19,7 @@ struct DayDetailScreen: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 12) {
+                SolarTermArtView(date: date, maxHeight: 120)
                 header
                 yiJiCard
                 shichenCard
