@@ -14,15 +14,15 @@ struct MergedDayCard: View {
 
     private var almanac: AlmanacDay { state.almanac(date) }
     private var quote: DaodejingQuote? { state.plainLanguage.quote(for: date) }
-    private var cardHeight: CGFloat { variant == .month ? 470 : 530 }
-    private var imageHeight: CGFloat { cardHeight / 2 }
+    private var imageHeight: CGFloat { variant == .month ? 235 : 265 }
+    private var minHeight: CGFloat { variant == .month ? 400 : 440 }
 
     var body: some View {
         VStack(spacing: -34) {
             image
             content
         }
-        .frame(height: cardHeight, alignment: .top)
+        .frame(minHeight: minHeight, alignment: .top)
         .background(theme.paper)
         .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: 28).strokeBorder(theme.line.opacity(0.55), lineWidth: 0.8))
@@ -85,7 +85,7 @@ struct MergedDayCard: View {
             }
         }
         .padding(.horizontal, 16)
-        .padding(.bottom, 14)
+        .padding(.bottom, 18)
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
