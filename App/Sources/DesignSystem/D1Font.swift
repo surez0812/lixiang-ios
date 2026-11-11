@@ -26,6 +26,10 @@ extension View {
     func d1Font(_ size: CGFloat, weight: Font.Weight = .regular) -> some View {
         modifier(D1FontModifier(size: size, weight: weight))
     }
+    /// 大数字（108pt 基线）：DT 上限 1.2×（R2-rich §2）
+    func d1NumberFont(_ size: CGFloat, weight: Font.Weight = .semibold) -> some View {
+        modifier(D1FontModifier(size: size, weight: weight, design: .default, maxScale: 1.2))
+    }
     /// 标题/大数字（宋体）：随 DT 缩放但上限 1.4×（A16 验收）
     func d1SerifFont(_ size: CGFloat, weight: Font.Weight = .regular) -> some View {
         modifier(D1FontModifier(size: size, weight: weight, design: .serif, maxScale: 1.4))

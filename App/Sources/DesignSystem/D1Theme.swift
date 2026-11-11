@@ -4,6 +4,12 @@ import UIKit
 /// 历象 D1「奶油暖橘」token（设计基线：design/final/D1-apricot/spec/UI-SPEC.md §0.1）
 struct D1Theme {
     var bg: Color
+    var bg1: Color
+    var bg2: Color
+    var bg3: Color
+    var paper: Color
+    var red: Color
+    var cream: Color
     var card: Color
     var soft: Color
     var ink: Color
@@ -32,9 +38,11 @@ struct D1Theme {
     var deityYin: Color
 
     static let light = D1Theme(
-        bg: Color(hex: 0xFBF5EC), card: Color(hex: 0xFFFDF9), soft: Color(hex: 0xF6E7D6),
-        ink: Color(hex: 0x3A3028), ink2: Color(hex: 0x7A6A5C), ink3: Color(hex: 0x8A7462),
-        line: Color(hex: 0xEDDFCD), accent: Color(hex: 0xDE9B78), accentStrong: Color(hex: 0xC97B5A),
+        bg: Color(hex: 0xF7EBDC), bg1: Color(hex: 0xF7EBDC), bg2: Color(hex: 0xF1C795), bg3: Color(hex: 0xEBB878),
+        paper: Color(hex: 0xFFF8EC), red: Color(hex: 0xC0452C), cream: Color(hex: 0xFFF1D8),
+        card: Color(hex: 0xFFF8EC), soft: Color(hex: 0xF6E0C2),
+        ink: Color(hex: 0x3A2417), ink2: Color(hex: 0x7A4F35), ink3: Color(hex: 0xA67B58),
+        line: Color(hex: 0xE7C9A4), accent: Color(hex: 0xE07A3C), accentStrong: Color(hex: 0xC0452C),
         jade: Color(hex: 0x93A98E), onAccent: .white,
         jiChip: Color(hex: 0x7E6A58), onJiChip: .white,
         yiText: Color(hex: 0x3F5A43), yiBg: Color(hex: 0xE7EFE3),
@@ -44,9 +52,11 @@ struct D1Theme {
         deityYang: Color(hex: 0x8FA3B8), deityYin: Color(hex: 0xB08CA8)
     )
     static let dark = D1Theme(
-        bg: Color(hex: 0x241C16), card: Color(hex: 0x2E241C), soft: Color(hex: 0x3A2E24),
-        ink: Color(hex: 0xF3E8DA), ink2: Color(hex: 0xC7B5A2), ink3: Color(hex: 0x9A8774),
-        line: Color(hex: 0x43352A), accent: Color(hex: 0xE8A886), accentStrong: Color(hex: 0xD98E6C),
+        bg: Color(hex: 0x241710), bg1: Color(hex: 0x241710), bg2: Color(hex: 0x1D110C), bg3: Color(hex: 0x160D09),
+        paper: Color(hex: 0x2F2016), red: Color(hex: 0xF08A5C), cream: Color(hex: 0xFFEED4),
+        card: Color(hex: 0x2F2016), soft: Color(hex: 0x3A281B),
+        ink: Color(hex: 0xF7E6CE), ink2: Color(hex: 0xD9B794), ink3: Color(hex: 0xB08A68),
+        line: Color(hex: 0x4A3322), accent: Color(hex: 0xFF9A5C), accentStrong: Color(hex: 0xF08A5C),
         jade: Color(hex: 0xA9BCA3), onAccent: Color(hex: 0x241C16),
         jiChip: Color(hex: 0xC7B5A2), onJiChip: Color(hex: 0x241C16),
         yiText: Color(hex: 0xC9DCC3), yiBg: Color(hex: 0x33402F),

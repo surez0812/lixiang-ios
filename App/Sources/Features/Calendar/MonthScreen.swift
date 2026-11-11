@@ -15,8 +15,9 @@ struct MonthScreen: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 12) {
-                SolarTermArtView(date: today, maxHeight: 126)
-                todayCard
+                SolarTermArtView(date: today, maxHeight: 150)
+                todayCardStack
+                quoteCard
                 monthCard
                 toolsBar
             }
@@ -35,6 +36,49 @@ struct MonthScreen: View {
         }
     }
 
+    // R2-rich：三层卡叠压
+    private var todayCardStack: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 26, style: .continuous)
+                .fill(theme.soft.opacity(0.7))
+                .rotationEffect(.degrees(-1.6))
+                .offset(x: -6, y: 8)
+            RoundedRectangle(cornerRadius: 26, style: .continuous)
+                .fill(theme.paper.opacity(0.9))
+                .rotationEffect(.degrees(1.2))
+                .offset(x: 6, y: 4)
+            todayCard
+        }
+    }
+
+    // R2-rich：朱橙渐变 quote 卡
+    private var quoteCard: some View {
+        Group {
+            if let q = state.plainLanguage.quote(for: today) {
+                Button { showQuote = true } label: {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("「\(q.quote)」")
+                            .d1SerifFont(20)
+                            .foregroundStyle(theme.cream)
+                            .lineLimit(2)
+                        HStack {
+                            Text("《道德经》第 \(q.chapter) 章").d1Font(9).foregroundStyle(theme.cream.opacity(0.8))
+                            Spacer()
+                            Text("点按看解释").d1Font(9).foregroundStyle(theme.cream.opacity(0.8))
+                        }
+                    }
+                    .padding(14)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(LinearGradient(colors: [theme.red, theme.accent],
+                                               startPoint: .topLeading, endPoint: .bottomTrailing),
+                                in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("今日道德经，第\(q.chapter)章，\(q.quote)")
+            }
+        }
+    }
+
     // S1 块①：今日头卡
     private var todayCard: some View {
         let almanac = state.almanac(today)
@@ -43,8 +87,8 @@ struct MonthScreen: View {
                 HStack(alignment: .top, spacing: 14) {
                     VStack(alignment: .leading, spacing: 0) {
                         Text("\(today.day)")
-                            .d1Font(76, weight: .semibold)
-                            .tracking(-2)
+                            .d1NumberFont(108)
+                            .tracking(-3)
                             .foregroundStyle(theme.ink)
                         Text(verbatim: "\(today.year)年\(today.month)月")
                             .d1Font(10, weight: .semibold)
@@ -105,6 +149,16 @@ struct MonthScreen: View {
                         Image(systemName: "chevron.right").d1Font(9)
                     }
                     .foregroundStyle(theme.ink2)
+                }
+                .overlay(alignment: .topTrailing) {
+                    Text("历象")
+                        .d1SerifFont(11)
+                        .foregroundStyle(theme.red)
+                        .padding(5)
+                        .overlay(RoundedRectangle(cornerRadius: 4).strokeBorder(theme.red, lineWidth: 1.2))
+                        .rotationEffect(.degrees(8))
+                        .padding(10)
+                        .accessibilityHidden(true)
                 }
             }
         }

@@ -166,7 +166,7 @@ struct D1TabBar: View {
                     .frame(maxWidth: .infinity, minHeight: 48)
                     .background {
                         if selected == index {
-                            RoundedRectangle(cornerRadius: 14, style: .continuous).fill(theme.soft)
+                            Capsule().fill(LinearGradient(colors: [theme.accent.opacity(0.22), theme.red.opacity(0.16)], startPoint: .topLeading, endPoint: .bottomTrailing))
                         }
                     }
                     .contentShape(Rectangle())

@@ -89,5 +89,9 @@ struct FlowChips: View {
 
 struct ScreenBackground: View {
     @Environment(\.d1) private var theme
-    var body: some View { theme.bg.ignoresSafeArea() }
+    var body: some View {
+        LinearGradient(colors: [theme.bg1, theme.bg2, theme.bg3],
+                       startPoint: .top, endPoint: .bottom)
+            .ignoresSafeArea()
+    }
 }
