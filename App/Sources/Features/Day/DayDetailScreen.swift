@@ -77,6 +77,11 @@ struct DayDetailScreen: View {
         return "农历\(almanac.lunar.monthDayText)"
     }
 
+    private var kickerText: String {
+        let head = almanac.solarTerm ?? almanac.festivals.first ?? ""
+        return head.isEmpty ? almanac.lunar.monthDayText : "\(head) · \(almanac.lunar.monthDayText)"
+    }
+
     private var sealText: String { almanac.solarTerm ?? (almanac.festivals.first ?? "历象") }
 
     private var compassSub: String {
@@ -85,34 +90,33 @@ struct DayDetailScreen: View {
 
     private var dateCard: some View {
         ZStack(alignment: .topTrailing) {
-            HStack(alignment: .center, spacing: 12) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(kickerText)
+                    .d1Font(10).foregroundStyle(theme.ink3)
+                    .frame(maxWidth: 240, alignment: .leading)
+                    .lineLimit(1)
                 Text("\(date.day)")
                     .d1SerifFont(108)
                     .foregroundStyle(theme.ink)
-                    .frame(width: 118, alignment: .leading)
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(datePhrase)
-                        .d1SerifFont(22, weight: .semibold)
-                        .foregroundStyle(theme.ink)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.7)
-                        .frame(maxWidth: 330, alignment: .leading)
-                    Text("星期\(date.weekdayChinese) · \(almanac.lunar.yearGanZhi)年 · \(almanac.lunar.monthGanZhi)月 · \(almanac.lunar.dayGanZhi)日")
-                        .d1Font(11).foregroundStyle(theme.ink3)
-                        .lineLimit(2).fixedSize(horizontal: false, vertical: true)
-                    HStack(spacing: 6) {
-                        D1Chip(text: "宜 \(almanac.yi.prefix(2).joined(separator: " "))", tone: .yi)
-                        D1Chip(text: "忌 \(almanac.ji.prefix(2).joined(separator: " "))", tone: .ji)
-                    }
+                    .fixedSize()
+                Text(datePhrase)
+                    .d1SerifFont(22, weight: .semibold)
+                    .foregroundStyle(theme.ink)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.65)
+                    .frame(maxWidth: 300, alignment: .leading)
+                    .padding(.trailing, 64)   // 右侧 ≥64pt 安全区（印章独立位）
+                Text("星期\(date.weekdayChinese) · \(almanac.lunar.yearGanZhi)年 · \(almanac.lunar.monthGanZhi)月 · \(almanac.lunar.dayGanZhi)日")
+                    .d1Font(11).foregroundStyle(theme.ink3)
+                    .lineLimit(2).fixedSize(horizontal: false, vertical: true)
+                HStack(spacing: 6) {
+                    D1Chip(text: "宜 \(almanac.yi.prefix(2).joined(separator: " "))", tone: .yi)
+                    D1Chip(text: "忌 \(almanac.ji.prefix(2).joined(separator: " "))", tone: .ji)
                 }
-                Spacer(minLength: 0)
             }
-            .padding(.leading, 14)
-            .padding(.trailing, 58)
-            .padding(.vertical, 14)
-            .frame(height: 146)
-            .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
-            .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6), lineWidth: 0.8))
+            .padding(14)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            // 印章：独立右上角位（不压标题行）
             Text(sealText)
                 .d1SerifFont(12)
                 .foregroundStyle(theme.red)
@@ -120,9 +124,12 @@ struct DayDetailScreen: View {
                 .frame(width: 40, height: 44)
                 .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(theme.red, lineWidth: 1.2))
                 .rotationEffect(.degrees(8))
-                .padding(10)
+                .padding(12)
                 .accessibilityHidden(true)
         }
+        .frame(minHeight: 196)
+        .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6), lineWidth: 0.8))
         .accessibilityElement(children: .combine)
         .accessibilityLabel("\(date.month)月\(date.day)日，\(datePhrase)，星期\(date.weekdayChinese)")
     }
