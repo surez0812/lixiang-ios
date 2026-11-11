@@ -1,15 +1,9 @@
-# 支持页 · 万年历 App（prelaunch 最小版 / 单一源）
-
-- **单一源规则**：本文件是官网 `/{locale}/support` 的唯一正文来源；App 内「关于 → 帮助与反馈」复用同一来源（App 内可用 WebView 或精简其中 FAQ）。
-
----
-
 ## 中文（zh-Hans）
 
 # 支持与反馈
 
 
-「万年历」（暂定名）正在准备上架。**本应用尚未在 App Store 发布**；正式上架后，本页会更新下载方式与常见问题。
+「历象」支持与反馈。
 
 ## 反馈渠道
 
@@ -50,9 +44,9 @@ A：不会上传。数据仅保存在你的设备本地。
 
 # Support & Feedback
 
-**Version: prelaunch-0.6 (2026-11-11)**
+**Version: 1.0 (2026-11-12)**
 
-"ZhaoYao Almanac" (working title) is being prepared for release. **It is not yet available on the App Store.** This page will be updated with download details and FAQs once it launches.
+Support and feedback for Lixiang.
 
 ## Contact
 

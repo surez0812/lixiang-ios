@@ -1,18 +1,10 @@
-# 隐私政策 · 万年历 App（prelaunch 最小版 / 单一源）
-
-- **单一源规则**：本文件是唯一正文来源。官网 `/privacy` 与 App 内「关于 → 隐私政策」**必须由本文件构建**（Markdown → HTML），禁止两处各写一份（古琴 AC-1…AC-5 的教训 = 两处漂移）。
-- 版本：`prelaunch-0.3`。App Store 提审前必须复核为与**该 build 实际行为**一致，并升级版本号。
-- 本版覆盖：**App 本体**（v1.0 行为假设）+ **本官网**。若 App 行为变化（如接入统计），必须同步改本文件。
-
----
-
 ## 中文（zh-Hans）
 
 # 隐私政策
 
-**生效日期：2026 年 11 月 11 日｜版本：prelaunch-0.3**
+**生效日期：2026 年 11 月 12 日｜版本：1.0**
 
-「万年历」（以下称「本应用」，暂定名）由昭杳（以下称「我们」）提供。本政策说明本应用与官方网站如何处理你的信息。我们遵循最小必要原则：**不收集你的个人身份信息。**
+「历象」（以下称「本应用」，暂定名）由昭杳（以下称「我们」）提供。本政策说明本应用与官方网站如何处理你的信息。我们遵循最小必要原则：**不收集你的个人身份信息。**
 
 ## 一、我们不收集什么
 
@@ -67,9 +59,9 @@
 
 # Privacy Policy
 
-**Effective date: November 11, 2026｜Version: prelaunch-0.3**
+**Effective date: November 12, 2026｜Version: 1.0**
 
-"ZhaoYao Almanac" (the "App", working title), provided by ZhaoYao ("we", "us"), is a Chinese calendar app. This policy explains how the App and this website handle your information. We follow the principle of data minimisation: **we do not collect your personal identity information.**
+"Lixiang" (the "App"), provided by ZhaoYao ("we", "us"), is a Chinese calendar app. This policy explains how the App and this website handle your information. We follow the principle of data minimisation: **we do not collect your personal identity information.**
 
 ### 1. What we do NOT collect
 
