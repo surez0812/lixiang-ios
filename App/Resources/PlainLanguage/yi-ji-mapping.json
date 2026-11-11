@@ -593,5 +593,710 @@
   "term": "馀事勿取",
   "zh": "只处理日常小事别折腾大事",
   "en": "Handle routine tasks only, skip big moves"
+ },
+ {
+  "term": "金匮",
+  "zh": "整理钱包，清点存款",
+  "en": "Organize wallet, check savings"
+ },
+ {
+  "term": "司命",
+  "zh": "安排日程，列出待办清单",
+  "en": "Plan your schedule, make to-do list"
+ },
+ {
+  "term": "明堂",
+  "zh": "打扫客厅，开窗通风换气",
+  "en": "Clean living room, open windows for air"
+ },
+ {
+  "term": "玄武",
+  "zh": "检查门锁，关好门窗再出门",
+  "en": "Check door locks before leaving home"
+ },
+ {
+  "term": "玉堂",
+  "zh": "收拾书桌，把文件归类放好",
+  "en": "Tidy desk, sort and file documents"
+ },
+ {
+  "term": "天刑",
+  "zh": "核对合同，逐条看清条款",
+  "en": "Review contracts, read every clause carefully"
+ },
+ {
+  "term": "天德",
+  "zh": "帮邻居搭把手，做件小善事",
+  "en": "Help a neighbor with something small"
+ },
+ {
+  "term": "勾陈",
+  "zh": "理清旧账，还清拖欠的款项",
+  "en": "Settle old debts, pay what you owe"
+ },
+ {
+  "term": "天牢",
+  "zh": "别签长期合同，先缓一缓",
+  "en": "Hold off on long-term contracts"
+ },
+ {
+  "term": "青龙",
+  "zh": "适合谈合作、见新客户",
+  "en": "Good day to pitch or meet clients"
+ },
+ {
+  "term": "朱雀",
+  "zh": "少发群消息，说话前先想",
+  "en": "Think before you speak or post"
+ },
+ {
+  "term": "白虎",
+  "zh": "避开争执，运动注意防护",
+  "en": "Avoid conflicts; warm up before exercise"
+ },
+ {
+  "term": "闭",
+  "zh": "收拾房间、整理旧文件",
+  "en": "Clean your space and sort old files"
+ },
+ {
+  "term": "执",
+  "zh": "推进手头项目，盯紧细节",
+  "en": "Push your project forward, check details"
+ },
+ {
+  "term": "危",
+  "zh": "别冒险投资，走稳当路线",
+  "en": "Skip risky bets, stick to safe moves"
+ },
+ {
+  "term": "定",
+  "zh": "敲定计划、确认日程安排",
+  "en": "Lock in plans and confirm your schedule"
+ },
+ {
+  "term": "开",
+  "zh": "出门办事，开启新计划",
+  "en": "Go out and start new plans"
+ },
+ {
+  "term": "破",
+  "zh": "拆旧物，清理废弃杂物",
+  "en": "Tear down old stuff, clear junk"
+ },
+ {
+  "term": "成",
+  "zh": "签合同，敲定合作项目",
+  "en": "Sign contracts, finalize deals"
+ },
+ {
+  "term": "建",
+  "zh": "动手装修，搭新项目框架",
+  "en": "Start renovations, set up projects"
+ },
+ {
+  "term": "满",
+  "zh": "盘点库存，把货架补齐",
+  "en": "Check inventory, restock shelves"
+ },
+ {
+  "term": "平",
+  "zh": "修补路面，找平墙面地面",
+  "en": "Patch roads, level walls and floors"
+ },
+ {
+  "term": "除",
+  "zh": "大扫除，扔掉过期物品",
+  "en": "Deep clean, toss expired items"
+ },
+ {
+  "term": "收",
+  "zh": "催收尾款，整理归档文件",
+  "en": "Collect payments, file documents"
+ },
+ {
+  "term": "井",
+  "zh": "打扫房间清理杂物",
+  "en": "Clean rooms and clear out clutter"
+ },
+ {
+  "term": "亢",
+  "zh": "找朋友聊聊心里话",
+  "en": "Talk openly with a close friend"
+ },
+ {
+  "term": "参",
+  "zh": "出门跑步锻炼身体",
+  "en": "Go outside for a run or workout"
+ },
+ {
+  "term": "壁",
+  "zh": "安静读书充实自己",
+  "en": "Read quietly and learn something new"
+ },
+ {
+  "term": "奎",
+  "zh": "整理书桌规划本周",
+  "en": "Tidy your desk and plan the week"
+ },
+ {
+  "term": "女",
+  "zh": "动手缝补或做手工",
+  "en": "Sew, mend, or make something by hand"
+ },
+ {
+  "term": "室",
+  "zh": "收拾卧室换洗床品",
+  "en": "Make your bed and change the sheets"
+ },
+ {
+  "term": "尾",
+  "zh": "复盘收尾完成待办",
+  "en": "Wrap up tasks and finish what's pending"
+ },
+ {
+  "term": "张",
+  "zh": "挂窗帘装晾衣架",
+  "en": "Hang curtains or drying racks"
+ },
+ {
+  "term": "心",
+  "zh": "整理卧室换床品",
+  "en": "Tidy bedroom, change bedding"
+ },
+ {
+  "term": "房",
+  "zh": "打扫房间修门窗",
+  "en": "Clean rooms, fix doors and windows"
+ },
+ {
+  "term": "斗",
+  "zh": "清点库存理账目",
+  "en": "Count stock and sort accounts"
+ },
+ {
+  "term": "星",
+  "zh": "缝补衣服钉纽扣",
+  "en": "Mend clothes and sew buttons"
+ },
+ {
+  "term": "昴",
+  "zh": "擦窗户擦亮镜子",
+  "en": "Wipe windows, polish mirrors"
+ },
+ {
+  "term": "柳",
+  "zh": "修剪花草浇盆栽",
+  "en": "Trim plants and water pots"
+ },
+ {
+  "term": "毕",
+  "zh": "修补篱笆围院墙",
+  "en": "Patch fences and garden walls"
+ },
+ {
+  "term": "氐",
+  "zh": "整理房间，归置杂物",
+  "en": "Tidy your room and sort clutter"
+ },
+ {
+  "term": "牛",
+  "zh": "喂养宠物，打理花草",
+  "en": "Feed pets and tend your plants"
+ },
+ {
+  "term": "箕",
+  "zh": "清扫角落，通风换气",
+  "en": "Sweep corners and air out rooms"
+ },
+ {
+  "term": "翼",
+  "zh": "学一门新手艺或技能",
+  "en": "Pick up a new craft or skill"
+ },
+ {
+  "term": "胃",
+  "zh": "采购食材，做顿好饭",
+  "en": "Stock up groceries and cook well"
+ },
+ {
+  "term": "虚",
+  "zh": "停下来休息，别硬撑",
+  "en": "Take a break, don't push yourself"
+ },
+ {
+  "term": "角",
+  "zh": "动手开启一个新计划",
+  "en": "Start working on a new plan"
+ },
+ {
+  "term": "觜",
+  "zh": "少说多做，管住嘴巴",
+  "en": "Talk less and focus on doing"
+ },
+ {
+  "term": "轸",
+  "zh": "检查车辆，安排短途出行",
+  "en": "Check your car, plan a short trip"
+ },
+ {
+  "term": "鬼",
+  "zh": "整理旧物，打扫房间角落",
+  "en": "Sort old stuff, clean room corners"
+ },
+ {
+  "term": "娄",
+  "zh": "约朋友聚餐，联络老同事",
+  "en": "Invite friends to dinner, catch up"
+ },
+ {
+  "term": "剑锋金",
+  "zh": "磨刀具，修剪指甲和头发",
+  "en": "Sharpen knives, trim nails and hair"
+ },
+ {
+  "term": "城头土",
+  "zh": "检查门锁，加固阳台护栏",
+  "en": "Check door locks, secure balcony rails"
+ },
+ {
+  "term": "壁上土",
+  "zh": "补墙面裂缝，刷一层新漆",
+  "en": "Patch wall cracks, apply fresh paint"
+ },
+ {
+  "term": "大林木",
+  "zh": "逛公园散步，给绿植换盆",
+  "en": "Walk in the park, repot plants"
+ },
+ {
+  "term": "大海水",
+  "zh": "去游泳，多喝水润身体",
+  "en": "Go swimming, drink more water"
+ },
+ {
+  "term": "天上火",
+  "zh": "晴天出门晒被子",
+  "en": "Hang quilts outside on sunny days"
+ },
+ {
+  "term": "天河水",
+  "zh": "下雨天检查屋顶漏水",
+  "en": "Check roof for leaks when it rains"
+ },
+ {
+  "term": "屋上土",
+  "zh": "修补房顶裂缝和瓦片",
+  "en": "Patch cracks and fix roof tiles"
+ },
+ {
+  "term": "山下火",
+  "zh": "傍晚在院子里点篝火",
+  "en": "Light a bonfire in the yard at dusk"
+ },
+ {
+  "term": "山头火",
+  "zh": "早起爬山看日出",
+  "en": "Hike up early to watch the sunrise"
+ },
+ {
+  "term": "平地木",
+  "zh": "在空地上种一排树",
+  "en": "Plant a row of trees on open ground"
+ },
+ {
+  "term": "杨柳木",
+  "zh": "给窗边的垂柳浇水修剪",
+  "en": "Water and trim willows by the window"
+ },
+ {
+  "term": "松柏木",
+  "zh": "给门口的松树松土施肥",
+  "en": "Loosen soil and feed pines by the door"
+ },
+ {
+  "term": "沙中金",
+  "zh": "淘洗旧物挑出值钱的",
+  "en": "Sort old stuff, keep valuables"
+ },
+ {
+  "term": "泉中水",
+  "zh": "接壶好水泡茶慢慢喝",
+  "en": "Brew tea with fresh water"
+ },
+ {
+  "term": "海中金",
+  "zh": "去海边散步捡贝壳",
+  "en": "Walk the beach, collect shells"
+ },
+ {
+  "term": "涧下水",
+  "zh": "找条小溪踩水凉快一下",
+  "en": "Find a stream, cool your feet"
+ },
+ {
+  "term": "炉中火",
+  "zh": "开火做顿热乎饭",
+  "en": "Cook yourself a hot meal"
+ },
+ {
+  "term": "白蜡金",
+  "zh": "给皮具上油擦亮",
+  "en": "Polish leather goods till they shine"
+ },
+ {
+  "term": "石榴木",
+  "zh": "买盆绿植摆桌上",
+  "en": "Get a plant for your desk"
+ },
+ {
+  "term": "覆灯火",
+  "zh": "睡前点盏小灯读几页书",
+  "en": "Light a lamp, read before bed"
+ },
+ {
+  "term": "路旁土",
+  "zh": "沿路边散步走走",
+  "en": "Take a walk along the road"
+ },
+ {
+  "term": "金箔金",
+  "zh": "给小物件贴金装饰",
+  "en": "Add gold trim to small crafts"
+ },
+ {
+  "term": "长流水",
+  "zh": "打开水龙头冲洗地面",
+  "en": "Turn on the tap, rinse the floor"
+ },
+ {
+  "term": "霹雳火",
+  "zh": "检查家中电路和插座",
+  "en": "Check home wiring and outlets"
+ },
+ {
+  "term": "大驿土",
+  "zh": "去车站规划出行路线",
+  "en": "Plan your travel route at the station"
+ },
+ {
+  "term": "大溪水",
+  "zh": "到溪边踩水玩耍",
+  "en": "Go splash around by the creek"
+ },
+ {
+  "term": "桑柘木",
+  "zh": "修剪院子里的树枝",
+  "en": "Trim the branches in your yard"
+ },
+ {
+  "term": "沙中土",
+  "zh": "带孩子去沙坑堆沙堡",
+  "en": "Build sandcastles with kids"
+ },
+ {
+  "term": "钗钏金",
+  "zh": "戴上首饰出门约会",
+  "en": "Wear jewelry for a night out"
+ },
+ {
+  "term": "七夕节",
+  "zh": "给伴侣准备一份惊喜",
+  "en": "Plan a surprise for your partner"
+ },
+ {
+  "term": "上巳节",
+  "zh": "去河边散步踏青赏花",
+  "en": "Take a riverside walk among flowers"
+ },
+ {
+  "term": "下元节",
+  "zh": "整理房间犒劳自己",
+  "en": "Tidy up and treat yourself well"
+ },
+ {
+  "term": "中元节",
+  "zh": "回老家陪长辈吃顿饭",
+  "en": "Visit elders and share a meal"
+ },
+ {
+  "term": "中秋节",
+  "zh": "和家人一起赏月吃饼",
+  "en": "Share mooncakes under the moon"
+ },
+ {
+  "term": "元宵节",
+  "zh": "煮碗汤圆逛灯会猜谜",
+  "en": "Cook tangyuan and visit a lantern fair"
+ },
+ {
+  "term": "分龙节",
+  "zh": "检查雨具清理排水口",
+  "en": "Check rain gear and clear drains"
+ },
+ {
+  "term": "劳动节",
+  "zh": "放下工作，出门放松一天",
+  "en": "Take a day off and relax"
+ },
+ {
+  "term": "国庆节",
+  "zh": "挂面国旗，规划假期出行",
+  "en": "Hang a flag, plan your holiday trip"
+ },
+ {
+  "term": "填仓节",
+  "zh": "检查存粮，把米缸补满",
+  "en": "Check pantry stock and refill staples"
+ },
+ {
+  "term": "天穿节",
+  "zh": "找出漏水点，修补屋顶墙面",
+  "en": "Find leaks and patch roof or walls"
+ },
+ {
+  "term": "寒衣节",
+  "zh": "翻出厚衣服，给家人备冬装",
+  "en": "Pull out warm clothes for the family"
+ },
+ {
+  "term": "寒食节",
+  "zh": "提前备好凉菜，今天不开火",
+  "en": "Prep cold dishes ahead, skip cooking today"
+ },
+ {
+  "term": "尾牙",
+  "zh": "请同事吃顿饭，感谢一年付出",
+  "en": "Treat coworkers to a year-end dinner"
+ },
+ {
+  "term": "春社",
+  "zh": "约邻居聚一聚，联络感情",
+  "en": "Get together with neighbors and catch up"
+ },
+ {
+  "term": "春节",
+  "zh": "贴春联，给家人拜年",
+  "en": "Put up decorations, visit family"
+ },
+ {
+  "term": "社日节",
+  "zh": "带菜去邻居家聚餐",
+  "en": "Bring a dish to share with neighbors"
+ },
+ {
+  "term": "秋社",
+  "zh": "收完庄稼请朋友吃饭",
+  "en": "Host a harvest dinner for friends"
+ },
+ {
+  "term": "端午节",
+  "zh": "包粽子，去看龙舟赛",
+  "en": "Wrap rice dumplings, watch boat races"
+ },
+ {
+  "term": "腊八节",
+  "zh": "煮一锅杂粮粥暖身",
+  "en": "Cook mixed-grain porridge to warm up"
+ },
+ {
+  "term": "观莲节",
+  "zh": "去公园池塘边赏荷花",
+  "en": "Visit the park pond to see lotus blooms"
+ },
+ {
+  "term": "重阳节",
+  "zh": "陪长辈爬山散步",
+  "en": "Take elders on a hillside walk"
+ },
+ {
+  "term": "除夕",
+  "zh": "做年夜饭，守岁聊天",
+  "en": "Make reunion dinner, stay up chatting"
+ },
+ {
+  "term": "龙头节",
+  "zh": "今天去理发换个新发型",
+  "en": "Get a fresh haircut today"
+ },
+ {
+  "term": "戊不受田田主不祥",
+  "zh": "房产土地过户手续改天办",
+  "en": "Reschedule property transfers"
+ },
+ {
+  "term": "丁不剃头头必生疮",
+  "zh": "头皮敏感先别动剪刀",
+  "en": "Skip the razor if scalp is sore"
+ },
+ {
+  "term": "丙不修灶必见灾殃",
+  "zh": "厨房灶具维修往后排一排",
+  "en": "Postpone kitchen stove repairs"
+ },
+ {
+  "term": "乙不栽植千株不长",
+  "zh": "花苗菜苗过几天再下地",
+  "en": "Wait a few days to plant seedlings"
+ },
+ {
+  "term": "壬不泱水更难提防",
+  "zh": "远离河边水渠注意防滑",
+  "en": "Stay away from rivers and canals"
+ },
+ {
+  "term": "己不破券二比并亡",
+  "zh": "合同解约的事缓一缓再谈",
+  "en": "Hold off on canceling contracts"
+ },
+ {
+  "term": "庚不经络织机虚张",
+  "zh": "缝纫编织的手工活先放放",
+  "en": "Put sewing projects aside for now"
+ },
+ {
+  "term": "甲不开仓财物耗散",
+  "zh": "别开新仓，先盘点库存",
+  "en": "Don't open storage; check stock first"
+ },
+ {
+  "term": "癸不词讼理弱敌强",
+  "zh": "别急着打官司，先找调解",
+  "en": "Avoid lawsuits today; try mediation first"
+ },
+ {
+  "term": "辛不合酱主人不尝",
+  "zh": "今天别酿酱腌菜，改天做",
+  "en": "Skip sauce-making today; do it later"
+ },
+ {
+  "term": "午不苫盖屋主更张",
+  "zh": "别修屋顶，换个日子再动工",
+  "en": "Don't repair the roof; pick another day"
+ },
+ {
+  "term": "未不服药毒气入肠",
+  "zh": "别乱试新药，先问问医生",
+  "en": "Don't try new meds without asking doctor"
+ },
+ {
+  "term": "申不安床鬼祟入房",
+  "zh": "今天别挪床换床位",
+  "en": "Don't move or rearrange your bed today"
+ },
+ {
+  "term": "丑不冠带主不还乡",
+  "zh": "出远门的事缓一缓再定",
+  "en": "Postpone long trips; plan them later"
+ },
+ {
+  "term": "亥不嫁娶不利新郎",
+  "zh": "婚礼筹备先缓缓，不急定日子",
+  "en": "Hold off on setting a wedding date"
+ },
+ {
+  "term": "卯不穿井水泉不香",
+  "zh": "别挖井，先检查水质",
+  "en": "Don't dig wells; check water quality first"
+ },
+ {
+  "term": "子不问卜自惹祸殃",
+  "zh": "别算命，自己拿主意",
+  "en": "Skip fortune-telling; make your own decisions"
+ },
+ {
+  "term": "寅不祭祀神鬼不尝",
+  "zh": "今天不搞祭拜活动",
+  "en": "No ritual ceremonies today"
+ },
+ {
+  "term": "巳不远行财物伏藏",
+  "zh": "别出远门，收好贵重物品",
+  "en": "Stay local; secure your valuables"
+ },
+ {
+  "term": "戌不吃犬作怪上床",
+  "zh": "今晚别吃狗肉",
+  "en": "Avoid eating dog meat tonight"
+ },
+ {
+  "term": "辰不哭泣必主重丧",
+  "zh": "控制情绪，别大哭大闹",
+  "en": "Keep emotions in check; stay calm"
+ },
+ {
+  "term": "酉不会客醉坐颠狂",
+  "zh": "少喝酒，别喝到失态",
+  "en": "Drink less; don't get sloppy drunk"
+ },
+ {
+  "term": "天恩",
+  "zh": "适合做件好事帮助别人",
+  "en": "Good day to help someone out"
+ },
+ {
+  "term": "鸣吠",
+  "zh": "带宠物去打疫苗",
+  "en": "Take pet for vaccination"
+ },
+ {
+  "term": "母仓",
+  "zh": "整理厨房囤好食材",
+  "en": "Stock kitchen with groceries"
+ },
+ {
+  "term": "不将",
+  "zh": "约伴侣吃顿好的",
+  "en": "Plan a nice dinner date"
+ },
+ {
+  "term": "四相",
+  "zh": "把家里彻底打扫一遍",
+  "en": "Deep clean your whole home"
+ },
+ {
+  "term": "鸣吠对",
+  "zh": "给宠物洗澡剪指甲",
+  "en": "Groom and bathe your pet"
+ },
+ {
+  "term": "五合",
+  "zh": "约朋友一起聚个餐",
+  "en": "Get friends together for dinner"
+ },
+ {
+  "term": "三合",
+  "zh": "找搭档聊聊合作计划",
+  "en": "Discuss plans with a partner"
+ },
+ {
+  "term": "除神",
+  "zh": "扔掉旧物断舍离",
+  "en": "Declutter and toss old stuff"
+ },
+ {
+  "term": "月德",
+  "zh": "找长辈帮忙办事更顺",
+  "en": "Ask elders for help today"
+ },
+ {
+  "term": "月空",
+  "zh": "放下纠结，清空待办杂事",
+  "en": "Let go of worries, clear small tasks"
+ },
+ {
+  "term": "月德合",
+  "zh": "约朋友合作谈事情",
+  "en": "Meet friends to discuss plans"
+ },
+ {
+  "term": "月恩",
+  "zh": "给帮过你的人回个礼",
+  "en": "Return a favor to someone kind"
+ },
+ {
+  "term": "时阴",
+  "zh": "适合独处安静做手头的事",
+  "en": "Stay quiet and focus on solo work"
  }
 ]

@@ -153,5 +153,677 @@
   "key": "countdown_reminder",
   "zh": "提醒",
   "en": "Reminder"
+ },
+ {
+  "key": "about_1",
+  "zh": "历象",
+  "en": "LiXiang",
+  "source": "AboutScreen.swift:18",
+  "role": "Text"
+ },
+ {
+  "key": "about_2",
+  "zh": "传统历法 · 民俗文化",
+  "en": "Calendar & Folklore",
+  "source": "AboutScreen.swift:19",
+  "role": "Text"
+ },
+ {
+  "key": "about_3",
+  "zh": "联系我们",
+  "en": "Contact Us",
+  "source": "AboutScreen.swift:33",
+  "role": "Text"
+ },
+ {
+  "key": "about_4",
+  "zh": "© 2026 昭杳 · 历象内容为原创整理与传统公版文本，不宣称 AI 生成，不做吉凶预测。",
+  "en": "© 2026 Zhaoyao. LiXiang content is original compilation and traditional public-domain text. Not AI-generated. No fortune predictions.",
+  "source": "AboutScreen.swift:42",
+  "role": "Text"
+ },
+ {
+  "key": "about_5",
+  "zh": "关于历象",
+  "en": "About LiXiang",
+  "source": "AboutScreen.swift:48",
+  "role": "navigationTitle"
+ },
+ {
+  "key": "countdown_6",
+  "zh": "就是今天",
+  "en": "Today",
+  "source": "AnniversaryScreen.swift:104",
+  "role": "D1Chip"
+ },
+ {
+  "key": "countdown_7",
+  "zh": "每年",
+  "en": "Yearly",
+  "source": "AnniversaryScreen.swift:127",
+  "role": "D1Chip"
+ },
+ {
+  "key": "countdown_8",
+  "zh": "提醒未开启",
+  "en": "Reminders Off",
+  "source": "AnniversaryScreen.swift:129",
+  "role": "D1Chip"
+ },
+ {
+  "key": "countdown_9",
+  "zh": "还没有倒计日",
+  "en": "No Countdowns",
+  "source": "AnniversaryScreen.swift:141",
+  "role": "Text"
+ },
+ {
+  "key": "countdown_10",
+  "zh": "记一个日子，之后会在这一天提醒你。支持公历/农历、每年重复、2/29 规则。",
+  "en": "Save a date to get reminded on that day. Supports solar/lunar calendar, yearly repeat, and Feb 29 rules.",
+  "source": "AnniversaryScreen.swift:142",
+  "role": "Text"
+ },
+ {
+  "key": "countdown_11",
+  "zh": "记一个日子",
+  "en": "Add Date",
+  "source": "AnniversaryScreen.swift:143",
+  "role": "Button"
+ },
+ {
+  "key": "countdown_12",
+  "zh": "例如：生日、结婚纪念日",
+  "en": "e.g. Birthday, Anniversary",
+  "source": "AnniversaryScreen.swift:179",
+  "role": "TextField"
+ },
+ {
+  "key": "countdown_13",
+  "zh": "闰月仅在农历闰年出现；非闰年不提醒。",
+  "en": "Leap months only occur in lunar leap years; no reminder otherwise.",
+  "source": "AnniversaryScreen.swift:187",
+  "role": "Text"
+ },
+ {
+  "key": "countdown_14",
+  "zh": "跳过",
+  "en": "Skip",
+  "source": "AnniversaryScreen.swift:193",
+  "role": "Text"
+ },
+ {
+  "key": "countdown_15",
+  "zh": "仅影响提醒日；闰年仍为 2/29。",
+  "en": "Affects reminder date only; leap years still use Feb 29.",
+  "source": "AnniversaryScreen.swift:195",
+  "role": "Text"
+ },
+ {
+  "key": "countdown_16",
+  "zh": "首次保存时才请求通知权限；拒绝后仍会保存。",
+  "en": "Notification permission requested on first save; saves even if denied.",
+  "source": "AnniversaryScreen.swift:225",
+  "role": "Text"
+ },
+ {
+  "key": "countdown_17",
+  "zh": "可选",
+  "en": "Optional",
+  "source": "AnniversaryScreen.swift:228",
+  "role": "TextField"
+ },
+ {
+  "key": "countdown_18",
+  "zh": "保存",
+  "en": "Save",
+  "source": "AnniversaryScreen.swift:234",
+  "role": "Button"
+ },
+ {
+  "key": "countdown_19",
+  "zh": "通知已关闭，可在系统设置开启；倒计日已保存",
+  "en": "Notifications off — enable in Settings. Countdown saved.",
+  "source": "AnniversaryScreen.swift:30",
+  "role": "Text"
+ },
+ {
+  "key": "countdown_20",
+  "zh": "去开启",
+  "en": "Enable",
+  "source": "AnniversaryScreen.swift:32",
+  "role": "Text"
+ },
+ {
+  "key": "countdown_21",
+  "zh": "还有 X 天 / 每年重复 / 已过 X 天；2/29 平年按 2/28 提醒（可改 3/1）。数据只在本机，无账号。",
+  "en": "X days left / Yearly / X days ago. In non-leap years, Feb 29 reminds on Feb 28 (or Mar 1). Data stays on device, no account.",
+  "source": "AnniversaryScreen.swift:38",
+  "role": "Text"
+ },
+ {
+  "key": "countdown_22",
+  "zh": "删除",
+  "en": "Delete",
+  "source": "AnniversaryScreen.swift:66",
+  "role": "Button"
+ },
+ {
+  "key": "countdown_23",
+  "zh": "取消",
+  "en": "Cancel",
+  "source": "AnniversaryScreen.swift:67",
+  "role": "Button"
+ },
+ {
+  "key": "countdown_24",
+  "zh": "删除后不可恢复；可先导出 JSON 备份。",
+  "en": "Cannot be undone. Export JSON backup first.",
+  "source": "AnniversaryScreen.swift:68",
+  "role": "Text"
+ },
+ {
+  "key": "countdown_25",
+  "zh": "记一个日子 · 按北京时间",
+  "en": "Note a Date · Beijing Time",
+  "source": "AnniversaryScreen.swift:86",
+  "role": "Text"
+ },
+ {
+  "key": "countdown_26",
+  "zh": "下一个",
+  "en": "Next",
+  "source": "AnniversaryScreen.swift:93",
+  "role": "SectionLabel"
+ },
+ {
+  "key": "compass_27",
+  "zh": "今日方位",
+  "en": "Today's Directions",
+  "source": "CompassScreen.swift:136",
+  "role": "Text"
+ },
+ {
+  "key": "compass_28",
+  "zh": "只讲方位",
+  "en": "Directions Only",
+  "source": "CompassScreen.swift:137",
+  "role": "Text"
+ },
+ {
+  "key": "compass_29",
+  "zh": "煞方",
+  "en": "Sha Direction",
+  "source": "CompassScreen.swift:249",
+  "role": "Text"
+ },
+ {
+  "key": "compass_30",
+  "zh": "吉神罗盘 · 文本替身",
+  "en": "Auspicious Compass · Text Alt",
+  "source": "CompassScreen.swift:65",
+  "role": "Text"
+ },
+ {
+  "key": "compass_31",
+  "zh": "VoiceOver 朗读顺序：喜神 → 财神 → 福神 → 阳贵 → 阴贵 → 煞方；盘面为装饰（accessibilityHidden）。",
+  "en": "VoiceOver order: Joy → Wealth → Fortune → Yang Noble → Yin Noble → Sha; dial decorative (accessibilityHidden).",
+  "source": "CompassScreen.swift:66",
+  "role": "Text"
+ },
+ {
+  "key": "compass_32",
+  "zh": "5 针：喜神/财神/福神/阳贵/阴贵；同方位按径向错开。缺位 = 本日不在此位（不画针）。传统方位示意，非风水/招财/吉凶预测。",
+  "en": "5 needles: Joy/Wealth/Fortune/Yang Noble/Yin Noble; same direction offset radially. Absent = not placed today (no needle). Traditional illustration, not feng shui/luck prediction.",
+  "source": "CompassScreen.swift:72",
+  "role": "Text"
+ },
+ {
+  "key": "content_33",
+  "zh": "网页内容",
+  "en": "Web Content",
+  "source": "ContentScreen.swift:102",
+  "role": "D1Chip"
+ },
+ {
+  "key": "content_34",
+  "zh": "已缓存",
+  "en": "Cached",
+  "source": "ContentScreen.swift:103",
+  "role": "D1Chip"
+ },
+ {
+  "key": "content_35",
+  "zh": "未缓存",
+  "en": "Not Cached",
+  "source": "ContentScreen.swift:104",
+  "role": "D1Chip"
+ },
+ {
+  "key": "content_36",
+  "zh": "加载中",
+  "en": "Loading",
+  "source": "ContentScreen.swift:138",
+  "role": "Text"
+ },
+ {
+  "key": "content_37",
+  "zh": "正文加载前先显示本地头卡；骨架 ≥300ms 才出现，无白屏。",
+  "en": "Local header card first; skeleton only after ≥300ms, no blank screen.",
+  "source": "ContentScreen.swift:149",
+  "role": "Text"
+ },
+ {
+  "key": "content_38",
+  "zh": "今日已解锁",
+  "en": "Unlocked Today",
+  "source": "ContentScreen.swift:167",
+  "role": "D1Chip"
+ },
+ {
+  "key": "content_39",
+  "zh": "已过 · 可回看",
+  "en": "Past · Reviewable",
+  "source": "ContentScreen.swift:168",
+  "role": "D1Chip"
+ },
+ {
+  "key": "content_40",
+  "zh": "未解锁只显示名称、日期与一行主题；不展示准备清单、步骤或禁忌细节；不返回正文。",
+  "en": "Locked shows name, date, one-line theme only; no checklist, steps, or taboos; no body returned.",
+  "source": "ContentScreen.swift:174",
+  "role": "Text"
+ },
+ {
+  "key": "content_41",
+  "zh": "传统民俗文化内容；焚香烧纸请遵守当地消防与环保规定，不涉及宗教场所与教职人员。",
+  "en": "Traditional folk content; follow local fire and environmental rules for incense/paper burning; no religious sites or clergy involved.",
+  "source": "ContentScreen.swift:181",
+  "role": "Text"
+ },
+ {
+  "key": "content_42",
+  "zh": "离线且未缓存",
+  "en": "Offline & Uncached",
+  "source": "ContentScreen.swift:191",
+  "role": "Text"
+ },
+ {
+  "key": "content_43",
+  "zh": "联网后可读；已解锁状态不受影响。",
+  "en": "Readable once online; unlock status unaffected.",
+  "source": "ContentScreen.swift:193",
+  "role": "Text"
+ },
+ {
+  "key": "content_44",
+  "zh": "重新连接",
+  "en": "Reconnect",
+  "source": "ContentScreen.swift:195",
+  "role": "Button"
+ },
+ {
+  "key": "content_45",
+  "zh": "去设置网络",
+  "en": "Network Settings",
+  "source": "ContentScreen.swift:201",
+  "role": "Text"
+ },
+ {
+  "key": "content_46",
+  "zh": "重试",
+  "en": "Retry",
+  "source": "ContentScreen.swift:215",
+  "role": "Button"
+ },
+ {
+  "key": "content_47",
+  "zh": "来源与许可",
+  "en": "Sources & Licenses",
+  "source": "ContentScreen.swift:250",
+  "role": "Text"
+ },
+ {
+  "key": "content_48",
+  "zh": "北京时间（UTC+8）解锁 · 网页静态发布（B′）· 未解锁正文不在服务器 · 版本新旧静默替换 · 配图 16:9 + alt",
+  "en": "Unlock at UTC+8 · Static web release (B′) · Locked body absent from server · Silent version swap · Images 16:9 + alt",
+  "source": "ContentScreen.swift:260",
+  "role": "Text"
+ },
+ {
+  "key": "content_49",
+  "zh": "按北京时间（UTC+8）判定解锁",
+  "en": "Unlock by Beijing time (UTC+8)",
+  "source": "ContentScreen.swift:83",
+  "role": "Text"
+ },
+ {
+  "key": "content_50",
+  "zh": "未解锁",
+  "en": "Locked",
+  "source": "ContentScreen.swift:96",
+  "role": "D1Chip"
+ },
+ {
+  "key": "content_51",
+  "zh": "已解锁",
+  "en": "Unlocked",
+  "source": "ContentScreen.swift:98",
+  "role": "D1Chip"
+ },
+ {
+  "key": "countdown_52",
+  "zh": "倒计日只在本机保存；通知为本地通知，不上传。",
+  "en": "Countdowns are stored on this device only; notifications are local and never uploaded.",
+  "source": "CountdownDetailScreen.swift:44",
+  "role": "Text"
+ },
+ {
+  "key": "day_53",
+  "zh": "时辰宜忌",
+  "en": "Hourly Do & Don't",
+  "source": "DayDetailScreen.swift:168",
+  "role": "Text"
+ },
+ {
+  "key": "day_54",
+  "zh": "宜忌",
+  "en": "Do & Don't",
+  "source": "DayDetailScreen.swift:251",
+  "role": "SectionLabel"
+ },
+ {
+  "key": "day_55",
+  "zh": "白话",
+  "en": "Plain Talk",
+  "source": "DayDetailScreen.swift:256",
+  "role": "Text"
+ },
+ {
+  "key": "day_56",
+  "zh": "白话：宜=传统历书认为适合做的事；忌=认为不太适合做的事，不是绝对禁令，传统历书流派间可能不同。",
+  "en": "Plain talk: \"Do\" = activities traditional almanacs consider suitable; \"Don't\" = ones considered less suitable. These aren't absolute rules, and traditions may differ between almanac schools.",
+  "source": "DayDetailScreen.swift:270",
+  "role": "Text"
+ },
+ {
+  "key": "day_57",
+  "zh": "按北京时间 · 时家口径",
+  "en": "Beijing time · hourly system",
+  "source": "DayDetailScreen.swift:378",
+  "role": "Text"
+ },
+ {
+  "key": "day_58",
+  "zh": "当前时辰",
+  "en": "Current Hour",
+  "source": "DayDetailScreen.swift:398",
+  "role": "D1Chip"
+ },
+ {
+  "key": "festivals_59",
+  "zh": "见顶部",
+  "en": "See top",
+  "source": "FestivalsScreen.swift:131",
+  "role": "Text"
+ },
+ {
+  "key": "festivals_60",
+  "zh": "内容暂时不可用",
+  "en": "Content unavailable",
+  "source": "FestivalsScreen.swift:215",
+  "role": "Text"
+ },
+ {
+  "key": "festivals_61",
+  "zh": "检查网络后重试；已解锁状态不受影响。",
+  "en": "Check your connection and retry; unlocked items stay unlocked.",
+  "source": "FestivalsScreen.swift:216",
+  "role": "Text"
+ },
+ {
+  "key": "festivals_62",
+  "zh": "去月历",
+  "en": "Month View",
+  "source": "FestivalsScreen.swift:224",
+  "role": "Button"
+ },
+ {
+  "key": "festivals_63",
+  "zh": "未来 90 天暂无节俗内容",
+  "en": "No festival content for the next 90 days",
+  "source": "FestivalsScreen.swift:239",
+  "role": "Text"
+ },
+ {
+  "key": "festivals_64",
+  "zh": "内容按季度滚动补充；锁定/解锁规则不受影响。",
+  "en": "Content is added quarterly; lock/unlock rules are unchanged.",
+  "source": "FestivalsScreen.swift:240",
+  "role": "Text"
+ },
+ {
+  "key": "festivals_65",
+  "zh": "查看全部月份",
+  "en": "All Months",
+  "source": "FestivalsScreen.swift:242",
+  "role": "Button"
+ },
+ {
+  "key": "festivals_66",
+  "zh": "去倒计日",
+  "en": "Countdowns",
+  "source": "FestivalsScreen.swift:248",
+  "role": "Button"
+ },
+ {
+  "key": "plain_67",
+  "zh": "这页在说什么",
+  "en": "About This Page",
+  "source": "GlossaryScreen.swift:12",
+  "role": "Text"
+ },
+ {
+  "key": "plain_68",
+  "zh": "历法/黄历术语的白话解释，只讲文化背景，不做预测。",
+  "en": "Plain-language explanations of calendar and almanac terms — cultural background only, no predictions.",
+  "source": "GlossaryScreen.swift:13",
+  "role": "Text"
+ },
+ {
+  "key": "plain_69",
+  "zh": "术语解释",
+  "en": "Glossary",
+  "source": "GlossaryScreen.swift:29",
+  "role": "navigationTitle"
+ },
+ {
+  "key": "month_70",
+  "zh": "今天怎么用",
+  "en": "Using Today",
+  "source": "MonthScreen.swift:166",
+  "role": "Text"
+ },
+ {
+  "key": "month_71",
+  "zh": "回到今天",
+  "en": "Back to Today",
+  "source": "MonthScreen.swift:62",
+  "role": "accessibilityLabel"
+ },
+ {
+  "key": "month_72",
+  "zh": "昭杳 · 历象",
+  "en": "Zhaoyao · Almanac",
+  "source": "MonthScreen.swift:64",
+  "role": "Text"
+ },
+ {
+  "key": "month_73",
+  "zh": "搜索（即将上线）",
+  "en": "Search (coming soon)",
+  "source": "MonthScreen.swift:69",
+  "role": "accessibilityLabel"
+ },
+ {
+  "key": "text_74",
+  "zh": "内容不存在",
+  "en": "Not found",
+  "source": "NotFoundScreen.swift:11",
+  "role": "Text"
+ },
+ {
+  "key": "text_75",
+  "zh": "返回后可从「民俗」按日期浏览已解锁内容。",
+  "en": "Go back and browse unlocked entries by date under Folklore.",
+  "source": "NotFoundScreen.swift:13",
+  "role": "Text"
+ },
+ {
+  "key": "plain_76",
+  "zh": "暂无白话词条（内容补齐后显示）；先按传统历书字面理解即可。",
+  "en": "No plain-language notes yet (added in future updates). For now, read the almanac literally.",
+  "source": "PlainTermSheet.swift:21",
+  "role": "Text"
+ },
+ {
+  "key": "plain_77",
+  "zh": "白话只解释含义，不做吉凶预测；不同历书流派表述可能有差异。",
+  "en": "Plain language explains meaning only — no fortune predictions. Wording varies across almanac traditions.",
+  "source": "PlainTermSheet.swift:24",
+  "role": "Text"
+ },
+ {
+  "key": "plain_78",
+  "zh": "这是什么意思",
+  "en": "What's this mean?",
+  "source": "PlainTermSheet.swift:29",
+  "role": "navigationTitle"
+ },
+ {
+  "key": "plain_79",
+  "zh": "关闭",
+  "en": "Close",
+  "source": "PlainTermSheet.swift:31",
+  "role": "Button"
+ },
+ {
+  "key": "plain_80",
+  "zh": "读解释",
+  "en": "Read more",
+  "source": "QuoteSheet.swift:101",
+  "role": "Text"
+ },
+ {
+  "key": "plain_81",
+  "zh": "分享今日一句",
+  "en": "Share today's line",
+  "source": "QuoteSheet.swift:106",
+  "role": "Text"
+ },
+ {
+  "key": "plain_82",
+  "zh": "点开读解释（原文 / 白话 / 怎么用）",
+  "en": "Tap to read: original / plain / how to use",
+  "source": "QuoteSheet.swift:69",
+  "role": "Text"
+ },
+ {
+  "key": "plain_83",
+  "zh": "今日一句",
+  "en": "Today's Line",
+  "source": "QuoteSheet.swift:86",
+  "role": "Text"
+ },
+ {
+  "key": "plain_84",
+  "zh": "自知",
+  "en": "Self-Knowing",
+  "source": "QuoteSheet.swift:90",
+  "role": "Text"
+ },
+ {
+  "key": "plain_85",
+  "zh": "解释页：1–3 句白话 +「今天怎么用」；原文为公版，标注章节；不做吉凶预测。长按可复制原文。",
+  "en": "Detail page: 1–3 plain sentences + \"Use it today.\" Original text is public domain with chapter cited. No fortune predictions. Long-press to copy the original.",
+  "source": "QuoteSheet.swift:97",
+  "role": "Text"
+ },
+ {
+  "key": "settings_86",
+  "zh": "黄历白话",
+  "en": "Almanac Explained",
+  "source": "SettingsScreen.swift:19",
+  "role": "Text"
+ },
+ {
+  "key": "settings_87",
+  "zh": "倒计日提醒",
+  "en": "Countdown Alerts",
+  "source": "SettingsScreen.swift:29",
+  "role": "settingRow"
+ },
+ {
+  "key": "settings_88",
+  "zh": "数据来源与许可",
+  "en": "Sources & Licenses",
+  "source": "SettingsScreen.swift:32",
+  "role": "settingRow"
+ },
+ {
+  "key": "settings_89",
+  "zh": "关于历象 · 隐私 · 条款 · 支持",
+  "en": "About Lixiang · Privacy · Terms · Support",
+  "source": "SettingsScreen.swift:34",
+  "role": "settingRow"
+ },
+ {
+  "key": "settings_90",
+  "zh": "无需账号 · 数据只在本机",
+  "en": "No account · Data stays on device",
+  "source": "SettingsScreen.swift:38",
+  "role": "Text"
+ },
+ {
+  "key": "settings_91",
+  "zh": "「跟随系统」随 iOS 外观自动切换；手动选择后保持所选。",
+  "en": "\"System\" follows your iOS appearance; a manual choice stays until changed.",
+  "source": "SettingsScreen.swift:93",
+  "role": "Text"
+ },
+ {
+  "key": "sectionlabel_92",
+  "zh": "条目来源",
+  "en": "Entry Sources",
+  "source": "SourceLicenseScreen.swift:23",
+  "role": "SectionLabel"
+ },
+ {
+  "key": "text_93",
+  "zh": "暂无公开来源条目（随内容版本更新）",
+  "en": "No public sources listed yet (updated with content releases).",
+  "source": "SourceLicenseScreen.swift:34",
+  "role": "Text"
+ },
+ {
+  "key": "sectionlabel_94",
+  "zh": "说明",
+  "en": "Notes",
+  "source": "SourceLicenseScreen.swift:40",
+  "role": "SectionLabel"
+ },
+ {
+  "key": "text_95",
+  "zh": "内容为原创整理；古籍只引公有领域文本并注明版本。不复刻原文，图片须登记许可，无来源不明图片。",
+  "en": "Content is originally compiled. Classical texts quote only public-domain editions, with versions cited. No verbatim reprints of modern works; every image has a logged license — none of unknown origin.",
+  "source": "SourceLicenseScreen.swift:41",
+  "role": "Text"
+ },
+ {
+  "key": "text_96",
+  "zh": "反馈与更正：support@zhaoyao.xin",
+  "en": "Feedback & corrections: support@zhaoyao.xin",
+  "source": "SourceLicenseScreen.swift:43",
+  "role": "Text"
  }
 ]
