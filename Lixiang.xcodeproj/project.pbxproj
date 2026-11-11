@@ -50,6 +50,7 @@
 		6D9FA28414E5B8E3DA30956C /* term-xiaohan-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 09DE9E543429892C5F51A010 /* term-xiaohan-dark.webp */; };
 		6F1D9CEA807B4E1828C2B6E1 /* ART-NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = D15E21AB1DA5B1F2145579FD /* ART-NOTES.md */; };
 		6F39BFF37E0D4D42CE81F9B3 /* term-xiaoshu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = CC62CFDFEAF248607EFF182F /* term-xiaoshu-dark.webp */; };
+		73BD547C1D67F9DA50394AC5 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0972F77CF89DEA571919AB7 /* AboutScreen.swift */; };
 		74F2ABD34D760AC952033AD7 /* PlainTermSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18D4E9C43A87557F5B8AFB /* PlainTermSheet.swift */; };
 		776F6261214379761CB1EF3E /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD67E5E2CFFCBF2F70AD9D /* ContentRepository.swift */; };
 		79D3CA12212D0B08D65B2AF6 /* LixiangCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9DC9A4CCDA5EEBBCD58D4361 /* LixiangCalendarCore */; };
@@ -59,6 +60,9 @@
 		87B2E99B4716578E1A332A70 /* term-xiazhi-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 12206DA975CCAA192C120378 /* term-xiazhi-dark.webp */; };
 		88AC02A604222A6B6DA56B13 /* explain-pages.json in Resources */ = {isa = PBXBuildFile; fileRef = 32D566C65C78A240C691BAE2 /* explain-pages.json */; };
 		8BB451AA7F94B4A78B5DAB11 /* term-lidong-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = BBF1AB9B0EC5E4CE0D2509D2 /* term-lidong-light.webp */; };
+		9128527BA893D4502A4803D8 /* support.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E444FF645AE7F3A22E391DD /* support.md */; };
+		92074A4284A05F5901632EEA /* user-terms.md in Resources */ = {isa = PBXBuildFile; fileRef = C2D792603555272E28D9B5A9 /* user-terms.md */; };
+		93C793A1B1C540AF14C3916C /* privacy.md in Resources */ = {isa = PBXBuildFile; fileRef = 06939DF97090A6AE27F8D2B5 /* privacy.md */; };
 		95BE8E56E129430C849F1CB3 /* term-chushu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = C9E219B0ADA5BD66F0ACF994 /* term-chushu-dark.webp */; };
 		AE756168FD87DC8D978F2005 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788133271B6E5AF4FAB99C4D /* AppState.swift */; };
 		B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA72858D41F13FE75567AF /* SettingsScreen.swift */; };
@@ -117,6 +121,7 @@
 /* Begin PBXFileReference section */
 		02C26FF99F8DAD23254156A9 /* D1Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1Motion.swift; sourceTree = "<group>"; };
 		06490BB1018DF2765D0E79A8 /* SeasonalArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonalArt.swift; sourceTree = "<group>"; };
+		06939DF97090A6AE27F8D2B5 /* privacy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = privacy.md; sourceTree = "<group>"; };
 		09DE9E543429892C5F51A010 /* term-xiaohan-dark.webp */ = {isa = PBXFileReference; path = "term-xiaohan-dark.webp"; sourceTree = "<group>"; };
 		0A786E1D2A93C1C738FF1D38 /* app-strings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "app-strings.json"; sourceTree = "<group>"; };
 		0BF92BA24C3F132137773A22 /* term-jingzhe-dark.webp */ = {isa = PBXFileReference; path = "term-jingzhe-dark.webp"; sourceTree = "<group>"; };
@@ -131,6 +136,7 @@
 		1EAB5A46223FEE61B2436B89 /* term-bailu-dark.webp */ = {isa = PBXFileReference; path = "term-bailu-dark.webp"; sourceTree = "<group>"; };
 		1FD38CFAD18DCF9C80D198F2 /* term-xiaohan-light.webp */ = {isa = PBXFileReference; path = "term-xiaohan-light.webp"; sourceTree = "<group>"; };
 		23223E2D5C2083126F80B9B8 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		2E444FF645AE7F3A22E391DD /* support.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = support.md; sourceTree = "<group>"; };
 		2F45670C7EBCED160EB64043 /* term-mangzhong-dark.webp */ = {isa = PBXFileReference; path = "term-mangzhong-dark.webp"; sourceTree = "<group>"; };
 		2FD6BD4029A2CD7592D87F9D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		2FD914FFECCDF37F1AC1E7A7 /* term-jingzhe-light.webp */ = {isa = PBXFileReference; path = "term-jingzhe-light.webp"; sourceTree = "<group>"; };
@@ -184,10 +190,12 @@
 		A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryScreen.swift; sourceTree = "<group>"; };
 		AD13A95C89E26C3DDB673171 /* term-lichun-dark.webp */ = {isa = PBXFileReference; path = "term-lichun-dark.webp"; sourceTree = "<group>"; };
 		ADAAB3BFDF1D630B7D7D5361 /* A11yOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A11yOrderTests.swift; sourceTree = "<group>"; };
+		B0972F77CF89DEA571919AB7 /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
 		B7192674760DC8C1A098029B /* term-yushui-dark.webp */ = {isa = PBXFileReference; path = "term-yushui-dark.webp"; sourceTree = "<group>"; };
 		BB8990536CE22FCB0076EB82 /* term-xiazhi-light.webp */ = {isa = PBXFileReference; path = "term-xiazhi-light.webp"; sourceTree = "<group>"; };
 		BBF1AB9B0EC5E4CE0D2509D2 /* term-lidong-light.webp */ = {isa = PBXFileReference; path = "term-lidong-light.webp"; sourceTree = "<group>"; };
 		BF18D4E9C43A87557F5B8AFB /* PlainTermSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTermSheet.swift; sourceTree = "<group>"; };
+		C2D792603555272E28D9B5A9 /* user-terms.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "user-terms.md"; sourceTree = "<group>"; };
 		C535385772329F09B4B4E2C4 /* term-guyu-light.webp */ = {isa = PBXFileReference; path = "term-guyu-light.webp"; sourceTree = "<group>"; };
 		C9E219B0ADA5BD66F0ACF994 /* term-chushu-dark.webp */ = {isa = PBXFileReference; path = "term-chushu-dark.webp"; sourceTree = "<group>"; };
 		CC62CFDFEAF248607EFF182F /* term-xiaoshu-dark.webp */ = {isa = PBXFileReference; path = "term-xiaoshu-dark.webp"; sourceTree = "<group>"; };
@@ -272,6 +280,7 @@
 		43DEDB2A6FE976E0A69E96DE /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				B0972F77CF89DEA571919AB7 /* AboutScreen.swift */,
 				69CA72858D41F13FE75567AF /* SettingsScreen.swift */,
 			);
 			path = Settings;
@@ -377,6 +386,7 @@
 		624BFDF8DB3915CA7387A581 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				82211D53D09E86107383F779 /* Legal */,
 				4D8A08A49AA259FCCBA9DF2F /* PlainLanguage */,
 				4959E61C322781EDC8AEC8E7 /* SeasonalArt */,
 				9C64D67EB5AF32E2A27AD8D4 /* Assets.xcassets */,
@@ -408,6 +418,16 @@
 				493E10C2B5747A8960FA078A /* LixiangCalendarCore */,
 			);
 			path = Packages;
+			sourceTree = "<group>";
+		};
+		82211D53D09E86107383F779 /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				06939DF97090A6AE27F8D2B5 /* privacy.md */,
+				2E444FF645AE7F3A22E391DD /* support.md */,
+				C2D792603555272E28D9B5A9 /* user-terms.md */,
+			);
+			path = Legal;
 			sourceTree = "<group>";
 		};
 		86635CE97325D581A8A2A29D = {
@@ -626,6 +646,8 @@
 				8341D6E9A4D87EB31E3DC658 /* daodejing.json in Resources */,
 				88AC02A604222A6B6DA56B13 /* explain-pages.json in Resources */,
 				34AC68259657AD79C06097F8 /* index.json in Resources */,
+				93C793A1B1C540AF14C3916C /* privacy.md in Resources */,
+				9128527BA893D4502A4803D8 /* support.md in Resources */,
 				E7442BA38E4D02D147A0BBF9 /* term-bailu-dark.webp in Resources */,
 				53C956D926BCD244194C6AA0 /* term-bailu-light.webp in Resources */,
 				1629C356400EA80AC0230377 /* term-chunfen-dark.webp in Resources */,
@@ -674,6 +696,7 @@
 				BF292E0C1C1A6726EC389D74 /* term-xiazhi-light.webp in Resources */,
 				7F14335FCC882A7BC0A65A63 /* term-yushui-dark.webp in Resources */,
 				28B63808C389E5CF663BADA6 /* term-yushui-light.webp in Resources */,
+				92074A4284A05F5901632EEA /* user-terms.md in Resources */,
 				B668AB8E6D28CB01980E620D /* yi-ji-mapping.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,6 +708,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BD547C1D67F9DA50394AC5 /* AboutScreen.swift in Sources */,
 				D1E2439EB3417175761B5D6E /* AnniversaryScreen.swift in Sources */,
 				F3CF09131452D1FCE3C34BE9 /* AnniversaryStore.swift in Sources */,
 				AE756168FD87DC8D978F2005 /* AppState.swift in Sources */,

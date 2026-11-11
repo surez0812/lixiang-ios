@@ -30,8 +30,10 @@ struct SettingsScreen: View {
                 }
                 group("数据与关于") {
                     settingRow("数据来源与许可", value: "LunarSwift 1.1.9 · MIT", chevron: false)
-                    settingRow("隐私政策", value: "P2 接入", chevron: false)
-                    settingRow("版本", value: "1.0 (P1)", chevron: false)
+                    NavigationLink { AboutScreen() } label: {
+                        settingRow("关于历象 · 隐私 · 条款 · 支持", value: "v1.0", chevron: true)
+                    }.buttonStyle(.plain)
+                    settingRow("版本", value: "1.0 (build 2)", chevron: false)
                 }
                 Text("无需账号 · 数据只在本机")
                     .d1Font(10).foregroundStyle(theme.ink3)
