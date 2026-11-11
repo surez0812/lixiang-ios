@@ -44,6 +44,11 @@ struct MonthScreen: View {
         .navigationBarHidden(true)
         .onAppear {
             if displayYear == 0 { displayYear = today.year; displayMonth = today.month }
+            #if DEBUG
+            if state.debug.countdownDetail, let first = state.countdownStore.items.first {
+                countdownDetail = first
+            }
+            #endif
         }
         .sheet(isPresented: $showQuote) {
             if let q = state.plainLanguage.quote(for: today) { QuoteSheet(quote: q, date: today) }
@@ -224,41 +229,42 @@ struct MonthScreen: View {
     }
 
     private func dayCell(_ cell: GridDay) -> some View {
-        NavigationLink(value: Route.day(cell.date)) {
-            VStack(spacing: 1) {
-                Text("\(cell.date.day)")
-                    .d1Font(17, weight: .semibold)
-                    .foregroundStyle(cell.isToday ? theme.cream : (cell.inCurrentMonth ? theme.ink : theme.ink3))
-                    .frame(width: 24, height: 24)
-                    .background {
-                        if cell.isToday {
-                            Circle().fill(theme.accent)
-                        } else if selectedDate == cell.date {
-                            Circle().strokeBorder(theme.accent, lineWidth: 1.5)
+        ZStack(alignment: .topTrailing) {
+            NavigationLink(value: Route.day(cell.date)) {
+                VStack(spacing: 1) {
+                    Text("\(cell.date.day)")
+                        .d1Font(17, weight: .semibold)
+                        .foregroundStyle(cell.isToday ? theme.cream : (cell.inCurrentMonth ? theme.ink : theme.ink3))
+                        .frame(width: 24, height: 24)
+                        .background {
+                            if cell.isToday {
+                                Circle().fill(theme.accent)
+                            } else if selectedDate == cell.date {
+                                Circle().strokeBorder(theme.accent, lineWidth: 1.5)
+                            }
                         }
-                    }
-                Text(cell.label)
-                    .d1Font(9.5)
-                    .foregroundStyle(labelColor(cell))
-                    .lineLimit(1).minimumScaleFactor(0.75)
-            }
-            .frame(maxWidth: .infinity, minHeight: 34)
-            .contentShape(Rectangle())
-            .overlay(alignment: .topTrailing) {
-                if let marker = countdownMarker(cell.date) {
-                    Button { countdownDetail = marker } label: {
-                        Image(systemName: marker.icon ?? "star")
-                            .d1Font(8)
-                            .foregroundStyle(theme.accentStrong)
-                            .frame(width: 16, height: 16)
-                            .contentShape(Rectangle())
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("倒计日：\(marker.title)")
+                    Text(cell.label)
+                        .d1Font(9.5)
+                        .foregroundStyle(labelColor(cell))
+                        .lineLimit(1).minimumScaleFactor(0.75)
                 }
+                .frame(maxWidth: .infinity, minHeight: 34)
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            if let marker = countdownMarker(cell.date) {
+                Button { countdownDetail = marker } label: {
+                    Image(systemName: marker.icon ?? "star")
+                        .d1Font(9, weight: .semibold)
+                        .foregroundStyle(theme.accentStrong)
+                        .frame(width: 18, height: 18)
+                        .background(theme.paper.opacity(0.9), in: Circle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("倒计日：\(marker.title)")
             }
         }
-        .buttonStyle(.plain)
+        .accessibilityElement(children: .contain)
         .accessibilityLabel("\(cell.date.month)月\(cell.date.day)日，\(cell.label)\(cell.isToday ? "，今天" : "")")
     }
 

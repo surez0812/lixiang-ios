@@ -13,7 +13,7 @@ final class AnniversaryStore: ObservableObject {
     init(seed: Bool = false) {
         load()
         notificationDenied = UserDefaults.standard.bool(forKey: deniedKey)
-        if seed && items.isEmpty { seedSamples() }
+        if seed { seedSamples() }   // DEBUG: 每次覆盖为固定样例，确保月历 icon/路由可复现
     }
 
     func load() {
