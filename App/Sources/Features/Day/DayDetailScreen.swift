@@ -35,13 +35,13 @@ struct DayDetailScreen: View {
             VStack(alignment: .leading, spacing: 10) {
                 HStack(alignment: .top, spacing: 14) {
                     Text("\(date.day)")
-                        .font(.system(size: 78, weight: .semibold)).tracking(-2)
+                        .d1Font(78, weight: .semibold).tracking(-2)
                         .foregroundStyle(theme.ink)
                     VStack(alignment: .leading, spacing: 5) {
                         Text("星期\(date.weekdayChinese) · 农历\(almanac.lunar.monthDayText)")
-                            .font(.system(size: 13, weight: .medium)).foregroundStyle(theme.ink2)
+                            .d1Font(13, weight: .medium).foregroundStyle(theme.ink2)
                         Text("\(almanac.lunar.yearGanZhi)年 \(almanac.lunar.monthGanZhi)月 \(almanac.lunar.dayGanZhi)日")
-                            .font(.system(size: 10)).foregroundStyle(theme.ink3)
+                            .d1Font(10).foregroundStyle(theme.ink3)
                         HStack(spacing: 6) {
                             if let term = almanac.solarTerm { D1Chip(text: term, tone: .jade) }
                             D1Chip(text: "值神 \(almanac.tianShen)", tone: .neutral)
@@ -68,22 +68,22 @@ struct DayDetailScreen: View {
                     Toggle("白话", isOn: $state.showVernacular)
                         .labelsHidden()
                         .scaleEffect(0.75)
-                    Text("白话").font(.system(size: 10)).foregroundStyle(theme.ink3)
+                    Text("白话").d1Font(10).foregroundStyle(theme.ink3)
                 }
                 yiJiRow(kind: .yi, items: deduped.yi)
                 D1Divider()
                 yiJiRow(kind: .ji, items: deduped.ji)
                 HStack {
-                    Button(expandYiJi ? "收起" : "展开全部") { withAnimation { expandYiJi.toggle() } }
-                        .font(.system(size: 11, weight: .semibold))
+                    Button(expandYiJi ? "收起" : "展开全部") { D1Motion.withAnimation { expandYiJi.toggle() } }
+                        .d1Font(11, weight: .semibold)
                         .foregroundStyle(theme.accentStrong)
                     Spacer()
                     Text("共 \(deduped.yi.count) / \(deduped.ji.count) 项")
-                        .font(.system(size: 9)).foregroundStyle(theme.ink3)
+                        .d1Font(9).foregroundStyle(theme.ink3)
                 }
                 if state.showVernacular {
                     Text("白话：宜=传统历书认为适合做的事；忌=认为不太适合做的事，不是绝对禁令，传统历书流派间可能不同。")
-                        .font(.system(size: 10)).foregroundStyle(theme.ink3)
+                        .d1Font(10).foregroundStyle(theme.ink3)
                 }
             }
         }
@@ -96,7 +96,7 @@ struct DayDetailScreen: View {
         return VStack(alignment: .leading, spacing: 6) {
             HStack(spacing: 6) {
                 Text(kind == .yi ? "宜" : "忌")
-                    .font(.system(size: 12, weight: .bold))
+                    .d1Font(12, weight: .bold)
                     .foregroundStyle(kind == .yi ? theme.yiText : theme.jiText)
                     .frame(width: 18, alignment: .leading)
                 FlowChips(items: shown, tone: kind == .yi ? .yi : .ji)
@@ -123,8 +123,8 @@ struct DayDetailScreen: View {
                 foldRow("星宿 · 建除", "\(almanac.xiu) · \(almanac.zhiXing) · \(almanac.tianShenType)")
                 foldRow("纳音 · 五行", "\(almanac.dayNaYin) · \(almanac.wuXing)")
             }
-            Button(expandMore ? "收起更多黄历" : "展开更多黄历") { withAnimation { expandMore.toggle() } }
-                .font(.system(size: 11, weight: .semibold)).foregroundStyle(theme.accentStrong)
+            Button(expandMore ? "收起更多黄历" : "展开更多黄历") { D1Motion.withAnimation { expandMore.toggle() } }
+                .d1Font(11, weight: .semibold).foregroundStyle(theme.accentStrong)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 14).padding(.vertical, 10)
         }
@@ -135,9 +135,9 @@ struct DayDetailScreen: View {
     private func foldRow(_ title: String, _ value: String) -> some View {
         VStack(spacing: 0) {
             HStack(alignment: .top) {
-                Text(title).font(.system(size: 11, weight: .semibold)).foregroundStyle(theme.ink2)
+                Text(title).d1Font(11, weight: .semibold).foregroundStyle(theme.ink2)
                     .frame(width: 72, alignment: .leading)
-                Text(value).font(.system(size: 11)).foregroundStyle(theme.ink2)
+                Text(value).d1Font(11).foregroundStyle(theme.ink2)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
             .padding(.horizontal, 14).padding(.vertical, 10)
@@ -159,9 +159,9 @@ struct DayDetailScreen: View {
     private func entryRow(_ title: String, _ detail: String) -> some View {
         D1Card(padding: 12) {
             HStack {
-                Text(title).font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
+                Text(title).d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
                 Spacer()
-                Text(detail).font(.system(size: 10)).foregroundStyle(theme.ink3)
+                Text(detail).d1Font(10).foregroundStyle(theme.ink3)
             }
         }
     }
@@ -181,7 +181,7 @@ private struct ShichenCard: View {
                     SectionLabel(text: "时辰宜忌")
                     Spacer()
                     Text("按北京时间 · 时家口径")
-                        .font(.system(size: 9)).foregroundStyle(theme.ink3)
+                        .d1Font(9).foregroundStyle(theme.ink3)
                 }
                 if let currentIndex, let current = displayRows.first(where: { $0.indexes.contains(currentIndex) }) {
                     row(current, highlighted: true)
@@ -189,8 +189,8 @@ private struct ShichenCard: View {
                 if expanded {
                     ForEach(displayRows.filter { !$0.indexes.contains(currentIndex ?? -1) }) { row($0, highlighted: false) }
                 }
-                Button(expanded ? "收起" : "展开全部 12 时辰") { withAnimation { expanded.toggle() } }
-                    .font(.system(size: 11, weight: .semibold)).foregroundStyle(theme.accentStrong)
+                Button(expanded ? "收起" : "展开全部 12 时辰") { D1Motion.withAnimation { expanded.toggle() } }
+                    .d1Font(11, weight: .semibold).foregroundStyle(theme.accentStrong)
             }
         }
     }
@@ -198,22 +198,22 @@ private struct ShichenCard: View {
     private func row(_ item: DisplayHour, highlighted: Bool) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack(spacing: 6) {
-                Text(item.name).font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
-                Text(item.range).font(.system(size: 10)).foregroundStyle(theme.ink3)
+                Text(item.name).d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
+                Text(item.range).d1Font(10).foregroundStyle(theme.ink3)
                 if highlighted { D1Chip(text: "当前时辰", tone: .accent) }
                 Spacer()
             }
             ForEach(item.segments) { seg in
                 HStack(alignment: .top, spacing: 6) {
-                    Text(seg.label).font(.system(size: 9, weight: .semibold)).foregroundStyle(theme.ink3)
+                    Text(seg.label).d1Font(9, weight: .semibold).foregroundStyle(theme.ink3)
                         .frame(width: 84, alignment: .leading)
-                    Text("\(seg.ganZhi) \(seg.luck)").font(.system(size: 9)).foregroundStyle(theme.ink3)
+                    Text("\(seg.ganZhi) \(seg.luck)").d1Font(9).foregroundStyle(theme.ink3)
                     Spacer()
                 }
                 Text("宜 \(seg.yi.prefix(3).joined(separator: " · "))")
-                    .font(.system(size: 9)).foregroundStyle(theme.ink2).lineLimit(1)
+                    .d1Font(9).foregroundStyle(theme.ink2).lineLimit(1)
                 Text("忌 \(seg.ji.prefix(3).joined(separator: " · "))")
-                    .font(.system(size: 9)).foregroundStyle(theme.ink2).lineLimit(1)
+                    .d1Font(9).foregroundStyle(theme.ink2).lineLimit(1)
             }
         }
         .padding(8)

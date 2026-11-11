@@ -62,15 +62,15 @@ struct CompassScreen: View {
 
     private var textAlternative: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text("吉神罗盘 · 文本替身").font(D1Theme.serif(24)).foregroundStyle(theme.ink)
+            Text("吉神罗盘 · 文本替身").d1SerifFont(24).foregroundStyle(theme.ink)
             Text("VoiceOver 朗读顺序：喜神 → 财神 → 福神 → 阳贵 → 阴贵 → 煞方；盘面为装饰（accessibilityHidden）。")
-                .font(.system(size: 10)).foregroundStyle(theme.ink3)
+                .d1Font(10).foregroundStyle(theme.ink3)
         }
     }
 
     private var footnote: some View {
         Text("5 针：喜神/财神/福神/阳贵/阴贵；同方位按径向错开。缺位 = 本日不在此位（不画针）。传统方位示意，非风水/招财/吉凶预测。")
-            .font(.system(size: 9)).foregroundStyle(theme.ink3)
+            .d1Font(9).foregroundStyle(theme.ink3)
             .padding(.horizontal, 4)
     }
 
@@ -97,7 +97,7 @@ struct CompassScreen: View {
                 // 方位标签（R+15）
                 ForEach(Array(CompassDirection.allCases.enumerated()), id: \.offset) { _, direction in
                     Text(direction.rawValue)
-                        .font(.system(size: 8.5))
+                        .d1Font(8.5)
                         .foregroundStyle(theme.ink3)
                         .position(point(center: center, radius: R + 15, angle: direction.angleDegrees))
                 }
@@ -110,7 +110,7 @@ struct CompassScreen: View {
                                 startAngle: sha.angleDegrees - 12, endAngle: sha.angleDegrees + 12)
                         .stroke(theme.jiText, style: StrokeStyle(lineWidth: 1, dash: [3, 3]))
                     Text("煞 \(sha.rawValue.replacingOccurrences(of: "正", with: ""))")
-                        .font(.system(size: 8.5, weight: .semibold))
+                        .d1Font(8.5, weight: .semibold)
                         .foregroundStyle(theme.jiText)
                         .position(point(center: center, radius: R * 0.62, angle: sha.angleDegrees))
                 }
@@ -133,8 +133,8 @@ struct CompassScreen: View {
                     )
                     .overlay(
                         VStack(spacing: 1) {
-                            Text("今日方位").font(.system(size: 11, weight: .semibold)).foregroundStyle(theme.ink2)
-                            Text("只讲方位").font(.system(size: 9)).foregroundStyle(theme.ink3)
+                            Text("今日方位").d1Font(11, weight: .semibold).foregroundStyle(theme.ink2)
+                            Text("只讲方位").d1Font(9).foregroundStyle(theme.ink3)
                         }
                     )
                     .position(center)
@@ -185,7 +185,7 @@ struct CompassScreen: View {
                 .overlay(Circle().strokeBorder(color, lineWidth: emphasized ? 2.2 : 1.4))
                 .overlay(
                     Text(entry.deity.badgeCharacter)
-                        .font(.system(size: 10, weight: .semibold))
+                        .d1Font(10, weight: .semibold)
                         .foregroundStyle(theme.ink)
                 )
                 .position(position)
@@ -226,14 +226,14 @@ struct CompassScreen: View {
         let entry = layout.present.first { $0.deity == deity }
         HStack(spacing: 8) {
             Text(deity.badgeCharacter)
-                .font(.system(size: 10, weight: .semibold)).foregroundStyle(theme.ink)
+                .d1Font(10, weight: .semibold).foregroundStyle(theme.ink)
                 .frame(width: 22, height: 22)
                 .background(Circle().fill(theme.card))
                 .overlay(Circle().strokeBorder(color(for: deity), lineWidth: 1.4))
-            Text(deity.title).font(.system(size: 12)).foregroundStyle(entry == nil ? theme.ink3 : theme.ink)
+            Text(deity.title).d1Font(12).foregroundStyle(entry == nil ? theme.ink3 : theme.ink)
             Spacer(minLength: 4)
             Text(entry?.direction.rawValue ?? "本日不在此位")
-                .font(.system(size: 11)).foregroundStyle(entry == nil ? theme.ink3 : theme.ink2)
+                .d1Font(11).foregroundStyle(entry == nil ? theme.ink3 : theme.ink2)
                 .lineLimit(1).minimumScaleFactor(0.8)
         }
         .padding(.horizontal, 12).padding(.vertical, 9)
@@ -245,11 +245,11 @@ struct CompassScreen: View {
     @ViewBuilder
     private var shaRow: some View {
         HStack(spacing: 8) {
-            Text("煞").font(.system(size: 10, weight: .semibold)).foregroundStyle(theme.jiText).frame(width: 22)
-            Text("煞方").font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
+            Text("煞").d1Font(10, weight: .semibold).foregroundStyle(theme.jiText).frame(width: 22)
+            Text("煞方").d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
             Spacer(minLength: 4)
             Text(layout.sha.map { "\($0.rawValue) · 仅四正" } ?? "—")
-                .font(.system(size: 11)).foregroundStyle(theme.ink2).lineLimit(1).minimumScaleFactor(0.8)
+                .d1Font(11).foregroundStyle(theme.ink2).lineLimit(1).minimumScaleFactor(0.8)
         }
         .padding(.horizontal, 12).padding(.vertical, 9)
         .accessibilityElement(children: .ignore)

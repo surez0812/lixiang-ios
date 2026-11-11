@@ -16,7 +16,7 @@ struct SettingsScreen: View {
                     }
                     .buttonStyle(.plain)
                     Toggle(isOn: $state.showVernacular) {
-                        Text("黄历白话").font(.system(size: 12)).foregroundStyle(theme.ink)
+                        Text("黄历白话").d1Font(12).foregroundStyle(theme.ink)
                     }
                     .tint(theme.accent)
                 }
@@ -29,7 +29,7 @@ struct SettingsScreen: View {
                     settingRow("版本", value: "1.0 (P1)", chevron: false)
                 }
                 Text("无需账号 · 数据只在本机")
-                    .font(.system(size: 10)).foregroundStyle(theme.ink3)
+                    .d1Font(10).foregroundStyle(theme.ink3)
                     .padding(.top, 4)
             }
             .padding(.horizontal, 16)
@@ -50,10 +50,10 @@ struct SettingsScreen: View {
 
     private func settingRow(_ title: String, value: String, chevron: Bool) -> some View {
         HStack {
-            Text(title).font(.system(size: 12)).foregroundStyle(theme.ink)
+            Text(title).d1Font(12).foregroundStyle(theme.ink)
             Spacer()
-            Text(value).font(.system(size: 11)).foregroundStyle(theme.ink3)
-            if chevron { Image(systemName: "chevron.right").font(.system(size: 10)).foregroundStyle(theme.ink3) }
+            Text(value).d1Font(11).foregroundStyle(theme.ink3)
+            if chevron { Image(systemName: "chevron.right").d1Font(10).foregroundStyle(theme.ink3) }
         }
         .padding(.horizontal, 12).padding(.vertical, 12)
     }
@@ -71,10 +71,10 @@ struct ThemeSelectScreen: View {
                 } label: {
                     HStack {
                         Text(option == .system ? "跟随系统（默认）" : option.title)
-                            .font(.system(size: 13)).foregroundStyle(theme.ink)
+                            .d1Font(13).foregroundStyle(theme.ink)
                         Spacer()
                         if state.theme == option {
-                            Image(systemName: "checkmark").font(.system(size: 12, weight: .semibold))
+                            Image(systemName: "checkmark").d1Font(12, weight: .semibold)
                                 .foregroundStyle(theme.accentStrong)
                         }
                     }
@@ -84,7 +84,7 @@ struct ThemeSelectScreen: View {
                 D1Divider().padding(.leading, 16)
             }
             Text("「跟随系统」随 iOS 外观自动切换；手动选择后保持所选。")
-                .font(.system(size: 10)).foregroundStyle(theme.ink3)
+                .d1Font(10).foregroundStyle(theme.ink3)
                 .padding(16)
             Spacer()
         }

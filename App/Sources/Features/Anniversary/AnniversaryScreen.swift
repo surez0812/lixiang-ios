@@ -26,17 +26,17 @@ struct CountdownScreen: View {
                 }
                 if store.notificationDenied {
                     HStack(spacing: 6) {
-                        Image(systemName: "bell.slash").font(.system(size: 10))
-                        Text("通知已关闭，可在系统设置开启；倒计日已保存").font(.system(size: 10))
+                        Image(systemName: "bell.slash").d1Font(10)
+                        Text("通知已关闭，可在系统设置开启；倒计日已保存").d1Font(10)
                         Spacer()
-                        Text("去开启").font(.system(size: 10, weight: .semibold))
+                        Text("去开启").d1Font(10, weight: .semibold)
                     }
                     .foregroundStyle(theme.jiText)
                     .padding(10).background(theme.jiBg, in: RoundedRectangle(cornerRadius: 12))
                 }
                 if rows.isEmpty { emptyState } else { list }
                 Text("还有 X 天 / 每年重复 / 已过 X 天；2/29 平年按 2/28 提醒（可改 3/1）。数据只在本机，无账号。")
-                    .font(.system(size: 9)).foregroundStyle(theme.ink3)
+                    .d1Font(9).foregroundStyle(theme.ink3)
             }
             .padding(.horizontal, 16).padding(.top, 8).padding(.bottom, 24)
         }
@@ -71,8 +71,8 @@ struct CountdownScreen: View {
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 2) {
-            Text("倒计日").font(D1Theme.serif(30)).foregroundStyle(theme.ink)
-            Text("记一个日子 · 按北京时间").font(.system(size: 10)).foregroundStyle(theme.ink3)
+            Text("倒计日").d1SerifFont(30).foregroundStyle(theme.ink)
+            Text("记一个日子 · 按北京时间").d1Font(10).foregroundStyle(theme.ink3)
         }
     }
 
@@ -82,13 +82,13 @@ struct CountdownScreen: View {
                 SectionLabel(text: "下一个")
                 HStack(alignment: .bottom) {
                     VStack(alignment: .leading, spacing: 2) {
-                        Text(item.title).font(D1Theme.serif(22)).foregroundStyle(theme.ink)
+                        Text(item.title).d1SerifFont(22).foregroundStyle(theme.ink)
                         Text("\(occ.date.year)年\(occ.date.month)月\(occ.date.day)日 · \(calendarLabel(item))")
-                            .font(.system(size: 10)).foregroundStyle(theme.ink3)
+                            .d1Font(10).foregroundStyle(theme.ink3)
                     }
                     Spacer()
                     Text(occ.isToday ? "就是今天" : (occ.daysFromNow > 0 ? "还有 \(occ.daysFromNow) 天" : "已过 \(abs(occ.daysFromNow)) 天"))
-                        .font(.system(size: 16, weight: .semibold)).foregroundStyle(occ.daysFromNow < 0 ? theme.ink2 : theme.accentStrong)
+                        .d1Font(16, weight: .semibold).foregroundStyle(occ.daysFromNow < 0 ? theme.ink2 : theme.accentStrong)
                 }
                 if occ.isToday { D1Chip(text: "就是今天", tone: .accent) }
             }
@@ -101,16 +101,16 @@ struct CountdownScreen: View {
                 D1Card(padding: 14) {
                     VStack(alignment: .leading, spacing: 4) {
                         HStack {
-                            Text(item.title).font(.system(size: 14, weight: .semibold)).foregroundStyle(theme.ink)
-                            Text(calendarLabel(item)).font(.system(size: 9)).foregroundStyle(theme.ink3)
+                            Text(item.title).d1Font(14, weight: .semibold).foregroundStyle(theme.ink)
+                            Text(calendarLabel(item)).d1Font(9).foregroundStyle(theme.ink3)
                             Spacer()
-                            Button { editing = item; showForm = true } label: { Image(systemName: "pencil").font(.system(size: 11)) }
+                            Button { editing = item; showForm = true } label: { Image(systemName: "pencil").d1Font(11) }
                                 .foregroundStyle(theme.ink3)
-                            Button { pendingDelete = item } label: { Image(systemName: "trash").font(.system(size: 11)) }
+                            Button { pendingDelete = item } label: { Image(systemName: "trash").d1Font(11) }
                                 .foregroundStyle(theme.ink3)
                         }
                         Text("\(occ.date.iso) · \(occ.isToday ? "就是今天" : (occ.daysFromNow > 0 ? "还有 \(occ.daysFromNow) 天" : "已过 \(abs(occ.daysFromNow)) 天"))")
-                            .font(.system(size: 10)).foregroundStyle(theme.ink2)
+                            .d1Font(10).foregroundStyle(theme.ink2)
                         HStack(spacing: 6) {
                             if item.repeatRule == .yearly { D1Chip(text: "每年", tone: .neutral) } else { D1Chip(text: "一次性", tone: .neutral) }
                             if item.reminderEnabled { D1Chip(text: "提醒 \(String(format: "%02d:%02d", item.reminderHour, item.reminderMinute))", tone: .neutral) }
@@ -126,10 +126,10 @@ struct CountdownScreen: View {
     private var emptyState: some View {
         D1Card {
             VStack(alignment: .leading, spacing: 8) {
-                Text("还没有倒计日").font(D1Theme.serif(20)).foregroundStyle(theme.ink)
-                Text("记一个日子，之后会在这一天提醒你。支持公历/农历、每年重复、2/29 规则。").font(.system(size: 11)).foregroundStyle(theme.ink2)
+                Text("还没有倒计日").d1SerifFont(20).foregroundStyle(theme.ink)
+                Text("记一个日子，之后会在这一天提醒你。支持公历/农历、每年重复、2/29 规则。").d1Font(11).foregroundStyle(theme.ink2)
                 Button("记一个日子") { editing = nil; showForm = true }
-                    .font(.system(size: 12, weight: .semibold))
+                    .d1Font(12, weight: .semibold)
                     .frame(minHeight: 44).padding(.horizontal, 14)
                     .background(theme.accent, in: Capsule()).foregroundStyle(theme.onAccent)
             }

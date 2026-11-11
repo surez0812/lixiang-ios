@@ -132,7 +132,7 @@ struct D1TabBar: View {
                         Image(systemName: selected == index ? item.filled : item.outline)
                             .font(.system(size: 18, weight: selected == index ? .semibold : .regular))
                             .symbolRenderingMode(.monochrome)
-                        Text(item.title).font(.system(size: 10, weight: .medium))
+                        Text(item.title).d1Font(10, weight: .medium)
                     }
                     .foregroundStyle(selected == index ? theme.accent : theme.ink3)
                     .frame(maxWidth: .infinity, minHeight: 48)

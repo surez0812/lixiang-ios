@@ -34,7 +34,7 @@ struct FestivalsScreen: View {
             if let note = phaseNote {
                 HStack(spacing: 6) {
                     Image(systemName: "wifi.exclamationmark").font(.system(size: 10))
-                    Text(note).font(.system(size: 10, weight: .semibold))
+                    Text(note).d1Font(10, weight: .semibold)
                 }
                 .foregroundStyle(theme.jiText)
                 .padding(.horizontal, 12).padding(.vertical, 7)
@@ -65,13 +65,13 @@ struct FestivalsScreen: View {
     private func banner(_ row: ContentIndexRow) -> some View {
         HStack(alignment: .center, spacing: 10) {
             VStack(alignment: .leading, spacing: 2) {
-                Text("下一篇解锁 · \(row.title)").font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
+                Text("下一篇解锁 · \(row.title)").d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
                 Text("\(row.date.month)月\(row.date.day)日 · 00:00 后可见 · \(row.days ?? 0) 天")
-                    .font(.system(size: 10)).foregroundStyle(theme.ink3)
+                    .d1Font(10).foregroundStyle(theme.ink3)
             }
             Spacer()
             if let region = row.regionLabel {
-                Text(region).font(.system(size: 9)).foregroundStyle(theme.ink3)
+                Text(region).d1Font(9).foregroundStyle(theme.ink3)
             }
             D1Chip(text: "未到 \(row.days ?? 0) 天", tone: .jade)
         }
@@ -128,15 +128,15 @@ struct FestivalsScreen: View {
                 }
                 if let bannerMonth, "\(bannerMonth.year)年\(bannerMonth.month)月" == key, let bannerRow {
                     HStack {
-                        Text("见顶部").font(.system(size: 10)).foregroundStyle(theme.ink3)
-                        Text(bannerRow.title).font(.system(size: 10)).foregroundStyle(theme.ink2)
+                        Text("见顶部").d1Font(10).foregroundStyle(theme.ink3)
+                        Text(bannerRow.title).d1Font(10).foregroundStyle(theme.ink2)
                         Spacer()
                     }
                     .padding(.vertical, 4)
                 }
             } header: {
                 Text(key)
-                    .font(.system(size: 10, weight: .semibold)).tracking(1.2)
+                    .d1Font(10, weight: .semibold).tracking(1.2)
                     .foregroundStyle(theme.ink3)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.vertical, 6)
@@ -148,13 +148,13 @@ struct FestivalsScreen: View {
 
     private var pastHeader: some View {
         Button {
-            withAnimation { expandPast.toggle() }
+            D1Motion.withAnimation { expandPast.toggle() }
         } label: {
             HStack {
-                Text("已过 · 可回看").font(.system(size: 10, weight: .semibold)).tracking(1.2).foregroundStyle(theme.ink3)
-                Text("\(groups.past.count) 条").font(.system(size: 9)).foregroundStyle(theme.ink3)
+                Text("已过 · 可回看").d1Font(10, weight: .semibold).tracking(1.2).foregroundStyle(theme.ink3)
+                Text("\(groups.past.count) 条").d1Font(9).foregroundStyle(theme.ink3)
                 Spacer()
-                Text(expandPast ? "收起" : "展开").font(.system(size: 10, weight: .semibold)).foregroundStyle(theme.accentStrong)
+                Text(expandPast ? "收起" : "展开").d1Font(10, weight: .semibold).foregroundStyle(theme.accentStrong)
                 Image(systemName: expandPast ? "chevron.up" : "chevron.down").font(.system(size: 9)).foregroundStyle(theme.accentStrong)
             }
             .padding(.vertical, 6)
@@ -169,16 +169,16 @@ struct FestivalsScreen: View {
         D1Card(padding: 14) {
             VStack(alignment: .leading, spacing: 5) {
                 HStack {
-                    Text("\(row.date.month)月\(row.date.day)日").font(D1Theme.serif(18)).foregroundStyle(theme.ink)
-                    Text("农历\(state.lunar(row.date).monthDayText)").font(.system(size: 10)).foregroundStyle(theme.ink3)
+                    Text("\(row.date.month)月\(row.date.day)日").d1SerifFont(18).foregroundStyle(theme.ink)
+                    Text("农历\(state.lunar(row.date).monthDayText)").d1Font(10).foregroundStyle(theme.ink3)
                     Spacer()
                     D1Chip(text: chipText(row), tone: chipTone(row))
                 }
                 HStack(spacing: 6) {
-                    Text(row.title).font(.system(size: 14, weight: .semibold)).foregroundStyle(theme.ink)
-                    if let region = row.regionLabel { Text(region).font(.system(size: 9)).foregroundStyle(theme.ink3) }
+                    Text(row.title).d1Font(14, weight: .semibold).foregroundStyle(theme.ink)
+                    if let region = row.regionLabel { Text(region).d1Font(9).foregroundStyle(theme.ink3) }
                 }
-                Text(row.teaser).font(.system(size: 11)).foregroundStyle(theme.ink2)
+                Text(row.teaser).d1Font(11).foregroundStyle(theme.ink2)
             }
         }
         .accessibilityElement(children: .ignore)
@@ -212,17 +212,17 @@ struct FestivalsScreen: View {
     private var errorCard: some View {
         D1Card {
             VStack(alignment: .leading, spacing: 6) {
-                Text("内容暂时不可用").font(.system(size: 13, weight: .semibold)).foregroundStyle(theme.ink)
-                Text("检查网络后重试；已解锁状态不受影响。").font(.system(size: 11)).foregroundStyle(theme.ink2)
+                Text("内容暂时不可用").d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
+                Text("检查网络后重试；已解锁状态不受影响。").d1Font(11).foregroundStyle(theme.ink2)
                 HStack(spacing: 10) {
                     Button("重试") { retryToken = UUID() }
-                        .font(.system(size: 12, weight: .semibold))
+                        .d1Font(12, weight: .semibold)
                         .frame(minWidth: 44, minHeight: 44)
                         .padding(.horizontal, 10)
                         .background(theme.accent, in: Capsule())
                         .foregroundStyle(theme.onAccent)
                     Button("去月历") { onOpenMonth() }
-                        .font(.system(size: 12, weight: .semibold))
+                        .d1Font(12, weight: .semibold)
                         .frame(minWidth: 44, minHeight: 44)
                         .padding(.horizontal, 10)
                         .background(theme.soft, in: Capsule())
@@ -236,17 +236,17 @@ struct FestivalsScreen: View {
     private var emptyState: some View {
         D1Card {
             VStack(alignment: .leading, spacing: 10) {
-                Text("未来 90 天暂无节俗内容").font(.system(size: 13, weight: .semibold)).foregroundStyle(theme.ink)
-                Text("内容按季度滚动补充；锁定/解锁规则不受影响。").font(.system(size: 11)).foregroundStyle(theme.ink2)
+                Text("未来 90 天暂无节俗内容").d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
+                Text("内容按季度滚动补充；锁定/解锁规则不受影响。").d1Font(11).foregroundStyle(theme.ink2)
                 HStack(spacing: 10) {
                     Button("查看全部月份") { onOpenMonth() }
-                        .font(.system(size: 11, weight: .semibold))
+                        .d1Font(11, weight: .semibold)
                         .frame(minHeight: 44)
                         .padding(.horizontal, 14)
                         .background(theme.accent, in: Capsule())
                         .foregroundStyle(theme.onAccent)
                     Button("去倒计日") { onOpenAnniversary() }
-                        .font(.system(size: 11, weight: .semibold))
+                        .d1Font(11, weight: .semibold)
                         .frame(minHeight: 44)
                         .padding(.horizontal, 14)
                         .background(theme.soft, in: Capsule())

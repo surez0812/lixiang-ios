@@ -77,15 +77,15 @@ struct ContentScreen: View {
                         Text(item?.title ?? contentID).font(D1Theme.serif(22 * min(scale, 1.4))).foregroundStyle(theme.ink)
                         let regionLabel = item?.regionalDates?.first?.label
                         if let regionLabel {
-                            Text(regionLabel).font(.system(size: 10)).foregroundStyle(theme.ink3)
+                            Text(regionLabel).d1Font(10).foregroundStyle(theme.ink3)
                         }
-                        Text("按北京时间（UTC+8）判定解锁").font(.system(size: 9)).foregroundStyle(theme.ink3)
+                        Text("按北京时间（UTC+8）判定解锁").d1Font(9).foregroundStyle(theme.ink3)
                     }
                     Spacer()
                     VStack(alignment: .trailing, spacing: 2) {
-                        Text(entry?.contentVersion ?? "—").font(.system(size: 9, weight: .semibold)).foregroundStyle(theme.ink3)
+                        Text(entry?.contentVersion ?? "—").d1Font(9, weight: .semibold).foregroundStyle(theme.ink3)
                         if let updated = entry?.updatedAt {
-                            Text("更新于 \(updated.prefix(10))").font(.system(size: 8)).foregroundStyle(theme.ink3)
+                            Text("更新于 \(updated.prefix(10))").d1Font(8).foregroundStyle(theme.ink3)
                         }
                     }
                 }
@@ -131,7 +131,7 @@ struct ContentScreen: View {
 
     private var loadingSkeleton: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("加载中").font(.system(size: 10)).foregroundStyle(theme.ink3)
+            Text("加载中").d1Font(10).foregroundStyle(theme.ink3)
             ForEach(0..<3, id: \.self) { i in
                 D1Card(padding: 14) {
                     VStack(alignment: .leading, spacing: 8) {
@@ -143,7 +143,7 @@ struct ContentScreen: View {
                 }
             }
             Text("正文加载前先显示本地头卡；骨架 ≥300ms 才出现，无白屏。")
-                .font(.system(size: 9)).foregroundStyle(theme.ink3)
+                .d1Font(9).foregroundStyle(theme.ink3)
         }
     }
 
@@ -155,7 +155,7 @@ struct ContentScreen: View {
                     D1Card {
                         VStack(alignment: .leading, spacing: 6) {
                             HStack {
-                                Text(region.label).font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
+                                Text(region.label).d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
                                 Spacer()
                                 if let info {
                                     switch info.state {
@@ -166,31 +166,31 @@ struct ContentScreen: View {
                                 }
                             }
                             if let info, info.state == .locked {
-                                Text("民俗内容将在 \(info.anchor.iso) 00:00 后解锁").font(.system(size: 11)).foregroundStyle(theme.ink2)
+                                Text("民俗内容将在 \(info.anchor.iso) 00:00 后解锁").d1Font(11).foregroundStyle(theme.ink2)
                                 Text("未解锁只显示名称、日期与一行主题；不展示准备清单、步骤或禁忌细节；不返回正文。")
-                                    .font(.system(size: 10)).foregroundStyle(theme.ink3)
+                                    .d1Font(10).foregroundStyle(theme.ink3)
                             }
                         }
                     }
                 }
             }
             Text("传统民俗文化内容；焚香烧纸请遵守当地消防与环保规定，不涉及宗教场所与教职人员。")
-                .font(.system(size: 9)).foregroundStyle(theme.ink3)
+                .d1Font(9).foregroundStyle(theme.ink3)
         }
     }
 
     private var offlineUncachedCard: some View {
         D1Card {
             VStack(alignment: .leading, spacing: 6) {
-                Text("离线且未缓存").font(.system(size: 13, weight: .semibold)).foregroundStyle(theme.ink)
-                Text("联网后可读；已解锁状态不受影响。").font(.system(size: 11)).foregroundStyle(theme.ink2)
+                Text("离线且未缓存").d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
+                Text("联网后可读；已解锁状态不受影响。").d1Font(11).foregroundStyle(theme.ink2)
                 HStack(spacing: 10) {
                     Button("重试") { reloadToken = UUID() }
-                        .font(.system(size: 11, weight: .semibold))
+                        .d1Font(11, weight: .semibold)
                         .padding(.horizontal, 14).padding(.vertical, 8)
                         .background(theme.accent, in: Capsule())
                         .foregroundStyle(theme.onAccent)
-                    Text("去设置网络").font(.system(size: 10)).foregroundStyle(theme.ink3)
+                    Text("去设置网络").d1Font(10).foregroundStyle(theme.ink3)
                 }
             }
         }
@@ -199,10 +199,10 @@ struct ContentScreen: View {
     private func errorCard(message: String, detail: String? = nil) -> some View {
         D1Card {
             VStack(alignment: .leading, spacing: 6) {
-                Text(message).font(.system(size: 13, weight: .semibold)).foregroundStyle(theme.ink)
-                if let detail { Text(detail).font(.system(size: 11)).foregroundStyle(theme.ink2) }
+                Text(message).d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
+                if let detail { Text(detail).d1Font(11).foregroundStyle(theme.ink2) }
                 Button("重试") { reloadToken = UUID() }
-                    .font(.system(size: 11, weight: .semibold))
+                    .d1Font(11, weight: .semibold)
                     .padding(.horizontal, 14).padding(.vertical, 8)
                     .background(theme.accent, in: Capsule())
                     .foregroundStyle(theme.onAccent)
@@ -220,8 +220,8 @@ struct ContentScreen: View {
 
     private func bannerView(_ text: String) -> some View {
         HStack(spacing: 6) {
-            Image(systemName: "wifi.slash").font(.system(size: 10))
-            Text(text).font(.system(size: 10, weight: .semibold))
+            Image(systemName: "wifi.slash").d1Font(10)
+            Text(text).d1Font(10, weight: .semibold)
         }
         .foregroundStyle(theme.jiText)
         .padding(.horizontal, 12).padding(.vertical, 7)
@@ -235,9 +235,9 @@ struct ContentScreen: View {
         } label: {
             D1Card(padding: 14) {
                 HStack {
-                    Text("来源与许可").font(.system(size: 12, weight: .semibold)).foregroundStyle(theme.ink)
+                    Text("来源与许可").d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
                     Spacer()
-                    Image(systemName: "chevron.right").font(.system(size: 10)).foregroundStyle(theme.ink3)
+                    Image(systemName: "chevron.right").d1Font(10).foregroundStyle(theme.ink3)
                 }
             }
         }
@@ -246,6 +246,6 @@ struct ContentScreen: View {
 
     private var footer: some View {
         Text("北京时间（UTC+8）解锁 · 网页静态发布（B′）· 未解锁正文不在服务器 · 版本新旧静默替换 · 配图 16:9 + alt")
-            .font(.system(size: 9)).foregroundStyle(theme.ink3)
+            .d1Font(9).foregroundStyle(theme.ink3)
     }
 }

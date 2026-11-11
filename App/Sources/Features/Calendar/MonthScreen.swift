@@ -37,24 +37,24 @@ struct MonthScreen: View {
                 HStack(alignment: .top, spacing: 14) {
                     VStack(alignment: .leading, spacing: 0) {
                         Text("\(today.day)")
-                            .font(.system(size: 76, weight: .semibold))
+                            .d1Font(76, weight: .semibold)
                             .tracking(-2)
                             .foregroundStyle(theme.ink)
                         Text(verbatim: "\(today.year)年\(today.month)月")
-                            .font(.system(size: 10, weight: .semibold))
+                            .d1Font(10, weight: .semibold)
                             .tracking(1.4)
                             .foregroundStyle(theme.ink3)
                     }
                     VStack(alignment: .leading, spacing: 6) {
                         Text("星期\(today.weekdayChinese) · 农历\(almanac.lunar.monthDayText)")
-                            .font(.system(size: 13, weight: .medium))
+                            .d1Font(13, weight: .medium)
                             .foregroundStyle(theme.ink2)
                         if let term = almanac.solarTerm {
                             D1Chip(text: term, tone: .jade)
                         }
                         if let days = nextSolarTermDays() {
                             Text("距\(days.name) \(days.days) 天")
-                                .font(.system(size: 10))
+                                .d1Font(10)
                                 .foregroundStyle(theme.ink3)
                         }
                     }
@@ -63,20 +63,20 @@ struct MonthScreen: View {
                 D1Divider()
                 VStack(alignment: .leading, spacing: 6) {
                     HStack(alignment: .top, spacing: 6) {
-                        Text("宜").font(.system(size: 11, weight: .bold)).foregroundStyle(theme.accentStrong)
+                        Text("宜").d1Font(11, weight: .bold).foregroundStyle(theme.accentStrong)
                         Text(almanac.yi.prefix(3).joined(separator: " · "))
-                            .font(.system(size: 11)).foregroundStyle(theme.ink2).lineLimit(1)
+                            .d1Font(11).foregroundStyle(theme.ink2).lineLimit(1)
                     }
                     HStack(alignment: .top, spacing: 6) {
-                        Text("忌").font(.system(size: 11, weight: .bold)).foregroundStyle(theme.ink)
+                        Text("忌").d1Font(11, weight: .bold).foregroundStyle(theme.ink)
                         Text(almanac.ji.prefix(3).joined(separator: " · "))
-                            .font(.system(size: 11)).foregroundStyle(theme.ink2).lineLimit(1)
+                            .d1Font(11).foregroundStyle(theme.ink2).lineLimit(1)
                     }
                 }
                 NavigationLink(value: Route.day(today)) {
                     HStack(spacing: 4) {
-                        Text("详解").font(.system(size: 11, weight: .semibold))
-                        Image(systemName: "chevron.right").font(.system(size: 9, weight: .semibold))
+                        Text("详解").d1Font(11, weight: .semibold)
+                        Image(systemName: "chevron.right").d1Font(9, weight: .semibold)
                     }
                     .foregroundStyle(theme.accentStrong)
                 }
@@ -98,19 +98,19 @@ struct MonthScreen: View {
             VStack(spacing: 10) {
                 HStack {
                     Text(verbatim: "\(displayYear)年\(displayMonth)月")
-                        .font(D1Theme.serif(23)).foregroundStyle(theme.ink)
+                        .d1SerifFont(23).foregroundStyle(theme.ink)
                     Spacer()
                     HStack(spacing: 14) {
                         Button { shiftMonth(-1) } label: { Image(systemName: "chevron.left") }
                         Button { shiftMonth(1) } label: { Image(systemName: "chevron.right") }
                         Button("回今天") { displayYear = today.year; displayMonth = today.month }
-                            .font(.system(size: 10, weight: .semibold))
+                            .d1Font(10, weight: .semibold)
                     }
                     .foregroundStyle(theme.ink2)
                 }
                 HStack(spacing: 0) {
                     ForEach(state.weekStart.identifiers, id: \.self) { w in
-                        Text(w).font(.system(size: 9, weight: .semibold)).tracking(1.4)
+                        Text(w).d1Font(9, weight: .semibold).tracking(1.4)
                             .foregroundStyle(theme.ink3).frame(maxWidth: .infinity)
                     }
                 }
@@ -127,7 +127,7 @@ struct MonthScreen: View {
         NavigationLink(value: Route.day(cell.date)) {
             VStack(spacing: 1) {
                 Text("\(cell.date.day)")
-                    .font(.system(size: 17, weight: .semibold))
+                    .d1Font(17, weight: .semibold)
                     .foregroundStyle(cell.isToday ? theme.onAccent : (cell.inCurrentMonth ? theme.ink : theme.ink3))
                     .frame(width: 30, height: 30)
                     .background {
