@@ -17,7 +17,8 @@ struct DebugOptions {
     var emptyIndex: Bool = false  // F5 空态
     var expandPast: Bool = false  // F5 已过组默认展开
     var deepLink: String?          // -LixiangDeepLink lixiang://ceremony/xiezao
-    var seedCountdown: Bool = false // -LixiangSeedCountdown 1
+    var seedCountdown: Bool = false
+    var debugTerm: String?         // -LixiangDebugTerm 开光 // -LixiangSeedCountdown 1
 
     static func parse(_ arguments: [String] = ProcessInfo.processInfo.arguments) -> DebugOptions {
         #if DEBUG
@@ -40,6 +41,7 @@ struct DebugOptions {
             case "-LixiangExpandPast": options.expandPast = next() == "1"
             case "-LixiangDeepLink": options.deepLink = next()
             case "-LixiangSeedCountdown": options.seedCountdown = next() == "1"
+            case "-LixiangDebugTerm": options.debugTerm = next()
             case "-LixiangDebugHideDeity":
                 let raw = next() ?? ""
                 options.hiddenDeities = Set(raw.split(separator: ",").compactMap { Deity(rawValue: String($0).trimmingCharacters(in: .whitespaces)) })

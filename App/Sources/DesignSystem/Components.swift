@@ -70,10 +70,17 @@ struct D1Divider: View {
 struct FlowChips: View {
     var items: [String]
     var tone: D1Chip.Tone
+    var onTap: ((String) -> Void)? = nil
     var body: some View {
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 44), spacing: 4, alignment: .leading)], alignment: .leading, spacing: 4) {
             ForEach(Array(items.enumerated()), id: \.offset) { _, item in
-                D1Chip(text: item, tone: tone)
+                if let onTap {
+                    Button { onTap(item) } label: { D1Chip(text: item, tone: tone) }
+                        .buttonStyle(.plain)
+                        .accessibilityHint("查看白话解释")
+                } else {
+                    D1Chip(text: item, tone: tone)
+                }
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)

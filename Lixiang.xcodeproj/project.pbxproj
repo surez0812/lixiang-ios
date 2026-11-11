@@ -21,6 +21,7 @@
 		4961A2C52973706909F582C0 /* SourceLicenseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5FAB3FD05EDDE5ACAA2B79 /* SourceLicenseScreen.swift */; };
 		5DC804F1EFB564515CFF5331 /* LixiangApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4253AFA341B81955B45311A4 /* LixiangApp.swift */; };
 		64FC9C5E7534E6985EA1E01B /* PlainLanguageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A8C7FBB0FB0D22F603ACE5 /* PlainLanguageLoader.swift */; };
+		74F2ABD34D760AC952033AD7 /* PlainTermSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18D4E9C43A87557F5B8AFB /* PlainTermSheet.swift */; };
 		776F6261214379761CB1EF3E /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD67E5E2CFFCBF2F70AD9D /* ContentRepository.swift */; };
 		79D3CA12212D0B08D65B2AF6 /* LixiangCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9DC9A4CCDA5EEBBCD58D4361 /* LixiangCalendarCore */; };
 		8037EF70A0164B9BF1595EA5 /* ContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11B7E10505799D2B48A8039 /* ContentScreen.swift */; };
@@ -78,6 +79,7 @@
 		A67673C4C6D224600887711F /* DayDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailScreen.swift; sourceTree = "<group>"; };
 		A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryScreen.swift; sourceTree = "<group>"; };
 		ADAAB3BFDF1D630B7D7D5361 /* A11yOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A11yOrderTests.swift; sourceTree = "<group>"; };
+		BF18D4E9C43A87557F5B8AFB /* PlainTermSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTermSheet.swift; sourceTree = "<group>"; };
 		D11B7E10505799D2B48A8039 /* ContentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentScreen.swift; sourceTree = "<group>"; };
 		D14E3D415B91FC17BB2DC101 /* CompassScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassScreen.swift; sourceTree = "<group>"; };
 		D421ECD4E84365F75CC9AE9A /* MonthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthScreen.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			children = (
 				A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */,
 				81A8C7FBB0FB0D22F603ACE5 /* PlainLanguageLoader.swift */,
+				BF18D4E9C43A87557F5B8AFB /* PlainTermSheet.swift */,
 				9B2588121BE27A986FD5F923 /* QuoteSheet.swift */,
 			);
 			path = PlainLanguage;
@@ -423,6 +426,7 @@
 				E15412DFF5DEED7D78DC1F05 /* NotFoundScreen.swift in Sources */,
 				F981B4DE21313B9FEF498D8F /* NotificationScheduler.swift in Sources */,
 				64FC9C5E7534E6985EA1E01B /* PlainLanguageLoader.swift in Sources */,
+				74F2ABD34D760AC952033AD7 /* PlainTermSheet.swift in Sources */,
 				04BA6016FEC090D5F71A7623 /* QuoteSheet.swift in Sources */,
 				124CF875588EF60300DE3EBB /* RootView.swift in Sources */,
 				B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */,

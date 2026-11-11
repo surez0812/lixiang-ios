@@ -1,12 +1,15 @@
 import SwiftUI
 import LixiangCalendarCore
 
+private struct TermBox: Identifiable { let term: String; var id: String { term } }
+
 struct DayDetailScreen: View {
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
     let date: LocalDate
     @State private var showAllHours = false
     @State private var expandYiJi = false
+    @State private var selectedTerm: String?
     @State private var expandMore = false
 
     private var almanac: AlmanacDay {
@@ -26,6 +29,14 @@ struct DayDetailScreen: View {
             .padding(.vertical, 12)
         }
         .background(ScreenBackground())
+        .sheet(item: Binding(get: { selectedTerm.map { TermBox(term: $0) } }, set: { selectedTerm = $0?.term })) { box in
+            PlainTermSheet(term: box.term)
+        }
+        .onAppear {
+            #if DEBUG
+            if let t = state.debug.debugTerm { selectedTerm = t }
+            #endif
+        }
         .navigationTitle("\(date.month)月\(date.day)日")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -99,7 +110,7 @@ struct DayDetailScreen: View {
                     .d1Font(12, weight: .bold)
                     .foregroundStyle(kind == .yi ? theme.yiText : theme.jiText)
                     .frame(width: 18, alignment: .leading)
-                FlowChips(items: shown, tone: kind == .yi ? .yi : .ji)
+                FlowChips(items: shown, tone: kind == .yi ? .yi : .ji) { selectedTerm = $0 }
                 if !expandYiJi && more > 0 {
                     D1Chip(text: "+\(more)", tone: .neutral)
                 }
