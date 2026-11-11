@@ -18,12 +18,13 @@ struct DayDetailScreen: View {
     }
 
     var body: some View {
+        ScrollViewReader { proxy in
         ScrollView {
             VStack(spacing: 12) {
                 SolarTermArtView(date: date, maxHeight: 128, showLabel: false)
                 dateCard
                 quoteCard
-                shichenBandCard
+                shichenBandCard.id("shichen-band")
                 if showAllHours { shichenCard }
                 HStack(spacing: 10) {
                     NavigationLink(value: Route.compass(date)) { miniCard(icon: "safari", title: "吉神罗盘", sub: compassSub) }
@@ -37,7 +38,17 @@ struct DayDetailScreen: View {
             }
             .padding(.horizontal, 18)
             .padding(.vertical, 8)
-            .padding(.bottom, 24)
+            .padding(.bottom, 120)
+        }
+        .onAppear {
+            #if DEBUG
+            if state.debug.scrollShichen {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                    withAnimation(nil) { proxy.scrollTo("shichen-band", anchor: .center) }
+                }
+            }
+            #endif
+        }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
