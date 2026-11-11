@@ -62,6 +62,7 @@ struct SolarTermArtView: View {
     @Environment(\.colorScheme) private var colorScheme
     var date: LocalDate
     var maxHeight: CGFloat
+    var showLabel: Bool = true
 
     private var term: String? { SeasonalArtStore.shared.currentTerm(for: date, engine: state.engine) }
     private var image: UIImage? {
@@ -80,12 +81,13 @@ struct SolarTermArtView: View {
                     .clipped()
                     .clipShape(RoundedRectangle(cornerRadius: 22))
                     .overlay(alignment: .bottomLeading) {
-                        Text(term ?? "")
+                        if showLabel { Text(term ?? "")
                             .d1Font(11, weight: .semibold)
                             .foregroundStyle(theme.onAccent)
                             .padding(.horizontal, 10).padding(.vertical, 5)
                             .background(theme.accent.opacity(0.85), in: Capsule())
                             .padding(8)
+                        }
                     }
                     .accessibilityLabel("节气插画：\(term ?? "")")
             } else {

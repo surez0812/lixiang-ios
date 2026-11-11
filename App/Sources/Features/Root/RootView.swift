@@ -153,22 +153,26 @@ struct D1TabBar: View {
     var body: some View {
         HStack(spacing: 0) {
             ForEach(Array(items.enumerated()), id: \.offset) { index, item in
-                Button {
-                    withAnimation(.easeInOut(duration: 0.15)) { selected = index }
-                } label: {
+                Button { D1Motion.withAnimation(.easeInOut(duration: 0.15)) { selected = index } } label: {
                     VStack(spacing: 3) {
-                        Image(systemName: selected == index ? item.filled : item.outline)
-                            .font(.system(size: 18, weight: selected == index ? .semibold : .regular))
-                            .symbolRenderingMode(.monochrome)
-                        Text(item.title).d1Font(10, weight: .medium)
-                    }
-                    .foregroundStyle(selected == index ? theme.accent : theme.ink3)
-                    .frame(maxWidth: .infinity, minHeight: 48)
-                    .background {
                         if selected == index {
-                            Capsule().fill(LinearGradient(colors: [theme.accent.opacity(0.22), theme.red.opacity(0.16)], startPoint: .topLeading, endPoint: .bottomTrailing))
+                            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                .fill(theme.accent)
+                                .frame(width: 34, height: 30)
+                                .overlay(Image(systemName: item.filled)
+                                    .d1Font(15, weight: .semibold)
+                                    .foregroundStyle(theme.cream))
+                        } else {
+                            Image(systemName: item.outline)
+                                .d1Font(18, weight: .regular)
+                                .foregroundStyle(theme.ink3)
+                                .frame(height: 30)
                         }
+                        Text(item.title)
+                            .d1Font(10, weight: .medium)
+                            .foregroundStyle(selected == index ? theme.ink : theme.ink3)
                     }
+                    .frame(maxWidth: .infinity, minHeight: 52)
                     .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
@@ -176,10 +180,11 @@ struct D1TabBar: View {
                 .accessibilityAddTraits(selected == index ? [.isSelected] : [])
             }
         }
-        .padding(4)
-        .background(theme.card, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
-        .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line, lineWidth: 1))
-        .padding(.horizontal, 16)
-        .padding(.bottom, 6)
+        .frame(height: 60)
+        .background(theme.paper, in: Capsule())
+        .overlay(Capsule().strokeBorder(theme.line.opacity(0.7), lineWidth: 0.8))
+        .shadow(color: .black.opacity(0.16), radius: 20, y: 10)
+        .padding(.horizontal, 18)
+        .padding(.bottom, 8)
     }
 }
