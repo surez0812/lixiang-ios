@@ -376,3 +376,31 @@ private let authority2026: [(String, String, Int)] = [
     #expect(pack.page(titled: "值神")?.term == "zhishen")
     #expect(pack.term(named: "不存在") == nil)
 }
+
+
+// MARK: - 道历/佛历展示层规则（religion-check PASS-with-fixes）
+
+@Test func religionDisplayTyposAndNeutralNames() {
+    #expect(ReligionDisplay.taoName("地祗温元帅圣诞") == "地祇温元帅圣诞")
+    #expect(ReligionDisplay.taoName("北极紫徽大帝降") == "北极紫微大帝降")
+    #expect(ReligionDisplay.taoName("紫徽大帝诞") == "紫微大帝诞")
+    #expect(ReligionDisplay.taoName("汉恒候张显王诞") == "汉桓侯张显王诞")
+    #expect(ReligionDisplay.taoName("五帝校定生人官爵") == "五帝下降")
+    #expect(ReligionDisplay.taoName("天腊，玉帝校世人神气禄命") == "天腊之辰")
+    #expect(ReligionDisplay.taoName("三清玉帝同降，考察善恶") == "三清玉帝同降")
+    #expect(ReligionDisplay.taoName("财帛星君文财神增福相公李诡祖圣诞") == "增福财神圣诞")
+    #expect(ReligionDisplay.taoName("慈航(观音)成道日")?.contains("道教") == true)
+}
+
+@Test func religionDisplayFilters() {
+    for raw in ["月朔", "月望", "月晦", "宜戒"] {
+        #expect(ReligionDisplay.taoName(raw) == nil)
+        #expect(ReligionDisplay.fotoName(raw) == nil)
+    }
+    for raw in ["牛鬼神出", "九毒日", "阴毒日"] {
+        #expect(ReligionDisplay.fotoName(raw) == nil)
+    }
+    #expect(ReligionDisplay.taoName("上元天官圣诞") == "上元天官圣诞")
+    #expect(ReligionDisplay.fotoName("弥勒菩萨圣诞") == "弥勒菩萨圣诞")
+    #expect(ReligionDisplay.disclaimer.contains("非宗教劝诱"))
+}
