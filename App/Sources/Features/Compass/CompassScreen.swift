@@ -9,6 +9,8 @@ struct CompassScreen: View {
     let date: LocalDate
 
     @State private var highlighted: Deity?
+    @StateObject private var heading = HeadingProvider()
+    @State private var showCalibration = false
 
     private var almanac: AlmanacDay { state.almanac(date, hour: state.debugHour ?? BeijingTime.hour(of: Date())) }
     private var layout: CompassLayout { CompassBuilder.layout(for: almanac, hidden: state.hiddenDeities) }
@@ -48,6 +50,9 @@ struct CompassScreen: View {
             }
         }
         .background(ScreenBackground())
+        .onAppear { heading.start() }
+        .onDisappear { heading.stop() }
+        .sheet(isPresented: $showCalibration) { calibrationSheet }
         .navigationTitle("吉神罗盘 · \(date.month)月\(date.day)日")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityElement(children: .contain)
@@ -69,9 +74,32 @@ struct CompassScreen: View {
     }
 
     private var footnote: some View {
-        Text("5 针：喜神/财神/福神/阳贵/阴贵；同方位按径向错开。缺位 = 本日不在此位（不画针）。传统方位示意，非风水/招财/吉凶预测。")
-            .d1Font(9).foregroundStyle(theme.ink3)
-            .padding(.horizontal, 4)
+        VStack(alignment: .leading, spacing: 4) {
+            HStack(spacing: 6) {
+                Image(systemName: heading.isAvailable ? "location.north.line" : "iphone.slash").d1Font(9)
+                Text(heading.isAvailable ? (heading.needsCalibration ? "罗盘需校准：请按「8」字晃动设备" : "指向：真实北（设备朝向已接入）") : "传感器不可用 · 北朝上（模拟器）")
+                    .d1Font(9)
+                if heading.isAvailable {
+                    Button("校准") { showCalibration = true }.d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
+                }
+            }
+            Text("5 针：喜神/财神/福神/阳贵/阴贵；同方位按径向错开。缺位 = 本日不在此位（不画针）。传统方位示意，非风水/招财/吉凶预测。")
+                .d1Font(9).foregroundStyle(theme.ink3)
+        }
+        .padding(.horizontal, 4)
+    }
+
+    private var calibrationSheet: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("罗盘校准").d1SerifFont(22).foregroundStyle(theme.ink)
+            Text("将设备拿在手中，按「8」字缓慢晃动 2–3 圈，直到提示消失。").d1Font(12).foregroundStyle(theme.ink2)
+            Text("若设备无磁力计或权限受限，罗盘将保持「北朝上」静态示意。").d1Font(10).foregroundStyle(theme.ink3)
+            Button("完成") { showCalibration = false }
+                .d1Font(12, weight: .semibold).frame(maxWidth: .infinity, minHeight: 44)
+                .background(theme.accent, in: Capsule()).foregroundStyle(theme.cream)
+        }
+        .padding(20)
+        .presentationDetents([.height(260)])
     }
 
     // MARK: - 盘
@@ -139,6 +167,8 @@ struct CompassScreen: View {
                     )
                     .position(center)
             }
+            .rotationEffect(.degrees(-(heading.yawDegrees ?? 0)))
+            .animation(D1Motion.animation(.easeOut(duration: 0.15)), value: heading.yawDegrees)
             .frame(width: geo.size.width, height: diameter + 24)
             .accessibilityHidden(true)   // 盘为装饰，图例为文本替身
         }

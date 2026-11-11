@@ -25,7 +25,7 @@ struct DayDetailScreen: View {
                 dateCard
                 quoteCard
                 shichenBandCard.id("shichen-band")
-                if showAllHours { shichenCard }
+                if showAllHours { expandedHourRows }
                 HStack(spacing: 10) {
                     NavigationLink(value: Route.compass(date)) { miniCard(icon: "safari", title: "吉神罗盘", sub: compassSub) }
                         .buttonStyle(.plain)
@@ -42,6 +42,7 @@ struct DayDetailScreen: View {
         }
         .onAppear {
             #if DEBUG
+            if state.debug.expandShichen { showAllHours = true }
             if state.debug.scrollShichen {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                     withAnimation(nil) { proxy.scrollTo("shichen-band", anchor: .center) }
@@ -231,6 +232,38 @@ struct DayDetailScreen: View {
         guard let idx = almanac.currentHourIndex else { return -1 }
         if idx == 0 || idx == 12 { return 0 }
         return max(0, min(11, idx))
+    }
+
+    /// 展开 12 时段：文字（宜/平/忌）与色带同一 presence 判定
+    private var expandedHourRows: some View {
+        D1Card(padding: 14) {
+            VStack(alignment: .leading, spacing: 6) {
+                Text("12 时段详情（文字与色带同源）").d1Font(10, weight: .semibold).foregroundStyle(theme.ink3)
+                ForEach(Array(mergedHours.enumerated()), id: \.offset) { idx, h in
+                    HStack(spacing: 8) {
+                        Text(slotLabel(idx)).d1Font(10).foregroundStyle(theme.ink3).frame(width: 56, alignment: .leading)
+                        Text(h.colorKind)
+                            .d1Font(11, weight: .semibold)
+                            .foregroundStyle(h.color(theme))
+                            .frame(width: 22, alignment: .leading)
+                        Text("宜\(h.yiCount) · 忌\(h.jiCount)").d1Font(9).foregroundStyle(theme.ink3)
+                        Spacer()
+                        if idx == currentMergedIndex { Text("当前").d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong) }
+                    }
+                    .padding(.vertical, 2)
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel("\(slotLabel(idx))，\(h.colorKind)，宜\(h.yiCount)忌\(h.jiCount)")
+                    D1Divider()
+                }
+            }
+        }
+    }
+
+    private func slotLabel(_ idx: Int) -> String {
+        if idx == 0 { return "子时 23–01" }
+        guard idx < almanac.hours.count else { return "—" }
+        let h = almanac.hours[idx]
+        return "\(h.ganZhi)时 \(h.startMinute)–\(h.endMinute)"
     }
 
     private func shichenName(_ idx: Int) -> String {

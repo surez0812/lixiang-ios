@@ -23,6 +23,15 @@ public struct PlainTerm: Codable, Hashable, Sendable, Identifiable {
     public init(term: String, category: String, zh: String, en: String) {
         self.term = term; self.category = category; self.zh = zh; self.en = en
     }
+    enum CodingKeys: String, CodingKey { case term, category, zh, en }
+    /// v1.0 映射精简为 term/zh/en（无 category）→ 缺省归类「其他」，避免整包解码失败
+    public init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        term = try c.decode(String.self, forKey: .term)
+        zh = try c.decode(String.self, forKey: .zh)
+        en = try c.decode(String.self, forKey: .en)
+        category = (try? c.decodeIfPresent(String.self, forKey: .category)) ?? "其他"
+    }
 }
 
 /// A23 解释页（8 页）
@@ -34,8 +43,30 @@ public struct ExplainPage: Codable, Hashable, Sendable, Identifiable {
     public var how: String
     public var en: String
     public var id: String { term }
+    enum CodingKeys: String, CodingKey { case term, title, what, means, how, en }
     public init(term: String, title: String, what: String, means: String, how: String, en: String) {
         self.term = term; self.title = title; self.what = what; self.means = means; self.how = how; self.en = en
+    }
+
+    private static let titleAliases: [String: String] = [
+        "zhishen": "值神",
+        "pengzu": "彭祖百忌",
+        "shichen": "时辰宜忌"
+    ]
+
+    /// v1.0 内容改为 term/what/means/how/en（无 title）：自定义解码，title 用中文别名回退
+    public init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        term = try c.decode(String.self, forKey: .term)
+        what = try c.decode(String.self, forKey: .what)
+        means = try c.decode(String.self, forKey: .means)
+        how = try c.decode(String.self, forKey: .how)
+        en = try c.decode(String.self, forKey: .en)
+        if let t = try c.decodeIfPresent(String.self, forKey: .title), !t.isEmpty {
+            title = t
+        } else {
+            title = Self.titleAliases[term] ?? term
+        }
     }
 }
 
