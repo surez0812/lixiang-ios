@@ -390,6 +390,9 @@ private let authority2026: [(String, String, Int)] = [
     #expect(ReligionDisplay.taoName("三清玉帝同降，考察善恶") == "三清玉帝同降")
     #expect(ReligionDisplay.taoName("财帛星君文财神增福相公李诡祖圣诞") == "增福财神圣诞")
     #expect(ReligionDisplay.taoName("慈航(观音)成道日")?.contains("道教") == true)
+    #expect(ReligionDisplay.fotoName("北极紫徽大帝降") == "北极紫微大帝降")
+    #expect(ReligionDisplay.fotoName("紫徽大帝诞") == "紫微大帝诞")
+    #expect(ReligionDisplay.fotoName("汉恒候张显王诞") == "汉桓侯张显王诞")
 }
 
 @Test func religionDisplayFilters() {

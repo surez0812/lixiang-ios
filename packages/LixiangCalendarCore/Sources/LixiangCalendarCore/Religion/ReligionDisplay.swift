@@ -43,6 +43,12 @@ public enum ReligionDisplay {
     static let taoHidden: Set<String> = ["月朔", "月望", "月晦", "宜戒"]
 
     // MARK: - 佛历（v1.0 不展示 + result 不对外）
-    static let fotoMap: [String: String] = [:]
+    static let fotoMap: [String: String] = [
+        "北极紫徽大帝降": "北极紫微大帝降",
+        "紫徽大帝诞": "紫微大帝诞",
+        "汉恒候张显王诞": "汉桓侯张显王诞",
+        "慈航(观音)成道日": "慈航成道日（道教）· 观音成道日（佛教）",
+        "月朔": "月朔"
+    ]
     static let fotoHidden: Set<String> = ["月朔", "月望", "月晦", "牛鬼神出", "九毒日", "阴毒日", "宜戒"]
 }
