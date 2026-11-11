@@ -20,6 +20,9 @@ struct SettingsScreen: View {
                     }
                     .tint(theme.accent)
                 }
+                group("提醒") {
+                    settingRow("倒计日提醒", value: "在倒计日页管理", chevron: false)
+                }
                 group("数据与关于") {
                     settingRow("数据来源与许可", value: "LunarSwift 1.1.9 · MIT", chevron: false)
                     settingRow("隐私政策", value: "P2 接入", chevron: false)

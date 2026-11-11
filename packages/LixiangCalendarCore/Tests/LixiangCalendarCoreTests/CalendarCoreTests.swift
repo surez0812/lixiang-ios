@@ -317,3 +317,38 @@ private let authority2026: [(String, String, Int)] = [
     let recent = resolutions[0].stateInfo(regionID: "north", now: LocalDate(2027, 2, 10))
     #expect(recent?.state == .past)
 }
+
+
+// MARK: - F6 倒计日（内部 Anniversary）：下次发生/一次性/2-29/闰月
+
+@Test func anniversaryGregorianYearlyAndOnce() {
+    let yearly = Anniversary(title: "生日", calendar: .gregorian, month: 11, day: 20, repeatRule: .yearly)
+    let next = AnniversaryResolver.occurrence(for: yearly, now: LocalDate(2026, 11, 11), engine: engine)
+    #expect(next?.date == LocalDate(2026, 11, 20))
+    #expect(next?.daysFromNow == 9)
+
+    let pastOnce = Anniversary(title: "一次", calendar: .gregorian, month: 10, day: 1, repeatRule: .once,
+                               createdAt: BeijingTime.date(from: LocalDate(2026, 1, 1)))
+    let occ = AnniversaryResolver.occurrence(for: pastOnce, now: LocalDate(2026, 11, 11), engine: engine)
+    #expect(occ?.date == LocalDate(2026, 10, 1))
+    #expect(occ?.daysFromNow == -41)   // 已过 X 天
+}
+
+@Test func anniversaryFeb29Policies() {
+    func item(_ policy: Feb29Policy) -> Anniversary {
+        Anniversary(title: "2/29", calendar: .gregorian, month: 2, day: 29, repeatRule: .yearly, feb29Policy: policy)
+    }
+    let now = LocalDate(2027, 1, 1)   // 2027 非闰年
+    #expect(AnniversaryResolver.occurrence(for: item(.feb28), now: now, engine: engine)?.date == LocalDate(2027, 2, 28))
+    #expect(AnniversaryResolver.occurrence(for: item(.mar01), now: now, engine: engine)?.date == LocalDate(2027, 3, 1))
+    #expect(AnniversaryResolver.occurrence(for: item(.skip), now: now, engine: engine)?.date == LocalDate(2028, 2, 29)) // skip 平年，下一次闰年 2/29
+}
+
+@Test func anniversaryLunarYearly() {
+    let lunarBirthday = Anniversary(title: "农历生日", calendar: .lunar, month: 1, day: 1, isLeapMonth: false, repeatRule: .yearly)
+    let next = AnniversaryResolver.occurrence(for: lunarBirthday, now: LocalDate(2026, 11, 11), engine: engine)
+    #expect(next?.date == LocalDate(2027, 2, 6))   // 2027 春节
+    let leapBirthday = Anniversary(title: "闰六月", calendar: .lunar, month: 6, day: 1, isLeapMonth: true, repeatRule: .yearly)
+    let leap = AnniversaryResolver.occurrence(for: leapBirthday, now: LocalDate(2025, 1, 1), engine: engine)
+    #expect(leap?.date == LocalDate(2025, 7, 25))  // 2025 闰六月初一
+}

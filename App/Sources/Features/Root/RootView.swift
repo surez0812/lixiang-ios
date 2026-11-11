@@ -47,7 +47,7 @@ struct RootView: View {
                             }
                     }
                 case 2:
-                    NavigationStack { AnniversaryScreen() }
+                    NavigationStack { CountdownScreen() }
                 default:
                     NavigationStack { SettingsScreen() }
                 }
@@ -118,7 +118,7 @@ struct D1TabBar: View {
     private let items: [Item] = [
         Item(title: "月历", outline: "calendar", filled: "calendar"),
         Item(title: "民俗", outline: "book", filled: "book.fill"),
-        Item(title: "纪念日", outline: "heart", filled: "heart.fill"),
+        Item(title: "倒计日", outline: "heart", filled: "heart.fill"),
         Item(title: "设置", outline: "slider.horizontal.3", filled: "slider.horizontal.3")
     ]
 

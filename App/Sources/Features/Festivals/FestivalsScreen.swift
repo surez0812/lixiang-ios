@@ -245,7 +245,7 @@ struct FestivalsScreen: View {
                         .padding(.horizontal, 14)
                         .background(theme.accent, in: Capsule())
                         .foregroundStyle(theme.onAccent)
-                    Button("去纪念日") { onOpenAnniversary() }
+                    Button("去倒计日") { onOpenAnniversary() }
                         .font(.system(size: 11, weight: .semibold))
                         .frame(minHeight: 44)
                         .padding(.horizontal, 14)

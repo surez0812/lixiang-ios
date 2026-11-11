@@ -27,6 +27,8 @@
 		D1E2439EB3417175761B5D6E /* AnniversaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9C20186EACBA4CB717F53C /* AnniversaryScreen.swift */; };
 		E15412DFF5DEED7D78DC1F05 /* NotFoundScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F5934239AE0A120AB9897D /* NotFoundScreen.swift */; };
 		E297799EA5E91021225B8A5D /* DayDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67673C4C6D224600887711F /* DayDetailScreen.swift */; };
+		F3CF09131452D1FCE3C34BE9 /* AnniversaryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B41AF2DA2B791A5B93B941 /* AnniversaryStore.swift */; };
+		F981B4DE21313B9FEF498D8F /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB9C4AE5A725053B6669BE /* NotificationScheduler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,7 @@
 		0F7FE011A7F78FA1D26FE887 /* ContentSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSources.swift; sourceTree = "<group>"; };
 		18A495372FE1481FE1F1B1DC /* LixiangUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LixiangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C033AA6AF0BC99EBEFDEE9 /* Lixiang.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Lixiang.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BDB9C4AE5A725053B6669BE /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		1CBC8822DEACC03E39B84C18 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		23223E2D5C2083126F80B9B8 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		2FD6BD4029A2CD7592D87F9D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		D421ECD4E84365F75CC9AE9A /* MonthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthScreen.swift; sourceTree = "<group>"; };
 		DF9F8074A131889FFB85A95D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		E1BD67E5E2CFFCBF2F70AD9D /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
+		E4B41AF2DA2B791A5B93B941 /* AnniversaryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryStore.swift; sourceTree = "<group>"; };
 		FC5CD61AB7918A75644AF7DC /* D1Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -262,9 +266,11 @@
 		F2A2EF1132BC6DDB563DB091 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E4B41AF2DA2B791A5B93B941 /* AnniversaryStore.swift */,
 				788133271B6E5AF4FAB99C4D /* AppState.swift */,
 				76E56086DB32FA3B6F775654 /* DebugOptions.swift */,
 				4253AFA341B81955B45311A4 /* LixiangApp.swift */,
+				1BDB9C4AE5A725053B6669BE /* NotificationScheduler.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E2439EB3417175761B5D6E /* AnniversaryScreen.swift in Sources */,
+				F3CF09131452D1FCE3C34BE9 /* AnniversaryStore.swift in Sources */,
 				AE756168FD87DC8D978F2005 /* AppState.swift in Sources */,
 				1A1E4569802C9C82B49DCD50 /* CompassScreen.swift in Sources */,
 				23248C8DCA4707C173FD42C0 /* Components.swift in Sources */,
@@ -388,6 +395,7 @@
 				5DC804F1EFB564515CFF5331 /* LixiangApp.swift in Sources */,
 				254DCB71305786C25EDC249A /* MonthScreen.swift in Sources */,
 				E15412DFF5DEED7D78DC1F05 /* NotFoundScreen.swift in Sources */,
+				F981B4DE21313B9FEF498D8F /* NotificationScheduler.swift in Sources */,
 				124CF875588EF60300DE3EBB /* RootView.swift in Sources */,
 				B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */,
 				4961A2C52973706909F582C0 /* SourceLicenseScreen.swift in Sources */,

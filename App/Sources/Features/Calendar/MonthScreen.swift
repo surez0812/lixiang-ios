@@ -155,7 +155,7 @@ struct MonthScreen: View {
             if let nearest = state.nearestFestivalDays() {
                 D1Chip(text: "\(nearest.title) \(nearest.days) 天", tone: .neutral)
             }
-            D1Chip(text: "纪念日", tone: .neutral)
+            D1Chip(text: "倒计日", tone: .neutral)
             Spacer()
             Image(systemName: "magnifyingglass").foregroundStyle(theme.ink3)
         }
