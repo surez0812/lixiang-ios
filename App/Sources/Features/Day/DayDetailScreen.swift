@@ -21,9 +21,9 @@ struct DayDetailScreen: View {
         ScrollViewReader { proxy in
         ScrollView {
             VStack(spacing: 12) {
-                SolarTermArtView(date: date, maxHeight: 128, showLabel: false)
-                dateCard
-                quoteCard
+                MergedDayCard(date: date, variant: .day) { showQuoteSheet = true }
+                    .frame(maxWidth: 520)
+                    .frame(maxWidth: .infinity)
                 shichenBandCard.id("shichen-band")
                 if showAllHours { expandedHourRows }
                 HStack(spacing: 10) {

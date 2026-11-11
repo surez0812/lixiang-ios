@@ -20,9 +20,9 @@ struct MonthScreen: View {
         ScrollView {
             VStack(spacing: 12) {
                 topNav
-                SolarTermArtView(date: today, maxHeight: 128, showLabel: false)
-                dateCardStack
-                quoteCard
+                MergedDayCard(date: today, variant: .month) { showQuote = true }
+                    .frame(maxWidth: 520)
+                    .frame(maxWidth: .infinity)
                 monthCard
                 Color.clear.frame(height: 120).id("bottom")
             }

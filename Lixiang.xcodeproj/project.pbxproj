@@ -86,6 +86,7 @@
 		D8BD6F43DAA9EA7ED2998655 /* term-qingming-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = EC9492B2CCAF48E208A8A83E /* term-qingming-dark.webp */; };
 		DB399901F304F065E3786A65 /* term-lixia-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 79A2A855655307AEE28CA382 /* term-lixia-light.webp */; };
 		E05FA66FE85242F9A338E215 /* term-mangzhong-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 8E466F07982E0E749DF30BB5 /* term-mangzhong-light.webp */; };
+		E0F78DB5AC67136FD14EF194 /* MergedDayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB17E2AF5C589BEC33442D /* MergedDayCard.swift */; };
 		E15412DFF5DEED7D78DC1F05 /* NotFoundScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F5934239AE0A120AB9897D /* NotFoundScreen.swift */; };
 		E297799EA5E91021225B8A5D /* DayDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67673C4C6D224600887711F /* DayDetailScreen.swift */; };
 		E45A8CEE80896053D2B022B5 /* term-jingzhe-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 0BF92BA24C3F132137773A22 /* term-jingzhe-dark.webp */; };
@@ -150,6 +151,7 @@
 		493E10C2B5747A8960FA078A /* LixiangCalendarCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LixiangCalendarCore; path = packages/LixiangCalendarCore; sourceTree = SOURCE_ROOT; };
 		4C1C5648B77B83D4BF81E684 /* term-xiaoshu-light.webp */ = {isa = PBXFileReference; path = "term-xiaoshu-light.webp"; sourceTree = "<group>"; };
 		4E01E5FD3A472709A3070703 /* term-liqiu-dark.webp */ = {isa = PBXFileReference; path = "term-liqiu-dark.webp"; sourceTree = "<group>"; };
+		52FB17E2AF5C589BEC33442D /* MergedDayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergedDayCard.swift; sourceTree = "<group>"; };
 		53440398036BA0EDC34D3233 /* term-lichun-light.webp */ = {isa = PBXFileReference; path = "term-lichun-light.webp"; sourceTree = "<group>"; };
 		58F5934239AE0A120AB9897D /* NotFoundScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundScreen.swift; sourceTree = "<group>"; };
 		5AB42F14E1F9EB220E08ABBA /* term-qiufen-light.webp */ = {isa = PBXFileReference; path = "term-qiufen-light.webp"; sourceTree = "<group>"; };
@@ -487,6 +489,7 @@
 				FD648C90F8CAA06F52C9C455 /* D1Font.swift */,
 				02C26FF99F8DAD23254156A9 /* D1Motion.swift */,
 				FC5CD61AB7918A75644AF7DC /* D1Theme.swift */,
+				52FB17E2AF5C589BEC33442D /* MergedDayCard.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -730,6 +733,7 @@
 				05C5E1385679BE460EAAFB01 /* GlossaryScreen.swift in Sources */,
 				A1211486934ACFD13BA23076 /* HeadingProvider.swift in Sources */,
 				5DC804F1EFB564515CFF5331 /* LixiangApp.swift in Sources */,
+				E0F78DB5AC67136FD14EF194 /* MergedDayCard.swift in Sources */,
 				254DCB71305786C25EDC249A /* MonthScreen.swift in Sources */,
 				E15412DFF5DEED7D78DC1F05 /* NotFoundScreen.swift in Sources */,
 				F981B4DE21313B9FEF498D8F /* NotificationScheduler.swift in Sources */,
