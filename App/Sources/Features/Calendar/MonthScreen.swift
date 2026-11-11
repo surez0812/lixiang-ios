@@ -16,6 +16,7 @@ struct MonthScreen: View {
     private var almanac: AlmanacDay { state.almanac(today) }
 
     var body: some View {
+        ScrollViewReader { proxy in
         ScrollView {
             VStack(spacing: 12) {
                 topNav
@@ -23,10 +24,21 @@ struct MonthScreen: View {
                 dateCardStack
                 quoteCard
                 monthCard
+                Color.clear.frame(height: 120).id("bottom")
             }
             .padding(.horizontal, 18)
             .padding(.top, 4)
             .padding(.bottom, 24)
+        }
+        .onAppear {
+            #if DEBUG
+            if state.debug.scrollBottom {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                    withAnimation(nil) { proxy.scrollTo("bottom", anchor: .bottom) }
+                }
+            }
+            #endif
+        }
         }
         .background(ScreenBackground())
         .navigationBarHidden(true)
@@ -182,7 +194,7 @@ struct MonthScreen: View {
                             .foregroundStyle(theme.ink3).frame(maxWidth: .infinity)
                     }
                 }
-                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 2), count: 7), spacing: 3) {
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 2), count: 7), spacing: 2) {
                     ForEach(grid.days, id: \.date) { cell in
                         dayCell(cell)
                     }
@@ -202,7 +214,7 @@ struct MonthScreen: View {
                 Text("\(cell.date.day)")
                     .d1Font(17, weight: .semibold)
                     .foregroundStyle(cell.isToday ? theme.cream : (cell.inCurrentMonth ? theme.ink : theme.ink3))
-                    .frame(width: 26, height: 26)
+                    .frame(width: 24, height: 24)
                     .background {
                         if cell.isToday {
                             Circle().fill(theme.accent)
@@ -215,7 +227,7 @@ struct MonthScreen: View {
                     .foregroundStyle(labelColor(cell))
                     .lineLimit(1).minimumScaleFactor(0.75)
             }
-            .frame(maxWidth: .infinity, minHeight: 40)
+            .frame(maxWidth: .infinity, minHeight: 34)
             .contentShape(Rectangle())
             .overlay(alignment: .topTrailing) {
                 if let marker = countdownMarker(cell.date) {

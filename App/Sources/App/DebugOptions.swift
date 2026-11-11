@@ -20,7 +20,8 @@ struct DebugOptions {
     var seedCountdown: Bool = false
     var debugTerm: String?         // -LixiangDebugTerm 开光
     var countdownForm: Bool = false
-    var countdownDetail: Bool = false // -LixiangSeedCountdown 1
+    var countdownDetail: Bool = false
+    var scrollBottom: Bool = false // -LixiangSeedCountdown 1
 
     static func parse(_ arguments: [String] = ProcessInfo.processInfo.arguments) -> DebugOptions {
         #if DEBUG
@@ -46,6 +47,7 @@ struct DebugOptions {
             case "-LixiangDebugTerm": options.debugTerm = next()
             case "-LixiangCountdownForm": options.countdownForm = next() == "1"
             case "-LixiangCountdownDetail": options.countdownDetail = next() == "1"
+            case "-LixiangScrollBottom": options.scrollBottom = next() == "1"
             case "-LixiangDebugHideDeity":
                 let raw = next() ?? ""
                 options.hiddenDeities = Set(raw.split(separator: ",").compactMap { Deity(rawValue: String($0).trimmingCharacters(in: .whitespaces)) })
