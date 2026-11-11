@@ -36,7 +36,7 @@ struct QuoteSheet: View {
                             Text("\(date.day)").d1SerifFont(40).foregroundStyle(theme.ink)
                         }
                         .padding(8)
-                        .background(theme.paper.opacity(0.78), in: RoundedRectangle(cornerRadius: 10))
+                        .background(theme.paper.opacity(0.5), in: RoundedRectangle(cornerRadius: 16))
                         .padding(12)
                     }
                     quoteCard

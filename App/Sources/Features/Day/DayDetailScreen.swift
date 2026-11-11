@@ -107,7 +107,9 @@ struct DayDetailScreen: View {
                 }
                 Spacer(minLength: 0)
             }
-            .padding(14)
+            .padding(.leading, 14)
+            .padding(.trailing, 58)
+            .padding(.vertical, 14)
             .frame(height: 146)
             .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
             .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6), lineWidth: 0.8))
@@ -118,7 +120,7 @@ struct DayDetailScreen: View {
                 .frame(width: 40, height: 44)
                 .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(theme.red, lineWidth: 1.2))
                 .rotationEffect(.degrees(8))
-                .padding(14)
+                .padding(10)
                 .accessibilityHidden(true)
         }
         .accessibilityElement(children: .combine)
