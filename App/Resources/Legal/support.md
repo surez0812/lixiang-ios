@@ -1,5 +1,3 @@
-## 中文（zh-Hans）
-
 # 支持与反馈
 
 
@@ -40,7 +38,6 @@ A：不会上传。数据仅保存在你的设备本地。
 
 ---
 
-## English (en)
 
 # Support & Feedback
 
