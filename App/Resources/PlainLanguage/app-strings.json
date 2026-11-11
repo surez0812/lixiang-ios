@@ -46,7 +46,7 @@
  },
  {
   "key": "countdown_empty_title",
-  "zh": "暂无倒计日",
+  "zh": "还没有倒计日",
   "en": "No countdowns yet"
  },
  {
@@ -590,7 +590,7 @@
  },
  {
   "key": "festivals_63",
-  "zh": "未来 90 天暂无节俗内容",
+  "zh": "未来 90 天还没有节俗内容",
   "en": "No festival content for the next 90 days",
   "source": "FestivalsScreen.swift:239",
   "role": "Text"
@@ -681,7 +681,7 @@
  },
  {
   "key": "plain_76",
-  "zh": "暂无白话词条（内容补齐后显示）；先按传统历书字面理解即可。",
+  "zh": "白话解释整理中，稍后更新；先按传统历书字面理解即可。",
   "en": "No plain-language notes yet (added in future updates). For now, read the almanac literally.",
   "source": "PlainTermSheet.swift:21",
   "role": "Text"
@@ -800,7 +800,7 @@
  },
  {
   "key": "text_93",
-  "zh": "暂无公开来源条目（随内容版本更新）",
+  "zh": "来源信息整理中，将随内容更新补充。",
   "en": "No public sources listed yet (updated with content releases).",
   "source": "SourceLicenseScreen.swift:34",
   "role": "Text"

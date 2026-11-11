@@ -1,6 +1,5 @@
 # 隐私政策 · 万年历 App（prelaunch 最小版 / 单一源）
 
-- 作者：calendar-pm｜日期：2026-11-11｜状态：**草案，待 Sure/法务确认**
 - **单一源规则**：本文件是唯一正文来源。官网 `/privacy` 与 App 内「关于 → 隐私政策」**必须由本文件构建**（Markdown → HTML），禁止两处各写一份（古琴 AC-1…AC-5 的教训 = 两处漂移）。
 - 版本：`prelaunch-0.3`。App Store 提审前必须复核为与**该 build 实际行为**一致，并升级版本号。
 - 本版覆盖：**App 本体**（v1.0 行为假设）+ **本官网**。若 App 行为变化（如接入统计），必须同步改本文件。
@@ -120,16 +119,3 @@ When this policy changes, we will update this page and the in-App copy together,
 - Website: https://www.zhaoyao.xin
 
 ---
-
-## 给 webdev 的构建说明
-
-1. 只用本文件正文构建 `/{locale}/privacy`（zh-Hans / en 两个 locale 各取对应章节）。
-2. **不要**在站点侧改写措辞；发现需要改，改本文件（PM 维护）。
-3. 页面需带 `版本/生效日期`（与 App 内一致）、`mailto:support@zhaoyao.xin`、以及「返回主站」链接。
-4. **待核实项**（提审前必须确认，否则本政策不能上线）：
-   - [ ] v1.0 是否真的不接任何统计 SDK（若接，§一/§四 必须改，并同步 App Privacy 问卷）
-   - [ ] 内容拉取接口的服务器日志保留期（由 ops 给数字；未定则不写具体天数）
-   - [ ] 主站既有隐私政策里关于「网站访问日志」的口径是否与本文件一致（`work/zhaoyao-main frontend/src/pages/PrivacyPolicyPage.tsx`）
-   - [x] **支持邮箱地址已定稿（2026-11-11 Lead 裁定）**：最终 **`support@zhaoyao.xin`**。依据：`zhaoyao.xin` 有 MX（mx1/mx2/mx3.qiye.aliyun.com）且全站在用；`zhaoyao.com` 为第三方 2004 年注册、无 A/MX（非我们域名）。Sure 确认 `.com` 系笔误；**发布门已解除**，无需再核。
-- [ ] 运营主体名称/备案号（如需展示，由法务提供）
-- `prelaunch-0.3`（2026-11-11）：英文术语 anniversaries→countdowns（功能名“倒计日”统一）；数据行为不变。
