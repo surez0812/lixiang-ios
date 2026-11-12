@@ -37,6 +37,14 @@ struct DayDetailScreen: View {
         .onAppear {
             #if DEBUG
             if state.debug.expandShichen { showAllHours = true }
+            if state.debug.expandTerms { openSection = 3; showAllHours = true }
+            if let t = state.debug.debugTerms {
+                openSection = 3
+                openTerm = t
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                    withAnimation(nil) { proxy.scrollTo("term-\(t)", anchor: .center) }
+                }
+            }
             if state.debug.valueGod {
                 showZhishen = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
@@ -313,6 +321,7 @@ struct DayDetailScreen: View {
                 yiJiCard
                 Divider().overlay(theme.line)
                 zhishenRow
+                chongRow
                 Divider().overlay(theme.line)
                 deitiesInline("吉神宜趋", names: almanac.jiShen)
                 deitiesInline("凶煞宜忌", names: almanac.xiongSha)
@@ -339,6 +348,7 @@ struct DayDetailScreen: View {
                         }
                     }
                 }.buttonStyle(.plain)
+                .id("term-\(n)")
             }
         }
     }
@@ -363,8 +373,12 @@ struct DayDetailScreen: View {
             ForEach(Array(names.prefix(4)), id: \.self) { n in
                 Button { withAnimation { openTerm = openTerm == n ? nil : n } } label: {
                     VStack(alignment: .leading, spacing: 2) {
-                        Text(n).d1Font(11).foregroundStyle(theme.ink)
-                        if openTerm == n, let t = state.plainLanguage.panelTerm(named: n) {
+                        HStack {
+                            Text(n).d1Font(11).foregroundStyle(theme.ink)
+                            Spacer(minLength: 0)
+                            Text(openTerm == n ? "收起" : "ⓘ").d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
+                        }
+                        if openTerm == n, let t = state.plainLanguage.panelTermMatching(n) {
                             Text(t.detailText).d1Font(10.5).foregroundStyle(theme.ink2)
                             Text(t.en).d1Font(9).foregroundStyle(theme.ink3)
                         }
@@ -374,8 +388,39 @@ struct DayDetailScreen: View {
         }
     }
     @State private var showZhishen = false
+    @State private var showChong = false
     @State private var openSection: Int? = nil
     @State private var openTerm: String? = nil
+
+    @ViewBuilder
+    private var chongRow: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack(spacing: 6) {
+                Text("冲煞").d1Font(10).foregroundStyle(theme.ink3)
+                Text("\(almanac.chongDesc) · 煞\(almanac.sha?.rawValue ?? "—")")
+                    .d1Font(11, weight: .medium).foregroundStyle(theme.ink).lineLimit(1)
+                Spacer(minLength: 0)
+                Button(showChong ? "收起" : "ⓘ") { withAnimation { showChong.toggle() } }
+                    .d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
+            }
+            if showChong {
+                if let t = chongTerm {
+                    Text(t.detailText).d1Font(10).foregroundStyle(theme.ink2).lineSpacing(2)
+                    Text(t.en).d1Font(8.5).foregroundStyle(theme.ink3)
+                } else {
+                    Text("暂无白话解释").d1Font(10).foregroundStyle(theme.ink3)
+                }
+            }
+        }
+        .id("chong-row")
+    }
+
+    private var chongTerm: PanelTerm? {
+        state.plainLanguage.panelTermMatching("冲煞")
+            ?? state.plainLanguage.panelTermMatching(almanac.chongDesc)
+            ?? state.plainLanguage.panelTermMatching("煞")
+            ?? state.plainLanguage.panelTermMatching("冲")
+    }
 
     @ViewBuilder
     private var zhishenRow: some View {

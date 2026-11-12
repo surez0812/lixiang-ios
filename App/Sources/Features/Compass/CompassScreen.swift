@@ -73,7 +73,14 @@ struct CompassScreen: View {
             .accessibilityElement(children: .contain)
             .accessibilityLabel("罗盘模式：\(modeRaw == "day" ? "当日总体" : "当前时辰")")
         }
-        .onAppear { heading.start() }
+        .onAppear {
+            heading.start()
+            #if DEBUG
+            if state.debug.compassSheet {
+                selectedTerm = state.plainLanguage.panelTermMatching("值神") ?? state.plainLanguage.panelTerms.first
+            }
+            #endif
+        }
         .onDisappear { heading.stop() }
         .sheet(isPresented: $showCalibration) { calibrationSheet }
         .sheet(item: $selectedTerm) { term in

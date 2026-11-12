@@ -103,6 +103,14 @@ public struct PlainLanguagePack: Sendable {
     public func page(titled title: String) -> ExplainPage? { pageIndex[title] }
     public func panelTerm(named term: String) -> PanelTerm? { panelTerms.first { $0.term == term } }
 
+    /// 模糊：精确优先，其次前缀/包含（冲猴 煞北 → 冲/煞/煞北）
+    public func panelTermMatching(_ name: String) -> PanelTerm? {
+        if let exact = panelTerm(named: name) { return exact }
+        return panelTerms.first { p in
+            p.term.count >= 1 && (name.contains(p.term) || p.term.contains(name))
+        }
+    }
+
     /// 优先按日期（yyyy-MM-dd）；缺日回退 81 章轮换
     public func dailyQuote(for date: LocalDate) -> DaodejingQuote? {
         let key = String(format: "%04d-%02d-%02d", date.year, date.month, date.day)

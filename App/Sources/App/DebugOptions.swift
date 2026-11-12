@@ -27,6 +27,10 @@ struct DebugOptions {
     var scrollShichen: Bool = false
     var valueGod: Bool = false
     var festivalsMode: String?
+    var expandTerms: Bool = false
+    var enableDebug: Bool = false
+    var debugTerms: String?
+    var compassSheet: Bool = false
     var expandShichen: Bool = false // -LixiangSeedCountdown 1
 
     static func parse(_ arguments: [String] = ProcessInfo.processInfo.arguments) -> DebugOptions {
@@ -59,6 +63,9 @@ struct DebugOptions {
             case "-LixiangScrollShichen": options.scrollShichen = next() == "1"
             case "-LixiangDebugValueGod", "-LixiangScrollToValueGod": options.valueGod = next() == "1"
             case "-LixiangDebugFestivalsMode": options.festivalsMode = next()
+            case "-LixiangExpandTerms", "-LixiangDebugExpandTerms": options.expandTerms = next() == "1"
+            case "-LixiangDebugTerms": options.debugTerms = next(); options.expandTerms = true
+            case "-LixiangDebugCompassSheet": options.compassSheet = next() == "1"
             case "-LixiangExpandShichen": options.expandShichen = next() == "1"
             case "-LixiangDebugHideDeity":
                 let raw = next() ?? ""
