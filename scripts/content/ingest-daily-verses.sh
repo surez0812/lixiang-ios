@@ -8,10 +8,10 @@ SHA=$(shasum -a 256 "$BATCH" | awk '{print $1}')
 N=$(python3 -c "import json;print(len(json.load(open('$BATCH'))))")
 echo "batch=$BATCH sha256=$SHA count=$N"
 python3 scripts/content/validate-daily-verses.py "$BATCH" 365 || { echo "REJECTED: validation failed"; exit 1; }
-cp "$BATCH" "App/Resources/PlainLanguage/daily-classics/${TRAD}-365.json"
+cp "$BATCH" "App/Resources/daily-classics/${TRAD}-365.json"
 mkdir -p docs
 LOG="docs/CONTENT-INGEST-LOG.csv"
 [ -f "$LOG" ] || echo "time,tradition,file,sha256,count" > "$LOG"
 echo "$(date -u +%Y-%m-%dT%H:%M:%SZ),$TRAD,$(basename "$BATCH"),$SHA,$N" >> "$LOG"
-echo "INGESTED -> App/Resources/PlainLanguage/daily-classics/${TRAD}-365.json"
+echo "INGESTED -> App/Resources/daily-classics/${TRAD}-365.json"
 tail -3 "$LOG"
