@@ -34,7 +34,7 @@ struct DailyVerseScreen: View {
                             Text(quote.quote).d1Kaiti(20).foregroundStyle(theme.ink).lineLimit(3)
                             if showExplain {
                                 Text(quote.zh).d1Font(12).foregroundStyle(theme.ink2).lineSpacing(3)
-                                Text("\(quote.source) · 第\(quote.chapter)章")
+                                Text("\(quote.source) · \(quote.chapterLabel ?? "第\(quote.chapter)章")")
                                     .d1Font(10).foregroundStyle(theme.ink3)
                             }
                         }

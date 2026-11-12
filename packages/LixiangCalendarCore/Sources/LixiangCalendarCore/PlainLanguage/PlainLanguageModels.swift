@@ -7,9 +7,11 @@ public struct DaodejingQuote: Codable, Hashable, Sendable, Identifiable {
     public var zh: String
     public var en: String
     public var source: String
-    public var id: Int { chapter }
-    public init(chapter: Int, quote: String, zh: String, en: String, source: String) {
-        self.chapter = chapter; self.quote = quote; self.zh = zh; self.en = en; self.source = source
+    /// 多经典：真实章次文本（如「第四十二章」「心经」「学而」）；nil 时用第 N 章
+    public var chapterLabel: String?
+    public var id: String { "\(chapter)-\(quote.prefix(8))" }
+    public init(chapter: Int, quote: String, zh: String, en: String, source: String, chapterLabel: String? = nil) {
+        self.chapter = chapter; self.quote = quote; self.zh = zh; self.en = en; self.source = source; self.chapterLabel = chapterLabel
     }
 }
 

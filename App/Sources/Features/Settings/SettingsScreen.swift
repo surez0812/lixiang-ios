@@ -33,7 +33,8 @@ struct SettingsScreen: View {
                         } label: {
                             HStack {
                                 Text(c.title).d1Font(12).foregroundStyle(theme.ink)
-                                if c != .dao { Text("内容未就绪").d1Font(9).foregroundStyle(theme.ink3) }
+                                let ready = DailyClassicsStore.shared.hasContent(c)
+                                if !ready { Text("内容未就绪").d1Font(9).foregroundStyle(theme.ink3) }
                                 Spacer()
                                 if state.dailyClassic == c.rawValue {
                                     Image(systemName: "checkmark").d1Font(11, weight: .semibold).foregroundStyle(theme.accentStrong)
@@ -41,6 +42,8 @@ struct SettingsScreen: View {
                             }
                         }
                         .buttonStyle(.plain)
+                        .disabled(!DailyClassicsStore.shared.hasContent(c))
+                        .opacity(DailyClassicsStore.shared.hasContent(c) ? 1 : 0.45)
                     }
                 }
                 group("历法显示") {

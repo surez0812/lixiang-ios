@@ -53,8 +53,11 @@ final class DailyClassicsStore {
 
     private func map(_ v: ClassicVerse) -> DaodejingQuote {
         let num = Int((v.chapter ?? "").filter { $0.isNumber }) ?? 1
-        return DaodejingQuote(chapter: num, quote: v.quote, zh: v.zh ?? "", en: v.en ?? "", source: v.source ?? "公版")
+        return DaodejingQuote(chapter: num, quote: v.quote, zh: v.zh ?? "", en: v.en ?? "", source: v.source ?? "公版", chapterLabel: v.chapter)
     }
+
+    /// 运行时就绪判定：该 tradition 至少有 1 条可用
+    func hasContent(_ classic: DailyClassic) -> Bool { !load(classic).isEmpty }
 
     private func load(_ classic: DailyClassic) -> [String: ClassicVerse] {
         let key = classic.rawValue

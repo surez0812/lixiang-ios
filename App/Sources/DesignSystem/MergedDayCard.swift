@@ -133,7 +133,7 @@ struct MergedDayCard: View {
                         Text("每日一句 · \(quote.source)").d1Font(9).foregroundStyle(theme.cream.opacity(0.85))
                         Text(quote.quote).d1Kaiti(20).foregroundStyle(theme.cream).lineLimit(2)
                         HStack(spacing: 14) {
-                            Text("第\(quote.chapter)章").d1Font(9).foregroundStyle(theme.cream.opacity(0.8))
+                            Text(quote.chapterLabel ?? "第\(quote.chapter)章").d1Font(9).foregroundStyle(theme.cream.opacity(0.8))
                             Spacer()
                             Text("读解释").d1Font(10.5, weight: .semibold).foregroundStyle(theme.cream)
                             Text("分享").d1Font(10.5, weight: .semibold).foregroundStyle(theme.cream)
