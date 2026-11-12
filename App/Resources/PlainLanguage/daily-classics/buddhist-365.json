@@ -1,0 +1,3652 @@
+[
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-01",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "观自在菩萨，行深般若波罗蜜多时",
+  "zh": "开篇点题：观自在菩萨在甚深智慧中修行。传统用作静坐前的摄心起句，先安顿身心再读下文。",
+  "en": "Avalokiteshvara, while practicing deep prajna-paramita, the perfection of wisdom.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-02",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "照见五蕴皆空，度一切苦厄",
+  "zh": "以智慧观照色受想行识皆无自性，故能超越苦恼。传统作为遇困时的提醒：先看破执着，再谈应对。",
+  "en": "Seeing the five aggregates as empty, he crossed beyond all suffering and distress.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-03",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "色不异空，空不异色",
+  "zh": "现象与空性并非两物。日常可用来松动对事物的固化看法：形相在变，本质无独立自性。",
+  "en": "Form is not other than emptiness; emptiness is not other than form.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-04",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "色即是空，空即是色",
+  "zh": "承上更进一层：色当体即空，空即在色中显现。传统讲学中常与前句连读，破除有无二边之见。",
+  "en": "Form itself is emptiness; emptiness itself is form.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-05",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "受想行识，亦复如是",
+  "zh": "感受、想象、意志、识别四者同样无自性。读经时以此把观照从身体推及心理活动，覆盖面才完整。",
+  "en": "Feeling, perception, volition, and consciousness are likewise the same.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-06",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "是诸法空相，不生不灭",
+  "zh": "诸法空性之中，本无所谓生起与消灭。传统用于讨论无常时的参照语，不作吉凶断语。",
+  "en": "The empty nature of all dharmas neither arises nor ceases.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-07",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "不垢不净，不增不减",
+  "zh": "空性不因染污而减、不因清净而增。常被引来说明本性平等，读时可作放下自我评判的提示。",
+  "en": "Neither defiled nor pure, neither increasing nor decreasing.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-08",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "是故空中无色，无受想行识",
+  "zh": "在空性观照下，五蕴不作为实有成立。这是义理陈述，传统解为破执的方法，非否定日常经验。",
+  "en": "Thus in emptiness there is no form, no feeling, perception, volition, or consciousness.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-09",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "无眼耳鼻舌身意，无色声香味触法",
+  "zh": "六根与六尘亦无自性。传统以此说明感知世界依缘而立，可用于观察感官经验时的参照。",
+  "en": "No eye, ear, nose, tongue, body, or mind; no form, sound, smell, taste, touch, or dharma.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-10",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "无无明，亦无无明尽",
+  "zh": "十二因缘的流转与还灭，在空性中亦不立。传统视为对治法执之语，属义理层次而非行为指南。",
+  "en": "No ignorance, and also no ending of ignorance.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-11",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "乃至无老死，亦无老死尽",
+  "zh": "承上省文，直至老死及其止息皆不可得。常与前句连读，理解缘起链条整体被观为空。",
+  "en": "Up to no aging and death, and no ending of aging and death.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-12",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "无苦集灭道，无智亦无得",
+  "zh": "四圣谛与能证之智、所得之果亦不执为实有。传统解为扫除最后一层法执，非否定修道。",
+  "en": "No suffering, origin, cessation, or path; no wisdom and no attainment.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-13",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "无挂碍故，无有恐怖",
+  "zh": "没有牵绊，恐惧便失其依托。此为经文的因果陈述，传统参考理解，不作消灾承诺。",
+  "en": "Without hindrance there is no fear.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-14",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "远离颠倒梦想，究竟涅槃",
+  "zh": "离开错乱的认知与妄想，即是究竟寂灭。常被引作检视自己成见与执念的提醒语。",
+  "en": "Far from inverted dreamlike thinking, one reaches ultimate nirvana.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-15",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "三世诸佛，依般若波罗蜜多故",
+  "zh": "过去现在未来诸佛同依此智慧而成道。传统用以说明此经所述法门为共通路径，非一家之说。",
+  "en": "All buddhas of the three times rely on prajna-paramita.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-16",
+  "classic": "金刚经",
+  "chapter": "法会因由分第一",
+  "quote": "如是我闻。一时佛在舍卫国祇树给孤独园，与大比丘众千二百五十人俱。",
+  "zh": "经首通例：阿难记述亲闻，佛在舍卫国祇园精舍与千二百五十比丘同处，交代说法时地人物。",
+  "en": "Thus have I heard: the Buddha stayed at Jetavana in Shravasti with twelve hundred fifty monks.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-17",
+  "classic": "金刚经",
+  "chapter": "善现启请分第二",
+  "quote": "应云何住？云何降伏其心？",
+  "zh": "全经枢纽之问：发菩提心者，心应如何安住、如何调伏妄念？后文皆围绕此答展开。",
+  "en": "How should one abide, and how subdue the mind? The sutra's pivotal question.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-18",
+  "classic": "金刚经",
+  "chapter": "大乘正宗分第三",
+  "quote": "所有一切众生之类，我皆令入无余涅槃而灭度之。",
+  "zh": "菩萨誓度一切种类众生入无余涅槃，显大乘悲愿之广；下句即破能度所度之执。",
+  "en": "All beings of every kind I shall lead to nirvana without remainder — the bodhisattva's vast vow.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-19",
+  "classic": "金刚经",
+  "chapter": "大乘正宗分第三",
+  "quote": "实无众生得灭度者。何以故？若菩萨有我相、人相、众生相、寿者相，即非菩萨。",
+  "zh": "虽度无量众生而不存能度所度之想；若执我人众生寿者四相，便失菩萨本义。",
+  "en": "In truth no being is liberated; holding self, person, being, or life-span marks means one is no bodhisattva.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-20",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "不住色布施，不住声香味触法布施。",
+  "zh": "布施时不攀缘六尘境相，离根尘执着而行施，方名无相布施。",
+  "en": "Give without dwelling on form, sound, smell, taste, touch, or dharmas — signless generosity beyond the six senses.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-21",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "若菩萨不住相布施，其福德不可思量。",
+  "zh": "离相而施，心量等同虚空，故福德不可计量；以虚空为喻破有限福报之见。",
+  "en": "Giving without attachment to signs yields merit immeasurable, likened to the boundlessness of space.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-22",
+  "classic": "金刚经",
+  "chapter": "如理实见分第五",
+  "quote": "凡所有相，皆是虚妄。若见诸相非相，即见如来。",
+  "zh": "一切相皆缘起假立；若能于相上见其非实有自性，便是见佛法身，不在形貌上求。",
+  "en": "All marks are illusory; seeing marks as non-marks, one sees the Tathagata.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-23",
+  "classic": "金刚经",
+  "chapter": "正信希有分第六",
+  "quote": "无法相，亦无非法相。",
+  "zh": "既不执法为实有，也不堕断灭空见；双遣有无，是中道般若的读法要领。",
+  "en": "Neither clinging to dharma-marks nor to non-dharma-marks — the middle way rejecting both existence and nihilism.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-24",
+  "classic": "金刚经",
+  "chapter": "正信希有分第六",
+  "quote": "汝等比丘，知我说法，如筏喻者，法尚应舍，何况非法。",
+  "zh": "佛以渡筏喻法：到岸当舍舟，正法尚不可执，何况非法；提醒勿把工具当目的。",
+  "en": "My teaching is like a raft: even the dharma must be relinquished, how much more the non-dharma.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-25",
+  "classic": "金刚经",
+  "chapter": "无得无说分第七",
+  "quote": "一切贤圣，皆以无为法而有差别。",
+  "zh": "圣贤阶位之别不在所得有为法，而在契入无为法的深浅，点出修证次第的本义。",
+  "en": "All sages and saints differ only by their depth of realizing the unconditioned dharma.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-26",
+  "classic": "金刚经",
+  "chapter": "依法出生分第八",
+  "quote": "一切诸佛，及诸佛阿耨多罗三藐三菩提法，皆从此经出。",
+  "zh": "极言般若为诸佛之母：诸佛及其正觉法皆依般若而生，显此经在大乘中的根本地位。",
+  "en": "All buddhas and their supreme enlightenment arise from this sutra — prajna as the mother of buddhas.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-27",
+  "classic": "金刚经",
+  "chapter": "庄严净土分第十",
+  "quote": "应无所住而生其心。",
+  "zh": "全经名句：不执着任何境相而灵明心用自然现起；相传六祖惠能闻此句而悟。",
+  "en": "Let the mind arise without abiding anywhere — the line said to have awakened the Sixth Patriarch Huineng.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-28",
+  "classic": "金刚经",
+  "chapter": "无为福胜分第十一",
+  "quote": "若善男子、善女人，于此经中，乃至受持四句偈等，为他人说，而此福德胜前福德。",
+  "zh": "以恒沙七宝布施比况：受持解说此经哪怕四句偈，福德胜过财施，显法施之重。",
+  "en": "Upholding even four lines of this sutra and explaining them to others surpasses the merit of vast material giving.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-29",
+  "classic": "金刚经",
+  "chapter": "尊重正教分第十二",
+  "quote": "若是经典所在之处，即为有佛。",
+  "zh": "经卷所在即如佛在，劝学人于般若经典生尊重心，视法如师。",
+  "en": "Wherever this scripture is present, there the Buddha is — reverence for the text as for the teacher.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-30",
+  "classic": "金刚经",
+  "chapter": "如法受持分第十三",
+  "quote": "佛说般若波罗蜜，即非般若波罗蜜，是名般若波罗蜜。",
+  "zh": "以经名自身示范三段式：般若亦不可执为实法，随说随扫，方是真受持。",
+  "en": "The prajna-paramita the Buddha speaks is not prajna-paramita; therefore it is called prajna-paramita.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-01-31",
+  "classic": "金刚经",
+  "chapter": "如法受持分第十三",
+  "quote": "如来无所说。",
+  "zh": "须菩提答佛：就胜义而言如来无定法可说，言语皆应机方便，不可执文字为实。",
+  "en": "The Tathagata has taught nothing — words are expedient means, not fixed doctrine to be grasped.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-01",
+  "classic": "金刚经",
+  "chapter": "离相寂灭分第十四",
+  "quote": "菩萨应离一切相，发阿耨多罗三藐三菩提心。",
+  "zh": "发无上道心须与离相同行，愿力与空慧并举，是大乘发心的正轨。",
+  "en": "A bodhisattva should arouse the aspiration for supreme enlightenment while detached from all marks.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-02",
+  "classic": "金刚经",
+  "chapter": "持经功德分第十五",
+  "quote": "若有人能受持读诵，广为人说，如来悉知是人，悉见是人。",
+  "zh": "受持读诵并为人解说此经者，佛悉知见，成就不可量功德；传统上作为课诵劝勉之据。",
+  "en": "Whoever upholds, reads, and widely explains this sutra is fully known and seen by the Tathagata.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-03",
+  "classic": "金刚经",
+  "chapter": "能净业障分第十六",
+  "quote": "以今世人轻贱故，先世罪业则为消灭。",
+  "zh": "经文言持经受轻贱反消宿业，古德解为重罪轻报之义；属传统因果观的表述，非命定之说。",
+  "en": "Being slighted in this life while upholding the sutra extinguishes past karma — the classical notion of heavy faults ripening lightly.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-04",
+  "classic": "金刚经",
+  "chapter": "法界通化分第十九",
+  "quote": "若福德有实，如来不说得福德多；以福德无故，如来说得福德多。",
+  "zh": "福德无自性故不可限量；若有实体反成有限。以空义解福报，是全经一贯逻辑。",
+  "en": "If merit were substantial, the Tathagata would not call it abundant; because it is empty, it is called abundant.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-05",
+  "classic": "金刚经",
+  "chapter": "法身非相分第二十六",
+  "quote": "若以色见我，以音声求我，是人行邪道，不能见如来。",
+  "zh": "著名偈颂：于色身音声上求佛是错认路头，法身不可以形声取，破偶像化执求。",
+  "en": "Who seeks me through form or sound walks a false path and cannot see the Tathagata.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-06",
+  "classic": "金刚经",
+  "chapter": "应化非真分第三十二",
+  "quote": "一切有为法，如梦幻泡影，如露亦如电，应作如是观。",
+  "zh": "全经结偈，六喻观有为法之无常无实；传统用作日常观照口诀，置于课诵回向之前。",
+  "en": "All conditioned things are like dreams, illusions, bubbles, shadows, dew, and lightning — so should they be regarded.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-07",
+  "classic": "金刚经",
+  "chapter": "法会因由分第一",
+  "quote": "如是我闻。一时佛在舍卫国祇树给孤独园，与大比丘众千二百五十人俱。",
+  "zh": "经首交代法会时地：佛在舍卫国祇园精舍，与一千二百五十位比丘同在。传统以此证信，读经先安住当下。",
+  "en": "Thus have I heard: the Buddha stayed at Jetavana in Shravasti with twelve hundred fifty monks.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-08",
+  "classic": "金刚经",
+  "chapter": "法会因由分第一",
+  "quote": "尔时世尊食时，著衣持钵，入舍卫大城乞食。",
+  "zh": "佛到饭时着衣持钵入城乞食，日用平常即是道场。传统提醒修行不离穿衣吃饭，平常心可参。",
+  "en": "At mealtime the World-Honored One robed, took his bowl, and entered the great city to beg for food.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-09",
+  "classic": "金刚经",
+  "chapter": "善现启请分第二",
+  "quote": "应云何住？云何降伏其心？",
+  "zh": "须菩提问：发心者心应如何安住、如何调伏妄念。全经由此二问展开，可作静坐自省的提话头。",
+  "en": "How should one abide, and how subdue the mind? Subhuti's question opens the whole sutra.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-10",
+  "classic": "金刚经",
+  "chapter": "大乘正宗分第三",
+  "quote": "所有一切众生之类，我皆令入无余涅槃而灭度之。",
+  "zh": "菩萨发愿令一切众生皆入无余涅槃。传统解为悲愿广大而无能度所度之相，用作发心参照。",
+  "en": "All beings of every kind I shall lead into nirvana without remainder, liberating them utterly.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-11",
+  "classic": "金刚经",
+  "chapter": "大乘正宗分第三",
+  "quote": "若菩萨有我相、人相、众生相、寿者相，即非菩萨。",
+  "zh": "若执我、人、众生、寿者四相，便非菩萨。传统以四相为检验执著的标准，日常反观自照用。",
+  "en": "If a bodhisattva holds notions of self, person, being, or lifespan, he is no bodhisattva.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-12",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "菩萨于法，应无所住，行于布施。",
+  "zh": "菩萨行布施而不执著于法相。传统讲无住行施，做事尽心而不黏着结果，可作处世参考。",
+  "en": "A bodhisattva should practice giving without abiding in anything whatsoever.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-13",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "所谓不住色布施，不住声香味触法布施。",
+  "zh": "布施时不住于色声香味触法六尘。传统意为施而不求回报名声，心无挂碍，日用中体会。",
+  "en": "Give without dwelling on sights, sounds, smells, tastes, touches, or dharmas.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-14",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "菩萨但应如所教住。",
+  "zh": "佛答须菩提：菩萨只应依此无所住之教而安住其心。传统视为对'云何应住'的正面回应。",
+  "en": "A bodhisattva should simply abide as thus taught—without abiding anywhere.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-15",
+  "classic": "金刚经",
+  "chapter": "如理实见分第五",
+  "quote": "凡所有相，皆是虚妄。",
+  "zh": "一切可见可执之相皆非真实。传统以此破对外相的执取，遇顺逆境时可默念提醒自己。",
+  "en": "All that has form is illusory and false.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-16",
+  "classic": "金刚经",
+  "chapter": "如理实见分第五",
+  "quote": "若见诸相非相，即见如来。",
+  "zh": "若能于诸相中见其非实相，便是见如来。传统解为不被表象所缚，直下体认本性。",
+  "en": "Seeing all forms as no-form, one sees the Tathagata.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-17",
+  "classic": "金刚经",
+  "chapter": "正信希有分第六",
+  "quote": "汝等比丘，知我说法，如筏喻者，法尚应舍，何况非法。",
+  "zh": "佛说法如渡河之筏，到岸当舍。传统提醒连佛法也不可执著，工具用完即放，勿背筏而行。",
+  "en": "My teaching is like a raft: even the Dharma must be relinquished, how much more what is not Dharma.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-18",
+  "classic": "金刚经",
+  "chapter": "正信希有分第六",
+  "quote": "无法相，亦无非法相。",
+  "zh": "既不执有法之相，也不执无法之相。传统讲两边俱遣，避免落入'有'与'空'的对立见解。",
+  "en": "Neither grasping the notion of dharma nor the notion of non-dharma.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-19",
+  "classic": "金刚经",
+  "chapter": "无得无说分第七",
+  "quote": "无有定法名阿耨多罗三藐三菩提。",
+  "zh": "没有一个固定不变的法叫无上正等正觉。传统解为觉悟不可对象化执取，随缘应机而显。",
+  "en": "There is no fixed dharma called supreme perfect enlightenment.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-20",
+  "classic": "金刚经",
+  "chapter": "无得无说分第七",
+  "quote": "一切贤圣，皆以无为法而有差别。",
+  "zh": "诸贤圣同证无为法，因根器深浅而现差别。传统意为理体无二，修证阶位有别，不必攀比。",
+  "en": "All sages differ through the unconditioned dharma, though its essence is one.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-21",
+  "classic": "金刚经",
+  "chapter": "依法出生分第八",
+  "quote": "一切诸佛，及诸佛阿耨多罗三藐三菩提法，皆从此经出。",
+  "zh": "佛说诸佛及其无上菩提法皆从此般若而出。传统赞般若为诸佛之母，劝人尊重受持此经。",
+  "en": "All buddhas and their supreme enlightenment teachings issue from this sutra.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-22",
+  "classic": "金刚经",
+  "chapter": "依法出生分第八",
+  "quote": "所谓佛法者，即非佛法。",
+  "zh": "名为佛法者，并非实有一物叫佛法。传统用'即非'句式扫荡名相执著，随说随遣。",
+  "en": "What is called Buddha-dharma is not Buddha-dharma.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-23",
+  "classic": "金刚经",
+  "chapter": "一相无相分第九",
+  "quote": "我不作是念：我是离欲阿罗汉。",
+  "zh": "须菩提言虽证阿罗汉果，却不生'我得果'之念。传统示修证而不自居，功夫深者愈谦。",
+  "en": "I do not think: I am an arhat free of desire.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-24",
+  "classic": "金刚经",
+  "chapter": "庄严净土分第十",
+  "quote": "不应住色生心，不应住声香味触法生心。",
+  "zh": "不应攀缘六尘而起心动念。传统教心不随境转，遇外缘时先觉察再回应，可作观心口诀。",
+  "en": "Do not give rise to a mind dwelling on sights, sounds, smells, tastes, touches, or dharmas.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-25",
+  "classic": "金刚经",
+  "chapter": "庄严净土分第十",
+  "quote": "应无所住而生其心。",
+  "zh": "不执著任何处而自然生起清净心。禅宗六祖闻此句有省，传统视为全经枢纽，动静皆可参。",
+  "en": "Let the mind arise without abiding anywhere—the line that awakened the Sixth Patriarch.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-26",
+  "classic": "金刚经",
+  "chapter": "庄严净土分第十",
+  "quote": "庄严佛土者，即非庄严，是名庄严。",
+  "zh": "所谓庄严佛土，非实有庄严可得，只是假名庄严。传统三段句式：立名、遣执、还归假名。",
+  "en": "Adorning buddha-lands is no adorning; therefore it is called adorning.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-27",
+  "classic": "金刚经",
+  "chapter": "无为福胜分第十一",
+  "quote": "若善男子、善女人，于此经中，乃至受持四句偈等，为他人说，而此福德胜前福德。",
+  "zh": "佛说受持此经哪怕四句偈并为人解说，福德胜过恒河沙数七宝布施。传统重法施轻财施。",
+  "en": "Upholding even four lines of this sutra and teaching others surpasses giving treasures beyond counting.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-02-28",
+  "classic": "金刚经",
+  "chapter": "尊重正教分第十二",
+  "quote": "若是经典所在之处，即为有佛。",
+  "zh": "此经所在之处即如有佛。传统劝人恭敬法宝，视经如师，读诵处即是道场。",
+  "en": "Wherever this scripture is found, there the Buddha is present.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-01",
+  "classic": "金刚经",
+  "chapter": "如法受持分第十三",
+  "quote": "佛说般若波罗蜜，即非般若波罗蜜，是名般若波罗蜜。",
+  "zh": "般若波罗蜜亦不可执为实法，随立随扫。传统三段论式贯穿全经，教人不滞名言概念。",
+  "en": "The Prajna-paramita the Buddha speaks is no prajna-paramita; hence it is named prajna-paramita.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-02",
+  "classic": "金刚经",
+  "chapter": "离相寂灭分第十四",
+  "quote": "离一切诸相，即名诸佛。",
+  "zh": "能离一切相执，即名为佛。传统解佛不在外求，放下诸相分别处即是觉性显现。",
+  "en": "Free from all forms, one is called a buddha.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-03",
+  "classic": "金刚经",
+  "chapter": "离相寂灭分第十四",
+  "quote": "菩萨应离一切相，发阿耨多罗三藐三菩提心。",
+  "zh": "菩萨应离一切相而发无上菩提心。传统强调发心与离相同步，愿大而心空，方不落执著。",
+  "en": "A bodhisattva should arouse supreme enlightenment-mind while detached from all forms.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-04",
+  "classic": "金刚经",
+  "chapter": "持经功德分第十五",
+  "quote": "若有人能受持读诵，广为人说，如来悉知是人，悉见是人。",
+  "zh": "佛说能受持读诵并广为人说此经者，如来悉知悉见。传统以此鼓励流通法宝，自利利他。",
+  "en": "Whoever upholds, reads, and widely teaches this sutra—the Tathagata fully knows and sees them.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-05",
+  "classic": "金刚经",
+  "chapter": "能净业障分第十六",
+  "quote": "以今世人轻贱故，先世罪业则为消灭。",
+  "zh": "受持此经若遭世人轻贱，先世罪业因此消灭。传统解为忍辱消业，逆境中不退初心。",
+  "en": "Being despised now, one's past karmic offenses are thereby dissolved.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-06",
+  "classic": "金刚经",
+  "chapter": "究竟无我分第十七",
+  "quote": "实无有法发阿耨多罗三藐三菩提心者。",
+  "zh": "实无一法名为发菩提心者。传统遣'能发之心'与'所发之法'的二元执著，发而无发。",
+  "en": "In truth no dharma exists that arouses supreme enlightenment-mind.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-07",
+  "classic": "金刚经",
+  "chapter": "一体同观分第十八",
+  "quote": "过去心不可得，现在心不可得，未来心不可得。",
+  "zh": "三世之心皆不可执取把握。传统教人不在念头上来去追逐，当下觉照而不粘滞，禅门常参。",
+  "en": "Past mind cannot be grasped, present mind cannot be grasped, future mind cannot be grasped.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-08",
+  "classic": "金刚经",
+  "chapter": "法界通化分第十九",
+  "quote": "若福德有实，如来不说得福德多。",
+  "zh": "若福德是实有之物，佛便不说得福德多。传统解正因无自性，福德乃无量，有执则有限。",
+  "en": "If merit were substantial, the Tathagata would not speak of gaining much merit.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-09",
+  "classic": "金刚经",
+  "chapter": "知见不生分第三十一",
+  "quote": "所言法相者，如来说即非法相，是名法相。",
+  "zh": "所说一切法相，即非实有法相，不过假名而已。传统收束全经'即非是名'之旨，破尽知见。",
+  "en": "What are called dharma-marks are said by the Tathagata to be no marks; thus they are named dharma-marks.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-10",
+  "classic": "金刚经",
+  "chapter": "法会因由分第一",
+  "quote": "如是我闻。一时佛在舍卫国祇树给孤独园，与大比丘众千二百五十人俱。",
+  "zh": "经文开篇交代法会时地：佛在舍卫国祇园精舍，与一千二百五十位大比丘同处。传统上作为结集经典的起首格式。",
+  "en": "Thus have I heard: the Buddha stayed at Jetavana in Shravasti with twelve hundred fifty monks.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-11",
+  "classic": "金刚经",
+  "chapter": "法会因由分第一",
+  "quote": "尔时世尊食时，著衣持钵，入舍卫大城乞食。",
+  "zh": "记佛陀到了饭时便着衣持钵入城乞食。传统注疏常以此说明般若不离日常行持。",
+  "en": "At mealtime the World-Honored One robed, took his bowl, and entered Shravasti to beg for food.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-12",
+  "classic": "金刚经",
+  "chapter": "法会因由分第一",
+  "quote": "饭食讫，收衣钵，洗足已，敷座而坐。",
+  "zh": "乞食归来，收好衣钵、洗净双足，铺座坐下。历来被视为平常事中见道风的写照。",
+  "en": "After eating he put away robe and bowl, washed his feet, arranged his seat and sat down.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-13",
+  "classic": "金刚经",
+  "chapter": "善现启请分第二",
+  "quote": "如来善护念诸菩萨，善付嘱诸菩萨。",
+  "zh": "须菩提赞叹佛善于护持忆念、嘱托诸菩萨。此为下文请问修行安心的缘起。",
+  "en": "The Tathagata well guards and mindful keeps the bodhisattvas, and well entrusts them with his charge.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-14",
+  "classic": "金刚经",
+  "chapter": "善现启请分第二",
+  "quote": "应云何住？云何降伏其心？",
+  "zh": "须菩提问：发无上道心者，心应如何安住、如何调伏。全经的问答由此展开。",
+  "en": "How should one abide, and how subdue the mind? This question opens the whole discourse.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-15",
+  "classic": "金刚经",
+  "chapter": "大乘正宗分第三",
+  "quote": "所有一切众生之类，我皆令入无余涅槃而灭度之。",
+  "zh": "菩萨誓愿令一切种类众生皆入无余涅槃。传统解为发心之广大，与下文无相之义相连。",
+  "en": "All beings of every kind I shall lead into nirvana without remainder and thus liberate them.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-16",
+  "classic": "金刚经",
+  "chapter": "大乘正宗分第三",
+  "quote": "如是灭度无量无数无边众生，实无众生得灭度者。",
+  "zh": "虽度无量众生，却不作有众生被度之想。旧注多以此说不执能度所度。",
+  "en": "Though countless beings are liberated, in truth no being is liberated—no grasping at giver or receiver.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-17",
+  "classic": "金刚经",
+  "chapter": "大乘正宗分第三",
+  "quote": "若菩萨有我相、人相、众生相、寿者相，即非菩萨。",
+  "zh": "经中说：若存我、人、众生、寿者四种相执，便不名菩萨。四相为本经常见的辨析用语。",
+  "en": "If a bodhisattva holds notions of self, person, being, or lifespan, he is not a bodhisattva.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-18",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "菩萨于法，应无所住，行于布施。",
+  "zh": "讲布施时于法无所执著。传统视为六度之首与般若相应的行持原则。",
+  "en": "In giving, a bodhisattva should practice charity without abiding in anything whatsoever.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-19",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "不住色布施，不住声香味触法布施。",
+  "zh": "列举六尘，说不因色声香味触法而生住著。旧疏称为不住相布施。",
+  "en": "Give without dwelling on sights, sounds, smells, tastes, touches, or dharmas—the six sense objects.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-20",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "若菩萨不住相布施，其福德不可思量。",
+  "zh": "经说离相布施所得福德难以计量。传统上用以说明无住行施的意义，非劝诱之辞。",
+  "en": "When a bodhisattva gives without dwelling on marks, the merit is beyond all measuring.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-21",
+  "classic": "金刚经",
+  "chapter": "如理实见分第五",
+  "quote": "凡所有相，皆是虚妄。",
+  "zh": "谓一切相状皆非真实自性。此句常被引作本经破相显空的纲要。",
+  "en": "All that has form is illusory—a key line on the unreality of appearances.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-22",
+  "classic": "金刚经",
+  "chapter": "如理实见分第五",
+  "quote": "若见诸相非相，即见如来。",
+  "zh": "若能于诸相见其非实相，经中称之为见如来。旧注多解为不以色身相好取佛。",
+  "en": "Seeing that all marks are no marks, one sees the Tathagata—not by bodily signs.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-23",
+  "classic": "金刚经",
+  "chapter": "正信希有分第六",
+  "quote": "无法相，亦无非法相。",
+  "zh": "既不执法相，也不执非法相。传统解为两边俱遣，避免落于有无之见。",
+  "en": "Neither clinging to dharma-marks nor to non-dharma-marks: both extremes are set aside.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-24",
+  "classic": "金刚经",
+  "chapter": "正信希有分第六",
+  "quote": "汝等比丘，知我说法，如筏喻者。",
+  "zh": "佛以渡河竹筏譬喻所说之法，到岸则舍。后世常引为不执法的比喻。",
+  "en": "Monks, know my teaching is like a raft: used to cross over, then left behind.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-25",
+  "classic": "金刚经",
+  "chapter": "正信希有分第六",
+  "quote": "法尚应舍，何况非法。",
+  "zh": "承筏喻而言：正法尚且不执，何况非法。传统视为遣除执著的递进说法。",
+  "en": "Even the Dharma should be relinquished—how much more what is not the Dharma.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-26",
+  "classic": "金刚经",
+  "chapter": "无得无说分第七",
+  "quote": "无有定法名阿耨多罗三藐三菩提。",
+  "zh": "经中说没有一个固定不变之法可名为无上正等正觉。旧注多就破定执而释。",
+  "en": "There is no fixed dharma called unsurpassed perfect enlightenment; nothing definite to be grasped.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-27",
+  "classic": "金刚经",
+  "chapter": "无得无说分第七",
+  "quote": "如来所说法，皆不可取、不可说。",
+  "zh": "谓如来所说之法不可执取、不可言诠。传统上与非法非非法连读理解。",
+  "en": "The Tathagata's teaching cannot be grasped or spoken—it is neither dharma nor non-dharma.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-28",
+  "classic": "金刚经",
+  "chapter": "依法出生分第八",
+  "quote": "一切诸佛，及诸佛阿耨多罗三藐三菩提法，皆从此经出。",
+  "zh": "经中称诸佛及其无上菩提法皆由此般若而出。传统科判以此标举般若为佛母。",
+  "en": "All buddhas and their unsurpassed enlightenment arise from this scripture—praised as the mother of buddhas.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-29",
+  "classic": "金刚经",
+  "chapter": "一相无相分第九",
+  "quote": "我不作是念：我是离欲阿罗汉。",
+  "zh": "须菩提自述不作我得阿罗汉之念。旧注用来说明证果而无证果之相。",
+  "en": "I do not think 'I am an arhat free of desire'—attainment without any mark of attainment.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-30",
+  "classic": "金刚经",
+  "chapter": "庄严净土分第十",
+  "quote": "不应住色生心，不应住声香味触法生心。",
+  "zh": "说不依六尘而起住著之心，与前文不住相布施相呼应。",
+  "en": "Do not give rise to a mind dwelling on sights, sounds, smells, tastes, touches, or dharmas.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-03-31",
+  "classic": "金刚经",
+  "chapter": "庄严净土分第十",
+  "quote": "应无所住而生其心。",
+  "zh": "本经名句：于一切处无所住著而生其心。禅宗典籍中常引述此语。",
+  "en": "Let the mind arise without abiding anywhere—the sutra's most quoted line, famed in Chan.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-01",
+  "classic": "金刚经",
+  "chapter": "庄严净土分第十",
+  "quote": "佛说非身，是名大身。",
+  "zh": "以非身而名大身，属本经常见的即非是名句式，用以遣除对形量的执取。",
+  "en": "The Buddha says it is no-body, therefore it is called a great body.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-02",
+  "classic": "金刚经",
+  "chapter": "无为福胜分第十一",
+  "quote": "若善男子、善女人，于此经中，乃至受持四句偈等，为他人说，而此福德胜前福德。",
+  "zh": "经中比较：受持解说此经哪怕四句偈，胜于恒沙七宝布施。属经文常见的校量功德说法。",
+  "en": "Upholding even four lines of this sutra and explaining them yields merit surpassing vast material gifts.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-03",
+  "classic": "金刚经",
+  "chapter": "尊重正教分第十二",
+  "quote": "若是经典所在之处，即为有佛。",
+  "zh": "说此经所在之处即如有佛。传统上作为恭敬法宝的依据。",
+  "en": "Wherever this scripture is present, there the Buddha is—grounds for honoring the teaching.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-04",
+  "classic": "金刚经",
+  "chapter": "如法受持分第十三",
+  "quote": "佛说般若波罗蜜，即非般若波罗蜜，是名般若波罗蜜。",
+  "zh": "典型的三段句式：说、即非、是名。旧注多解为随说随遣、假名安立。",
+  "en": "The perfection of wisdom is said to be no perfection of wisdom; hence it is named so.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-05",
+  "classic": "金刚经",
+  "chapter": "离相寂灭分第十四",
+  "quote": "离一切诸相，即名诸佛。",
+  "zh": "谓远离一切相执即名为佛。传统视为本经离相之旨的归结语之一。",
+  "en": "Free from all marks—that is what is called the buddhas.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-06",
+  "classic": "金刚经",
+  "chapter": "持经功德分第十五",
+  "quote": "若有人能受持读诵，广为人说。",
+  "zh": "经中屡言受持读诵并为人解说此经者。属本经流通分的常见表述。",
+  "en": "If someone upholds, reads, recites, and widely explains this sutra for others.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-07",
+  "classic": "金刚经",
+  "chapter": "究竟无我分第十七",
+  "quote": "实无有法发阿耨多罗三藐三菩提心者。",
+  "zh": "说并无一实法名为发无上菩提心者。旧注多与无我无人之义合解。",
+  "en": "In truth no dharma exists that arouses the mind of unsurpassed perfect enlightenment.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-08",
+  "classic": "金刚经",
+  "chapter": "一体同观分第十八",
+  "quote": "过去心不可得，现在心不可得，未来心不可得。",
+  "zh": "三心不可得，为本经广为传诵之句。传统解为心念迁流、无可执取。",
+  "en": "Past mind cannot be grasped, present mind cannot be grasped, future mind cannot be grasped.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-09",
+  "classic": "金刚经",
+  "chapter": "法会因由分第一",
+  "quote": "如是我闻。一时，佛在舍卫国祇树给孤独园",
+  "zh": "经文开篇的结集套语，交代时间地点：佛在舍卫国祇树给孤独园说法。传统上用作读经的起首背景。",
+  "en": "Standard sutra opening: thus have I heard; the Buddha stayed at Jetavana in Shravasti.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-10",
+  "classic": "金刚经",
+  "chapter": "法会因由分第一",
+  "quote": "与大比丘众千二百五十人俱",
+  "zh": "记述与会听众为一千二百五十位大比丘，是常见僧团规模的定型表述，属叙事背景。",
+  "en": "The assembly comprised twelve hundred and fifty great monks, a conventional narrative detail.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-11",
+  "classic": "金刚经",
+  "chapter": "善现启请分第二",
+  "quote": "如来善护念诸菩萨，善付嘱诸菩萨",
+  "zh": "须菩提赞佛善于护持、嘱托菩萨行者。传统解为赞叹佛陀教导之周到，用于启请文的语境。",
+  "en": "Subhuti praises the Tathagata for well guarding and entrusting the bodhisattvas with his teaching.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-12",
+  "classic": "金刚经",
+  "chapter": "善现启请分第二",
+  "quote": "应云何住？云何降伏其心？",
+  "zh": "须菩提代众提问：发心者心应如何安住、如何调伏。全经问答由此展开，是核心问题的提出。",
+  "en": "How should one abide, and how subdue the mind? The question framing the whole discourse.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-13",
+  "classic": "金刚经",
+  "chapter": "大乘正宗分第三",
+  "quote": "所有一切众生之类，我皆令入无余涅槃而灭度之",
+  "zh": "菩萨发愿度一切类别众生入无余涅槃。传统视为大悲愿的表述，与下文无我义相配读。",
+  "en": "The bodhisattva vows to lead all beings into nirvana without remainder, expressing universal compassion.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-14",
+  "classic": "金刚经",
+  "chapter": "大乘正宗分第三",
+  "quote": "如是灭度无量无数无边众生，实无众生得灭度者",
+  "zh": "虽度无量众生，却不执有实众生可度。传统解为悲愿与空观并行，避免功德我执。",
+  "en": "Though countless beings are liberated, no being is truly liberated—compassion joined with emptiness.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-15",
+  "classic": "金刚经",
+  "chapter": "大乘正宗分第三",
+  "quote": "若菩萨有我相、人相、众生相、寿者相，即非菩萨",
+  "zh": "列出四种执著之相；若存此执，便不合菩萨之义。传统用作检验发心是否离执的标准。",
+  "en": "Holding notions of self, person, being, or lifespan disqualifies one as a bodhisattva.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-16",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "菩萨于法，应无所住，行于布施",
+  "zh": "讲布施时不执著于法与相。传统称无住相布施，为六度中布施度的般若化表述。",
+  "en": "A bodhisattva gives without abiding in anything—the perfection of generosity informed by wisdom.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-17",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "不住色布施，不住声香味触法布施",
+  "zh": "逐一列举六尘，说明布施不应住于任何感官对象。传统用以细化无住的实践范围。",
+  "en": "Give without dwelling on sights, sounds, smells, tastes, touches, or mental objects.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-18",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "若菩萨不住相布施，其福德不可思量",
+  "zh": "以不可思量形容离相布施的福德。传统解为心量无限故果报难量，属经中譬喻式说法。",
+  "en": "Merit from giving without attachment to marks is described as immeasurable.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-19",
+  "classic": "金刚经",
+  "chapter": "如理实见分第五",
+  "quote": "凡所有相，皆是虚妄",
+  "zh": "总括一切相非真实自性。传统常引作观照用语，提醒勿把表象执为实有。",
+  "en": "All marks are declared illusory—a reminder not to grasp appearances as real.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-20",
+  "classic": "金刚经",
+  "chapter": "如理实见分第五",
+  "quote": "若见诸相非相，即见如来",
+  "zh": "承上句说：能于诸相中见其非实，即是见佛之法身。传统解为不以形相求佛。",
+  "en": "Seeing that marks are not marks is seeing the Tathagata, beyond physical form.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-21",
+  "classic": "金刚经",
+  "chapter": "正信希有分第六",
+  "quote": "无法相，亦无非法相",
+  "zh": "既不执法为实，也不执空无断灭。传统视为离二边的中道表述，防止落入偏空。",
+  "en": "Neither cling to dharmas nor to their negation—a middle way avoiding both extremes.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-22",
+  "classic": "金刚经",
+  "chapter": "正信希有分第六",
+  "quote": "汝等比丘，知我说法，如筏喻者",
+  "zh": "以渡河竹筏喻佛法：到岸则舍。传统用来说明教法是工具而非终极执取对象。",
+  "en": "The teaching is likened to a raft: useful for crossing, then set aside.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-23",
+  "classic": "金刚经",
+  "chapter": "正信希有分第六",
+  "quote": "法尚应舍，何况非法",
+  "zh": "承筏喻推论：连正法都不应执著，何况非法。传统解为彻底离执的次第说明。",
+  "en": "Even the Dharma is to be relinquished, how much more what is not Dharma.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-24",
+  "classic": "金刚经",
+  "chapter": "无得无说分第七",
+  "quote": "无有定法名阿耨多罗三藐三菩提",
+  "zh": "说无上正等正觉并非固定可得之法。传统解为破除对觉悟的实体化理解。",
+  "en": "No fixed dharma is called supreme enlightenment; awakening is not a graspable thing.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-25",
+  "classic": "金刚经",
+  "chapter": "无得无说分第七",
+  "quote": "一切贤圣，皆以无为法而有差别",
+  "zh": "谓圣贤阶位差别依无为法而显。传统注疏多解为证悟深浅不同，非另有所得。",
+  "en": "Sages differ only in depth of realizing the unconditioned, not in possessing something.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-26",
+  "classic": "金刚经",
+  "chapter": "依法出生分第八",
+  "quote": "所谓佛法者，即非佛法",
+  "zh": "以即非句式否定对佛法的实体执取。传统视为经中三段论式表达的典型例句。",
+  "en": "What is called Buddha-dharma is said to be no Buddha-dharma—a formula negating reification.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-27",
+  "classic": "金刚经",
+  "chapter": "一相无相分第九",
+  "quote": "我不作是念：我是离欲阿罗汉",
+  "zh": "须菩提自述不起我得果之念。传统用来说明证果而无证果之执的态度。",
+  "en": "Subhuti says he never thinks 'I am an arhat free of desire'—attainment without self-claim.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-28",
+  "classic": "金刚经",
+  "chapter": "庄严净土分第十",
+  "quote": "诸菩萨摩诃萨应如是生清净心",
+  "zh": "总结前文，劝发清净心。传统作为下文不应住色生心的引导句读。",
+  "en": "Great bodhisattvas should thus give rise to a pure mind, introducing the next lines.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-29",
+  "classic": "金刚经",
+  "chapter": "庄严净土分第十",
+  "quote": "不应住色生心，不应住声香味触法生心",
+  "zh": "从六尘说明生心不应有所住。传统与四祖道信等禅门引用相关，作修心参照。",
+  "en": "Do not let the mind arise dwelling on sense objects; a classic Chan-cited instruction.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-04-30",
+  "classic": "金刚经",
+  "chapter": "庄严净土分第十",
+  "quote": "应无所住而生其心",
+  "zh": "全经名句：不执住而生起心用。传统禅宗常引，相传六祖闻此有省，作心地功夫参考。",
+  "en": "Let the mind arise without abiding anywhere—the line traditionally linked to Huineng's awakening.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-01",
+  "classic": "金刚经",
+  "chapter": "无为福胜分第十一",
+  "quote": "若善男子、善女人，于此经中受持乃至四句偈等",
+  "zh": "以受持四句偈与七宝布施比较福德。传统解为般若法施胜于财施的譬喻式较量。",
+  "en": "Upholding even four lines of this sutra is compared favorably with vast material giving.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-02",
+  "classic": "金刚经",
+  "chapter": "尊重正教分第十二",
+  "quote": "若是经典所在之处，则为有佛",
+  "zh": "说经典所在即如佛在，劝敬重法宝。传统用作供养经卷、尊重教法的依据。",
+  "en": "Where this scripture is found, the Buddha is present—grounds for revering the text.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-03",
+  "classic": "金刚经",
+  "chapter": "如法受持分第十三",
+  "quote": "佛说般若波罗蜜，即非般若波罗蜜，是名般若波罗蜜",
+  "zh": "三段式表述：说、遮、假名。传统解为不坏名言而不执实义的中道说法方式。",
+  "en": "Prajna-paramita is said to be no prajna-paramita, therefore named prajna-paramita—the threefold formula.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-04",
+  "classic": "金刚经",
+  "chapter": "离相寂灭分第十四",
+  "quote": "离一切诸相，即名诸佛",
+  "zh": "谓离一切相即名为佛。传统解为佛不在相上安立，与前凡所有相皆是虚妄呼应。",
+  "en": "Freedom from all marks is what is named buddhahood, echoing earlier verses on illusion.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-05",
+  "classic": "金刚经",
+  "chapter": "持经功德分第十五",
+  "quote": "若有人能受持读诵，广为人说",
+  "zh": "举受持读诵并为人解说之行。传统视为自利利他并举的弘经方式描述。",
+  "en": "Upholding, reciting, and widely explaining the sutra for others—benefit for self and others.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-06",
+  "classic": "金刚经",
+  "chapter": "能净业障分第十六",
+  "quote": "以今世人轻贱故，先世罪业则为消灭",
+  "zh": "说持经者受人轻贱，反消宿业。传统解为重罪轻受的因果说明，属经中劝持之语。",
+  "en": "Being slighted now while upholding the sutra is said to exhaust past heavy karma.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-07",
+  "classic": "金刚经",
+  "chapter": "究竟无我分第十七",
+  "quote": "实无有法发阿耨多罗三藐三菩提心者",
+  "zh": "说发无上菩提心亦无实法可得。传统解为发心而不执发心之相，与第三分义相通。",
+  "en": "No real dharma arouses the supreme enlightenment mind—aspiration without grasping the aspiration.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-08",
+  "classic": "金刚经",
+  "chapter": "一体同观分第十八",
+  "quote": "过去心不可得，现在心不可得，未来心不可得",
+  "zh": "三心不可得，说明心念无常无实自性。传统禅门常引作观心用语，破对心的执取。",
+  "en": "Past, present, and future minds are all ungraspable—a famed Chan citation on observing mind.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-09",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "诸法意先导，意主意造作。若以染污意，或语或行业，是则苦随彼，如轮随兽足。",
+  "zh": "心念主导言行；以染污心行事，苦便随之，如车轮跟着牛蹄。传统用以提醒观照起心动念，非预言吉凶。",
+  "en": "Mind precedes all things; with a defiled mind, suffering follows like the wheel follows the ox's hoof.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-10",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "诸法意先导，意主意造作。若以清净意，或语或行业，是则乐随彼，如影不离形。",
+  "zh": "与上偈相对：以清净心说话做事，安乐随身如影随形。传统读作修心的对照句，不作祸福预测。",
+  "en": "With a pure mind in speech or deed, happiness follows like a shadow that never departs.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-11",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "彼骂我打我，败我劫夺我，若人舍此念，怨恨自平息。",
+  "zh": "放下反复追讨的念头，怨恨自然止息。传统作为调心提示，具体处境仍须自行判断。",
+  "en": "Letting go of such brooding, resentment subsides of itself.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-12",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "若人知此身，如陶瓶易坏，当善护其心，如城防魔军。",
+  "zh": "身如陶器易碎，心却可如城池守护。传统借比喻提醒珍重身心、守持正念，不含恐吓。",
+  "en": "Knowing the body fragile as a pot, guard the mind like a fortified city.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-13",
+  "classic": "法句经",
+  "chapter": "心品",
+  "quote": "心轻躁难调，随欲而流转；智者调其心，如匠矫直箭。",
+  "zh": "心浮动难驯，如竹匠矫正箭杆般慢慢调伏。传统用作静坐观心的比喻，非评判他人。",
+  "en": "The flickering mind is hard to guard; the wise straighten it as a fletcher his arrow.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-14",
+  "classic": "法句经",
+  "chapter": "心品",
+  "quote": "如鱼离水栖，投于陆地上，如是战栗心，脱离魔境界。",
+  "zh": "心如离水之鱼般不安，说明习气难改时的挣扎。传统用来体谅修行初期的不适。",
+  "en": "Like a fish cast on dry land, the mind trembles when leaving its old domain.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-15",
+  "classic": "法句经",
+  "chapter": "心品",
+  "quote": "此心随欲转，轻躁难捉摸；善哉心调伏，心调得安乐。",
+  "zh": "心易随欲飘荡，调伏后带来安稳。传统视为渐进练习的方向，不承诺立竿见影。",
+  "en": "Hard to hold, the wandering mind—when tamed, brings ease.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-16",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "谁征服地界，阎魔界天界，谁善说法句，如巧匠采花？",
+  "zh": "以巧匠择花比喻善择法义。传统读作对闻法者的提问式勉励，重在辨别取舍。",
+  "en": "Who shall master this world and speak well-taught verses, as a garland-maker picks flowers?",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-17",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "学克地界，阎魔界天界；学善说法句，如巧匠采花。",
+  "zh": "答上问：有学之人能如实知世间、善说法要。传统强调学习与拣择，不作神秘解读。",
+  "en": "The learner masters these realms and gathers teachings as a skilled florist gathers blooms.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-18",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "知身如聚沫，觉身如阳焰，折魔王之花，越死王之境。",
+  "zh": "身如泡沫、如海市蜃楼，观其不实则不为欲境所牵。传统作无常观的意象，非否定人生。",
+  "en": "See the body as foam, as mirage; break the flowered arrows and pass beyond death's reach.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-19",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "如蜂集华，不扰色香，但取其味去。",
+  "zh": "蜜蜂取蜜而不损花色香，喻入世取所需而不扰人。传统用于处世分寸的参照。",
+  "en": "As a bee takes nectar without harming the flower's color or scent, so move among people.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-20",
+  "classic": "法句经",
+  "chapter": "愚人品",
+  "quote": "不观他人过，不观作不作，但观自身行，作也与未作。",
+  "zh": "少盯他人过失，多看自己已做未做。传统作自省准则，不等于放弃是非判断。",
+  "en": "Look not at others' faults, but at your own deeds done and undone.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-21",
+  "classic": "法句经",
+  "chapter": "愚人品",
+  "quote": "如犀一角，独住无伴侣；愚人不可亲，宁可独游行。",
+  "zh": "找不到同行善友时，宁可独行如独角犀。传统谈择友与自处，非鼓励孤僻。",
+  "en": "Better walk alone like a rhinoceros horn than keep company with the unwise.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-22",
+  "classic": "法句经",
+  "chapter": "愚人品",
+  "quote": "若得贤智伴，善住乐共行，克服诸危难，愉意与俱行。",
+  "zh": "有贤明同伴则可欢喜同行、共度难关。传统与前偈互补：慎独亦重善友。",
+  "en": "With a wise and steady companion, overcome dangers and travel gladly together.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-23",
+  "classic": "法句经",
+  "chapter": "愚人品",
+  "quote": "愚人自知愚，是名为智者；愚者自称智，是谓真愚人。",
+  "zh": "知道自己不足，已近于智；自以为智，反显其愚。传统作谦逊提醒，非讥讽他人。",
+  "en": "The fool who knows his folly is wise; the fool who claims wisdom is truly foolish.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-24",
+  "classic": "法句经",
+  "chapter": "贤明品",
+  "quote": "如以指示宝藏，见有过应教诫；亲近如此智者，只有善而无恶。",
+  "zh": "肯指出过失的人如同指路寻宝。传统劝人珍惜诤友，接受批评仍须自行斟酌。",
+  "en": "Like one pointing to treasure, follow the wise who show your faults; better, not worse, comes of it.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-25",
+  "classic": "法句经",
+  "chapter": "贤明品",
+  "quote": "应劝诫教诫，防止不当行；善人爱此人，恶人不喜彼。",
+  "zh": "善意规劝者受善人亲近、恶人疏远。传统描述人际取向，不作善恶标签化。",
+  "en": "One who counsels and restrains wrongdoing is dear to the good, disliked by the bad.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-26",
+  "classic": "法句经",
+  "chapter": "阿罗汉品",
+  "quote": "彼人无贪欲，无嗔亦无痴，正念常现前，诸漏皆已尽。",
+  "zh": "描写烦恼止息者的状态，作为修行方向。传统读作理想画像，不用于给人贴证果标签。",
+  "en": "Free of greed, hate, delusion, ever mindful—their defilements ended.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-27",
+  "classic": "法句经",
+  "chapter": "千品",
+  "quote": "虽诵一千言，若无义理者，不如一义语，闻已得寂静。",
+  "zh": "空话千句不如有意义的一句。传统重理解与实践，不以数量论功夫。",
+  "en": "Better one meaningful line that brings peace than a thousand empty words.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-28",
+  "classic": "法句经",
+  "chapter": "恶品",
+  "quote": "莫轻小恶，以为无殃，水滴虽微，渐盈大器。",
+  "zh": "别因恶小就轻视，水滴也能积满大器。传统作日常谨慎的提醒，不预言报应。",
+  "en": "Think not lightly of small wrongs: drop by drop the water jar fills.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-29",
+  "classic": "法句经",
+  "chapter": "道品",
+  "quote": "一切行无常，以慧观照时，得厌离于苦，此乃清净道。",
+  "zh": "以智慧观察诸行无常，从而松开执着。传统作观修要点，非消极厌世。",
+  "en": "All conditioned things are impermanent; seeing this with wisdom turns one from suffering.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-30",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "诸法意先导，意主意造作。若以染污意，或语或行业，是则苦随彼，如轮随兽足。",
+  "zh": "一切行为由心念主导；带着烦恼心去说去做，苦便随之而来，如车轮跟着牛蹄。传统用以提醒留意起心动念。",
+  "en": "All actions are led by mind; with a corrupted mind, suffering follows as the wheel follows the ox's hoof.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-05-31",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "诸法意先导，意主意造作。若以清净意，或语或行业，是则乐随彼，如影不离形。",
+  "zh": "与上偈相对：以清净心说话做事，安乐随之不离，如影随形。传统劝人先端正动机，再谈言行。",
+  "en": "With a pure mind in speech or deed, happiness follows like a shadow that never departs.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-01",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "彼骂我打我，败我劫夺我，若人舍此念，怨恨自平息。",
+  "zh": "放下这类计较，怨气自然平息。传统作为对治嗔心的观照方法，非压抑情绪而是松开执着。",
+  "en": "Letting go of such thoughts, hatred is stilled by itself.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-02",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "于此世界中，从非怨止怨，唯以忍止怨，此古圣常法。",
+  "zh": "以怨报怨不能止怨，唯有不以怨回应才能止息，这是古来共许的准则。常用于人际冲突的省思。",
+  "en": "Hatred is never ended by hatred; it ends by non-hatred—this is an ancient law.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-03",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "若人知此身，如陶器易碎，当善护其心，如守边城坚。",
+  "zh": "身体像陶器一样脆弱，心却该像边城一样守护严密。传统借喻提醒修身与护念并重。",
+  "en": "Knowing the body fragile as a pot, guard the mind like a fortified border town.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-04",
+  "classic": "法句经",
+  "chapter": "不放逸品",
+  "quote": "不放逸不死道，放逸者死之径。不放逸者不死，放逸者常如死。",
+  "zh": "不放逸即警觉不懈，是通向不死的道路；放逸懈怠虽生犹死。传统以此策励日常保持觉知。",
+  "en": "Heedfulness is the path to the deathless; heedlessness the path to death. The heedful do not die.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-05",
+  "classic": "法句经",
+  "chapter": "不放逸品",
+  "quote": "智者常喜悦，于圣者境界，勤修不放逸，得无上安隐。",
+  "zh": "有智慧的人乐于圣贤所行之处，坚持不放逸，终得安稳。传统用作精进修行的鼓励语。",
+  "en": "The wise rejoice in the noble ones' domain; steadfast in heedfulness, they attain unsurpassed peace.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-06",
+  "classic": "法句经",
+  "chapter": "心品",
+  "quote": "此心随欲转，轻躁难捉摸，善哉心调伏，心调得安乐。",
+  "zh": "心念飘忽难抓，善于调伏它便能安乐。传统用于说明禅修为何要从观察心念入手。",
+  "en": "The mind flutters and is hard to hold; a tamed mind brings happiness.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-07",
+  "classic": "法句经",
+  "chapter": "心品",
+  "quote": "此心随欲转，微妙极难见，智者当护心，护心得安乐。",
+  "zh": "心极细微难以察觉，智者懂得守护它。传统强调觉察比压制更重要，护心即得安稳。",
+  "en": "The mind is subtle and hard to see; let the wise guard it—a guarded mind brings ease.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-08",
+  "classic": "法句经",
+  "chapter": "心品",
+  "quote": "心远行独处，无形藏深窟，谁能调伏心，解脱魔罗缚。",
+  "zh": "心能远驰、独来独往、无形无相，能调伏它便脱离束缚。传统以譬喻描述心的特性与调心之功。",
+  "en": "The mind wanders far, alone, formless, hidden in a cave; who tames it is freed from bonds.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-09",
+  "classic": "法句经",
+  "chapter": "心品",
+  "quote": "若人心不定，不知正法要，信心若动摇，智慧不圆满。",
+  "zh": "心不安定、不明正法、信心摇摆，智慧便难以成就。传统指出定力与信心是慧学的基础。",
+  "en": "With unsteady mind, ignorant of the true Dhamma, and wavering faith, wisdom does not ripen.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-10",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "谁征服大地，阎魔界天界？谁如巧花匠，善择妙法句？",
+  "zh": "以花匠选花为喻，问谁能善择法义。传统用设问引出下一偈，强调择法如择花需用心。",
+  "en": "Who shall master this earth and the realms beyond, as a skilled florist selects flowers?",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-11",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "学者克大地，阎魔界天界，学者如巧匠，善择妙法句。",
+  "zh": "回答上偈：有学之人能如实了知世间，如花匠善择花朵般善择法语。传统赞勤学善辨。",
+  "en": "The learner masters the earth and realms beyond, selecting well-taught verses like a skilled florist.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-12",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "知身如聚沫，觉身如阳焰，折魔王花箭，越死王不见。",
+  "zh": "观身如泡沫、如海市蜃楼，断除贪爱之诱，便超越生死之王的视线。传统用于无常观的修习。",
+  "en": "Knowing the body as foam, a mirage, break the flower-arrows of Mara and pass beyond death's sight.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-13",
+  "classic": "法句经",
+  "chapter": "愚人品",
+  "quote": "愚人终身近智者，不解正法义，如勺尝汤味，不知其美恶。",
+  "zh": "愚人纵然长久亲近智者，仍不解法义，如勺子舀汤却不知味道。传统提醒亲近善知识须用心体会。",
+  "en": "A fool attending the wise lifelong knows no more of Dhamma than a spoon knows soup's taste.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-14",
+  "classic": "法句经",
+  "chapter": "愚人品",
+  "quote": "智人须臾近智者，速解正法义，如舌尝汤味，即知其美恶。",
+  "zh": "智者哪怕短暂亲近善知识也能领会法义，如舌头一尝便知滋味。传统强调领悟在于用心而非时长。",
+  "en": "The wise, even briefly with the learned, quickly grasp Dhamma as the tongue knows soup's flavor.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-15",
+  "classic": "法句经",
+  "chapter": "愚人品",
+  "quote": "愚人作恶时，不自知愚痴，愚人自受苦，如自火所烧。",
+  "zh": "愚人造恶时不觉其害，最终自受其苦，如同引火烧身。传统用因果比喻警示行为的后果。",
+  "en": "The fool doing evil does not know its folly; he burns himself as if by his own fire.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-16",
+  "classic": "法句经",
+  "chapter": "贤人品",
+  "quote": "如彼坚固石，不为风所动，毁誉不能动，智者心亦然。",
+  "zh": "智者面对毁谤与赞誉，心如磐石不为风动。传统用来描述修行者应有的平等心与稳定。",
+  "en": "As a solid rock is unshaken by wind, so the wise are unmoved by blame or praise.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-17",
+  "classic": "法句经",
+  "chapter": "贤人品",
+  "quote": "犹如深净池，澄澈而清凉，智者闻法已，心得大清凉。",
+  "zh": "听闻正法后内心澄净安宁，如深池清澈凉爽。传统形容闻法带来的内在平静体验。",
+  "en": "As a deep pool is clear and still, the wise become serene after hearing the teachings.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-18",
+  "classic": "法句经",
+  "chapter": "刀杖品",
+  "quote": "一切惧刀杖，一切皆畏死，以己度他情，莫杀莫教杀。",
+  "zh": "众生都怕刑罚、畏惧死亡，推己及人便不应杀害或教人杀害。传统以此建立慈悲戒杀的伦理基础。",
+  "en": "All fear violence, all dread death; comparing others with oneself, neither kill nor cause killing.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-19",
+  "classic": "法句经",
+  "chapter": "刀杖品",
+  "quote": "一切惧刀杖，一切皆惜命，以己度他情，莫杀莫教杀。",
+  "zh": "与上偈相近，强调众生爱惜生命，应以此同理心持不杀戒。传统用于培养对生命的尊重。",
+  "en": "All tremble at the rod, all hold life dear; likening others to oneself, do not kill or cause to kill.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-20",
+  "classic": "法句经",
+  "chapter": "老品",
+  "quote": "此身如朽车，众病所积聚，危脆不坚实，有生必有死。",
+  "zh": "身体如破旧的车，充满病苦、脆弱不实，有生就有死。传统用于观身无常，减少对身体与寿命的执着。",
+  "en": "This body is a worn-out cart, a nest of diseases, frail and breaking; what is born must die.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-21",
+  "classic": "法句经",
+  "chapter": "佛陀品",
+  "quote": "诸恶莫作，众善奉行，自净其意，是诸佛教。",
+  "zh": "不做恶事、奉行善事、净化自己的心念，这是一切佛的教导。传统视为佛法总纲，简明易记。",
+  "en": "Avoid all evil, cultivate the good, purify your own mind—this is the teaching of the Buddhas.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-22",
+  "classic": "法句经",
+  "chapter": "佛陀品",
+  "quote": "忍辱第一道，涅槃最上说，出家恼他人，不名为沙门。",
+  "zh": "忍辱是最高的修行，涅槃是最上的目标；出家却恼害他人就不配称沙门。传统强调修行重在品行。",
+  "en": "Patient endurance is the highest austerity; nibbana is supreme. One who harms others is no ascetic.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-23",
+  "classic": "法句经",
+  "chapter": "乐品",
+  "quote": "我等实乐生，于憎怨人中，无怨憎之心，我等住无怨。",
+  "zh": "即使身处充满怨恨的人群中，仍保持无怨之心而安乐生活。传统示范如何在逆境中守住内心平和。",
+  "en": "Happily we live among the hateful, free from hatred ourselves—among the hateful we dwell without hate.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-24",
+  "classic": "法句经",
+  "chapter": "忿怒品",
+  "quote": "战胜生怨敌，败者卧不安，胜败两俱舍，安乐而睡眠。",
+  "zh": "胜了结怨、败了难眠，放下胜负之争才能安睡。传统用于化解竞争心与得失焦虑。",
+  "en": "Victory breeds enmity, the defeated sleep poorly; letting go of both, one sleeps at ease.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-25",
+  "classic": "法句经",
+  "chapter": "垢秽品",
+  "quote": "不诵为经垢，不修为家垢，懈怠为色垢，放逸为守垢。",
+  "zh": "不温习则学问荒废，不打理则家宅败落，懈怠损容颜，放逸误守护。传统以日常比喻说明精进的重要。",
+  "en": "Non-recitation stains learning, neglect stains a home, laziness stains beauty, heedlessness stains a watch.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-26",
+  "classic": "法句经",
+  "chapter": "道品",
+  "quote": "八正道最胜，四圣谛最上，离欲法最胜，具眼者最尊。",
+  "zh": "八正道是最佳道路，四谛是最上真理，离欲是最胜之法，具正见者最受尊重。传统概括修道核心。",
+  "en": "The eightfold path is best, the four truths supreme, dispassion the finest state, the one with vision most honored.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-27",
+  "classic": "法句经",
+  "chapter": "道品",
+  "quote": "此是唯一的道，更无余清净见，汝等当随行，令魔王迷乱。",
+  "zh": "这是通往清净的唯一正道，依此修行便能超越迷惑。传统用于坚定修行方向、不退初心。",
+  "en": "This is the only path; there is none other for purity of vision. Follow it and bewilder Mara.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-28",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "诸法意先导，意主意造作。若以染污意，或语或行业，是则苦随彼，如轮随兽足。",
+  "zh": "一切行为由心念引导。带着杂染的心去说话做事，苦就跟上来，像车轮跟着拉车的牛蹄。传统用来提醒先观察自己的起心动念。",
+  "en": "Mind precedes all things. Act or speak with a defiled mind and suffering follows, as the wheel follows the ox's hoof.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-29",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "诸法意先导，意主意造作。若以清净意，或语或行业，是则乐随彼，如影不离形。",
+  "zh": "与上一偈成对：心念清净时，言行带来的安乐像影子一样随身不离。古人常把两偈并读，作为省察动机的对照。",
+  "en": "With a clear mind, happiness follows speech and action like a shadow that never leaves the body.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-06-30",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "彼骂我打我，败我劫夺我，若人怀此念，怨恨不能息。",
+  "zh": "反复咀嚼「他骂我、打我、抢我」，怨气就停不下来。这一偈指出怨恨靠不断回想而维持，是止息诤论的入手处。",
+  "en": "Brooding on insults, blows and losses keeps hatred alive; such thoughts never let resentment settle.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-01",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "于此世界中，从非怨止怨，唯以忍止怨，此古圣常法。",
+  "zh": "自古相传的道理：报复止不了仇恨，唯有不以怨报怨才能止息。常被引来说明化解冲突的老办法，不是压抑而是放下对抗。",
+  "en": "Hatred is never ended by hatred; it ends through forbearance. This is the ancient, enduring rule.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-02",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "若人知此身，如陶器易碎，当善护其心，如城防魔军。",
+  "zh": "身体像陶罐一样脆弱，心却要像守城那样守护。传统以此劝人正视无常，同时不放任念头进出。",
+  "en": "Know the body is fragile as a clay pot; guard the mind like a fortified city against assault.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-03",
+  "classic": "法句经",
+  "chapter": "放逸品",
+  "quote": "无逸不死道，放逸死之径；无逸者不死，放逸者常死。",
+  "zh": "不放逸是通向不死的道路，放逸则是死亡之路。这里的「不死」指解脱境地，古人用以策励日常警觉，不作寿命预言。",
+  "en": "Heedfulness is the path to the deathless; heedlessness the path to death. The heedful do not die.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-04",
+  "classic": "法句经",
+  "chapter": "放逸品",
+  "quote": "当自为洲渚，勤修不放逸，离垢无烦恼，得至圣者地。",
+  "zh": "在流转中把自己修成一块可立足的洲渚：靠精进与不放逸，除去垢染。传统用作自我依靠的勉励语。",
+  "en": "Make yourself an island through diligence and heedfulness; freed of stain, one reaches the noble ground.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-05",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "谁征服大地，阎魔界天界？谁当择法句，如巧匠采华？",
+  "zh": "设问：谁能勘破世间与天上诸境，谁能像巧匠选花那样拣择法义？下一偈答曰「有学」，即修行途中的人。",
+  "en": "Who shall master this earth and the realms beyond, and choose the well-taught word as a skilled maker picks flowers?",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-06",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "观身如聚沫，觉受如阳焰，折魔罗华箭，越死王不见。",
+  "zh": "身如水上泡沫，感受如旷野蜃景。看破这两者的虚浮，便越过死神的视野。传统用于观身无常的禅修提示。",
+  "en": "See the body as foam, feeling as mirage; break Mara's flowered arrows and pass beyond the king of death.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-07",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "如蜂采华已，不损色与香，但取其味去，比丘入聚落。",
+  "zh": "蜜蜂取蜜而不伤花的颜色香气。以此为喻，说出家人入村乞食应少扰他人，只取所需。也常被借用作处世的分寸。",
+  "en": "As a bee takes nectar without harming the flower's colour or scent, so a mendicant moves through the village.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-08",
+  "classic": "法句经",
+  "chapter": "愚人品",
+  "quote": "愚人终身亲近智者，亦不解法，如匙不知羹味。",
+  "zh": "勺子天天泡在汤里，仍不知汤味。比喻只在外围亲近贤者而不实修，终究尝不到法的滋味。",
+  "en": "A fool attending the wise lifelong knows no more of the teaching than a spoon knows the taste of soup.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-09",
+  "classic": "法句经",
+  "chapter": "愚人品",
+  "quote": "若愚自知愚，是即名为智；愚而自谓智，是谓真愚痴。",
+  "zh": "知道自己愚昧的人已有几分智慧；愚昧却自以为聪明，才是真正的愚痴。传统用作自省而非评人的尺子。",
+  "en": "The fool who knows his folly is wise in that; the fool who claims wisdom is called a fool indeed.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-10",
+  "classic": "法句经",
+  "chapter": "愚人品",
+  "quote": "莫轻于小恶，谓我不招报；水滴虽微细，渐盈于大器。",
+  "zh": "别以为小恶不会带来后果。水滴一点点也能装满大缸，说的是习惯的累积效应，不是灾祸预告。",
+  "en": "Do not dismiss small wrongs as harmless; drop by drop the water jar is filled.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-11",
+  "classic": "法句经",
+  "chapter": "贤智者品",
+  "quote": "如深池澄净，智者闻法已，其心得安宁。",
+  "zh": "深潭清澈而平静。听闻法义后，智者的心也这样澄清下来。传统用来描述闻法后心境安定的样子。",
+  "en": "As a deep pool is clear and still, so the wise grow calm upon hearing the teaching.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-12",
+  "classic": "法句经",
+  "chapter": "阿罗汉品",
+  "quote": "如地水火风，无所憎爱念，如是不动者，堪受人天供。",
+  "zh": "大地不因净秽而起爱憎。形容修行成就者心不动摇、平等接纳，故为人天所敬。是对心量的描摹。",
+  "en": "Like the earth, untroubled by love or hate, the steadfast one is worthy of honour from gods and men.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-13",
+  "classic": "法句经",
+  "chapter": "千品",
+  "quote": "虽诵一千言，若无义理者，不如一义语，闻已得寂静。",
+  "zh": "背诵上千句而无实义，不如一句能让人安静下来的有意义的话。传统以此重质不重量地看待读经。",
+  "en": "Better one meaningful line that brings peace than a thousand words without substance.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-14",
+  "classic": "法句经",
+  "chapter": "千品",
+  "quote": "虽在战场上，胜百万军敌，若能胜自己，是名最胜人。",
+  "zh": "战场上赢过百万人，不如战胜自己的贪嗔。古人以此把胜负的标准从外转向内。",
+  "en": "Though one conquer a million in battle, the greatest victor is the one who conquers himself.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-15",
+  "classic": "法句经",
+  "chapter": "恶品",
+  "quote": "莫轻于小善，谓我不招报；水滴虽微细，渐盈于大器。",
+  "zh": "与小恶偈成对：细小的善行也在积累。传统用来鼓励随手可为的小善，不必等大事才做。",
+  "en": "Do not dismiss small good deeds; drop by drop the water jar is filled.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-16",
+  "classic": "法句经",
+  "chapter": "恶品",
+  "quote": "诸恶莫作，众善奉行，自净其意，是诸佛教。",
+  "zh": "最广为人知的总纲偈：不作恶、行诸善、净化自己的心。三句概括修行次第，常被用作入门提纲。",
+  "en": "Avoid all evil, cultivate the good, purify your own mind: this is the teaching of the Buddhas.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-17",
+  "classic": "法句经",
+  "chapter": "刀杖品",
+  "quote": "一切皆惧死，莫不畏刀杖；恕己可为譬，勿杀勿教杀。",
+  "zh": "人人怕死怕痛。以自己的感受推想他人，就不杀害、也不叫人杀害。这是推己及人的古典表述。",
+  "en": "All fear death and the rod; taking yourself as the measure, neither kill nor cause killing.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-18",
+  "classic": "法句经",
+  "chapter": "老品",
+  "quote": "此身如坏车，终归于老朽；唯法无老朽，善者相告示。",
+  "zh": "身体像用旧的车终会散架，而法义不随之衰老。传统以此提醒把依靠放在可久之处。",
+  "en": "This body is a worn-out cart bound for decay; the teaching does not age, so the good declare it.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-19",
+  "classic": "法句经",
+  "chapter": "自己品",
+  "quote": "若人知自爱，应善自防护，三时中一时，智者应醒觉。",
+  "zh": "真正爱惜自己的人会守护自己。夜分三时中至少一时保持清醒觉察，是古印度对精进的常见说法。",
+  "en": "One who truly loves himself guards himself well; in one of the three watches the wise stays awake.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-20",
+  "classic": "法句经",
+  "chapter": "自己品",
+  "quote": "先自立于正道，然后教诲他人，如是贤智者，不染于污垢。",
+  "zh": "先把自己安顿在正道上，再去教别人，这样才不会招来非议。传统用作劝人以身作则的顺序原则。",
+  "en": "First establish yourself in what is right, then instruct others; the wise one thus remains unstained.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-21",
+  "classic": "法句经",
+  "chapter": "世间品",
+  "quote": "莫从卑劣法，莫住于放逸，莫执于邪见，莫增长世间。",
+  "zh": "四句劝诫：不依低劣之法、不放逸、不抱邪见、不助长世间的缠缚。可作为日常自省的清单。",
+  "en": "Do not follow base ways, dwell in heedlessness, hold wrong views, or swell the world's bondage.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-22",
+  "classic": "法句经",
+  "chapter": "佛陀品",
+  "quote": "彼于战场上，虽胜百万人，未若克己者，战士中最上。",
+  "zh": "与千品同义的重复偈，强调克制自己胜过外在胜利。巴利偈颂常有此类复现，便于记诵。",
+  "en": "Better than victory over millions is self-mastery: that one is the supreme warrior.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-23",
+  "classic": "法句经",
+  "chapter": "乐品",
+  "quote": "我等实乐生，于憎怨人中，无有憎怨心，我等无怨恨。",
+  "zh": "身处充满怨恨的人群中，仍不起怨恨，因此说「我们活得快乐」。传统用来表明心境可以不随环境转。",
+  "en": "Happily we live among the hateful, free of hatred ourselves; among the hateful we dwell without hate.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-24",
+  "classic": "法句经",
+  "chapter": "忿怒品",
+  "quote": "不怒胜忿怒，以善胜不善，以施胜悭吝，以实胜虚妄。",
+  "zh": "四种「以相反品质取胜」的方法：以不怒对怒、以善对恶、以布施对吝啬、以诚实对虚假。常被引作处世准则。",
+  "en": "Conquer anger by non-anger, evil by good, greed by giving, and falsehood by truth.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-25",
+  "classic": "法句经",
+  "chapter": "垢秽品",
+  "quote": "如今汝身如枯叶，死王使者已在侧，汝将趣远行，途中无资粮。",
+  "zh": "身如枯叶，死亡的使者已在近旁，远行却没有备粮。传统以此策励趁早修善积资，不作时限断言。",
+  "en": "Your body lies like a withered leaf; death's messengers stand near, yet you set out with no provisions.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-26",
+  "classic": "法句经",
+  "chapter": "婆罗门品",
+  "quote": "不以结发故，不以种族故，不以生为婆罗门；谁有真实法，彼即为净者。",
+  "zh": "真正的婆罗门不靠发式、家族或出身，而在于是否具足真实与法。这是对种姓观念的经典反驳。",
+  "en": "Not by matted hair, lineage or birth is one a brahmin; whoever holds truth and Dhamma is pure.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-27",
+  "classic": "法句经",
+  "chapter": "道品",
+  "quote": "一切行无常，以慧观照时，得厌离于苦，此乃清净道。",
+  "zh": "三相偈之一：以智慧如实看见一切造作现象都在变灭，便对苦生起出离，这是走向清净的路。",
+  "en": "All conditioned things are impermanent; seeing this with wisdom, one turns from suffering. This is the path to purity.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-28",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "诸法意先导，意主意造作。若以染污意，或语或行业，是则苦随彼，如轮随兽足。",
+  "zh": "心念主导言行，染污之心招苦，如车轮随牛蹄。传统用以提醒观照起心动念，非预测吉凶。",
+  "en": "Mind precedes all; with a tainted mind, suffering follows as the wheel follows the ox's hoof.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-29",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "诸法意先导，意主意造作。若以清净意，或语或行业，是则乐随彼，如影不离形。",
+  "zh": "清净心所发之言行，安乐随之如影随形。与上偈对举，强调心为根本，供自省参考。",
+  "en": "With a pure mind, happiness follows like a shadow that never departs.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-30",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "彼骂我打我，败我劫夺我。若人怀此念，怨恨不能息。",
+  "zh": "执着于受害之念，怨恨难消。传统劝放下报复心以止息内心冲突，非恐吓。",
+  "en": "Clinging to thoughts of being wronged keeps hatred alive.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-07-31",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "彼骂我打我，败我劫夺我。不怀此念者，怨恨自然息。",
+  "zh": "不反复咀嚼受害记忆，怨恨自息。与前偈对照，说明释怀的心理机制。",
+  "en": "Letting go of grievances allows hatred to cease naturally.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-01",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "于此世界中，从非怨止怨，唯以忍止怨，此古圣常法。",
+  "zh": "以怨报怨无益，唯宽容能止怨，古来圣贤共许之道。用于人际省思。",
+  "en": "Hatred is never ended by hatred; only forbearance ends it—an ancient law.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-02",
+  "classic": "法句经",
+  "chapter": "不放逸品",
+  "quote": "不放逸不死道，放逸为死径。不放逸者不死，放逸者常死。",
+  "zh": "警觉精进通向解脱，懈怠如行死路。'不死'指涅槃境界，非字面永生，传统修心提醒。",
+  "en": "Heedfulness is the path to the deathless; heedlessness the path to death.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-03",
+  "classic": "法句经",
+  "chapter": "心品",
+  "quote": "此心随欲转，轻躁难调伏。善哉调于心，调心则得乐。",
+  "zh": "心念散乱易逐欲，善加调伏则得安乐。传统禅修以此为观心入门。",
+  "en": "The mind is fickle and hard to tame; a well-tamed mind brings happiness.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-04",
+  "classic": "法句经",
+  "chapter": "心品",
+  "quote": "心远行独处，无形隐深窟。谁能调伏心，解脱魔罗缚。",
+  "zh": "心无形却远驰，藏于深处；能调伏者脱烦恼束缚。'魔罗'喻内在障碍，非外在恐吓。",
+  "en": "The mind wanders far, bodiless, hidden in a cave; taming it frees one from bondage.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-05",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "谁征服大地，阎摩界天界？谁择善法句，如巧匠采华？",
+  "zh": "以采花喻择法，问谁能如实了知世间并善选法义。传统用作闻思抉择的比喻。",
+  "en": "Who shall master this world and choose well-taught verses, as a florist picks flowers?",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-06",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "如蜂集华，不坏色香，但取味去。仁入聚然。",
+  "zh": "蜜蜂采蜜不损花色香，喻修行者入世不扰人、只取所需。传统处世参考。",
+  "en": "As a bee takes nectar without harming the flower, so the sage moves through the village.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-07",
+  "classic": "法句经",
+  "chapter": "愚品",
+  "quote": "愚人自知愚，是名为智者。愚者自称智，是谓真愚人。",
+  "zh": "能自省无知者近智，自以为智者实愚。传统用以破除我慢，非贬斥他人。",
+  "en": "A fool who knows his folly is wise; a fool who thinks himself wise is truly foolish.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-08",
+  "classic": "法句经",
+  "chapter": "贤品",
+  "quote": "不诽不加害，严持于戒律，饮食知节量，静处而独居，勤修增上心，是诸佛教诫。",
+  "zh": "诸佛共通教诫：不害、持戒、知足、静修、专注。传统概括修行纲领，供参考。",
+  "en": "Not to slander or harm, to keep discipline, eat moderately, dwell in solitude, cultivate the mind—this is the Buddhas' teaching.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-09",
+  "classic": "法句经",
+  "chapter": "千品",
+  "quote": "虽诵一千言，若无义理者，不如一义语，闻已得寂静。",
+  "zh": "千句空言不如一句有义之语能令心静。传统强调质重于量的闻法态度。",
+  "en": "Better than a thousand empty words is one meaningful word that brings peace.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-10",
+  "classic": "法句经",
+  "chapter": "千品",
+  "quote": "虽战胜百万，莫若胜己者。胜己最为上，是谓真胜利。",
+  "zh": "胜过自己烦恼比胜百万敌更可贵。传统以此激励自我克制而非争胜。",
+  "en": "Greater than conquering a million is conquering oneself—the supreme victory.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-11",
+  "classic": "法句经",
+  "chapter": "恶品",
+  "quote": "莫轻于小恶，谓我不招报。水滴虽微少，渐盈于大器。",
+  "zh": "勿轻视小恶，滴水可满器，积习成性。传统劝慎微，非因果恐吓。",
+  "en": "Do not dismiss small evils; drop by drop the water pot is filled.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-12",
+  "classic": "法句经",
+  "chapter": "恶品",
+  "quote": "莫轻于小善，谓我不招报。水滴虽微少，渐盈于大器。",
+  "zh": "勿轻视小善，点滴积累终成大德。与上偈对举，鼓励日常微善。",
+  "en": "Do not dismiss small merits; drop by drop the water pot is filled.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-13",
+  "classic": "法句经",
+  "chapter": "刀杖品",
+  "quote": "一切惧刀杖，一切皆畏死。以己度他情，莫杀莫教杀。",
+  "zh": "推己及人，众生皆畏死，故不杀生亦不教杀。传统慈悲伦理的核心推理。",
+  "en": "All fear violence and death; comparing others to oneself, neither kill nor cause killing.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-14",
+  "classic": "法句经",
+  "chapter": "老品",
+  "quote": "此身如朽车，终归于败坏。唯有法不老，善人如是说。",
+  "zh": "肉身必衰如旧车，唯正法不随衰老。传统用以策励趁早修学，非悲观恐吓。",
+  "en": "This body is like a worn-out cart; only the Dhamma does not age.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-15",
+  "classic": "法句经",
+  "chapter": "自己品",
+  "quote": "若人知自爱，应善自防护。三时中一时，智者应觉醒。",
+  "zh": "真正自爱者当守护身心，于人生某阶段觉醒修行。传统自护自省的提醒。",
+  "en": "One who truly loves oneself should guard oneself; the wise stay awake.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-16",
+  "classic": "法句经",
+  "chapter": "世间品",
+  "quote": "莫从卑劣法，莫住于放逸。莫随于邪见，莫增长世俗。",
+  "zh": "远离低劣行为、懈怠、邪见与贪着。传统列出四种应避免的心态，供对照。",
+  "en": "Do not follow base ways, live heedlessly, hold wrong views, or prolong worldly attachment.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-17",
+  "classic": "法句经",
+  "chapter": "佛陀品",
+  "quote": "诸恶莫作，众善奉行，自净其意，是诸佛教。",
+  "zh": "止恶、行善、净心，为诸佛共通教导。传统视为佛法总纲，简洁可记。",
+  "en": "Avoid evil, do good, purify the mind—this is the teaching of all Buddhas.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-18",
+  "classic": "法句经",
+  "chapter": "乐品",
+  "quote": "我等实乐生，无憎无怨恨。于怨恨人中，我等无怨恨。",
+  "zh": "身处怨恨环境仍保持无怨之心，是为真乐。传统描述内心不被外境牵引的状态。",
+  "en": "Happy we live without hatred among the hateful.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-19",
+  "classic": "法句经",
+  "chapter": "忿怒品",
+  "quote": "以不怒胜怒，以善胜不善，以施胜悭吝，以实胜虚妄。",
+  "zh": "以相反美德化解负面：不怒对怒、善对恶、施对吝、实对妄。传统处世四原则。",
+  "en": "Conquer anger by calm, evil by good, greed by giving, falsehood by truth.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-20",
+  "classic": "法句经",
+  "chapter": "尘垢品",
+  "quote": "汝今已似枯叶，死使已在眼前。立于死之门前，途中尚无资粮。",
+  "zh": "生命如枯叶将落，死亡在前而修行资粮未备。传统策励及时修善，非恐吓预言。",
+  "en": "You are like a withered leaf; death's messenger stands near, yet you lack provisions for the journey.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-21",
+  "classic": "法句经",
+  "chapter": "比丘品",
+  "quote": "摄护于眼根，耳根亦如是，鼻舌身意根，比丘善防护。",
+  "zh": "守护六根（眼耳鼻舌身意）不逐外境，是传统比丘修行的基本功夫。",
+  "en": "Guard the eye, ear, nose, tongue, body, and mind—a monk well-restrained in all senses.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-22",
+  "classic": "法句经",
+  "chapter": "婆罗门品",
+  "quote": "不以结发故，不以种族故，不以生为婆罗门。谁有真实法，彼即为净人。",
+  "zh": "真正的尊贵不在外表或出身，而在具足真实与正法。传统平等观的体现。",
+  "en": "Not by matted hair or birth is one a brahmin; whoever has truth and Dhamma is pure.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-23",
+  "classic": "法句经",
+  "chapter": "道品",
+  "quote": "八支道最胜，四谛法最胜，离欲法最胜，两足尊最胜。",
+  "zh": "八正道、四圣谛、离欲、佛陀为最殊胜之法与人。传统标举修行核心框架。",
+  "en": "The Noble Eightfold Path is the best of paths; dispassion the best of teachings.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-24",
+  "classic": "法句经",
+  "chapter": "杂品",
+  "quote": "若人寿百岁，不见生灭法，不如生一日，得见生灭法。",
+  "zh": "百年不见无常生灭之理，不如一日如实观照。传统强调智慧重于寿命长短。",
+  "en": "Better one day seeing arising and passing than a hundred years without seeing it.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-25",
+  "classic": "法句经",
+  "chapter": "地狱品",
+  "quote": "宁吞热铁丸，火焰极炽燃，不以犯戒身，受用信施食。",
+  "zh": "以极端比喻强调破戒受信施之重，传统警策持戒自重，非字面恐吓。",
+  "en": "Better swallow a red-hot iron ball than receive alms while breaking precepts.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-26",
+  "classic": "法句经",
+  "chapter": "象品",
+  "quote": "如象在战场，堪忍弓箭射。我忍诽谤语，世多破戒人。",
+  "zh": "如战象忍箭，修行者忍受诽谤而不退。传统以忍辱为力量，非消极承受。",
+  "en": "As an elephant endures arrows in battle, I endure abuse—for many people lack virtue.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-27",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "诸法意先导，意主意造作。若以染污意，或语或行业，是则苦随彼，如轮随兽足。",
+  "zh": "心念主导言行，带着贪嗔痴去说话做事，苦就像车轮跟着牛蹄一样紧随其后。传统用于提醒观照起心动念。",
+  "en": "Mind precedes all things. Act or speak with a corrupted mind, and suffering follows like the wheel follows the ox's hoof.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-28",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "诸法意先导，意主意造作。若以清净意，或语或行业，是则乐随彼，如影不离形。",
+  "zh": "与上偈相对：心念清净时，安乐如影随形。传统用作修心的对照参考，强调动机决定行为的品质。",
+  "en": "Act or speak with a pure mind, and happiness follows like a shadow that never departs.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-29",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "彼骂我打我，败我劫夺我。若人舍此念，怨恨自平息。",
+  "zh": "放下对伤害的反复追忆，怨恨自然平息。与前偈成对，传统用于说明释怀的心理路径。",
+  "en": "Those who let go of such thoughts find their hatred naturally ceases.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-30",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "于此世界中，从非怨止怨，唯以忍止怨，此古圣常法。",
+  "zh": "仇恨不能终结仇恨，唯有不以怨报怨才能止息，这是古老的法则。传统用于理解忍辱的核心逻辑。",
+  "en": "Hatred is never ended by hatred; it ends only through non-hatred—an ancient law.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-08-31",
+  "classic": "法句经",
+  "chapter": "双品",
+  "quote": "若人知此身，如陶器易碎，置心若城堑，当以慧刃战。",
+  "zh": "身体脆弱如陶罐，应把心安住如坚固城池，以智慧为武器守护内心。传统比喻身心关系与正念防护。",
+  "en": "Know the body is fragile as a pot; fortify the mind like a city and fight with the sword of wisdom.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-01",
+  "classic": "法句经",
+  "chapter": "放逸品",
+  "quote": "无逸不死道，放逸趣死路。无逸者不死，放逸者如尸。",
+  "zh": "不放逸通向解脱，放逸则如同行尸走肉。传统将精进觉察视为修行的根本态度。",
+  "en": "Heedfulness is the path to the deathless; heedlessness the path to death. The heedful do not die; the heedless are as if already dead.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-02",
+  "classic": "法句经",
+  "chapter": "放逸品",
+  "quote": "智者深知此，所行不放逸。不放逸得乐，喜悦于圣境。",
+  "zh": "智者明白不放逸的价值，在圣贤之道中获得喜乐。传统鼓励持续精进而非一时热情。",
+  "en": "The wise, understanding this, delight in heedfulness and rejoice in the realm of the noble ones.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-03",
+  "classic": "法句经",
+  "chapter": "心品",
+  "quote": "心轻躁难调，随欲而流转。善哉调制心，调心得安乐。",
+  "zh": "心念浮躁、难以驾驭，随处攀缘；善于调伏它便能得到安乐。传统用于说明禅修调心的必要性。",
+  "en": "The mind is fickle and hard to control. A tamed mind brings happiness.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-04",
+  "classic": "法句经",
+  "chapter": "心品",
+  "quote": "心微细难见，随欲而流转。智者当护心，护心得安乐。",
+  "zh": "心极其微细、不易察觉，智者应当守护它。传统强调对细微念头的觉察功夫。",
+  "en": "The mind is subtle and hard to see. Let the wise guard it; a guarded mind brings happiness.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-05",
+  "classic": "法句经",
+  "chapter": "心品",
+  "quote": "此心随欲转，轻躁难捉摸。善哉调制心，调心得安乐。",
+  "zh": "心如猿猴般跳跃不定，驯服它是安乐之源。传统以调心为核心修行主题。",
+  "en": "This wandering mind is hard to grasp. Well-tamed, it brings ease.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-06",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "谁征服此地，阎魔界天界？谁如巧花匠，善择法句义？",
+  "zh": "谁能如实了知世间与生死？如同花匠挑选花朵，修行者应善于拣择法义。传统以花喻法的精妙。",
+  "en": "Who shall master this earth and the realms beyond? Who shall gather well-taught truths as a florist picks flowers?",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-07",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "学人征服地，阎魔界天界。学人如巧匠，善择法句义。",
+  "zh": "有学之人能如实了知诸界，如花匠般精选法句。传统指出闻思修学者具备辨别正法的能力。",
+  "en": "The learner masters this earth and the realms beyond, gathering truths as a skilled florist selects blooms.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-08",
+  "classic": "法句经",
+  "chapter": "华品",
+  "quote": "知身如聚沫，觉身如阳焰，折魔王花箭，越死王不见。",
+  "zh": "了知身体如泡沫、如海市蜃楼般虚幻，折断魔罗的诱惑之箭，超越死亡的掌控。传统用于观身无常。",
+  "en": "Knowing the body as foam, a mirage, break Mara's flower-arrows and pass beyond the King of Death's sight.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-09",
+  "classic": "法句经",
+  "chapter": "愚品",
+  "quote": "愚人自知愚，是则为智者。愚人自谓智，是则名为愚。",
+  "zh": "知道自己愚昧的人反而有智慧；自以为聪明的愚人才是真正的愚痴。传统用于反省自知之明的重要。",
+  "en": "A fool who knows his folly is wise thereby; a fool who thinks himself wise is truly a fool.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-10",
+  "classic": "法句经",
+  "chapter": "愚品",
+  "quote": "愚人寿百岁，不闻正法句。不如生一日，得闻正法句。",
+  "zh": "活一百岁却不闻正法，不如只活一天而得闻真理。传统强调法义的价值远超寿命长短。",
+  "en": "Better one day lived hearing the true Dhamma than a hundred years without it.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-11",
+  "classic": "法句经",
+  "chapter": "愚品",
+  "quote": "若愚亲近智，终不解正法，如勺不知味，虽常在羹中。",
+  "zh": "愚人即使亲近智者也无法领悟正法，就像勺子泡在汤里却尝不到味道。传统说明根器与用心缺一不可。",
+  "en": "A fool attending on the wise understands no more of the Dhamma than a spoon tastes of soup.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-12",
+  "classic": "法句经",
+  "chapter": "贤品",
+  "quote": "若智亲近智，须臾解正法，如舌知羹味，虽暂在羹中。",
+  "zh": "智者亲近智者，片刻即能领会法义，如舌头一触汤便知味道。传统强调相应根器的敏锐领悟力。",
+  "en": "The wise attending on the wise quickly grasp the Dhamma, as the tongue tastes soup.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-13",
+  "classic": "法句经",
+  "chapter": "贤品",
+  "quote": "智者渐次断，少分少分垢，如银匠锻银，吹去其杂质。",
+  "zh": "智者一点一点去除内心污垢，如银匠反复吹炼去除杂质。传统用于说明修行是渐进净化的过程。",
+  "en": "Little by little the wise purge their impurities, as a silversmith blows away dross.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-14",
+  "classic": "法句经",
+  "chapter": "恶品",
+  "quote": "莫轻于小恶，谓我不招报。水滴虽微少，渐盈于大器。",
+  "zh": "不要轻视小恶以为不会有果报，水滴虽少也能渐渐装满大容器。传统用于警醒积小恶成大患。",
+  "en": "Think not lightly of evil: drop by drop the water-pot is filled.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-15",
+  "classic": "法句经",
+  "chapter": "恶品",
+  "quote": "莫轻于小善，谓我不招报。水滴虽微少，渐盈于大器。",
+  "zh": "同样不要轻视小善，点滴积累终成大德。与前偈对称，传统鼓励勿以善小而不为。",
+  "en": "Think not lightly of good: drop by drop the water-pot is filled.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-16",
+  "classic": "法句经",
+  "chapter": "刀杖品",
+  "quote": "一切惧刀杖，一切皆畏死。以自度他情，莫杀莫教杀。",
+  "zh": "所有众生都怕刑罚、畏惧死亡，推己及人就不应杀害也不教唆杀害。传统以同理心为戒杀的理据。",
+  "en": "All tremble at violence, all fear death. Comparing others with oneself, one should neither kill nor cause to kill.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-17",
+  "classic": "法句经",
+  "chapter": "刀杖品",
+  "quote": "一切惧刀杖，一切皆爱生。以自度他情，莫杀莫教杀。",
+  "zh": "众生既畏死又珍爱生命，由此推己及人而行不杀。传统从爱惜生命的角度阐释慈悲。",
+  "en": "All tremble at violence, all love life. Comparing others with oneself, one should neither kill nor cause to kill.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-18",
+  "classic": "法句经",
+  "chapter": "老品",
+  "quote": "此身如朽车，终归于坏灭。唯有法不灭，善人如是说。",
+  "zh": "身体像破旧的车终将毁损，唯有正法不会消亡。传统用于观身老朽、坚定向法之心。",
+  "en": "This body is like a worn-out cart, destined to decay. Only the Dhamma does not perish—so say the good.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-19",
+  "classic": "法句经",
+  "chapter": "老品",
+  "quote": "此身为老巢，众病之所居。脆身终崩散，有生必有死。",
+  "zh": "身体是衰老的巢穴、疾病的住所，脆弱的色身终会瓦解。传统用于修不净观与无常观。",
+  "en": "This body is a nest of diseases, fragile and breaking apart; life ends in death.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-20",
+  "classic": "法句经",
+  "chapter": "世品",
+  "quote": "莫从卑劣法，莫住于放逸，莫随于邪见，莫增长世俗。",
+  "zh": "不要追随低劣之法，不要安住于放逸，不要持有邪见，不要增益轮回之苦。传统列出四种应避免的方向。",
+  "en": "Follow not base ways, dwell not in heedlessness, hold not wrong views, increase not worldly bondage.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-21",
+  "classic": "法句经",
+  "chapter": "佛陀品",
+  "quote": "诸恶莫作，众善奉行，自净其意，是诸佛教。",
+  "zh": "不做一切恶、奉行一切善、净化自己的心——这是一切佛的教导。传统视为佛法最精炼的总纲。",
+  "en": "Cease to do evil, cultivate the good, purify the mind—this is the teaching of all Buddhas.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-22",
+  "classic": "法句经",
+  "chapter": "乐品",
+  "quote": "我等实乐生，于憎怨中住，于憎怨人中，我等无怨恨。",
+  "zh": "即使身处充满怨恨的人群中，仍保持无怨恨而安乐地生活。传统描述修行者不被环境染污的境界。",
+  "en": "Happy indeed we live among the hostile, free from hatred amidst those who hate.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-23",
+  "classic": "法句经",
+  "chapter": "忿怒品",
+  "quote": "胜则生怨敌，败则卧苦恼。胜负两俱舍，寂静得安乐。",
+  "zh": "争胜招来怨恨，落败陷入痛苦；放下胜负之争才能获得寂静的安乐。传统用于反思竞争心态。",
+  "en": "Victory breeds enmity, defeat brings sorrow. Setting aside both, one dwells in peaceful ease.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-24",
+  "classic": "法句经",
+  "chapter": "道品",
+  "quote": "八正道最胜，四谛法最胜，离欲法最胜，具眼者最胜。",
+  "zh": "八正道是最殊胜的道路，四圣谛是最殊胜的真理，离欲是最殊胜的法，具正见者最为殊胜。传统概括修道核心。",
+  "en": "The Noble Eightfold Path is the best of paths; the Four Truths the best of teachings; dispassion the best of states.",
+  "source": "法句经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-25",
+  "classic": "四十二章经",
+  "chapter": "序分",
+  "quote": "辞亲出家，识心达本，解无为法，名曰沙门。",
+  "zh": "出家不只是离开家庭，更要认识心性根本、体悟无为之理，才称沙门。传统上用以界定修行者的内在标准，而非外在形式。",
+  "en": "Leaving home is not enough; one who knows the mind's root and understands the unconditioned is called a śramaṇa.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-26",
+  "classic": "四十二章经",
+  "chapter": "第一章",
+  "quote": "爱欲断者，如四肢断，不复用之。",
+  "zh": "以四肢截断为喻，说明断除爱欲须彻底决绝，不可藕断丝连。传统用于提醒修行者对贪爱要有斩钉截铁的态度。",
+  "en": "Severing desire is like cutting off limbs—once cut, they cannot be used again.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-27",
+  "classic": "四十二章经",
+  "chapter": "第二章",
+  "quote": "使人愚蔽者，爱与欲也。",
+  "zh": "指出爱与欲是蒙蔽智慧的根本原因。传统以此提醒学人：障碍清明心智的不是外境，而是内心的贪著。",
+  "en": "What clouds and deludes people is love and desire.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-28",
+  "classic": "四十二章经",
+  "chapter": "第三章",
+  "quote": "剃除须发，而为沙门，受道法者，去世资财，乞求取足。",
+  "zh": "描述沙门的简朴生活方式：舍弃世间财物，托钵知足。传统用以强调少欲知足是修行的基本态度。",
+  "en": "A śramaṇa shaves hair and beard, receives the Way, gives up worldly wealth, and begs only enough to live.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-29",
+  "classic": "四十二章经",
+  "chapter": "第四章",
+  "quote": "众生以十事为善，亦以十事为恶。",
+  "zh": "总括身口意十善十恶之说，为后文铺垫。传统以此为道德反省的框架，逐条对照自身行为。",
+  "en": "Beings do ten things as good and ten things as evil.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-09-30",
+  "classic": "四十二章经",
+  "chapter": "第五章",
+  "quote": "人有众过，而不自悔，顿息其心，罪来赴身，如水归海，渐成深广。",
+  "zh": "过失若不忏悔止息，便如百川归海越积越深。传统劝人及时觉察、当下止恶，不让小过累积成大患。",
+  "en": "If one does not repent faults and stop the mind, guilt gathers like rivers flowing into the sea, growing ever deeper.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-01",
+  "classic": "四十二章经",
+  "chapter": "第六章",
+  "quote": "忍辱多力，不怀恶故，兼加安健。",
+  "zh": "能忍辱的人力量最大，因为心中没有恶意，身心反而安稳强健。传统将忍辱视为真正的力量而非软弱。",
+  "en": "Patient endurance is the greatest strength, for it harbors no malice and brings peace and vigor.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-02",
+  "classic": "四十二章经",
+  "chapter": "第七章",
+  "quote": "恶人害贤者，犹仰天而唾，唾不至天，还从己堕。",
+  "zh": "以仰天吐痰终落自身为喻，说明恶意伤害贤者只会反噬自己。传统用以告诫勿起害人之心。",
+  "en": "An evil person harming the wise is like spitting at the sky—the spit falls back on oneself.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-03",
+  "classic": "四十二章经",
+  "chapter": "第八章",
+  "quote": "博闻爱道，道必难会；守志奉道，其道甚大。",
+  "zh": "仅靠广学多闻而不实修，难以契入大道；坚守志向、踏实奉行，道才会广大。传统提醒知行合一重于知识积累。",
+  "en": "Mere erudition without practice makes the Way hard to reach; steadfast devotion makes it vast.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-04",
+  "classic": "四十二章经",
+  "chapter": "第九章",
+  "quote": "饭辟支佛百亿，不如以三尊之化，度脱一世。",
+  "zh": "供养再多圣者，不如以佛法僧三宝教化度脱一人。传统强调法布施与利他之行胜过物质供养。",
+  "en": "Feeding billions of pratyekabuddhas is less than guiding one person to liberation through the Three Jewels.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-05",
+  "classic": "四十二章经",
+  "chapter": "第十章",
+  "quote": "睹人施道，助之欢喜，得福甚大。",
+  "zh": "见他人行布施修道，随喜赞叹也能获得大福德。传统鼓励随喜心，不必事事亲为，真心欢喜即有功德。",
+  "en": "Seeing others give and practice the Way, rejoicing with them brings great merit.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-06",
+  "classic": "四十二章经",
+  "chapter": "第十一章",
+  "quote": "夫为道者，犹木在水，寻流而行，不触两岸。",
+  "zh": "修道如木头顺流而下，不碰两岸（不执有无二边），终能入海。传统以中道比喻修行不落极端。",
+  "en": "Practicing the Way is like a log floating downstream, touching neither bank, eventually reaching the sea.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-07",
+  "classic": "四十二章经",
+  "chapter": "第十二章",
+  "quote": "人离恶道，得为人难；既得为人，去女即男难。",
+  "zh": "列举修行路上的层层难得，从脱离恶道到得人身等。传统以此激发珍惜当下因缘、精进不懈之心。",
+  "en": "Escaping lower realms to become human is rare; each further step toward practice is rarer still.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-08",
+  "classic": "四十二章经",
+  "chapter": "第十三章",
+  "quote": "净心守志，可会至道。譬如磨镜，垢去明存。",
+  "zh": "以磨镜为喻：去除污垢，光明自现。修道亦然，净心守志，本有智慧自然显露。传统强调修行是去除遮蔽而非外加。",
+  "en": "Purify the mind and hold your resolve to meet the supreme Way—like polishing a mirror until grime is gone and brightness remains.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-09",
+  "classic": "四十二章经",
+  "chapter": "第十四章",
+  "quote": "人从爱欲生忧，从忧生怖；若离于爱，何忧何怖？",
+  "zh": "忧愁源于爱欲执着，恐惧又源于忧愁。若能放下贪爱，忧惧自然消散。传统以此揭示情绪困扰的根源在执著。",
+  "en": "From desire comes sorrow; from sorrow, fear. If free from desire, what sorrow or fear remains?",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-10",
+  "classic": "四十二章经",
+  "chapter": "第十五章",
+  "quote": "夫为道者，譬如一人与万人战。",
+  "zh": "修道如同一个人对抗万人大军，需要极大勇气和坚定意志。传统以此激励修行者不可懈怠退缩。",
+  "en": "Practicing the Way is like one person fighting ten thousand—requiring immense courage and resolve.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-11",
+  "classic": "四十二章经",
+  "chapter": "第十六章",
+  "quote": "慎勿信汝意，汝意不可信。",
+  "zh": "告诫不要轻易相信自己的心意判断，因为凡夫心念充满偏见和妄想。传统提醒修行者保持觉察，不被念头牵着走。",
+  "en": "Do not trust your own mind—your mind is not to be trusted.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-12",
+  "classic": "四十二章经",
+  "chapter": "第十七章",
+  "quote": "夫见道者，譬如持炬入冥室中，其冥即灭，而明独存。",
+  "zh": "见道如举火把进入暗室，黑暗立刻消失，光明独存。传统以此说明智慧一旦生起，无明即刻瓦解。",
+  "en": "Seeing the Way is like carrying a torch into a dark room—darkness vanishes and only light remains.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-13",
+  "classic": "四十二章经",
+  "chapter": "第十八章",
+  "quote": "吾法念无念念，行无行行，言无言言，修无修修。",
+  "zh": "最高境界是念而无念、行而无行，超越有为造作。传统用以指向无执无住的修行状态，非刻意而为。",
+  "en": "My teaching: think with thoughtless thinking, act with actionless action, speak with speechless speech, cultivate with cultivationless cultivation.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-14",
+  "classic": "四十二章经",
+  "chapter": "第十九章",
+  "quote": "观天地，念非常；观世界，念非常；观灵觉，即菩提。",
+  "zh": "观察天地世界皆无常变化，而回观内在灵明觉性即是菩提。传统引导从无常观转向对本觉的体认。",
+  "en": "Observe heaven and earth as impermanent; observe the world as impermanent; observe your luminous awareness—that is bodhi.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-15",
+  "classic": "四十二章经",
+  "chapter": "第二十一章",
+  "quote": "人随情欲，求于声名，声名显著，身已故矣。",
+  "zh": "追逐名声欲望，等到声名显赫时人已衰老或死去。传统以此警示世人不要被虚名耗尽一生。",
+  "en": "People chase fame through desire; by the time fame arrives, their life is already spent.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-16",
+  "classic": "四十二章经",
+  "chapter": "第二十二章",
+  "quote": "财色于人，人之不舍，譬如刀刃有蜜，不足一餐之美，小儿舐之，则有割舌之患。",
+  "zh": "财色如刀刃上的蜂蜜，甜头极小却有割舌之险。传统以生动比喻提醒贪著感官享受的代价远大于所得。",
+  "en": "Wealth and beauty are like honey on a blade—too little for a meal, yet a child licking it risks cutting the tongue.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-17",
+  "classic": "四十二章经",
+  "chapter": "第二十三章",
+  "quote": "人系于妻子舍宅，甚于牢狱。",
+  "zh": "人对妻儿家产的执著比牢狱更难挣脱，因为牢狱有释放之日，而家庭牵绊心甘情愿。传统以此点出深层执著之难断。",
+  "en": "Attachment to family and home binds more tightly than prison—for prison has release, but this bondage is willingly embraced.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-18",
+  "classic": "四十二章经",
+  "chapter": "第二十五章",
+  "quote": "爱欲之人，犹如执炬逆风而行，必有烧手之患。",
+  "zh": "沉溺爱欲如同逆风举火把，火焰必然烧到自己手上。传统以此比喻贪欲终将自伤，劝人及早放下。",
+  "en": "One consumed by desire is like carrying a torch against the wind—the hand will surely be burned.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-19",
+  "classic": "四十二章经",
+  "chapter": "第二十六章",
+  "quote": "慎勿视女色，亦莫共言语。",
+  "zh": "针对出家修行者的具体戒律提醒，避免引发欲念的因缘。传统语境下属于僧团修行规范，非对世俗生活的普遍要求。",
+  "en": "A monastic admonition: avoid gazing at women or conversing with them—a specific discipline for renunciants.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-20",
+  "classic": "四十二章经",
+  "chapter": "第二十九章",
+  "quote": "夫为道者，如被干草，火来须避。道人见欲，必当远之。",
+  "zh": "修道者如遇干草易燃，面对欲望之火必须远离。传统强调初学者应主动回避诱惑环境，而非高估自己的定力。",
+  "en": "A practitioner is like dry grass near fire—must stay away. When facing desire, keep your distance.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-21",
+  "classic": "四十二章经",
+  "chapter": "第三十三章",
+  "quote": "夫为道者，譬如弹琴，弦缓则不鸣，弦急则声绝，急缓得中，诸音普矣。",
+  "zh": "修道如弹琴，太松不出声、太紧弦会断，松紧适中才能奏出妙音。传统以此说明修行要不急不缓、中道而行。",
+  "en": "Practice is like tuning a lute: too loose, no sound; too tight, the string snaps. Tune to the middle, and all notes ring clear.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-22",
+  "classic": "四十二章经",
+  "chapter": "第三十四章",
+  "quote": "沙门夜诵迦叶佛遗教经，其声悲紧，思悔欲退。",
+  "zh": "有沙门夜间诵经声音悲切紧迫，心生退意。佛陀随后以弹琴喻开导。传统以此说明修行遇困时应调整心态而非放弃。",
+  "en": "A monk chanted sutras at night with such anguish he wanted to quit—leading to the Buddha's lute-string teaching on balance.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-23",
+  "classic": "四十二章经",
+  "chapter": "第四十二章",
+  "quote": "吾视王侯之位，如过隙尘；视金玉之宝，如瓦砾。",
+  "zh": "佛自述观王侯权位如缝隙中飘过的灰尘，视金玉如瓦砾。传统以此展示彻底放下世间名利执著的心境。",
+  "en": "I see royal rank as dust passing through a crack, and gold and jewels as mere rubble.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-24",
+  "classic": "四十二章经",
+  "chapter": "第一章",
+  "quote": "辞亲出家，识心达本，解无为法，名曰沙门。",
+  "zh": "此章述出家修行者的根本目标：认识自心、通达本源、理解无为之道。传统上作为佛门入门定义。",
+  "en": "Leaving home to seek the Way, knowing one's mind and reaching the source—this defines a renunciant.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-25",
+  "classic": "四十二章经",
+  "chapter": "第二章",
+  "quote": "断欲去爱，识自心源，达佛深理，悟无为法。",
+  "zh": "第二章强调断除贪欲与执著，方能认识心的根源，领悟佛法深义。传统视为修道次第的总纲。",
+  "en": "Cut desire, release attachment, know the mind's source, and awaken to the unconditioned truth.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-26",
+  "classic": "四十二章经",
+  "chapter": "第三章",
+  "quote": "剃除须发而为沙门，受道法者，去世资财，乞求取足。",
+  "zh": "描述沙门的生活方式：舍弃外在装饰与财产，以乞食知足。传统上用以说明少欲知足的行持。",
+  "en": "A renunciant shaves, gives up possessions, and lives on alms—content with bare sufficiency.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-27",
+  "classic": "四十二章经",
+  "chapter": "第四章",
+  "quote": "众生以十事为善，亦以十事为恶。",
+  "zh": "佛列举身三、口四、意三共十种善恶行为，是佛教基本伦理框架。传统用作日常省察的标准。",
+  "en": "Beings do ten kinds of good and ten kinds of evil—three of body, four of speech, three of mind.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-28",
+  "classic": "四十二章经",
+  "chapter": "第五章",
+  "quote": "人有众过而不自悔，顿息其心，罪来赴身，如水归海。",
+  "zh": "比喻过失若不忏悔止息，业报自然汇聚，如百川归海。传统用于劝人及时反省改过。",
+  "en": "Unrepented faults gather like rivers flowing into the sea—consequences accumulate naturally.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-29",
+  "classic": "四十二章经",
+  "chapter": "第六章",
+  "quote": "恶人闻善，故来扰乱者，汝自禁息，当无瞋责。",
+  "zh": "面对恶意干扰时应自我克制、不起瞋恨。传统视为忍辱修行的具体指导。",
+  "en": "When others disrupt your practice out of malice, restrain yourself and give rise to no anger.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-30",
+  "classic": "四十二章经",
+  "chapter": "第七章",
+  "quote": "恶人害贤者，犹仰天而唾，唾不至天，还从己堕。",
+  "zh": "以仰天吐唾为喻，说明伤害贤者最终反噬自身。传统常用于阐释因果自作自受之理。",
+  "en": "Harming the wise is like spitting at the sky—the spit falls back on oneself.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-10-31",
+  "classic": "四十二章经",
+  "chapter": "第八章",
+  "quote": "逆风执炬，必有烧手之患。",
+  "zh": "比喻贪执欲望如同逆风举火把，终将灼伤自己。传统用于警示贪欲的危害。",
+  "en": "Grasping desire is like holding a torch against the wind—it will surely burn your hand.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-01",
+  "classic": "四十二章经",
+  "chapter": "第九章",
+  "quote": "博闻爱道，道必难会；守志奉道，其道甚大。",
+  "zh": "广学多闻却贪著知识反而难以契道，坚守志向踏实奉行则道业广大。传统强调实修重于博学。",
+  "en": "Mere erudition without commitment misses the Way; steadfast practice opens its vastness.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-02",
+  "classic": "四十二章经",
+  "chapter": "第十章",
+  "quote": "睹人施道，助之欢喜，得福甚大。",
+  "zh": "见他人行布施而生随喜之心，所得福德亦大。传统用于说明随喜功德的意义。",
+  "en": "Rejoicing in another's generosity brings great merit—sympathetic joy multiplies goodness.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-03",
+  "classic": "四十二章经",
+  "chapter": "第十一章",
+  "quote": "饭恶人百，不如饭一善人。",
+  "zh": "以供养对象的德行层层递进，说明福田胜劣之别。传统用于阐释布施功德的差异。",
+  "en": "Feeding a hundred evildoers is less meritorious than feeding one virtuous person.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-04",
+  "classic": "四十二章经",
+  "chapter": "第十二章",
+  "quote": "贫穷布施难，豪贵学道难。",
+  "zh": "列举人生二十种难行之事中的两种，提醒修行者珍惜因缘、克服障碍。传统用作策励精进。",
+  "en": "The poor find giving hard; the rich find seeking the Way hard—both face real obstacles.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-05",
+  "classic": "四十二章经",
+  "chapter": "第十三章",
+  "quote": "净心守志，可会至道。譬如磨镜，垢去明存。",
+  "zh": "以磨镜为喻：去除心垢则本有光明自现。传统上是禅修去妄显真的经典比喻。",
+  "en": "Purify the mind and hold your resolve—like polishing a mirror, remove grime and brightness appears.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-06",
+  "classic": "四十二章经",
+  "chapter": "第十四章",
+  "quote": "人怀爱欲不见道者，譬如澄水，致手搅之，众人共临，无有睹其影者。",
+  "zh": "爱欲搅动心水使之浑浊，无法映照真理。传统用于说明离欲澄心方能见道。",
+  "en": "Desire stirs the mind like a hand muddying still water—no reflection can be seen.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-07",
+  "classic": "四十二章经",
+  "chapter": "第十五章",
+  "quote": "沙门行道，无如磨牛，身虽行道，心道不行。",
+  "zh": "批评身体在修行而心不在道的状态，如拉磨之牛徒然转圈。传统强调身心合一的重要性。",
+  "en": "Practicing in body but not in mind is like a mill-ox circling endlessly without progress.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-08",
+  "classic": "四十二章经",
+  "chapter": "第十六章",
+  "quote": "人系于妻子舍宅，甚于牢狱。",
+  "zh": "指出对家庭财产的执著比牢狱更难摆脱，因牢狱有释放之期而贪爱无解脱之时。传统用于策发出离心。",
+  "en": "Attachment to family and property binds more tightly than prison—for prison has a release date.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-09",
+  "classic": "四十二章经",
+  "chapter": "第十七章",
+  "quote": "夫为道者，譬如一人与万人战。",
+  "zh": "修道如一人对抗万敌（烦恼），需坚定勇猛。传统用于激励修行者不退缩的勇气。",
+  "en": "Seeking the Way is like one person battling ten thousand foes—resolve must be unwavering.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-10",
+  "classic": "四十二章经",
+  "chapter": "第十八章",
+  "quote": "吾法念无念念，行无行行，言无言言，修无修修。",
+  "zh": "以四重否定表达超越执著的修行境界：不执著于念、行、言、修的相状。传统视为般若智慧的体现。",
+  "en": "My teaching: think without clinging to thought, act without clinging to action, speak without clinging to words.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-11",
+  "classic": "四十二章经",
+  "chapter": "第十九章",
+  "quote": "观天地，念非常；观世界，念非常；观灵觉，即菩提。",
+  "zh": "观察天地万物皆无常，而内在灵明觉性即是菩提。传统用于引导从无常观转入觉悟。",
+  "en": "Observe heaven and earth as impermanent; observe the luminous awareness—that itself is awakening.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-12",
+  "classic": "四十二章经",
+  "chapter": "第二十一章",
+  "quote": "人随情欲，求于声名，声名显著，身已故矣。",
+  "zh": "追逐名声耗尽一生，名成时身已衰亡。传统用于警醒世人勿为虚名空耗生命。",
+  "en": "People chase fame through desire; by the time renown arrives, the body is already spent.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-13",
+  "classic": "四十二章经",
+  "chapter": "第二十二章",
+  "quote": "财色于人，人之不舍，譬如刀刃有蜜，不足一餐之美，小儿舐之，则有割舌之患。",
+  "zh": "以刀刃上的蜂蜜比喻财色之诱：甜头微小却有割舌之险。传统用于警示贪欲得不偿失。",
+  "en": "Wealth and lust are honey on a blade's edge—a child licks it and cuts the tongue.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-14",
+  "classic": "四十二章经",
+  "chapter": "第二十三章",
+  "quote": "慎勿信汝意，汝意不可信。",
+  "zh": "告诫修行者不要轻易相信自己的分别意识，因其常被烦恼扭曲。传统用于提醒保持觉察与谦慎。",
+  "en": "Do not trust your own mind—your mind is not yet trustworthy.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-15",
+  "classic": "四十二章经",
+  "chapter": "第二十四章",
+  "quote": "色之于人，譬如小儿贪刀刃之蜜甜，不足一食之美，然有截舌之患也。",
+  "zh": "再次以刃蜜之喻强调色欲的危险，与二十二章呼应，传统用于反复警策离欲。",
+  "en": "Sensual pleasure is like honey on a razor—sweet for a moment, but the tongue pays the price.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-16",
+  "classic": "四十二章经",
+  "chapter": "第二十五章",
+  "quote": "爱欲之人，犹如执炬逆风而行，必有烧手之患。",
+  "zh": "与第八章同喻，强调执持爱欲如逆风举火，终必自伤。传统反复使用此喻以加深印象。",
+  "en": "One who clings to desire walks against the wind holding a torch—burns are inevitable.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-17",
+  "classic": "四十二章经",
+  "chapter": "第二十六章",
+  "quote": "天神献玉女于佛，欲坏佛意。",
+  "zh": "记述天魔以美色试探佛陀，佛不为所动的故事。传统用于说明定力坚固则外境不能动摇。",
+  "en": "A celestial being offered beautiful women to test the Buddha's resolve—he remained unmoved.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-18",
+  "classic": "四十二章经",
+  "chapter": "第二十七章",
+  "quote": "夫为道者，犹木在水，寻流而行，不触两岸。",
+  "zh": "以顺流之木比喻修道者应不著两边（苦行与纵欲），中道而行终入大海。传统用于阐释中道思想。",
+  "en": "A practitioner is like a log floating downstream—touching neither bank, it reaches the sea.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-19",
+  "classic": "四十二章经",
+  "chapter": "第二十八章",
+  "quote": "慎勿与色会，色会即祸生。",
+  "zh": "直接告诫远离色欲的纠缠，一旦交会则祸患随之。传统用于出家戒律的简明警语。",
+  "en": "Avoid entanglement with sensual desire—once engaged, trouble follows.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-20",
+  "classic": "四十二章经",
+  "chapter": "第二十九章",
+  "quote": "正观敌色，想其老者如母，长者如姊，少者如妹，稚者如子。",
+  "zh": "教导以亲属观对治色欲：视年长女性如母姊，年幼者如妹女。传统上是佛教不净观之外的另一种对治法。",
+  "en": "View women as kin: elders as mothers, peers as sisters, the young as daughters—desire dissolves.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-21",
+  "classic": "四十二章经",
+  "chapter": "第三十章",
+  "quote": "欲火远离，心得清凉。",
+  "zh": "远离欲望之火，内心自然获得清凉安宁。传统用于概括离欲修行的直接效果。",
+  "en": "Step away from the fire of desire and the mind becomes cool and at peace.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-22",
+  "classic": "四十二章经",
+  "chapter": "第一章",
+  "quote": "辞亲出家，识心达本，解无为法，名曰沙门。",
+  "zh": "说明出家修行重在认识自心、通达根本；可作理解佛教修道目标的参考。",
+  "en": "Renunciation is framed as knowing the mind and understanding the unconditioned.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-23",
+  "classic": "四十二章经",
+  "chapter": "第二章",
+  "quote": "内无所得，外无所求，心不系道，亦不结业。",
+  "zh": "讲修行不执著内外所得所求；可用于体会放下攀缘与执取的语境。",
+  "en": "Practice is described without inner gain, outer seeking, or binding attachments.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-24",
+  "classic": "四十二章经",
+  "chapter": "第三章",
+  "quote": "剃除须发，而为沙门，受道法者，去世资财。",
+  "zh": "记沙门形相与舍弃世俗资财的要求；属僧团生活规范的传统表述。",
+  "en": "A monk’s life is linked with simplicity and relinquishing worldly possessions.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-25",
+  "classic": "四十二章经",
+  "chapter": "第五章",
+  "quote": "佛言：人有众过，而不自悔，顿息其心。",
+  "zh": "指出过失若不反省，心念难以止息；可作自我观照的伦理提醒。",
+  "en": "Faults left unexamined are said to keep the mind unsettled.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-26",
+  "classic": "四十二章经",
+  "chapter": "第六章",
+  "quote": "佛言：恶人闻善，故来扰乱者，汝自禁息。",
+  "zh": "面对扰乱时强调自我克制；传统上用于说明忍辱与不随境转。",
+  "en": "When provoked by wrongdoing, restraint is presented as the response.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-27",
+  "classic": "四十二章经",
+  "chapter": "第七章",
+  "quote": "佛言：有人患淫不止，欲自断阴。",
+  "zh": "借极端做法引出对治烦恼应调心而非伤身；属修行方法的警策语。",
+  "en": "An extreme response to desire introduces teaching on disciplining the mind.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-28",
+  "classic": "四十二章经",
+  "chapter": "第八章",
+  "quote": "佛言：恶人害贤者，犹仰天而唾。",
+  "zh": "以仰天吐唾为喻，说明恶意反归自身；常用于劝人慎于口业。",
+  "en": "Harming the wise is compared to spitting upward at the sky.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-29",
+  "classic": "四十二章经",
+  "chapter": "第九章",
+  "quote": "佛言：博闻爱道，道必难会；守志奉道，其道甚大。",
+  "zh": "区分广闻与实修，强调守志奉行；可作学习与实践关系的参考。",
+  "en": "Mere learning is contrasted with steadfast practice of the Way.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-11-30",
+  "classic": "四十二章经",
+  "chapter": "第十章",
+  "quote": "佛言：睹人施道，助之欢喜，得福甚大。",
+  "zh": "说见人行善而随喜也有福德意义；体现随喜功德的传统观念。",
+  "en": "Rejoicing in another’s generosity is described as sharing in merit.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-01",
+  "classic": "四十二章经",
+  "chapter": "第十一章",
+  "quote": "佛言：饭恶人百，不如饭一善人。",
+  "zh": "以供养对象层层比较，显示佛教福田观；宜作历史伦理文本理解。",
+  "en": "A graded comparison of offerings reflects traditional ideas of spiritual fields.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-02",
+  "classic": "四十二章经",
+  "chapter": "第十二章",
+  "quote": "佛言：人有二十难，贫穷布施难，豪贵学道难。",
+  "zh": "列举修道中的处境障碍；可用于观察贫富、欲望与修行张力。",
+  "en": "The chapter lists difficulties, including giving in poverty and practicing amid wealth.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-03",
+  "classic": "四十二章经",
+  "chapter": "第十三章",
+  "quote": "佛言：人怀爱欲，不见道者，譬如澄水。",
+  "zh": "以浊水喻爱欲遮蔽见道；传统上说明心不清净则难以明察。",
+  "en": "Desire obscuring the Way is likened to stirred water losing clarity.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-04",
+  "classic": "四十二章经",
+  "chapter": "第十四章",
+  "quote": "佛言：沙门行道，无如磨牛，身虽行道，心道不行。",
+  "zh": "批评形式化修行，强调身心相应；可作检视修行是否流于表面的参照。",
+  "en": "Outer practice without inner engagement is compared to a mill ox circling.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-05",
+  "classic": "四十二章经",
+  "chapter": "第十五章",
+  "quote": "佛言：吾法念无念念，行无行行，言无言言。",
+  "zh": "用反复句式表达不执著念、行、言；可作理解离执语言的参考。",
+  "en": "The teaching uses paradoxical phrasing to point beyond attachment to thought, action, and speech.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-06",
+  "classic": "四十二章经",
+  "chapter": "第十六章",
+  "quote": "佛言：人愚痴故，以手撮虚空，虚空不可撮。",
+  "zh": "以抓虚空比喻执取不可得之物；传统上用于说明妄执的空泛。",
+  "en": "Grasping empty space illustrates the futility of clinging to what cannot be held.",
+  "source": "四十二章经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-07",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "观自在菩萨，行深般若波罗蜜多时",
+  "zh": "开篇点题：观自在菩萨在甚深智慧中修行。传统用作静坐前的摄心起句，先安顿身心再读下文。",
+  "en": "Avalokiteshvara, while practicing deep prajna-paramita, the perfection of wisdom.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-08",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "照见五蕴皆空，度一切苦厄",
+  "zh": "以智慧观照色受想行识皆无自性，故能超越苦恼。传统作为遇困时的提醒：先看破执着，再谈应对。",
+  "en": "Seeing the five aggregates as empty, he crossed beyond all suffering and distress.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-09",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "色不异空，空不异色",
+  "zh": "现象与空性并非两物。日常可用来松动对事物的固化看法：形相在变，本质无独立自性。",
+  "en": "Form is not other than emptiness; emptiness is not other than form.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-10",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "色即是空，空即是色",
+  "zh": "承上更进一层：色当体即空，空即在色中显现。传统讲学中常与前句连读，破除有无二边之见。",
+  "en": "Form itself is emptiness; emptiness itself is form.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-11",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "受想行识，亦复如是",
+  "zh": "感受、想象、意志、识别四者同样无自性。读经时以此把观照从身体推及心理活动，覆盖面才完整。",
+  "en": "Feeling, perception, volition, and consciousness are likewise the same.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-12",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "是诸法空相，不生不灭",
+  "zh": "诸法空性之中，本无所谓生起与消灭。传统用于讨论无常时的参照语，不作吉凶断语。",
+  "en": "The empty nature of all dharmas neither arises nor ceases.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-13",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "不垢不净，不增不减",
+  "zh": "空性不因染污而减、不因清净而增。常被引来说明本性平等，读时可作放下自我评判的提示。",
+  "en": "Neither defiled nor pure, neither increasing nor decreasing.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-14",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "是故空中无色，无受想行识",
+  "zh": "在空性观照下，五蕴不作为实有成立。这是义理陈述，传统解为破执的方法，非否定日常经验。",
+  "en": "Thus in emptiness there is no form, no feeling, perception, volition, or consciousness.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-15",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "无眼耳鼻舌身意，无色声香味触法",
+  "zh": "六根与六尘亦无自性。传统以此说明感知世界依缘而立，可用于观察感官经验时的参照。",
+  "en": "No eye, ear, nose, tongue, body, or mind; no form, sound, smell, taste, touch, or dharma.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-16",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "无无明，亦无无明尽",
+  "zh": "十二因缘的流转与还灭，在空性中亦不立。传统视为对治法执之语，属义理层次而非行为指南。",
+  "en": "No ignorance, and also no ending of ignorance.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-17",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "乃至无老死，亦无老死尽",
+  "zh": "承上省文，直至老死及其止息皆不可得。常与前句连读，理解缘起链条整体被观为空。",
+  "en": "Up to no aging and death, and no ending of aging and death.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-18",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "无苦集灭道，无智亦无得",
+  "zh": "四圣谛与能证之智、所得之果亦不执为实有。传统解为扫除最后一层法执，非否定修道。",
+  "en": "No suffering, origin, cessation, or path; no wisdom and no attainment.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-19",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "无挂碍故，无有恐怖",
+  "zh": "没有牵绊，恐惧便失其依托。此为经文的因果陈述，传统参考理解，不作消灾承诺。",
+  "en": "Without hindrance there is no fear.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-20",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "远离颠倒梦想，究竟涅槃",
+  "zh": "离开错乱的认知与妄想，即是究竟寂灭。常被引作检视自己成见与执念的提醒语。",
+  "en": "Far from inverted dreamlike thinking, one reaches ultimate nirvana.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-21",
+  "classic": "心经",
+  "chapter": "心经",
+  "quote": "三世诸佛，依般若波罗蜜多故",
+  "zh": "过去现在未来诸佛同依此智慧而成道。传统用以说明此经所述法门为共通路径，非一家之说。",
+  "en": "All buddhas of the three times rely on prajna-paramita.",
+  "source": "心经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-22",
+  "classic": "金刚经",
+  "chapter": "法会因由分第一",
+  "quote": "如是我闻。一时佛在舍卫国祇树给孤独园，与大比丘众千二百五十人俱。",
+  "zh": "经首通例：阿难记述亲闻，佛在舍卫国祇园精舍与千二百五十比丘同处，交代说法时地人物。",
+  "en": "Thus have I heard: the Buddha stayed at Jetavana in Shravasti with twelve hundred fifty monks.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-23",
+  "classic": "金刚经",
+  "chapter": "善现启请分第二",
+  "quote": "应云何住？云何降伏其心？",
+  "zh": "全经枢纽之问：发菩提心者，心应如何安住、如何调伏妄念？后文皆围绕此答展开。",
+  "en": "How should one abide, and how subdue the mind? The sutra's pivotal question.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-24",
+  "classic": "金刚经",
+  "chapter": "大乘正宗分第三",
+  "quote": "所有一切众生之类，我皆令入无余涅槃而灭度之。",
+  "zh": "菩萨誓度一切种类众生入无余涅槃，显大乘悲愿之广；下句即破能度所度之执。",
+  "en": "All beings of every kind I shall lead to nirvana without remainder — the bodhisattva's vast vow.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-25",
+  "classic": "金刚经",
+  "chapter": "大乘正宗分第三",
+  "quote": "实无众生得灭度者。何以故？若菩萨有我相、人相、众生相、寿者相，即非菩萨。",
+  "zh": "虽度无量众生而不存能度所度之想；若执我人众生寿者四相，便失菩萨本义。",
+  "en": "In truth no being is liberated; holding self, person, being, or life-span marks means one is no bodhisattva.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-26",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "不住色布施，不住声香味触法布施。",
+  "zh": "布施时不攀缘六尘境相，离根尘执着而行施，方名无相布施。",
+  "en": "Give without dwelling on form, sound, smell, taste, touch, or dharmas — signless generosity beyond the six senses.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-27",
+  "classic": "金刚经",
+  "chapter": "妙行无住分第四",
+  "quote": "若菩萨不住相布施，其福德不可思量。",
+  "zh": "离相而施，心量等同虚空，故福德不可计量；以虚空为喻破有限福报之见。",
+  "en": "Giving without attachment to signs yields merit immeasurable, likened to the boundlessness of space.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-28",
+  "classic": "金刚经",
+  "chapter": "如理实见分第五",
+  "quote": "凡所有相，皆是虚妄。若见诸相非相，即见如来。",
+  "zh": "一切相皆缘起假立；若能于相上见其非实有自性，便是见佛法身，不在形貌上求。",
+  "en": "All marks are illusory; seeing marks as non-marks, one sees the Tathagata.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-29",
+  "classic": "金刚经",
+  "chapter": "正信希有分第六",
+  "quote": "无法相，亦无非法相。",
+  "zh": "既不执法为实有，也不堕断灭空见；双遣有无，是中道般若的读法要领。",
+  "en": "Neither clinging to dharma-marks nor to non-dharma-marks — the middle way rejecting both existence and nihilism.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-30",
+  "classic": "金刚经",
+  "chapter": "正信希有分第六",
+  "quote": "汝等比丘，知我说法，如筏喻者，法尚应舍，何况非法。",
+  "zh": "佛以渡筏喻法：到岸当舍舟，正法尚不可执，何况非法；提醒勿把工具当目的。",
+  "en": "My teaching is like a raft: even the dharma must be relinquished, how much more the non-dharma.",
+  "source": "金刚经（公版）"
+ },
+ {
+  "tradition": "buddhist",
+  "date": "2026-12-31",
+  "classic": "金刚经",
+  "chapter": "无得无说分第七",
+  "quote": "一切贤圣，皆以无为法而有差别。",
+  "zh": "圣贤阶位之别不在所得有为法，而在契入无为法的深浅，点出修证次第的本义。",
+  "en": "All sages and saints differ only by their depth of realizing the unconditioned dharma.",
+  "source": "金刚经（公版）"
+ }
+]
