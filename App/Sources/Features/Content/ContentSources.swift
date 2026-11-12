@@ -112,7 +112,7 @@ struct SandboxContentSource: ContentSource {
         <figure><div class="img" role="img" aria-label="配图占位（16:9）">配图 16:9</div>
         <figcaption>图位 16:9 · 无来源不明图片</figcaption></figure>
         \(sections)
-        <footer>内容版本 \(escape(version)) · 更新于 \(escape(updatedAt)) · 按北京时间解锁</footer>
+        <footer>内容版本 \(escape(version)) · 更新于 \(escape(updatedAt)) · 按北京时间（UTC+8）解锁</footer>
         </body></html>
         """
     }
