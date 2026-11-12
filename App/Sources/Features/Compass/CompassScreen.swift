@@ -11,6 +11,7 @@ struct CompassScreen: View {
     @State private var highlighted: Deity?
     @StateObject private var heading = HeadingProvider()
     @State private var showCalibration = false
+    @AppStorage("compass.mode") private var modeRaw = "day"
 
     private var almanac: AlmanacDay { state.almanac(date, hour: state.debugHour ?? BeijingTime.hour(of: Date())) }
     private var layout: CompassLayout { CompassBuilder.layout(for: almanac, hidden: state.hiddenDeities) }
@@ -50,6 +51,27 @@ struct CompassScreen: View {
             }
         }
         .background(ScreenBackground())
+        .safeAreaInset(edge: .top) {
+            HStack(spacing: 6) {
+                ForEach([("day","当日总体"),("hour","当前时辰")], id: \.0) { item in
+                    Button(item.1) { modeRaw = item.0 }
+                        .d1Font(10, weight: .semibold)
+                        .foregroundStyle(modeRaw == item.0 ? theme.cream : theme.ink2)
+                        .padding(.horizontal, 12).padding(.vertical, 6)
+                        .background(modeRaw == item.0 ? theme.accent : theme.paper.opacity(0.75), in: Capsule())
+                        .overlay(Capsule().strokeBorder(theme.line.opacity(0.6)))
+                }
+                Spacer()
+                if heading.isMagneticOnly {
+                    Text("磁北").d1Font(9, weight: .semibold).foregroundStyle(theme.cream)
+                        .padding(.horizontal, 8).padding(.vertical, 4)
+                        .background(theme.amber, in: Capsule())
+                }
+            }
+            .padding(.horizontal, 16).padding(.vertical, 6)
+            .accessibilityElement(children: .contain)
+            .accessibilityLabel("罗盘模式：\(modeRaw == "day" ? "当日总体" : "当前时辰")")
+        }
         .onAppear { heading.start() }
         .onDisappear { heading.stop() }
         .sheet(isPresented: $showCalibration) { calibrationSheet }
@@ -77,16 +99,27 @@ struct CompassScreen: View {
         VStack(alignment: .leading, spacing: 4) {
             HStack(spacing: 6) {
                 Image(systemName: heading.isAvailable ? "location.north.line" : "iphone.slash").d1Font(9)
-                Text(heading.isAvailable ? (heading.needsCalibration ? "罗盘需校准：请按「8」字晃动设备" : "指向：真实北（设备朝向已接入）") : "传感器不可用 · 北朝上（模拟器）")
-                    .d1Font(9)
+                Text(heading.statusText).d1Font(9)
                 if heading.isAvailable {
                     Button("校准") { showCalibration = true }.d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
                 }
+            }
+            if modeRaw == "hour" {
+                Text(hourNote).d1Font(9).foregroundStyle(theme.ink2)
             }
             Text("5 针：喜神/财神/福神/阳贵/阴贵；同方位按径向错开。缺位 = 本日不在此位（不画针）。传统方位示意，非风水/招财/吉凶预测。")
                 .d1Font(9).foregroundStyle(theme.ink3)
         }
         .padding(.horizontal, 4)
+    }
+
+    private var hourNote: String {
+        guard let idx = almanac.currentHourIndex, almanac.hours.indices.contains(idx) else {
+            return "当前时辰：日级参考（无当前时辰数据）"
+        }
+        let h = almanac.hours[idx]
+        let sha = h.sha?.rawValue ?? "—"
+        return "当前时辰：\(h.ganZhi)时 \(h.startMinute)–\(h.endMinute) · 煞\(sha)；五神为日级参考"
     }
 
     private var calibrationSheet: some View {
@@ -167,8 +200,8 @@ struct CompassScreen: View {
                     )
                     .position(center)
             }
-            .rotationEffect(.degrees(-(heading.yawDegrees ?? 0)))
-            .animation(D1Motion.animation(.easeOut(duration: 0.15)), value: heading.yawDegrees)
+            .rotationEffect(.degrees(-(heading.angle ?? 0)))
+            .animation(D1Motion.animation(.easeOut(duration: 0.15)), value: heading.angle)
             .frame(width: geo.size.width, height: diameter + 24)
             .accessibilityHidden(true)   // 盘为装饰，图例为文本替身
         }
