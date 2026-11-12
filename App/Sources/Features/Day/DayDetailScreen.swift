@@ -21,8 +21,11 @@ struct DayDetailScreen: View {
         ScrollViewReader { proxy in
         ScrollView {
             VStack(spacing: 12) {
-                compactHero
-                denseCore
+                MergedDayCard(date: date, variant: .day) { showQuoteSheet = true }
+                    .frame(maxWidth: 520)
+                    .frame(maxWidth: .infinity)
+                coreSection
+                collapseRow(0, "时辰宜忌", icon: "clock") { shichenBandCard.id("shichen-band"); if showAllHours { expandedHourRows } }
                 collapseRow(1, "民俗 · 未来 10 天", icon: "book.closed") { festivalWindowPanel }
                 collapseRow(2, "天气 · 上海", icon: "cloud.sun") { weatherPanel }
                 collapseRow(3, "更多术语", icon: "text.book.closed") { termsSection }
@@ -304,119 +307,6 @@ struct DayDetailScreen: View {
     }
 
     @ViewBuilder
-    private var compactHero: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            HStack(spacing: 6) {
-                Text("\(date.year)年\(date.month)月\(date.day)日").d1Font(11, weight: .semibold).foregroundStyle(theme.ink2)
-                Text("农历\(almanac.lunar.monthDayText)").d1Font(10).foregroundStyle(theme.ink3)
-                Spacer()
-                if let q = state.plainLanguage.dailyQuote(for: date) {
-                    Button { showQuoteSheet = true } label: {
-                        Text("「\(q.quote)」").d1Kaiti(13).foregroundStyle(theme.accentStrong).lineLimit(1)
-                    }.buttonStyle(.plain)
-                }
-            }
-        }
-        .padding(.horizontal, 14).padding(.vertical, 8)
-        .background(theme.card, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-    }
-
-    @ViewBuilder
-    private var denseCore: some View {
-        D1Card(padding: 14) {
-            VStack(alignment: .leading, spacing: 9) {
-                HStack(alignment: .firstTextBaseline, spacing: 8) {
-                    Text(almanac.lunar.monthDayText).d1SerifFont(22, weight: .semibold).foregroundStyle(theme.ink)
-                    Text("\(almanac.lunar.dayGanZhi)日 · \(almanac.lunar.yearGanZhi)\(almanac.lunar.shengXiao)年 · 星期\(date.weekdayChinese) · 黄帝纪元\(date.year + 2697)年 · 第\(weekOfYear())周")
-                        .d1Font(9.5).foregroundStyle(theme.ink2).lineLimit(1)
-                    Spacer(minLength: 0)
-                }
-                shichenBandCard
-                HStack(alignment: .top, spacing: 5) { Circle().fill(theme.yiText).frame(width: 5, height: 5).padding(.top, 4)
-                    Text("宜：\(almanac.yi.joined(separator: " "))").d1Font(9).foregroundStyle(theme.ink).lineLimit(3) }
-                HStack(alignment: .top, spacing: 5) { Circle().fill(theme.red).frame(width: 5, height: 5).padding(.top, 4)
-                    Text("忌：\(almanac.ji.joined(separator: " "))").d1Font(9).foregroundStyle(theme.red).lineLimit(3) }
-                Divider().overlay(theme.line)
-                LazyVGrid(columns: [GridItem(.flexible(), spacing: 6), GridItem(.flexible(), spacing: 6)], spacing: 2) {
-                    denseInfo("五行", almanac.wuXing)
-                    denseInfo("值神", almanac.tianShen, term: almanac.tianShen)
-                    denseInfo("冲煞", almanac.sha?.rawValue ?? "—", term: "煞")
-                    denseInfo("星宿", almanac.xiu)
-                }
-                LazyVGrid(columns: [GridItem(.flexible(), spacing: 6), GridItem(.flexible(), spacing: 6)], spacing: 2) {
-                    denseInfo("财神", almanac.positions.cai.rawValue)
-                    denseInfo("福神", almanac.positions.fu.rawValue)
-                    denseInfo("喜神", almanac.positions.xi.rawValue)
-                    denseInfo("阳贵", almanac.positions.yangGui.rawValue)
-                }
-                NavigationLink(value: Route.compass(date)) {
-                    HStack { Text("吉神罗盘（唯一入口）").d1Font(10.5, weight: .semibold).foregroundStyle(theme.accentStrong); Spacer(); Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.ink3) }
-                }.buttonStyle(.plain)
-                Divider().overlay(theme.line)
-                denseTerm("胎神", almanac.taiShen)
-                denseTerm("建除", almanac.zhiXing)
-                denseTerm("彭祖百忌", almanac.pengZuGan + "；" + almanac.pengZuZhi)
-                denseNames("吉神宜趋", almanac.jiShen)
-                denseNames("凶煞宜忌", almanac.xiongSha)
-                Divider().overlay(theme.line)
-                HStack(spacing: 10) {
-                    Toggle(isOn: $state.showVernacular) {
-                        Text("白话全解").d1Font(9.5).foregroundStyle(theme.ink)
-                    }.tint(theme.accent).labelsHidden().scaleEffect(0.8)
-                    Button("每日一签") { showQuoteSheet = true }.d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
-                    Button("吉日查询") { }.d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
-                    Spacer(minLength: 0)
-                }
-                HStack(spacing: 10) {
-                    Text("白话全解").d1Font(9).foregroundStyle(theme.ink3)
-                    Spacer(minLength: 0)
-                }
-            }
-        }
-    }
-
-    private func weekOfYear() -> Int {
-        Calendar(identifier: .gregorian).component(.weekOfYear, from: DateComponents(calendar: Calendar(identifier: .gregorian), year: date.year, month: date.month, day: date.day).date ?? Date())
-    }
-
-    @ViewBuilder
-    private func denseInfo(_ label: String, _ value: String, term: String? = nil) -> some View {
-        HStack(spacing: 4) {
-            Text(label).d1Font(9).foregroundStyle(theme.ink3)
-            Text(value).d1Font(10.5, weight: .medium).foregroundStyle(theme.ink).lineLimit(1)
-            Spacer(minLength: 0)
-            if let term, state.plainLanguage.panelTerm(named: term) != nil {
-                Button("白") { openTerm = openTerm == term ? nil : term }.d1Font(8, weight: .semibold).foregroundStyle(theme.accentStrong)
-            }
-        }
-        .padding(.vertical, 2)
-    }
-
-    @ViewBuilder
-    private func denseTerm(_ label: String, _ value: String) -> some View {
-        HStack(spacing: 4) {
-            Text(label).d1Font(9).foregroundStyle(theme.ink3).frame(width: 44, alignment: .leading)
-            Text(value).d1Font(10.5).foregroundStyle(theme.ink).lineLimit(1)
-            Spacer(minLength: 0)
-            if state.plainLanguage.panelTerm(named: value) != nil {
-                Button("白") { openTerm = openTerm == value ? nil : value }.d1Font(8, weight: .semibold).foregroundStyle(theme.accentStrong)
-            }
-        }
-    }
-
-    @ViewBuilder
-    private func denseNames(_ label: String, _ names: [String]) -> some View {
-        HStack(alignment: .top, spacing: 4) {
-            Text(label).d1Font(9).foregroundStyle(theme.ink3).frame(width: 44, alignment: .leading)
-            Text(names.prefix(4).joined(separator: " · ")).d1Font(10).foregroundStyle(theme.ink).lineLimit(2)
-            Spacer(minLength: 0)
-            if names.contains(where: { state.plainLanguage.panelTerm(named: $0) != nil }) {
-                Button("白") { openTerm = openTerm == names.first ? nil : names.first }.d1Font(8, weight: .semibold).foregroundStyle(theme.accentStrong)
-            }
-        }
-    }
-
-    @ViewBuilder
     private var coreSection: some View {
         D1Card(padding: 14) {
             VStack(alignment: .leading, spacing: 8) {
@@ -442,12 +332,7 @@ struct DayDetailScreen: View {
             ForEach(names.prefix(6), id: \.self) { n in
                 Button { withAnimation { openTerm = openTerm == n ? nil : n } } label: {
                     VStack(alignment: .leading, spacing: 3) {
-                        HStack {
-                            Text(n).d1Font(11, weight: .medium).foregroundStyle(theme.ink)
-                            Spacer()
-                            Text(openTerm == n ? "收起" : "白话").d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
-                            Image(systemName: openTerm == n ? "chevron.up" : "chevron.down").d1Font(8).foregroundStyle(theme.ink3)
-                        }
+                        Text(n).d1Font(11, weight: .medium).foregroundStyle(theme.ink)
                         if openTerm == n, let t = state.plainLanguage.panelTerm(named: n) {
                             Text(t.zh).d1Font(10.5).foregroundStyle(theme.ink2)
                             Text(t.en).d1Font(9).foregroundStyle(theme.ink3)
@@ -462,7 +347,6 @@ struct DayDetailScreen: View {
     private var termsSection: some View {
         VStack(alignment: .leading, spacing: 10) {
             termsDomain("值神", [almanac.tianShen])
-            termsDomain("冲煞", ["冲", "煞"])   // panel-terms v2 到后自动出现；无命中整行隐藏
             termsDomain("建除十二神", [almanac.zhiXing])
             termsDomain("二十八星宿", [almanac.xiu])
             termsDomain("纳音五行", [almanac.dayNaYin])
@@ -474,28 +358,24 @@ struct DayDetailScreen: View {
 
     @ViewBuilder
     private func termsDomain(_ domain: String, _ names: [String]) -> some View {
-        let visible = names.filter { state.plainLanguage.panelTerm(named: $0) != nil }
-        if !visible.isEmpty {
-            VStack(alignment: .leading, spacing: 4) {
-                Text(domain).d1Font(10, weight: .semibold).foregroundStyle(theme.ink3)
-                ForEach(Array(visible.prefix(4)), id: \.self) { n in
-                    Button { withAnimation { openTerm = openTerm == n ? nil : n } } label: {
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text(n).d1Font(11).foregroundStyle(theme.ink)
-                            if openTerm == n, let t = state.plainLanguage.panelTerm(named: n) {
-                                Text(t.zh).d1Font(10.5).foregroundStyle(theme.ink2)
-                                Text(t.en).d1Font(9).foregroundStyle(theme.ink3)
-                            }
+        VStack(alignment: .leading, spacing: 4) {
+            Text(domain).d1Font(10, weight: .semibold).foregroundStyle(theme.ink3)
+            ForEach(Array(names.prefix(4)), id: \.self) { n in
+                Button { withAnimation { openTerm = openTerm == n ? nil : n } } label: {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(n).d1Font(11).foregroundStyle(theme.ink)
+                        if openTerm == n, let t = state.plainLanguage.panelTerm(named: n) {
+                            Text(t.zh).d1Font(10.5).foregroundStyle(theme.ink2)
+                            Text(t.en).d1Font(9).foregroundStyle(theme.ink3)
                         }
-                    }.buttonStyle(.plain)
-                }
+                    }
+                }.buttonStyle(.plain)
             }
         }
     }
     @State private var showZhishen = false
     @State private var openSection: Int? = nil
     @State private var openTerm: String? = nil
-    @State private var showAllYiJi = false
 
     @ViewBuilder
     private var zhishenRow: some View {
