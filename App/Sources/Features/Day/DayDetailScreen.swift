@@ -47,6 +47,7 @@ struct DayDetailScreen: View {
         .onAppear {
             #if DEBUG
             if state.debug.expandShichen { showAllHours = true }
+            if state.debug.valueGod { showZhishen = true }
             if state.debug.scrollShichen {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                     withAnimation(nil) { proxy.scrollTo("shichen-band", anchor: .center) }

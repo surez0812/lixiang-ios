@@ -62,7 +62,7 @@ struct QuoteSheet: View {
             Text("“").d1SerifFont(34).foregroundStyle(theme.cream.opacity(0.55)).frame(height: 18)
             Text(quote.quote).d1SerifFont(22).foregroundStyle(theme.cream)
             Text(quote.zh).d1Font(11).foregroundStyle(theme.cream.opacity(0.92))
-            Text("《道德经》第\(quote.chapter)章 · 公版原文 · 每日轮换").d1Font(9).foregroundStyle(theme.cream.opacity(0.75))
+            Text("《道德经》第\(quote.chapter)章 · \(publicSource) · 每日轮换").d1Font(9).foregroundStyle(theme.cream.opacity(0.75))
             Divider().overlay(theme.cream.opacity(0.25))
             Button { } label: {
                 HStack {
