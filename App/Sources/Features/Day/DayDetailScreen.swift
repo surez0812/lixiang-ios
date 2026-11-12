@@ -346,7 +346,6 @@ struct DayDetailScreen: View {
                 }.buttonStyle(.plain)
             }
         }
-        }
     }
 
     @ViewBuilder
@@ -364,25 +363,23 @@ struct DayDetailScreen: View {
     }
 
     @ViewBuilder
-    @ViewBuilder
-    @ViewBuilder
     private func termsDomain(_ domain: String, _ names: [String]) -> some View {
         let visible = names.filter { state.plainLanguage.panelTerm(named: $0) != nil }
         if !visible.isEmpty {
-        VStack(alignment: .leading, spacing: 4) {
-            Text(domain).d1Font(10, weight: .semibold).foregroundStyle(theme.ink3)
-            ForEach(Array(visible.prefix(4)), id: \.self) { n in
-                Button { withAnimation { openTerm = openTerm == n ? nil : n } } label: {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(n).d1Font(11).foregroundStyle(theme.ink)
-                        if openTerm == n, let t = state.plainLanguage.panelTerm(named: n) {
-                            Text(t.zh).d1Font(10.5).foregroundStyle(theme.ink2)
-                            Text(t.en).d1Font(9).foregroundStyle(theme.ink3)
+            VStack(alignment: .leading, spacing: 4) {
+                Text(domain).d1Font(10, weight: .semibold).foregroundStyle(theme.ink3)
+                ForEach(Array(visible.prefix(4)), id: \.self) { n in
+                    Button { withAnimation { openTerm = openTerm == n ? nil : n } } label: {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(n).d1Font(11).foregroundStyle(theme.ink)
+                            if openTerm == n, let t = state.plainLanguage.panelTerm(named: n) {
+                                Text(t.zh).d1Font(10.5).foregroundStyle(theme.ink2)
+                                Text(t.en).d1Font(9).foregroundStyle(theme.ink3)
+                            }
                         }
-                    }
-                }.buttonStyle(.plain)
+                    }.buttonStyle(.plain)
+                }
             }
-        }
         }
     }
     @State private var showZhishen = false
