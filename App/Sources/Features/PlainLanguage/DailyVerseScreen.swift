@@ -7,6 +7,7 @@ struct DailyVerseScreen: View {
     @Environment(\.d1) private var theme
     let date: LocalDate
     @State private var showExplain = false
+    @State private var shareData: Data?
 
     private var almanac: AlmanacDay { state.almanac(date) }
     private var quote: DaodejingQuote? { state.plainLanguage.quote(for: date) }

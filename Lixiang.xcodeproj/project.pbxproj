@@ -90,6 +90,7 @@
 		E15412DFF5DEED7D78DC1F05 /* NotFoundScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F5934239AE0A120AB9897D /* NotFoundScreen.swift */; };
 		E297799EA5E91021225B8A5D /* DayDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67673C4C6D224600887711F /* DayDetailScreen.swift */; };
 		E45A8CEE80896053D2B022B5 /* term-jingzhe-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 0BF92BA24C3F132137773A22 /* term-jingzhe-dark.webp */; };
+		E5D415369673F786EDD6C1FF /* ShareCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88D426CDEE2991E113D3FF /* ShareCard.swift */; };
 		E7442BA38E4D02D147A0BBF9 /* term-bailu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 1EAB5A46223FEE61B2436B89 /* term-bailu-dark.webp */; };
 		E8BCF05ACF99CE149BA62397 /* term-mangzhong-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2F45670C7EBCED160EB64043 /* term-mangzhong-dark.webp */; };
 		EEBBCDC7C99A7DC33D9C188C /* DailyVerseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E35CC6BD3E4FA162178AF1 /* DailyVerseScreen.swift */; };
@@ -222,6 +223,7 @@
 		FA982517A1D0AECF514480F7 /* term-dashu-dark.webp */ = {isa = PBXFileReference; path = "term-dashu-dark.webp"; sourceTree = "<group>"; };
 		FC5CD61AB7918A75644AF7DC /* D1Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1Theme.swift; sourceTree = "<group>"; };
 		FD648C90F8CAA06F52C9C455 /* D1Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1Font.swift; sourceTree = "<group>"; };
+		FF88D426CDEE2991E113D3FF /* ShareCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -481,6 +483,7 @@
 				81A8C7FBB0FB0D22F603ACE5 /* PlainLanguageLoader.swift */,
 				BF18D4E9C43A87557F5B8AFB /* PlainTermSheet.swift */,
 				9B2588121BE27A986FD5F923 /* QuoteSheet.swift */,
+				FF88D426CDEE2991E113D3FF /* ShareCard.swift */,
 			);
 			path = PlainLanguage;
 			sourceTree = "<group>";
@@ -747,6 +750,7 @@
 				124CF875588EF60300DE3EBB /* RootView.swift in Sources */,
 				BB440E10DE36EC032893B9CB /* SeasonalArt.swift in Sources */,
 				B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */,
+				E5D415369673F786EDD6C1FF /* ShareCard.swift in Sources */,
 				4961A2C52973706909F582C0 /* SourceLicenseScreen.swift in Sources */,
 				3573D1CD2174094EECE5F737 /* WebViewReader.swift in Sources */,
 			);
