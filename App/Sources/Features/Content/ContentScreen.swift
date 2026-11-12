@@ -256,7 +256,5 @@ struct ContentScreen: View {
     }
 
     private var footer: some View {
-        Text("北京时间（UTC+8）解锁 · 网页静态发布（B′）· 未解锁正文不在服务器 · 版本新旧静默替换 · 配图 16:9 + alt")
-            .d1Font(9).foregroundStyle(theme.ink3)
     }
 }
