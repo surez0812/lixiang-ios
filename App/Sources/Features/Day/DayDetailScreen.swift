@@ -25,6 +25,7 @@ struct DayDetailScreen: View {
                     .frame(maxWidth: 520)
                     .frame(maxWidth: .infinity)
                 religionYearRows
+                zhishenRow
                 weatherPanel
                 festivalWindowPanel
                 shichenBandCard.id("shichen-band")
@@ -289,6 +290,31 @@ struct DayDetailScreen: View {
     }
 
     @State private var weather = WeatherService()
+    @State private var showZhishen = false
+
+    @ViewBuilder
+    private var zhishenRow: some View {
+        D1Card(padding: 12) {
+            Button { withAnimation { showZhishen.toggle() } } label: {
+                VStack(alignment: .leading, spacing: 6) {
+                    HStack {
+                        Text("值神").d1Font(11).foregroundStyle(theme.ink3)
+                        Text(almanac.tianShen).d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
+                        Spacer()
+                        Image(systemName: showZhishen ? "chevron.up" : "chevron.down").d1Font(9).foregroundStyle(theme.ink3)
+                    }
+                    if showZhishen {
+                        if let t = state.plainLanguage.panelTerm(named: almanac.tianShen) {
+                            Text(t.zh).d1Font(12).foregroundStyle(theme.ink2).lineSpacing(3)
+                            Text(t.en).d1Font(10).foregroundStyle(theme.ink3)
+                        } else {
+                            Text("暂无白话解释").d1Font(11).foregroundStyle(theme.ink3)
+                        }
+                    }
+                }
+            }.buttonStyle(.plain)
+        }
+    }
 
     private var upcomingFestivals: [(LocalDate, String)] {
         var out: [(LocalDate, String)] = []

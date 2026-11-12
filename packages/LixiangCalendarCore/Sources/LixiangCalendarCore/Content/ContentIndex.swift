@@ -10,6 +10,8 @@ public struct ContentIndexRow: Identifiable, Hashable, Sendable {
     public var date: LocalDate
     public var state: ContentState
     public var days: Int?
+    /// solarTerm|traditional|ritual|tao|foto；nil=未知（回退传统）
+    public var kind: String? = nil
 }
 
 /// 节俗索引：已过可回看 / 今日 / 即将到来 三组，按日期排序（FRD F5 + designer 复核）

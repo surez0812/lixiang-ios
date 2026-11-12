@@ -108,16 +108,34 @@ struct FestivalsScreen: View {
             if allRows.isEmpty {
                 emptyState
             } else {
-                if !groups.today.isEmpty {
-                    monthSections(rows: groups.today, allowBannerSkip: false)
+                let soon = futureRows.filter { ($0.days ?? 99) <= 10 }
+                let thisMonth = futureRows.filter { ($0.days ?? 99) > 10 && $0.date.year == state.today.year && $0.date.month == state.today.month }
+                let later = futureRows.filter { ($0.days ?? 99) > 10 && !( $0.date.year == state.today.year && $0.date.month == state.today.month) }
+                if !soon.isEmpty {
+                    sectionTitle("即将到来", count: soon.count)
+                    monthSections(rows: soon, allowBannerSkip: false)
                 }
-                let upcoming = groups.upcoming.filter { $0.id != bannerRow?.id }
-                if !upcoming.isEmpty {
-                    monthSections(rows: upcoming, bannerMonth: bannerRow?.date)
+                if !thisMonth.isEmpty {
+                    sectionTitle("本月", count: thisMonth.count)
+                    monthSections(rows: thisMonth)
                 }
+                if !later.isEmpty {
+                    sectionTitle("更远", count: later.count)
+                    monthSections(rows: later)
+                }
+                if soon.isEmpty && thisMonth.isEmpty && later.isEmpty { emptyState }
 
             }
         }
+    }
+
+    private func sectionTitle(_ title: String, count: Int) -> some View {
+        HStack {
+            Text(title).d1Font(11, weight: .semibold).foregroundStyle(theme.ink)
+            Text("\(count) 条").d1Font(9).foregroundStyle(theme.ink3)
+            Spacer()
+        }
+        .padding(.horizontal, 16).padding(.top, 10)
     }
 
     private func monthSections(rows: [ContentIndexRow], bannerMonth: LocalDate? = nil, allowBannerSkip: Bool = true) -> some View {
