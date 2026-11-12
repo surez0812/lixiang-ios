@@ -182,7 +182,7 @@ struct DayDetailScreen: View {
                 HStack {
                     Text("时辰宜忌").d1SerifFont(20, weight: .semibold).foregroundStyle(theme.ink)
                     Spacer()
-                    Text("12 时段 · 当前\(currentShichenName)").d1Font(10).foregroundStyle(theme.ink3)
+                    Text("12 时段 · 当前\(currentShichenName) · \(currentLuckText)").d1Font(10).foregroundStyle(theme.ink3)
                 }
                 HStack(spacing: 2) {
                     ForEach(Array(hours.enumerated()), id: \.offset) { idx, h in
@@ -250,6 +250,8 @@ struct DayDetailScreen: View {
                             .foregroundStyle(h.color(theme))
                             .frame(width: 22, alignment: .leading)
                         Text("宜\(h.yiCount) · 忌\(h.jiCount)").d1Font(9).foregroundStyle(theme.ink3)
+                        Text(luckText(idx)).d1Font(9, weight: .medium).foregroundStyle(luckText(idx) == "吉" ? theme.jade : theme.red)
+                        Text("煞\(shaText(idx))").d1Font(9).foregroundStyle(theme.ink3)
                         Spacer()
                         if idx == currentMergedIndex { Text("当前").d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong) }
                     }
@@ -260,6 +262,23 @@ struct DayDetailScreen: View {
                 }
             }
         }
+    }
+
+    private func luckText(_ idx: Int) -> String {
+        let real = idx == 0 ? 0 : idx
+        guard almanac.hours.indices.contains(real) else { return "—" }
+        return almanac.hours[real].luck
+    }
+
+    private func shaText(_ idx: Int) -> String {
+        let real = idx == 0 ? 0 : idx
+        guard almanac.hours.indices.contains(real) else { return "—" }
+        return almanac.hours[real].sha?.rawValue ?? "—"
+    }
+
+    private var currentLuckText: String {
+        guard let idx = almanac.currentHourIndex, almanac.hours.indices.contains(idx) else { return "日级参考" }
+        return "黄黑道：\(almanac.hours[idx].luck)"
     }
 
     private func slotLabel(_ idx: Int) -> String {
