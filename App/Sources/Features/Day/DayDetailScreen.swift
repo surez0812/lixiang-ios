@@ -310,27 +310,24 @@ struct DayDetailScreen: View {
         D1Card(padding: 14) {
             VStack(alignment: .leading, spacing: 9) {
                 HStack(alignment: .firstTextBaseline, spacing: 8) {
-                    Text(almanac.lunar.monthDayText).d1SerifFont(30, weight: .semibold).foregroundStyle(theme.ink)
-                    Text("\(almanac.lunar.dayGanZhi)日 · \(almanac.lunar.yearGanZhi)\(almanac.lunar.shengXiao)年")
-                        .d1Font(11).foregroundStyle(theme.ink2)
-                    Spacer()
-                    Text("星期\(date.weekdayChinese)").d1Font(10).foregroundStyle(theme.ink3)
+                    Text(almanac.lunar.monthDayText).d1SerifFont(22, weight: .semibold).foregroundStyle(theme.ink)
+                    Text("\(almanac.lunar.dayGanZhi)日 · \(almanac.lunar.yearGanZhi)\(almanac.lunar.shengXiao)年 · 星期\(date.weekdayChinese) · 黄帝纪元\(date.year + 2697)年 · 第\(weekOfYear())周")
+                        .d1Font(9.5).foregroundStyle(theme.ink2).lineLimit(1)
+                    Spacer(minLength: 0)
                 }
-                Text("黄帝纪元 \(date.year + 2697) 年 · \(almanac.lunar.monthGanZhi)月 · 第\(weekOfYear())周")
-                    .d1Font(9.5).foregroundStyle(theme.ink3)
+                shichenBandCard
+                HStack(spacing: 5) { Circle().fill(theme.yiText).frame(width: 5, height: 5)
+                    Text("宜：\(almanac.yi.prefix(15).joined(separator: " "))").d1Font(9.5).foregroundStyle(theme.ink).lineLimit(2) }
+                HStack(spacing: 5) { Circle().fill(theme.red).frame(width: 5, height: 5)
+                    Text("忌：\(almanac.ji.prefix(6).joined(separator: " "))").d1Font(9.5).foregroundStyle(theme.red).lineLimit(2) }
                 Divider().overlay(theme.line)
-                HStack(spacing: 6) { Circle().fill(theme.yiText).frame(width: 6, height: 6)
-                    Text("宜：\(almanac.yi.prefix(15).joined(separator: " "))").d1Font(10.5).foregroundStyle(theme.ink).lineLimit(3) }
-                HStack(spacing: 6) { Circle().fill(theme.red).frame(width: 6, height: 6)
-                    Text("忌：\(almanac.ji.prefix(6).joined(separator: " "))").d1Font(10.5).foregroundStyle(theme.red).lineLimit(3) }
-                Divider().overlay(theme.line)
-                LazyVGrid(columns: [GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8)], spacing: 6) {
+                LazyVGrid(columns: [GridItem(.flexible(), spacing: 6), GridItem(.flexible(), spacing: 6)], spacing: 2) {
                     denseInfo("五行", almanac.wuXing)
                     denseInfo("值神", almanac.tianShen, term: almanac.tianShen)
                     denseInfo("冲煞", almanac.sha?.rawValue ?? "—", term: "煞")
                     denseInfo("星宿", almanac.xiu)
                 }
-                LazyVGrid(columns: [GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8)], spacing: 6) {
+                LazyVGrid(columns: [GridItem(.flexible(), spacing: 6), GridItem(.flexible(), spacing: 6)], spacing: 2) {
                     denseInfo("财神", almanac.positions.cai.rawValue)
                     denseInfo("福神", almanac.positions.fu.rawValue)
                     denseInfo("喜神", almanac.positions.xi.rawValue)
@@ -346,14 +343,17 @@ struct DayDetailScreen: View {
                 denseNames("吉神宜趋", almanac.jiShen)
                 denseNames("凶煞宜忌", almanac.xiongSha)
                 Divider().overlay(theme.line)
-                shichenBandCard
-                Toggle(isOn: $state.showVernacular) {
-                    Text("白话全解").d1Font(10.5).foregroundStyle(theme.ink)
-                }.tint(theme.accent)
-                HStack(spacing: 8) {
-                    Button("每日一签") { showQuoteSheet = true }.d1Font(10, weight: .semibold).foregroundStyle(theme.accentStrong)
-                    Button("吉日查询") { }.d1Font(10, weight: .semibold).foregroundStyle(theme.accentStrong)
-                    Spacer()
+                HStack(spacing: 10) {
+                    Toggle(isOn: $state.showVernacular) {
+                        Text("白话全解").d1Font(9.5).foregroundStyle(theme.ink)
+                    }.tint(theme.accent).labelsHidden().scaleEffect(0.8)
+                    Button("每日一签") { showQuoteSheet = true }.d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
+                    Button("吉日查询") { }.d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
+                    Spacer(minLength: 0)
+                }
+                HStack(spacing: 10) {
+                    Text("白话全解").d1Font(9).foregroundStyle(theme.ink3)
+                    Spacer(minLength: 0)
                 }
             }
         }
@@ -379,7 +379,7 @@ struct DayDetailScreen: View {
     @ViewBuilder
     private func denseTerm(_ label: String, _ value: String) -> some View {
         HStack(spacing: 4) {
-            Text(label).d1Font(9).foregroundStyle(theme.ink3).frame(width: 60, alignment: .leading)
+            Text(label).d1Font(9).foregroundStyle(theme.ink3).frame(width: 44, alignment: .leading)
             Text(value).d1Font(10.5).foregroundStyle(theme.ink).lineLimit(1)
             Spacer(minLength: 0)
             if state.plainLanguage.panelTerm(named: value) != nil {
@@ -391,7 +391,7 @@ struct DayDetailScreen: View {
     @ViewBuilder
     private func denseNames(_ label: String, _ names: [String]) -> some View {
         HStack(alignment: .top, spacing: 4) {
-            Text(label).d1Font(9).foregroundStyle(theme.ink3).frame(width: 60, alignment: .leading)
+            Text(label).d1Font(9).foregroundStyle(theme.ink3).frame(width: 44, alignment: .leading)
             Text(names.prefix(4).joined(separator: " · ")).d1Font(10).foregroundStyle(theme.ink).lineLimit(2)
             Spacer(minLength: 0)
             if names.contains(where: { state.plainLanguage.panelTerm(named: $0) != nil }) {

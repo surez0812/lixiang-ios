@@ -17,7 +17,7 @@ struct MergedDayCard: View {
 
     private var almanac: AlmanacDay { state.almanac(date) }
     private var quote: DaodejingQuote? { state.plainLanguage.dailyQuote(for: date) }
-    private var imageHeight: CGFloat { 230 }
+    private var imageHeight: CGFloat { 170 }
     private var minHeight: CGFloat { 0 }
 
     private var cardHeight: CGFloat { 640 }
@@ -146,7 +146,7 @@ struct MergedDayCard: View {
             }
         }
         .padding(.horizontal, 16)
-        .padding(.top, 18)
+        .padding(.top, 10)
         .padding(.bottom, 14)
         .frame(maxWidth: .infinity, alignment: .leading)
     }
