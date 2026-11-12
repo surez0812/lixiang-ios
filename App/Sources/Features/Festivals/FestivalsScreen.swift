@@ -16,6 +16,21 @@ struct FestivalsScreen: View {
     enum LoadPhase: Equatable { case loading, ready, errorWithCache, errorNoCache }
 
     private var mode: ContentNetworkMode { ContentNetworkMode(rawValue: state.debug.network ?? "normal") ?? .normal }
+    /// #13：只未来 + 回退到未来 10 天/T-10 锁；谢灶南北合并（同 contentID 只 1 条，优先无 region）
+    private var futureRows: [ContentIndexRow] {
+        let today = state.today
+        var seen: [String: ContentIndexRow] = [:]
+        for row in state.indexGroups().today + state.indexGroups().upcoming where row.date >= today {
+            if let existing = seen[row.contentID] {
+                if existing.regionID != nil, row.regionID == nil { seen[row.contentID] = row }
+            } else { seen[row.contentID] = row }
+        }
+        return seen.values.sorted { a, b in
+            if a.date != b.date { return a.date < b.date }
+            return a.title < b.title
+        }
+    }
+
     private var groups: (past: [ContentIndexRow], today: [ContentIndexRow], upcoming: [ContentIndexRow]) {
         state.debug.emptyIndex ? ([], [], []) : state.indexGroups()
     }
