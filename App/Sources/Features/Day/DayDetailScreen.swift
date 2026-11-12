@@ -332,12 +332,10 @@ struct DayDetailScreen: View {
                     Spacer(minLength: 0)
                 }
                 shichenBandCard
-                HStack(spacing: 5) { Circle().fill(theme.yiText).frame(width: 5, height: 5)
-                    Text("宜：\(almanac.yi.prefix(showAllYiJi ? 30 : 5).joined(separator: " "))").d1Font(9.5).foregroundStyle(theme.ink).lineLimit(showAllYiJi ? 4 : 1) }
-                HStack(spacing: 5) { Circle().fill(theme.red).frame(width: 5, height: 5)
-                    Text("忌：\(almanac.ji.prefix(showAllYiJi ? 20 : 3).joined(separator: " "))").d1Font(9.5).foregroundStyle(theme.red).lineLimit(showAllYiJi ? 4 : 1) }
-                Button(showAllYiJi ? "收起宜忌" : "展开全部宜忌") { withAnimation { showAllYiJi.toggle() } }
-                    .d1Font(8.5, weight: .semibold).foregroundStyle(theme.accentStrong)
+                HStack(alignment: .top, spacing: 5) { Circle().fill(theme.yiText).frame(width: 5, height: 5).padding(.top, 4)
+                    Text("宜：\(almanac.yi.joined(separator: " "))").d1Font(9).foregroundStyle(theme.ink).lineLimit(3) }
+                HStack(alignment: .top, spacing: 5) { Circle().fill(theme.red).frame(width: 5, height: 5).padding(.top, 4)
+                    Text("忌：\(almanac.ji.joined(separator: " "))").d1Font(9).foregroundStyle(theme.red).lineLimit(3) }
                 Divider().overlay(theme.line)
                 LazyVGrid(columns: [GridItem(.flexible(), spacing: 6), GridItem(.flexible(), spacing: 6)], spacing: 2) {
                     denseInfo("五行", almanac.wuXing)
