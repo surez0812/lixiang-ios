@@ -15,37 +15,36 @@ struct MergedDayCard: View {
 
     private var almanac: AlmanacDay { state.almanac(date) }
     private var quote: DaodejingQuote? { state.plainLanguage.dailyQuote(for: date) }
-    private var imageHeight: CGFloat { 333 }
-    private var minHeight: CGFloat { 500 }
+    private var imageHeight: CGFloat { 230 }
+    private var minHeight: CGFloat { 0 }
 
     private var cardHeight: CGFloat { 640 }
     private var contentTop: CGFloat { cardHeight * 2 / 3 }   // 427
 
     var body: some View {
-        ZStack(alignment: .top) {
-            image
-                .frame(maxWidth: .infinity)
-                .frame(height: cardHeight)
-                .clipped()
-            LinearGradient(colors: [.clear, theme.paper.opacity(0.97), theme.paper],
-                           startPoint: .top, endPoint: .bottom)
-                .frame(height: cardHeight - contentTop)
-                .offset(y: contentTop)
-                .allowsHitTesting(false)
-            ScrollView(.vertical, showsIndicators: false) {
+        ZStack(alignment: .topTrailing) {
+            VStack(spacing: -44) {
+                image
+                    .frame(maxWidth: .infinity)
+                    .frame(height: imageHeight)
+                    .clipped()
                 content
             }
-            .frame(height: cardHeight - contentTop)
-            .offset(y: contentTop)
+            Image("seal-round-01")
+                .resizable().scaledToFit()
+                .frame(width: 50, height: 50)
+                .rotationEffect(.degrees(6))
+                .opacity(0.92)
+                .padding(14)
+                .accessibilityHidden(true)
         }
-        .frame(height: cardHeight)
         .background(theme.paper)
         .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: 28).strokeBorder(theme.line.opacity(0.55), lineWidth: 0.8))
         .overlay(alignment: .top) {
             if let onDayTap {
                 Button(action: onDayTap) {
-                    Color.clear.frame(maxWidth: .infinity).frame(height: contentTop).contentShape(Rectangle())
+                    Color.clear.frame(maxWidth: .infinity).frame(height: imageHeight).contentShape(Rectangle())
                 }.buttonStyle(.plain).accessibilityLabel("查看当日详情")
             }
         }
@@ -78,7 +77,6 @@ struct MergedDayCard: View {
     private var content: some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack(alignment: .top, spacing: 10) {
-                Text("\(date.day)").d1SerifFont(60).foregroundStyle(theme.ink)
                 VStack(alignment: .leading, spacing: 4) {
                     Text(titleText).d1SerifFont(22, weight: .semibold).foregroundStyle(theme.ink)
                         .lineLimit(1).minimumScaleFactor(0.7)
@@ -116,12 +114,12 @@ struct MergedDayCard: View {
                 Button(action: onQuoteTap) {
                     VStack(alignment: .leading, spacing: 3) {
                         Text("每日一句 · \(quote.source)").d1Font(9).foregroundStyle(theme.ink3)
-                        Text(quote.quote).d1Kaiti(15).foregroundStyle(theme.ink).lineLimit(2)
-                        HStack {
-                            Text("《道德经》第\(quote.chapter)章").d1Font(9).foregroundStyle(theme.ink3)
+                        Text(quote.quote).d1Kaiti(20).foregroundStyle(theme.ink).lineLimit(2)
+                        HStack(spacing: 14) {
+                            Text("《道德经》第\(quote.chapter)章 · \(quote.source)").d1Font(9).foregroundStyle(theme.ink3)
                             Spacer()
-                            Text("每日一句").d1Font(10.5, weight: .semibold).foregroundStyle(theme.accentStrong)
-                            Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.accentStrong)
+                            Text("读解释").d1Font(10.5, weight: .semibold).foregroundStyle(theme.accentStrong)
+                            Text("分享").d1Font(10.5, weight: .semibold).foregroundStyle(theme.accentStrong)
                         }
                     }
                 }.buttonStyle(.plain)
@@ -129,6 +127,7 @@ struct MergedDayCard: View {
             }
         }
         .padding(.horizontal, 16)
+        .padding(.top, 18)
         .padding(.bottom, 14)
         .frame(maxWidth: .infinity, alignment: .leading)
     }
