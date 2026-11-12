@@ -256,5 +256,7 @@ struct ContentScreen: View {
     }
 
     private var footer: some View {
+        Text("按北京时间（UTC+8）解锁")
+            .d1Font(9).foregroundStyle(theme.ink3)
     }
 }
