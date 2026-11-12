@@ -79,14 +79,20 @@ struct MergedDayCard: View {
             }
             if !almanac.festivals.isEmpty {
                 HStack(spacing: 6) {
-                    ForEach(Array(almanac.festivals.prefix(2)), id: \.self) { f in
+                    ForEach(Array(almanac.festivals.prefix(1)), id: \.self) { f in
                         Text("节日 · \(f)").d1Font(9, weight: .medium)
                             .foregroundStyle(theme.solarTermText)
                             .padding(.horizontal, 8).padding(.vertical, 3)
                             .background(theme.solarTermText.opacity(0.12), in: Capsule())
                     }
+                    if almanac.festivals.count > 1 {
+                        Text("+\(almanac.festivals.count - 1)").d1Font(9, weight: .medium)
+                            .foregroundStyle(theme.ink3)
+                            .padding(.horizontal, 6).padding(.vertical, 3)
+                            .background(theme.line.opacity(0.2), in: Capsule())
+                    }
                 }
-                .accessibilityLabel("节日：\(almanac.festivals.prefix(2).joined(separator: "、"))")
+                .accessibilityLabel("节日：\(almanac.festivals.joined(separator: "、"))")
             }
             HStack(spacing: 6) {
                 D1Chip(text: "宜 \(almanac.yi.prefix(3).joined(separator: " "))", tone: .yi)
