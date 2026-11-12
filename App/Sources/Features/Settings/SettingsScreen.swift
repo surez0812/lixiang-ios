@@ -5,6 +5,12 @@ struct SettingsScreen: View {
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
 
+    private var appVersionText: String {
+        let v = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
+        let b = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "—"
+        return "\(v) (build \(b))"
+    }
+
     var body: some View {
         ScrollView {
             VStack(spacing: 12) {
