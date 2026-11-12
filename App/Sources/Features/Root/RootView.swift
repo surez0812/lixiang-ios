@@ -21,6 +21,18 @@ struct RootView: View {
     @State private var festivalsPath = NavigationPath()
 
     var body: some View {
+        rootBody
+            .overlay(alignment: .top) {
+                #if DEBUG
+                Text("DEBUG BUILD · screen=\(state.debug.screen ?? "-") · terms=\(state.debug.expandTerms ? "1":"0")")
+                    .d1Font(8, weight: .bold).foregroundStyle(.white)
+                    .padding(.horizontal, 6).padding(.vertical, 2)
+                    .background(.red, in: Capsule()).padding(.top, 2)
+                #endif
+            }
+    }
+
+    private var rootBody: some View {
         ZStack(alignment: .bottom) {
             Group {
                 switch selectedTab {
