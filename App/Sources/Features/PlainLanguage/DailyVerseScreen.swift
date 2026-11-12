@@ -20,7 +20,7 @@ struct DailyVerseScreen: View {
                     D1Card(padding: 14) {
                         VStack(alignment: .leading, spacing: 8) {
                             HStack {
-                                Text("每日一句 · 第\(quote.chapter)章").d1Font(11, weight: .semibold).foregroundStyle(theme.ink3)
+                                Text("每日一句 · 第\(quote.chapter)章 · \(quote.source)").d1Font(11, weight: .semibold).foregroundStyle(theme.ink3)
                                 Spacer()
                                 Button(showExplain ? "收起解释" : "读解释") {
                                     withAnimation { showExplain.toggle() }

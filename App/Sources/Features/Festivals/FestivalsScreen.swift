@@ -105,21 +105,24 @@ struct FestivalsScreen: View {
         case .errorNoCache:
             errorCard
         default:
-            if allRows.isEmpty {
+            if state.debug.festivalsMode == "allEmpty" || state.debug.festivalsMode == "empty" {
+                emptyState
+            } else if allRows.isEmpty {
                 emptyState
             } else {
                 let soon = futureRows.filter { ($0.days ?? 99) <= 10 }
+                let nearOnly = state.debug.festivalsMode == "nearOnly"
                 let thisMonth = futureRows.filter { ($0.days ?? 99) > 10 && $0.date.year == state.today.year && $0.date.month == state.today.month }
                 let later = futureRows.filter { ($0.days ?? 99) > 10 && !( $0.date.year == state.today.year && $0.date.month == state.today.month) }
                 if !soon.isEmpty {
                     sectionTitle("即将到来", count: soon.count)
                     monthSections(rows: soon, allowBannerSkip: false)
                 }
-                if !thisMonth.isEmpty {
+                if !nearOnly, !thisMonth.isEmpty {
                     sectionTitle("本月", count: thisMonth.count)
                     monthSections(rows: thisMonth)
                 }
-                if !later.isEmpty {
+                if !nearOnly, !later.isEmpty {
                     sectionTitle("更远", count: later.count)
                     monthSections(rows: later)
                 }

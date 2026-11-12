@@ -47,7 +47,12 @@ struct DayDetailScreen: View {
         .onAppear {
             #if DEBUG
             if state.debug.expandShichen { showAllHours = true }
-            if state.debug.valueGod { showZhishen = true }
+            if state.debug.valueGod {
+                showZhishen = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                    withAnimation(nil) { proxy.scrollTo("zhishen-row", anchor: .center) }
+                }
+            }
             if state.debug.scrollShichen {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                     withAnimation(nil) { proxy.scrollTo("shichen-band", anchor: .center) }
@@ -315,6 +320,7 @@ struct DayDetailScreen: View {
                 }
             }.buttonStyle(.plain)
         }
+        .id("zhishen-row")
     }
 
     private var upcomingFestivals: [(LocalDate, String)] {

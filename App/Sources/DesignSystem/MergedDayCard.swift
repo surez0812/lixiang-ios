@@ -115,6 +115,7 @@ struct MergedDayCard: View {
                 Divider().overlay(theme.line)
                 Button(action: onQuoteTap) {
                     VStack(alignment: .leading, spacing: 3) {
+                        Text("每日一句 · \(quote.source)").d1Font(9).foregroundStyle(theme.ink3)
                         Text(quote.quote).d1Kaiti(15).foregroundStyle(theme.ink).lineLimit(2)
                         HStack {
                             Text("《道德经》第\(quote.chapter)章").d1Font(9).foregroundStyle(theme.ink3)
