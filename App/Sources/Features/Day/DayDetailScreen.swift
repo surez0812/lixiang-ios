@@ -346,12 +346,14 @@ struct DayDetailScreen: View {
                 }.buttonStyle(.plain)
             }
         }
+        }
     }
 
     @ViewBuilder
     private var termsSection: some View {
         VStack(alignment: .leading, spacing: 10) {
             termsDomain("值神", [almanac.tianShen])
+            termsDomain("冲煞", ["冲", "煞"])   // panel-terms v2 到后自动出现；无命中整行隐藏
             termsDomain("建除十二神", [almanac.zhiXing])
             termsDomain("二十八星宿", [almanac.xiu])
             termsDomain("纳音五行", [almanac.dayNaYin])
@@ -362,10 +364,13 @@ struct DayDetailScreen: View {
     }
 
     @ViewBuilder
+    @ViewBuilder
     private func termsDomain(_ domain: String, _ names: [String]) -> some View {
+        let visible = names.filter { state.plainLanguage.panelTerm(named: $0) != nil }
+        if !visible.isEmpty {
         VStack(alignment: .leading, spacing: 4) {
             Text(domain).d1Font(10, weight: .semibold).foregroundStyle(theme.ink3)
-            ForEach(Array(names.prefix(4)), id: \.self) { n in
+            ForEach(Array(visible.prefix(4)), id: \.self) { n in
                 Button { withAnimation { openTerm = openTerm == n ? nil : n } } label: {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(n).d1Font(11).foregroundStyle(theme.ink)
