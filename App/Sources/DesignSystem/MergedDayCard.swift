@@ -18,25 +18,35 @@ struct MergedDayCard: View {
     private var imageHeight: CGFloat { 333 }
     private var minHeight: CGFloat { 500 }
 
+    private var cardHeight: CGFloat { 640 }
+    private var contentTop: CGFloat { cardHeight * 2 / 3 }   // 427
+
     var body: some View {
-        VStack(spacing: -34) {
+        ZStack(alignment: .top) {
             image
-            content
+                .frame(maxWidth: .infinity)
+                .frame(height: cardHeight)
+                .clipped()
+            LinearGradient(colors: [.clear, theme.paper.opacity(0.93), theme.paper],
+                           startPoint: .top, endPoint: .bottom)
+                .frame(height: cardHeight - contentTop)
+                .offset(y: contentTop)
+                .allowsHitTesting(false)
+            ScrollView(.vertical, showsIndicators: false) {
+                content
+            }
+            .frame(height: cardHeight - contentTop)
+            .offset(y: contentTop)
         }
-        .frame(minHeight: minHeight, alignment: .top)
+        .frame(height: cardHeight)
         .background(theme.paper)
         .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: 28).strokeBorder(theme.line.opacity(0.55), lineWidth: 0.8))
         .overlay(alignment: .top) {
             if let onDayTap {
                 Button(action: onDayTap) {
-                    Color.clear
-                        .frame(maxWidth: .infinity)
-                        .frame(height: imageHeight + 110)
-                        .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("查看当日详情")
+                    Color.clear.frame(maxWidth: .infinity).frame(height: contentTop).contentShape(Rectangle())
+                }.buttonStyle(.plain).accessibilityLabel("查看当日详情")
             }
         }
         .accessibilityElement(children: .contain)
@@ -46,7 +56,7 @@ struct MergedDayCard: View {
         GeometryReader { geo in
             let w = geo.size.width
             SeasonalImage(date: date)
-                .frame(width: w, height: imageHeight)
+                .frame(width: w, height: cardHeight)
                 .clipped()
                 .overlay(alignment: .topLeading) {
                     if let term = almanac.solarTerm {
@@ -62,7 +72,7 @@ struct MergedDayCard: View {
                         .frame(height: imageHeight * 0.5)
                 }
         }
-        .frame(height: imageHeight)
+        .frame(height: cardHeight)
     }
 
     private var content: some View {
@@ -73,9 +83,9 @@ struct MergedDayCard: View {
                     Text(titleText).d1SerifFont(22, weight: .semibold).foregroundStyle(theme.ink)
                         .lineLimit(1).minimumScaleFactor(0.7)
                     Text(verbatim: "\(date.year)年\(date.month)月\(date.day)日")
-                        .d1Font(13, weight: .medium).foregroundStyle(theme.ink2)
+                        .d1Font(13, weight: .semibold).foregroundStyle(theme.ink2)
                     Text("星期\(date.weekdayChinese) · 农历\(almanac.lunar.monthDayText) · \(almanac.lunar.yearGanZhi)年 \(almanac.lunar.monthGanZhi)月 \(almanac.lunar.dayGanZhi)日")
-                        .d1Font(10.5).foregroundStyle(theme.ink3).lineLimit(2)
+                        .d1Font(10).foregroundStyle(theme.ink3).lineLimit(2)
                 }
                 Spacer(minLength: 0)
             }
@@ -107,7 +117,7 @@ struct MergedDayCard: View {
                     VStack(alignment: .leading, spacing: 3) {
                         Text(quote.quote).d1Kaiti(15).foregroundStyle(theme.ink).lineLimit(2)
                         HStack {
-                            Text("《道德经》第\(quote.chapter)章").d1Font(10.5).foregroundStyle(theme.ink3)
+                            Text("《道德经》第\(quote.chapter)章").d1Font(9).foregroundStyle(theme.ink3)
                             Spacer()
                             Text("每日一句").d1Font(10.5, weight: .semibold).foregroundStyle(theme.accentStrong)
                             Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.accentStrong)
@@ -118,7 +128,7 @@ struct MergedDayCard: View {
             }
         }
         .padding(.horizontal, 16)
-        .padding(.bottom, 18)
+        .padding(.bottom, 14)
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
