@@ -24,6 +24,7 @@ struct DayDetailScreen: View {
                 MergedDayCard(date: date, variant: .day) { showQuoteSheet = true }
                     .frame(maxWidth: 520)
                     .frame(maxWidth: .infinity)
+                religionYearRows
                 shichenBandCard.id("shichen-band")
                 if showAllHours { expandedHourRows }
                 HStack(spacing: 10) {
@@ -264,6 +265,39 @@ struct DayDetailScreen: View {
         guard idx < almanac.hours.count else { return "—" }
         let h = almanac.hours[idx]
         return "\(h.ganZhi)时 \(h.startMinute)–\(h.endMinute)"
+    }
+
+    @ViewBuilder
+    private var religionYearRows: some View {
+        if let engine = state.engine as? LunarSwiftEngine {
+            let tao = state.showTaoCalendar ? engine.taoInfo(for: date) : nil
+            let foto = state.showFotoCalendar ? engine.fotoInfo(for: date) : nil
+            if tao != nil || foto != nil {
+                D1Card(padding: 12) {
+                    VStack(alignment: .leading, spacing: 6) {
+                        if let tao {
+                            Text("道历 \(tao.year) 年 · \(tao.yearInChinese)")
+                                .d1Font(11, weight: .semibold).foregroundStyle(theme.ink)
+                            if !tao.festivals.isEmpty {
+                                Text("道历节日：\(tao.festivals.joined(separator: "、"))")
+                                    .d1Font(10).foregroundStyle(theme.ink3)
+                                    .accessibilityLabel("道历节日：\(tao.festivals.joined(separator: "、"))")
+                            }
+                        }
+                        if let foto {
+                            Text("佛历 \(foto.year) 年 · \(foto.yearInChinese)")
+                                .d1Font(11, weight: .semibold).foregroundStyle(theme.ink)
+                            if !foto.festivals.isEmpty {
+                                Text("佛历节日：\(foto.festivals.joined(separator: "、"))")
+                                    .d1Font(10).foregroundStyle(theme.ink3)
+                                    .accessibilityLabel("佛历节日：\(foto.festivals.joined(separator: "、"))")
+                            }
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+            }
+        }
     }
 
     private func shichenName(_ idx: Int) -> String {

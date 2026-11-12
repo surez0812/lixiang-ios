@@ -253,6 +253,16 @@ struct MonthScreen: View {
                         .d1Font(9.5)
                         .foregroundStyle(labelColor(cell))
                         .lineLimit(1).minimumScaleFactor(0.75)
+                    let dots = religionDots(cell.date)
+                    if !dots.isEmpty {
+                        HStack(spacing: 2) {
+                            ForEach(dots.indices, id: \.self) { i in
+                                Circle().fill(dots[i]).frame(width: 3, height: 3)
+                            }
+                        }
+                        .frame(height: 4)
+                        .accessibilityLabel("宗教节日标记")
+                    }
                 }
                 .frame(maxWidth: .infinity, minHeight: 34)
                 .contentShape(Rectangle())
@@ -303,6 +313,18 @@ struct MonthScreen: View {
             if let term = state.lunar(date).jieQi { return (term, today.daysBetween(date)) }
         }
         return nil
+    }
+
+    private func religionDots(_ date: LocalDate) -> [Color] {
+        var out: [Color] = []
+        guard let engine = state.engine as? LunarSwiftEngine else { return out }
+        if state.showTaoCalendar, let tao = engine.taoInfo(for: date), !tao.festivals.isEmpty {
+            out.append(theme.accent)
+        }
+        if state.showFotoCalendar, let foto = engine.fotoInfo(for: date), !foto.festivals.isEmpty {
+            out.append(theme.solarTermText)
+        }
+        return out
     }
 
     private func labelColor(_ cell: GridDay) -> Color {

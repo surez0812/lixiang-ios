@@ -39,6 +39,8 @@ struct AboutScreen: View {
                         }.buttonStyle(.plain)
                     }
                 }
+                Text("传统历法民俗参考，不构成宗教劝诱或预测。")
+                    .d1Font(10).foregroundStyle(theme.ink3)
                 Text("© 2026 昭杳 · 历象内容为原创整理与传统公版文本，不宣称 AI 生成，不做吉凶预测。")
                     .d1Font(9).foregroundStyle(theme.ink3)
             }

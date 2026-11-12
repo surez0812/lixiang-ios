@@ -31,6 +31,12 @@ final class AppState: ObservableObject {
     @Published var showVernacular: Bool {
         didSet { UserDefaults.standard.set(showVernacular, forKey: Keys.vernacular) }
     }
+    @Published var showTaoCalendar: Bool {
+        didSet { UserDefaults.standard.set(showTaoCalendar, forKey: Keys.taoCalendar) }
+    }
+    @Published var showFotoCalendar: Bool {
+        didSet { UserDefaults.standard.set(showFotoCalendar, forKey: Keys.fotoCalendar) }
+    }
 
     let debug: DebugOptions
     let engine: any CalendarEngine
@@ -46,6 +52,8 @@ final class AppState: ObservableObject {
         static let theme = "appearance"
         static let weekStart = "weekStart"
         static let vernacular = "showVernacular"
+        static let taoCalendar = "showTaoCalendar"
+        static let fotoCalendar = "showFotoCalendar"
     }
 
     init(debug: DebugOptions = .parse()) {
@@ -55,6 +63,8 @@ final class AppState: ObservableObject {
         } else {
             self.theme = AppTheme(rawValue: UserDefaults.standard.string(forKey: Keys.theme) ?? "") ?? .system
         }
+        self.showTaoCalendar = UserDefaults.standard.bool(forKey: Keys.taoCalendar)
+        self.showFotoCalendar = UserDefaults.standard.bool(forKey: Keys.fotoCalendar)
         if let stored = UserDefaults.standard.object(forKey: Keys.weekStart) as? Int, let w = WeekStart(rawValue: stored) {
             self.weekStart = w
         } else {

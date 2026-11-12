@@ -20,6 +20,18 @@ struct SettingsScreen: View {
                     }
                     .tint(theme.accent)
                 }
+                group("历法显示") {
+                    Toggle(isOn: $state.showTaoCalendar) {
+                        Text("显示道历").d1Font(12).foregroundStyle(theme.ink)
+                    }.tint(theme.accent)
+                    Toggle(isOn: $state.showFotoCalendar) {
+                        Text("显示佛历").d1Font(12).foregroundStyle(theme.ink)
+                    }.tint(theme.accent)
+                    Text("传统历法民俗参考，不构成宗教劝诱或预测。")
+                        .d1Font(10).foregroundStyle(theme.ink3)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.top, 2)
+                }
                 group("术语与解释") {
                     NavigationLink { GlossaryScreen() } label: {
                         settingRow("术语解释", value: "8 页白话", chevron: true)
