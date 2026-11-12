@@ -26,19 +26,23 @@ struct SettingsScreen: View {
                     }
                     .tint(theme.accent)
                 }
-                group("每日一句经典") {
+                group("内容") {
                     ForEach(DailyClassic.allCases) { c in
                         Button {
                             state.dailyClassic = c.rawValue
                         } label: {
                             HStack {
                                 Text(c.title).d1Font(12).foregroundStyle(theme.ink)
+                                if c != .dao { Text("内容未就绪").d1Font(9).foregroundStyle(theme.ink3) }
                                 Spacer()
                                 if state.dailyClassic == c.rawValue {
                                     Image(systemName: "checkmark").d1Font(11, weight: .semibold).foregroundStyle(theme.accentStrong)
                                 }
                             }
-                        }.buttonStyle(.plain)
+                        }
+                        .buttonStyle(.plain)
+                        .disabled(c != .dao)   // 其余内容包未就绪：disabled（到即启用）
+                        .opacity(c == .dao ? 1 : 0.45)
                     }
                 }
                 group("历法显示") {
