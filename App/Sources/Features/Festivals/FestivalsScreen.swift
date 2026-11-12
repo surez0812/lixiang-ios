@@ -100,15 +100,7 @@ struct FestivalsScreen: View {
                 if !upcoming.isEmpty {
                     monthSections(rows: upcoming, bannerMonth: bannerRow?.date)
                 }
-                if false && !groups.past.isEmpty {
-                    Section {
-                        if expandPast {
-                            monthSections(rows: groups.past, bannerMonth: nil)
-                        }
-                    } header: {
-                        pastHeader
-                    }
-                }
+
             }
         }
     }
@@ -146,24 +138,7 @@ struct FestivalsScreen: View {
         }
     }
 
-    private var pastHeader: some View {
-        Button {
-            D1Motion.withAnimation { expandPast.toggle() }
-        } label: {
-            HStack {
-                Text("已过 · 可回看").d1Font(10, weight: .semibold).tracking(1.2).foregroundStyle(theme.ink3)
-                Text("\(groups.past.count) 条").d1Font(9).foregroundStyle(theme.ink3)
-                Spacer()
-                Text(expandPast ? "收起" : "展开").d1Font(10, weight: .semibold).foregroundStyle(theme.accentStrong)
-                Image(systemName: expandPast ? "chevron.up" : "chevron.down").font(.system(size: 9)).foregroundStyle(theme.accentStrong)
-            }
-            .padding(.vertical, 6)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(theme.bg)
-        }
-        .buttonStyle(.plain)
-        .accessibilityLabel("已过可回看，\(groups.past.count) 条，\(expandPast ? "收起" : "展开")")
-    }
+
 
     private func rowView(_ row: ContentIndexRow) -> some View {
         D1Card(padding: 14) {
