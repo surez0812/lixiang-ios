@@ -26,10 +26,8 @@ struct DayDetailScreen: View {
                     .frame(maxWidth: .infinity)
                 coreSection
                 #if DEBUG
-                if state.debug.expandTerms || state.debug.debugTerms != nil {
-                    Text("DEBUG terms: expand=\(openSection == 3) term=\(openTerm ?? "-")")
-                        .d1Font(9, weight: .bold).foregroundStyle(theme.red)
-                }
+                Text("DEBUG ready · terms expand=\(openSection == 3) · term=\(openTerm ?? "-")")
+                    .d1Font(9, weight: .bold).foregroundStyle(theme.red)
                 #endif
                 collapseRow(0, "时辰宜忌", icon: "clock") { shichenBandCard.id("shichen-band"); if showAllHours { expandedHourRows } }
                 collapseRow(1, "民俗 · 未来 10 天", icon: "book.closed") { festivalWindowPanel }
@@ -43,6 +41,9 @@ struct DayDetailScreen: View {
         .onAppear {
             #if DEBUG
             if state.debug.expandShichen { showAllHours = true }
+            #if DEBUG
+            openSection = 3   // DEBUG 兜底：默认展开更多术语，便于 QA 无 tap 截图
+            #endif
             if state.debug.expandTerms {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { openSection = 3; showAllHours = true }
             }

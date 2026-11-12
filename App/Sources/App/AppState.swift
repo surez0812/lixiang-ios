@@ -58,6 +58,10 @@ final class AppState: ObservableObject {
 
     init(debug: DebugOptions = .parse()) {
         self.debug = debug
+        #if DEBUG
+        print("LXLAUNCH args=\(ProcessInfo.processInfo.arguments)")
+        print("LXLAUNCH screen=\(debug.screen ?? "nil") expandTerms=\(debug.expandTerms) debugTerms=\(debug.debugTerms ?? "nil") valueGod=\(debug.valueGod)")
+        #endif
         if let forced = debug.theme, let t = AppTheme(rawValue: forced) {
             self.theme = t
         } else {
