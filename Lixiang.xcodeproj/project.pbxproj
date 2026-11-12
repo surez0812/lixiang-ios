@@ -102,6 +102,7 @@
 		F4E018CA3136B82E6C20F3FC /* term-hanlu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 66274F8F8CC6405B34C0B2B3 /* term-hanlu-dark.webp */; };
 		F6A15AE5557D83E1BC4BE94D /* term-xiaoshu-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 4C1C5648B77B83D4BF81E684 /* term-xiaoshu-light.webp */; };
 		F981B4DE21313B9FEF498D8F /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB9C4AE5A725053B6669BE /* NotificationScheduler.swift */; };
+		FA392D3F4927DAD1B73975EB /* daily-verse-365.json in Resources */ = {isa = PBXBuildFile; fileRef = 577100ECF4EF8C4A8E8C7720 /* daily-verse-365.json */; };
 		FBC728FB875915DBE3258CC4 /* term-daxue-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 753B33F7EB21F8D8EDB08902 /* term-daxue-light.webp */; };
 		FD8A1B4315AA9DCFB96590A4 /* term-dongzhi-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = A0647A04C25ED1304C0F512D /* term-dongzhi-light.webp */; };
 		FE19DF04A322B214D41B8214 /* term-xiaoxue-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = A534A57307D77F8FF056755E /* term-xiaoxue-light.webp */; };
@@ -158,6 +159,7 @@
 		4E01E5FD3A472709A3070703 /* term-liqiu-dark.webp */ = {isa = PBXFileReference; path = "term-liqiu-dark.webp"; sourceTree = "<group>"; };
 		52FB17E2AF5C589BEC33442D /* MergedDayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergedDayCard.swift; sourceTree = "<group>"; };
 		53440398036BA0EDC34D3233 /* term-lichun-light.webp */ = {isa = PBXFileReference; path = "term-lichun-light.webp"; sourceTree = "<group>"; };
+		577100ECF4EF8C4A8E8C7720 /* daily-verse-365.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "daily-verse-365.json"; sourceTree = "<group>"; };
 		58F5934239AE0A120AB9897D /* NotFoundScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundScreen.swift; sourceTree = "<group>"; };
 		5AB42F14E1F9EB220E08ABBA /* term-qiufen-light.webp */ = {isa = PBXFileReference; path = "term-qiufen-light.webp"; sourceTree = "<group>"; };
 		5CA2D75D50D2C9CC1E4ED5F8 /* CountdownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownUITests.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				0A786E1D2A93C1C738FF1D38 /* app-strings.json */,
+				577100ECF4EF8C4A8E8C7720 /* daily-verse-365.json */,
 				802AC8FB41F46CD669710BC0 /* daodejing.json */,
 				32D566C65C78A240C691BAE2 /* explain-pages.json */,
 				959F210520429077B9C4352B /* PACK-NOTES.md */,
@@ -672,6 +675,7 @@
 				F07A61DBBD9A1D0BDD7BDB96 /* Assets.xcassets in Resources */,
 				01A30CE8E171928F97BF0D0E /* PACK-NOTES.md in Resources */,
 				C9B83D27C0DFD1FFE57EE07D /* app-strings.json in Resources */,
+				FA392D3F4927DAD1B73975EB /* daily-verse-365.json in Resources */,
 				8341D6E9A4D87EB31E3DC658 /* daodejing.json in Resources */,
 				88AC02A604222A6B6DA56B13 /* explain-pages.json in Resources */,
 				34AC68259657AD79C06097F8 /* index.json in Resources */,

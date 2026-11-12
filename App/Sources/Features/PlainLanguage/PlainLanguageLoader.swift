@@ -13,6 +13,7 @@ enum PlainLanguageLoader {
         return PlainLanguagePack(quotes: decode(DaodejingQuote.self, "daodejing"),
                                  terms: decode(PlainTerm.self, "yi-ji-mapping"),
                                  pages: decode(ExplainPage.self, "explain-pages"),
-                                 panelTerms: decode(PanelTerm.self, "panel-terms"))
+                                 panelTerms: decode(PanelTerm.self, "panel-terms"),
+                                 dailyVerses: decode(DailyVerse.self, "daily-verse-365"))
     }
 }

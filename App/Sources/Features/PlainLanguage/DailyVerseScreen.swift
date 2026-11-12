@@ -10,7 +10,7 @@ struct DailyVerseScreen: View {
     @State private var shareData: Data?
 
     private var almanac: AlmanacDay { state.almanac(date) }
-    private var quote: DaodejingQuote? { state.plainLanguage.quote(for: date) }
+    private var quote: DaodejingQuote? { state.plainLanguage.dailyQuote(for: date) }
 
     var body: some View {
         ScrollView {

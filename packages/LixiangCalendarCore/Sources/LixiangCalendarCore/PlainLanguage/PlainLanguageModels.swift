@@ -75,12 +75,14 @@ public struct PlainLanguagePack: Sendable {
     public var terms: [PlainTerm]
     public var pages: [ExplainPage]
     public var panelTerms: [PanelTerm]
+    public var dailyVerses: [DailyVerse]
 
-    public init(quotes: [DaodejingQuote] = [], terms: [PlainTerm] = [], pages: [ExplainPage] = [], panelTerms: [PanelTerm] = []) {
+    public init(quotes: [DaodejingQuote] = [], terms: [PlainTerm] = [], pages: [ExplainPage] = [], panelTerms: [PanelTerm] = [], dailyVerses: [DailyVerse] = []) {
         self.quotes = quotes.sorted { $0.chapter < $1.chapter }
         self.terms = terms
         self.pages = pages
         self.panelTerms = panelTerms
+        self.dailyVerses = dailyVerses
     }
 
     private var termIndex: [String: PlainTerm] {
@@ -100,6 +102,15 @@ public struct PlainLanguagePack: Sendable {
 
     public func page(titled title: String) -> ExplainPage? { pageIndex[title] }
     public func panelTerm(named term: String) -> PanelTerm? { panelTerms.first { $0.term == term } }
+
+    /// 优先按日期（yyyy-MM-dd）；缺日回退 81 章轮换
+    public func dailyQuote(for date: LocalDate) -> DaodejingQuote? {
+        let key = String(format: "%04d-%02d-%02d", date.year, date.month, date.day)
+        if let v = dailyVerses.first(where: { $0.date == key }) {
+            return DaodejingQuote(chapter: v.chapter, quote: v.quote, zh: v.zh, en: v.en, source: v.source)
+        }
+        return quote(for: date)
+    }
     public func term(named name: String) -> PlainTerm? { termIndex[name] }
 }
 
@@ -112,5 +123,19 @@ public struct PanelTerm: Codable, Hashable, Sendable, Identifiable {
     public var en: String
     public init(term: String, domain: String, zh: String, en: String) {
         self.term = term; self.domain = domain; self.zh = zh; self.en = en
+    }
+}
+
+
+/// 365 每日一句（build12）：按日期取；缺日回退 81 章轮换
+public struct DailyVerse: Codable, Hashable, Sendable {
+    public var date: String
+    public var chapter: Int
+    public var quote: String
+    public var zh: String
+    public var en: String
+    public var source: String
+    public init(date: String, chapter: Int, quote: String, zh: String, en: String, source: String) {
+        self.date = date; self.chapter = chapter; self.quote = quote; self.zh = zh; self.en = en; self.source = source
     }
 }
