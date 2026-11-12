@@ -177,23 +177,50 @@ struct FestivalsScreen: View {
 
 
     private func rowView(_ row: ContentIndexRow) -> some View {
-        D1Card(padding: 14) {
-            VStack(alignment: .leading, spacing: 5) {
-                HStack {
-                    Text("\(row.date.month)月\(row.date.day)日").d1SerifFont(18).foregroundStyle(theme.ink)
-                    Text("农历\(state.lunar(row.date).monthDayText)").d1Font(10).foregroundStyle(theme.ink3)
-                    Spacer()
-                    D1Chip(text: chipText(row), tone: chipTone(row))
+        D1Card(padding: 12) {
+            HStack(alignment: .top, spacing: 10) {
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(LinearGradient(colors: [theme.accent.opacity(0.22), theme.amber.opacity(0.18)], startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .frame(width: 52, height: 52)
+                    .overlay(Image(systemName: categoryIcon(row)).d1Font(18).foregroundStyle(theme.accentStrong))
+                VStack(alignment: .leading, spacing: 4) {
+                    HStack(spacing: 6) {
+                        Text(categoryText(row)).d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
+                        Text("\(row.date.month)月\(row.date.day)日").d1Font(10).foregroundStyle(theme.ink3)
+                        Text("农历\(state.lunar(row.date).monthDayText)").d1Font(9).foregroundStyle(theme.ink3)
+                        Spacer()
+                        D1Chip(text: chipText(row), tone: chipTone(row))
+                    }
+                    HStack(spacing: 6) {
+                        Text(row.title).d1Font(14, weight: .semibold).foregroundStyle(theme.ink)
+                        if let region = row.regionLabel { Text(region).d1Font(9).foregroundStyle(theme.ink3) }
+                    }
+                    Text(row.teaser).d1Font(10.5).foregroundStyle(theme.ink2).lineLimit(2)
                 }
-                HStack(spacing: 6) {
-                    Text(row.title).d1Font(14, weight: .semibold).foregroundStyle(theme.ink)
-                    if let region = row.regionLabel { Text(region).d1Font(9).foregroundStyle(theme.ink3) }
-                }
-                Text(row.teaser).d1Font(11).foregroundStyle(theme.ink2)
             }
         }
         .accessibilityElement(children: .ignore)
         .accessibilityLabel("\(row.title)，\(row.date.month)月\(row.date.day)日，农历\(state.lunar(row.date).monthDayText)，\(chipText(row))")
+    }
+
+    private func categoryText(_ row: ContentIndexRow) -> String {
+        switch row.kind {
+        case "solarTerm": return "节气"
+        case "ritual": return "仪式"
+        case "tao": return "道历"
+        case "foto": return "佛历"
+        default: return "传统"
+        }
+    }
+
+    private func categoryIcon(_ row: ContentIndexRow) -> String {
+        switch row.kind {
+        case "solarTerm": return "sun.max"
+        case "ritual": return "flame"
+        case "tao": return "sparkles"
+        case "foto": return "leaf"
+        default: return "book.closed"
+        }
     }
 
     // MARK: - 状态
