@@ -24,6 +24,7 @@
 		1629C356400EA80AC0230377 /* term-chunfen-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9E46D276C8454B5F2B627E9D /* term-chunfen-dark.webp */; };
 		1A1E4569802C9C82B49DCD50 /* CompassScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E3D415B91FC17BB2DC101 /* CompassScreen.swift */; };
 		1C3E44270BD730F9387A2EB0 /* term-lichun-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = AD13A95C89E26C3DDB673171 /* term-lichun-dark.webp */; };
+		1F63527EDE38F66DB0136B34 /* DayPagerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3D35A18BB7E520F7DA264 /* DayPagerScreen.swift */; };
 		20471DE68552AC8A82A8CA00 /* term-liqiu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 4E01E5FD3A472709A3070703 /* term-liqiu-dark.webp */; };
 		212221995A57C62963FD82E8 /* term-lixia-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 19E4E142D34E8582F95AE3F2 /* term-lixia-dark.webp */; };
 		23248C8DCA4707C173FD42C0 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBC8822DEACC03E39B84C18 /* Components.swift */; };
@@ -173,6 +174,7 @@
 		788133271B6E5AF4FAB99C4D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		79A2A855655307AEE28CA382 /* term-lixia-light.webp */ = {isa = PBXFileReference; path = "term-lixia-light.webp"; sourceTree = "<group>"; };
 		7B9C20186EACBA4CB717F53C /* AnniversaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryScreen.swift; sourceTree = "<group>"; };
+		7EC3D35A18BB7E520F7DA264 /* DayPagerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPagerScreen.swift; sourceTree = "<group>"; };
 		7FFB1AB9AD6D73783C65CF8F /* term-shuangjiang-light.webp */ = {isa = PBXFileReference; path = "term-shuangjiang-light.webp"; sourceTree = "<group>"; };
 		802AC8FB41F46CD669710BC0 /* daodejing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = daodejing.json; sourceTree = "<group>"; };
 		81A39542DB40883A371F0FA4 /* term-qingming-light.webp */ = {isa = PBXFileReference; path = "term-qingming-light.webp"; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				A67673C4C6D224600887711F /* DayDetailScreen.swift */,
+				7EC3D35A18BB7E520F7DA264 /* DayPagerScreen.swift */,
 			);
 			path = Day;
 			sourceTree = "<group>";
@@ -746,6 +749,7 @@
 				C09B4B8A66D701731DC2F3D5 /* D1Theme.swift in Sources */,
 				EEBBCDC7C99A7DC33D9C188C /* DailyVerseScreen.swift in Sources */,
 				E297799EA5E91021225B8A5D /* DayDetailScreen.swift in Sources */,
+				1F63527EDE38F66DB0136B34 /* DayPagerScreen.swift in Sources */,
 				39FF8AB136D23EB770A2BC4A /* DebugOptions.swift in Sources */,
 				3ABC80F5BA369812487AA63D /* FestivalsScreen.swift in Sources */,
 				05C5E1385679BE460EAAFB01 /* GlossaryScreen.swift in Sources */,

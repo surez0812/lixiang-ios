@@ -29,7 +29,7 @@ struct RootView: View {
                         MonthScreen()
                             .navigationDestination(for: Route.self) { route in
                                 switch route {
-                                case .day(let date): DayDetailScreen(date: date)
+                                case .day(let date): DayPagerScreen(initial: date)
                                 case .content(let id): ContentScreen(contentID: id)
                                 case .compass(let date): CompassScreen(date: date)
                                 case .sourceLicense(let slug): SourceLicenseScreen(slug: slug, entry: nil, item: ContentFixtures.all.first { $0.id == slug })
