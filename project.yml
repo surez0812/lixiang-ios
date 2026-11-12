@@ -32,6 +32,8 @@ targets:
     sources:
       - path: App/Sources
       - path: App/Resources
+      - path: App/Resources/daily-classics
+        type: folder
     settings:
       base:
         INFOPLIST_FILE: App/Info.plist
