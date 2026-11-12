@@ -77,6 +77,7 @@
 		C1B98895E926C69E63714686 /* term-shuangjiang-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 7FFB1AB9AD6D73783C65CF8F /* term-shuangjiang-light.webp */; };
 		C42DA4FFA18E4643BBF3DAB8 /* D1Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C26FF99F8DAD23254156A9 /* D1Motion.swift */; };
 		C9B83D27C0DFD1FFE57EE07D /* app-strings.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A786E1D2A93C1C738FF1D38 /* app-strings.json */; };
+		D1C64F907F59F9D179E53235 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FE729CE209807C668F1D5 /* WeatherService.swift */; };
 		D1E2439EB3417175761B5D6E /* AnniversaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9C20186EACBA4CB717F53C /* AnniversaryScreen.swift */; };
 		D24C10D10021AC12C799911E /* term-lichun-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 53440398036BA0EDC34D3233 /* term-lichun-light.webp */; };
 		D4153F3C247FD0A0028975FE /* term-dashu-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6F33B4CF88B56F5ECE472BFE /* term-dashu-light.webp */; };
@@ -216,6 +217,7 @@
 		E1BD67E5E2CFFCBF2F70AD9D /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
 		E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownLogicTests.swift; sourceTree = "<group>"; };
 		E4B41AF2DA2B791A5B93B941 /* AnniversaryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryStore.swift; sourceTree = "<group>"; };
+		EB4FE729CE209807C668F1D5 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		EBEC52C3B831CECA16873A0B /* term-liqiu-light.webp */ = {isa = PBXFileReference; path = "term-liqiu-light.webp"; sourceTree = "<group>"; };
 		EC9492B2CCAF48E208A8A83E /* term-qingming-dark.webp */ = {isa = PBXFileReference; path = "term-qingming-dark.webp"; sourceTree = "<group>"; };
 		F0CB1916448ADAA608EBB07F /* term-yushui-light.webp */ = {isa = PBXFileReference; path = "term-yushui-light.webp"; sourceTree = "<group>"; };
@@ -471,6 +473,7 @@
 				8920B47FF6A86C27E9FA6FBC /* Root */,
 				D91064416199FE16C03AF681 /* Seasonal */,
 				43DEDB2A6FE976E0A69E96DE /* Settings */,
+				A6FFE7DD64CD326AA605D42D /* Weather */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -498,6 +501,14 @@
 				52FB17E2AF5C589BEC33442D /* MergedDayCard.swift */,
 			);
 			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		A6FFE7DD64CD326AA605D42D /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				EB4FE729CE209807C668F1D5 /* WeatherService.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		B9834D8C903BFA35AD98FBEB /* LixiangTests */ = {
@@ -752,6 +763,7 @@
 				B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */,
 				E5D415369673F786EDD6C1FF /* ShareCard.swift in Sources */,
 				4961A2C52973706909F582C0 /* SourceLicenseScreen.swift in Sources */,
+				D1C64F907F59F9D179E53235 /* WeatherService.swift in Sources */,
 				3573D1CD2174094EECE5F737 /* WebViewReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

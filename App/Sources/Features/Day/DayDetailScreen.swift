@@ -25,6 +25,7 @@ struct DayDetailScreen: View {
                     .frame(maxWidth: 520)
                     .frame(maxWidth: .infinity)
                 religionYearRows
+                weatherPanel
                 shichenBandCard.id("shichen-band")
                 if showAllHours { expandedHourRows }
                 HStack(spacing: 10) {
@@ -265,6 +266,44 @@ struct DayDetailScreen: View {
         guard idx < almanac.hours.count else { return "—" }
         let h = almanac.hours[idx]
         return "\(h.ganZhi)时 \(h.startMinute)–\(h.endMinute)"
+    }
+
+    @State private var weather = WeatherService()
+
+    @ViewBuilder
+    private var weatherPanel: some View {
+        D1Card(padding: 12) {
+            VStack(alignment: .leading, spacing: 6) {
+                HStack {
+                    Text("天气 · 上海").d1Font(11, weight: .semibold).foregroundStyle(theme.ink)
+                    Spacer()
+                    switch weather.state {
+                    case .loading: ProgressView().controlSize(.mini)
+                    default:
+                        Button("刷新") { Task { await weather.refresh(force: true) } }
+                            .d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
+                    }
+                }
+                switch weather.state {
+                case .idle, .loading:
+                    Text("加载中…").d1Font(10).foregroundStyle(theme.ink3)
+                case .loaded(let snap, let cached):
+                    HStack(alignment: .firstTextBaseline, spacing: 8) {
+                        Text("\(Int(snap.temperature.rounded()))°").d1SerifFont(24, weight: .semibold).foregroundStyle(theme.ink)
+                        Text(WeatherCode.text(snap.code)).d1Font(11).foregroundStyle(theme.ink2)
+                        Spacer()
+                        Text(cached ? "缓存" : "刚刚").d1Font(8).foregroundStyle(theme.ink3)
+                    }
+                    Text("天气数据：Open-Meteo（CC BY 4.0）· 仅供参考")
+                        .d1Font(8).foregroundStyle(theme.ink3)
+                case .failed(let msg):
+                    Text(msg).d1Font(10).foregroundStyle(theme.ink3)
+                    Text("天气数据：Open-Meteo（CC BY 4.0）").d1Font(8).foregroundStyle(theme.ink3)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .task { await weather.refresh() }
     }
 
     @ViewBuilder
