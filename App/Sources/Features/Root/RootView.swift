@@ -11,6 +11,7 @@ enum Route: Hashable {
     case explain(String)
     case about
     case privacy(String)
+    case dailyVerseSample
 }
 
 struct RootView: View {
@@ -49,6 +50,7 @@ struct RootView: View {
                                 case .glossary: GlossaryScreen()
                                 case .explain(let term): ExplainPageView(page: state.plainLanguage.pages.first { $0.term == term } ?? ExplainPage(term: term, title: term, what: "", means: "", how: "", en: ""))
                                 case .about: AboutScreen()
+                                case .dailyVerseSample: DailyVerseSampleScreen()
                                 case .privacy(let resource): PrivacyScreen(title: resource == "privacy" ? "隐私政策" : (resource == "user-terms" ? "用户条款" : "支持"), resource: resource)
                                 }
                             }
@@ -65,6 +67,7 @@ struct RootView: View {
                                 case .glossary: GlossaryScreen()
                                 case .explain(let term): ExplainPageView(page: state.plainLanguage.pages.first { $0.term == term } ?? ExplainPage(term: term, title: term, what: "", means: "", how: "", en: ""))
                                 case .about: AboutScreen()
+                                case .dailyVerseSample: DailyVerseSampleScreen()
                                 case .privacy(let resource): PrivacyScreen(title: resource == "privacy" ? "隐私政策" : (resource == "user-terms" ? "用户条款" : "支持"), resource: resource)
                                 default: EmptyView()
                                 }
@@ -115,6 +118,10 @@ struct RootView: View {
         if screen == "privacy" {
             selectedTab = 0
             monthPath = NavigationPath([Route.about, Route.privacy("privacy")])
+        }
+        if screen == "dailyversesample" {
+            selectedTab = 0
+            monthPath = NavigationPath([Route.dailyVerseSample])
         }
         if screen == "glossary" {
             selectedTab = 0

@@ -70,6 +70,7 @@
 		87B2E99B4716578E1A332A70 /* term-xiazhi-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 12206DA975CCAA192C120378 /* term-xiazhi-dark.webp */; };
 		88AC02A604222A6B6DA56B13 /* explain-pages.json in Resources */ = {isa = PBXBuildFile; fileRef = 32D566C65C78A240C691BAE2 /* explain-pages.json */; };
 		8BB451AA7F94B4A78B5DAB11 /* term-lidong-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = BBF1AB9B0EC5E4CE0D2509D2 /* term-lidong-light.webp */; };
+		907F2BA4D3277A3A8CE1347D /* DailyVerseDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BF5B7DAC670CF275F5EBE6 /* DailyVerseDetailScreen.swift */; };
 		9128527BA893D4502A4803D8 /* support.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E444FF645AE7F3A22E391DD /* support.md */; };
 		92074A4284A05F5901632EEA /* user-terms.md in Resources */ = {isa = PBXBuildFile; fileRef = C2D792603555272E28D9B5A9 /* user-terms.md */; };
 		93C793A1B1C540AF14C3916C /* privacy.md in Resources */ = {isa = PBXBuildFile; fileRef = 06939DF97090A6AE27F8D2B5 /* privacy.md */; };
@@ -96,6 +97,7 @@
 		D507607132B54CE0FA8FB68F /* term-jingzhe-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2FD914FFECCDF37F1AC1E7A7 /* term-jingzhe-light.webp */; };
 		D6BB3E4557832EDA34A4049A /* term-qingming-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 81A39542DB40883A371F0FA4 /* term-qingming-light.webp */; };
 		D72938DE70C223F16FFA2BA2 /* term-qiufen-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 82A7FE90A6AE81510C21B7EA /* term-qiufen-dark.webp */; };
+		D829CC2393B232E519F47E52 /* verse-sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 68C53940B804042FB239F5C4 /* verse-sample.json */; };
 		D8BD6F43DAA9EA7ED2998655 /* term-qingming-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = EC9492B2CCAF48E208A8A83E /* term-qingming-dark.webp */; };
 		DB399901F304F065E3786A65 /* term-lixia-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 79A2A855655307AEE28CA382 /* term-lixia-light.webp */; };
 		E05FA66FE85242F9A338E215 /* term-mangzhong-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 8E466F07982E0E749DF30BB5 /* term-mangzhong-light.webp */; };
@@ -162,6 +164,7 @@
 		2F45670C7EBCED160EB64043 /* term-mangzhong-dark.webp */ = {isa = PBXFileReference; path = "term-mangzhong-dark.webp"; sourceTree = "<group>"; };
 		2FD6BD4029A2CD7592D87F9D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		2FD914FFECCDF37F1AC1E7A7 /* term-jingzhe-light.webp */ = {isa = PBXFileReference; path = "term-jingzhe-light.webp"; sourceTree = "<group>"; };
+		30BF5B7DAC670CF275F5EBE6 /* DailyVerseDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyVerseDetailScreen.swift; sourceTree = "<group>"; };
 		32D566C65C78A240C691BAE2 /* explain-pages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "explain-pages.json"; sourceTree = "<group>"; };
 		330495F2BC88AE2B1DF83E0A /* panel-terms-v2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "panel-terms-v2.json"; sourceTree = "<group>"; };
 		33A5E29B6388FD57AFC7E148 /* quanshan-365.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "quanshan-365.json"; sourceTree = "<group>"; };
@@ -183,6 +186,7 @@
 		64D409C092D16755B254E3B6 /* FestivalsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalsScreen.swift; sourceTree = "<group>"; };
 		66274F8F8CC6405B34C0B2B3 /* term-hanlu-dark.webp */ = {isa = PBXFileReference; path = "term-hanlu-dark.webp"; sourceTree = "<group>"; };
 		687253ACB0BDCBD36126D15B /* HeadingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingProvider.swift; sourceTree = "<group>"; };
+		68C53940B804042FB239F5C4 /* verse-sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "verse-sample.json"; sourceTree = "<group>"; };
 		69CA72858D41F13FE75567AF /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		6BA7F1CFC0ABE2C986E68A4C /* term-lidong-dark.webp */ = {isa = PBXFileReference; path = "term-lidong-dark.webp"; sourceTree = "<group>"; };
 		6D5FAB3FD05EDDE5ACAA2B79 /* SourceLicenseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLicenseScreen.swift; sourceTree = "<group>"; };
@@ -391,6 +395,7 @@
 				959F210520429077B9C4352B /* PACK-NOTES.md */,
 				330495F2BC88AE2B1DF83E0A /* panel-terms-v2.json */,
 				B46683D1B299DC8E45740FF0 /* panel-terms.json */,
+				68C53940B804042FB239F5C4 /* verse-sample.json */,
 				A4C31060949F18440152CA0C /* yi-ji-mapping.json */,
 			);
 			path = PlainLanguage;
@@ -524,6 +529,7 @@
 			isa = PBXGroup;
 			children = (
 				E4C60C2822AEE9EFD59BAFE6 /* DailyClassics.swift */,
+				30BF5B7DAC670CF275F5EBE6 /* DailyVerseDetailScreen.swift */,
 				A7E35CC6BD3E4FA162178AF1 /* DailyVerseScreen.swift */,
 				A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */,
 				81A8C7FBB0FB0D22F603ACE5 /* PlainLanguageLoader.swift */,
@@ -785,6 +791,7 @@
 				7F14335FCC882A7BC0A65A63 /* term-yushui-dark.webp in Resources */,
 				28B63808C389E5CF663BADA6 /* term-yushui-light.webp in Resources */,
 				92074A4284A05F5901632EEA /* user-terms.md in Resources */,
+				D829CC2393B232E519F47E52 /* verse-sample.json in Resources */,
 				B668AB8E6D28CB01980E620D /* yi-ji-mapping.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -810,6 +817,7 @@
 				C42DA4FFA18E4643BBF3DAB8 /* D1Motion.swift in Sources */,
 				C09B4B8A66D701731DC2F3D5 /* D1Theme.swift in Sources */,
 				4C85C72CF4424B380152BFBF /* DailyClassics.swift in Sources */,
+				907F2BA4D3277A3A8CE1347D /* DailyVerseDetailScreen.swift in Sources */,
 				EEBBCDC7C99A7DC33D9C188C /* DailyVerseScreen.swift in Sources */,
 				E297799EA5E91021225B8A5D /* DayDetailScreen.swift in Sources */,
 				1F63527EDE38F66DB0136B34 /* DayPagerScreen.swift in Sources */,
