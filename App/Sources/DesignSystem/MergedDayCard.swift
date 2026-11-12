@@ -11,6 +11,7 @@ struct MergedDayCard: View {
     let date: LocalDate
     var variant: Variant = .month
     var onQuoteTap: () -> Void = {}
+    var onDayTap: (() -> Void)? = nil
 
     private var almanac: AlmanacDay { state.almanac(date) }
     private var quote: DaodejingQuote? { state.plainLanguage.quote(for: date) }
@@ -26,6 +27,18 @@ struct MergedDayCard: View {
         .background(theme.paper)
         .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: 28).strokeBorder(theme.line.opacity(0.55), lineWidth: 0.8))
+        .overlay(alignment: .top) {
+            if let onDayTap {
+                Button(action: onDayTap) {
+                    Color.clear
+                        .frame(maxWidth: .infinity)
+                        .frame(height: imageHeight + 110)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("查看当日详情")
+            }
+        }
         .accessibilityElement(children: .contain)
     }
 
@@ -55,7 +68,7 @@ struct MergedDayCard: View {
     private var content: some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack(alignment: .top, spacing: 10) {
-                Text("\(date.day)").d1SerifFont(108).foregroundStyle(theme.ink)
+                Text("\(date.day)").d1SerifFont(60).foregroundStyle(theme.ink)
                 VStack(alignment: .leading, spacing: 4) {
                     Text(titleText).d1SerifFont(22, weight: .semibold).foregroundStyle(theme.ink)
                         .lineLimit(1).minimumScaleFactor(0.7)
@@ -63,6 +76,17 @@ struct MergedDayCard: View {
                         .d1Font(11).foregroundStyle(theme.ink3).lineLimit(2)
                 }
                 Spacer(minLength: 0)
+            }
+            if !almanac.festivals.isEmpty {
+                HStack(spacing: 6) {
+                    ForEach(Array(almanac.festivals.prefix(2)), id: \.self) { f in
+                        Text("节日 · \(f)").d1Font(9, weight: .medium)
+                            .foregroundStyle(theme.solarTermText)
+                            .padding(.horizontal, 8).padding(.vertical, 3)
+                            .background(theme.solarTermText.opacity(0.12), in: Capsule())
+                    }
+                }
+                .accessibilityLabel("节日：\(almanac.festivals.prefix(2).joined(separator: "、"))")
             }
             HStack(spacing: 6) {
                 D1Chip(text: "宜 \(almanac.yi.prefix(3).joined(separator: " "))", tone: .yi)
@@ -76,7 +100,7 @@ struct MergedDayCard: View {
                         HStack {
                             Text("《道德经》第\(quote.chapter)章").d1Font(10.5).foregroundStyle(theme.ink3)
                             Spacer()
-                            Text("今天怎么用").d1Font(10.5, weight: .semibold).foregroundStyle(theme.accentStrong)
+                            Text("每日一句").d1Font(10.5, weight: .semibold).foregroundStyle(theme.accentStrong)
                             Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.accentStrong)
                         }
                     }

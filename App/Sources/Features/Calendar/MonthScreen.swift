@@ -11,6 +11,7 @@ struct MonthScreen: View {
     @State private var showQuote = false
     @State private var selectedDate: LocalDate?
     @State private var countdownDetail: Anniversary?
+    @State private var showDayDetail = false
 
     private var today: LocalDate { state.today }
     private var almanac: AlmanacDay { state.almanac(today) }
@@ -20,9 +21,13 @@ struct MonthScreen: View {
         ScrollView {
             VStack(spacing: 12) {
                 topNav
-                MergedDayCard(date: today, variant: .month) { showQuote = true }
-                    .frame(maxWidth: 520)
-                    .frame(maxWidth: .infinity)
+                MergedDayCard(date: today, variant: .month) {
+                    showQuote = true
+                } onDayTap: {
+                    showDayDetail = true
+                }
+                .frame(maxWidth: 520)
+                .frame(maxWidth: .infinity)
                 monthCard
                 Color.clear.frame(height: 120).id("bottom")
             }
@@ -57,10 +62,13 @@ struct MonthScreen: View {
             #endif
         }
         .sheet(isPresented: $showQuote) {
-            if let q = state.plainLanguage.quote(for: today) { QuoteSheet(quote: q, date: today) }
+            DailyVerseScreen(date: today)
         }
         .navigationDestination(item: $countdownDetail) { item in
             CountdownDetailScreen(item: item)
+        }
+        .navigationDestination(isPresented: $showDayDetail) {
+            DayDetailScreen(date: today)
         }
     }
 

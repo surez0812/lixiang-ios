@@ -92,6 +92,7 @@
 		E45A8CEE80896053D2B022B5 /* term-jingzhe-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 0BF92BA24C3F132137773A22 /* term-jingzhe-dark.webp */; };
 		E7442BA38E4D02D147A0BBF9 /* term-bailu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 1EAB5A46223FEE61B2436B89 /* term-bailu-dark.webp */; };
 		E8BCF05ACF99CE149BA62397 /* term-mangzhong-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2F45670C7EBCED160EB64043 /* term-mangzhong-dark.webp */; };
+		EEBBCDC7C99A7DC33D9C188C /* DailyVerseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E35CC6BD3E4FA162178AF1 /* DailyVerseScreen.swift */; };
 		F07A61DBBD9A1D0BDD7BDB96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C64D67EB5AF32E2A27AD8D4 /* Assets.xcassets */; };
 		F3CF09131452D1FCE3C34BE9 /* AnniversaryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B41AF2DA2B791A5B93B941 /* AnniversaryStore.swift */; };
 		F4E018CA3136B82E6C20F3FC /* term-hanlu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 66274F8F8CC6405B34C0B2B3 /* term-hanlu-dark.webp */; };
@@ -191,6 +192,7 @@
 		A4C31060949F18440152CA0C /* yi-ji-mapping.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "yi-ji-mapping.json"; sourceTree = "<group>"; };
 		A534A57307D77F8FF056755E /* term-xiaoxue-light.webp */ = {isa = PBXFileReference; path = "term-xiaoxue-light.webp"; sourceTree = "<group>"; };
 		A67673C4C6D224600887711F /* DayDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailScreen.swift; sourceTree = "<group>"; };
+		A7E35CC6BD3E4FA162178AF1 /* DailyVerseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyVerseScreen.swift; sourceTree = "<group>"; };
 		A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryScreen.swift; sourceTree = "<group>"; };
 		AD13A95C89E26C3DDB673171 /* term-lichun-dark.webp */ = {isa = PBXFileReference; path = "term-lichun-dark.webp"; sourceTree = "<group>"; };
 		ADAAB3BFDF1D630B7D7D5361 /* A11yOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A11yOrderTests.swift; sourceTree = "<group>"; };
@@ -474,6 +476,7 @@
 		9258FBD4E617D0769D3A930A /* PlainLanguage */ = {
 			isa = PBXGroup;
 			children = (
+				A7E35CC6BD3E4FA162178AF1 /* DailyVerseScreen.swift */,
 				A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */,
 				81A8C7FBB0FB0D22F603ACE5 /* PlainLanguageLoader.swift */,
 				BF18D4E9C43A87557F5B8AFB /* PlainTermSheet.swift */,
@@ -727,6 +730,7 @@
 				0CEF0F2879B005C3EE4C6495 /* D1Font.swift in Sources */,
 				C42DA4FFA18E4643BBF3DAB8 /* D1Motion.swift in Sources */,
 				C09B4B8A66D701731DC2F3D5 /* D1Theme.swift in Sources */,
+				EEBBCDC7C99A7DC33D9C188C /* DailyVerseScreen.swift in Sources */,
 				E297799EA5E91021225B8A5D /* DayDetailScreen.swift in Sources */,
 				39FF8AB136D23EB770A2BC4A /* DebugOptions.swift in Sources */,
 				3ABC80F5BA369812487AA63D /* FestivalsScreen.swift in Sources */,

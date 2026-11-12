@@ -66,7 +66,7 @@ struct DayDetailScreen: View {
             PlainTermSheet(term: box.term)
         }
         .sheet(isPresented: $showQuoteSheet) {
-            if let q = state.plainLanguage.quote(for: date) { QuoteSheet(quote: q, date: date) }
+            DailyVerseScreen(date: date)
         }
         .onAppear {
             #if DEBUG

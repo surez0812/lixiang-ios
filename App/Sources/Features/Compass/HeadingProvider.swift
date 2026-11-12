@@ -11,6 +11,7 @@ final class HeadingProvider: NSObject, ObservableObject {
     @Published private(set) var authorized = false
 
     private let manager = CLLocationManager()
+    private var lastApply = Date.distantPast
 
     var isAvailable: Bool {
         if case .trueNorth = basis { return true }
@@ -50,6 +51,9 @@ final class HeadingProvider: NSObject, ObservableObject {
     }
 
     private func apply(accuracy: Double, trueHeading: Double, magneticHeading: Double) {
+        let now = Date()
+        guard now.timeIntervalSince(lastApply) >= 0.12 else { return }   // 10Hz/120ms 节流
+        lastApply = now
         guard accuracy >= 0 else { basis = .needsCalibration; return }
         if authorized, trueHeading >= 0 {
             basis = .trueNorth(trueHeading)
