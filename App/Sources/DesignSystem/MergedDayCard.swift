@@ -14,7 +14,7 @@ struct MergedDayCard: View {
 
     private var almanac: AlmanacDay { state.almanac(date) }
     private var quote: DaodejingQuote? { state.plainLanguage.quote(for: date) }
-    private var imageHeight: CGFloat { variant == .month ? 235 : 265 }
+    private var imageHeight: CGFloat { variant == .month ? 313 : 353 }
     private var minHeight: CGFloat { variant == .month ? 400 : 440 }
 
     var body: some View {

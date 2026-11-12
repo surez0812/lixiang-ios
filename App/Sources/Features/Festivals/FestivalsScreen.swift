@@ -100,7 +100,7 @@ struct FestivalsScreen: View {
                 if !upcoming.isEmpty {
                     monthSections(rows: upcoming, bannerMonth: bannerRow?.date)
                 }
-                if !groups.past.isEmpty {
+                if false && !groups.past.isEmpty {
                     Section {
                         if expandPast {
                             monthSections(rows: groups.past, bannerMonth: nil)

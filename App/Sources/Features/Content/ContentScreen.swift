@@ -25,7 +25,6 @@ struct ContentScreen: View {
                 }
                 header
                 bodyContent
-                sourceLink
                 footer
             }
             .padding(.horizontal, 16)
