@@ -18,7 +18,8 @@ enum DailyClassic: String, CaseIterable, Identifiable {
 
 struct ClassicVerse: Decodable {
     var date: String
-    var chapter: Int?
+    var chapter: String?   // 内容包为「第1章」字符串
+    var classic: String?
     var quote: String
     var zh: String?
     var en: String?
@@ -51,7 +52,8 @@ final class DailyClassicsStore {
     }
 
     private func map(_ v: ClassicVerse) -> DaodejingQuote {
-        DaodejingQuote(chapter: v.chapter ?? 1, quote: v.quote, zh: v.zh ?? "", en: v.en ?? "", source: v.source ?? "公版")
+        let num = Int((v.chapter ?? "").filter { $0.isNumber }) ?? 1
+        return DaodejingQuote(chapter: num, quote: v.quote, zh: v.zh ?? "", en: v.en ?? "", source: v.source ?? "公版")
     }
 
     private func load(_ classic: DailyClassic) -> [String: ClassicVerse] {
