@@ -44,6 +44,14 @@ final class WeatherService: ObservableObject {
         }
     }
 
+    /// 看门狗：10s 仍 loading → 失败态（缓存优先），避免无限 loading
+    func timeoutIfLoading() {
+        if case .loading = state {
+            if let cached = loadCache() { state = .loaded(cached, cached: true) }
+            else { state = .failed("天气暂不可用，请重试") }
+        }
+    }
+
     private func loadCache() -> WeatherSnapshot? {
         guard let d = UserDefaults.standard.data(forKey: cacheKey) else { return nil }
         return try? JSONDecoder().decode(WeatherSnapshot.self, from: d)

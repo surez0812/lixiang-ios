@@ -15,8 +15,8 @@ struct MergedDayCard: View {
 
     private var almanac: AlmanacDay { state.almanac(date) }
     private var quote: DaodejingQuote? { state.plainLanguage.quote(for: date) }
-    private var imageHeight: CGFloat { variant == .month ? 313 : 353 }
-    private var minHeight: CGFloat { variant == .month ? 400 : 440 }
+    private var imageHeight: CGFloat { 333 }
+    private var minHeight: CGFloat { 500 }
 
     var body: some View {
         VStack(spacing: -34) {
@@ -72,8 +72,8 @@ struct MergedDayCard: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(titleText).d1SerifFont(22, weight: .semibold).foregroundStyle(theme.ink)
                         .lineLimit(1).minimumScaleFactor(0.7)
-                    Text("\(date.year)年\(date.month)月\(date.day)日")
-                        .d1Font(12, weight: .medium).foregroundStyle(theme.ink2)
+                    Text(verbatim: "\(date.year)年\(date.month)月\(date.day)日")
+                        .d1Font(13, weight: .medium).foregroundStyle(theme.ink2)
                     Text("星期\(date.weekdayChinese) · 农历\(almanac.lunar.monthDayText) · \(almanac.lunar.yearGanZhi)年 \(almanac.lunar.monthGanZhi)月 \(almanac.lunar.dayGanZhi)日")
                         .d1Font(10.5).foregroundStyle(theme.ink3).lineLimit(2)
                 }
@@ -97,17 +97,15 @@ struct MergedDayCard: View {
                 .accessibilityLabel("节日：\(almanac.festivals.joined(separator: "、"))")
             }
             VStack(alignment: .leading, spacing: 3) {
-                Text("宜：\(almanac.yi.prefix(8).joined(separator: " "))")
-                    .d1Font(10).foregroundStyle(theme.yiText).lineLimit(2)
-                Text("忌：\(almanac.ji.prefix(8).joined(separator: " "))")
-                    .d1Font(10).foregroundStyle(theme.jiBg).lineLimit(2)
+                HStack(spacing: 5) { Circle().fill(theme.yiText).frame(width: 5, height: 5); Text("宜：\(almanac.yi.prefix(8).joined(separator: " "))").d1Font(10.5).foregroundStyle(theme.ink).lineLimit(2) }
+                HStack(spacing: 5) { Circle().fill(theme.red).frame(width: 5, height: 5); Text("忌：\(almanac.ji.prefix(8).joined(separator: " "))").d1Font(10.5).foregroundStyle(theme.red).lineLimit(2) }
             }
             .accessibilityLabel("宜：\(almanac.yi.prefix(8).joined(separator: "、"))；忌：\(almanac.ji.prefix(8).joined(separator: "、"))")
             if let quote {
                 Divider().overlay(theme.line)
                 Button(action: onQuoteTap) {
                     VStack(alignment: .leading, spacing: 3) {
-                        Text(quote.quote).d1Kaiti(20).foregroundStyle(theme.ink).lineLimit(2)
+                        Text(quote.quote).d1Kaiti(15).foregroundStyle(theme.ink).lineLimit(2)
                         HStack {
                             Text("《道德经》第\(quote.chapter)章").d1Font(10.5).foregroundStyle(theme.ink3)
                             Spacer()

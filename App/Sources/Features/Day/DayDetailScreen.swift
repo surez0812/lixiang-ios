@@ -353,7 +353,14 @@ struct DayDetailScreen: View {
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .task { await weather.refresh() }
+        .task {
+            let watchdog = Task {
+                try? await Task.sleep(nanoseconds: 10_000_000_000)
+                weather.timeoutIfLoading()
+            }
+            await weather.refresh()
+            watchdog.cancel()
+        }
     }
 
     @ViewBuilder
