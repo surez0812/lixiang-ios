@@ -178,29 +178,34 @@ struct FestivalsScreen: View {
 
     private func rowView(_ row: ContentIndexRow) -> some View {
         D1Card(padding: 12) {
-            HStack(alignment: .top, spacing: 10) {
-                RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .fill(LinearGradient(colors: [theme.accent.opacity(0.22), theme.amber.opacity(0.18)], startPoint: .topLeading, endPoint: .bottomTrailing))
-                    .frame(width: 52, height: 52)
-                    .overlay(Image(systemName: categoryIcon(row)).d1Font(18).foregroundStyle(theme.accentStrong))
-                VStack(alignment: .leading, spacing: 4) {
-                    HStack(spacing: 6) {
-                        Text(categoryText(row)).d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
-                        Text("\(row.date.month)月\(row.date.day)日").d1Font(10).foregroundStyle(theme.ink3)
-                        Text("农历\(state.lunar(row.date).monthDayText)").d1Font(9).foregroundStyle(theme.ink3)
-                        Spacer()
-                        D1Chip(text: chipText(row), tone: chipTone(row))
-                    }
-                    HStack(spacing: 6) {
-                        Text(row.title).d1Font(14, weight: .semibold).foregroundStyle(theme.ink)
-                        if let region = row.regionLabel { Text(region).d1Font(9).foregroundStyle(theme.ink3) }
-                    }
-                    Text(row.teaser).d1Font(10.5).foregroundStyle(theme.ink2).lineLimit(2)
+            HStack(spacing: 10) {
+                VStack(spacing: 0) {
+                    Text("\(row.date.month)月").d1Font(9).foregroundStyle(theme.ink3)
+                    Text("\(row.date.day)").d1SerifFont(24, weight: .semibold).foregroundStyle(theme.ink)
+                    Text(relativeDays(row)).d1Font(8).foregroundStyle(theme.accentStrong)
+                }
+                .frame(width: 64, height: 64)
+                .background(theme.accent.opacity(0.10), in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(row.title).d1SerifFont(17, weight: .semibold).foregroundStyle(theme.ink).lineLimit(1)
+                    Text(row.teaser).d1Font(10).foregroundStyle(theme.ink2).lineLimit(1)
+                }
+                Spacer(minLength: 4)
+                VStack(alignment: .trailing, spacing: 4) {
+                    Text(chipText(row)).d1Font(9).foregroundStyle(theme.ink3)
+                    Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.ink3)
                 }
             }
+            .frame(minHeight: 64)
         }
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(row.title)，\(row.date.month)月\(row.date.day)日，农历\(state.lunar(row.date).monthDayText)，\(chipText(row))")
+        .accessibilityLabel("\(row.title)，\(row.date.month)月\(row.date.day)日，\(chipText(row))")
+    }
+
+    private func relativeDays(_ row: ContentIndexRow) -> String {
+        guard let d = row.days else { return "" }
+        if d == 0 { return "今天" }
+        return "\(d) 天"
     }
 
     private func categoryText(_ row: ContentIndexRow) -> String {
