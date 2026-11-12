@@ -21,9 +21,7 @@ struct DayDetailScreen: View {
         ScrollViewReader { proxy in
         ScrollView {
             VStack(spacing: 12) {
-                MergedDayCard(date: date, variant: .day) { showQuoteSheet = true }
-                    .frame(maxWidth: 520)
-                    .frame(maxWidth: .infinity)
+                compactHero
                 denseCore
                 collapseRow(1, "民俗 · 未来 10 天", icon: "book.closed") { festivalWindowPanel }
                 collapseRow(2, "天气 · 上海", icon: "cloud.sun") { weatherPanel }
@@ -306,6 +304,24 @@ struct DayDetailScreen: View {
     }
 
     @ViewBuilder
+    private var compactHero: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack(spacing: 6) {
+                Text("\(date.year)年\(date.month)月\(date.day)日").d1Font(11, weight: .semibold).foregroundStyle(theme.ink2)
+                Text("农历\(almanac.lunar.monthDayText)").d1Font(10).foregroundStyle(theme.ink3)
+                Spacer()
+                if let q = state.plainLanguage.dailyQuote(for: date) {
+                    Button { showQuoteSheet = true } label: {
+                        Text("「\(q.quote)」").d1Kaiti(13).foregroundStyle(theme.accentStrong).lineLimit(1)
+                    }.buttonStyle(.plain)
+                }
+            }
+        }
+        .padding(.horizontal, 14).padding(.vertical, 8)
+        .background(theme.card, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    }
+
+    @ViewBuilder
     private var denseCore: some View {
         D1Card(padding: 14) {
             VStack(alignment: .leading, spacing: 9) {
@@ -317,9 +333,11 @@ struct DayDetailScreen: View {
                 }
                 shichenBandCard
                 HStack(spacing: 5) { Circle().fill(theme.yiText).frame(width: 5, height: 5)
-                    Text("宜：\(almanac.yi.prefix(15).joined(separator: " "))").d1Font(9.5).foregroundStyle(theme.ink).lineLimit(2) }
+                    Text("宜：\(almanac.yi.prefix(showAllYiJi ? 30 : 5).joined(separator: " "))").d1Font(9.5).foregroundStyle(theme.ink).lineLimit(showAllYiJi ? 4 : 1) }
                 HStack(spacing: 5) { Circle().fill(theme.red).frame(width: 5, height: 5)
-                    Text("忌：\(almanac.ji.prefix(6).joined(separator: " "))").d1Font(9.5).foregroundStyle(theme.red).lineLimit(2) }
+                    Text("忌：\(almanac.ji.prefix(showAllYiJi ? 20 : 3).joined(separator: " "))").d1Font(9.5).foregroundStyle(theme.red).lineLimit(showAllYiJi ? 4 : 1) }
+                Button(showAllYiJi ? "收起宜忌" : "展开全部宜忌") { withAnimation { showAllYiJi.toggle() } }
+                    .d1Font(8.5, weight: .semibold).foregroundStyle(theme.accentStrong)
                 Divider().overlay(theme.line)
                 LazyVGrid(columns: [GridItem(.flexible(), spacing: 6), GridItem(.flexible(), spacing: 6)], spacing: 2) {
                     denseInfo("五行", almanac.wuXing)
@@ -479,6 +497,7 @@ struct DayDetailScreen: View {
     @State private var showZhishen = false
     @State private var openSection: Int? = nil
     @State private var openTerm: String? = nil
+    @State private var showAllYiJi = false
 
     @ViewBuilder
     private var zhishenRow: some View {
