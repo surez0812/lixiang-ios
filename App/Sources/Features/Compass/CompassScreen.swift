@@ -78,8 +78,8 @@ struct CompassScreen: View {
             #if DEBUG
             if state.debug.compassSheet {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-                    selectedTerm = state.plainLanguage.panelTermMatching("值神")
-                        ?? state.plainLanguage.panelTermMatching("喜神")
+                    selectedTerm = state.plainLanguage.panelTermMatching("司命")
+                        ?? state.plainLanguage.panelTermMatching("煞")
                         ?? state.plainLanguage.panelTerms.first
                 }
             }
