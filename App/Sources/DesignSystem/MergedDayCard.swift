@@ -59,6 +59,15 @@ struct MergedDayCard: View {
         .background(theme.paper)
         .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: 28).strokeBorder(theme.line.opacity(0.55), lineWidth: 0.8))
+        .overlay(alignment: .topLeading) {
+            Text(SolarTermPentad.badge(for: date, engine: state.engine) ?? (almanac.solarTerm ?? "节气"))
+                .d1Font(10, weight: .semibold).foregroundStyle(theme.cream)
+                .padding(.horizontal, 10).padding(.vertical, 5)
+                .background(theme.accent, in: Capsule())
+                .padding(12)
+                .zIndex(20)
+                .accessibilityHidden(true)
+        }
         .overlay(alignment: .top) {
             if let onDayTap {
                 Button(action: onDayTap) {
@@ -78,14 +87,6 @@ struct MergedDayCard: View {
             SeasonalImage(date: date)
                 .frame(width: w, height: cardHeight)
                 .clipped()
-                .overlay(alignment: .topLeading) {
-                    if let badge = SolarTermPentad.badge(for: date, engine: state.engine) {
-                        Text(badge).d1Font(10, weight: .semibold).foregroundStyle(theme.cream)
-                            .padding(.horizontal, 10).padding(.vertical, 5)
-                            .background(theme.accent, in: Capsule()).padding(12)
-                            .accessibilityHidden(true)
-                    }
-                }
                 .overlay(alignment: .bottom) {
                     LinearGradient(colors: [theme.paper.opacity(0), theme.paper],
                                    startPoint: .top, endPoint: .bottom)
