@@ -25,6 +25,12 @@ struct DayDetailScreen: View {
                     .frame(maxWidth: 520)
                     .frame(maxWidth: .infinity)
                 coreSection
+                #if DEBUG
+                if state.debug.expandTerms || state.debug.debugTerms != nil {
+                    Text("DEBUG terms: expand=\(openSection == 3) term=\(openTerm ?? "-")")
+                        .d1Font(9, weight: .bold).foregroundStyle(theme.red)
+                }
+                #endif
                 collapseRow(0, "时辰宜忌", icon: "clock") { shichenBandCard.id("shichen-band"); if showAllHours { expandedHourRows } }
                 collapseRow(1, "民俗 · 未来 10 天", icon: "book.closed") { festivalWindowPanel }
                 collapseRow(2, "天气 · 上海", icon: "cloud.sun") { weatherPanel }
@@ -37,7 +43,9 @@ struct DayDetailScreen: View {
         .onAppear {
             #if DEBUG
             if state.debug.expandShichen { showAllHours = true }
-            if state.debug.expandTerms { openSection = 3; showAllHours = true }
+            if state.debug.expandTerms {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { openSection = 3; showAllHours = true }
+            }
             if let t = state.debug.debugTerms {
                 openSection = 3
                 openTerm = t

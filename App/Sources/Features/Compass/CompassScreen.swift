@@ -77,7 +77,11 @@ struct CompassScreen: View {
             heading.start()
             #if DEBUG
             if state.debug.compassSheet {
-                selectedTerm = state.plainLanguage.panelTermMatching("值神") ?? state.plainLanguage.panelTerms.first
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                    selectedTerm = state.plainLanguage.panelTermMatching("值神")
+                        ?? state.plainLanguage.panelTermMatching("喜神")
+                        ?? state.plainLanguage.panelTerms.first
+                }
             }
             #endif
         }
@@ -86,7 +90,7 @@ struct CompassScreen: View {
         .sheet(item: $selectedTerm) { term in
             VStack(alignment: .leading, spacing: 10) {
                 Text(term.term).d1SerifFont(22).foregroundStyle(theme.ink)
-                Text(term.zh).d1Font(13).foregroundStyle(theme.ink2).lineSpacing(3)
+                Text(term.detailText).d1Font(13).foregroundStyle(theme.ink2).lineSpacing(3)
                 Text(term.en).d1Font(11).foregroundStyle(theme.ink3)
                 Spacer()
             }.padding(20).presentationDetents([.height(260)])
@@ -295,7 +299,7 @@ struct CompassScreen: View {
     private func legendColumn(_ deities: [Deity], includeSha: Bool) -> some View {
         VStack(spacing: 0) {
             ForEach(deities) { deity in
-                Button { selectedTerm = state.plainLanguage.panelTerm(named: deity.title) } label: { legendRow(deity) }
+                Button { selectedTerm = state.plainLanguage.panelTermMatching(deity.title) } label: { legendRow(deity) }
                     .buttonStyle(.plain)
             }
             if includeSha { shaRow }
