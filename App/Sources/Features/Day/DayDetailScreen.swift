@@ -335,7 +335,9 @@ struct DayDetailScreen: View {
                     }
                 }
                 switch weather.state {
-                case .idle, .loading:
+                case .idle:
+                    Text("点「刷新」加载天气").d1Font(10).foregroundStyle(theme.ink3)
+                case .loading:
                     Text("加载中…").d1Font(10).foregroundStyle(theme.ink3)
                 case .loaded(let snap, let cached):
                     HStack(alignment: .firstTextBaseline, spacing: 8) {
@@ -353,14 +355,7 @@ struct DayDetailScreen: View {
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .task {
-            let watchdog = Task {
-                try? await Task.sleep(nanoseconds: 10_000_000_000)
-                weather.timeoutIfLoading()
-            }
-            await weather.refresh()
-            watchdog.cancel()
-        }
+        .task { await weather.refresh() }
     }
 
     @ViewBuilder
