@@ -27,7 +27,7 @@ struct MergedDayCard: View {
                 .frame(maxWidth: .infinity)
                 .frame(height: cardHeight)
                 .clipped()
-            LinearGradient(colors: [.clear, theme.paper.opacity(0.93), theme.paper],
+            LinearGradient(colors: [.clear, theme.paper.opacity(0.97), theme.paper],
                            startPoint: .top, endPoint: .bottom)
                 .frame(height: cardHeight - contentTop)
                 .offset(y: contentTop)
@@ -85,7 +85,7 @@ struct MergedDayCard: View {
                     Text(verbatim: "\(date.year)年\(date.month)月\(date.day)日")
                         .d1Font(13, weight: .semibold).foregroundStyle(theme.ink2)
                     Text("星期\(date.weekdayChinese) · 农历\(almanac.lunar.monthDayText) · \(almanac.lunar.yearGanZhi)年 \(almanac.lunar.monthGanZhi)月 \(almanac.lunar.dayGanZhi)日")
-                        .d1Font(10).foregroundStyle(theme.ink3).lineLimit(2)
+                        .d1Font(10, weight: .medium).foregroundStyle(theme.ink).lineLimit(2)
                 }
                 Spacer(minLength: 0)
             }
