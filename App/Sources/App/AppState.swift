@@ -28,6 +28,9 @@ final class AppState: ObservableObject {
     @Published var weekStart: WeekStart {
         didSet { UserDefaults.standard.set(weekStart.rawValue, forKey: Keys.weekStart) }
     }
+    @Published var dailyClassic: String {
+        didSet { UserDefaults.standard.set(dailyClassic, forKey: "lx.daily.classic") }
+    }
     @Published var showVernacular: Bool {
         didSet { UserDefaults.standard.set(showVernacular, forKey: Keys.vernacular) }
     }
@@ -67,6 +70,7 @@ final class AppState: ObservableObject {
         } else {
             self.theme = AppTheme(rawValue: UserDefaults.standard.string(forKey: Keys.theme) ?? "") ?? .system
         }
+        self.dailyClassic = UserDefaults.standard.string(forKey: "lx.daily.classic") ?? "dao"
         self.showTaoCalendar = UserDefaults.standard.bool(forKey: Keys.taoCalendar)
         self.showFotoCalendar = UserDefaults.standard.bool(forKey: Keys.fotoCalendar)
         if let stored = UserDefaults.standard.object(forKey: Keys.weekStart) as? Int, let w = WeekStart(rawValue: stored) {
