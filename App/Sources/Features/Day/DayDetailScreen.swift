@@ -27,6 +27,7 @@ struct DayDetailScreen: View {
                 shichenBandCard.id("shichen-band")
                 if showAllHours { expandedHourRows }
                 HStack(spacing: 10) {
+                    NavigationLink(value: Route.compass(date)) { miniCard(icon: "safari", title: "吉神罗盘", sub: compassSub) }
                         .buttonStyle(.plain)
                     NavigationLink(value: Route.content("dongzhi")) { miniCard(icon: "book.closed", title: "民俗 · 冬至", sub: "查看内容") }
                         .buttonStyle(.plain)
