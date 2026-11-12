@@ -125,11 +125,6 @@ struct MergedDayCard: View {
                 }
                 .accessibilityLabel("节日：\(almanac.festivals.joined(separator: "、"))")
             }
-            VStack(alignment: .leading, spacing: 3) {
-                HStack(spacing: 5) { Circle().fill(theme.yiText).frame(width: 5, height: 5); Text("宜：\(almanac.yi.prefix(8).joined(separator: " "))").d1Font(10.5).foregroundStyle(theme.ink).lineLimit(2) }
-                HStack(spacing: 5) { Circle().fill(theme.red).frame(width: 5, height: 5); Text("忌：\(almanac.ji.prefix(8).joined(separator: " "))").d1Font(10.5).foregroundStyle(theme.red).lineLimit(2) }
-            }
-            .accessibilityLabel("宜：\(almanac.yi.prefix(8).joined(separator: "、"))；忌：\(almanac.ji.prefix(8).joined(separator: "、"))")
             if let quote {
                 Divider().overlay(theme.line)
                 Button(action: onQuoteTap) {

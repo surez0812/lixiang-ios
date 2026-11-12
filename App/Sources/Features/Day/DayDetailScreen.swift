@@ -332,7 +332,12 @@ struct DayDetailScreen: View {
             ForEach(names.prefix(6), id: \.self) { n in
                 Button { withAnimation { openTerm = openTerm == n ? nil : n } } label: {
                     VStack(alignment: .leading, spacing: 3) {
-                        Text(n).d1Font(11, weight: .medium).foregroundStyle(theme.ink)
+                        HStack {
+                            Text(n).d1Font(11, weight: .medium).foregroundStyle(theme.ink)
+                            Spacer()
+                            Text(openTerm == n ? "收起" : "白话").d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
+                            Image(systemName: openTerm == n ? "chevron.up" : "chevron.down").d1Font(8).foregroundStyle(theme.ink3)
+                        }
                         if openTerm == n, let t = state.plainLanguage.panelTerm(named: n) {
                             Text(t.zh).d1Font(10.5).foregroundStyle(theme.ink2)
                             Text(t.en).d1Font(9).foregroundStyle(theme.ink3)
