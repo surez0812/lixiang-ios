@@ -26,6 +26,7 @@ struct DayDetailScreen: View {
                     .frame(maxWidth: .infinity)
                 religionYearRows
                 weatherPanel
+                festivalWindowPanel
                 shichenBandCard.id("shichen-band")
                 if showAllHours { expandedHourRows }
                 HStack(spacing: 10) {
@@ -269,6 +270,36 @@ struct DayDetailScreen: View {
     }
 
     @State private var weather = WeatherService()
+
+    private var upcomingFestivals: [(LocalDate, String)] {
+        var out: [(LocalDate, String)] = []
+        for off in 0...10 {
+            let d = date.adding(days: off)
+            for f in state.almanac(d).festivals { out.append((d, f)) }
+        }
+        return Array(out.prefix(5))
+    }
+
+    @ViewBuilder
+    private var festivalWindowPanel: some View {
+        D1Card(padding: 12) {
+            VStack(alignment: .leading, spacing: 6) {
+                Text("民俗 · 未来 10 天").d1Font(11, weight: .semibold).foregroundStyle(theme.ink)
+                if upcomingFestivals.isEmpty {
+                    Text("未来 10 天暂无民俗内容").d1Font(10).foregroundStyle(theme.ink3)
+                } else {
+                    ForEach(Array(upcomingFestivals.enumerated()), id: \.offset) { _, item in
+                        HStack(spacing: 8) {
+                            Text("\(item.0.month)/\(item.0.day)").d1Font(10).foregroundStyle(theme.ink3).frame(width: 44, alignment: .leading)
+                            Text(item.1).d1Font(11).foregroundStyle(theme.ink)
+                            Spacer()
+                        }
+                    }
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+    }
 
     @ViewBuilder
     private var weatherPanel: some View {
