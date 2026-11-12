@@ -12,6 +12,7 @@ struct MergedDayCard: View {
     var variant: Variant = .month
     var onQuoteTap: () -> Void = {}
     var onDayTap: (() -> Void)? = nil
+    @State private var shareData: Data?
 
     private var almanac: AlmanacDay { state.almanac(date) }
     private var quote: DaodejingQuote? { state.plainLanguage.dailyQuote(for: date) }
@@ -30,6 +31,19 @@ struct MergedDayCard: View {
                     .clipped()
                 content
             }
+            HStack(spacing: 4) {
+                if let shareData {
+                    ShareLink(item: ShareableJPEG(data: shareData),
+                              preview: SharePreview("历象 · 今日", image: Image(uiImage: UIImage(data: shareData) ?? UIImage()))) {
+                        Image(systemName: "square.and.arrow.up").d1Font(12).foregroundStyle(theme.ink2)
+                            .frame(width: 34, height: 34)
+                            .background(theme.paper.opacity(0.8), in: Circle())
+                    }
+                    .accessibilityLabel("分享今日")
+                }
+            }
+            .padding(.trailing, 70)
+            .padding(.top, 12)
             Image("seal-round-01")
                 .resizable().scaledToFit()
                 .frame(width: 50, height: 50)
@@ -49,6 +63,9 @@ struct MergedDayCard: View {
             }
         }
         .accessibilityElement(children: .contain)
+        .onAppear {
+            shareData = ShareCardRenderer.jpegData(date: date, almanac: almanac, quote: quote, theme: theme)
+        }
     }
 
     private var image: some View {
@@ -81,7 +98,7 @@ struct MergedDayCard: View {
                     Text(titleText).d1SerifFont(22, weight: .semibold).foregroundStyle(theme.ink)
                         .lineLimit(1).minimumScaleFactor(0.7)
                     Text(verbatim: "\(date.year)年\(date.month)月\(date.day)日")
-                        .d1Font(13, weight: .semibold).foregroundStyle(theme.ink2)
+                        .d1Font(15, weight: .semibold).foregroundStyle(theme.ink2)
                     Text("星期\(date.weekdayChinese) · 农历\(almanac.lunar.monthDayText) · \(almanac.lunar.yearGanZhi)年 \(almanac.lunar.monthGanZhi)月 \(almanac.lunar.dayGanZhi)日")
                         .d1Font(10, weight: .medium).foregroundStyle(theme.ink).lineLimit(2)
                 }
@@ -112,17 +129,20 @@ struct MergedDayCard: View {
             if let quote {
                 Divider().overlay(theme.line)
                 Button(action: onQuoteTap) {
-                    VStack(alignment: .leading, spacing: 3) {
-                        Text("每日一句 · \(quote.source)").d1Font(9).foregroundStyle(theme.ink3)
-                        Text(quote.quote).d1Kaiti(20).foregroundStyle(theme.ink).lineLimit(2)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("每日一句 · \(quote.source)").d1Font(9).foregroundStyle(theme.cream.opacity(0.85))
+                        Text(quote.quote).d1Kaiti(20).foregroundStyle(theme.cream).lineLimit(2)
                         HStack(spacing: 14) {
-                            Text("《道德经》第\(quote.chapter)章 · \(quote.source)").d1Font(9).foregroundStyle(theme.ink3)
+                            Text("《道德经》第\(quote.chapter)章").d1Font(9).foregroundStyle(theme.cream.opacity(0.8))
                             Spacer()
-                            Text("读解释").d1Font(10.5, weight: .semibold).foregroundStyle(theme.accentStrong)
-                            Text("分享").d1Font(10.5, weight: .semibold).foregroundStyle(theme.accentStrong)
+                            Text("读解释").d1Font(10.5, weight: .semibold).foregroundStyle(theme.cream)
+                            Text("分享").d1Font(10.5, weight: .semibold).foregroundStyle(theme.cream)
                         }
                     }
-                }.buttonStyle(.plain)
+                }
+                .buttonStyle(.plain)
+                .padding(10)
+                .background(LinearGradient(colors: [theme.quote1, theme.quote2], startPoint: .topLeading, endPoint: .bottomTrailing), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
                 .accessibilityLabel("今日道德经，第\(quote.chapter)章")
             }
         }
