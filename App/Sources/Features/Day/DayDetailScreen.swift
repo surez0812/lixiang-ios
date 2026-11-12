@@ -334,7 +334,7 @@ struct DayDetailScreen: View {
                     VStack(alignment: .leading, spacing: 3) {
                         Text(n).d1Font(11, weight: .medium).foregroundStyle(theme.ink)
                         if openTerm == n, let t = state.plainLanguage.panelTerm(named: n) {
-                            Text(t.zh).d1Font(10.5).foregroundStyle(theme.ink2)
+                            Text(t.detailText).d1Font(10.5).foregroundStyle(theme.ink2)
                             Text(t.en).d1Font(9).foregroundStyle(theme.ink3)
                         }
                     }
@@ -365,7 +365,7 @@ struct DayDetailScreen: View {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(n).d1Font(11).foregroundStyle(theme.ink)
                         if openTerm == n, let t = state.plainLanguage.panelTerm(named: n) {
-                            Text(t.zh).d1Font(10.5).foregroundStyle(theme.ink2)
+                            Text(t.detailText).d1Font(10.5).foregroundStyle(theme.ink2)
                             Text(t.en).d1Font(9).foregroundStyle(theme.ink3)
                         }
                     }
@@ -390,7 +390,7 @@ struct DayDetailScreen: View {
                     }
                     if showZhishen {
                         if let t = state.plainLanguage.panelTerm(named: almanac.tianShen) {
-                            Text(t.zh).d1Font(12).foregroundStyle(theme.ink2).lineSpacing(3)
+                            Text(t.detailText).d1Font(12).foregroundStyle(theme.ink2).lineSpacing(3)
                             Text(t.en).d1Font(10).foregroundStyle(theme.ink3)
                         } else {
                             Text("暂无白话解释").d1Font(11).foregroundStyle(theme.ink3)

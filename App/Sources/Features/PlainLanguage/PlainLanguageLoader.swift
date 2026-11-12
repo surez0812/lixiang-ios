@@ -10,10 +10,16 @@ enum PlainLanguageLoader {
                   let decoded = try? JSONDecoder().decode([T].self, from: data) else { return [] }
             return decoded
         }
+        func mergedPanelTerms() -> [PanelTerm] {
+            var byTerm: [String: PanelTerm] = [:]
+            for t in decode(PanelTerm.self, "panel-terms") { byTerm[t.term] = t }
+            for t in decode(PanelTerm.self, "panel-terms-v2") { byTerm[t.term] = t }
+            return Array(byTerm.values)
+        }
         return PlainLanguagePack(quotes: decode(DaodejingQuote.self, "daodejing"),
                                  terms: decode(PlainTerm.self, "yi-ji-mapping"),
                                  pages: decode(ExplainPage.self, "explain-pages"),
-                                 panelTerms: decode(PanelTerm.self, "panel-terms"),
+                                 panelTerms: mergedPanelTerms(),
                                  dailyVerses: decode(DailyVerse.self, "daily-verse-365"))
     }
 }

@@ -29,6 +29,7 @@
 		212221995A57C62963FD82E8 /* term-lixia-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 19E4E142D34E8582F95AE3F2 /* term-lixia-dark.webp */; };
 		23248C8DCA4707C173FD42C0 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBC8822DEACC03E39B84C18 /* Components.swift */; };
 		254DCB71305786C25EDC249A /* MonthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D421ECD4E84365F75CC9AE9A /* MonthScreen.swift */; };
+		283B625826F644EB439047DF /* panel-terms-v2.json in Resources */ = {isa = PBXBuildFile; fileRef = 330495F2BC88AE2B1DF83E0A /* panel-terms-v2.json */; };
 		28B63808C389E5CF663BADA6 /* term-yushui-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = F0CB1916448ADAA608EBB07F /* term-yushui-light.webp */; };
 		2C9BE37A13A514E7A5460B1E /* term-liqiu-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = EBEC52C3B831CECA16873A0B /* term-liqiu-light.webp */; };
 		2D00D99D1387375BE42582B5 /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B22B8217B80F457AAD77E0 /* ShareSheetView.swift */; };
@@ -153,6 +154,7 @@
 		2FD6BD4029A2CD7592D87F9D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		2FD914FFECCDF37F1AC1E7A7 /* term-jingzhe-light.webp */ = {isa = PBXFileReference; path = "term-jingzhe-light.webp"; sourceTree = "<group>"; };
 		32D566C65C78A240C691BAE2 /* explain-pages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "explain-pages.json"; sourceTree = "<group>"; };
+		330495F2BC88AE2B1DF83E0A /* panel-terms-v2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "panel-terms-v2.json"; sourceTree = "<group>"; };
 		389AF72D672C91DBCA828762 /* term-bailu-light.webp */ = {isa = PBXFileReference; path = "term-bailu-light.webp"; sourceTree = "<group>"; };
 		394CECFF9A4B8BC313B10DFD /* CountdownDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownDetailScreen.swift; sourceTree = "<group>"; };
 		3A92AD321EBABAB28F289053 /* term-daxue-dark.webp */ = {isa = PBXFileReference; path = "term-daxue-dark.webp"; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 				802AC8FB41F46CD669710BC0 /* daodejing.json */,
 				32D566C65C78A240C691BAE2 /* explain-pages.json */,
 				959F210520429077B9C4352B /* PACK-NOTES.md */,
+				330495F2BC88AE2B1DF83E0A /* panel-terms-v2.json */,
 				B46683D1B299DC8E45740FF0 /* panel-terms.json */,
 				A4C31060949F18440152CA0C /* yi-ji-mapping.json */,
 			);
@@ -696,6 +699,7 @@
 				8341D6E9A4D87EB31E3DC658 /* daodejing.json in Resources */,
 				88AC02A604222A6B6DA56B13 /* explain-pages.json in Resources */,
 				34AC68259657AD79C06097F8 /* index.json in Resources */,
+				283B625826F644EB439047DF /* panel-terms-v2.json in Resources */,
 				546FA2AA90BEEBA9A678A60D /* panel-terms.json in Resources */,
 				93C793A1B1C540AF14C3916C /* privacy.md in Resources */,
 				B66B7CB3C24367AD7205410A /* seal-round-01@2x.png in Resources */,

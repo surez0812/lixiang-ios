@@ -121,8 +121,36 @@ public struct PanelTerm: Codable, Hashable, Sendable, Identifiable {
     public var domain: String
     public var zh: String
     public var en: String
-    public init(term: String, domain: String, zh: String, en: String) {
+    public var meaning: String?
+    public var impact: String?
+    public var usage: String?
+    public init(term: String, domain: String, zh: String, en: String,
+                meaning: String? = nil, impact: String? = nil, usage: String? = nil) {
         self.term = term; self.domain = domain; self.zh = zh; self.en = en
+        self.meaning = meaning; self.impact = impact; self.usage = usage
+    }
+    enum CodingKeys: String, CodingKey { case term, domain, zh, en, meaning, impact, usage }
+    /// v1（zh/en）与 v2（meaning/impact/usage/en）兼容
+    public init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        term = try c.decode(String.self, forKey: .term)
+        domain = (try? c.decode(String.self, forKey: .domain)) ?? "其他"
+        meaning = try? c.decodeIfPresent(String.self, forKey: .meaning)
+        impact = try? c.decodeIfPresent(String.self, forKey: .impact)
+        usage = try? c.decodeIfPresent(String.self, forKey: .usage)
+        let oldZh = (try? c.decodeIfPresent(String.self, forKey: .zh)) ?? nil
+        zh = oldZh ?? meaning ?? ""
+        en = (try? c.decodeIfPresent(String.self, forKey: .en)) ?? ""
+    }
+    /// UI：三段（含义/影响/怎么用），缺项回退旧 zh
+    public var detailText: String {
+        if let meaning, !meaning.isEmpty {
+            var parts = ["含义：\(meaning)"]
+            if let impact, !impact.isEmpty { parts.append("影响：\(impact)") }
+            if let usage, !usage.isEmpty { parts.append("怎么用：\(usage)") }
+            return parts.joined(separator: "\n")
+        }
+        return zh
     }
 }
 
