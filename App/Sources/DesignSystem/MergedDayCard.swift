@@ -72,8 +72,10 @@ struct MergedDayCard: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(titleText).d1SerifFont(22, weight: .semibold).foregroundStyle(theme.ink)
                         .lineLimit(1).minimumScaleFactor(0.7)
-                    Text("星期\(date.weekdayChinese) · \(almanac.lunar.yearGanZhi)年 · \(almanac.lunar.monthGanZhi)月 · \(almanac.lunar.dayGanZhi)日")
-                        .d1Font(11).foregroundStyle(theme.ink3).lineLimit(2)
+                    Text("\(date.year)年\(date.month)月\(date.day)日")
+                        .d1Font(12, weight: .medium).foregroundStyle(theme.ink2)
+                    Text("星期\(date.weekdayChinese) · 农历\(almanac.lunar.monthDayText) · \(almanac.lunar.yearGanZhi)年 \(almanac.lunar.monthGanZhi)月 \(almanac.lunar.dayGanZhi)日")
+                        .d1Font(10.5).foregroundStyle(theme.ink3).lineLimit(2)
                 }
                 Spacer(minLength: 0)
             }
@@ -94,10 +96,13 @@ struct MergedDayCard: View {
                 }
                 .accessibilityLabel("节日：\(almanac.festivals.joined(separator: "、"))")
             }
-            HStack(spacing: 6) {
-                D1Chip(text: "宜 \(almanac.yi.prefix(3).joined(separator: " "))", tone: .yi)
-                D1Chip(text: "忌 \(almanac.ji.prefix(3).joined(separator: " "))", tone: .ji)
+            VStack(alignment: .leading, spacing: 3) {
+                Text("宜：\(almanac.yi.prefix(8).joined(separator: " "))")
+                    .d1Font(10).foregroundStyle(theme.yiText).lineLimit(2)
+                Text("忌：\(almanac.ji.prefix(8).joined(separator: " "))")
+                    .d1Font(10).foregroundStyle(theme.jiBg).lineLimit(2)
             }
+            .accessibilityLabel("宜：\(almanac.yi.prefix(8).joined(separator: "、"))；忌：\(almanac.ji.prefix(8).joined(separator: "、"))")
             if let quote {
                 Divider().overlay(theme.line)
                 Button(action: onQuoteTap) {
