@@ -16,6 +16,10 @@ struct DailyVerseScreen: View {
         ScrollView {
             VStack(spacing: 12) {
                 MergedDayCard(date: date, variant: .day) { }
+                if quote == nil {
+                    Text("今日经典暂缺").d1Font(12).foregroundStyle(theme.ink3)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
                 if let quote {
                     D1Card(padding: 14) {
                         VStack(alignment: .leading, spacing: 8) {
