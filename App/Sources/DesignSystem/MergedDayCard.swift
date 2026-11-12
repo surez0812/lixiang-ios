@@ -13,6 +13,7 @@ struct MergedDayCard: View {
     var onQuoteTap: () -> Void = {}
     var onDayTap: (() -> Void)? = nil
     @State private var shareData: Data?
+    @State private var showShare = false
 
     private var almanac: AlmanacDay { state.almanac(date) }
     private var quote: DaodejingQuote? { state.plainLanguage.dailyQuote(for: date) }
@@ -32,15 +33,18 @@ struct MergedDayCard: View {
                 content
             }
             HStack(spacing: 4) {
-                if let shareData {
-                    ShareLink(item: ShareableJPEG(data: shareData),
-                              preview: SharePreview("历象 · 今日", image: Image(uiImage: UIImage(data: shareData) ?? UIImage()))) {
-                        Image(systemName: "square.and.arrow.up").d1Font(12).foregroundStyle(theme.ink2)
-                            .frame(width: 34, height: 34)
-                            .background(theme.paper.opacity(0.8), in: Circle())
+                Button {
+                    if shareData == nil {
+                        shareData = ShareCardRenderer.jpegData(date: date, almanac: almanac, quote: quote, theme: theme)
                     }
-                    .accessibilityLabel("分享今日")
+                    showShare = shareData != nil
+                } label: {
+                    Image(systemName: "square.and.arrow.up").d1Font(12).foregroundStyle(theme.ink2)
+                        .frame(width: 34, height: 34)
+                        .background(theme.paper.opacity(0.8), in: Circle())
                 }
+                .buttonStyle(.plain)
+                .accessibilityLabel("分享今日")
             }
             .padding(.trailing, 70)
             .padding(.top, 12)
@@ -63,8 +67,8 @@ struct MergedDayCard: View {
             }
         }
         .accessibilityElement(children: .contain)
-        .onAppear {
-            shareData = ShareCardRenderer.jpegData(date: date, almanac: almanac, quote: quote, theme: theme)
+        .sheet(isPresented: $showShare) {
+            ShareSheetView(data: shareData)
         }
     }
 

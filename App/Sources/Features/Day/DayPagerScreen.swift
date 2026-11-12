@@ -9,7 +9,7 @@ struct DayPagerScreen: View {
 
     init(initial: LocalDate) {
         _selection = State(initialValue: initial)
-        dates = (-7...7).map { initial.adding(days: $0) }
+        dates = (-3...3).map { initial.adding(days: $0) }
     }
 
     var body: some View {

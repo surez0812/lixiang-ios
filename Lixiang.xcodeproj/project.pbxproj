@@ -31,6 +31,7 @@
 		254DCB71305786C25EDC249A /* MonthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D421ECD4E84365F75CC9AE9A /* MonthScreen.swift */; };
 		28B63808C389E5CF663BADA6 /* term-yushui-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = F0CB1916448ADAA608EBB07F /* term-yushui-light.webp */; };
 		2C9BE37A13A514E7A5460B1E /* term-liqiu-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = EBEC52C3B831CECA16873A0B /* term-liqiu-light.webp */; };
+		2D00D99D1387375BE42582B5 /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B22B8217B80F457AAD77E0 /* ShareSheetView.swift */; };
 		3393FA89FB1D82F90A208A1E /* term-xiaoman-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 981C838D8BCA7964228E4D74 /* term-xiaoman-dark.webp */; };
 		34AC68259657AD79C06097F8 /* index.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B0D4F502C5B8A786CA816CD /* index.json */; };
 		3573D1CD2174094EECE5F737 /* WebViewReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F1437119438744247A6E3 /* WebViewReader.swift */; };
@@ -227,6 +228,7 @@
 		E1BD67E5E2CFFCBF2F70AD9D /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
 		E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownLogicTests.swift; sourceTree = "<group>"; };
 		E4B41AF2DA2B791A5B93B941 /* AnniversaryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryStore.swift; sourceTree = "<group>"; };
+		E8B22B8217B80F457AAD77E0 /* ShareSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetView.swift; sourceTree = "<group>"; };
 		EB4FE729CE209807C668F1D5 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		EBEC52C3B831CECA16873A0B /* term-liqiu-light.webp */ = {isa = PBXFileReference; path = "term-liqiu-light.webp"; sourceTree = "<group>"; };
 		EC9492B2CCAF48E208A8A83E /* term-qingming-dark.webp */ = {isa = PBXFileReference; path = "term-qingming-dark.webp"; sourceTree = "<group>"; };
@@ -522,6 +524,7 @@
 				02C26FF99F8DAD23254156A9 /* D1Motion.swift */,
 				FC5CD61AB7918A75644AF7DC /* D1Theme.swift */,
 				52FB17E2AF5C589BEC33442D /* MergedDayCard.swift */,
+				E8B22B8217B80F457AAD77E0 /* ShareSheetView.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -790,6 +793,7 @@
 				BB440E10DE36EC032893B9CB /* SeasonalArt.swift in Sources */,
 				B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */,
 				E5D415369673F786EDD6C1FF /* ShareCard.swift in Sources */,
+				2D00D99D1387375BE42582B5 /* ShareSheetView.swift in Sources */,
 				4961A2C52973706909F582C0 /* SourceLicenseScreen.swift in Sources */,
 				D1C64F907F59F9D179E53235 /* WeatherService.swift in Sources */,
 				3573D1CD2174094EECE5F737 /* WebViewReader.swift in Sources */,
