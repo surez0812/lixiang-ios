@@ -74,11 +74,13 @@ public struct PlainLanguagePack: Sendable {
     public var quotes: [DaodejingQuote]
     public var terms: [PlainTerm]
     public var pages: [ExplainPage]
+    public var panelTerms: [PanelTerm]
 
-    public init(quotes: [DaodejingQuote] = [], terms: [PlainTerm] = [], pages: [ExplainPage] = []) {
+    public init(quotes: [DaodejingQuote] = [], terms: [PlainTerm] = [], pages: [ExplainPage] = [], panelTerms: [PanelTerm] = []) {
         self.quotes = quotes.sorted { $0.chapter < $1.chapter }
         self.terms = terms
         self.pages = pages
+        self.panelTerms = panelTerms
     }
 
     private var termIndex: [String: PlainTerm] {
@@ -97,5 +99,18 @@ public struct PlainLanguagePack: Sendable {
     }
 
     public func page(titled title: String) -> ExplainPage? { pageIndex[title] }
+    public func panelTerm(named term: String) -> PanelTerm? { panelTerms.first { $0.term == term } }
     public func term(named name: String) -> PlainTerm? { termIndex[name] }
+}
+
+/// #11 panel 白话（值神/吉神/凶煞/建除/彭祖/星宿/纳音/胎神；显示层无草稿标注）
+public struct PanelTerm: Codable, Hashable, Sendable, Identifiable {
+    public var id: String { term }
+    public var term: String
+    public var domain: String
+    public var zh: String
+    public var en: String
+    public init(term: String, domain: String, zh: String, en: String) {
+        self.term = term; self.domain = domain; self.zh = zh; self.en = en
+    }
 }

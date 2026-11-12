@@ -1,0 +1,1904 @@
+[
+ {
+  "term": "金匮",
+  "domain": "值神",
+  "zh": "传统择日吉神名，取\"金柜藏宝\"之意，旧俗视为吉利。",
+  "en": "Traditional almanac term meaning \"golden chest,\" considered auspicious in folk lore."
+ },
+ {
+  "term": "司命",
+  "domain": "值神",
+  "zh": "传统历法中的吉神名，旧俗认为当日逢此利于祈福、祭祀等事。",
+  "en": "A traditional auspicious star associated with blessings and ceremonial rites."
+ },
+ {
+  "term": "明堂",
+  "domain": "值神",
+  "zh": "传统历法中的吉神名，旧俗认为当日逢此利于求见贵人、处理公务。",
+  "en": "A traditional auspicious star favoring meeting officials and handling affairs."
+ },
+ {
+  "term": "玄武",
+  "domain": "值神",
+  "zh": "传统黄历十二值神之一，旧俗列为黑道日，民间多留意口舌是非。",
+  "en": "A traditional almanac day-duty deity classed as inauspicious, linked to disputes."
+ },
+ {
+  "term": "玉堂",
+  "domain": "值神",
+  "zh": "传统黄历十二值神之一，旧俗归为吉神，名称寓意华贵厅堂。",
+  "en": "A traditional almanac day-duty deity classed as auspicious, meaning \"jade hall.\""
+ },
+ {
+  "term": "天刑",
+  "domain": "值神",
+  "zh": "传统黄历凶煞名，旧俗认为当日不利诉讼、刑罚相关事务。",
+  "en": "Celestial Punishment star; old custom considers it unfavorable for litigation-related matters."
+ },
+ {
+  "term": "天德",
+  "domain": "值神",
+  "zh": "传统择日中的吉神，旧俗认为逢此日百事和顺、宜行善举。",
+  "en": "Auspicious star symbolizing heavenly virtue; traditionally considered favorable for good deeds."
+ },
+ {
+  "term": "勾陈",
+  "domain": "值神",
+  "zh": "传统历法凶煞名，旧俗认为当日易有口舌纠缠，不宜争讼、签约。",
+  "en": "A traditional almanac marker linked to disputes; folk custom advises avoiding arguments and signing contracts."
+ },
+ {
+  "term": "天牢",
+  "domain": "值神",
+  "zh": "传统黄历凶煞名，旧俗认为当日不宜诉讼、打官司等事。",
+  "en": "Traditional almanac term; folk custom considers it unsuitable for litigation."
+ },
+ {
+  "term": "青龙",
+  "domain": "值神",
+  "zh": "传统黄历十二值神之一，旧俗视为吉神当值之日。仅作民俗参考。",
+  "en": "Qinglong (Azure Dragon), a duty spirit traditionally regarded as auspicious in the almanac."
+ },
+ {
+  "term": "朱雀",
+  "domain": "值神",
+  "zh": "传统黄历凶煞名，取象南方火鸟，旧俗认为当日易生口舌争执。",
+  "en": "Vermilion Bird star; old custom links it to disputes and verbal conflicts on this day."
+ },
+ {
+  "term": "白虎",
+  "domain": "值神",
+  "zh": "传统黄历十二值神之一，旧俗认为此日宜静不宜动。仅作民俗参考。",
+  "en": "Baihu (White Tiger), a duty spirit; tradition considers it a day better suited to rest than action."
+ },
+ {
+  "term": "天恩",
+  "domain": "吉神宜趋",
+  "zh": "传统择日术语，旧俗认为逢此日施恩行善较为适宜。仅作民俗参考。",
+  "en": "Tian'en (Heavenly Grace), a traditional term marking days folk custom deems suitable for kindness and generosity."
+ },
+ {
+  "term": "鸣吠",
+  "domain": "吉神宜趋",
+  "zh": "传统择日术语，旧俗认为逢此日适合祭祀、祈福等事。仅作民俗参考。",
+  "en": "Mingfei, a traditional almanac term indicating days folk custom considers fitting for ceremonial offerings."
+ },
+ {
+  "term": "母仓",
+  "domain": "吉神宜趋",
+  "zh": "传统择日术语，旧俗认为逢此日利于纳财、积蓄等事。仅作民俗参考。",
+  "en": "Mucang (Mother Storehouse), a traditional term marking days folklore associates with saving and storing wealth."
+ },
+ {
+  "term": "不将",
+  "domain": "吉神宜趋",
+  "zh": "传统择日术语，旧俗认为逢此日阴阳和合，宜嫁娶。仅作民俗参考。",
+  "en": "Bujiang, a traditional almanac term denoting harmonious yin-yang balance; folklore favors it for weddings."
+ },
+ {
+  "term": "四相",
+  "domain": "吉神宜趋",
+  "zh": "传统择吉神煞之一，表示当日时令之气与季节相应，民俗认为宜顺势而为。",
+  "en": "A traditional almanac indicator suggesting the day's energy aligns with the current season."
+ },
+ {
+  "term": "鸣吠对",
+  "domain": "吉神宜趋",
+  "zh": "传统择吉神煞之一，与\"鸣吠日\"相对，旧俗多用于参考丧葬相关事项的择日。",
+  "en": "A traditional almanac term paired with \"Mingfei Day,\" historically referenced for funeral-related date selection."
+ },
+ {
+  "term": "五合",
+  "domain": "吉神宜趋",
+  "zh": "传统择吉神煞之一，指天干相合之日，民俗认为适合合作、签约等和合之事。",
+  "en": "An almanac indicator for days when Heavenly Stems harmonize, traditionally considered favorable for agreements."
+ },
+ {
+  "term": "三合",
+  "domain": "吉神宜趋",
+  "zh": "传统择吉神煞之一，指地支三合局成化之日，民俗认为利于聚会、合作等事宜。",
+  "en": "An almanac indicator for Earthly Branch triple-harmony days, traditionally seen as good for gatherings and cooperation."
+ },
+ {
+  "term": "除神",
+  "domain": "吉神宜趋",
+  "zh": "传统择吉神煞之一，取\"除旧布新\"之意，民俗认为适合清扫、拆除、就医等事。",
+  "en": "An almanac indicator symbolizing removal of the old, traditionally linked to cleaning, demolition, or medical visits."
+ },
+ {
+  "term": "月德",
+  "domain": "吉神宜趋",
+  "zh": "传统择吉神煞之一，按月推算的吉神，民俗认为逢此日诸事较顺、宜积极行事。",
+  "en": "A monthly auspicious indicator in the traditional almanac, folk belief holds it favors general undertakings."
+ },
+ {
+  "term": "月空",
+  "domain": "吉神宜趋",
+  "zh": "传统择吉神煞之一，与月德相对取位，民俗认为适合上书、献策等文书类事务。",
+  "en": "A monthly almanac indicator opposite to Moon Virtue, traditionally associated with submitting proposals or documents."
+ },
+ {
+  "term": "月德合",
+  "domain": "吉神宜趋",
+  "zh": "传统择吉神煞之一，指与月德天干相合之日，民俗认为亦属吉日，宜和合类事项。",
+  "en": "An almanac indicator for days whose Stem harmonizes with Moon Virtue, traditionally considered auspicious for partnerships."
+ },
+ {
+  "term": "月恩",
+  "domain": "吉神宜趋",
+  "zh": "传统择日吉神名，旧历认为此日有月令恩泽之气。",
+  "en": "Traditional almanac term for a day believed to carry the month's favor."
+ },
+ {
+  "term": "时阴",
+  "domain": "吉神宜趋",
+  "zh": "传统择日吉神名，旧历中与时辰阴阳配合相关的神煞。",
+  "en": "Traditional almanac term relating to yin-yin harmony of the time cycle."
+ },
+ {
+  "term": "五富",
+  "domain": "吉神宜趋",
+  "zh": "传统择日吉神名，旧俗认为逢此利于经营求财。",
+  "en": "Traditional almanac auspicious marker associated with prosperity in folk custom."
+ },
+ {
+  "term": "金匮",
+  "domain": "吉神宜趋",
+  "zh": "传统择日吉神名，取\"金柜藏宝\"之意，旧俗视为吉利。",
+  "en": "Traditional almanac term meaning \"golden chest,\" considered auspicious in folk lore."
+ },
+ {
+  "term": "生气",
+  "domain": "吉神宜趋",
+  "zh": "传统择日吉神名，指万物生发之气，非日常\"发怒\"之意。",
+  "en": "Traditional almanac term for vital growth energy, not the everyday meaning of anger."
+ },
+ {
+  "term": "相日",
+  "domain": "吉神宜趋",
+  "zh": "传统择日吉神名，取辅佐、相助之意，旧俗视为顺遂之日。",
+  "en": "Traditional almanac term implying support and assistance, seen as favorable."
+ },
+ {
+  "term": "阴德",
+  "domain": "吉神宜趋",
+  "zh": "传统择日吉神名，旧俗指暗中积善之德，与个人品行修养相关。",
+  "en": "Traditional almanac term referring to hidden virtue or quiet good deeds in folk belief."
+ },
+ {
+  "term": "六合",
+  "domain": "吉神宜趋",
+  "zh": "传统择日吉神名，指地支两两相合，旧俗认为主和合融洽。",
+  "en": "Traditional almanac term for harmonious Earthly Branch pairings, symbolizing concord."
+ },
+ {
+  "term": "六仪",
+  "domain": "吉神宜趋",
+  "zh": "传统历法中的吉神名，旧俗认为当日逢此利于礼仪、交际等事。",
+  "en": "A traditional auspicious star linked to etiquette and social dealings."
+ },
+ {
+  "term": "金堂",
+  "domain": "吉神宜趋",
+  "zh": "传统历法中的吉神名，旧俗认为当日逢此利于修造、安居等事。",
+  "en": "A traditional auspicious star associated with building and settling in."
+ },
+ {
+  "term": "阳德",
+  "domain": "吉神宜趋",
+  "zh": "传统历法中的吉神名，旧俗认为当日逢此利于施恩行善、积极进取。",
+  "en": "A traditional auspicious star favoring generosity and proactive efforts."
+ },
+ {
+  "term": "司命",
+  "domain": "吉神宜趋",
+  "zh": "传统历法中的吉神名，旧俗认为当日逢此利于祈福、祭祀等事。",
+  "en": "A traditional auspicious star associated with blessings and ceremonial rites."
+ },
+ {
+  "term": "天后",
+  "domain": "吉神宜趋",
+  "zh": "传统历法中的吉神名，旧俗认为当日逢此利于养育、抚慰等事。",
+  "en": "A traditional auspicious star linked to nurturing and comforting matters."
+ },
+ {
+  "term": "明堂",
+  "domain": "吉神宜趋",
+  "zh": "传统历法中的吉神名，旧俗认为当日逢此利于求见贵人、处理公务。",
+  "en": "A traditional auspicious star favoring meeting officials and handling affairs."
+ },
+ {
+  "term": "驿马",
+  "domain": "吉神宜趋",
+  "zh": "传统历法中的吉神名，旧俗认为当日逢此利于出行、搬迁、赴任。",
+  "en": "A traditional auspicious star favoring travel, relocation, and new posts."
+ },
+ {
+  "term": "王日",
+  "domain": "吉神宜趋",
+  "zh": "传统历法中的吉神名，旧俗认为当日气势旺盛，利于开创大事。",
+  "en": "A traditional auspicious day-star symbolizing vigor, suited for major undertakings."
+ },
+ {
+  "term": "临日",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为此日适合处理日常事务。民俗参考用语。",
+  "en": "Traditional almanac auspicious spirit associated with attending to daily affairs. Folk reference only."
+ },
+ {
+  "term": "官日",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为此日利于求职、上任等与职务相关之事。民俗参考用语。",
+  "en": "Traditional almanac auspicious spirit linked to official duties and appointments. Folk reference only."
+ },
+ {
+  "term": "普护",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为此日有普遍庇护之意，诸事较顺。民俗参考用语。",
+  "en": "Traditional almanac auspicious spirit symbolizing general protection and smooth proceedings. Folk reference only."
+ },
+ {
+  "term": "续世",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为此日利于家族延续、子孙相关事务。民俗参考用语。",
+  "en": "Traditional almanac auspicious spirit associated with family continuity and descendants. Folk reference only."
+ },
+ {
+  "term": "天医",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为此日适宜求医问药、调养身体。民俗参考用语。",
+  "en": "Traditional almanac auspicious spirit linked to seeking medical care and health recovery. Folk reference only."
+ },
+ {
+  "term": "天喜",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为此日适合婚嫁、庆典等喜庆之事。民俗参考用语。",
+  "en": "Traditional almanac auspicious spirit associated with weddings and joyful celebrations. Folk reference only."
+ },
+ {
+  "term": "宝光",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为此日带有祥瑞光彩，利于祈福纳祥。民俗参考用语。",
+  "en": "Traditional almanac auspicious spirit symbolizing radiant fortune and blessings. Folk reference only."
+ },
+ {
+  "term": "敬安",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为此日宜恭敬行事、安定家宅。民俗参考用语。",
+  "en": "Traditional almanac auspicious spirit linked to respectful conduct and household peace. Folk reference only."
+ },
+ {
+  "term": "益后",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为当日利于子孙后代相关事宜。",
+  "en": "Yihou: an auspicious almanac deity traditionally linked to descendants' well-being."
+ },
+ {
+  "term": "民日",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉日名，旧俗认为当日适合处理与民众日常相关的事务。",
+  "en": "Minri: an auspicious day traditionally suited for everyday public affairs."
+ },
+ {
+  "term": "青龙",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历十二值神之一，旧俗视为吉神当值之日。仅作民俗参考。",
+  "en": "Qinglong (Azure Dragon), a duty spirit traditionally regarded as auspicious in the almanac."
+ },
+ {
+  "term": "吉期",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉日名，旧俗认为当日适宜举办喜庆或重要活动。",
+  "en": "Jiqi: an auspicious day traditionally favored for celebrations or important events."
+ },
+ {
+  "term": "福德",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为当日利于祈福纳祥、积德行善。",
+  "en": "Fude: an auspicious deity traditionally associated with blessings and good merit."
+ },
+ {
+  "term": "要安",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为当日适宜安居、安定等求稳之事。",
+  "en": "Yao'an: an auspicious deity traditionally favoring stability and settling matters."
+ },
+ {
+  "term": "圣心",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为当日利于祭祀、敬奉等传统礼仪活动。",
+  "en": "Shengxin: an auspicious deity traditionally linked to ritual and ceremonial activities."
+ },
+ {
+  "term": "天马",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，旧俗认为当日利于出行、搬迁等动态事务。",
+  "en": "Tianma (Celestial Horse): an auspicious deity traditionally favoring travel and relocation."
+ },
+ {
+  "term": "解神",
+  "domain": "吉神宜趋",
+  "zh": "传统历书中的吉神名，旧俗认为值日可化解纠纷、消除烦忧。",
+  "en": "A traditional almanac star said to ease disputes and worries."
+ },
+ {
+  "term": "玉宇",
+  "domain": "吉神宜趋",
+  "zh": "黄历吉神名，取清净明洁之意，旧俗多与修造屋宅相联系。",
+  "en": "An almanac auspicious name meaning pure, clear space; linked to building work."
+ },
+ {
+  "term": "守日",
+  "domain": "吉神宜趋",
+  "zh": "黄历吉神名，意为守护当日，旧俗视为安稳持守之象。",
+  "en": "An almanac star meaning \"guarding the day,\" symbolizing steadiness."
+ },
+ {
+  "term": "时德",
+  "domain": "吉神宜趋",
+  "zh": "黄历吉神名，指当令时节所配之德，旧俗认为宜顺势行事。",
+  "en": "An almanac star tied to seasonal virtue, favoring timely action."
+ },
+ {
+  "term": "福生",
+  "domain": "吉神宜趋",
+  "zh": "黄历吉神名，字面意为福气滋生，旧俗常用于祈福类事项。",
+  "en": "An almanac star literally meaning \"blessings grow,\" used for well-wishing."
+ },
+ {
+  "term": "时阳",
+  "domain": "吉神宜趋",
+  "zh": "黄历吉神名，与时令阳气相配，旧俗取其生发、明朗之意。",
+  "en": "An almanac star paired with seasonal yang energy, suggesting vitality."
+ },
+ {
+  "term": "天巫",
+  "domain": "吉神宜趋",
+  "zh": "黄历吉神名，源于古代巫祝职名，旧俗多列于祭祀祈福条目。",
+  "en": "An almanac star from ancient ritual titles, listed under offerings."
+ },
+ {
+  "term": "玉堂",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历十二值神之一，旧俗归为吉神，名称寓意华贵厅堂。",
+  "en": "A traditional almanac day-duty deity classed as auspicious, meaning \"jade hall.\""
+ },
+ {
+  "term": "天仓",
+  "domain": "吉神宜趋",
+  "zh": "传统历书中的吉神名，旧俗认为此日利于纳财、储备粮物。",
+  "en": "Auspicious star linked to wealth storage and grain reserves in traditional almanacs."
+ },
+ {
+  "term": "天德",
+  "domain": "吉神宜趋",
+  "zh": "传统择日中的吉神，旧俗认为逢此日百事和顺、宜行善举。",
+  "en": "Auspicious star symbolizing heavenly virtue; traditionally considered favorable for good deeds."
+ },
+ {
+  "term": "天德合",
+  "domain": "吉神宜趋",
+  "zh": "与天德相合的吉神，旧俗视为天德的辅助吉日，利修造嫁娶等事。",
+  "en": "Companion star to Tiande; traditionally seen as an additional auspicious day marker."
+ },
+ {
+  "term": "天赦",
+  "domain": "吉神宜趋",
+  "zh": "传统历书中难得的吉日，旧俗认为此日适合祈福、解讼、消灾。",
+  "en": "Rare auspicious day traditionally associated with pardon, prayer, and resolving disputes."
+ },
+ {
+  "term": "天愿",
+  "domain": "吉神宜趋",
+  "zh": "传统择日吉神之一，旧俗认为此日所求心愿易遂，宜祈愿祭祀。",
+  "en": "Auspicious star tied to wish fulfillment; traditionally suited for prayers and offerings."
+ },
+ {
+  "term": "无",
+  "domain": "吉神宜趋",
+  "zh": "当日未标注特定吉神宜趋，表示无特别推荐的吉神方位或事项。",
+  "en": "No specific auspicious star listed for this day in the almanac."
+ },
+ {
+  "term": "天符",
+  "domain": "吉神宜趋",
+  "zh": "传统历书吉神名，旧俗认为此日天地气合，宜签约、立契等事。",
+  "en": "Auspicious star signifying cosmic harmony; traditionally favored for agreements and contracts."
+ },
+ {
+  "term": "阴神",
+  "domain": "吉神宜趋",
+  "zh": "传统择日中的吉神名，旧俗认为此日利于暗中谋划、私下协商等事。",
+  "en": "Auspicious star associated with discreet planning and private negotiations in folk tradition."
+ },
+ {
+  "term": "解除",
+  "domain": "吉神宜趋",
+  "zh": "传统黄历吉神名，指宜清理、扫除旧事的日子。",
+  "en": "Auspicious term for days suited to cleaning or clearing away old matters."
+ },
+ {
+  "term": "五虚",
+  "domain": "凶煞宜忌",
+  "zh": "传统凶煞名，旧俗认为此日不宜开业或进财。",
+  "en": "Inauspicious term; traditionally considered unsuitable for opening business or receiving wealth."
+ },
+ {
+  "term": "五离",
+  "domain": "凶煞宜忌",
+  "zh": "传统凶煞名，旧俗认为此日不宜聚会、嫁娶等合和之事。",
+  "en": "Inauspicious term; traditionally avoided for gatherings, weddings, or union-related activities."
+ },
+ {
+  "term": "重日",
+  "domain": "凶煞宜忌",
+  "zh": "传统凶煞名，指重复之日，旧俗忌在此日办丧事。",
+  "en": "Inauspicious \"repeated day\"; traditionally avoided for funerals."
+ },
+ {
+  "term": "复日",
+  "domain": "凶煞宜忌",
+  "zh": "传统凶煞名，与重日类似，旧俗忌重复操办丧葬事宜。",
+  "en": "Inauspicious \"duplicate day\"; traditionally avoided for repeating funeral arrangements."
+ },
+ {
+  "term": "血支",
+  "domain": "凶煞宜忌",
+  "zh": "传统凶煞名，旧俗认为此日不宜针灸、手术等见血之事。",
+  "en": "Inauspicious term; traditionally avoided for acupuncture, surgery, or blood-related procedures."
+ },
+ {
+  "term": "小耗",
+  "domain": "凶煞宜忌",
+  "zh": "传统凶煞名，旧俗认为此日易有小破财，不宜大额支出。",
+  "en": "Inauspicious term; traditionally associated with minor financial loss, avoiding large expenses."
+ },
+ {
+  "term": "致死",
+  "domain": "凶煞宜忌",
+  "zh": "传统凶煞名，旧俗认为此日诸事不利，宜静不宜动。",
+  "en": "Inauspicious term; traditionally considered unfavorable for activities, favoring rest over action."
+ },
+ {
+  "term": "土符",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历中与动土相关的凶煞名，旧俗认为当日不宜破土动工。",
+  "en": "Traditional almanac term associated with earthwork; old custom advises against breaking ground."
+ },
+ {
+  "term": "天贼",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历中的凶煞名，旧俗认为当日不宜纳财、开仓等事。",
+  "en": "Traditional almanac inauspicious star; old custom discourages receiving wealth or opening storage."
+ },
+ {
+  "term": "劫煞",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历中的凶煞名，旧俗认为当日行事易遇阻碍，宜谨慎。",
+  "en": "Traditional almanac inauspicious star; old custom suggests caution as obstacles may arise."
+ },
+ {
+  "term": "游祸",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历中的凶煞名，旧俗认为当日不宜远行或外出办事。",
+  "en": "Traditional almanac inauspicious star; old custom advises against long-distance travel."
+ },
+ {
+  "term": "白虎",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历十二值神之一，旧俗认为此日宜静不宜动。仅作民俗参考。",
+  "en": "Baihu (White Tiger), a duty spirit; tradition considers it a day better suited to rest than action."
+ },
+ {
+  "term": "厌对",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历中的凶煞名，旧俗认为当日不宜婚嫁、宴请等喜庆之事。",
+  "en": "Traditional almanac inauspicious star; old custom discourages weddings and celebratory gatherings."
+ },
+ {
+  "term": "招摇",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历中的凶煞名，旧俗认为当日不宜张扬行事，宜低调稳妥。",
+  "en": "Traditional almanac inauspicious star; old custom favors keeping a low profile."
+ },
+ {
+  "term": "河魁",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历中的凶煞名，旧俗认为当日不宜诉讼、争斗等对抗性事务。",
+  "en": "Traditional almanac inauspicious star; old custom advises against litigation and confrontations."
+ },
+ {
+  "term": "月煞",
+  "domain": "凶煞宜忌",
+  "zh": "传统历法中按月轮值的凶煞名，旧俗认为当日不宜办大事。",
+  "en": "A monthly inauspicious marker in the traditional almanac; old custom avoids major undertakings."
+ },
+ {
+  "term": "月厌",
+  "domain": "凶煞宜忌",
+  "zh": "传统择日中的月系凶煞名，旧俗视为不宜嫁娶等喜庆事。",
+  "en": "A monthly taboo marker in folk date-selection, traditionally avoided for weddings and celebrations."
+ },
+ {
+  "term": "月害",
+  "domain": "凶煞宜忌",
+  "zh": "传统历法中与月支相害的凶煞名，旧俗认为当日诸事宜谨慎。",
+  "en": "A monthly clash-based inauspicious marker; folk tradition advises caution on such days."
+ },
+ {
+  "term": "九坎",
+  "domain": "凶煞宜忌",
+  "zh": "传统历法中的凶煞名，旧俗认为不宜开渠、凿井等动土事。",
+  "en": "An almanac taboo marker traditionally associated with avoiding digging wells or water channels."
+ },
+ {
+  "term": "九焦",
+  "domain": "凶煞宜忌",
+  "zh": "传统历法中的凶煞名，旧俗认为不宜栽种、修造等事。",
+  "en": "An almanac taboo marker traditionally linked to avoiding planting and construction activities."
+ },
+ {
+  "term": "元武",
+  "domain": "凶煞宜忌",
+  "zh": "即玄武，传统历法中的凶煞名，旧俗认为需防口舌是非。",
+  "en": "Also called Xuanwu; a folk almanac taboo marker associated with disputes and gossip."
+ },
+ {
+  "term": "大耗",
+  "domain": "凶煞宜忌",
+  "zh": "传统历法中的凶煞名，旧俗认为当日不宜大额开支或投资。",
+  "en": "A folk almanac taboo marker traditionally advising against large expenditures or investments."
+ },
+ {
+  "term": "月破",
+  "domain": "凶煞宜忌",
+  "zh": "传统历法中与月支相冲之日，旧俗视为大事不宜的日子。",
+  "en": "A day clashing with the month's branch; folk tradition considers it unsuitable for major events."
+ },
+ {
+  "term": "死气",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历凶煞名，旧俗认为当日不宜探病、吊丧等事。",
+  "en": "Traditional almanac term; folk custom avoids hospital visits or funerals on such days."
+ },
+ {
+  "term": "天牢",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历凶煞名，旧俗认为当日不宜诉讼、打官司等事。",
+  "en": "Traditional almanac term; folk custom considers it unsuitable for litigation."
+ },
+ {
+  "term": "咸池",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历凶煞名，又称桃花煞，旧俗认为当日感情事宜需谨慎。",
+  "en": "Traditional almanac term, also called Peach Blossom sha; folk caution about romance matters."
+ },
+ {
+  "term": "大时",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历凶煞名，旧俗认为当日不宜兴造、动土等大举之事。",
+  "en": "Traditional almanac term; folk custom avoids major construction or groundbreaking."
+ },
+ {
+  "term": "大败",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历凶煞名，旧俗认为当日不宜开业、交易求财等事。",
+  "en": "Traditional almanac term; folk custom advises against opening businesses or financial deals."
+ },
+ {
+  "term": "天罡",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历凶煞名，旧俗认为当日不宜出行、赴任等事。",
+  "en": "Traditional almanac term; folk custom considers it unfavorable for travel or taking office."
+ },
+ {
+  "term": "月建",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历中与当月地支相同之日，旧俗认为不宜动土、修造。",
+  "en": "Day matching the month's Earthly Branch; folk custom avoids construction or renovation."
+ },
+ {
+  "term": "往亡",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历凶煞名，旧俗认为当日不宜远行、出征、搬迁等事。",
+  "en": "Traditional almanac term; folk custom avoids long journeys, relocation, or military campaigns."
+ },
+ {
+  "term": "死神",
+  "domain": "凶煞宜忌",
+  "zh": "传统历法中的凶煞名，旧俗认为当日不宜探病、吊丧等事。",
+  "en": "A traditional inauspicious marker; old custom advises against visiting the sick or attending funerals."
+ },
+ {
+  "term": "归忌",
+  "domain": "凶煞宜忌",
+  "zh": "旧时择日凶煞名，民俗认为逢此日不宜远行归家或搬迁移居。",
+  "en": "An old almanac taboo day traditionally considered unsuitable for returning home or relocating."
+ },
+ {
+  "term": "月虚",
+  "domain": "凶煞宜忌",
+  "zh": "传统历法凶煞之一，旧俗认为当日不宜开仓、纳财等事。",
+  "en": "A traditional almanac marker; folk custom suggests avoiding opening storehouses or receiving wealth on this day."
+ },
+ {
+  "term": "地火",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中的凶煞名，民俗认为当日不宜栽种、修灶等与火土相关之事。",
+  "en": "An old almanac taboo associated with earth and fire; folk tradition discourages planting or stove repairs."
+ },
+ {
+  "term": "天吏",
+  "domain": "凶煞宜忌",
+  "zh": "传统择日凶煞名，旧俗认为当日不宜诉讼、赴任等官事。",
+  "en": "A traditional inauspicious marker; old custom advises against lawsuits or taking up official posts."
+ },
+ {
+  "term": "九空",
+  "domain": "凶煞宜忌",
+  "zh": "旧时历法凶煞名，民俗认为当日不宜开市、交易、纳财等事。",
+  "en": "An old almanac taboo day; folk custom considers it unsuitable for opening business or financial transactions."
+ },
+ {
+  "term": "八专",
+  "domain": "凶煞宜忌",
+  "zh": "传统干支择日术语，指天干地支同气的日子，旧俗认为不宜嫁娶。",
+  "en": "A term for days when Heavenly Stem and Earthly Branch share the same element; traditionally avoided for weddings."
+ },
+ {
+  "term": "勾陈",
+  "domain": "凶煞宜忌",
+  "zh": "传统历法凶煞名，旧俗认为当日易有口舌纠缠，不宜争讼、签约。",
+  "en": "A traditional almanac marker linked to disputes; folk custom advises avoiding arguments and signing contracts."
+ },
+ {
+  "term": "四击",
+  "domain": "凶煞宜忌",
+  "zh": "传统历书中的凶煞名，旧俗认为当日不宜远行或兴兵动众。",
+  "en": "Traditional inauspicious star; old custom advises against travel or mobilizing forces on this day."
+ },
+ {
+  "term": "大煞",
+  "domain": "凶煞宜忌",
+  "zh": "传统择日中的凶煞，旧俗认为此日不宜大兴土木或办大事。",
+  "en": "Major inauspicious star in traditional almanac; old custom avoids large projects on this day."
+ },
+ {
+  "term": "天刑",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历凶煞名，旧俗认为当日不利诉讼、刑罚相关事务。",
+  "en": "Celestial Punishment star; old custom considers it unfavorable for litigation-related matters."
+ },
+ {
+  "term": "小时",
+  "domain": "凶煞宜忌",
+  "zh": "传统历书凶煞名，又称\"小耗\"，旧俗认为当日易有小破财或琐事不顺。",
+  "en": "Minor Drain star in traditional almanac; old custom associates it with small financial losses."
+ },
+ {
+  "term": "朱雀",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历凶煞名，取象南方火鸟，旧俗认为当日易生口舌争执。",
+  "en": "Vermilion Bird star; old custom links it to disputes and verbal conflicts on this day."
+ },
+ {
+  "term": "血忌",
+  "domain": "凶煞宜忌",
+  "zh": "传统择日凶煞名，旧俗认为当日不宜宰杀、针灸等见血之事。",
+  "en": "Blood Taboo star; old custom advises against slaughtering or blood-related procedures on this day."
+ },
+ {
+  "term": "土府",
+  "domain": "凶煞宜忌",
+  "zh": "传统黄历凶煞名，旧俗认为当日不宜动土、破土或修建地基。",
+  "en": "Earth Mansion star; old custom considers it unsuitable for groundbreaking or earthwork."
+ },
+ {
+  "term": "天火",
+  "domain": "凶煞宜忌",
+  "zh": "传统历书凶煞名，旧俗认为当日需防火患，不宜盖屋或开炉。",
+  "en": "Heavenly Fire star; old custom warns of fire hazards, advising against roofing or furnace work."
+ },
+ {
+  "term": "月刑",
+  "domain": "凶煞宜忌",
+  "zh": "传统历法中按月推算的凶煞日，旧俗认为当天不宜办大事。",
+  "en": "Monthly Penalty: an inauspicious day by lunar reckoning, traditionally avoided for major undertakings."
+ },
+ {
+  "term": "灾煞",
+  "domain": "凶煞宜忌",
+  "zh": "黄历中标注的一种凶煞，旧俗认为当天行事易遇阻碍。",
+  "en": "Disaster Sha: a traditional almanac marker suggesting obstacles on that day."
+ },
+ {
+  "term": "触水龙",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中的忌日名称，民俗认为当天不宜近水或涉水活动。",
+  "en": "Water Dragon Clash: a folk taboo day traditionally unsuitable for water-related activities."
+ },
+ {
+  "term": "四废",
+  "domain": "凶煞宜忌",
+  "zh": "按季节与干支配合推定的衰败日，旧俗认为诸事不宜。",
+  "en": "Four Wastes: seasonal stem-branch days deemed weak; traditionally nothing auspicious to do."
+ },
+ {
+  "term": "八风",
+  "domain": "凶煞宜忌",
+  "zh": "黄历中按时令标注的凶煞，旧俗认为当天不宜远行或动土。",
+  "en": "Eight Winds: a seasonal almanac taboo, traditionally avoiding travel or ground-breaking."
+ },
+ {
+  "term": "地囊",
+  "domain": "凶煞宜忌",
+  "zh": "传统择日中的凶煞名，旧俗认为当天不宜破土、开渠等事。",
+  "en": "Earth Pouch: a folk taboo day traditionally unsuitable for digging or excavation."
+ },
+ {
+  "term": "四忌",
+  "domain": "凶煞宜忌",
+  "zh": "按季节干支推定的四个忌日，旧俗认为当天不宜嫁娶、出行。",
+  "en": "Four Taboos: four seasonal stem-branch days traditionally avoided for weddings or travel."
+ },
+ {
+  "term": "四穷",
+  "domain": "凶煞宜忌",
+  "zh": "按季节干支推定的困顿日，旧俗认为当天不宜开业、求财。",
+  "en": "Four Exhaustions: seasonal days deemed depleted; folk custom avoids starting business or seeking wealth."
+ },
+ {
+  "term": "四耗",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中主损耗的神煞，传统认为当日不宜大额支出。仅作民俗参考。",
+  "en": "Traditional \"Four Depletions\" day, folk custom advises against big spending."
+ },
+ {
+  "term": "阳错",
+  "domain": "凶煞宜忌",
+  "zh": "旧历阴阳差错日之一，民俗认为当日行事宜多加谨慎。仅作民俗参考。",
+  "en": "A \"Yang Error\" day in old almanacs; folk tradition suggests extra caution."
+ },
+ {
+  "term": "五墓",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中与五行入墓相关的神煞，民俗认为当日忌动土等事。仅作民俗参考。",
+  "en": "\"Five Tombs\" star linked to elemental burial; folk custom avoids ground-breaking."
+ },
+ {
+  "term": "阴错",
+  "domain": "凶煞宜忌",
+  "zh": "旧历阴阳差错日之一，民俗认为当日婚嫁等事宜需留意。仅作民俗参考。",
+  "en": "A \"Yin Error\" day in old almanacs; folk tradition urges care with weddings."
+ },
+ {
+  "term": "孤辰",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中主孤独的神煞，民俗认为当日不利婚嫁、合作等事。仅作民俗参考。",
+  "en": "\"Solitary Star\" in old almanacs; folk custom considers it unfavorable for unions."
+ },
+ {
+  "term": "小会",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中的神煞名，民俗认为当日有特定宜忌事项需留意。仅作民俗参考。",
+  "en": "\"Minor Gathering\" star in old almanacs, marking specific folk do's and don'ts."
+ },
+ {
+  "term": "大会",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中的神煞名，民俗认为当日宜忌事项较\"小会\"更为显著。仅作民俗参考。",
+  "en": "\"Major Gathering\" star in old almanacs, a stronger counterpart to Minor Gathering."
+ },
+ {
+  "term": "七鸟",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中的神煞名，属传统择日体系中的凶煞之一。仅作民俗参考。",
+  "en": "\"Seven Birds\" star, one of the inauspicious markers in traditional date-selection folklore."
+ },
+ {
+  "term": "八龙",
+  "domain": "凶煞宜忌",
+  "zh": "旧历神煞名，按年干支推算，传统认为与雨水多寡有关。民俗参考。",
+  "en": "Old almanac term linked to yearly stems, traditionally associated with rainfall."
+ },
+ {
+  "term": "九虎",
+  "domain": "凶煞宜忌",
+  "zh": "旧历神煞名，按年干支推算，传统认为与风势强弱有关。民俗参考。",
+  "en": "Old almanac term tied to yearly stems, traditionally linked to wind intensity."
+ },
+ {
+  "term": "六蛇",
+  "domain": "凶煞宜忌",
+  "zh": "旧历神煞名，按年干支推算，传统认为与旱涝变化有关。民俗参考。",
+  "en": "Old almanac term based on yearly stems, traditionally related to drought or flood."
+ },
+ {
+  "term": "天狗",
+  "domain": "凶煞宜忌",
+  "zh": "旧历凶煞名，古人视为不吉之星，择日时传统上会避开。民俗参考。",
+  "en": "Traditional inauspicious star in old almanacs; customarily avoided when picking dates."
+ },
+ {
+  "term": "逐阵",
+  "domain": "凶煞宜忌",
+  "zh": "旧历凶煞名，传统择日中列为不宜行军布阵之日。民俗参考。",
+  "en": "Old almanac term marking days traditionally deemed unsuitable for military action."
+ },
+ {
+  "term": "行狠",
+  "domain": "凶煞宜忌",
+  "zh": "旧历凶煞名，传统认为该日戾气较重，不宜远行或争斗。民俗参考。",
+  "en": "Old almanac inauspicious term; traditionally advised against travel or conflict."
+ },
+ {
+  "term": "了戾",
+  "domain": "凶煞宜忌",
+  "zh": "旧历凶煞名，传统认为该日气场乖戾不顺，诸事宜谨慎。民俗参考。",
+  "en": "Old almanac inauspicious term suggesting discord; traditionally a day for caution."
+ },
+ {
+  "term": "岁薄",
+  "domain": "凶煞宜忌",
+  "zh": "旧历凶煞名，传统认为该年运势薄弱，行事宜保守稳健。民俗参考。",
+  "en": "Old almanac term implying a weak year-fortune; traditionally favoring cautious plans."
+ },
+ {
+  "term": "三丧",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中忌办丧事的凶煞名，传统认为此日不宜治丧。仅为民俗参考。",
+  "en": "An old almanac term marking days traditionally avoided for funeral rites. Folk reference only."
+ },
+ {
+  "term": "阴位",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中标注阴气偏重的方位或时段，民俗认为宜静不宜动。",
+  "en": "A traditional almanac label for directions or times considered yin-heavy; folk custom only."
+ },
+ {
+  "term": "鬼哭",
+  "domain": "凶煞宜忌",
+  "zh": "旧历凶煞名，民间传说此日阴气重、易闻异响，传统上诸事谨慎。",
+  "en": "A folk almanac term for days said to carry heavy yin energy; traditional caution only."
+ },
+ {
+  "term": "阴道冲阳",
+  "domain": "凶煞宜忌",
+  "zh": "旧历术语，指阴气与阳气相冲的日子，民俗认为阴阳不调、行事宜缓。",
+  "en": "An almanac term for days when yin and yang energies are said to clash; folk reference only."
+ },
+ {
+  "term": "三阴",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中指阴气叠加的凶煞日，传统民俗认为此日宜收敛、少妄动。",
+  "en": "A traditional term for days with compounded yin influence; folk custom advises restraint."
+ },
+ {
+  "term": "阴阳交破",
+  "domain": "凶煞宜忌",
+  "zh": "旧历术语，指阴阳之气交错破损的日子，民俗认为气场不稳、大事勿用。",
+  "en": "An almanac term for days of disrupted yin-yang balance; traditionally avoided for major events."
+ },
+ {
+  "term": "阴阳俱错",
+  "domain": "凶煞宜忌",
+  "zh": "旧历术语，指阴阳双双错位的日子，民俗认为秩序紊乱、不宜举大事。",
+  "en": "An almanac term for days when both yin and yang are misaligned; folk reference only."
+ },
+ {
+  "term": "阴阳击冲",
+  "domain": "凶煞宜忌",
+  "zh": "旧历术语，指阴阳二气激烈对冲的日子，民俗认为冲突较重、宜避大事。",
+  "en": "An almanac term for days of intense yin-yang opposition; traditionally seen as unsuitable for big plans."
+ },
+ {
+  "term": "七符",
+  "domain": "凶煞宜忌",
+  "zh": "传统择日中列为凶煞的名目，旧历标注当日需留意避忌。民俗参考，非预测。",
+  "en": "A traditional inauspicious marker in almanac date selection; folk reference only."
+ },
+ {
+  "term": "绝阳",
+  "domain": "凶煞宜忌",
+  "zh": "旧历认为该日阳气断绝、阴阳失衡，属凶煞标注。仅作民俗了解。",
+  "en": "An almanac term indicating depleted yang energy; traditional folk concept only."
+ },
+ {
+  "term": "阳错阴冲",
+  "domain": "凶煞宜忌",
+  "zh": "旧历指干支组合中阴阳交错相冲，视为不吉之日。民俗参考，不作预测。",
+  "en": "Almanac term for clashing yin-yang stem-branch combinations; folk reference only."
+ },
+ {
+  "term": "单阴",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中干支皆属阴的日子，被认为阴气偏重，列为凶煞。仅供民俗参考。",
+  "en": "A day whose stems and branches are all yin, flagged as inauspicious in old almanacs."
+ },
+ {
+  "term": "大退",
+  "domain": "凶煞宜忌",
+  "zh": "传统择日凶煞名，旧历标注该日诸事宜退不宜进。仅作民俗了解。",
+  "en": "An almanac inauspicious marker suggesting retreat rather than advance; folk reference only."
+ },
+ {
+  "term": "纯阴",
+  "domain": "凶煞宜忌",
+  "zh": "旧历指天干地支全为阴属性的日子，认为阴阳失调，列为凶煞。民俗参考。",
+  "en": "A day with entirely yin stems and branches, considered imbalanced in traditional almanacs."
+ },
+ {
+  "term": "绝阴",
+  "domain": "凶煞宜忌",
+  "zh": "旧历认为该日阴气断绝、阴阳失衡，属凶煞标注。仅作民俗了解。",
+  "en": "An almanac term indicating depleted yin energy; traditional folk concept only."
+ },
+ {
+  "term": "阳破阴冲",
+  "domain": "凶煞宜忌",
+  "zh": "旧历指干支中阳与阴相互冲破，视为不吉组合。民俗参考，不作预测。",
+  "en": "Almanac term for yin-yang mutual clash in stem-branch pairings; folk reference only."
+ },
+ {
+  "term": "四离",
+  "domain": "凶煞宜忌",
+  "zh": "指春分、秋分、夏至、冬至前一天，旧俗认为节气交替之日不宜办大事。",
+  "en": "Day before a solstice or equinox; traditionally seen as unsuitable for major undertakings."
+ },
+ {
+  "term": "成日",
+  "domain": "凶煞宜忌",
+  "zh": "建除十二值日之一，\"成\"有成就之意，旧俗多视为宜办事之日。",
+  "en": "\"Success\" day in the 12-day cycle; traditionally considered favorable for getting things done."
+ },
+ {
+  "term": "纯阳",
+  "domain": "凶煞宜忌",
+  "zh": "旧历中干支全属阳性的日子，民俗认为阴阳偏盛，仅供参考。",
+  "en": "A day whose stems and branches are all yang; folk tradition notes an imbalance of energies."
+ },
+ {
+  "term": "孤阳",
+  "domain": "凶煞宜忌",
+  "zh": "与纯阳类似，指阳气独盛的干支组合日，旧俗视为偏颇之象。",
+  "en": "Similar to pure-yang days; folk custom regards lone yang as an unbalanced configuration."
+ },
+ {
+  "term": "无",
+  "domain": "凶煞宜忌",
+  "zh": "当日未标注特定吉神宜趋，表示无特别推荐的吉神方位或事项。",
+  "en": "No specific auspicious star listed for this day in the almanac."
+ },
+ {
+  "term": "闭",
+  "domain": "建除十二神",
+  "zh": "建除十二值日之一，取关闭、收敛之意，旧俗认为宜静不宜动。",
+  "en": "\"Close\" day in the 12-day cycle; traditionally favors rest and storage over new ventures."
+ },
+ {
+  "term": "执",
+  "domain": "建除十二神",
+  "zh": "建除十二值日之一，取执持、守成之意，旧俗认为宜守不宜创。",
+  "en": "\"Hold\" day in the 12-day cycle; traditionally suits maintaining routines rather than starting anew."
+ },
+ {
+  "term": "危",
+  "domain": "建除十二神",
+  "zh": "二十八宿之一，属北方玄武七宿第五宿，传统黄历中用于当日星宿值日标注。",
+  "en": "Wei, the 5th mansion of the Black Tortoise group among the 28 lunar mansions, used in daily almanac notation."
+ },
+ {
+  "term": "定",
+  "domain": "建除十二神",
+  "zh": "传统择日中\"定\"日，民俗认为宜安定、签约等求稳之事。",
+  "en": "\"Ding\" day in traditional almanac, folk custom favors stable, settling activities."
+ },
+ {
+  "term": "开",
+  "domain": "建除十二神",
+  "zh": "传统择日中\"开\"日，民俗认为宜开业、开工等起始之事。",
+  "en": "\"Kai\" day in traditional almanac, folk custom favors openings and new beginnings."
+ },
+ {
+  "term": "破",
+  "domain": "建除十二神",
+  "zh": "传统择日中\"破\"日，民俗认为诸事不宜，多作休息调整。",
+  "en": "\"Po\" day in traditional almanac, folk custom considers it unsuitable for major undertakings."
+ },
+ {
+  "term": "成",
+  "domain": "建除十二神",
+  "zh": "传统择日中\"成\"日，民俗认为宜完成、收尾等促成之事。",
+  "en": "\"Cheng\" day in traditional almanac, folk custom favors completion and accomplishment."
+ },
+ {
+  "term": "建",
+  "domain": "建除十二神",
+  "zh": "传统择日中\"建\"日，民俗认为宜出行、上任等开创之事。",
+  "en": "\"Jian\" day in traditional almanac, folk custom favors initiating and establishing matters."
+ },
+ {
+  "term": "满",
+  "domain": "建除十二神",
+  "zh": "传统择日中\"满\"日，民俗认为宜祈福、祭祀等圆满之事。",
+  "en": "\"Man\" day in traditional almanac, folk custom favors blessings and fulfillment rituals."
+ },
+ {
+  "term": "平",
+  "domain": "建除十二神",
+  "zh": "传统择日中\"平\"日，民俗认为宜修路、平整等平常之事。",
+  "en": "\"Ping\" day in traditional almanac, folk custom favors routine, leveling tasks."
+ },
+ {
+  "term": "除",
+  "domain": "建除十二神",
+  "zh": "传统择日中\"除\"日，民俗认为宜扫除、就医等去除旧疾之事。",
+  "en": "\"Chu\" day in traditional almanac, folk custom favors cleansing and removing the old."
+ },
+ {
+  "term": "收",
+  "domain": "建除十二神",
+  "zh": "十二值日之一，传统认为此日宜收纳、收藏。",
+  "en": "One of the 12 Day Officers; traditionally suited for gathering and storing."
+ },
+ {
+  "term": "戊不受田田主不祥",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为逢戊日不宜接受或购置田地。",
+  "en": "Old custom advises against acquiring farmland on Wu (戊) days."
+ },
+ {
+  "term": "丁不剃头头必生疮",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为逢丁日不宜理发剃头。",
+  "en": "Old custom advises against haircuts on Ding (丁) days."
+ },
+ {
+  "term": "丙不修灶必见灾殃",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为逢丙日不宜修建或改造炉灶。",
+  "en": "Old custom advises against stove repairs on Bing (丙) days."
+ },
+ {
+  "term": "乙不栽植千株不长",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为逢乙日不宜栽种植物苗木。",
+  "en": "Old custom advises against planting on Yi (乙) days."
+ },
+ {
+  "term": "壬不泱水更难提防",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为逢壬日不宜疏通水道或治水。",
+  "en": "Old custom advises against waterworks on Ren (壬) days."
+ },
+ {
+  "term": "己不破券二比并亡",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为逢己日不宜撕毁契约或解除合约。",
+  "en": "Old custom advises against breaking contracts on Ji (己) days."
+ },
+ {
+  "term": "庚不经络织机虚张",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为逢庚日不宜纺织或经络调理。",
+  "en": "Old custom advises against weaving or meridian therapy on Geng (庚) days."
+ },
+ {
+  "term": "甲不开仓财物耗散",
+  "domain": "彭祖百忌",
+  "zh": "别开新仓，先盘点库存",
+  "en": "Don't open storage; check stock first"
+ },
+ {
+  "term": "癸不词讼理弱敌强",
+  "domain": "彭祖百忌",
+  "zh": "别急着打官司，先找调解",
+  "en": "Avoid lawsuits today; try mediation first"
+ },
+ {
+  "term": "辛不合酱主人不尝",
+  "domain": "彭祖百忌",
+  "zh": "今天别酿酱腌菜，改天做",
+  "en": "Skip sauce-making today; do it later"
+ },
+ {
+  "term": "午不苫盖屋主更张",
+  "domain": "彭祖百忌",
+  "zh": "别修屋顶，换个日子再动工",
+  "en": "Don't repair the roof; pick another day"
+ },
+ {
+  "term": "未不服药毒气入肠",
+  "domain": "彭祖百忌",
+  "zh": "别乱试新药，先问问医生",
+  "en": "Don't try new meds without asking doctor"
+ },
+ {
+  "term": "申不安床鬼祟入房",
+  "domain": "彭祖百忌",
+  "zh": "今天别挪床换床位",
+  "en": "Don't move or rearrange your bed today"
+ },
+ {
+  "term": "丑不冠带主不还乡",
+  "domain": "彭祖百忌",
+  "zh": "出远门的事缓一缓再定",
+  "en": "Postpone long trips; plan them later"
+ },
+ {
+  "term": "亥不嫁娶不利新郎",
+  "domain": "彭祖百忌",
+  "zh": "婚礼筹备先缓缓，不急定日子",
+  "en": "Hold off on setting a wedding date"
+ },
+ {
+  "term": "卯不穿井水泉不香",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为卯日不宜挖井，恐水质不佳。仅作民俗参考。",
+  "en": "Old almanac taboo: avoid digging wells on Mao days."
+ },
+ {
+  "term": "子不问卜自惹祸殃",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为子日不宜占卜问事，以免自添烦扰。仅作民俗参考。",
+  "en": "Old almanac taboo: avoid divination on Zi days."
+ },
+ {
+  "term": "寅不祭祀神鬼不尝",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为寅日不宜举行祭祀活动。仅作民俗参考。",
+  "en": "Old almanac taboo: avoid ritual offerings on Yin days."
+ },
+ {
+  "term": "巳不远行财物伏藏",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为巳日不宜出远门，宜守财安居。仅作民俗参考。",
+  "en": "Old almanac taboo: avoid long travel on Si days."
+ },
+ {
+  "term": "戌不吃犬作怪上床",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为戌日忌食犬肉，恐致睡眠不安。仅作民俗参考。",
+  "en": "Old almanac taboo: avoid eating dog meat on Xu days."
+ },
+ {
+  "term": "辰不哭泣必主重丧",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为辰日忌讳哭泣悲伤之事。仅作民俗参考。",
+  "en": "Old almanac taboo: avoid weeping on Chen days."
+ },
+ {
+  "term": "酉不会客醉坐颠狂",
+  "domain": "彭祖百忌",
+  "zh": "旧俗认为酉日不宜宴饮会客，恐酒后失态。仅作民俗参考。",
+  "en": "Old almanac taboo: avoid hosting guests on You days."
+ },
+ {
+  "term": "井",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属南方朱雀七宿，传统黄历中用于标注当日值日星宿。",
+  "en": "Well (Jing), one of the 28 lunar mansions in traditional Chinese astronomy."
+ },
+ {
+  "term": "亢",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属东方青龙七宿第二宿，传统黄历中用于当日星宿值日标注。",
+  "en": "Kang, the 2nd of the 28 lunar mansions in the Azure Dragon group, used for daily almanac notation."
+ },
+ {
+  "term": "危",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属北方玄武七宿第五宿，传统黄历中用于当日星宿值日标注。",
+  "en": "Wei, the 5th mansion of the Black Tortoise group among the 28 lunar mansions, used in daily almanac notation."
+ },
+ {
+  "term": "参",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属西方白虎七宿第七宿，传统黄历中用于当日星宿值日标注。",
+  "en": "Shen, the 7th mansion of the White Tiger group among the 28 lunar mansions, used in daily almanac notation."
+ },
+ {
+  "term": "壁",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属北方玄武七宿第七宿，传统黄历中用于当日星宿值日标注。",
+  "en": "Bi, the 7th mansion of the Black Tortoise group among the 28 lunar mansions, used in daily almanac notation."
+ },
+ {
+  "term": "奎",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属西方白虎七宿第一宿，传统黄历中用于当日星宿值日标注。",
+  "en": "Kui, the 1st mansion of the White Tiger group among the 28 lunar mansions, used in daily almanac notation."
+ },
+ {
+  "term": "女",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属北方玄武七宿第三宿，传统黄历中用于当日星宿值日标注。",
+  "en": "Nü, the 3rd mansion of the Black Tortoise group among the 28 lunar mansions, used in daily almanac notation."
+ },
+ {
+  "term": "室",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属北方玄武七宿第六宿，传统黄历中用于当日星宿值日标注。",
+  "en": "Shi, the 6th mansion of the Black Tortoise group among the 28 lunar mansions, used in daily almanac notation."
+ },
+ {
+  "term": "尾",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属东方青龙七宿第六宿，传统黄历中用于当日星宿值日标注。",
+  "en": "Wei (Tail), the 6th mansion of the Azure Dragon group among the 28 lunar mansions, used in daily almanac notation."
+ },
+ {
+  "term": "张",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属南方朱雀七宿，黄历中用于标注当日值日星宿。",
+  "en": "One of the 28 lunar mansions, southern group; marks the day's presiding star in almanacs."
+ },
+ {
+  "term": "心",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属东方青龙七宿，黄历中标注当日轮值的星宿名。",
+  "en": "One of the 28 lunar mansions, eastern group; names the day's rotating star lodge in almanacs."
+ },
+ {
+  "term": "房",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属东方青龙七宿，古人以此标记当日所值星宿。",
+  "en": "One of the 28 lunar mansions, eastern group; traditionally labels which star lodge presides over the day."
+ },
+ {
+  "term": "斗",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属北方玄武七宿，黄历用来记录当天对应的星宿。",
+  "en": "One of the 28 lunar mansions, northern group; used in almanacs to note the day's corresponding star."
+ },
+ {
+  "term": "星",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属南方朱雀七宿，是黄历每日轮值星宿中的一个名称。",
+  "en": "One of the 28 lunar mansions, southern group; a name in the daily rotating star-lodge cycle."
+ },
+ {
+  "term": "昴",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属西方白虎七宿，对应昴星团区域，用于标记当日星宿。",
+  "en": "One of the 28 lunar mansions, western group; near the Pleiades, marks the day's star lodge."
+ },
+ {
+  "term": "柳",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属南方朱雀七宿，黄历中标示当日所属的值日星宿。",
+  "en": "One of the 28 lunar mansions, southern group; indicates the day's assigned star lodge in almanacs."
+ },
+ {
+  "term": "毕",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属西方白虎七宿，传统黄历用它标注当日轮值星宿。",
+  "en": "One of the 28 lunar mansions, western group; traditionally marks the day's presiding star lodge."
+ },
+ {
+  "term": "氐",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属东方青龙第三宿，古人以此标记日月运行位置。",
+  "en": "Di: one of the 28 lunar mansions, third in the Eastern Azure Dragon group."
+ },
+ {
+  "term": "牛",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属北方玄武第二宿，传统历法中用于纪日轮值。",
+  "en": "Niu: one of the 28 lunar mansions, second in the Northern Black Tortoise group."
+ },
+ {
+  "term": "箕",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属东方青龙第七宿，形似簸箕，为传统纪日星宿。",
+  "en": "Ji: one of the 28 lunar mansions, seventh in the Eastern Azure Dragon group."
+ },
+ {
+  "term": "翼",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属南方朱雀第六宿，象征鸟翼，用于传统历法纪日。",
+  "en": "Yi: one of the 28 lunar mansions, sixth in the Southern Vermilion Bird group."
+ },
+ {
+  "term": "胃",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属西方白虎第三宿，古人借其标记天区与日期。",
+  "en": "Wei: one of the 28 lunar mansions, third in the Western White Tiger group."
+ },
+ {
+  "term": "虚",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属北方玄武第四宿，传统历法中作为轮值纪日标志。",
+  "en": "Xu: one of the 28 lunar mansions, fourth in the Northern Black Tortoise group."
+ },
+ {
+  "term": "角",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属东方青龙第一宿，为二十八宿轮值起始之星。",
+  "en": "Jiao: one of the 28 lunar mansions, first in the Eastern Azure Dragon group."
+ },
+ {
+  "term": "觜",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属西方白虎第六宿，传统历法用以标记当日值宿。",
+  "en": "Zi: one of the 28 lunar mansions, sixth in the Western White Tiger group."
+ },
+ {
+  "term": "轸",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属南方朱雀末宿，古人用以标记日期。",
+  "en": "One of the 28 lunar mansions, marking dates in traditional Chinese calendars."
+ },
+ {
+  "term": "鬼",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属南方朱雀第二宿，用于传统纪日。",
+  "en": "A lunar mansion in the southern Vermilion Bird group, used for date-marking."
+ },
+ {
+  "term": "娄",
+  "domain": "星宿",
+  "zh": "二十八宿之一，属西方白虎第二宿，用于传统纪日。",
+  "en": "A lunar mansion in the western White Tiger group, used for date-marking."
+ },
+ {
+  "term": "剑锋金",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以\"锋利的金属\"比喻该年份的五行属性。",
+  "en": "A Nayin type symbolizing sharp metal, classifying a year's elemental nature."
+ },
+ {
+  "term": "城头土",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以\"城墙上的土\"比喻该年份的五行属性。",
+  "en": "A Nayin type symbolizing earth atop city walls, classifying a year's element."
+ },
+ {
+  "term": "壁上土",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以\"墙壁上的土\"比喻该年份的五行属性。",
+  "en": "A Nayin type symbolizing earth on walls, classifying a year's elemental nature."
+ },
+ {
+  "term": "大林木",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以\"茂密森林之木\"比喻该年份的五行属性。",
+  "en": "A Nayin type symbolizing forest wood, classifying a year's elemental nature."
+ },
+ {
+  "term": "大海水",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以\"广阔海洋之水\"比喻该年份的五行属性。",
+  "en": "A Nayin type symbolizing vast ocean water, classifying a year's elemental nature."
+ },
+ {
+  "term": "天上火",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以天上之火取象，属传统干支分类说法。",
+  "en": "A traditional sexagenary-cycle label symbolized as fire in the sky."
+ },
+ {
+  "term": "天河水",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以银河之水取象，属传统干支分类说法。",
+  "en": "A traditional sexagenary-cycle label symbolized as water of the Milky Way."
+ },
+ {
+  "term": "屋上土",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以屋顶之土取象，属传统干支分类说法。",
+  "en": "A traditional sexagenary-cycle label symbolized as earth on a rooftop."
+ },
+ {
+  "term": "山下火",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以山脚之火取象，属传统干支分类说法。",
+  "en": "A traditional sexagenary-cycle label symbolized as fire at a mountain's foot."
+ },
+ {
+  "term": "山头火",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以山顶之火取象，属传统干支分类说法。",
+  "en": "A traditional sexagenary-cycle label symbolized as fire atop a mountain."
+ },
+ {
+  "term": "平地木",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以平地上树木取象，属传统干支分类说法。",
+  "en": "A traditional sexagenary-cycle label symbolized as trees on level ground."
+ },
+ {
+  "term": "杨柳木",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以杨柳之木取象，属传统干支分类说法。",
+  "en": "A traditional sexagenary-cycle label symbolized as willow and poplar wood."
+ },
+ {
+  "term": "松柏木",
+  "domain": "纳音",
+  "zh": "六十甲子纳音之一，以松柏之木取象，属传统干支分类说法。",
+  "en": "A traditional sexagenary-cycle label symbolized as pine and cypress wood."
+ },
+ {
+  "term": "沙中金",
+  "domain": "纳音",
+  "zh": "传统命理中干支对应的五行分类，以沙中之金为喻。",
+  "en": "A traditional Five Elements category symbolized by gold hidden in sand."
+ },
+ {
+  "term": "泉中水",
+  "domain": "纳音",
+  "zh": "传统命理中干支对应的五行分类，以泉中之水为喻。",
+  "en": "A traditional Five Elements category symbolized by water flowing from a spring."
+ },
+ {
+  "term": "海中金",
+  "domain": "纳音",
+  "zh": "传统命理中干支对应的五行分类，以海中之金为喻。",
+  "en": "A traditional Five Elements category symbolized by gold deep within the sea."
+ },
+ {
+  "term": "涧下水",
+  "domain": "纳音",
+  "zh": "传统命理中干支对应的五行分类，以山涧之水为喻。",
+  "en": "A traditional Five Elements category symbolized by water running through a mountain stream."
+ },
+ {
+  "term": "炉中火",
+  "domain": "纳音",
+  "zh": "传统命理中干支对应的五行分类，以炉中之火为喻。",
+  "en": "A traditional Five Elements category symbolized by fire burning inside a furnace."
+ },
+ {
+  "term": "白蜡金",
+  "domain": "纳音",
+  "zh": "传统命理中干支对应的五行分类，以白蜡状金属为喻。",
+  "en": "A traditional Five Elements category symbolized by soft, wax-like metal."
+ },
+ {
+  "term": "石榴木",
+  "domain": "纳音",
+  "zh": "传统命理中干支对应的五行分类，以石榴树木为喻。",
+  "en": "A traditional Five Elements category symbolized by the pomegranate tree."
+ },
+ {
+  "term": "覆灯火",
+  "domain": "纳音",
+  "zh": "传统命理中干支对应的五行分类，以灯盏之火为喻。",
+  "en": "A traditional Five Elements category symbolized by the flame of an oil lamp."
+ },
+ {
+  "term": "路旁土",
+  "domain": "纳音",
+  "zh": "纳音之一，喻路边之土，承载往来、平凡踏实。传统民俗分类参考。",
+  "en": "Roadside Earth: a Nayin category symbolizing ordinary, steady ground."
+ },
+ {
+  "term": "金箔金",
+  "domain": "纳音",
+  "zh": "纳音之一，喻薄如金箔之金，精致而需护持。传统民俗分类参考。",
+  "en": "Gold Foil Metal: a Nayin category suggesting delicate, refined metal."
+ },
+ {
+  "term": "长流水",
+  "domain": "纳音",
+  "zh": "纳音之一，喻绵延不断之水，细水长流、持久不息。传统民俗分类参考。",
+  "en": "Long-Flowing Water: a Nayin category implying steady, enduring flow."
+ },
+ {
+  "term": "霹雳火",
+  "domain": "纳音",
+  "zh": "纳音之一，喻雷电骤发之火，来势迅猛、变化突然。传统民俗分类参考。",
+  "en": "Thunderbolt Fire: a Nayin category suggesting sudden, intense bursts."
+ },
+ {
+  "term": "大驿土",
+  "domain": "纳音",
+  "zh": "纳音之一，喻驿站大道之土，通达四方、承载行旅。传统民俗分类参考。",
+  "en": "Post-Road Earth: a Nayin category symbolizing broad roads and travel."
+ },
+ {
+  "term": "大溪水",
+  "domain": "纳音",
+  "zh": "纳音之一，喻山涧溪流之水，奔涌活泼、顺势而行。传统民俗分类参考。",
+  "en": "Great Stream Water: a Nayin category implying lively, flowing streams."
+ },
+ {
+  "term": "桑柘木",
+  "domain": "纳音",
+  "zh": "纳音之一，喻桑柘之木，可养蚕织衣，实用朴素。传统民俗分类参考。",
+  "en": "Mulberry Wood: a Nayin category symbolizing useful, humble mulberry trees."
+ },
+ {
+  "term": "沙中土",
+  "domain": "纳音",
+  "zh": "纳音之一，喻沙中之土，松散易动、聚散无常。传统民俗分类参考。",
+  "en": "Sand Earth: a Nayin category suggesting loose, shifting sandy soil."
+ },
+ {
+  "term": "钗钏金",
+  "domain": "纳音",
+  "zh": "传统命理中将干支对应五行的一种分类，钗钏金属金命之一，仅作民俗参考。",
+  "en": "A traditional Chinese astrology category pairing stems and branches with five elements; this one belongs to Metal."
+ },
+ {
+  "term": "仓库厕 外正西",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在仓库和厕所处、屋外正西方，传统上提醒孕妇家避免在这些方位动土搬物。",
+  "en": "Old folk belief places the fetal guardian spirit near storage and toilet areas, due west outside; traditionally a reminder to avoid moving things there."
+ },
+ {
+  "term": "仓库厕 房内东",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在仓库和厕所处、屋内东方，传统上建议孕妇家勿在该方位敲打搬动。",
+  "en": "Folk tradition locates the fetal spirit near storage and toilet areas, east side indoors; customarily avoid knocking or rearranging there."
+ },
+ {
+  "term": "仓库床 外西北",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在仓库和床铺处、屋外西北方，传统上提醒孕妇家避免在此方位施工搬物。",
+  "en": "Folk belief places the fetal spirit near storage and bed areas, northwest outside; traditionally avoid construction or moving items there."
+ },
+ {
+  "term": "仓库栖 外东南",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在仓库和禽畜栖息处、屋外东南方，传统上建议孕妇家勿在该方位动土搬动。",
+  "en": "Old custom locates the fetal spirit near storage and animal shelters, southeast outside; traditionally avoid digging or moving things there."
+ },
+ {
+  "term": "仓库栖 外正北",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在仓库和禽畜栖息处、屋外正北方，传统上提醒孕妇家避免在此方位敲打搬物。",
+  "en": "Folk tradition places the fetal spirit near storage and animal shelters, due north outside; customarily avoid hammering or relocating items there."
+ },
+ {
+  "term": "仓库炉 外西南",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在仓库和炉灶处、屋外西南方，传统上建议孕妇家勿在该方位施工搬动。",
+  "en": "Old folk belief locates the fetal spirit near storage and stove areas, southwest outside; traditionally avoid renovation or moving objects there."
+ },
+ {
+  "term": "仓库炉 房内南",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在仓库和炉灶处、屋内南方，传统上提醒孕妇家避免在此方位敲打搬物。",
+  "en": "Folk custom places the fetal spirit near storage and stove areas, south side indoors; traditionally avoid knocking or rearranging things there."
+ },
+ {
+  "term": "仓库碓 外西北",
+  "domain": "胎神",
+  "zh": "民俗中守护胎儿的神煞，当日占仓库、石碓及屋外西北方，传统上该处忌搬动敲打。",
+  "en": "Folk fetal guardian spirit; said to occupy the storehouse, mortar and outer northwest today."
+ },
+ {
+  "term": "仓库门 外正南",
+  "domain": "胎神",
+  "zh": "民俗中守护胎儿的神煞，当日占仓库、门户及屋外正南方，传统上该处忌搬动敲打。",
+  "en": "Fetal guardian spirit; said to occupy the storehouse, doors and outer due south today."
+ },
+ {
+  "term": "占大门 外正西",
+  "domain": "胎神",
+  "zh": "民俗中守护胎儿的神煞，当日占大门及屋外正西方，传统上该处忌搬动敲打。",
+  "en": "Fetal guardian spirit; said to occupy the main gate and outer due west today."
+ },
+ {
+  "term": "占房床 外东南",
+  "domain": "胎神",
+  "zh": "民俗中守护胎儿的神煞，当日占卧室、床铺及屋外东南方，传统上该处忌搬动敲打。",
+  "en": "Fetal guardian spirit; said to occupy the bedroom, bed and outer southeast today."
+ },
+ {
+  "term": "占房床 房内北",
+  "domain": "胎神",
+  "zh": "民俗中守护胎儿的神煞，当日占卧室、床铺及房内北方，传统上该处忌搬动敲打。",
+  "en": "Fetal guardian spirit; said to occupy the bedroom, bed and room's north side today."
+ },
+ {
+  "term": "占碓磨 外正南",
+  "domain": "胎神",
+  "zh": "民俗中守护胎儿的神煞，当日占石碓、石磨及屋外正南方，传统上该处忌搬动敲打。",
+  "en": "Fetal guardian spirit; said to occupy the mortar, millstone and outer due south today."
+ },
+ {
+  "term": "占碓磨 房内南",
+  "domain": "胎神",
+  "zh": "民俗中守护胎儿的神煞，当日占石碓、石磨及房内南方，传统上该处忌搬动敲打。",
+  "en": "Fetal guardian spirit; said to occupy the mortar, millstone and room's south side today."
+ },
+ {
+  "term": "占门厕 外正东",
+  "domain": "胎神",
+  "zh": "民俗中守护胎儿的神煞，当日占门户、厕所以及屋外正东方，传统上该处忌搬动敲打。",
+  "en": "Fetal guardian spirit; said to occupy doors, toilet and outer due east today."
+ },
+ {
+  "term": "占门厕 外正北",
+  "domain": "胎神",
+  "zh": "旧俗认为胎神当日在门、厕所及屋外正北方，传统上忌在这些位置敲打搬动。",
+  "en": "Folk belief: fetal spirit at door, toilet & due north outside; avoid knocking there."
+ },
+ {
+  "term": "占门床 外正南",
+  "domain": "胎神",
+  "zh": "旧俗认为胎神当日在门、床及屋外正南方，传统上忌在这些位置敲打搬动。",
+  "en": "Folk belief: fetal spirit at door, bed & due south outside; avoid knocking there."
+ },
+ {
+  "term": "占门床 房内中",
+  "domain": "胎神",
+  "zh": "旧俗认为胎神当日在门、床及房屋中央，传统上忌在这些位置敲打搬动。",
+  "en": "Folk belief: fetal spirit at door, bed & room center; avoid knocking there."
+ },
+ {
+  "term": "占门炉 外西北",
+  "domain": "胎神",
+  "zh": "旧俗认为胎神当日在门、炉灶及屋外西北方，传统上忌在这些位置敲打搬动。",
+  "en": "Folk belief: fetal spirit at door, stove & northwest outside; avoid knocking there."
+ },
+ {
+  "term": "占门碓 外东南",
+  "domain": "胎神",
+  "zh": "旧俗认为胎神当日在门、碓（舂米器具）及屋外东南方，传统上忌在此敲打搬动。",
+  "en": "Folk belief: fetal spirit at door, mortar & southeast outside; avoid knocking there."
+ },
+ {
+  "term": "占门碓 房内北",
+  "domain": "胎神",
+  "zh": "旧俗认为胎神当日在门、碓（舂米器具）及屋内北方，传统上忌在此敲打搬动。",
+  "en": "Folk belief: fetal spirit at door, mortar & north inside; avoid knocking there."
+ },
+ {
+  "term": "厕灶厨 外西南",
+  "domain": "胎神",
+  "zh": "旧俗认为胎神当日在厕所、灶台、厨房及屋外西南方，传统上忌在此敲打搬动。",
+  "en": "Folk belief: fetal spirit at toilet, stove, kitchen & southwest outside; avoid knocking."
+ },
+ {
+  "term": "厨房床 外正西",
+  "domain": "胎神",
+  "zh": "旧俗认为胎神当日在厨房、床及屋外正西方，传统上忌在这些位置敲打搬动。",
+  "en": "Folk belief: fetal spirit at kitchen, bed & due west outside; avoid knocking there."
+ },
+ {
+  "term": "厨灶栖 外西北",
+  "domain": "胎神",
+  "zh": "民俗认为胎神当日在厨房炉灶及鸡栖处、屋外西北方，传统上孕妇家忌在此处动土搬移。",
+  "en": "Folk belief: fetal spirit at kitchen stove, chicken roost & outdoor NW; traditionally avoid moving things there."
+ },
+ {
+  "term": "厨灶炉 外正南",
+  "domain": "胎神",
+  "zh": "民俗认为胎神当日在厨房炉灶及火炉处、屋外正南方，传统上孕妇家忌在此处敲打修造。",
+  "en": "Folk belief: fetal spirit at kitchen stove, furnace & outdoor due south; traditionally avoid repairs there."
+ },
+ {
+  "term": "厨灶炉 房内北",
+  "domain": "胎神",
+  "zh": "民俗认为胎神当日在厨房炉灶及火炉处、屋内北方，传统上孕妇家忌在此处搬动修整。",
+  "en": "Folk belief: fetal spirit at kitchen stove, furnace & indoor north; traditionally avoid renovations there."
+ },
+ {
+  "term": "厨灶碓 外西南",
+  "domain": "胎神",
+  "zh": "民俗认为胎神当日在厨房炉灶及舂米碓处、屋外西南方，传统上孕妇家忌在此处动工搬移。",
+  "en": "Folk belief: fetal spirit at kitchen stove, rice mortar & outdoor SW; traditionally avoid construction there."
+ },
+ {
+  "term": "厨灶碓 房内东",
+  "domain": "胎神",
+  "zh": "民俗认为胎神当日在厨房炉灶及舂米碓处、屋内东方，传统上孕妇家忌在此处敲钉搬物。",
+  "en": "Folk belief: fetal spirit at kitchen stove, rice mortar & indoor east; traditionally avoid hammering there."
+ },
+ {
+  "term": "厨灶门 外东南",
+  "domain": "胎神",
+  "zh": "民俗认为胎神当日在厨房炉灶及房门处、屋外东南方，传统上孕妇家忌在此处拆卸改造。",
+  "en": "Folk belief: fetal spirit at kitchen stove, doorway & outdoor SE; traditionally avoid demolition there."
+ },
+ {
+  "term": "厨灶门 外正北",
+  "domain": "胎神",
+  "zh": "民俗认为胎神当日在厨房炉灶及房门处、屋外正北方，传统上孕妇家忌在此处动土搬移。",
+  "en": "Folk belief: fetal spirit at kitchen stove, doorway & outdoor due north; traditionally avoid digging there."
+ },
+ {
+  "term": "厨磨厕 房内南",
+  "domain": "胎神",
+  "zh": "民俗认为胎神当日在厨房石磨及厕所处、屋内南方，传统上孕妇家忌在此处修造搬动。",
+  "en": "Folk belief: fetal spirit at kitchen mill, toilet & indoor south; traditionally avoid repairs there."
+ },
+ {
+  "term": "床房栖 房内中",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在卧室、床铺及鸡窝处，位于房屋内部中央，传统上忌在此动土搬移。",
+  "en": "Folk belief places the fetal spirit at bedroom, bed and hen coop inside the house center; avoid renovations there."
+ },
+ {
+  "term": "房床厕 外西北",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在卧室、床铺及厕所处，位于屋外西北方，传统上忌在此修造搬动。",
+  "en": "Folk belief places the fetal spirit at bedroom, bed and toilet outside to the northwest; avoid construction there."
+ },
+ {
+  "term": "房床栖 外正南",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在卧室、床铺及鸡窝处，位于屋外正南方，传统上忌在此修造搬动。",
+  "en": "Folk belief places the fetal spirit at bedroom, bed and hen coop outside due south; avoid renovations there."
+ },
+ {
+  "term": "房床炉 外正西",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在卧室、床铺及灶炉处，位于屋外正西方，传统上忌在此修造搬动。",
+  "en": "Folk belief places the fetal spirit at bedroom, bed and stove outside due west; avoid construction there."
+ },
+ {
+  "term": "房床炉 房内中",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在卧室、床铺及灶炉处，位于房屋内部中央，传统上忌在此动土搬移。",
+  "en": "Folk belief places the fetal spirit at bedroom, bed and stove inside the house center; avoid renovations there."
+ },
+ {
+  "term": "房床碓 外正东",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在卧室、床铺及舂米碓处，位于屋外正东方，传统上忌在此修造搬动。",
+  "en": "Folk belief places the fetal spirit at bedroom, bed and rice mortar outside due east; avoid construction there."
+ },
+ {
+  "term": "房床碓 外正北",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在卧室、床铺及舂米碓处，位于屋外正北方，传统上忌在此修造搬动。",
+  "en": "Folk belief places the fetal spirit at bedroom, bed and rice mortar outside due north; avoid construction there."
+ },
+ {
+  "term": "房床门 外西南",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在卧室、床铺及房门处，位于屋外西南方，传统上忌在此修造搬动。",
+  "en": "Folk belief places the fetal spirit at bedroom, bed and door outside to the southwest; avoid renovations there."
+ },
+ {
+  "term": "房床门 房内西",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在卧室、床及门处，室内西侧，传统上孕妇家避免在此搬动修造。",
+  "en": "Traditional belief: fetal spirit at bedroom, bed and door, indoor west; avoid moving or renovating there."
+ },
+ {
+  "term": "碓磨厕 外东南",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在石碓、石磨及厕所处，屋外东南方，传统上孕妇家忌在此敲打动工。",
+  "en": "Traditional belief: fetal spirit at mortar, mill and toilet, outdoor southeast; avoid hammering or construction there."
+ },
+ {
+  "term": "碓磨厕 房内北",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在石碓、石磨及厕所处，室内北侧，传统上孕妇家忌在此搬移修造。",
+  "en": "Traditional belief: fetal spirit at mortar, mill and toilet, indoor north; avoid moving or renovating there."
+ },
+ {
+  "term": "碓磨床 外西南",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在石碓、石磨及床处，屋外西南方，传统上孕妇家忌在此敲打动土。",
+  "en": "Traditional belief: fetal spirit at mortar, mill and bed, outdoor southwest; avoid hammering or digging there."
+ },
+ {
+  "term": "碓磨床 房内东",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在石碓、石磨及床处，室内东侧，传统上孕妇家忌在此搬动修造。",
+  "en": "Traditional belief: fetal spirit at mortar, mill and bed, indoor east; avoid moving or renovating there."
+ },
+ {
+  "term": "碓磨栖 外正西",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在石碓、石磨及禽畜窝处，屋外正西方，传统上孕妇家忌在此动工。",
+  "en": "Traditional belief: fetal spirit at mortar, mill and animal coop, outdoor due west; avoid construction there."
+ },
+ {
+  "term": "碓磨炉 外东南",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在石碓、石磨及炉灶处，屋外东南方，传统上孕妇家忌在此修造搬动。",
+  "en": "Traditional belief: fetal spirit at mortar, mill and stove, outdoor southeast; avoid renovating or moving there."
+ },
+ {
+  "term": "碓磨炉 外正北",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在石碓、石磨及炉灶处，屋外正北方，传统上孕妇家忌在此敲打修造。",
+  "en": "Traditional belief: fetal spirit at mortar, mill and stove, outdoor due north; avoid hammering or renovating there."
+ },
+ {
+  "term": "门仓库 房内北",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在房门、仓库及室内北侧，传统上提醒孕妇家庭避免在这些位置搬动敲打。",
+  "en": "Folk belief: fetal spirit at door, storeroom & indoor north; traditionally avoid moving things there."
+ },
+ {
+  "term": "门碓栖 外西南",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在房门、碓臼、禽栖处及屋外西南方，传统上建议这些位置少动土搬物。",
+  "en": "Fetal spirit at door, mortar, roost & outdoor southwest; traditionally keep these spots undisturbed."
+ },
+ {
+  "term": "门碓栖 房内东",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在房门、碓臼、禽栖处及室内东侧，传统上提醒这些位置不宜随意敲打搬移。",
+  "en": "Fetal spirit at door, mortar, roost & indoor east; traditionally avoid knocking or moving items."
+ },
+ {
+  "term": "门碓磨 外西北",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在房门、碓臼、石磨及屋外西北方，传统上建议孕妇家庭勿在此处动工。",
+  "en": "Fetal spirit at door, mortar, mill & outdoor northwest; traditionally no construction work there."
+ },
+ {
+  "term": "仓库床 外正东",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在仓库、睡床及屋外正东方，传统上提醒这些位置避免搬动或修造。",
+  "en": "Fetal spirit at storeroom, bed & outdoor due east; traditionally avoid renovation or moving."
+ },
+ {
+  "term": "仓库碓 外东北",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神在仓库、碓臼及屋外东北方，传统上建议孕妇家庭勿在此处敲打动土。",
+  "en": "Fetal spirit at storeroom, mortar & outdoor northeast; traditionally keep these areas quiet."
+ },
+ {
+  "term": "占大门 外东北",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神占据大门及屋外东北方，传统上提醒孕妇家庭大门附近不宜修缮搬动。",
+  "en": "Fetal spirit occupies main gate & outdoor northeast; traditionally avoid repairs near the entrance."
+ },
+ {
+  "term": "占门炉 外东北",
+  "domain": "胎神",
+  "zh": "旧俗认为当日胎神占据房门、灶炉及屋外东北方，传统上建议这些位置不要挪动或拆改。",
+  "en": "Fetal spirit at door, stove & outdoor northeast; traditionally avoid relocating or altering them."
+ },
+ {
+  "term": "厨灶床 外东北",
+  "domain": "胎神",
+  "zh": "民俗认为当日胎神在厨房、炉灶、睡床及屋外东北方，传统上提醒孕妇家庭勿在这些位置搬动或敲打。仅作民俗参考。",
+  "en": "Folk belief places the fetal guardian at kitchen, stove, bed and outdoor northeast; traditionally avoid moving or hammering there."
+ },
+ {
+  "term": "厨灶栖 外正东",
+  "domain": "胎神",
+  "zh": "民俗认为当日胎神在厨房、炉灶、鸡栖及屋外正东方，传统上这些位置宜静不宜动。仅作民俗参考。",
+  "en": "Fetal guardian believed at kitchen, stove, poultry roost and outdoor east; keep these spots undisturbed by custom."
+ },
+ {
+  "term": "房床厕 外东北",
+  "domain": "胎神",
+  "zh": "民俗认为当日胎神在卧室、睡床、厕所及屋外东北方，传统上孕妇家庭避免在此修缮搬动。仅作民俗参考。",
+  "en": "Fetal guardian said to occupy bedroom, bed, toilet and outdoor northeast; avoid repairs or moving items there."
+ },
+ {
+  "term": "碓磨栖 外东北",
+  "domain": "胎神",
+  "zh": "民俗认为当日胎神在舂碓、石磨、鸡栖及屋外东北方，传统上这些位置不宜敲动移位。仅作民俗参考。",
+  "en": "Fetal guardian placed at mortar, millstone, roost and outdoor northeast; tradition says leave them untouched that day."
+ },
+ {
+  "term": "门碓磨 外正东",
+  "domain": "胎神",
+  "zh": "民俗认为当日胎神在门户、舂碓、石磨及屋外正东方，传统上孕妇家庭避免在此拆改搬移。仅作民俗参考。",
+  "en": "Fetal guardian at doorway, mortar, millstone and outdoor east; custom advises no demolition or relocation there."
+ }
+]

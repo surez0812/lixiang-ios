@@ -51,7 +51,7 @@ struct SettingsScreen: View {
                     NavigationLink { AboutScreen() } label: {
                         settingRow("关于历象 · 隐私 · 条款 · 支持", value: "v1.0", chevron: true)
                     }.buttonStyle(.plain)
-                    settingRow("版本", value: "1.0 (build 2)", chevron: false)
+                    settingRow("版本", value: appVersionText, chevron: false)
                 }
                 Text("无需账号 · 数据只在本机")
                     .d1Font(10).foregroundStyle(theme.ink3)

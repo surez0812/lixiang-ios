@@ -11,6 +11,7 @@ struct CompassScreen: View {
     @State private var highlighted: Deity?
     @StateObject private var heading = HeadingProvider()
     @State private var showCalibration = false
+    @State private var selectedTerm: PanelTerm?
     @AppStorage("compass.mode") private var modeRaw = "day"
 
     private var almanac: AlmanacDay { state.almanac(date, hour: state.debugHour ?? BeijingTime.hour(of: Date())) }
@@ -75,6 +76,14 @@ struct CompassScreen: View {
         .onAppear { heading.start() }
         .onDisappear { heading.stop() }
         .sheet(isPresented: $showCalibration) { calibrationSheet }
+        .sheet(item: $selectedTerm) { term in
+            VStack(alignment: .leading, spacing: 10) {
+                Text(term.term).d1SerifFont(22).foregroundStyle(theme.ink)
+                Text(term.zh).d1Font(13).foregroundStyle(theme.ink2).lineSpacing(3)
+                Text(term.en).d1Font(11).foregroundStyle(theme.ink3)
+                Spacer()
+            }.padding(20).presentationDetents([.height(260)])
+        }
         .navigationTitle("吉神罗盘 · \(date.month)月\(date.day)日")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityElement(children: .contain)
@@ -278,7 +287,10 @@ struct CompassScreen: View {
     @ViewBuilder
     private func legendColumn(_ deities: [Deity], includeSha: Bool) -> some View {
         VStack(spacing: 0) {
-            ForEach(deities) { deity in legendRow(deity) }
+            ForEach(deities) { deity in
+                Button { selectedTerm = state.plainLanguage.panelTerm(named: deity.title) } label: { legendRow(deity) }
+                    .buttonStyle(.plain)
+            }
             if includeSha { shaRow }
         }
         .frame(maxWidth: .infinity)
