@@ -41,8 +41,6 @@ struct SettingsScreen: View {
                             }
                         }
                         .buttonStyle(.plain)
-                        .disabled(c != .dao)   // 其余内容包未就绪：disabled（到即启用）
-                        .opacity(c == .dao ? 1 : 0.45)
                     }
                 }
                 group("历法显示") {

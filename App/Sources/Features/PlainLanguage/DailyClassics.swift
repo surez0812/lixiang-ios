@@ -32,8 +32,21 @@ final class DailyClassicsStore {
 
     func verse(for date: LocalDate, classic: DailyClassic) -> DaodejingQuote? {
         let key = String(format: "%04d-%02d-%02d", date.year, date.month, date.day)
-        if let v = load(classic)[key] { return map(v) }
-        if classic != .dao, let v = load(.dao)[key] { return map(v) }   // 回退道经
+        if let v = load(classic)[key] {
+            #if DEBUG
+            print("LXVERSE classic=\(classic.rawValue) file=\(classic.fileName).json hit=1 fallback=0 date=\(key)")
+            #endif
+            return map(v)
+        }
+        if classic != .dao, let v = load(.dao)[key] {
+            #if DEBUG
+            print("LXVERSE classic=\(classic.rawValue) file=\(classic.fileName).json hit=0 fallback=dao date=\(key)")
+            #endif
+            return map(v)
+        }
+        #if DEBUG
+        print("LXVERSE classic=\(classic.rawValue) file=\(classic.fileName).json hit=0 fallback=none date=\(key) (内容未交付/缺日)")
+        #endif
         return nil
     }
 
