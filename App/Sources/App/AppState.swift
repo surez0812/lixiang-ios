@@ -70,7 +70,11 @@ final class AppState: ObservableObject {
         } else {
             self.theme = AppTheme(rawValue: UserDefaults.standard.string(forKey: Keys.theme) ?? "") ?? .system
         }
+        #if DEBUG
+        if let forced = debug.classic { self.dailyClassic = forced } else { self.dailyClassic = UserDefaults.standard.string(forKey: "lx.daily.classic") ?? "dao" }
+        #else
         self.dailyClassic = UserDefaults.standard.string(forKey: "lx.daily.classic") ?? "dao"
+        #endif
         self.showTaoCalendar = UserDefaults.standard.bool(forKey: Keys.taoCalendar)
         self.showFotoCalendar = UserDefaults.standard.bool(forKey: Keys.fotoCalendar)
         if let stored = UserDefaults.standard.object(forKey: Keys.weekStart) as? Int, let w = WeekStart(rawValue: stored) {

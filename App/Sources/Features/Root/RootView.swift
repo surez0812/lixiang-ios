@@ -24,7 +24,7 @@ struct RootView: View {
         rootBody
             .overlay(alignment: .top) {
                 #if DEBUG
-                Text("DEBUG BUILD · screen=\(state.debug.screen ?? "-") · terms=\(state.debug.expandTerms ? "1":"0")")
+                Text("DEBUG BUILD · screen=\(state.debug.screen ?? "-") · terms=\(state.debug.expandTerms ? "1":"0") · classic=\(state.dailyClassic)")
                     .d1Font(8, weight: .bold).foregroundStyle(.white)
                     .padding(.horizontal, 6).padding(.vertical, 2)
                     .background(.red, in: Capsule()).padding(.top, 2)
