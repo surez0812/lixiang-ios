@@ -24,21 +24,11 @@ struct DayDetailScreen: View {
                 MergedDayCard(date: date, variant: .day) { showQuoteSheet = true }
                     .frame(maxWidth: 520)
                     .frame(maxWidth: .infinity)
-                religionYearRows
-                zhishenRow
-                weatherPanel
-                festivalWindowPanel
-                shichenBandCard.id("shichen-band")
-                if showAllHours { expandedHourRows }
-                HStack(spacing: 10) {
-                    NavigationLink(value: Route.compass(date)) { miniCard(icon: "safari", title: "吉神罗盘", sub: compassSub) }
-                        .buttonStyle(.plain)
-                    NavigationLink(value: Route.content("dongzhi")) { miniCard(icon: "book.closed", title: "民俗 · 冬至", sub: "查看内容") }
-                        .buttonStyle(.plain)
-                }
-                yiJiCard
-                foldedRows
-                entries
+                coreSection
+                collapseRow(0, "时辰宜忌", icon: "clock") { shichenBandCard.id("shichen-band"); if showAllHours { expandedHourRows } }
+                collapseRow(1, "民俗 · 未来 10 天", icon: "book.closed") { festivalWindowPanel }
+                collapseRow(2, "天气 · 上海", icon: "cloud.sun") { weatherPanel }
+                collapseRow(3, "更多术语", icon: "text.book.closed") { termsSection }
             }
             .padding(.horizontal, 18)
             .padding(.vertical, 8)
@@ -296,7 +286,96 @@ struct DayDetailScreen: View {
     }
 
     @State private var weather = WeatherService()
+
+    @ViewBuilder
+    private func collapseRow<C: View>(_ idx: Int, _ title: String, icon: String, @ViewBuilder content: () -> C) -> some View {
+        VStack(spacing: 0) {
+            Button { withAnimation { openSection = openSection == idx ? nil : idx } } label: {
+                HStack(spacing: 8) {
+                    Image(systemName: icon).d1Font(12).foregroundStyle(theme.accentStrong)
+                    Text(title).d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
+                    Spacer()
+                    Image(systemName: openSection == idx ? "chevron.up" : "chevron.down").d1Font(10).foregroundStyle(theme.ink3)
+                }
+                .padding(14)
+            }.buttonStyle(.plain)
+            if openSection == idx {
+                VStack(spacing: 10) { content() }.padding(.horizontal, 12).padding(.bottom, 12)
+            }
+        }
+        .background(theme.card, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+    }
+
+    @ViewBuilder
+    private var coreSection: some View {
+        D1Card(padding: 14) {
+            VStack(alignment: .leading, spacing: 8) {
+                yiJiCard
+                Divider().overlay(theme.line)
+                zhishenRow
+                Divider().overlay(theme.line)
+                deitiesInline("吉神宜趋", names: almanac.jiShen)
+                deitiesInline("凶煞宜忌", names: almanac.xiongSha)
+                Divider().overlay(theme.line)
+                NavigationLink(value: Route.compass(date)) {
+                    HStack { Text("吉神罗盘").d1Font(12, weight: .semibold).foregroundStyle(theme.ink); Spacer(); Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.ink3) }
+                }.buttonStyle(.plain)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func deitiesInline(_ title: String, names: [String]) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(title).d1Font(10).foregroundStyle(theme.ink3)
+            if names.isEmpty { Text("—").d1Font(10).foregroundStyle(theme.ink3) }
+            ForEach(names.prefix(6), id: \.self) { n in
+                Button { withAnimation { openTerm = openTerm == n ? nil : n } } label: {
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text(n).d1Font(11, weight: .medium).foregroundStyle(theme.ink)
+                        if openTerm == n, let t = state.plainLanguage.panelTerm(named: n) {
+                            Text(t.zh).d1Font(10.5).foregroundStyle(theme.ink2)
+                            Text(t.en).d1Font(9).foregroundStyle(theme.ink3)
+                        }
+                    }
+                }.buttonStyle(.plain)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private var termsSection: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            termsDomain("值神", [almanac.tianShen])
+            termsDomain("建除十二神", [almanac.zhiXing])
+            termsDomain("二十八星宿", [almanac.xiu])
+            termsDomain("纳音五行", [almanac.dayNaYin])
+            termsDomain("彭祖百忌", [almanac.pengZuGan, almanac.pengZuZhi])
+            termsDomain("胎神", [almanac.taiShen])
+            religionYearRows
+        }
+    }
+
+    @ViewBuilder
+    private func termsDomain(_ domain: String, _ names: [String]) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(domain).d1Font(10, weight: .semibold).foregroundStyle(theme.ink3)
+            ForEach(Array(names.prefix(4)), id: \.self) { n in
+                Button { withAnimation { openTerm = openTerm == n ? nil : n } } label: {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(n).d1Font(11).foregroundStyle(theme.ink)
+                        if openTerm == n, let t = state.plainLanguage.panelTerm(named: n) {
+                            Text(t.zh).d1Font(10.5).foregroundStyle(theme.ink2)
+                            Text(t.en).d1Font(9).foregroundStyle(theme.ink3)
+                        }
+                    }
+                }.buttonStyle(.plain)
+            }
+        }
+    }
     @State private var showZhishen = false
+    @State private var openSection: Int? = nil
+    @State private var openTerm: String? = nil
 
     @ViewBuilder
     private var zhishenRow: some View {
