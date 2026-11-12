@@ -79,8 +79,8 @@ struct MergedDayCard: View {
                 .frame(width: w, height: cardHeight)
                 .clipped()
                 .overlay(alignment: .topLeading) {
-                    if let term = almanac.solarTerm {
-                        Text(term).d1Font(10, weight: .semibold).foregroundStyle(theme.cream)
+                    if let badge = SolarTermPentad.badge(for: date, engine: state.engine) {
+                        Text(badge).d1Font(10, weight: .semibold).foregroundStyle(theme.cream)
                             .padding(.horizontal, 10).padding(.vertical, 5)
                             .background(theme.accent, in: Capsule()).padding(12)
                             .accessibilityHidden(true)
