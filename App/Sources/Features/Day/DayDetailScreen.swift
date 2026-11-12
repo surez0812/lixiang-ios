@@ -365,6 +365,7 @@ struct DayDetailScreen: View {
 
     @ViewBuilder
     @ViewBuilder
+    @ViewBuilder
     private func termsDomain(_ domain: String, _ names: [String]) -> some View {
         let visible = names.filter { state.plainLanguage.panelTerm(named: $0) != nil }
         if !visible.isEmpty {
@@ -381,6 +382,7 @@ struct DayDetailScreen: View {
                     }
                 }.buttonStyle(.plain)
             }
+        }
         }
     }
     @State private var showZhishen = false
