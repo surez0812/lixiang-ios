@@ -1,121 +1,190 @@
 import SwiftUI
 import LixiangCalendarCore
 
-/// R14 黄历（T3）：所选日整组重算、前后一天、白话开关、字段全、岁时匹配、罗盘入口
+/// R14 黄历（T3）：对照 almanac-phone-light 重做——红 Hero + 纪元 + 当日岁时 + 宜忌逐项白话
 struct R14AlmanacScreen: View {
     @Environment(\.d1) private var theme
+    @Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var state: AppState
     @EnvironmentObject private var days: SelectedDayStore
+    @EnvironmentObject private var chrome: R14ChromeState
     let date: LocalDate
     @State private var showAllHours = false
+
+    private var engine: LunarSwiftEngine? { days.engine as? LunarSwiftEngine }
+    private var taoYear: Int? { engine?.taoInfo(for: days.selectedDate)?.year }
+    private var fotoYear: Int? { engine?.fotoInfo(for: days.selectedDate)?.year }
+    private var festival: String? { days.matchedFestivals.first }
+    private var festivalCategory: String {
+        guard let id = state.contentID(for: days.selectedDate) else { return "岁时" }
+        _ = id
+        return "民俗"
+    }
 
     var body: some View {
         GeometryReader { geo in
             ScrollView {
-                let wide = AlmanacLayout.columns(width: geo.size.width) == 2
-                if wide {
-                    HStack(alignment: .top, spacing: 16) { left; right }.padding(16)
+                if geo.size.width >= 744 {
+                    HStack(alignment: .top, spacing: 16) { leftColumn; rightColumn }
+                        .padding(.horizontal, 24).padding(.top, 16).padding(.bottom, 120)
                 } else {
-                    VStack(alignment: .leading, spacing: 12) { left; right }.padding(16)
+                    VStack(alignment: .leading, spacing: 14) { leftColumn; rightColumn }
+                        .padding(.horizontal, 16).padding(.top, 8).padding(.bottom, 120)
                 }
             }
         }
         .background(ScreenBackground())
-        .navigationTitle(Text(verbatim: "\(date.year)年\(date.month)月\(date.day)日"))
+        .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar(.hidden, for: .tabBar)
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                NavigationLink(value: R14Route.compass(days.selectedDate, hour: days.hourIndex ?? 12)) {
-                    Text("值神罗盘").d1Font(11, weight: .semibold)
-                        .padding(.horizontal, 10).frame(minHeight: 44)
+        .toolbar(.hidden, for: .navigationBar)
+        .onAppear {
+            chrome.forceTabBarVisible = true
+            if days.selectedDate != date { days.select(date) }
+            #if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("-LixiangVernacular") { state.showVernacular = true }
+            #endif
+        }
+        .onDisappear { chrome.forceTabBarVisible = false }
+    }
+
+    // MARK: 左列：红 Hero + 纪元 + 当日岁时 + 前后一天
+    private var leftColumn: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 10) {
+                Button { dismiss() } label: {
+                    Image(systemName: "chevron.left").d1Font(14, weight: .semibold).foregroundStyle(theme.cream)
+                        .frame(width: 40, height: 40)
+                        .background(theme.cream.opacity(0.15), in: Circle())
+                }.buttonStyle(.plain).accessibilityLabel("返回")
+                Text("黄历").d1SerifFont(22, weight: .semibold).foregroundStyle(theme.cream)
+                Spacer()
+                NavigationLink(value: R14Route.compass(days.selectedDate, hour: days.hourIndex)) {
+                    Text("值神罗盘").d1Font(11, weight: .semibold).foregroundStyle(Color(hex: 0xB23A2A))
+                        .padding(.horizontal, 12).frame(minHeight: 40)
+                        .background(theme.cream, in: Capsule())
+                }.buttonStyle(.plain)
+            }
+            VStack(alignment: .leading, spacing: 5) {
+                Text(verbatim: "\(days.selectedDate.year)年\(days.selectedDate.month)月\(days.selectedDate.day)日 · 星期\(days.selectedDate.weekdayChinese)")
+                    .d1SerifFont(24, weight: .semibold).foregroundStyle(theme.cream)
+                Text(verbatim: "农历\(days.lunar.monthDayText) · \(days.lunar.yearGanZhi)年 \(days.lunar.monthGanZhi)月 \(days.lunar.dayGanZhi)日")
+                    .d1Font(11).foregroundStyle(theme.cream.opacity(0.9))
+                if let idx = days.hourIndex, days.shichen.indices.contains(idx) {
+                    let h = days.shichen[idx]
+                    Text(verbatim: "\(h.ganZhi)时 \(h.startMinute)–\(h.endMinute)").d1Font(10).foregroundStyle(theme.cream.opacity(0.8))
                 }
+                HStack(spacing: 6) {
+                    Image(systemName: "sun.max").d1Font(10)
+                    Text(verbatim: "黄帝纪元 · 道历 \(taoYear ?? days.selectedDate.year + 2697) 年").d1Font(10)
+                }.foregroundStyle(theme.cream.opacity(0.92))
+                HStack(spacing: 6) {
+                    Image(systemName: "leaf").d1Font(10)
+                    Text(verbatim: "佛历纪元 \(fotoYear ?? 2570) 年").d1Font(10)
+                }.foregroundStyle(theme.cream.opacity(0.92))
+                if let festival {
+                    NavigationLink(value: R14Route.folkloreDetail(id: state.contentID(for: days.selectedDate) ?? "xiezao", version: nil)) {
+                        HStack(spacing: 6) {
+                            Text("当日岁时").d1Font(9).foregroundStyle(theme.cream.opacity(0.8))
+                            Text(festival).d1Font(11, weight: .semibold).foregroundStyle(theme.cream)
+                            Text(festivalCategory).d1Font(8).foregroundStyle(theme.cream.opacity(0.75))
+                                .padding(.horizontal, 6).padding(.vertical, 2)
+                                .background(theme.cream.opacity(0.15), in: Capsule())
+                            Spacer(minLength: 0)
+                            Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.cream.opacity(0.8))
+                        }
+                        .padding(.horizontal, 10).padding(.vertical, 8)
+                        .background(theme.cream.opacity(0.12), in: RoundedRectangle(cornerRadius: 12))
+                    }.buttonStyle(.plain).padding(.top, 2)
+                }
+                HStack(spacing: 10) {
+                    Button { days.previousDay() } label: {
+                        Text("前一天").d1Font(11, weight: .semibold).foregroundStyle(theme.cream)
+                            .frame(maxWidth: .infinity, minHeight: 44)
+                            .overlay(RoundedRectangle(cornerRadius: 12).strokeBorder(theme.cream.opacity(0.6)))
+                    }.buttonStyle(.plain)
+                    Button { days.nextDay() } label: {
+                        Text("后一天").d1Font(11, weight: .semibold).foregroundStyle(theme.cream)
+                            .frame(maxWidth: .infinity, minHeight: 44)
+                            .overlay(RoundedRectangle(cornerRadius: 12).strokeBorder(theme.cream.opacity(0.6)))
+                    }.buttonStyle(.plain)
+                }.padding(.top, 4)
             }
         }
-        .onAppear { if days.selectedDate != date { days.select(date) } }
+        .padding(16)
+        .background(LinearGradient(colors: [Color(hex: 0xB23A2A), Color(hex: 0x8B2A1A)], startPoint: .topLeading, endPoint: .bottomTrailing), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
     }
 
-    private var left: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            D1Card(padding: 14) {
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(verbatim: "\(days.selectedDate.year)年\(days.selectedDate.month)月\(days.selectedDate.day)日 · 星期\(days.selectedDate.weekdayChinese)")
-                        .d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
-                    Text(verbatim: "农历\(days.lunar.monthDayText) · \(days.lunar.yearGanZhi)年 \(days.lunar.monthGanZhi)月 \(days.lunar.dayGanZhi)日")
-                        .d1Font(11).foregroundStyle(theme.ink2)
-                    if let term = days.almanac.solarTerm { Text("节气 \(term)").d1Font(10).foregroundStyle(theme.solarTermText) }
-                    HStack(spacing: 10) {
-                        Button("前一天") { days.previousDay() }.d1Font(11, weight: .semibold)
-                        Button("今天") { days.selectToday() }.d1Font(11, weight: .semibold)
-                        Button("后一天") { days.nextDay() }.d1Font(11, weight: .semibold)
-                    }.frame(minHeight: 44)
-                }.frame(maxWidth: .infinity, alignment: .leading)
-            }
-            D1Card(padding: 14) {
-                VStack(alignment: .leading, spacing: 5) {
-                    Toggle(isOn: $state.showVernacular) { Text("白话").d1Font(11).foregroundStyle(theme.ink) }.tint(theme.accent)
-                    HStack(alignment: .top, spacing: 6) { Text("宜").d1Font(11, weight: .semibold).foregroundStyle(theme.yiText); Text(days.almanac.yi.joined(separator: " ")).d1Font(11).foregroundStyle(theme.ink2) }
-                    HStack(alignment: .top, spacing: 6) { Text("忌").d1Font(11, weight: .semibold).foregroundStyle(theme.red); Text(days.almanac.ji.joined(separator: " ")).d1Font(11).foregroundStyle(theme.ink2) }
-                }.frame(maxWidth: .infinity, alignment: .leading)
-            }
-            if !days.matchedFestivals.isEmpty {
-                D1Card(padding: 12) { Text("岁时：\(days.matchedFestivals.joined(separator: "、"))").d1Font(11).foregroundStyle(theme.ink2) }
-            }
+    // MARK: 右列：宜忌卡 + 时辰
+    private var rightColumn: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            yiJiCard
+            hoursCard
         }
     }
 
-    private var right: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            D1Card(padding: 14) {
-                VStack(alignment: .leading, spacing: 6) {
-                    Text("黄历").d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
-                    field("纪元", "黄帝\(days.selectedDate.year + 2697)年")
-                    field("值神", "\(days.almanac.tianShen)（\(days.almanac.tianShenType)）")
-                    field("冲煞", "\(days.almanac.chongDesc) · 煞\(days.sha?.rawValue ?? "—")")
-                    field("纳音", days.almanac.dayNaYin)
-                    field("建除", days.almanac.zhiXing)
-                    field("彭祖", "\(days.almanac.pengZuGan)；\(days.almanac.pengZuZhi)")
-                    field("胎神", days.almanac.taiShen)
-                    field("星宿", days.almanac.xiu)
-                    field("吉神", days.almanac.jiShen.joined(separator: " · "))
-                    field("凶煞", days.almanac.xiongSha.joined(separator: " · "))
-                }.frame(maxWidth: .infinity, alignment: .leading)
+    private var yiJiCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Text("宜忌").d1SerifFont(20, weight: .semibold).foregroundStyle(theme.ink)
+                Spacer()
+                Text("逐项可读").d1Font(9, weight: .semibold).foregroundStyle(Color(hex: 0xB23A2A))
+                    .padding(.horizontal, 8).padding(.vertical, 4)
+                    .overlay(Capsule().strokeBorder(Color(hex: 0xB23A2A).opacity(0.5)))
             }
-            D1Card(padding: 12) {
-                VStack(alignment: .leading, spacing: 5) {
-                    HStack { Text("十二时辰").d1Font(13, weight: .semibold).foregroundStyle(theme.ink); Spacer()
-                        Button(showAllHours ? "收起" : "展开") { withAnimation { showAllHours.toggle() } }.d1Font(10, weight: .semibold).foregroundStyle(theme.accentStrong) }
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 4) {
-                            ForEach(Array(days.shichen.prefix(12).enumerated()), id: \.offset) { idx, h in
-                                VStack(spacing: 2) {
-                                    Text(h.ganZhi).d1Font(9).foregroundStyle(theme.ink)
-                                    Text(h.luck).d1Font(8).foregroundStyle(h.luck == "吉" ? theme.yiText : theme.red)
-                                }
-                                .padding(.horizontal, 6).padding(.vertical, 5)
-                                .background(idx == days.hourIndex ? theme.accent.opacity(0.18) : theme.card, in: RoundedRectangle(cornerRadius: 8))
-                            }
+            Toggle(isOn: $state.showVernacular) {
+                VStack(alignment: .leading, spacing: 1) {
+                    Text("白话全解").d1Font(11, weight: .semibold).foregroundStyle(theme.ink)
+                    Text("开启后逐项显示白话解释").d1Font(9).foregroundStyle(theme.ink3)
+                }
+            }.tint(theme.accent)
+            Divider().overlay(theme.line)
+            termSection("宜", days.almanac.yi, color: theme.yiText)
+            Divider().overlay(theme.line)
+            termSection("忌", days.almanac.ji, color: theme.red)
+        }
+        .padding(16)
+        .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6)))
+    }
+
+    private func termSection(_ label: String, _ items: [String], color: Color) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack(spacing: 6) {
+                Text(label).d1SerifFont(20, weight: .semibold).foregroundStyle(color)
+                Text("· \(items.count) 项").d1Font(9).foregroundStyle(theme.ink3)
+            }
+            ForEach(Array(items.enumerated()), id: \.offset) { idx, term in
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(term).d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
+                    if state.showVernacular {
+                        let expl = state.plainLanguage.panelTermMatching(term)?.detailText
+                            ?? state.plainLanguage.panelTermMatching(term)?.zh
+                        if let expl, !expl.isEmpty {
+                            Text(expl).d1Font(10).foregroundStyle(theme.ink2).lineSpacing(2)
                         }
                     }
-                    if showAllHours {
-                        ForEach(Array(days.shichen.enumerated()), id: \.offset) { _, h in
-                            HStack { Text("\(h.ganZhi)时"); Text("\(h.startMinute)–\(h.endMinute)"); Spacer(); Text("煞\(h.sha?.rawValue ?? "—")"); Text(h.luck) }
-                                .d1Font(10).foregroundStyle(theme.ink2)
-                        }
-                    }
                 }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                if idx < items.count - 1 { Divider().overlay(theme.line.opacity(0.5)) }
             }
         }
     }
 
-    private func field(_ label: String, _ value: String) -> some View {
-        HStack(alignment: .top, spacing: 8) {
-            Text(label).d1Font(10).foregroundStyle(theme.ink3).frame(width: 40, alignment: .leading)
-            Text(value).d1Font(11).foregroundStyle(theme.ink2).frame(maxWidth: .infinity, alignment: .leading)
+    private var hoursCard: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text("十二时辰").d1SerifFont(18, weight: .semibold).foregroundStyle(theme.ink)
+            ForEach(Array(days.shichen.prefix(12).enumerated()), id: \.offset) { idx, h in
+                HStack {
+                    Text("\(h.ganZhi)时").d1Font(10, weight: idx == days.hourIndex ? .semibold : .regular).foregroundStyle(theme.ink)
+                    Text("\(h.startMinute)–\(h.endMinute)").d1Font(9).foregroundStyle(theme.ink3)
+                    Spacer()
+                    Text("煞\(h.sha?.rawValue ?? "—")").d1Font(9).foregroundStyle(theme.ink2)
+                    Text(h.luck).d1Font(9).foregroundStyle(h.luck == "吉" ? theme.yiText : theme.red)
+                }.frame(minHeight: 24)
+            }
         }
+        .padding(14)
+        .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6)))
     }
-}
-
-enum AlmanacLayout {
-    static func columns(width: CGFloat) -> Int { width >= 744 ? 2 : 1 }
 }
