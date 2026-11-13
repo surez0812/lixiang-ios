@@ -68,7 +68,6 @@ struct R14RootView: View {
             case "countdown": r = .countdown
             case "settings": r = .settings
             case "folkloreDetail": r = .folkloreDetail(id: "xiezao", version: nil)
-            case "countdownDetail": r = .countdownDetail(id: nil)
             case "countdownDetail": r = .countdownDetail(id: "first")
             default: r = .home
             }
