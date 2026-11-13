@@ -4,6 +4,7 @@ import SwiftUI
 /// 动作数学对应 ApprovedFortuneCore.js / AnimationTimeline.json（press 180 / shake 600 / lift 1050 / reveal 1450）。
 struct FortuneScreen: View {
     @Environment(\.d1) private var theme
+    @Environment(\.dismiss) private var dismiss
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.horizontalSizeClass) private var hSize
     @Environment(\.verticalSizeClass) private var vSize
@@ -119,12 +120,11 @@ struct FortuneScreen: View {
             }
             // 底部全宽主按钮 + 右侧跳过（R14 iPad Landscape 稿）
             HStack(spacing: 12) {
-                Button(action: draw) {
+                Button { if phase == .result { dismiss() } else { draw() } } label: {
                     Text(buttonTitle).d1Font(16, weight: .semibold).frame(maxWidth: .infinity, minHeight: 50)
                 }
                 .buttonStyle(.borderedProminent).tint(theme.accentStrong)
-                .disabled(phase == .running || done)
-                .opacity(done ? 0.55 : 1)
+                .disabled(phase == .running)
                 Button("跳过动画") { finish() }
                     .d1Font(14).foregroundStyle(theme.ink2)
                     .frame(minWidth: 110, minHeight: 50)
@@ -240,15 +240,14 @@ struct FortuneScreen: View {
     private var controls: some View {
         VStack(spacing: 10) {
             HStack(spacing: 10) {
-                Button(action: draw) {
+                Button { if phase == .result { dismiss() } else { draw() } } label: {
                     Text(buttonTitle)
                         .d1Font(16, weight: .semibold)
                         .frame(maxWidth: .infinity, minHeight: 48)
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(theme.accentStrong)
-                .disabled(phase == .running || done)
-                .opacity(done ? 0.55 : 1)
+                .disabled(phase == .running)
 
                 Button("跳过动画") {
                     if phase == .running { finish() }
@@ -279,7 +278,7 @@ struct FortuneScreen: View {
         switch phase {
         case .idle: return "轻摇，遇见今日一签"
         case .running: return "与今天相遇…"
-        case .result: return done ? "今日一签已收好" : "收好今日一签"
+        case .result: return "收好今日一签"
         }
     }
 
