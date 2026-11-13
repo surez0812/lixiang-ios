@@ -26,6 +26,19 @@ final class R14StateCaptureUITests: XCTestCase {
         shot("iphone-selection-results")
     }
 
+    func testDailySharePreview() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-LixiangR14Route", "daily"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 25))
+        sleep(4)
+        let share = app.buttons["分享今日一句"]
+        XCTAssertTrue(share.waitForExistence(timeout: 8), "分享按钮未出现")
+        share.tap()
+        sleep(5)
+        shot("iphone-daily-share")
+    }
+
     func testCountdownDetail() throws {
         let app = XCUIApplication()
         app.launchArguments = ["-LixiangTab", "3"]

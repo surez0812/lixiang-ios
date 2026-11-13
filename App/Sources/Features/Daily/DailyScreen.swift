@@ -109,6 +109,8 @@ struct DailyScreen: View {
         let view = DailyShareCard(date: date, almanac: almanac, verse: verse, theme: theme)
         let renderer = ImageRenderer(content: view)
         renderer.scale = 3
+        renderer.proposedSize = ProposedViewSize(width: 360, height: 450)
+        renderer.isOpaque = true
         shareImage = renderer.uiImage
         showShare = shareImage != nil
     }
@@ -119,7 +121,11 @@ private struct DailySharePreview: View {
     @Environment(\.dismiss) private var dismiss
     var body: some View {
         VStack(spacing: 14) {
-            Image(uiImage: image).resizable().scaledToFit().padding(20)
+            Image(uiImage: image).resizable().scaledToFit()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .padding(20)
+                .background(Color.white)
+                .accessibilityIdentifier("daily-share-image")
             HStack(spacing: 12) {
                 ShareLink(item: Image(uiImage: image), preview: SharePreview("历象 · 每日一句", image: Image(uiImage: image))) {
                     Label("系统分享", systemImage: "square.and.arrow.up").d1Font(15, weight: .semibold)
