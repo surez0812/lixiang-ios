@@ -1,0 +1,203 @@
+{
+  "modes": [
+    "duo-closed-landscape",
+    "duo-closed-portrait",
+    "duo-open-landscape",
+    "duo-open-portrait",
+    "duo-tabletop",
+    "duo-tent",
+    "ipad-landscape",
+    "ipad-landscape-dark",
+    "ipad-portrait",
+    "ipad-portrait-dark",
+    "phone-dark",
+    "phone-light"
+  ],
+  "screenCount": 188,
+  "phonePortraitOnly": true,
+  "splitviewAbsent": true,
+  "tabletopChecks": [
+    {
+      "page": "home-duo-tabletop",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "almanac-duo-tabletop",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "folklore-duo-tabletop",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "countdown-duo-tabletop",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "settings-duo-tabletop",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "selection-duo-tabletop",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "daily-duo-tabletop",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "folklore-detail-duo-tabletop",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "countdown-detail-duo-tabletop",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "fortune-duo-tabletop",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "compass-duo-tabletop",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "fortune-duo-tabletop-result",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "almanac-duo-tabletop-plain-off",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    },
+    {
+      "page": "compass-duo-tabletop-hour",
+      "logicalSize": [
+        669,
+        951
+      ],
+      "pixelSize": [
+        2007,
+        2853
+      ],
+      "htmlSameLayout": true,
+      "pngIdenticalToOpenPortrait": true
+    }
+  ]
+}

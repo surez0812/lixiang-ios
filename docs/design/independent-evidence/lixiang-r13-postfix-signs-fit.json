@@ -1,0 +1,912 @@
+[
+  {
+    "file": "fortune-duo-closed-landscape.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 371.75,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      }
+    ]
+  },
+  {
+    "file": "fortune-duo-closed-portrait.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 516.171875,
+        "limit": 590
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 526.234375,
+        "limit": 590
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 516.171875,
+        "limit": 590
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 526.234375,
+        "limit": 590
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 516.171875,
+        "limit": 590
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 526.234375,
+        "limit": 590
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 526.234375,
+        "limit": 590
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 516.171875,
+        "limit": 590
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 526.234375,
+        "limit": 590
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 526.234375,
+        "limit": 590
+      }
+    ]
+  },
+  {
+    "file": "fortune-duo-open-landscape.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 459.765625,
+        "limit": 581
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 470.609375,
+        "limit": 581
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 459.765625,
+        "limit": 581
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 470.609375,
+        "limit": 581
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 459.765625,
+        "limit": 581
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 459.765625,
+        "limit": 581
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 459.765625,
+        "limit": 581
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 459.765625,
+        "limit": 581
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 459.765625,
+        "limit": 581
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 459.765625,
+        "limit": 581
+      }
+    ]
+  },
+  {
+    "file": "fortune-duo-open-portrait.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 608.765625,
+        "limit": 779
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 619.609375,
+        "limit": 779
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 608.765625,
+        "limit": 779
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 619.609375,
+        "limit": 779
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 608.765625,
+        "limit": 779
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 608.765625,
+        "limit": 779
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 608.765625,
+        "limit": 779
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 608.765625,
+        "limit": 779
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 608.765625,
+        "limit": 779
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 608.765625,
+        "limit": 779
+      }
+    ]
+  },
+  {
+    "file": "fortune-duo-tabletop.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 453.9375,
+        "limit": 497
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 453.9375,
+        "limit": 497
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 453.9375,
+        "limit": 497
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 453.9375,
+        "limit": 497
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 453.9375,
+        "limit": 497
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 453.9375,
+        "limit": 497
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 453.9375,
+        "limit": 497
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 453.9375,
+        "limit": 497
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 453.9375,
+        "limit": 497
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 453.9375,
+        "limit": 497
+      }
+    ]
+  },
+  {
+    "file": "fortune-duo-tent.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 371.75,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 362.0625,
+        "limit": 378
+      }
+    ]
+  },
+  {
+    "file": "fortune-ipad-landscape-dark.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 523.109375,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 523.109375,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      }
+    ]
+  },
+  {
+    "file": "fortune-ipad-landscape.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 523.109375,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 523.109375,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 512.265625,
+        "limit": 662
+      }
+    ]
+  },
+  {
+    "file": "fortune-ipad-portrait-dark.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 753.109375,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 753.109375,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      }
+    ]
+  },
+  {
+    "file": "fortune-ipad-portrait.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 753.109375,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 753.109375,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 742.265625,
+        "limit": 1022
+      }
+    ]
+  },
+  {
+    "file": "fortune-phone-dark.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      }
+    ]
+  },
+  {
+    "file": "fortune-phone-landscape-dark.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      }
+    ]
+  },
+  {
+    "file": "fortune-phone-landscape.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 222.046875,
+        "limit": 226
+      }
+    ]
+  },
+  {
+    "file": "fortune-phone-light.html",
+    "checks": [
+      {
+        "id": "lixiang-036",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-001",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-002",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-003",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-004",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-005",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-006",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-007",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-008",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      },
+      {
+        "id": "lixiang-009",
+        "fit": true,
+        "bottom": 621.109375,
+        "limit": 758
+      }
+    ]
+  }
+]

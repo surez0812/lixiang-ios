@@ -1,0 +1,866 @@
+[
+  {
+    "file": "home-phone-light.png",
+    "sha256": "0a94e43771fdeb17aef25fd669ad90cf6518ea7255e70de2bcc0ca93f323a15e"
+  },
+  {
+    "file": "home-phone-dark.png",
+    "sha256": "84c373234c3cf232f52404b0193837d88a21cf5c50f6deb3fb0f4bd25aaa7409"
+  },
+  {
+    "file": "home-ipad-portrait.png",
+    "sha256": "fd6ac8b33df252293468b47f7db096ed00325a5e74dedc518a8120f67b35c13f"
+  },
+  {
+    "file": "home-ipad-portrait-dark.png",
+    "sha256": "6f193a84b1f443766edcf4c5b7697e77eb00b8cf7caa5010272ecdb71615b3b9"
+  },
+  {
+    "file": "home-ipad-landscape.png",
+    "sha256": "418285c812310963e8f45d1e1e8e0dd3b454bf5a5c7e0e64d277182a4db8ec10"
+  },
+  {
+    "file": "home-ipad-landscape-dark.png",
+    "sha256": "8a4cc29dd1bb9978569bc15f2276b285b2922d64e35caf25e78333faec4a964d"
+  },
+  {
+    "file": "home-duo-closed-portrait.png",
+    "sha256": "2a0abc7b8a0721a48e56895974179fc7a938b75dafdd1b85dd31ba7e63a023a5"
+  },
+  {
+    "file": "home-duo-closed-landscape.png",
+    "sha256": "9811a0abac6dcf0596ba5938ce93c3e6dc3f80f81d27bb9a4ff01fb9bae60d0b"
+  },
+  {
+    "file": "home-duo-tent.png",
+    "sha256": "9811a0abac6dcf0596ba5938ce93c3e6dc3f80f81d27bb9a4ff01fb9bae60d0b"
+  },
+  {
+    "file": "home-duo-open-portrait.png",
+    "sha256": "c28d9a178b37a27b167a199ba95bf6126f7fb8bd3605a75e53d4571e3e4b187d"
+  },
+  {
+    "file": "home-duo-open-landscape.png",
+    "sha256": "7ac5b28b867954a8c2522677c208d2dd5f71df417585c703c1b645f8fc92390c"
+  },
+  {
+    "file": "home-duo-tabletop.png",
+    "sha256": "dbee4809e0a30e240e4d972381d50df8bfd24eb8682d7d4ee0693e8f321691af"
+  },
+  {
+    "file": "home-duo-splitview-left.png",
+    "sha256": "a7065e3f576339a882f59c356bb6a18a088ac4b50a41507e8b0e775eba5cebbe"
+  },
+  {
+    "file": "home-duo-splitview-right.png",
+    "sha256": "fff24ee7a9ed4d4a05f5397e9f8f9ab616efc6b1729b4b796a0c8a16cd4425c3"
+  },
+  {
+    "file": "almanac-phone-light.png",
+    "sha256": "65028e619a5403ec893782e3d6ad9b279017dd300c258d92bba741645cb7422f"
+  },
+  {
+    "file": "almanac-phone-dark.png",
+    "sha256": "0b842d8976d2c68921e2c7f8c3e9178f1cb7d6c5ed6c963638f586661ca062c0"
+  },
+  {
+    "file": "almanac-ipad-portrait.png",
+    "sha256": "854953a8403f01d46f59aa1e5eba86c17256a24e5fee3220b36dfb9fe58208e3"
+  },
+  {
+    "file": "almanac-ipad-portrait-dark.png",
+    "sha256": "40757a231fdeb24d5f604bd3cb40e6d6d7ed6830fbc4d42219b7c7ae7c53950d"
+  },
+  {
+    "file": "almanac-ipad-landscape.png",
+    "sha256": "92d87afd6a03419dbb4172d8efc067ba0b5dfb9a9177b11239ee9b2806010739"
+  },
+  {
+    "file": "almanac-ipad-landscape-dark.png",
+    "sha256": "ff978a8337abd5e894821ad73d80406cac757ede3551d86c5ee2fd1d5733240c"
+  },
+  {
+    "file": "almanac-duo-closed-portrait.png",
+    "sha256": "a9fd9301dac01ed816a22bd7ecd7441fe8c53f0c328bef08bb86eba141254891"
+  },
+  {
+    "file": "almanac-duo-closed-landscape.png",
+    "sha256": "ebbf35d5532c1d3af9d9d84e35b6063a820aa0dcad467cc9c134b51f1695f491"
+  },
+  {
+    "file": "almanac-duo-tent.png",
+    "sha256": "ebbf35d5532c1d3af9d9d84e35b6063a820aa0dcad467cc9c134b51f1695f491"
+  },
+  {
+    "file": "almanac-duo-open-portrait.png",
+    "sha256": "1847522906aa447fc8a8c4ee4629aab20debce48d87f24b128088a614fdaff90"
+  },
+  {
+    "file": "almanac-duo-open-landscape.png",
+    "sha256": "f0f6b897154eb37bf9946f3d83c2b5a3b284fa3d446cb86182b9a73990b35853"
+  },
+  {
+    "file": "almanac-duo-tabletop.png",
+    "sha256": "47cfff1dac2e7bc1ade9ba1ecc37b4a10c243d93d809bd92fe9ea62e3c40cada"
+  },
+  {
+    "file": "almanac-duo-splitview-left.png",
+    "sha256": "9bbe8e9fe2d629ef42340823bb1051b38d920698e072c5350b33e9adeea1184b"
+  },
+  {
+    "file": "almanac-duo-splitview-right.png",
+    "sha256": "0fa4cb67c26ed3755c07564a7f1a8252be620a0ec445d45a309183a3c8cd0ed4"
+  },
+  {
+    "file": "folklore-phone-light.png",
+    "sha256": "065b7471e941b3fbc9f53a37b5d658bfa21ac7e78f0ae1f852b1b9775f8fa428"
+  },
+  {
+    "file": "folklore-phone-dark.png",
+    "sha256": "2c932ae84653638573819a637ce13e951ba512e3bb4ecae1f725538b797406a6"
+  },
+  {
+    "file": "folklore-ipad-portrait.png",
+    "sha256": "5542a9d6c7ad5be4b95350f433487f933ca874b0eab9e892bf7b9f5ef3c18beb"
+  },
+  {
+    "file": "folklore-ipad-portrait-dark.png",
+    "sha256": "0948355d30842943020134e8d04648d833a4324daf4ce6bc366aad1f66072aca"
+  },
+  {
+    "file": "folklore-ipad-landscape.png",
+    "sha256": "ed589df342cd6080db1f2538c8ef93e07ee07226d3d4bdf183ca7c1268c8652d"
+  },
+  {
+    "file": "folklore-ipad-landscape-dark.png",
+    "sha256": "52bb858e9d15ffd2988b17ef67c68340472cb081d7e9fd3207ba5d5c47a5ee71"
+  },
+  {
+    "file": "folklore-duo-closed-portrait.png",
+    "sha256": "e03e99a708f12e8b2321d0f8ad89990d94519aef38905cc67ff94aaca3644c3e"
+  },
+  {
+    "file": "folklore-duo-closed-landscape.png",
+    "sha256": "fb95d4b79c7f47d839255c019d64d6938528c425dbee4b54c7b40d0a51c546c6"
+  },
+  {
+    "file": "folklore-duo-tent.png",
+    "sha256": "fb95d4b79c7f47d839255c019d64d6938528c425dbee4b54c7b40d0a51c546c6"
+  },
+  {
+    "file": "folklore-duo-open-portrait.png",
+    "sha256": "d4b0a54c137bf41b7d513b3edf0f80c660914d271b17eeca17c982f5d6e1b68e"
+  },
+  {
+    "file": "folklore-duo-open-landscape.png",
+    "sha256": "06c18327d2a30ac9b5e9a69b91989f56c9d1966701b6e16436760c91700f791f"
+  },
+  {
+    "file": "folklore-duo-tabletop.png",
+    "sha256": "ce021ea726a3851e0a0679e3b87e3d5d6744b06444184ab9d14ea5a1c4fd3671"
+  },
+  {
+    "file": "folklore-duo-splitview-left.png",
+    "sha256": "0dc08f943e37d999f6c707b9112930cb6607e26ea229b5898da862290da35582"
+  },
+  {
+    "file": "folklore-duo-splitview-right.png",
+    "sha256": "9b43d38188eb7a50ea7504ecf8deca920610bad857f71b6148635c0f5ae4d957"
+  },
+  {
+    "file": "countdown-phone-light.png",
+    "sha256": "399e745e946438706cd6f7bdd49dbfa8dba87f02f05bacce42f495b34282e39b"
+  },
+  {
+    "file": "countdown-phone-dark.png",
+    "sha256": "9bef0eace48773ca8ef4f3515ae25ad4adcec2a9a3f478f6f05f026ddab8a13a"
+  },
+  {
+    "file": "countdown-ipad-portrait.png",
+    "sha256": "1dd9495e60535f03091473fc7561a96df6020f99fe2cb83a30863f59499a1c50"
+  },
+  {
+    "file": "countdown-ipad-portrait-dark.png",
+    "sha256": "5e356ea26ca3266c95201a136fd448c5787e969ca89a61ee31b56ae62c7c4581"
+  },
+  {
+    "file": "countdown-ipad-landscape.png",
+    "sha256": "42ae504592ae8a18c7ff2621852e6cfa884a76d2252556449bbd19b1c313d043"
+  },
+  {
+    "file": "countdown-ipad-landscape-dark.png",
+    "sha256": "753274b07019469c4f87c7819421d4e193cc69b341517d0b5d6b5b0fe7f9652c"
+  },
+  {
+    "file": "countdown-duo-closed-portrait.png",
+    "sha256": "ed7baa8746485b09ab68dd3e75116417aecd3306c46adfef71c7623cffed071f"
+  },
+  {
+    "file": "countdown-duo-closed-landscape.png",
+    "sha256": "61e23daba43d4799462fb2b53d4d499c90befcfa71e37ae97c72d6acd14f8b7b"
+  },
+  {
+    "file": "countdown-duo-tent.png",
+    "sha256": "61e23daba43d4799462fb2b53d4d499c90befcfa71e37ae97c72d6acd14f8b7b"
+  },
+  {
+    "file": "countdown-duo-open-portrait.png",
+    "sha256": "7248a7976a5484753a5ddff094674e797fddc8fb096f794d763ec409958fa562"
+  },
+  {
+    "file": "countdown-duo-open-landscape.png",
+    "sha256": "fdba8caf936c38f16b62d49d7fb53c4ebe820eedc8cc3b4f0cf072233fea853e"
+  },
+  {
+    "file": "countdown-duo-tabletop.png",
+    "sha256": "791e4c89453cf72575117755dc1f2c6caaacfb3074349a6c25d4bffa8806575b"
+  },
+  {
+    "file": "countdown-duo-splitview-left.png",
+    "sha256": "7e560aee92f830e21270970e8ac46be6ed257877475ef315234ad429eac936b6"
+  },
+  {
+    "file": "countdown-duo-splitview-right.png",
+    "sha256": "6975dfb5af7422ca4718c134ec741a0d610989a243bf1898cb7f9cdba68893ed"
+  },
+  {
+    "file": "settings-phone-light.png",
+    "sha256": "eed2b469c98af7275d4b80f4511967aef4b56329c36c6cee95cd17449d6ae5e9"
+  },
+  {
+    "file": "settings-phone-dark.png",
+    "sha256": "c34553ff15b113472d71cac71938c58923f58210df4dcd3e658c0b6dd5196ac5"
+  },
+  {
+    "file": "settings-ipad-portrait.png",
+    "sha256": "b1b643e4aae5e9a15481aae968f4e15b26c90368b544f923bb616a970b31773f"
+  },
+  {
+    "file": "settings-ipad-portrait-dark.png",
+    "sha256": "7aec1018a6cbc316c4229ba8531b0ac76f0817f67f12a3d7d9237dc06ea95088"
+  },
+  {
+    "file": "settings-ipad-landscape.png",
+    "sha256": "157def106013619ef07be9611bff7bc0a9ea1776fde21d1c7121857cbb91640c"
+  },
+  {
+    "file": "settings-ipad-landscape-dark.png",
+    "sha256": "669bcebdb2809254c364f657fbd4676cc80db672498ae7253a05d25a6286884b"
+  },
+  {
+    "file": "settings-duo-closed-portrait.png",
+    "sha256": "a014ccd7634ff0beb51a16931a6fa2ee6532f57474ce321a90f0014f22cbeaa6"
+  },
+  {
+    "file": "settings-duo-closed-landscape.png",
+    "sha256": "3f15fde7afc21da1813aa932520993ce25080de725467e96906af25ac369c26d"
+  },
+  {
+    "file": "settings-duo-tent.png",
+    "sha256": "3f15fde7afc21da1813aa932520993ce25080de725467e96906af25ac369c26d"
+  },
+  {
+    "file": "settings-duo-open-portrait.png",
+    "sha256": "6986e7c70b57e3a93e2612df01a67a7ed112c157e69276cd253f9e2108eaa6dd"
+  },
+  {
+    "file": "settings-duo-open-landscape.png",
+    "sha256": "15bc74d2a0cb57b4c7753e56efab964550fc1f9adedac91ec971e9ac9f03d033"
+  },
+  {
+    "file": "settings-duo-tabletop.png",
+    "sha256": "e8d58c4772f43aefed6ac63808dd6d01e52128727cbdf00d4cc7f2930f4a2b9a"
+  },
+  {
+    "file": "settings-duo-splitview-left.png",
+    "sha256": "83a819b46b608a1cd4bc8f92ce2f2cc3021d6d49fcaabbaeac8f22776c03ac0c"
+  },
+  {
+    "file": "settings-duo-splitview-right.png",
+    "sha256": "3441f1716dcd98e112d13a8afb01569703b7a3d91a7ae12e11604707da1f34aa"
+  },
+  {
+    "file": "selection-phone-light.png",
+    "sha256": "902c008028cf515cda6e206015d10556687911a6458f2d98f216c56b711d86d0"
+  },
+  {
+    "file": "selection-phone-dark.png",
+    "sha256": "788e6caf2cfcb237233791376098d0a3f2a9e89acb3126a98c27afdba545c10f"
+  },
+  {
+    "file": "selection-ipad-portrait.png",
+    "sha256": "0d28038918afc9a8305273e72d2b4f45cdc8319a2ab2f51e9c50c14d58eeb3da"
+  },
+  {
+    "file": "selection-ipad-portrait-dark.png",
+    "sha256": "bd98b7e464c2b2cb7aeabd39a0cad44d2635e44a89d9a924e0509a5dfa321aba"
+  },
+  {
+    "file": "selection-ipad-landscape.png",
+    "sha256": "59c6edc1f76b2c262f63a9838ae5f3126861829a1e5cb771a5a857a8beffe7e9"
+  },
+  {
+    "file": "selection-ipad-landscape-dark.png",
+    "sha256": "69c295fc4753ad6503822e07228daae2c3a72ed8851f051140a09c0424ec11da"
+  },
+  {
+    "file": "selection-duo-closed-portrait.png",
+    "sha256": "ebd58455760e5140b2cec80dece8a4962ab0f51cccf9722ee3c580d54fcd7f4a"
+  },
+  {
+    "file": "selection-duo-closed-landscape.png",
+    "sha256": "56884bd9bf1d8a51e54763afc4783b82c9571395f29cb0cc382c562cbf157bd5"
+  },
+  {
+    "file": "selection-duo-tent.png",
+    "sha256": "56884bd9bf1d8a51e54763afc4783b82c9571395f29cb0cc382c562cbf157bd5"
+  },
+  {
+    "file": "selection-duo-open-portrait.png",
+    "sha256": "38b2692d976fdc9f8163c62175faa05e90bffe34adc4b0f60f860b1a11d0c167"
+  },
+  {
+    "file": "selection-duo-open-landscape.png",
+    "sha256": "d6a4c33984cade6ec7e119926034dce330b19c7ec5e66c76d91cc8a4d791b705"
+  },
+  {
+    "file": "selection-duo-tabletop.png",
+    "sha256": "b6d6941b6e44db158787a1363601505d8a5d1936eaf90c2f0d790d304c1ddbe2"
+  },
+  {
+    "file": "selection-duo-splitview-left.png",
+    "sha256": "1117e30d3a1ffcad29cfc0018aaa7b73c771f3fc1616f41088fdee427965d2a8"
+  },
+  {
+    "file": "selection-duo-splitview-right.png",
+    "sha256": "a7eff046efc4e835c54188d8e3c20d73dc282a27c4778dc6838994d8289b5a78"
+  },
+  {
+    "file": "daily-phone-light.png",
+    "sha256": "9736ce2596b778d93096dec5160b9fc6d6d570497cb4c435260e8d3c8f4fb356"
+  },
+  {
+    "file": "daily-phone-dark.png",
+    "sha256": "fbf598011e0985c213848d2f5ff1b7f5f299462bcc60cf0954c87aba14bc2ddd"
+  },
+  {
+    "file": "daily-ipad-portrait.png",
+    "sha256": "0713352ed90eceaa902d041b2e9bc82fbf534918aecb09785a230b21568181b7"
+  },
+  {
+    "file": "daily-ipad-portrait-dark.png",
+    "sha256": "1c5a2d7bfa89944c5092b80574917b9299bb246821501acbca27ba480919a3fe"
+  },
+  {
+    "file": "daily-ipad-landscape.png",
+    "sha256": "055b60eb28b7fcee3f47d79c17bb83098e71c9f7e099e52d07816ee7f378f491"
+  },
+  {
+    "file": "daily-ipad-landscape-dark.png",
+    "sha256": "ad9a04b08f730b3d3de0ab6a6fb696aea2f31c1a4e1340784a8c998aa6fe2803"
+  },
+  {
+    "file": "daily-duo-closed-portrait.png",
+    "sha256": "134b35ba9babae6d9cbad363b1ff58ff959681f71121b8b5592bdc473c31c779"
+  },
+  {
+    "file": "daily-duo-closed-landscape.png",
+    "sha256": "faf4b9e339dab7a4e60c5e52147c8c13da264ce91cc5d023d2ddfc1b66aabfb3"
+  },
+  {
+    "file": "daily-duo-tent.png",
+    "sha256": "faf4b9e339dab7a4e60c5e52147c8c13da264ce91cc5d023d2ddfc1b66aabfb3"
+  },
+  {
+    "file": "daily-duo-open-portrait.png",
+    "sha256": "31c008eb274f0e81aefc49b199bb815e6f86d3969c9be0be7a75464980183226"
+  },
+  {
+    "file": "daily-duo-open-landscape.png",
+    "sha256": "15e0c0c87f39126766e8291253214049273fd4666c42cc15324bdc99457e5108"
+  },
+  {
+    "file": "daily-duo-tabletop.png",
+    "sha256": "f3f48efd24254f744ac52713ea22fd55baa08ed85045535c612c8c4b62938177"
+  },
+  {
+    "file": "daily-duo-splitview-left.png",
+    "sha256": "4c8472b838b9c76156c1725ba5a48737febc34c29b8f7e58102538d5482711a9"
+  },
+  {
+    "file": "daily-duo-splitview-right.png",
+    "sha256": "2ecccb2ce0f9e801f9e4acefb16eac75b6490c899971131ae1214f34c19d68a5"
+  },
+  {
+    "file": "folklore-detail-phone-light.png",
+    "sha256": "f3c9d0805779fa2b40d08e614295b9a088a137fa73c606f5291397c0d3eadc33"
+  },
+  {
+    "file": "folklore-detail-phone-dark.png",
+    "sha256": "ffe421245db554cf1bbe4f10a0486841db3d681e3dace9b203f1ac700dd327ab"
+  },
+  {
+    "file": "folklore-detail-ipad-portrait.png",
+    "sha256": "734a82ad45923b73c741a44aad3ae90fd4b382387a17df94db4bfe6e9be9c169"
+  },
+  {
+    "file": "folklore-detail-ipad-portrait-dark.png",
+    "sha256": "fd8b6c77726212d8c1691abfee2e9432adf826d5355367735a1c1730715ca966"
+  },
+  {
+    "file": "folklore-detail-ipad-landscape.png",
+    "sha256": "471ac65f6abe5025ea8a0b772ae530b6f58a487d7cceea2b70d386f930ca99bb"
+  },
+  {
+    "file": "folklore-detail-ipad-landscape-dark.png",
+    "sha256": "6256445ad75b8d3796b9e50b09826afd87856a457da9d610133ec705684d6c62"
+  },
+  {
+    "file": "folklore-detail-duo-closed-portrait.png",
+    "sha256": "c3bcee2fee4388fb10d824181d72a8eca2eb6aa514dddc6924942f023f0ecaa8"
+  },
+  {
+    "file": "folklore-detail-duo-closed-landscape.png",
+    "sha256": "98426cf277666b43ad75a7a15409db94946620ad94a507137f4921dcc8e46ef4"
+  },
+  {
+    "file": "folklore-detail-duo-tent.png",
+    "sha256": "98426cf277666b43ad75a7a15409db94946620ad94a507137f4921dcc8e46ef4"
+  },
+  {
+    "file": "folklore-detail-duo-open-portrait.png",
+    "sha256": "303da382c96ae11031dd08cc9685ef371f6decfee428e74a8af87008f6bd9f88"
+  },
+  {
+    "file": "folklore-detail-duo-open-landscape.png",
+    "sha256": "1f418a4d51dc9dbfdb90977607edc614d79566dc81db07d3267afa7d13303bd3"
+  },
+  {
+    "file": "folklore-detail-duo-tabletop.png",
+    "sha256": "cac9320e1d375c226ddcedb259be3c7a010cc45ee804a7ed80003eb77484630b"
+  },
+  {
+    "file": "folklore-detail-duo-splitview-left.png",
+    "sha256": "1d35b40e159c53d95df477e02a40c8b2fa534f7ef303a804cf1ce5e56b2b00de"
+  },
+  {
+    "file": "folklore-detail-duo-splitview-right.png",
+    "sha256": "601e2ad582d751e118d3e3a7ca7510f0b08479bfd051234c80436182dc21ceba"
+  },
+  {
+    "file": "countdown-detail-phone-light.png",
+    "sha256": "6c6664b26b7e294ac99cab29247cfd6cdc4cbe5ee4c695f5821898364e7d8df1"
+  },
+  {
+    "file": "countdown-detail-phone-dark.png",
+    "sha256": "3b5a310760286ac51edb4a99cac3694781756a1676f9a8b75c6547a874c89fb7"
+  },
+  {
+    "file": "countdown-detail-ipad-portrait.png",
+    "sha256": "0b8354f55f5f55236cfcc44ceda18cb0543867b7b74de8d28b0b9288ac1be9fe"
+  },
+  {
+    "file": "countdown-detail-ipad-portrait-dark.png",
+    "sha256": "09d9f676eb8696833de736b3bf95546e03e4385a69cf566883125f3b973a1463"
+  },
+  {
+    "file": "countdown-detail-ipad-landscape.png",
+    "sha256": "07d8b6eff1e6b2580aaacac1d904caec9a8737355ac6e3678a714e4216b3ec9f"
+  },
+  {
+    "file": "countdown-detail-ipad-landscape-dark.png",
+    "sha256": "20aa48d432f75ec1893222e1358e8918385f5c55b926fe2849f6f48566bc05e2"
+  },
+  {
+    "file": "countdown-detail-duo-closed-portrait.png",
+    "sha256": "760489a9c2ebde2dc7ed6df849afb115828d5cb4fe82a87a9917c775d3af66c7"
+  },
+  {
+    "file": "countdown-detail-duo-closed-landscape.png",
+    "sha256": "f7c9429d235ab0b1433924a794571fae95fa43a1bef0c91f6d69aed9f5ae244c"
+  },
+  {
+    "file": "countdown-detail-duo-tent.png",
+    "sha256": "f7c9429d235ab0b1433924a794571fae95fa43a1bef0c91f6d69aed9f5ae244c"
+  },
+  {
+    "file": "countdown-detail-duo-open-portrait.png",
+    "sha256": "5c57a4fb3551d2620f679d0e28e90b154d7f45fa986f4f2399697a1f30dc0e36"
+  },
+  {
+    "file": "countdown-detail-duo-open-landscape.png",
+    "sha256": "132631d40dd2b136aa04b5a1d0836b80e4db78e05ad2169cf17f1814ab943760"
+  },
+  {
+    "file": "countdown-detail-duo-tabletop.png",
+    "sha256": "36268ee4498c1d5362ffc8c4c0fb90444bef969fe5f51f0272334ec182a1e511"
+  },
+  {
+    "file": "countdown-detail-duo-splitview-left.png",
+    "sha256": "20c07fddbbf002c0321ea152046fd15b64a39039cdc466267d8b0a0c35ccc4ab"
+  },
+  {
+    "file": "countdown-detail-duo-splitview-right.png",
+    "sha256": "3e12ada8f2d209e655f7976e5b03fd83c07ca7b8da30a310e4afc058511d8595"
+  },
+  {
+    "file": "fortune-phone-light.png",
+    "sha256": "dcd8ce2492ea404a7cef2c6181066b0d9f89e3a6a44153a2fe751c862567a335"
+  },
+  {
+    "file": "fortune-phone-dark.png",
+    "sha256": "78744030cc6dddc4b754fac32e1ed06eeac8c1ea8bcb30159b7adbc6286b479e"
+  },
+  {
+    "file": "fortune-ipad-portrait.png",
+    "sha256": "87d9a691f6407c252efcb6377a917de47ee33be72b5bdf22524d6bdfb943406d"
+  },
+  {
+    "file": "fortune-ipad-portrait-dark.png",
+    "sha256": "94b9ca38141b048745f63156984c1844f2c881450a6c22e3dfcd631a88eb8b30"
+  },
+  {
+    "file": "fortune-ipad-landscape.png",
+    "sha256": "449be0b933894eedfc6c1d349b42d1ca964f5e11b2bb39a1a3f404ad5e5b4d18"
+  },
+  {
+    "file": "fortune-ipad-landscape-dark.png",
+    "sha256": "bd63da40c5eca66824cd207f50b53b1a6c2d2bd883b3fbbe1fd42580cd0acd65"
+  },
+  {
+    "file": "fortune-duo-closed-portrait.png",
+    "sha256": "c42a7231ab283e5207f9b12cdb34f3b970dd9db5554cfb26f8bbee3fa674bb83"
+  },
+  {
+    "file": "fortune-duo-closed-landscape.png",
+    "sha256": "1f76ff31bf1f9e7621742d447dd6395c38201de4930556ab3719c2951ffaef82"
+  },
+  {
+    "file": "fortune-duo-tent.png",
+    "sha256": "1f76ff31bf1f9e7621742d447dd6395c38201de4930556ab3719c2951ffaef82"
+  },
+  {
+    "file": "fortune-duo-open-portrait.png",
+    "sha256": "21c37923facc6e7bd1527d8988a577c74489ba175c3593d51553c56b979be2e9"
+  },
+  {
+    "file": "fortune-duo-open-landscape.png",
+    "sha256": "2da098161ac1461ba201d030134b7dd0ce16c30110415ab6229824a245e4d769"
+  },
+  {
+    "file": "fortune-duo-tabletop.png",
+    "sha256": "aef3f680c6935170d8df2c852a02d61b8f4f63a30e41d7d3f6bee8520bbbd705"
+  },
+  {
+    "file": "fortune-duo-splitview-left.png",
+    "sha256": "d1861c318c84ada3299960f6af3f8599d4c6d5782a5fcffce60fe2f121c5405d"
+  },
+  {
+    "file": "fortune-duo-splitview-right.png",
+    "sha256": "2f0ec17a929f76b166b5b32dffeb9dffbb19b7fb1100290d6ada41089de8d7fd"
+  },
+  {
+    "file": "compass-phone-light.png",
+    "sha256": "a56a5237854f5c36279ec80a5675b7a8f39da8931128a639bab715e839b03441"
+  },
+  {
+    "file": "compass-phone-dark.png",
+    "sha256": "4be36719a7933db6507b460b7b4d5fd91c4259c4ffe9be183327f38056f3b771"
+  },
+  {
+    "file": "compass-ipad-portrait.png",
+    "sha256": "1fc88af98e390c06fd69aafb04833abb0e7a2009f6eca185ead7f8c133014d92"
+  },
+  {
+    "file": "compass-ipad-portrait-dark.png",
+    "sha256": "0eb8d76262831a6fb5c8a08a8f5b1d26f6fcf7b6b566d35d32dc58f3f63618b9"
+  },
+  {
+    "file": "compass-ipad-landscape.png",
+    "sha256": "f3331f5ee3a3571042d1e839c46ad83fd5a9a3b473ffcf15db9edba8660d0755"
+  },
+  {
+    "file": "compass-ipad-landscape-dark.png",
+    "sha256": "3941c3718233e78cb41af4090ae3269a773517d6610a749decff0e181919ac04"
+  },
+  {
+    "file": "compass-duo-closed-portrait.png",
+    "sha256": "a07de3f079f6698b1ee08a1421a0809c5b963c2b8ae4995c65a0e8f24b847f27"
+  },
+  {
+    "file": "compass-duo-closed-landscape.png",
+    "sha256": "65a20a64a082b22b72199bf53e52b3427accf187e9a61e9f28cf2eee633368a7"
+  },
+  {
+    "file": "compass-duo-tent.png",
+    "sha256": "65a20a64a082b22b72199bf53e52b3427accf187e9a61e9f28cf2eee633368a7"
+  },
+  {
+    "file": "compass-duo-open-portrait.png",
+    "sha256": "ab4398c38854aafc784d7bf7c4714ea8ab5cda4cb391e5553a68af180973a3ca"
+  },
+  {
+    "file": "compass-duo-open-landscape.png",
+    "sha256": "388aab2f5d3ce1fa576244ddaec9a3bd17a7f8ea24f6cb8984657f20a8200506"
+  },
+  {
+    "file": "compass-duo-tabletop.png",
+    "sha256": "6d46dca8f0ade73ae5e4a7b71862080d41264476fdd3e4200e661ffc50400a5f"
+  },
+  {
+    "file": "compass-duo-splitview-left.png",
+    "sha256": "975a730cbc9247d52a91cf1fe0770ab4c1598fa5353a274e2b4e91449f88ef19"
+  },
+  {
+    "file": "compass-duo-splitview-right.png",
+    "sha256": "f4e5d6ffe9d97f7989d91010fec8e629a6505923b9efd4fd4d22301b2b10f516"
+  },
+  {
+    "file": "fortune-phone-light-result.png",
+    "sha256": "a2b61108de00c860db49e9cf82d23e292f402a4061365d1b97c3ee848d364d9c"
+  },
+  {
+    "file": "almanac-phone-light-plain-off.png",
+    "sha256": "4f76f77bd158d0932bb22b40fdcae7e3de278a5b68363579485adef4bc0ced79"
+  },
+  {
+    "file": "fortune-phone-dark-result.png",
+    "sha256": "16046843f649b4b2ef0e4efe0234e2d41077e2fce6d4d38204c0767b581e5940"
+  },
+  {
+    "file": "almanac-phone-dark-plain-off.png",
+    "sha256": "0674f46d42c8124b7dd0bbad9f9568c5fa9359739239ebcee8c236b21d832fd4"
+  },
+  {
+    "file": "fortune-ipad-portrait-result.png",
+    "sha256": "058a70572e2401d227eff38d98fe9a5f43cddc2309937655e0f22022c9f1e757"
+  },
+  {
+    "file": "almanac-ipad-portrait-plain-off.png",
+    "sha256": "8193cefebb506b1b9648e743e93b3b37f0ce87d5010afe4f3e46388b95ae2b5a"
+  },
+  {
+    "file": "fortune-ipad-portrait-dark-result.png",
+    "sha256": "ed2d4f44d55897508145cd151f47b26a35b4976145ce704d6a390c5ecb3650ad"
+  },
+  {
+    "file": "almanac-ipad-portrait-dark-plain-off.png",
+    "sha256": "361a807b02fa7d77fccdbf5ba3614bfa75500bdda7619bba49b7694d051ab1ea"
+  },
+  {
+    "file": "fortune-ipad-landscape-result.png",
+    "sha256": "3a466fd387495290db9cf813093695d8b2450ef75f16242b83b0c2aeb4dfa92e"
+  },
+  {
+    "file": "almanac-ipad-landscape-plain-off.png",
+    "sha256": "47f24e723542bf8aa7ea745a72d27c0eab7aa407525e88cf248dc0d299ce61e1"
+  },
+  {
+    "file": "fortune-ipad-landscape-dark-result.png",
+    "sha256": "aa3674b9d1cc295f7e01dc1388b0e042dfbde44d427dcd4a22ec93c825ed1e46"
+  },
+  {
+    "file": "almanac-ipad-landscape-dark-plain-off.png",
+    "sha256": "c06f0eda5c8246bc1538caafcc302f86631e0a9c005793b7190ae4a6bfb33469"
+  },
+  {
+    "file": "fortune-duo-closed-portrait-result.png",
+    "sha256": "2c80244a674d27551e87602b93991cda1070940c72d5870d4fae66f26c811108"
+  },
+  {
+    "file": "almanac-duo-closed-portrait-plain-off.png",
+    "sha256": "a9fd9301dac01ed816a22bd7ecd7441fe8c53f0c328bef08bb86eba141254891"
+  },
+  {
+    "file": "fortune-duo-closed-landscape-result.png",
+    "sha256": "a059e76ea4acb191b206b70eadeba984cafeb697cdb27be64b596222765024c0"
+  },
+  {
+    "file": "almanac-duo-closed-landscape-plain-off.png",
+    "sha256": "ebbf35d5532c1d3af9d9d84e35b6063a820aa0dcad467cc9c134b51f1695f491"
+  },
+  {
+    "file": "fortune-duo-tent-result.png",
+    "sha256": "a059e76ea4acb191b206b70eadeba984cafeb697cdb27be64b596222765024c0"
+  },
+  {
+    "file": "almanac-duo-tent-plain-off.png",
+    "sha256": "ebbf35d5532c1d3af9d9d84e35b6063a820aa0dcad467cc9c134b51f1695f491"
+  },
+  {
+    "file": "fortune-duo-open-portrait-result.png",
+    "sha256": "e47bf7d03299cdecf407da7026da71194a3e02b1d286139793f2135c6606e61c"
+  },
+  {
+    "file": "almanac-duo-open-portrait-plain-off.png",
+    "sha256": "e72abeb22d2d7e28ab9c5570afc4027f48a3307fc129b00cc66ac6f824cd4c23"
+  },
+  {
+    "file": "fortune-duo-open-landscape-result.png",
+    "sha256": "75f69872a9aa68a41062d4d13c5c10fbc87b90b9af2d749be965e3b62b3b769b"
+  },
+  {
+    "file": "almanac-duo-open-landscape-plain-off.png",
+    "sha256": "f0f6b897154eb37bf9946f3d83c2b5a3b284fa3d446cb86182b9a73990b35853"
+  },
+  {
+    "file": "fortune-duo-tabletop-result.png",
+    "sha256": "4381a3ba5a334d390475abf9ba7f1bf6435897968caa94e1e0d79ee60c17249b"
+  },
+  {
+    "file": "almanac-duo-tabletop-plain-off.png",
+    "sha256": "47cfff1dac2e7bc1ade9ba1ecc37b4a10c243d93d809bd92fe9ea62e3c40cada"
+  },
+  {
+    "file": "fortune-duo-splitview-left-result.png",
+    "sha256": "1f55fc0ca0c4a4c6f6eef98d7532390e2bc76c153247aeec061c53cff951ceb4"
+  },
+  {
+    "file": "almanac-duo-splitview-left-plain-off.png",
+    "sha256": "9bbe8e9fe2d629ef42340823bb1051b38d920698e072c5350b33e9adeea1184b"
+  },
+  {
+    "file": "fortune-duo-splitview-right-result.png",
+    "sha256": "88c4b4557c197dd74ae927066ff737400dbf99a2b0f0253a0ab00443ffd8e0e8"
+  },
+  {
+    "file": "almanac-duo-splitview-right-plain-off.png",
+    "sha256": "0fa4cb67c26ed3755c07564a7f1a8252be620a0ec445d45a309183a3c8cd0ed4"
+  },
+  {
+    "file": "home-phone-light-no-matches.png",
+    "sha256": "a78eafb740c4f0dcde84119748ce45ed7731c768cafc6c68a99c7d89f259e240"
+  },
+  {
+    "file": "home-phone-light-weather-authorized.png",
+    "sha256": "d179ca269c93d807d97507da915fc7a0c727a3dc471df8db49d87fa04f792e3a"
+  },
+  {
+    "file": "home-phone-light-weather-denied.png",
+    "sha256": "d63cb41edcdd3606ca1b088e2e29941dd0e7f4984efc4b8f1235497d1ade5983"
+  },
+  {
+    "file": "home-phone-light-weather-loading.png",
+    "sha256": "b4dea0b9381a27c21cdaaaa8d189bc7c16c284212e2863b8214b98a043e61962"
+  },
+  {
+    "file": "almanac-phone-light-no-festival.png",
+    "sha256": "08aa6274ae53c55dfe217791d74e4f0cac188950a090005cdfc9219c5d9ecca9"
+  },
+  {
+    "file": "almanac-phone-light-winter.png",
+    "sha256": "228822376119f0c18f0699baee690f2b99a3e07099dee61298afec5b4629774e"
+  },
+  {
+    "file": "folklore-detail-phone-light-today.png",
+    "sha256": "2a41052a5f6b094a632a3a6a9bef49a74faa1c501e7a86b70f4eafdccf2e7f3d"
+  },
+  {
+    "file": "folklore-detail-phone-light-offline.png",
+    "sha256": "c84f944802216f94d7cdfd5fd1134db2f393bc7558d925ffc97ab814eedca14a"
+  },
+  {
+    "file": "countdown-detail-phone-light-new.png",
+    "sha256": "569443d26f1ff41d55ced51f663fcca135a60866e71209c1fe3a2503226a9a84"
+  },
+  {
+    "file": "countdown-detail-phone-light-preprompt.png",
+    "sha256": "7892270827dc6f76354b1bab72abd706c809fd12320f7c6fb2b464526630f906"
+  },
+  {
+    "file": "countdown-detail-phone-light-system-prompt.png",
+    "sha256": "a66373872f9a2fd161eda4e86504cd72d9e338e9eb97e19c2dc0fa8a38e46d8d"
+  },
+  {
+    "file": "countdown-detail-phone-light-allowed.png",
+    "sha256": "e46aa1f9f4f10bda76d84f2837392a3f64d344432c20de68f6372dcd7c6b5eb3"
+  },
+  {
+    "file": "countdown-detail-phone-light-denied.png",
+    "sha256": "709850ae99304e044b394f5ac682c97e66f18145ebc09a0a853ae0f6633428bd"
+  },
+  {
+    "file": "home-phone-light-full.png",
+    "sha256": "4fad983de0755196344f91b17d0597a2f3521b86160fdc1f21654fb2a3a2c86b"
+  },
+  {
+    "file": "almanac-phone-light-full.png",
+    "sha256": "f2732c145346cbbcefcee0088eb71563d3989795a3022d2f3ade5b1f8494680c"
+  },
+  {
+    "file": "almanac-phone-light-plain-off-full.png",
+    "sha256": "f46029016667bd87e9b997e2434ae69b05ce851f5bc05fee169e160c765de730"
+  },
+  {
+    "file": "daily-phone-light-full.png",
+    "sha256": "1b2b5b8efd534d5439271d595265372cf51beac9de126c03329edae90b57327d"
+  },
+  {
+    "file": "folklore-detail-phone-light-full.png",
+    "sha256": "8d053f14f38563c0feb3c0ca79f090872360c3beaff51d272541003dd2f1e880"
+  },
+  {
+    "file": "compass-phone-light-hour.png",
+    "sha256": "b5e6b029f9a4ddf5e59b21ebae9c1e19ef796c215172261167876492c7a7e48f"
+  },
+  {
+    "file": "compass-phone-dark-hour.png",
+    "sha256": "9e9d48784cdb0803b2fc1e4419479e7754915b0f0f502f072a89b18f6f8b6482"
+  },
+  {
+    "file": "compass-ipad-portrait-hour.png",
+    "sha256": "ac1b9c8f671da736b5ce6688f1423892258f40e3371ef52d23a0e746b040375e"
+  },
+  {
+    "file": "compass-ipad-portrait-dark-hour.png",
+    "sha256": "c7160cff0b38575f1e52d6fc18b2eacedff453ea27d663532782299b06540fd4"
+  },
+  {
+    "file": "compass-ipad-landscape-hour.png",
+    "sha256": "4e58433675f1593134b1a0a6e17260adf95e7fd5ee55e0a92f300f472f2ac270"
+  },
+  {
+    "file": "compass-ipad-landscape-dark-hour.png",
+    "sha256": "0a9c4dfff8a5d53910ff1a18d9cbbf1e82aacd46daf8c773f0757d605fe9e719"
+  },
+  {
+    "file": "compass-duo-closed-portrait-hour.png",
+    "sha256": "eefa5254eb8dd96570be01cf2b1a8f170e1ecf530c62ecf5570dcca6513253aa"
+  },
+  {
+    "file": "compass-duo-closed-landscape-hour.png",
+    "sha256": "bd3ff79c3e7de5a6bd777e734557ea0af32ac1571a677ef4beee7ecd1beb4cef"
+  },
+  {
+    "file": "compass-duo-tent-hour.png",
+    "sha256": "bd3ff79c3e7de5a6bd777e734557ea0af32ac1571a677ef4beee7ecd1beb4cef"
+  },
+  {
+    "file": "compass-duo-open-portrait-hour.png",
+    "sha256": "46b455060918f7cc93b0be3e83ef4a2bd9c35b1eb521981a604554e9a1a0daa2"
+  },
+  {
+    "file": "compass-duo-open-landscape-hour.png",
+    "sha256": "73276b7264cda967d1a3054a0104d36464fca01e404650c41ac7e2295cf030e7"
+  },
+  {
+    "file": "compass-duo-tabletop-hour.png",
+    "sha256": "0c190eac3d97a6f6ecf60212fe0fa15ab7224e9fb675ec210f67d48b7ec35ad4"
+  },
+  {
+    "file": "compass-duo-splitview-left-hour.png",
+    "sha256": "2684d3816bafae69fb448f6e99e7fa70946a4eb1f023aef1cde9f18a78b17f4a"
+  },
+  {
+    "file": "compass-duo-splitview-right-hour.png",
+    "sha256": "aca1e0b11aa283bdf9a996fa0043150e6f9c43ba77a6214dbaa9cc7fdbe0f8a1"
+  },
+  {
+    "file": "almanac-phone-light-previous.png",
+    "sha256": "ffe5e9edf5b3d60aac2baf248ad817cf88957c5d9b25feab865c2ffdf3dcd4ff"
+  },
+  {
+    "file": "almanac-phone-light-next.png",
+    "sha256": "607bb9ddd09f513c8604a49fd74b6389b682ff41bb9ace8dd2a1bb79f1a66d71"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "mode": "phone-light",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "phone-dark",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "ipad-portrait",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "ipad-portrait-dark",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "ipad-landscape",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "ipad-landscape-dark",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "duo-closed-portrait",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "duo-closed-landscape",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "duo-tent",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "duo-open-portrait",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "duo-open-landscape",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "duo-tabletop",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "duo-splitview-left",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  },
+  {
+    "mode": "duo-splitview-right",
+    "mainCardIntegrated": true,
+    "dayCompassOnly": true,
+    "twoColumnStructurePreservedWithDateQuery": true
+  }
+]

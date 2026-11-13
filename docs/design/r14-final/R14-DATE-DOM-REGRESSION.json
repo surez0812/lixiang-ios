@@ -1,0 +1,98 @@
+{
+  "method": "jsdom 26 actual DOM and complete generated inline scripts; no browser paint or network; scrollIntoView/matchMedia layout adapters only",
+  "executions": 82,
+  "successfulExecutions": 81,
+  "originalBugReproducedAndRejected": true,
+  "results": [
+    {
+      "mode": "phone-light",
+      "calendarToAlmanac": true,
+      "compassAndReturn": true,
+      "previousAndNext": true,
+      "rootAndLinksPreserved": true
+    },
+    {
+      "mode": "phone-dark",
+      "calendarToAlmanac": true,
+      "compassAndReturn": true,
+      "previousAndNext": true,
+      "rootAndLinksPreserved": true
+    },
+    {
+      "mode": "ipad-portrait",
+      "calendarToAlmanac": true,
+      "compassAndReturn": true,
+      "previousAndNext": true,
+      "rootAndLinksPreserved": true
+    },
+    {
+      "mode": "ipad-portrait-dark",
+      "calendarToAlmanac": true,
+      "compassAndReturn": true,
+      "previousAndNext": true,
+      "rootAndLinksPreserved": true
+    },
+    {
+      "mode": "ipad-landscape",
+      "calendarToAlmanac": true,
+      "compassAndReturn": true,
+      "previousAndNext": true,
+      "rootAndLinksPreserved": true
+    },
+    {
+      "mode": "ipad-landscape-dark",
+      "calendarToAlmanac": true,
+      "compassAndReturn": true,
+      "previousAndNext": true,
+      "rootAndLinksPreserved": true
+    },
+    {
+      "mode": "duo-closed-portrait",
+      "calendarToAlmanac": true,
+      "compassAndReturn": true,
+      "previousAndNext": true,
+      "rootAndLinksPreserved": true
+    },
+    {
+      "mode": "duo-closed-landscape",
+      "calendarToAlmanac": true,
+      "compassAndReturn": true,
+      "previousAndNext": true,
+      "rootAndLinksPreserved": true
+    },
+    {
+      "mode": "duo-tent",
+      "calendarToAlmanac": true,
+      "compassAndReturn": true,
+      "previousAndNext": true,
+      "rootAndLinksPreserved": true
+    },
+    {
+      "mode": "duo-open-portrait",
+      "calendarToAlmanac": true,
+      "compassAndReturn": true,
+      "previousAndNext": true,
+      "rootAndLinksPreserved": true
+    },
+    {
+      "mode": "duo-open-landscape",
+      "calendarToAlmanac": true,
+      "compassAndReturn": true,
+      "previousAndNext": true,
+      "rootAndLinksPreserved": true
+    },
+    {
+      "mode": "duo-tabletop",
+      "calendarToAlmanac": true,
+      "compassAndReturn": true,
+      "previousAndNext": true,
+      "rootAndLinksPreserved": true
+    }
+  ],
+  "boundaries": [
+    "year",
+    "leap year",
+    "non-leap year"
+  ],
+  "allPass": true
+}

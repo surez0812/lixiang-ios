@@ -1,0 +1,3019 @@
+{
+  "method": "HTML and route structure, Node syntax, deterministic point/pixel geometry, approved asset hashes and structured template rendering. No browser, simulator or permission APIs invoked.",
+  "checks": [
+    {
+      "name": "ordinary-phone-portrait-only",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-light-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-light-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-light-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-light-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-light-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-dark-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-dark-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-dark-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-dark-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-portrait-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-portrait-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-portrait-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-portrait-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-portrait-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-portrait-dark-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-portrait-dark-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-portrait-dark-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-portrait-dark-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-landscape-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-landscape-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-landscape-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-landscape-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-landscape-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-landscape-dark-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-landscape-dark-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-landscape-dark-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-landscape-dark-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-closed-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-closed-portrait-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-closed-portrait-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-closed-portrait-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-closed-portrait-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tent-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tent-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tent-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tent-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tent-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-portrait-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-portrait-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-portrait-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-portrait-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-landscape-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-landscape-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-landscape-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-landscape-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tabletop-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tabletop-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tabletop-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tabletop-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tabletop-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-left-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-left-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-left-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-left-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-left-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-right-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-right-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-right-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-right-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-right-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-inner-portrait-study-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-inner-portrait-study-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-inner-portrait-study-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-inner-portrait-study-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-inner-portrait-study-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-ipad-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-ipad-portrait-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-ipad-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-ipad-landscape-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-closed-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-tent-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-open-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-open-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-tabletop-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-splitview-left-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-splitview-right-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-inner-portrait-study-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-phone-light-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-phone-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-ipad-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-ipad-portrait-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-ipad-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-ipad-landscape-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-closed-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-tent-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-open-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-open-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-tabletop-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-splitview-left-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-splitview-right-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-inner-portrait-study-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-phone-light-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-phone-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-ipad-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-ipad-portrait-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-ipad-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-ipad-landscape-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-closed-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-tent-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-open-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-open-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-tabletop-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-splitview-left-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-splitview-right-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-inner-portrait-study-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-phone-light-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-phone-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-ipad-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-ipad-portrait-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-ipad-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-ipad-landscape-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-closed-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-tent-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-open-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-open-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-tabletop-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-splitview-left-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-splitview-right-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-inner-portrait-study-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-phone-light-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-phone-light-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-phone-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-phone-dark-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-ipad-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-ipad-portrait-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-ipad-portrait-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-ipad-portrait-dark-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-ipad-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-ipad-landscape-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-ipad-landscape-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-ipad-landscape-dark-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-closed-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-closed-portrait-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-tent-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-tent-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-open-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-open-portrait-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-open-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-open-landscape-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-tabletop-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-tabletop-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-splitview-left-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-splitview-left-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-splitview-right-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-splitview-right-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-inner-portrait-study-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-inner-portrait-study-huanxin-brand",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-phone-light-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-phone-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-ipad-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-ipad-portrait-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-ipad-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-ipad-landscape-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-closed-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-tent-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-open-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-open-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-tabletop-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-splitview-left-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-splitview-right-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-inner-portrait-study-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-phone-light-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-phone-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-ipad-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-ipad-portrait-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-ipad-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-ipad-landscape-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-closed-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-tent-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-open-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-open-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-tabletop-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-splitview-left-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-splitview-right-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-inner-portrait-study-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-dark-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-ipad-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-ipad-portrait-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-ipad-portrait-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-ipad-portrait-dark-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-ipad-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-ipad-landscape-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-ipad-landscape-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-ipad-landscape-dark-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-closed-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-closed-portrait-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-tent-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-tent-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-open-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-open-portrait-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-open-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-open-landscape-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-tabletop-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-tabletop-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-splitview-left-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-splitview-left-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-splitview-right-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-splitview-right-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-inner-portrait-study-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-inner-portrait-study-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-ipad-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-ipad-portrait-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-ipad-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-ipad-landscape-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-closed-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-tent-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-open-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-open-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-tabletop-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-splitview-left-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-splitview-right-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-inner-portrait-study-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-phone-light-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-phone-light-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-phone-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-phone-dark-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-portrait-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-portrait-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-portrait-dark-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-landscape-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-landscape-dark-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-landscape-dark-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-closed-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-closed-portrait-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tent-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tent-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-portrait-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-portrait-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-landscape-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-landscape-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tabletop-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tabletop-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-left-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-left-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-right-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-right-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-inner-portrait-study-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-inner-portrait-study-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-light-no-matches-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-light-no-matches-ipad-only-merged",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-light-no-matches-calendar-marker-track",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-light-no-matches-full-pillars",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-light-no-matches-conditional-today-hits",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-weather-system-prompt-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-weather-loading-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-weather-authorized-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-weather-denied-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-weather-error-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-today-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-today-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-loading-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-offline-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-cached-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-cached-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-today-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-new-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-preprompt-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-system-prompt-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-allowed-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-denied-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-phone-light-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-phone-light-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-phone-dark-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-phone-dark-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-portrait-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-portrait-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-portrait-dark-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-portrait-dark-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-landscape-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-landscape-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-landscape-dark-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-landscape-dark-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-closed-portrait-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-closed-portrait-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tent-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tent-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-portrait-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-portrait-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-landscape-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-landscape-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tabletop-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tabletop-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-left-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-left-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-right-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-right-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-inner-portrait-study-result-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-inner-portrait-study-result-approved-core-preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-phone-light-full-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-phone-light-full-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-full-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-full-navigation",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-full-native-web-boundary",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "all-local-links-resolve",
+      "pass_": true,
+      "detail": []
+    },
+    {
+      "name": "all-generated-script-syntax",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "calendar-marker-clearance",
+      "pass_": true,
+      "detail": {
+        "cell": 51,
+        "textBottom": 37.5,
+        "marksTop": 41,
+        "gap": 3.5
+      }
+    },
+    {
+      "name": "home-phone-light.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-portrait-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-ipad-landscape-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-closed-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-closed-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tent.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tent.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-open-landscape.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tabletop.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-tabletop.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-left.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-left.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-right.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-splitview-right.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-inner-portrait-study.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-duo-inner-portrait-study.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-ipad-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-ipad-portrait-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-ipad-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-ipad-landscape-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-closed-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-closed-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-tent.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-tent.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-open-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-open-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-open-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-open-landscape.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-tabletop.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-tabletop.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-splitview-left.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-splitview-left.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-splitview-right.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-splitview-right.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-inner-portrait-study.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-duo-inner-portrait-study.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-phone-light.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-phone-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-ipad-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-ipad-portrait-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-ipad-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-ipad-landscape-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-closed-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-closed-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-tent.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-tent.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-open-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-open-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-open-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-open-landscape.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-tabletop.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-tabletop.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-splitview-left.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-splitview-left.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-splitview-right.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-splitview-right.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-inner-portrait-study.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-duo-inner-portrait-study.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-phone-light.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-phone-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-ipad-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-ipad-portrait-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-ipad-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-ipad-landscape-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-closed-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-closed-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-tent.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-tent.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-open-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-open-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-open-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-open-landscape.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-tabletop.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-tabletop.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-splitview-left.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-splitview-left.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-splitview-right.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-splitview-right.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-inner-portrait-study.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-duo-inner-portrait-study.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-phone-light.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-phone-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-ipad-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-ipad-portrait-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-ipad-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-ipad-landscape-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-closed-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-closed-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-tent.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-tent.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-open-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-open-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-open-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-open-landscape.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-tabletop.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-tabletop.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-splitview-left.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-splitview-left.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-splitview-right.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-splitview-right.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-inner-portrait-study.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-duo-inner-portrait-study.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-phone-light.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-phone-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-ipad-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-ipad-portrait-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-ipad-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-ipad-landscape-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-closed-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-closed-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-tent.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-tent.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-open-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-open-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-open-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-open-landscape.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-tabletop.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-tabletop.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-splitview-left.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-splitview-left.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-splitview-right.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-splitview-right.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-inner-portrait-study.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "settings-duo-inner-portrait-study.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-phone-light.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-phone-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-ipad-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-ipad-portrait-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-ipad-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-ipad-landscape-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-closed-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-closed-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-tent.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-tent.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-open-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-open-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-open-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-open-landscape.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-tabletop.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-tabletop.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-splitview-left.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-splitview-left.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-splitview-right.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-splitview-right.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-inner-portrait-study.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "selection-duo-inner-portrait-study.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-phone-light.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-phone-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-ipad-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-ipad-portrait-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-ipad-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-ipad-landscape-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-closed-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-closed-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-tent.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-tent.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-open-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-open-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-open-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-open-landscape.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-tabletop.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-tabletop.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-splitview-left.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-splitview-left.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-splitview-right.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-splitview-right.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-inner-portrait-study.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-duo-inner-portrait-study.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-ipad-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-ipad-portrait-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-ipad-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-ipad-landscape-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-closed-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-closed-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-tent.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-tent.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-open-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-open-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-open-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-open-landscape.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-tabletop.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-tabletop.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-splitview-left.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-splitview-left.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-splitview-right.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-splitview-right.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-inner-portrait-study.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-duo-inner-portrait-study.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-ipad-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-ipad-portrait-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-ipad-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-ipad-landscape-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-closed-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-closed-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-tent.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-tent.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-open-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-open-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-open-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-open-landscape.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-tabletop.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-tabletop.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-splitview-left.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-splitview-left.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-splitview-right.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-splitview-right.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-inner-portrait-study.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-duo-inner-portrait-study.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-phone-light.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-phone-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-portrait-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-landscape-dark.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-closed-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-closed-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tent.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tent.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-portrait.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-portrait.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-landscape.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-landscape.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tabletop.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tabletop.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-left.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-left.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-right.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-right.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-inner-portrait-study.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-inner-portrait-study.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "home-phone-light-no-matches.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-weather-system-prompt.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-weather-loading.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-weather-authorized.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-weather-denied.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-weather-error.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-today.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-loading.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-offline.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-cached.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-today.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-new.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-preprompt.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-system-prompt.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-allowed.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "countdown-detail-phone-light-denied.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-phone-light-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-phone-dark-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-portrait-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-portrait-dark-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-landscape-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-ipad-landscape-dark-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-closed-portrait-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-closed-portrait-result.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tent-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tent-result.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-portrait-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-portrait-result.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-landscape-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-open-landscape-result.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tabletop-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-tabletop-result.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-left-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-left-result.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-right-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-splitview-right-result.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-inner-portrait-study-result.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "fortune-duo-inner-portrait-study-result.png-duo-canvas",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "almanac-phone-light-full.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "daily-phone-light-full.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "day-phone-light-full.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "folklore-detail-phone-light-full.png-metadata",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "all-44pt-targets-and-fortune-controls-in-bounds",
+      "pass_": true,
+      "detail": []
+    },
+    {
+      "name": "approved-motion-assets-and-timeline-frozen",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "webpage-winter-self-contained-template",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "webpage-daily-kindness-self-contained-template",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "webpage-template-sample-self-contained-template",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "name": "structured-template-render-and-text-escaping",
+      "pass_": true,
+      "detail": ""
+    }
+  ],
+  "allPass": true,
+  "count": 601,
+  "browserVisual": "UNVERIFIED",
+  "nativeRuntime": "UNVERIFIED"
+}

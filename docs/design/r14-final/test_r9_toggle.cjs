@@ -1,0 +1,12 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const html = fs.readFileSync('almanac-phone-light-plain-off.html','utf8');
+const handler = html.match(/qa\('\.switch'\)\.forEach\(b=>b\.onclick=\(\)=>\{[\s\S]*?\}\);/)[0];
+const classes = new Set(['plain-off']);
+const button = { id: 'plain-toggle', checked: 'false', getAttribute() { return this.checked; }, setAttribute(key, value) { this.checked = String(value); } };
+const context = { qa: () => [button], root: { classList: { toggle(name, on) { on ? classes.add(name) : classes.delete(name); } } }, localStorage: { setItem() {} } };
+vm.runInNewContext(handler,context);
+button.onclick(); assert.equal(button.checked,'true'); assert.equal(classes.has('plain-off'),false);
+button.onclick(); assert.equal(button.checked,'false'); assert.equal(classes.has('plain-off'),true);
+console.log('PASS: real generated toggle handler reopens and collapses');

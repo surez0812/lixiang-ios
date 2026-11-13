@@ -1,0 +1,10776 @@
+[
+  {
+    "file": "home-phone-light.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-phone-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-ipad-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-ipad-portrait-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-ipad-landscape.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      782
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": null,
+    "toolsRect": [
+      20,
+      642.0,
+      567.0,
+      92.0
+    ],
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-ipad-landscape-dark.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      782
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": null,
+    "toolsRect": [
+      20,
+      642.0,
+      567.0,
+      92.0
+    ],
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-duo-closed-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-duo-closed-landscape.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": null,
+    "toolsRect": [
+      20,
+      358.0,
+      278.5,
+      92.0
+    ],
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-duo-tent.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": null,
+    "toolsRect": [
+      20,
+      358.0,
+      278.5,
+      92.0
+    ],
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-duo-open-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-duo-open-landscape.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": null,
+    "toolsRect": [
+      20,
+      561.0,
+      415.0,
+      92.0
+    ],
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-duo-tabletop.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "toolsAdaptive": true,
+    "sharedLayoutFrom": "home-duo-open-portrait.png"
+  },
+  {
+    "file": "almanac-phone-light.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-phone-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-ipad-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-ipad-portrait-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-ipad-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-ipad-landscape-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-duo-closed-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-duo-closed-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-duo-tent.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-duo-open-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-duo-open-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-duo-tabletop.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "almanac-duo-open-portrait.png"
+  },
+  {
+    "file": "folklore-phone-light.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-phone-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-ipad-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-ipad-portrait-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-ipad-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-ipad-landscape-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-duo-closed-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-duo-closed-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-duo-tent.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-duo-open-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-duo-open-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-duo-tabletop.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "folklore-duo-open-portrait.png"
+  },
+  {
+    "file": "countdown-phone-light.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-phone-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-ipad-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-ipad-portrait-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-ipad-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-ipad-landscape-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-duo-closed-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-duo-closed-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-duo-tent.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-duo-open-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-duo-open-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-duo-tabletop.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "countdown-duo-open-portrait.png"
+  },
+  {
+    "file": "settings-phone-light.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "settings-phone-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "settings-ipad-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "settings-ipad-portrait-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "settings-ipad-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "settings-ipad-landscape-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "settings-duo-closed-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "settings-duo-closed-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "settings-duo-tent.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "settings-duo-open-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "settings-duo-open-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "settings-duo-tabletop.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "settings-duo-open-portrait.png"
+  },
+  {
+    "file": "selection-phone-light.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "selection-phone-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "selection-ipad-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "selection-ipad-portrait-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "selection-ipad-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "selection-ipad-landscape-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "selection-duo-closed-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "selection-duo-closed-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "selection-duo-tent.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "selection-duo-open-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "selection-duo-open-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "selection-duo-tabletop.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "selection-duo-open-portrait.png"
+  },
+  {
+    "file": "daily-phone-light.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "daily-phone-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "daily-ipad-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "daily-ipad-portrait-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "daily-ipad-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "daily-ipad-landscape-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "daily-duo-closed-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "daily-duo-closed-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "daily-duo-tent.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "daily-duo-open-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "daily-duo-open-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "daily-duo-tabletop.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "daily-duo-open-portrait.png"
+  },
+  {
+    "file": "folklore-detail-phone-light.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-phone-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-ipad-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-ipad-portrait-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-ipad-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-ipad-landscape-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-duo-closed-portrait.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": null,
+    "articleViewport": [
+      20,
+      143.5,
+      365,
+      518.5
+    ],
+    "headerHeight": 119.5,
+    "articleUsesFullContentWidth": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-duo-closed-landscape.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": null,
+    "articleViewport": [
+      20,
+      143.5,
+      577,
+      306.5
+    ],
+    "headerHeight": 119.5,
+    "articleUsesFullContentWidth": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-duo-tent.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-duo-open-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-duo-open-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-duo-tabletop.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "folklore-detail-duo-open-portrait.png"
+  },
+  {
+    "file": "countdown-detail-phone-light.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-phone-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-ipad-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-ipad-portrait-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-ipad-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-ipad-landscape-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-duo-closed-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-duo-closed-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-duo-tent.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-duo-open-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-duo-open-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-duo-tabletop.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "countdown-detail-duo-open-portrait.png"
+  },
+  {
+    "file": "fortune-phone-light.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      878
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        20,
+        136,
+        335,
+        622
+      ],
+      "actions": [
+        20,
+        766,
+        335,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      36,
+      335,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": null,
+    "resultViewportHeight": 622,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-phone-dark.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      878
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        20,
+        136,
+        335,
+        622
+      ],
+      "actions": [
+        20,
+        766,
+        335,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      36,
+      335,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": null,
+    "resultViewportHeight": 622,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-ipad-portrait.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1142
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        20,
+        136,
+        794,
+        886
+      ],
+      "actions": [
+        20,
+        1030,
+        794,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      36,
+      794,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": null,
+    "resultViewportHeight": 886,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-ipad-portrait-dark.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1142
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        20,
+        136,
+        794,
+        886
+      ],
+      "actions": [
+        20,
+        1030,
+        794,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      36,
+      794,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": null,
+    "resultViewportHeight": 886,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-ipad-landscape.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      782
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        363.12,
+        36,
+        810.88,
+        626
+      ],
+      "actions": [
+        363.12,
+        670,
+        810.88,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      293.0,
+      323.12,
+      112
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": null,
+    "resultViewportHeight": 626,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-ipad-landscape-dark.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      782
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        363.12,
+        36,
+        810.88,
+        626
+      ],
+      "actions": [
+        363.12,
+        670,
+        810.88,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      293.0,
+      323.12,
+      112
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": null,
+    "resultViewportHeight": 626,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-duo-closed-portrait.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": {
+      "visual": [
+        20,
+        112,
+        365,
+        478
+      ],
+      "actions": [
+        20,
+        598,
+        365,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      12,
+      365,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": null,
+    "resultViewportHeight": 478,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-duo-closed-landscape.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": {
+      "visual": [
+        201.56,
+        12,
+        395.44,
+        366
+      ],
+      "actions": [
+        201.56,
+        386,
+        395.44,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      139.0,
+      161.56,
+      112
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": null,
+    "resultViewportHeight": 366,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-duo-tent.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": {
+      "visual": [
+        201.56,
+        12,
+        395.44,
+        366
+      ],
+      "actions": [
+        201.56,
+        386,
+        395.44,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      139.0,
+      161.56,
+      112
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": null,
+    "resultViewportHeight": 366,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-duo-open-portrait.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      923
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        20,
+        112,
+        629,
+        667
+      ],
+      "actions": [
+        20,
+        787,
+        629,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      12,
+      629,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": null,
+    "resultViewportHeight": 667,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-duo-open-landscape.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": {
+      "visual": [
+        278.0,
+        12,
+        592.0,
+        569
+      ],
+      "actions": [
+        278.0,
+        589,
+        592.0,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      240.5,
+      238.00000000000003,
+      112
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": null,
+    "resultViewportHeight": 569,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-duo-tabletop.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      923
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        20,
+        112,
+        629,
+        667
+      ],
+      "actions": [
+        20,
+        787,
+        629,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      12,
+      629,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": null,
+    "resultViewportHeight": 667,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "fortune-duo-open-portrait.png"
+  },
+  {
+    "file": "compass-phone-light.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-phone-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-ipad-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-ipad-portrait-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-ipad-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-ipad-landscape-dark.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-duo-closed-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-duo-closed-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-duo-tent.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-duo-open-portrait.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-duo-open-landscape.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-duo-tabletop.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "compass-duo-open-portrait.png"
+  },
+  {
+    "file": "fortune-phone-light-result.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      878
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        20,
+        136,
+        335,
+        622
+      ],
+      "actions": [
+        20,
+        766,
+        335,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      36,
+      335,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": 386.5,
+    "resultViewportHeight": 622,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-phone-light-plain-off.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-phone-dark-result.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      878
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        20,
+        136,
+        335,
+        622
+      ],
+      "actions": [
+        20,
+        766,
+        335,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      36,
+      335,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": 386.5,
+    "resultViewportHeight": 622,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-phone-dark-plain-off.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-ipad-portrait-result.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1142
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        20,
+        136,
+        794,
+        886
+      ],
+      "actions": [
+        20,
+        1030,
+        794,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      36,
+      794,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": 365.0,
+    "resultViewportHeight": 886,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-ipad-portrait-plain-off.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-ipad-portrait-dark-result.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1142
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        20,
+        136,
+        794,
+        886
+      ],
+      "actions": [
+        20,
+        1030,
+        794,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      36,
+      794,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": 365.0,
+    "resultViewportHeight": 886,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-ipad-portrait-dark-plain-off.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-ipad-landscape-result.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      782
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        363.12,
+        36,
+        810.88,
+        626
+      ],
+      "actions": [
+        363.12,
+        670,
+        810.88,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      293.0,
+      323.12,
+      112
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": 365.0,
+    "resultViewportHeight": 626,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-ipad-landscape-plain-off.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-ipad-landscape-dark-result.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      782
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        363.12,
+        36,
+        810.88,
+        626
+      ],
+      "actions": [
+        363.12,
+        670,
+        810.88,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      293.0,
+      323.12,
+      112
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": 365.0,
+    "resultViewportHeight": 626,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-ipad-landscape-dark-plain-off.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-duo-closed-portrait-result.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": {
+      "visual": [
+        20,
+        112,
+        365,
+        478
+      ],
+      "actions": [
+        20,
+        598,
+        365,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      12,
+      365,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": 346.5,
+    "resultViewportHeight": 478,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-duo-closed-portrait-plain-off.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-duo-closed-landscape-result.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": {
+      "visual": [
+        201.56,
+        12,
+        395.44,
+        366
+      ],
+      "actions": [
+        201.56,
+        386,
+        395.44,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      139.0,
+      161.56,
+      112
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": 234.5,
+    "resultViewportHeight": 366,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-duo-closed-landscape-plain-off.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-duo-tent-result.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": {
+      "visual": [
+        201.56,
+        12,
+        395.44,
+        366
+      ],
+      "actions": [
+        201.56,
+        386,
+        395.44,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      139.0,
+      161.56,
+      112
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": 234.5,
+    "resultViewportHeight": 366,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-duo-tent-plain-off.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-duo-open-portrait-result.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      923
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        20,
+        112,
+        629,
+        667
+      ],
+      "actions": [
+        20,
+        787,
+        629,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      12,
+      629,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": 365.0,
+    "resultViewportHeight": 667,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-duo-open-portrait-plain-off.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-duo-open-landscape-result.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "motion": {
+      "visual": [
+        278.0,
+        12,
+        592.0,
+        569
+      ],
+      "actions": [
+        278.0,
+        589,
+        592.0,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      240.5,
+      238.00000000000003,
+      112
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": 365.0,
+    "resultViewportHeight": 569,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-duo-open-landscape-plain-off.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "fortune-duo-tabletop-result.png",
+    "method": "offline design composition",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      923
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "motion": {
+      "visual": [
+        20,
+        112,
+        629,
+        667
+      ],
+      "actions": [
+        20,
+        787,
+        629,
+        44
+      ],
+      "stageSize": [
+        300,
+        430
+      ],
+      "approvedCoreUnchanged": true
+    },
+    "titleRect": [
+      20,
+      12,
+      629,
+      88
+    ],
+    "titlePersistent": true,
+    "resultIntrinsicHeight": 365.0,
+    "resultViewportHeight": 667,
+    "resultHasInternalScroll": false,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "fortune-duo-open-portrait-result.png"
+  },
+  {
+    "file": "almanac-duo-tabletop-plain-off.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "almanac-duo-open-portrait-plain-off.png"
+  },
+  {
+    "file": "home-phone-light-no-matches.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-phone-light-weather-authorized.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-phone-light-weather-denied.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "toolsAdaptive": true
+  },
+  {
+    "file": "home-phone-light-weather-loading.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "toolsAdaptive": true
+  },
+  {
+    "file": "almanac-phone-light-no-festival.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-phone-light-winter.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-phone-light-today.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-phone-light-offline.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-phone-light-new.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-phone-light-preprompt.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-phone-light-system-prompt.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-phone-light-allowed.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "countdown-detail-phone-light-denied.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "home-phone-light-full.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      2678
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      2364
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        1258,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        1258,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        1258,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        1258,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        1258,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "toolsAdaptive": true
+  },
+  {
+    "file": "almanac-phone-light-full.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      14617
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      11864
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        7227,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        7227,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        7227,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        7227,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        7227,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-phone-light-plain-off-full.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      7724
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      6364
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        3781,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        3781,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        3781,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        3781,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        3781,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "daily-phone-light-full.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      2972
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      1514
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        1405,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        1405,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        1405,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        1405,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        1405,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "folklore-detail-phone-light-full.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      3301
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      2264
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        1569,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        1569,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        1569,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        1569,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        1569,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-phone-light-hour.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-phone-dark-hour.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-ipad-portrait-hour.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-ipad-portrait-dark-hour.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1668,
+      2388
+    ],
+    "contentRect": [
+      20,
+      36,
+      794,
+      1058
+    ],
+    "navigationTargets": [
+      [
+        120.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        240.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        360.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        480.0,
+        1113,
+        114.0,
+        62
+      ],
+      [
+        600.0,
+        1113,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-ipad-landscape-hour.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-ipad-landscape-dark-hour.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2388,
+      1668
+    ],
+    "contentRect": [
+      20,
+      36,
+      1154,
+      698
+    ],
+    "navigationTargets": [
+      [
+        300.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        420.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        540.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        660.0,
+        753,
+        114.0,
+        62
+      ],
+      [
+        780.0,
+        753,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-duo-closed-portrait-hour.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      1398,
+      2034
+    ],
+    "contentRect": [
+      20,
+      12,
+      365,
+      650
+    ],
+    "navigationTargets": [
+      [
+        396,
+        413,
+        44,
+        48
+      ],
+      [
+        396,
+        462,
+        44,
+        48
+      ],
+      [
+        396,
+        511,
+        44,
+        48
+      ],
+      [
+        396,
+        560,
+        44,
+        48
+      ],
+      [
+        396,
+        609,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-duo-closed-landscape-hour.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-duo-tent-hour.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2034,
+      1398
+    ],
+    "contentRect": [
+      20,
+      12,
+      577,
+      438
+    ],
+    "navigationTargets": [
+      [
+        608,
+        201,
+        44,
+        48
+      ],
+      [
+        608,
+        250,
+        44,
+        48
+      ],
+      [
+        608,
+        299,
+        44,
+        48
+      ],
+      [
+        608,
+        348,
+        44,
+        48
+      ],
+      [
+        608,
+        397,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-duo-open-portrait-hour.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-duo-open-landscape-hour.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2853,
+      2007
+    ],
+    "contentRect": [
+      20,
+      12,
+      850,
+      641
+    ],
+    "navigationTargets": [
+      [
+        881,
+        404,
+        44,
+        48
+      ],
+      [
+        881,
+        453,
+        44,
+        48
+      ],
+      [
+        881,
+        502,
+        44,
+        48
+      ],
+      [
+        881,
+        551,
+        44,
+        48
+      ],
+      [
+        881,
+        600,
+        44,
+        48
+      ]
+    ],
+    "sideGap": 8,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "compass-duo-tabletop-hour.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      2007,
+      2853
+    ],
+    "contentRect": [
+      20,
+      12,
+      629,
+      839
+    ],
+    "navigationTargets": [
+      [
+        37.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        157.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        277.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        397.5,
+        870,
+        114.0,
+        62
+      ],
+      [
+        517.5,
+        870,
+        114.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Shared Open Portrait layout",
+    "sharedLayoutFrom": "compass-duo-open-portrait-hour.png"
+  },
+  {
+    "file": "almanac-phone-light-previous.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  },
+  {
+    "file": "almanac-phone-light-next.png",
+    "method": "offline design composition using HTML fragments and original assets",
+    "browserScreenshot": false,
+    "pixelSize": [
+      750,
+      1860
+    ],
+    "contentRect": [
+      20,
+      36,
+      335,
+      794
+    ],
+    "navigationTargets": [
+      [
+        23.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        90.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        157.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        224.0,
+        849,
+        61.0,
+        62
+      ],
+      [
+        291.0,
+        849,
+        61.0,
+        62
+      ]
+    ],
+    "sideGap": null,
+    "navigationTitleRow": false,
+    "motion": null,
+    "overlayNavigation": true,
+    "noExtraTopGap": true,
+    "sourceReview": "R13",
+    "artifactReuse": "Unchanged R13 layout"
+  }
+]

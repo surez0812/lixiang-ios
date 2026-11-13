@@ -1,0 +1,86 @@
+[
+  {
+    "mode": "phone-light",
+    "copyIntrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "phone-dark",
+    "copyIntrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "ipad-portrait",
+    "copyIntrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "ipad-portrait-dark",
+    "copyIntrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "ipad-landscape",
+    "copyIntrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "ipad-landscape-dark",
+    "copyIntrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "duo-closed-portrait",
+    "copyIntrinsicHeight": 346.5,
+    "viewportHeight": 478,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "duo-closed-landscape",
+    "copyIntrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "duo-tent",
+    "copyIntrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "duo-open-portrait",
+    "copyIntrinsicHeight": 365.0,
+    "viewportHeight": 667,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "duo-open-landscape",
+    "copyIntrinsicHeight": 365.0,
+    "viewportHeight": 569,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "duo-tabletop",
+    "copyIntrinsicHeight": 234.5,
+    "viewportHeight": 385,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "phone-landscape",
+    "copyIntrinsicHeight": 182.0,
+    "viewportHeight": 182,
+    "fitsWithoutScroll": true
+  },
+  {
+    "mode": "phone-landscape-dark",
+    "copyIntrinsicHeight": 182.0,
+    "viewportHeight": 182,
+    "fitsWithoutScroll": true
+  }
+]

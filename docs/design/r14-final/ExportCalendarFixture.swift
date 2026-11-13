@@ -1,0 +1,6 @@
+import Foundation
+let lunar = Solar.fromYmdHms(year: 2026, month: 11, day: 12, hour: 12, minute: 0, second: 0).lunar
+var result: [String: Any] = ["date":"2026-11-12", "lunar":lunar.monthInChinese + "月" + lunar.dayInChinese, "yearGanZhi":lunar.yearInGanZhi, "dayGanZhi":lunar.dayInGanZhi, "yi":lunar.dayYi, "ji":lunar.dayJi, "zhiShen":lunar.dayTianShen, "zhiShenType":lunar.dayTianShenType, "chong":lunar.dayChongDesc, "sha":lunar.daySha, "nayin":lunar.dayNaYin, "jianchu":lunar.zhiXing, "pengzu":[lunar.pengZuGan,lunar.pengZuZhi], "taishen":lunar.dayPositionTai, "xiu":lunar.xiu, "xiuLuck":lunar.xiuLuck, "jishen":lunar.dayJiShen, "xiongsha":lunar.dayXiongSha, "taoYear":Tao.fromLunar(lunar:lunar).year, "fotoYear":Foto.fromLunar(lunar:lunar).year]
+result["hours"] = Array(lunar.times.prefix(12)).map { t in ["branch":t.zhi,"gz":t.ganZhi,"yi":t.yi,"ji":t.ji,"chong":t.chongDesc,"sha":t.sha,"god":t.tianShen,"luck":t.tianShenLuck,"directions":[t.positionXiDesc,t.positionCaiDesc,t.positionFuDesc,t.positionYangGuiDesc,t.positionYinGuiDesc]] as [String:Any] }
+result["directions"] = [lunar.dayPositionXiDesc,lunar.dayPositionCaiDesc,lunar.dayPositionFuDesc,lunar.dayPositionYangGuiDesc,lunar.dayPositionYinGuiDesc]
+print(String(data:try JSONSerialization.data(withJSONObject:result,options:[.prettyPrinted,.sortedKeys]),encoding:.utf8)!)

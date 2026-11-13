@@ -1,0 +1,76 @@
+import json,re
+from bs4 import BeautifulSoup
+import review_r11 as prev
+r=prev.r;P=r.P
+BASE_CONTENT=r.content;BASE_HTML=r.page_html;BASE_PROFILE=r.profile
+r.MODES[:]=[m for m in r.MODES if 'splitview' not in m[0]]
+# Landscape references cover this review; no app orientation policy is changed.
+r.MODES.extend([('phone-landscape',844,390,False),('phone-landscape-dark',844,390,True)])
+r.b.MODES=r.MODES
+
+def profile(mode,w,h):
+ p=BASE_PROFILE(mode,w,h);p['contentY']=12 if p['duo'] else 36;p['contentHeight']=h-p['contentY']-16;p['overlayInsetBottom']=84 if p['horizontal'] else 0
+ p['statusY']=16 if p['duo'] and p['horizontal'] else p['statusY']
+ p['controlY']=166 if mode=='duo-closed-portrait' else 112 if p['side'] and p['statusVisible'] else 12
+ return p
+r.profile=profile;r.old.profile=profile
+
+def content(page,mode,state=''):
+ lead,detail=BASE_CONTENT(page,mode,state)
+ if page=='almanac':
+  s=BeautifulSoup(lead,'html.parser')
+  for n in s.select('.rounddate,.main-compass-link'):n.decompose()
+  lead=str(s)
+ return lead,detail
+r.content=content;r.b.content=content
+BASE_SHORTCUTS=r.shortcuts
+def shortcuts(mode,state='notDetermined'):
+ markup=BASE_SHORTCUTS(mode,state)
+ return markup.replace('开启定位，看看<br>所在城市的天气','开启定位，查看天气') if mode=='duo-tent' else markup
+r.shortcuts=shortcuts;r.b.shortcuts=shortcuts
+CSS='''
+.page-fortune .fortune-host{min-height:0!important;height:100%}.page-fortune .fortune-visual{min-height:60px!important}.page-fortune .fortune-actions{flex:none}
+body{--glass:#fffcf5b8}body.dark{--glass:#30281fc4}
+.page-almanac.has-back .lead>.almanac-main{padding-top:8px!important}.almanac-main>div:first-child>.eyebrow{display:none}.almanac-main h1{padding-left:110px!important;padding-right:0!important;min-height:44px;display:flex;align-items:center;font-size:26px}.side-duo .almanac-main h1{padding-left:0!important}
+
+.r8-app .workspace{padding-bottom:84px!important;scroll-padding-top:64px;scroll-padding-bottom:100px;box-sizing:border-box}.side-duo .r8-app .workspace{padding-bottom:0!important}.r8-app .workspace>.lead,.r8-app .workspace>.detail{min-height:0}.r8-app .tabs,.floating-tabs{background:var(--glass)!important;backdrop-filter:blur(24px) saturate(1.5);-webkit-backdrop-filter:blur(24px) saturate(1.5);box-shadow:inset 0 1px 1px #fff9,0 7px 25px #50381913;z-index:50}.bar-controls{position:absolute;display:flex;gap:8px;align-items:center;left:calc(var(--cx) + 8px);top:calc(var(--cy) + 8px);z-index:60}.bar-action,.bar-controls>.floating-back{position:static!important;display:grid!important;place-items:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;border:1px solid var(--line);border-radius:50%;background:var(--glass);color:var(--ink);backdrop-filter:blur(22px) saturate(1.4);-webkit-backdrop-filter:blur(22px) saturate(1.4);box-shadow:inset 0 1px 1px #fffa,0 3px 12px #50381915;text-decoration:none;font-size:25px}.bar-action svg{width:23px;height:23px;display:block}.side-duo .bar-controls{left:auto;right:26px;top:var(--controly);flex-direction:column;gap:8px}.side-duo .tabs{display:none!important}.side-duo .floating-tabs{display:flex!important;right:23px;left:auto}.mode-duo-open-portrait .duo-status{position:absolute;top:16px!important;right:24px!important;z-index:55}.mode-duo-open-portrait .workspace{top:12px!important}.mode-duo-open-portrait .tabs{position:absolute;bottom:16px;z-index:50}.mode-duo-open-landscape .duo-status{right:24px;left:auto;top:34px;display:block;width:47px}.mode-duo-open-landscape .duo-status time{display:block}.mode-duo-open-landscape .tabs{display:none!important}.page-home .almanac-teaser{margin-top:0!important}
+.mode-duo-tent .today-matches{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6px}.mode-duo-tent .today-match{min-width:0;display:grid;grid-template-columns:minmax(0,1fr) 10px;gap:0 2px;padding:5px 7px;min-height:40px}.mode-duo-tent .match-type{grid-column:1;font-size:8px}.mode-duo-tent .today-match b{grid-column:1;font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mode-duo-tent .today-match>span:last-child{grid-column:2;grid-row:1/3}.mode-duo-tent .hero-copy{padding:0 13px 12px;margin-top:-16px}.mode-duo-tent .hero-copy h2{font-size:15px;line-height:1.4}.mode-duo-tent .hero-copy>small{font-size:10px}.mode-duo-tent .ganzhi{font-size:10px;line-height:1.5;margin-top:3px}.mode-duo-tent .hero .quote{margin-top:7px;padding:8px 10px}.mode-duo-tent .hero .quote p{font-size:14px;line-height:1.4}.mode-duo-tent .hero .quote small{font-size:8px}.mode-duo-tent .home-stack{grid-template-rows:minmax(0,1fr) 108px!important;gap:12px!important}.mode-duo-tent .home-tools{height:108px!important;min-height:108px!important;gap:8px}.mode-duo-tent .home-tools>.card{height:108px!important;min-height:108px!important;padding:8px!important;gap:3px}.mode-duo-tent .fortune-entry img{height:28px!important;width:16px!important}.mode-duo-tent .home-tools h3{font-size:12px}.mode-duo-tent .home-tools small{font-size:9px}.mode-duo-tent .compact-weather p{font-size:9px;line-height:1.4}.mode-duo-tent .compact-weather .secondary{min-height:44px;padding:5px 9px;font-size:10px}.mode-duo-tent .almanac-teaser{padding:11px!important;margin:0 0 6px!important}.mode-duo-tent .almanac-teaser h2{font-size:18px}.mode-duo-tent .almanac-teaser .eyebrow{font-size:8px;margin-bottom:4px}.mode-duo-tent .almanac-teaser .yi-ji{margin:8px 0;gap:4px 8px;grid-template-columns:18px minmax(0,1fr)}.mode-duo-tent .almanac-teaser .yi-ji p{font-size:10px;line-height:1.5}.mode-duo-tent .almanac-teaser .yi-ji b{font-size:12px}.mode-duo-tent .teaser-footer{padding-top:7px;margin-top:7px;font-size:8px}.mode-duo-tent .month{padding:8px!important}.mode-duo-tent .month h2{font-size:19px;margin-bottom:7px}.mode-duo-tent .month-grid .cell{height:35px!important;font-size:14px}.mode-duo-tent .month-grid .cell small{font-size:8px}.mode-duo-tent .month .legend{font-size:8px;margin-top:6px;padding-top:6px}.mode-duo-tent .month-grid{row-gap:0!important}.mode-duo-tent .weekday{font-size:10px}
+.mode-phone-landscape .home-stack,.mode-phone-landscape-dark .home-stack{height:auto!important;display:block!important}.mode-phone-landscape .home-tools,.mode-phone-landscape-dark .home-tools{margin-top:12px}.fullscroll .workspace{padding-top:36px!important}
+'''
+r.b.CSS+=CSS
+TOKENS='''*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:14px/1.6 -apple-system,"PingFang SC",sans-serif}body{--bg:#FFF8EC;--paper:#FFFCF5;--ink:#35291F;--muted:#79634D;--red:#A63D26;--line:#E8D6BA;--wash:#F6E8D1;--glass:#fffcf5bf}body.dark{--bg:#211D19;--paper:#30281F;--ink:#F8ECD8;--muted:#C9B69C;--red:#FFAC88;--line:#69523B;--wash:#403326;--glass:#30281fc9}h1,h2,h3,p{margin:0}h1{font:600 28px/1.3 "Songti SC",serif}a{color:inherit;text-decoration:none}button,select{font:inherit;color:inherit}small,.hint,.eyebrow{color:var(--muted)}.hint{font-size:12px;line-height:1.7}.eyebrow{font-size:10px;letter-spacing:.16em}.card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:18px}.list-row{display:flex;align-items:center;justify-content:space-between;min-height:44px;padding:10px 0;border-bottom:1px solid var(--line)}.compass-stage{position:relative;aspect-ratio:1;margin:0 auto}.dial{position:absolute;left:4%;top:4%;width:92%;height:92%;object-fit:contain}.sha-map{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.compass-center{position:absolute;left:36%;top:36%;width:28%;height:28%;border-radius:50%;background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;font:22px "Songti SC",serif}.compass-center small{font:9px -apple-system,sans-serif;margin-top:5px}.compass-label{position:absolute;transform:translate(-50%,-50%);font-size:12px;background:var(--paper);border-radius:7px;padding:0 3px;color:var(--muted)}.pin{position:absolute;transform:translate(-50%,-50%);width:30px;height:30px;border-radius:50%;border:2px solid #c58d69;background:var(--paper);display:grid;place-items:center;font-size:15px}.pin.wealth{border-color:#b58a38}.pin.fortune{border-color:#809580}.pin.yang{border-color:#8299b2}.pin.yin{border-color:#a48bad}.compass-intro{padding:64px 18px 18px}.compass-intro p{margin:9px 0}.compass-switch{display:flex;gap:4px;padding:4px;background:var(--wash);border-radius:24px;margin:16px 0}.compass-switch button{flex:1;min-height:44px;border:0;border-radius:20px;background:transparent}.compass-switch button.active{background:var(--red);color:var(--bg)}.hour-choice{display:flex;gap:10px;align-items:center;font-size:12px;margin:14px 0}.hour-choice[hidden]{display:none!important}.hour-choice select{flex:1;min-width:0;min-height:44px;padding:8px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}.compass-board>.hint{text-align:center;margin-top:12px}.device{width:var(--w);height:var(--h);position:relative;overflow:hidden}.workspace{position:absolute;left:var(--cx);top:var(--cy);width:var(--cw);height:var(--ch);overflow:auto;padding-bottom:84px;scroll-padding-top:64px;scroll-padding-bottom:100px}.workspace>.detail{margin-top:12px}.wide .workspace,.duo-wide .workspace{display:grid;grid-template-columns:minmax(160px,.75fr) minmax(0,1.25fr);gap:20px;overflow:hidden}.wide .workspace>section,.duo-wide .workspace>section{min-height:0;overflow:auto;height:100%;padding-bottom:10px}.wide .workspace>.detail,.duo-wide .workspace>.detail{margin:0}.side-duo .workspace{padding-bottom:0}.status{position:absolute;left:0;top:0;right:0;height:36px;padding:8px 22px;display:flex;justify-content:space-between;font-size:12px;font-weight:600}.duo-status{position:absolute;right:24px;top:34px;width:47px;text-align:center;z-index:55}.duo-status time{display:block;font-weight:600}.duo-status svg{width:47px;height:44px}.horizontal-duo .duo-status{top:16px;right:24px;display:flex;width:116px;align-items:center;gap:9px}.tabs{position:absolute;bottom:16px;left:20px;right:20px;margin:auto;height:68px;max-width:600px;display:flex;justify-content:space-around;align-items:center;border-radius:28px;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px) saturate(1.5);-webkit-backdrop-filter:blur(24px) saturate(1.5);z-index:50}.tab{position:relative;text-align:center;width:18.5%;padding:7px 4px;border-radius:22px;font-size:10px}.tab.active{color:var(--red);background:var(--wash)}.tab svg{display:block;width:23px;height:23px;margin:0 auto 4px}.floating-tabs{position:absolute;right:23px;top:var(--taby);width:50px;height:252px;display:flex;flex-direction:column;align-items:center;padding:4px;border:1px solid var(--line);border-radius:30px;background:var(--glass);backdrop-filter:blur(24px);z-index:50}.floating-tabs .tab{width:44px;height:48px;min-height:48px;padding:11px 9px}.floating-tabs .tab-title{display:none}.tab-count-badge{position:absolute;right:5%;top:0;border-radius:12px;min-width:18px;height:18px;background:#ff3b30;color:white;font-size:11px;line-height:18px}.tab-new-dot{position:absolute;right:15%;top:4px;width:6px;height:6px;background:#ff3b30;border-radius:50%}.floating-tabs .tab-count-badge{right:-3px}.review-only{max-width:900px;margin:auto;padding:16px;font-size:12px;color:var(--muted)}'''
+COMPASS_CSS=TOKENS+CSS+''' .compass-intro{padding:8px 18px 18px!important}.compass-intro>.eyebrow{display:none}.compass-intro>h1{padding-left:52px;min-height:44px;display:flex;align-items:center}.side-duo .compass-intro>h1{padding-left:0} '''
+
+def variables(mode,w,h):
+ p=profile(mode,w,h);return f'--w:{w}px;--h:{h}px;--cx:{p["contentX"]}px;--cy:{p["contentY"]}px;--cw:{p["contentWidth"]}px;--ch:{p["contentHeight"]}px;--taby:{p["tabY"]}px;--controly:{p["controlY"]}px;'
+def controls(mode,back,compass=False):
+ p=profile(mode,*next(m[1:3] for m in r.MODES if m[0]==mode));out=f'<a class="bar-action floating-back" href="{back}" aria-label="返回">‹</a>'
+ if compass:out+=f'<a class="bar-action" data-r11-compass-link href="{r.link("compass",mode)}" aria-label="罗盘" title="罗盘">{prev.ICON}</a>'
+ return '<div class="bar-controls">'+out+'</div>'
+def standalone_compass(mode,w,h,dark,state):
+ p=profile(mode,w,h);wide=w>h and p['appw']>=600;classes=('dark ' if dark else '')+('duo ' if p['duo'] else '')+('duo-wide ' if wide and p['duo'] else 'wide ' if wide else '')+('horizontal-duo ' if p['duo'] and p['horizontal'] else '')+('side-duo ' if p['side'] else '')+'page-compass mode-'+mode
+ lead,detail=content('compass',mode,state)
+ status='<div class="duo-status"><time>09:41</time>'+r.STATUS_SVG+'</div>' if p['duo'] and p['statusVisible'] else '<div class="status"><span>9:41</span><span>●●●　▰</span></div>' if not p['duo'] else ''
+ nav='<nav class="'+('tabs' if p['horizontal'] else 'floating-tabs')+'" aria-label="主导航">'+r.tabs('home',mode,p['side'])+'</nav>'
+ script=prev.SCRIPT.replace('R11_DEFAULT_DATE',json.dumps('2026-11-12')).replace('R11_ALMANAC_URL',json.dumps(r.link('almanac',mode))).replace('R11_COMPASS_URL',json.dumps(r.link('compass',mode))).replace('R11_COMPASS_DATA',json.dumps(prev.DATA,ensure_ascii=False))
+ script="const q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)];\n"+script
+ return '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>历象 · 罗盘</title><style>:root{'+variables(mode,w,h)+'}'+COMPASS_CSS+'</style><body class="'+classes+'"><div class="device">'+status+'<main class="workspace"><section class="lead">'+lead+'</section><section class="detail">'+detail+'</section></main>'+controls(mode,r.link('almanac',mode))+nav+'</div><p class="review-only">设计原型 · 方位数据为2026-11-12样本；非其他日期真实黄历。无需脚本也显示完整初始罗盘。</p><script>'+script+'</script></body></html>'
+
+def page_html(page,mode,w,h,dark=False,state='',full=False):
+ if page=='compass':return standalone_compass(mode,w,h,dark,state)
+ s=BASE_HTML(page,mode,w,h,dark,state,full);p=profile(mode,w,h);s=s.replace('<body class="','<body class="mode-'+mode+' '+('side-duo ' if p['side'] else ''))
+ s=s.replace(':root{',':root{--controly:'+str(p['controlY'])+'px;',1)
+ # Move controls out of the content card into one floating navigation group.
+ if page not in ['home','folklore','selection','countdown','settings']:
+  soup=BeautifulSoup(s,'html.parser');back=soup.select_one('.floating-back');href=back['href'] if back else r.link('home',mode)
+  if back:back.decompose()
+  app=soup.select_one('.r8-app');app.append(BeautifulSoup(controls(mode,href,page=='almanac'),'html.parser'));s=str(soup)
+ return s
+r.page_html=page_html
+if __name__=='__main__':
+ rows=r.generate()
+ for mode,w,h,dark in r.MODES:
+  name='compass-'+mode+'-hour';(P/(name+'.html')).write_text(page_html('compass',mode,w,h,dark,'hour'));rows.append(dict(page='compass',mode=mode,width=w,height=h,dark=dark,state='hour',full=False,file=name))
+ for state in ['previous','next']:
+  name='almanac-phone-light-'+state;(P/(name+'.html')).write_text(page_html('almanac','phone-light',375,930,False,state));rows.append(dict(page='almanac',mode='phone-light',width=375,height=930,dark=False,state=state,full=False,file=name))
+ (P/'screens.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2));print('Generated',len(rows),'R12 screens; modes',len(r.MODES))

@@ -1,0 +1,43 @@
+{
+  "method": "Full HTML offline WeasyPrint; no browser paint",
+  "results": [
+    {
+      "mode": "phone-light",
+      "iconAndTitleSameRow": true,
+      "weatherTitleSingleLine": true,
+      "toolHeight": 112.0
+    },
+    {
+      "mode": "phone-dark",
+      "iconAndTitleSameRow": true,
+      "weatherTitleSingleLine": true,
+      "toolHeight": 112.0
+    },
+    {
+      "mode": "duo-closed-portrait",
+      "iconAndTitleSameRow": true,
+      "weatherTitleSingleLine": true,
+      "toolHeight": 112.0
+    },
+    {
+      "mode": "duo-closed-landscape",
+      "iconAndTitleSameRow": true,
+      "weatherTitleSingleLine": true,
+      "toolHeight": 112.0
+    },
+    {
+      "mode": "duo-closed-portrait",
+      "compactHeaderHeight": 117.2,
+      "webWidth": 365.0,
+      "availableWidth": 365,
+      "verticalLayout": true
+    },
+    {
+      "mode": "duo-closed-landscape",
+      "compactHeaderHeight": 117.2,
+      "webWidth": 577.0,
+      "availableWidth": 577,
+      "verticalLayout": true
+    }
+  ]
+}

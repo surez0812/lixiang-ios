@@ -1,0 +1,570 @@
+[
+  {
+    "heading": {
+      "x": 20,
+      "y": 36,
+      "w": 335,
+      "h": 88,
+      "scrollH": 88,
+      "clientH": 88,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "visual": {
+      "x": 20,
+      "y": 136,
+      "w": 335,
+      "h": 622,
+      "scrollH": 622,
+      "clientH": 622,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "hidden"
+    },
+    "result": {
+      "x": 20,
+      "y": 136,
+      "w": 335,
+      "h": 622,
+      "scrollH": 622,
+      "clientH": 622,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "copy": {
+      "x": 20,
+      "y": 136,
+      "w": 335,
+      "h": 622,
+      "scrollH": 622,
+      "clientH": 622,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "poem": {
+      "x": 38,
+      "y": 348.671875,
+      "w": 299,
+      "h": 132,
+      "scrollH": 132,
+      "clientH": 132,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "explain": {
+      "x": 38,
+      "y": 494.671875,
+      "w": 299,
+      "h": 126.4375,
+      "scrollH": 126,
+      "clientH": 126,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "text": "第5签 · 上\n灯下成章\n灯下添新页\n窗前听晚风\n一行还一行\n小事亦成章\n签意\n\n持续比热闹更可靠。哪怕只推进一点，也是有分量的积累。\n\n今日可做\n\n为正在学习的事做一次十五分钟练习。",
+    "body": "mode-phone-light has-back page-fortune",
+    "mode": "phone-light"
+  },
+  {
+    "heading": {
+      "x": 20,
+      "y": 36,
+      "w": 794,
+      "h": 88,
+      "scrollH": 88,
+      "clientH": 88,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "visual": {
+      "x": 20,
+      "y": 136,
+      "w": 794,
+      "h": 886,
+      "scrollH": 886,
+      "clientH": 886,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "hidden"
+    },
+    "result": {
+      "x": 20,
+      "y": 136,
+      "w": 794,
+      "h": 886,
+      "scrollH": 886,
+      "clientH": 886,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "copy": {
+      "x": 202,
+      "y": 136,
+      "w": 430,
+      "h": 886,
+      "scrollH": 886,
+      "clientH": 886,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "poem": {
+      "x": 220,
+      "y": 491.515625,
+      "w": 394,
+      "h": 132,
+      "scrollH": 132,
+      "clientH": 132,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "explain": {
+      "x": 220,
+      "y": 637.515625,
+      "w": 394,
+      "h": 104.75,
+      "scrollH": 105,
+      "clientH": 105,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "text": "第5签 · 上\n灯下成章\n灯下添新页\n窗前听晚风\n一行还一行\n小事亦成章\n签意\n\n持续比热闹更可靠。哪怕只推进一点，也是有分量的积累。\n\n今日可做\n\n为正在学习的事做一次十五分钟练习。",
+    "body": "mode-ipad-portrait has-back page-fortune",
+    "mode": "ipad-portrait"
+  },
+  {
+    "heading": {
+      "x": 20,
+      "y": 293,
+      "w": 321.109375,
+      "h": 112,
+      "scrollH": 112,
+      "clientH": 112,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "visual": {
+      "x": 363.109375,
+      "y": 36,
+      "w": 808.875,
+      "h": 626,
+      "scrollH": 626,
+      "clientH": 626,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "hidden"
+    },
+    "result": {
+      "x": 363.109375,
+      "y": 36,
+      "w": 808.875,
+      "h": 626,
+      "scrollH": 626,
+      "clientH": 626,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "copy": {
+      "x": 552.546875,
+      "y": 36,
+      "w": 430,
+      "h": 626,
+      "scrollH": 626,
+      "clientH": 626,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "poem": {
+      "x": 570.546875,
+      "y": 261.515625,
+      "w": 394,
+      "h": 132,
+      "scrollH": 132,
+      "clientH": 132,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "explain": {
+      "x": 570.546875,
+      "y": 407.515625,
+      "w": 394,
+      "h": 104.75,
+      "scrollH": 105,
+      "clientH": 105,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "text": "第5签 · 上\n灯下成章\n灯下添新页\n窗前听晚风\n一行还一行\n小事亦成章\n签意\n\n持续比热闹更可靠。哪怕只推进一点，也是有分量的积累。\n\n今日可做\n\n为正在学习的事做一次十五分钟练习。",
+    "body": "mode-ipad-landscape wide has-back page-fortune",
+    "mode": "ipad-landscape"
+  },
+  {
+    "heading": {
+      "x": 20,
+      "y": 12,
+      "w": 365,
+      "h": 88,
+      "scrollH": 88,
+      "clientH": 88,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "visual": {
+      "x": 20,
+      "y": 112,
+      "w": 365,
+      "h": 478,
+      "scrollH": 500,
+      "clientH": 478,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "hidden"
+    },
+    "result": {
+      "x": 20,
+      "y": 112,
+      "w": 365,
+      "h": 478,
+      "scrollH": 500,
+      "clientH": 478,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "copy": {
+      "x": 20,
+      "y": 112,
+      "w": 365,
+      "h": 500,
+      "scrollH": 500,
+      "clientH": 500,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "poem": {
+      "x": 38,
+      "y": 273.53125,
+      "w": 329,
+      "h": 120,
+      "scrollH": 120,
+      "clientH": 120,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "explain": {
+      "x": 38,
+      "y": 407.53125,
+      "w": 329,
+      "h": 118.703125,
+      "scrollH": 119,
+      "clientH": 119,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "text": "第5签 · 上\n灯下成章\n灯下添新页\n窗前听晚风\n一行还一行\n小事亦成章\n签意\n\n持续比热闹更可靠。哪怕只推进一点，也是有分量的积累。\n\n今日可做\n\n为正在学习的事做一次十五分钟练习。",
+    "body": "mode-duo-closed-portrait side-duo duo has-back page-fortune",
+    "mode": "duo-closed-portrait"
+  },
+  {
+    "heading": {
+      "x": 20,
+      "y": 139,
+      "w": 161.546875,
+      "h": 112,
+      "scrollH": 112,
+      "clientH": 112,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "visual": {
+      "x": 201.546875,
+      "y": 12,
+      "w": 395.4375,
+      "h": 366,
+      "scrollH": 500,
+      "clientH": 366,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "hidden"
+    },
+    "result": {
+      "x": 201.546875,
+      "y": 12,
+      "w": 395.4375,
+      "h": 366,
+      "scrollH": 500,
+      "clientH": 366,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "copy": {
+      "x": 201.546875,
+      "y": 12,
+      "w": 395.4375,
+      "h": 500,
+      "scrollH": 500,
+      "clientH": 500,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "poem": {
+      "x": 217.546875,
+      "y": 239.9375,
+      "w": 149.390625,
+      "h": 114,
+      "scrollH": 114,
+      "clientH": 114,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "explain": {
+      "x": 382.9375,
+      "y": 231.8125,
+      "w": 198.046875,
+      "h": 130.25,
+      "scrollH": 130,
+      "clientH": 130,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "text": "第5签 · 上\n灯下成章\n灯下添新页\n窗前听晚风\n一行还一行\n小事亦成章\n签意\n\n持续比热闹更可靠。哪怕只推进一点，也是有分量的积累。\n\n今日可做\n\n为正在学习的事做一次十五分钟练习。",
+    "body": "mode-duo-closed-landscape side-duo duo duo-wide has-back page-fortune compact-reading",
+    "mode": "duo-closed-landscape"
+  },
+  {
+    "heading": {
+      "x": 20,
+      "y": 12,
+      "w": 629,
+      "h": 88,
+      "scrollH": 88,
+      "clientH": 88,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "visual": {
+      "x": 20,
+      "y": 112,
+      "w": 629,
+      "h": 667,
+      "scrollH": 667,
+      "clientH": 667,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "hidden"
+    },
+    "result": {
+      "x": 20,
+      "y": 112,
+      "w": 629,
+      "h": 667,
+      "scrollH": 667,
+      "clientH": 667,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "copy": {
+      "x": 119.5,
+      "y": 112,
+      "w": 430,
+      "h": 667,
+      "scrollH": 667,
+      "clientH": 667,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "poem": {
+      "x": 137.5,
+      "y": 358.015625,
+      "w": 394,
+      "h": 132,
+      "scrollH": 132,
+      "clientH": 132,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "explain": {
+      "x": 137.5,
+      "y": 504.015625,
+      "w": 394,
+      "h": 104.75,
+      "scrollH": 105,
+      "clientH": 105,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "text": "第5签 · 上\n灯下成章\n灯下添新页\n窗前听晚风\n一行还一行\n小事亦成章\n签意\n\n持续比热闹更可靠。哪怕只推进一点，也是有分量的积累。\n\n今日可做\n\n为正在学习的事做一次十五分钟练习。",
+    "body": "mode-duo-open-portrait duo horizontal-duo has-back page-fortune",
+    "mode": "duo-open-portrait"
+  },
+  {
+    "heading": {
+      "x": 20,
+      "y": 240.5,
+      "w": 238,
+      "h": 112,
+      "scrollH": 112,
+      "clientH": 112,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "visual": {
+      "x": 278,
+      "y": 12,
+      "w": 592,
+      "h": 569,
+      "scrollH": 569,
+      "clientH": 569,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "hidden"
+    },
+    "result": {
+      "x": 278,
+      "y": 12,
+      "w": 592,
+      "h": 569,
+      "scrollH": 569,
+      "clientH": 569,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "copy": {
+      "x": 359,
+      "y": 12,
+      "w": 430,
+      "h": 569,
+      "scrollH": 569,
+      "clientH": 569,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "poem": {
+      "x": 377,
+      "y": 209.015625,
+      "w": 394,
+      "h": 132,
+      "scrollH": 132,
+      "clientH": 132,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "explain": {
+      "x": 377,
+      "y": 355.015625,
+      "w": 394,
+      "h": 104.75,
+      "scrollH": 105,
+      "clientH": 105,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "text": "第5签 · 上\n灯下成章\n灯下添新页\n窗前听晚风\n一行还一行\n小事亦成章\n签意\n\n持续比热闹更可靠。哪怕只推进一点，也是有分量的积累。\n\n今日可做\n\n为正在学习的事做一次十五分钟练习。",
+    "body": "mode-duo-open-landscape side-duo duo duo-wide has-back page-fortune",
+    "mode": "duo-open-landscape"
+  },
+  {
+    "heading": {
+      "x": 20,
+      "y": 12,
+      "w": 911,
+      "h": 88,
+      "scrollH": 88,
+      "clientH": 88,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "visual": {
+      "x": 20,
+      "y": 112,
+      "w": 911,
+      "h": 385,
+      "scrollH": 500,
+      "clientH": 385,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "hidden"
+    },
+    "result": {
+      "x": 20,
+      "y": 112,
+      "w": 911,
+      "h": 385,
+      "scrollH": 500,
+      "clientH": 385,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "copy": {
+      "x": 205.5,
+      "y": 112,
+      "w": 540,
+      "h": 500,
+      "scrollH": 500,
+      "clientH": 500,
+      "opacity": "1",
+      "display": "flex",
+      "overflow": "visible"
+    },
+    "poem": {
+      "x": 221.5,
+      "y": 339.9375,
+      "w": 211.546875,
+      "h": 114,
+      "scrollH": 114,
+      "clientH": 114,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "explain": {
+      "x": 449.046875,
+      "y": 341.5,
+      "w": 280.453125,
+      "h": 110.875,
+      "scrollH": 111,
+      "clientH": 111,
+      "opacity": "1",
+      "display": "block",
+      "overflow": "visible"
+    },
+    "text": "第5签 · 上\n灯下成章\n灯下添新页\n窗前听晚风\n一行还一行\n小事亦成章\n签意\n\n持续比热闹更可靠。哪怕只推进一点，也是有分量的积累。\n\n今日可做\n\n为正在学习的事做一次十五分钟练习。",
+    "body": "mode-duo-tabletop duo duo-wide horizontal-duo has-back page-fortune compact-reading",
+    "mode": "duo-tabletop"
+  }
+]

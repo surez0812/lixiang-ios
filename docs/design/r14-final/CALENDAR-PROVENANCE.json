@@ -1,0 +1,7 @@
+{
+  "source": "local lunar-swift dependency",
+  "commit": "2397017c78a3a1adcb1166952aba4069955a41d1",
+  "date": "2026-11-12",
+  "export": "ExportCalendarFixture.swift compiled only in /tmp; app untouched",
+  "huangdiEpoch": "team year+2697 display convention; source ENGINEER-REPLY.md"
+}

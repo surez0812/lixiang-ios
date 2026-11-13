@@ -1,0 +1,61 @@
+[
+  {
+    "id": "fortune-cup",
+    "sourceBox": [
+      236,
+      188,
+      780,
+      1406
+    ],
+    "pixelSize": [
+      544,
+      1218
+    ],
+    "export": "transparent-padding-trim-only",
+    "generator": "built-in image_gen"
+  },
+  {
+    "id": "fortune-stick",
+    "sourceBox": [
+      513,
+      51,
+      573,
+      1399
+    ],
+    "pixelSize": [
+      60,
+      1348
+    ],
+    "export": "transparent-padding-trim-only",
+    "generator": "built-in image_gen"
+  },
+  {
+    "id": "compass-dial",
+    "sourceBox": [
+      49,
+      62,
+      1183,
+      1208
+    ],
+    "pixelSize": [
+      1134,
+      1146
+    ],
+    "export": "transparent-padding-trim-only",
+    "generator": "built-in image_gen"
+  },
+  {
+    "id": "fortune-paper",
+    "sourceBox": [
+      95,
+      47,
+      933,
+      1469
+    ],
+    "pixelSize": [
+      838,
+      1422
+    ],
+    "generator": "built-in image_gen"
+  }
+]

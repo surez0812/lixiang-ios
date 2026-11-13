@@ -1,0 +1,103 @@
+{
+  "method": "Actual generated script with DOM state stubs, no browser paint validation",
+  "results": [
+    {
+      "mode": "phone-light",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "phone-dark",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "ipad-portrait",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "ipad-portrait-dark",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "ipad-landscape",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "ipad-landscape-dark",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "duo-closed-portrait",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "duo-closed-landscape",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "duo-tent",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "duo-open-portrait",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "duo-open-landscape",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "duo-tabletop",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "phone-landscape",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "datedRoutes": true,
+      "yearAndLeapTransitions": true,
+      "dayDirections": true,
+      "all12Hours": true
+    }
+  ]
+}

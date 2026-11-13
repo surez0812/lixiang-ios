@@ -1,0 +1,50 @@
+[
+  {
+    "file": "duo_close_portrait.png",
+    "pixels": [
+      1398,
+      2034
+    ],
+    "sha256": "f12c82ed728be9ba6ff828673b1609656cfbb14445bd7bbbec1813eafbbc3213"
+  },
+  {
+    "file": "duo_close_tent.png",
+    "pixels": [
+      2034,
+      1398
+    ],
+    "sha256": "77d59c3959dfea7a9ddc564c27dee105351241446a245e67d5f014871f8ccc72"
+  },
+  {
+    "file": "duo_open_landscape.png",
+    "pixels": [
+      2853,
+      2007
+    ],
+    "sha256": "8d88640c56faaaae2c028ee1d049781a3b805299f95328189e52d0ff281994ec"
+  },
+  {
+    "file": "duo_open_portrait.png",
+    "pixels": [
+      2007,
+      2853
+    ],
+    "sha256": "44bd4c1695af7ec383c4baeeb7a3a6ab0a47ed7d1dab95999153cb8f45010c91"
+  },
+  {
+    "file": "duo_splitview.png",
+    "pixels": [
+      2853,
+      2007
+    ],
+    "sha256": "fd9af89264a783b5be608e6a73823af569f2b2faebafe810eba62679e9f2603c"
+  },
+  {
+    "file": "duo_tabletop.png",
+    "pixels": [
+      1398,
+      2034
+    ],
+    "sha256": "4b5512055e7fe25844ea7e89babd4358afd4c03cec6e6fe13a75684e23df3bb8"
+  }
+]

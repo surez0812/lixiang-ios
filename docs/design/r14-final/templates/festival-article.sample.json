@@ -1,0 +1,32 @@
+{
+  "eventID": "winter",
+  "contentVersion": "1",
+  "title": "小雪",
+  "articleHeadline": "小雪将至，把日子过暖",
+  "heroImageURL": "../assets/winter.webp",
+  "heroAlt": "冬日庭院、雪意与灯笼",
+  "kicker": "一段来由 · 一点日常",
+  "intro": "小雪说的是节令里的寒意渐深，并不意味着每个地方都会下雪。",
+  "sections": [
+    {
+      "heading": "读懂这个节令",
+      "paragraphs": [
+        "小雪接续立冬，标志着天气进一步转冷。"
+      ]
+    },
+    {
+      "heading": "给今天留一个小仪式",
+      "paragraphs": [
+        "选择适合自己的方式，把节日放回日常。"
+      ],
+      "steps": [
+        "整理冬衣",
+        "为家人添一杯热饮"
+      ]
+    }
+  ],
+  "note": "各地习俗不同，尊重参与者的选择。",
+  "sources": [],
+  "updatedAt": "2026-11-12T12:00:00+08:00",
+  "editorialStatus": "sample-only; sources must be supplied before publishing"
+}

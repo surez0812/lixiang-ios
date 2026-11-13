@@ -1,0 +1,515 @@
+{
+  "method": "Actual generated event-header runtime handler in Node VM; no browser opened",
+  "checks": [
+    {
+      "file": "folklore-detail-phone-light",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-dark",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-dark",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-dark",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-dark",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-dark",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-portrait",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-portrait",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-portrait",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-portrait",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-portrait",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-portrait-dark",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-portrait-dark",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-portrait-dark",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-portrait-dark",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-portrait-dark",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-landscape",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-landscape",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-landscape",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-landscape",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-landscape",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-landscape-dark",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-landscape-dark",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-landscape-dark",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-landscape-dark",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-ipad-landscape-dark",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-closed-portrait",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-closed-portrait",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-closed-portrait",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-closed-portrait",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-closed-portrait",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-closed-landscape",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-closed-landscape",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-closed-landscape",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-closed-landscape",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-closed-landscape",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-tent",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-tent",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-tent",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-tent",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-tent",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-open-portrait",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-open-portrait",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-open-portrait",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-open-portrait",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-open-portrait",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-open-landscape",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-open-landscape",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-open-landscape",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-open-landscape",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-open-landscape",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-tabletop",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-tabletop",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-tabletop",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-tabletop",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-tabletop",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-splitview-left",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-splitview-left",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-splitview-left",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-splitview-left",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-splitview-left",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-splitview-right",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-splitview-right",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-splitview-right",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-splitview-right",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-duo-splitview-right",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-today",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-today",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-today",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-today",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-today",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-offline",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-offline",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-offline",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-offline",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-offline",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-full",
+      "query": "",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-full",
+      "query": "?event=winter",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-full",
+      "query": "?event=daily-kindness",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-full",
+      "query": "?date=2026-11-22",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    },
+    {
+      "file": "folklore-detail-phone-light-full",
+      "query": "?event=daily-kindness&date=2026-11-12",
+      "dateNodeOnly": true,
+      "deckPreserved": true
+    }
+  ]
+}

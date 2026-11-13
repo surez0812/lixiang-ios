@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "eventID",
+    "contentVersion",
+    "title",
+    "articleHeadline",
+    "heroImageURL",
+    "heroAlt",
+    "intro",
+    "sections",
+    "sources",
+    "updatedAt"
+  ],
+  "properties": {
+    "eventID": {
+      "type": "string"
+    },
+    "contentVersion": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "articleHeadline": {
+      "type": "string"
+    },
+    "heroImageURL": {
+      "type": "string"
+    },
+    "heroAlt": {
+      "type": "string"
+    },
+    "kicker": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "heading",
+          "paragraphs"
+        ],
+        "properties": {
+          "heading": {
+            "type": "string"
+          },
+          "paragraphs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "note": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "url"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

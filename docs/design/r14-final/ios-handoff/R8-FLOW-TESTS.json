@@ -1,0 +1,64 @@
+{
+  "method": "Exact R8 flow script executed in Node VM with DOM/storage/timer stubs; no browser or system permission requested",
+  "results": [
+    {
+      "name": "save-before-permission",
+      "pass": true
+    },
+    {
+      "name": "explicit-enable-opens-system-specimen",
+      "pass": true
+    },
+    {
+      "name": "allow-leads-to-schedule-intent",
+      "pass": true
+    },
+    {
+      "name": "deny-keeps-record-and-in-app-reminder",
+      "pass": true
+    },
+    {
+      "name": "denied-does-not-prompt-again",
+      "pass": true
+    },
+    {
+      "name": "defer-keeps-record-without-denied-status",
+      "pass": true
+    },
+    {
+      "name": "location-allow-loading",
+      "pass": true
+    },
+    {
+      "name": "location-ready-existing-weather",
+      "pass": true
+    },
+    {
+      "name": "location-denial-retains-fallback",
+      "pass": true
+    },
+    {
+      "name": "inclusive-ten-day-boundaries",
+      "pass": true
+    },
+    {
+      "name": "nearest-day-badge-zero-is-today",
+      "pass": true
+    },
+    {
+      "name": "article-not-read-before-content-load",
+      "pass": true
+    },
+    {
+      "name": "article-read-after-successful-load",
+      "pass": true
+    },
+    {
+      "name": "hero-event-opens-exact-native-and-web-detail",
+      "pass": true
+    }
+  ],
+  "allPass": true,
+  "nativeNotificationScheduling": "NOT RUN; prototype records intent only",
+  "browserVisual": "UNVERIFIED"
+}

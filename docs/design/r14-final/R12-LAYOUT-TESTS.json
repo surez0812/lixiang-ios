@@ -1,0 +1,118 @@
+{
+  "checks": [
+    {
+      "mode": "phone-light",
+      "topGap": 36,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "phone-dark",
+      "topGap": 36,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "ipad-portrait",
+      "topGap": 36,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "ipad-portrait-dark",
+      "topGap": 36,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "ipad-landscape",
+      "topGap": 36,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "ipad-landscape-dark",
+      "topGap": 36,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "duo-closed-portrait",
+      "topGap": 12,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "duo-closed-landscape",
+      "topGap": 12,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "duo-tent",
+      "topGap": 12,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "duo-open-portrait",
+      "topGap": 12,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "duo-open-landscape",
+      "topGap": 12,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "duo-tabletop",
+      "topGap": 12,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "phone-landscape",
+      "topGap": 36,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "topGap": 36,
+      "compassSelfContained": true,
+      "initialCompassMarkupVisibleWithoutScript": true,
+      "adjacentFloatingControls": true,
+      "largeDateRemoved": true
+    }
+  ],
+  "splitviewRemoved": true,
+  "scope": "source structure; no browser execution"
+}

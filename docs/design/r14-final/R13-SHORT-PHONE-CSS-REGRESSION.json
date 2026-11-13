@@ -1,0 +1,166 @@
+{
+  "method": "jsdom complete generated HTML and full ancestor CSS; five structural/computed constraints; no browser geometry or paint",
+  "negativeControl": "Removing the targeted override restores the observed 500px minimum in both themes",
+  "results": [
+    {
+      "mode": "phone-landscape",
+      "sign": "lixiang-036",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape",
+      "sign": "lixiang-001",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape",
+      "sign": "lixiang-002",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape",
+      "sign": "lixiang-003",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape",
+      "sign": "lixiang-004",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape",
+      "sign": "lixiang-005",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape",
+      "sign": "lixiang-006",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape",
+      "sign": "lixiang-007",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape",
+      "sign": "lixiang-008",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape",
+      "sign": "lixiang-009",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "sign": "lixiang-036",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "sign": "lixiang-001",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "sign": "lixiang-002",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "sign": "lixiang-003",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "sign": "lixiang-004",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "sign": "lixiang-005",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "sign": "lixiang-006",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "sign": "lixiang-007",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "sign": "lixiang-008",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "sign": "lixiang-009",
+      "legacyMinimumRemoved": true,
+      "heightBoundToVisual": true,
+      "noInternalScroll": true,
+      "titlePreserved": true
+    }
+  ]
+}

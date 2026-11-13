@@ -1,0 +1,149 @@
+{
+  "method": "jsdom actual full HTML and frozen motion script; ResizeObserver/matchMedia/scroll adapters only; no paint validation",
+  "results": [
+    {
+      "file": "fortune-phone-light",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-phone-dark",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-ipad-portrait",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-ipad-portrait-dark",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-ipad-landscape",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-ipad-landscape-dark",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-duo-closed-portrait",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-duo-closed-landscape",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-duo-tent",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-duo-open-portrait",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-duo-open-landscape",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-duo-tabletop",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-phone-light-result",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-phone-dark-result",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-ipad-portrait-result",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-ipad-portrait-dark-result",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-ipad-landscape-result",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-ipad-landscape-dark-result",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-duo-closed-portrait-result",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-duo-closed-landscape-result",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-duo-tent-result",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-duo-open-portrait-result",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-duo-open-landscape-result",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    },
+    {
+      "file": "fortune-duo-tabletop-result",
+      "titleVisibleAtAllFiveFrames": true,
+      "resultVisible": true,
+      "noInternalResultScroll": true
+    }
+  ]
+}

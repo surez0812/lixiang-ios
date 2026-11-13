@@ -1,0 +1,52 @@
+{
+  "method": "Exact approved R7 motion core embedded in all R8 fortune pages in Node vm with minimal DOM state stubs, real wall-clock timers and WebCrypto. No browser opened, no network used.",
+  "limitations": "Checks interaction state and real-clock completion only. It does not validate browser paint, CSS transition visuals, native SwiftUI runtime or actual device motion.",
+  "results": [
+    {
+      "name": "trigger-final-and-same-day-persistence",
+      "pass": true,
+      "elapsedFirstMs": 1689,
+      "liftAt720": "translateY(-9.634182581353755px)",
+      "title": "静水流深",
+      "counters": {
+        "digest": 1,
+        "writes": 1,
+        "animationFrames": 162
+      },
+      "cacheKeys": [
+        "lixiang-draw-2026-11-12"
+      ]
+    },
+    {
+      "name": "skip-mid-animation-stays-complete",
+      "pass": true,
+      "counters": {
+        "digest": 1,
+        "writes": 1,
+        "animationFrames": 12
+      }
+    },
+    {
+      "name": "explicit-reduce-motion",
+      "pass": true,
+      "transitionTarget": "opacity 150ms",
+      "counters": {
+        "digest": 1,
+        "writes": 1,
+        "animationFrames": 0
+      }
+    },
+    {
+      "name": "system-reduce-motion",
+      "pass": true,
+      "counters": {
+        "digest": 1,
+        "writes": 1,
+        "animationFrames": 0
+      }
+    }
+  ],
+  "allLogicPass": true,
+  "browserRealtimeVisual": "UNVERIFIED",
+  "originalVirtualClockEvidence": "evidence/r6-before-cleanup/INTERACTION-TESTS.json"
+}

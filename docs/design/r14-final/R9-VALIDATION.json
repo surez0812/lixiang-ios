@@ -1,0 +1,1093 @@
+{
+  "kind": "source and offline geometry checks; no browser or simulator execution",
+  "checks": [
+    {
+      "check": "186 screen states and 14 modes",
+      "passed": true
+    },
+    {
+      "check": "No independent daily-detail route",
+      "passed": true
+    },
+    {
+      "check": "phone-light five tabs",
+      "passed": true
+    },
+    {
+      "check": "phone-light month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "phone-light no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "phone-light home order",
+      "passed": true
+    },
+    {
+      "check": "phone-light hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "phone-light compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "phone-light eras merged",
+      "passed": true
+    },
+    {
+      "check": "phone-light matched events",
+      "passed": true
+    },
+    {
+      "check": "home phone-light JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac phone-light JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore phone-light JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown phone-light JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings phone-light JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection phone-light JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily phone-light JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail phone-light JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail phone-light JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune phone-light JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "phone-dark five tabs",
+      "passed": true
+    },
+    {
+      "check": "phone-dark month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "phone-dark no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "phone-dark home order",
+      "passed": true
+    },
+    {
+      "check": "phone-dark hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "phone-dark compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "phone-dark eras merged",
+      "passed": true
+    },
+    {
+      "check": "phone-dark matched events",
+      "passed": true
+    },
+    {
+      "check": "home phone-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac phone-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore phone-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown phone-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings phone-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection phone-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily phone-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail phone-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail phone-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune phone-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait five tabs",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait home order",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait eras merged",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait matched events",
+      "passed": true
+    },
+    {
+      "check": "home ipad-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac ipad-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore ipad-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown ipad-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings ipad-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection ipad-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily ipad-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail ipad-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail ipad-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune ipad-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait-dark five tabs",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait-dark month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait-dark no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait-dark home order",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait-dark hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait-dark compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait-dark eras merged",
+      "passed": true
+    },
+    {
+      "check": "ipad-portrait-dark matched events",
+      "passed": true
+    },
+    {
+      "check": "home ipad-portrait-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac ipad-portrait-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore ipad-portrait-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown ipad-portrait-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings ipad-portrait-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection ipad-portrait-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily ipad-portrait-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail ipad-portrait-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail ipad-portrait-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune ipad-portrait-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape five tabs",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape home order",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape eras merged",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape matched events",
+      "passed": true
+    },
+    {
+      "check": "home ipad-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac ipad-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore ipad-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown ipad-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings ipad-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection ipad-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily ipad-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail ipad-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail ipad-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune ipad-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape-dark five tabs",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape-dark month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape-dark no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape-dark home order",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape-dark hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape-dark compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape-dark eras merged",
+      "passed": true
+    },
+    {
+      "check": "ipad-landscape-dark matched events",
+      "passed": true
+    },
+    {
+      "check": "home ipad-landscape-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac ipad-landscape-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore ipad-landscape-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown ipad-landscape-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings ipad-landscape-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection ipad-landscape-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily ipad-landscape-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail ipad-landscape-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail ipad-landscape-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune ipad-landscape-dark JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-portrait five tabs",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-portrait month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-portrait no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-portrait home order",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-portrait hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-portrait compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-portrait eras merged",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-portrait matched events",
+      "passed": true
+    },
+    {
+      "check": "home duo-closed-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac duo-closed-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore duo-closed-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown duo-closed-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings duo-closed-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection duo-closed-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily duo-closed-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail duo-closed-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail duo-closed-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune duo-closed-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-landscape five tabs",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-landscape month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-landscape no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-landscape home order",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-landscape hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-landscape compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-landscape eras merged",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-landscape matched events",
+      "passed": true
+    },
+    {
+      "check": "home duo-closed-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac duo-closed-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore duo-closed-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown duo-closed-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings duo-closed-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection duo-closed-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily duo-closed-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail duo-closed-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail duo-closed-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune duo-closed-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "duo-tent five tabs",
+      "passed": true
+    },
+    {
+      "check": "duo-tent month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "duo-tent no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "duo-tent home order",
+      "passed": true
+    },
+    {
+      "check": "duo-tent hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "duo-tent compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "duo-tent eras merged",
+      "passed": true
+    },
+    {
+      "check": "duo-tent matched events",
+      "passed": true
+    },
+    {
+      "check": "home duo-tent JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac duo-tent JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore duo-tent JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown duo-tent JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings duo-tent JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection duo-tent JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily duo-tent JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail duo-tent JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail duo-tent JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune duo-tent JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "duo-open-portrait five tabs",
+      "passed": true
+    },
+    {
+      "check": "duo-open-portrait month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "duo-open-portrait no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "duo-open-portrait home order",
+      "passed": true
+    },
+    {
+      "check": "duo-open-portrait hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "duo-open-portrait compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "duo-open-portrait eras merged",
+      "passed": true
+    },
+    {
+      "check": "duo-open-portrait matched events",
+      "passed": true
+    },
+    {
+      "check": "home duo-open-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac duo-open-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore duo-open-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown duo-open-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings duo-open-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection duo-open-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily duo-open-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail duo-open-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail duo-open-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune duo-open-portrait JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "duo-open-landscape five tabs",
+      "passed": true
+    },
+    {
+      "check": "duo-open-landscape month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "duo-open-landscape no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "duo-open-landscape home order",
+      "passed": true
+    },
+    {
+      "check": "duo-open-landscape hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "duo-open-landscape compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "duo-open-landscape eras merged",
+      "passed": true
+    },
+    {
+      "check": "duo-open-landscape matched events",
+      "passed": true
+    },
+    {
+      "check": "home duo-open-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac duo-open-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore duo-open-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown duo-open-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings duo-open-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection duo-open-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily duo-open-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail duo-open-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail duo-open-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune duo-open-landscape JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "duo-tabletop five tabs",
+      "passed": true
+    },
+    {
+      "check": "duo-tabletop month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "duo-tabletop no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "duo-tabletop home order",
+      "passed": true
+    },
+    {
+      "check": "duo-tabletop hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "duo-tabletop compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "duo-tabletop eras merged",
+      "passed": true
+    },
+    {
+      "check": "duo-tabletop matched events",
+      "passed": true
+    },
+    {
+      "check": "home duo-tabletop JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac duo-tabletop JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore duo-tabletop JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown duo-tabletop JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings duo-tabletop JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection duo-tabletop JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily duo-tabletop JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail duo-tabletop JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail duo-tabletop JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune duo-tabletop JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-left five tabs",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-left month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-left no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-left home order",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-left hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-left compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-left eras merged",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-left matched events",
+      "passed": true
+    },
+    {
+      "check": "home duo-splitview-left JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac duo-splitview-left JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore duo-splitview-left JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown duo-splitview-left JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings duo-splitview-left JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection duo-splitview-left JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily duo-splitview-left JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail duo-splitview-left JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail duo-splitview-left JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune duo-splitview-left JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-right five tabs",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-right month routes to almanac",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-right no navigation title containers",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-right home order",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-right hero links + fade",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-right compact yi ji",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-right eras merged",
+      "passed": true
+    },
+    {
+      "check": "duo-splitview-right matched events",
+      "passed": true
+    },
+    {
+      "check": "home duo-splitview-right JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "almanac duo-splitview-right JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore duo-splitview-right JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown duo-splitview-right JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "settings duo-splitview-right JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "selection duo-splitview-right JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "daily duo-splitview-right JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "folklore-detail duo-splitview-right JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "countdown-detail duo-splitview-right JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "fortune duo-splitview-right JavaScript parses",
+      "passed": true
+    },
+    {
+      "check": "No festival panel on unmatched date",
+      "passed": true
+    },
+    {
+      "check": "Selected winter festival",
+      "passed": true
+    },
+    {
+      "check": "Unequal calendar years stay separate",
+      "passed": true
+    },
+    {
+      "check": "light alpha endpoints",
+      "passed": true
+    },
+    {
+      "check": "dark alpha endpoints",
+      "passed": true
+    },
+    {
+      "check": "Correct new portrait reference",
+      "passed": true
+    },
+    {
+      "check": "duo-open-portrait top status bottom tabs",
+      "passed": true
+    },
+    {
+      "check": "duo-tabletop top status bottom tabs",
+      "passed": true
+    },
+    {
+      "check": "duo-closed-landscape sidebar gap 8pt",
+      "passed": true
+    },
+    {
+      "check": "duo-open-landscape sidebar gap 8pt",
+      "passed": true
+    },
+    {
+      "check": "duo-tent sidebar gap 8pt",
+      "passed": true
+    },
+    {
+      "check": "Frozen assets/fortune-cup.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen assets/fortune-stick.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen assets/fortune-paper.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen fortune-demo.gif",
+      "passed": true
+    },
+    {
+      "check": "Frozen fortune-demo.mp4",
+      "passed": true
+    },
+    {
+      "check": "Frozen ios-handoff/AnimationTimeline.json",
+      "passed": true
+    },
+    {
+      "check": "Frozen core unchanged",
+      "passed": true
+    }
+  ]
+}

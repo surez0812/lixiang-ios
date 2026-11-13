@@ -1,0 +1,124 @@
+{
+  "method": "actual component markup and CSS in offline WeasyPrint; no browser paint",
+  "results": [
+    {
+      "file": "home-phone-light",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-phone-dark",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-ipad-portrait",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-ipad-portrait-dark",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-ipad-landscape",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-ipad-landscape-dark",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-duo-closed-portrait",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-duo-closed-landscape",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-duo-tent",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-duo-open-portrait",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-duo-open-landscape",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-duo-tabletop",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-phone-light-no-matches",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-phone-light-weather-authorized",
+      "panelHeight": 62.5,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-phone-light-weather-denied",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-phone-light-weather-loading",
+      "panelHeight": 62.5,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    },
+    {
+      "file": "home-phone-light-full",
+      "panelHeight": 90.0,
+      "headingRowsAligned": true,
+      "captionRowsAligned": true,
+      "adaptiveHeight": true
+    }
+  ]
+}

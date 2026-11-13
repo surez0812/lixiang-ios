@@ -1,0 +1,103 @@
+{
+  "method": "Complete HTML in offline WeasyPrint layout, no browser or JS paint",
+  "results": [
+    {
+      "mode": "phone-light",
+      "titleAligned": true,
+      "adviceBottom": 631.15,
+      "visualBottom": 758.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "phone-dark",
+      "titleAligned": true,
+      "adviceBottom": 631.15,
+      "visualBottom": 758.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "ipad-portrait",
+      "titleAligned": true,
+      "adviceBottom": 752.3,
+      "visualBottom": 1022.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "ipad-portrait-dark",
+      "titleAligned": true,
+      "adviceBottom": 752.3,
+      "visualBottom": 1022.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "ipad-landscape",
+      "titleAligned": true,
+      "adviceBottom": 522.3,
+      "visualBottom": 662.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "ipad-landscape-dark",
+      "titleAligned": true,
+      "adviceBottom": 522.3,
+      "visualBottom": 662.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "duo-closed-portrait",
+      "titleAligned": true,
+      "adviceBottom": 526.2,
+      "visualBottom": 590.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "duo-closed-landscape",
+      "titleAligned": true,
+      "adviceBottom": 372.08,
+      "visualBottom": 378.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "duo-tent",
+      "titleAligned": true,
+      "adviceBottom": 372.08,
+      "visualBottom": 378.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "duo-open-portrait",
+      "titleAligned": true,
+      "adviceBottom": 618.8,
+      "visualBottom": 779.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "duo-open-landscape",
+      "titleAligned": true,
+      "adviceBottom": 469.8,
+      "visualBottom": 581.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "duo-tabletop",
+      "titleAligned": true,
+      "adviceBottom": 472.08,
+      "visualBottom": 497.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "phone-landscape",
+      "titleAligned": true,
+      "adviceBottom": 219.38,
+      "visualBottom": 226.0,
+      "fullContentWithinViewport": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "titleAligned": true,
+      "adviceBottom": 219.38,
+      "visualBottom": 226.0,
+      "fullContentWithinViewport": true
+    }
+  ]
+}

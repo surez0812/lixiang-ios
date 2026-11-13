@@ -1,0 +1,1002 @@
+[
+  {
+    "mode": "phone-light",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-light",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-light",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-light",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-light",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-light",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-light",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-light",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-light",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-light",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-dark",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-dark",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-dark",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-dark",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-dark",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-dark",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-dark",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-dark",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-dark",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "phone-dark",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 622,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait-dark",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait-dark",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait-dark",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait-dark",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait-dark",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait-dark",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait-dark",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait-dark",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait-dark",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-portrait-dark",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 886,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape-dark",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape-dark",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape-dark",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape-dark",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape-dark",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape-dark",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape-dark",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape-dark",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape-dark",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "ipad-landscape-dark",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 626,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-portrait",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 346.5,
+    "viewportHeight": 478,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-portrait",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 367.0,
+    "viewportHeight": 478,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-portrait",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 346.5,
+    "viewportHeight": 478,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-portrait",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 367.0,
+    "viewportHeight": 478,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-portrait",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 346.5,
+    "viewportHeight": 478,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-portrait",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 367.0,
+    "viewportHeight": 478,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-portrait",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 367.0,
+    "viewportHeight": 478,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-portrait",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 346.5,
+    "viewportHeight": 478,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-portrait",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 367.0,
+    "viewportHeight": 478,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-portrait",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 367.0,
+    "viewportHeight": 478,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-landscape",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-landscape",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-landscape",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-landscape",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-landscape",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-landscape",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-landscape",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-landscape",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-landscape",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-closed-landscape",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-tent",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-tent",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-tent",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-tent",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-tent",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-tent",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-tent",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-tent",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-tent",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-tent",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 366,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-portrait",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 667,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-portrait",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 667,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-portrait",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 667,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-portrait",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 667,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-portrait",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 667,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-portrait",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 667,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-portrait",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 667,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-portrait",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 667,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-portrait",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 667,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-portrait",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 667,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-landscape",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 569,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-landscape",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 569,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-landscape",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 569,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-landscape",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 386.5,
+    "viewportHeight": 569,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-landscape",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 569,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-landscape",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 569,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-landscape",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 569,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-landscape",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 569,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-landscape",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 569,
+    "fits": true
+  },
+  {
+    "mode": "duo-open-landscape",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 365.0,
+    "viewportHeight": 569,
+    "fits": true
+  },
+  {
+    "mode": "duo-tabletop",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 385,
+    "fits": true
+  },
+  {
+    "mode": "duo-tabletop",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 385,
+    "fits": true
+  },
+  {
+    "mode": "duo-tabletop",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 385,
+    "fits": true
+  },
+  {
+    "mode": "duo-tabletop",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 385,
+    "fits": true
+  },
+  {
+    "mode": "duo-tabletop",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 385,
+    "fits": true
+  },
+  {
+    "mode": "duo-tabletop",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 385,
+    "fits": true
+  },
+  {
+    "mode": "duo-tabletop",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 385,
+    "fits": true
+  },
+  {
+    "mode": "duo-tabletop",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 385,
+    "fits": true
+  },
+  {
+    "mode": "duo-tabletop",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 385,
+    "fits": true
+  },
+  {
+    "mode": "duo-tabletop",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 234.5,
+    "viewportHeight": 385,
+    "fits": true
+  },
+  {
+    "mode": "phone-landscape",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape-dark",
+    "sign": "lixiang-036",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape-dark",
+    "sign": "lixiang-001",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape-dark",
+    "sign": "lixiang-002",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape-dark",
+    "sign": "lixiang-003",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape-dark",
+    "sign": "lixiang-004",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape-dark",
+    "sign": "lixiang-005",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape-dark",
+    "sign": "lixiang-006",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape-dark",
+    "sign": "lixiang-007",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape-dark",
+    "sign": "lixiang-008",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  },
+  {
+    "mode": "phone-landscape-dark",
+    "sign": "lixiang-009",
+    "intrinsicHeight": 114.0,
+    "viewportHeight": 144,
+    "fits": true,
+    "legacyAncestorIncluded": true
+  }
+]

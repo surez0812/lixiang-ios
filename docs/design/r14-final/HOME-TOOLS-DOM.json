@@ -1,0 +1,365 @@
+{
+  "method": "jsdom full HTML and existing weather-state handlers; no paint validation",
+  "results": [
+    {
+      "mode": "phone-light",
+      "state": "notDetermined",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "phone-light",
+      "state": "authorized",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "phone-light",
+      "state": "loading",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "phone-light",
+      "state": "denied",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "phone-light",
+      "state": "error",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "phone-dark",
+      "state": "notDetermined",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "phone-dark",
+      "state": "authorized",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "phone-dark",
+      "state": "loading",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "phone-dark",
+      "state": "denied",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "phone-dark",
+      "state": "error",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-portrait",
+      "state": "notDetermined",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-portrait",
+      "state": "authorized",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-portrait",
+      "state": "loading",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-portrait",
+      "state": "denied",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-portrait",
+      "state": "error",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-portrait-dark",
+      "state": "notDetermined",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-portrait-dark",
+      "state": "authorized",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-portrait-dark",
+      "state": "loading",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-portrait-dark",
+      "state": "denied",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-portrait-dark",
+      "state": "error",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-landscape",
+      "state": "notDetermined",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-landscape",
+      "state": "authorized",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-landscape",
+      "state": "loading",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-landscape",
+      "state": "denied",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-landscape",
+      "state": "error",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-landscape-dark",
+      "state": "notDetermined",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-landscape-dark",
+      "state": "authorized",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-landscape-dark",
+      "state": "loading",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-landscape-dark",
+      "state": "denied",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "ipad-landscape-dark",
+      "state": "error",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-closed-portrait",
+      "state": "notDetermined",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-closed-portrait",
+      "state": "authorized",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-closed-portrait",
+      "state": "loading",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-closed-portrait",
+      "state": "denied",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-closed-portrait",
+      "state": "error",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-closed-landscape",
+      "state": "notDetermined",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-closed-landscape",
+      "state": "authorized",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-closed-landscape",
+      "state": "loading",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-closed-landscape",
+      "state": "denied",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-closed-landscape",
+      "state": "error",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-tent",
+      "state": "notDetermined",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-tent",
+      "state": "authorized",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-tent",
+      "state": "loading",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-tent",
+      "state": "denied",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-tent",
+      "state": "error",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-open-portrait",
+      "state": "notDetermined",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-open-portrait",
+      "state": "authorized",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-open-portrait",
+      "state": "loading",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-open-portrait",
+      "state": "denied",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-open-portrait",
+      "state": "error",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-open-landscape",
+      "state": "notDetermined",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-open-landscape",
+      "state": "authorized",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-open-landscape",
+      "state": "loading",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-open-landscape",
+      "state": "denied",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-open-landscape",
+      "state": "error",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-tabletop",
+      "state": "notDetermined",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-tabletop",
+      "state": "authorized",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-tabletop",
+      "state": "loading",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-tabletop",
+      "state": "denied",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    },
+    {
+      "mode": "duo-tabletop",
+      "state": "error",
+      "adaptiveHeightRetained": true,
+      "matchingContentRows": true
+    }
+  ]
+}

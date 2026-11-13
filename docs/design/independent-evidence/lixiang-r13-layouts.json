@@ -1,0 +1,408 @@
+[
+  {
+    "file": "home-phone-light",
+    "bounds": {
+      ".home-tools": {
+        "x": 20,
+        "y": 462.765625,
+        "w": 335,
+        "h": 112,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".almanac-teaser": {
+        "x": 20,
+        "y": 590.765625,
+        "w": 335,
+        "h": 225.96875,
+        "overflow": "hidden",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".today-matches": {
+        "x": 39,
+        "y": 270.765625,
+        "w": 297,
+        "h": 44,
+        "overflow": "visible",
+        "wrap": "wrap",
+        "text": ""
+      },
+      ".compact-filters": null,
+      ".native-event-head": null,
+      ".article-frame": null,
+      ".workspace>.lead": {
+        "x": 20,
+        "y": 36,
+        "w": 335,
+        "h": 780.734375,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".workspace>.detail": {
+        "x": 20,
+        "y": 831.734375,
+        "w": 335,
+        "h": 401.78125,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      "[data-r11-compass-link]": null
+    }
+  },
+  {
+    "file": "home-duo-closed-portrait",
+    "bounds": {
+      ".home-tools": {
+        "x": 20,
+        "y": 435.96875,
+        "w": 365,
+        "h": 112,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".almanac-teaser": {
+        "x": 20,
+        "y": 563.96875,
+        "w": 365,
+        "h": 225.96875,
+        "overflow": "hidden",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".today-matches": {
+        "x": 39,
+        "y": 243.96875,
+        "w": 327,
+        "h": 44,
+        "overflow": "visible",
+        "wrap": "wrap",
+        "text": ""
+      },
+      ".compact-filters": null,
+      ".native-event-head": null,
+      ".article-frame": null,
+      ".workspace>.lead": {
+        "x": 20,
+        "y": 12,
+        "w": 365,
+        "h": 777.9375,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".workspace>.detail": {
+        "x": 20,
+        "y": 804.9375,
+        "w": 365,
+        "h": 418.1875,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      "[data-r11-compass-link]": null
+    }
+  },
+  {
+    "file": "home-duo-closed-landscape",
+    "bounds": {
+      ".home-tools": {
+        "x": 20,
+        "y": 338,
+        "w": 285.28125,
+        "h": 112,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".almanac-teaser": {
+        "x": 325.28125,
+        "y": 12,
+        "w": 271.71875,
+        "h": 225.96875,
+        "overflow": "hidden",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".today-matches": {
+        "x": 39,
+        "y": 178.96875,
+        "w": 247.28125,
+        "h": 40,
+        "overflow": "visible",
+        "wrap": "wrap",
+        "text": ""
+      },
+      ".compact-filters": null,
+      ".native-event-head": null,
+      ".article-frame": null,
+      ".workspace>.lead": {
+        "x": 20,
+        "y": 12,
+        "w": 285.28125,
+        "h": 438,
+        "overflow": "auto",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".workspace>.detail": {
+        "x": 325.28125,
+        "y": 12,
+        "w": 271.71875,
+        "h": 438,
+        "overflow": "auto",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      "[data-r11-compass-link]": null
+    }
+  },
+  {
+    "file": "folklore-duo-closed-landscape",
+    "bounds": {
+      ".home-tools": null,
+      ".almanac-teaser": null,
+      ".today-matches": null,
+      ".compact-filters": {
+        "x": 20,
+        "y": 219.96875,
+        "w": 279.5,
+        "h": 106,
+        "overflow": "visible",
+        "wrap": "wrap",
+        "text": ""
+      },
+      ".native-event-head": null,
+      ".article-frame": null,
+      ".workspace>.lead": {
+        "x": 20,
+        "y": 12,
+        "w": 279.5,
+        "h": 438,
+        "overflow": "auto",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".workspace>.detail": {
+        "x": 317.5,
+        "y": 12,
+        "w": 279.5,
+        "h": 438,
+        "overflow": "auto",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      "[data-r11-compass-link]": null
+    }
+  },
+  {
+    "file": "folklore-detail-duo-closed-landscape",
+    "bounds": {
+      ".home-tools": null,
+      ".almanac-teaser": null,
+      ".today-matches": null,
+      ".compact-filters": null,
+      ".native-event-head": {
+        "x": 20,
+        "y": 12,
+        "w": 577,
+        "h": 111.1875,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".article-frame": {
+        "x": 20,
+        "y": 135.1875,
+        "w": 577,
+        "h": 314.8125,
+        "overflow": "clip",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".workspace>.lead": {
+        "x": 20,
+        "y": 12,
+        "w": 577,
+        "h": 111.1875,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".workspace>.detail": {
+        "x": 20,
+        "y": 135.1875,
+        "w": 577,
+        "h": 314.8125,
+        "overflow": "hidden",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      "[data-r11-compass-link]": null
+    }
+  },
+  {
+    "file": "folklore-detail-duo-closed-portrait",
+    "bounds": {
+      ".home-tools": null,
+      ".almanac-teaser": null,
+      ".today-matches": null,
+      ".compact-filters": null,
+      ".native-event-head": {
+        "x": 20,
+        "y": 12,
+        "w": 365,
+        "h": 111.1875,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".article-frame": {
+        "x": 20,
+        "y": 135.1875,
+        "w": 365,
+        "h": 526.8125,
+        "overflow": "clip",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".workspace>.lead": {
+        "x": 20,
+        "y": 12,
+        "w": 365,
+        "h": 111.1875,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".workspace>.detail": {
+        "x": 20,
+        "y": 135.1875,
+        "w": 365,
+        "h": 526.8125,
+        "overflow": "hidden",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      "[data-r11-compass-link]": null
+    }
+  },
+  {
+    "file": "almanac-phone-light",
+    "bounds": {
+      ".home-tools": null,
+      ".almanac-teaser": null,
+      ".today-matches": null,
+      ".compact-filters": null,
+      ".native-event-head": null,
+      ".article-frame": null,
+      ".workspace>.lead": {
+        "x": 20,
+        "y": 36,
+        "w": 335,
+        "h": 4752.609375,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".workspace>.detail": {
+        "x": 20,
+        "y": 4803.609375,
+        "w": 335,
+        "h": 2376.203125,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      "[data-r11-compass-link]": {
+        "x": 243,
+        "y": 44,
+        "w": 104,
+        "h": 44,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": "\u503c\u795e\u7f57\u76d8"
+      }
+    }
+  },
+  {
+    "file": "almanac-ipad-portrait",
+    "bounds": {
+      ".home-tools": null,
+      ".almanac-teaser": null,
+      ".today-matches": null,
+      ".compact-filters": null,
+      ".native-event-head": null,
+      ".article-frame": null,
+      ".workspace>.lead": {
+        "x": 20,
+        "y": 36,
+        "w": 794,
+        "h": 4014.421875,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".workspace>.detail": {
+        "x": 20,
+        "y": 4065.421875,
+        "w": 794,
+        "h": 2158.15625,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      "[data-r11-compass-link]": {
+        "x": 702,
+        "y": 44,
+        "w": 104,
+        "h": 44,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": "\u503c\u795e\u7f57\u76d8"
+      }
+    }
+  },
+  {
+    "file": "almanac-duo-closed-portrait",
+    "bounds": {
+      ".home-tools": null,
+      ".almanac-teaser": null,
+      ".today-matches": null,
+      ".compact-filters": null,
+      ".native-event-head": null,
+      ".article-frame": null,
+      ".workspace>.lead": {
+        "x": 20,
+        "y": 12,
+        "w": 365,
+        "h": 4515.078125,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      ".workspace>.detail": {
+        "x": 20,
+        "y": 4542.078125,
+        "w": 365,
+        "h": 2306.84375,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      },
+      "[data-r11-compass-link]": {
+        "x": 396,
+        "y": 218,
+        "w": 44,
+        "h": 44,
+        "overflow": "visible",
+        "wrap": "nowrap",
+        "text": ""
+      }
+    }
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "fixtureDate": "2026-11-12",
+  "routes": {
+    "hero": "day(date)",
+    "heroScripture": "daily(date,quoteID)",
+    "todayFestival": "folklore-detail(eventID)",
+    "todayAnniversary": "countdown-detail(recordID)"
+  },
+  "badges": {
+    "festival": "days in [0,10] and unread eventID@contentVersion; clear after successful article load",
+    "countdown": "nearest days in [0,10]; 0=today; independent of notification authorization"
+  },
+  "nativeOwns": [
+    "navigation",
+    "tab badges",
+    "event identity/date/category",
+    "unlock gate",
+    "load/offline/cache states",
+    "permissions",
+    "share routing"
+  ],
+  "webOwns": [
+    "illustration",
+    "headline/intro",
+    "paragraphs/ritual steps",
+    "sources/updatedAt"
+  ],
+  "notification": "persist record -> explain -> explicit request -> authorized add; denied keeps inAppOnly",
+  "weather": [
+    "notDetermined",
+    "systemPrompt",
+    "loading",
+    "authorized",
+    "denied",
+    "error"
+  ],
+  "prototypeSystemAPIsInvoked": false,
+  "productionAppWired": false
+}

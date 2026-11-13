@@ -1,0 +1,145 @@
+{
+  "method": "Complete standalone HTML in offline WeasyPrint layout; no JS or browser executed",
+  "results": [
+    {
+      "mode": "phone-light",
+      "initialCompassRect": [
+        39.0,
+        281.8,
+        297.0,
+        297.0
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "phone-dark",
+      "initialCompassRect": [
+        39.0,
+        281.8,
+        297.0,
+        297.0
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "ipad-portrait",
+      "initialCompassRect": [
+        39.0,
+        281.8,
+        300.0,
+        300.0
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "ipad-portrait-dark",
+      "initialCompassRect": [
+        39.0,
+        281.8,
+        300.0,
+        300.0
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "ipad-landscape",
+      "initialCompassRect": [
+        484.25,
+        55.0,
+        300.0,
+        300.0
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "ipad-landscape-dark",
+      "initialCompassRect": [
+        484.25,
+        55.0,
+        300.0,
+        300.0
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "duo-closed-portrait",
+      "initialCompassRect": [
+        39.0,
+        257.8,
+        300.0,
+        300.0
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "duo-closed-landscape",
+      "initialCompassRect": [
+        267.88,
+        31.0,
+        240.5,
+        240.5
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "duo-tent",
+      "initialCompassRect": [
+        267.88,
+        31.0,
+        240.5,
+        240.5
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "duo-open-portrait",
+      "initialCompassRect": [
+        39.0,
+        257.8,
+        300.0,
+        300.0
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "duo-open-landscape",
+      "initialCompassRect": [
+        370.25,
+        31.0,
+        300.0,
+        300.0
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "duo-tabletop",
+      "initialCompassRect": [
+        393.12,
+        31.0,
+        300.0,
+        300.0
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "phone-landscape",
+      "initialCompassRect": [
+        353.0,
+        55.0,
+        300.0,
+        300.0
+      ],
+      "hasVisibleInitialLayout": true
+    },
+    {
+      "mode": "phone-landscape-dark",
+      "initialCompassRect": [
+        353.0,
+        55.0,
+        300.0,
+        300.0
+      ],
+      "hasVisibleInitialLayout": true
+    }
+  ]
+}
