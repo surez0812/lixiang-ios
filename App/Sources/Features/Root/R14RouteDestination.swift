@@ -22,7 +22,7 @@ struct R14RouteDestination: View {
         case .folklore:
             R14PlaceholderPage(title: "岁时", route: .folklore)
         case .folkloreDetail(let id, _):
-            ContentScreen(contentID: id)
+            R14FolkloreDetailScreen(id: id)
                 .toolbar(.hidden, for: .tabBar)
         case .selection:
             SelectionScreen(initialDate: days.selectedDate) { date in

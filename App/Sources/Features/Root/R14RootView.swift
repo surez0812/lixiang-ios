@@ -54,6 +54,7 @@ struct R14RootView: View {
             case "folklore": r = .folklore
             case "countdown": r = .countdown
             case "settings": r = .settings
+            case "folkloreDetail": r = .folkloreDetail(id: "xiezao", version: nil)
             default: r = .home
             }
             _pendingRoute = State(initialValue: r)
@@ -91,7 +92,7 @@ struct R14RootView: View {
             guard let r = pendingRoute else { return }
             pendingRoute = nil
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                var p = paths; p[0].append(r); paths = p
+                var p = paths; p[tab].append(r); paths = p
             }
         }
     }
@@ -106,7 +107,9 @@ struct R14RootView: View {
     private var tabsContent: some View {
         ZStack {
             tabStack(0) { R14HomeScreen() }
-            tabStack(1) { FestivalsScreen() }
+            tabStack(1) { R14FolkloreScreen(onOpen: { id in
+        var p = paths; p[1].append(R14Route.folkloreDetail(id: id, version: nil)); paths = p
+    }) }
             tabStack(2) { R14PlaceholderPage(title: "择日", route: .selection) }
             tabStack(3) { R14CountdownScreen() }
             tabStack(4) { R14SettingsScreen() }

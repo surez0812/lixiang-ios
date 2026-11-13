@@ -106,6 +106,7 @@
 		BF292E0C1C1A6726EC389D74 /* term-xiazhi-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = BB8990536CE22FCB0076EB82 /* term-xiazhi-light.webp */; };
 		C09B4B8A66D701731DC2F3D5 /* D1Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5CD61AB7918A75644AF7DC /* D1Theme.swift */; };
 		C1B98895E926C69E63714686 /* term-shuangjiang-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 7FFB1AB9AD6D73783C65CF8F /* term-shuangjiang-light.webp */; };
+		C33D67B3B7B567D861447032 /* R14Folklore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D9052F53146203B14C60B /* R14Folklore.swift */; };
 		C42DA4FFA18E4643BBF3DAB8 /* D1Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C26FF99F8DAD23254156A9 /* D1Motion.swift */; };
 		C9B83D27C0DFD1FFE57EE07D /* app-strings.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A786E1D2A93C1C738FF1D38 /* app-strings.json */; };
 		CCE41F2022685487E2690E72 /* buddhist-365.json in Resources */ = {isa = PBXBuildFile; fileRef = 16D78BCFFB01C0E4353422B6 /* buddhist-365.json */; };
@@ -204,6 +205,7 @@
 		4253AFA341B81955B45311A4 /* LixiangApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LixiangApp.swift; sourceTree = "<group>"; };
 		443C1D3C9904793024373124 /* SelectedDayStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDayStore.swift; sourceTree = "<group>"; };
 		493E10C2B5747A8960FA078A /* LixiangCalendarCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LixiangCalendarCore; path = packages/LixiangCalendarCore; sourceTree = SOURCE_ROOT; };
+		4B6D9052F53146203B14C60B /* R14Folklore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14Folklore.swift; sourceTree = "<group>"; };
 		4B7782EBB3336B05F1FBEC4F /* DailyVerseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyVerseStore.swift; sourceTree = "<group>"; };
 		4C1C5648B77B83D4BF81E684 /* term-xiaoshu-light.webp */ = {isa = PBXFileReference; path = "term-xiaoshu-light.webp"; sourceTree = "<group>"; };
 		4E01E5FD3A472709A3070703 /* term-liqiu-dark.webp */ = {isa = PBXFileReference; path = "term-liqiu-dark.webp"; sourceTree = "<group>"; };
@@ -530,6 +532,14 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		78AD20B710B93866DBEBF075 /* Folklore */ = {
+			isa = PBXGroup;
+			children = (
+				4B6D9052F53146203B14C60B /* R14Folklore.swift */,
+			);
+			path = Folklore;
+			sourceTree = "<group>";
+		};
 		7BA3BCD39119E0C6636D97D2 /* Seals */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,6 +609,7 @@
 				D55DA5605594E44649C4EF5E /* Daily */,
 				38999125256D48B1DC4D171B /* Day */,
 				7EB79160490018CA05327F30 /* Festivals */,
+				78AD20B710B93866DBEBF075 /* Folklore */,
 				9702A59EBC2BAFA7C883AE71 /* Fortune */,
 				909E26040D6D678944112CB3 /* Home */,
 				9258FBD4E617D0769D3A930A /* PlainLanguage */,
@@ -995,6 +1006,7 @@
 				74F2ABD34D760AC952033AD7 /* PlainTermSheet.swift in Sources */,
 				04BA6016FEC090D5F71A7623 /* QuoteSheet.swift in Sources */,
 				562FED771B84CE26883D9CD9 /* R14CountdownScreen.swift in Sources */,
+				C33D67B3B7B567D861447032 /* R14Folklore.swift in Sources */,
 				B91E2D5AB652E725E77AD375 /* R14PlaceholderPage.swift in Sources */,
 				17F1D38D07CDE3049419239E /* R14RootView.swift in Sources */,
 				D01671092318D28773D07AF8 /* R14RouteDestination.swift in Sources */,
