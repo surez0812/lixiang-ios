@@ -22,6 +22,7 @@ struct R14RouteDestination: View {
             R14PlaceholderPage(title: "岁时", route: .folklore)
         case .folkloreDetail(let id, let version):
             R14PlaceholderPage(title: "岁时详情 \(id)@\(version ?? "-")", route: .folklore)
+                .toolbar(.hidden, for: .tabBar)
         case .selection:
             SelectionScreen(initialDate: days.selectedDate) { date in
                 days.select(date)
@@ -30,6 +31,7 @@ struct R14RouteDestination: View {
             R14PlaceholderPage(title: "倒计日", route: .countdown)
         case .countdownDetail(let id):
             R14PlaceholderPage(title: "倒计日详情 \(id ?? "-")", route: .countdown)
+                .toolbar(.hidden, for: .tabBar)
         case .settings:
             R14PlaceholderPage(title: "设置", route: .settings)
         }

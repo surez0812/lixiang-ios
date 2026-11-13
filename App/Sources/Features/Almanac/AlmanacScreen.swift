@@ -23,6 +23,7 @@ struct R14AlmanacScreen: View {
         .background(ScreenBackground())
         .navigationTitle(Text(verbatim: "\(date.year)年\(date.month)月\(date.day)日"))
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar(.hidden, for: .tabBar)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 NavigationLink(value: R14Route.compass(days.selectedDate, hour: days.hourIndex ?? 12)) {
