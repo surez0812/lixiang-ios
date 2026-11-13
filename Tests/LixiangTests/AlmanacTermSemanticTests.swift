@@ -113,6 +113,27 @@ final class AlmanacTermSemanticTests: XCTestCase {
         }
     }
 
+    func testPMEditorApprovedRound3FestivalsAndNayin() {
+        let pack = PlainLanguageLoader.load()
+        let musts: [(String, [String], [String])] = [
+            ("上巳节", ["农历三月初三", "祓禊", "文化说明"], ["散步", "踏青赏花"]),
+            ("重阳节", ["农历九月初九", "登高", "敬老"], ["陪长辈", "爬山散步"]),
+            ("大林木", ["纳音", "五行", "活动无关"], ["逛公园", "换盆"]),
+            ("海中金", ["纳音", "五行", "活动无关"], ["捡贝壳", "海边散步"]),
+            ("路旁土", ["纳音", "五行", "活动无关"], ["沿路边", "散步走走"]),
+        ]
+        for (term, must, forbid) in musts {
+            let zh = pack.term(named: term)?.zh ?? ""
+            XCTAssertFalse(zh.isEmpty, "缺词条 \(term)")
+            for m in must { XCTAssertTrue(zh.contains(m), "\(term) 缺 \(m): \(zh)") }
+            for f in forbid { XCTAssertFalse(zh.contains(f), "\(term) 仍含活动句 \(f): \(zh)") }
+            let en = pack.term(named: term)?.en ?? ""
+            XCTAssertFalse(en.isEmpty, "\(term) 缺英文")
+            XCTAssertFalse(en.lowercased().contains("walk"), "\(term) en 仍含活动句: \(en)")
+        }
+        // 本次范围 5 条已修；其它活动式词条（如 山头火）留待 PM 追加审校，不在此断言全量
+    }
+
     func testFallbackIsNeutral() {
         let text = AlmanacTermSemantics.explanation(for: "不存在的词条XYZ", pack: pack)
         XCTAssertTrue(text.contains("传统黄历用语"))
