@@ -112,8 +112,13 @@ struct R14FolkloreScreen: View {
                 HStack {
                     Text(row.item.title).d1SerifFont(20).foregroundStyle(theme.ink)
                     Spacer()
-                    Text(statusText(row)).d1Font(11, weight: .semibold)
-                        .foregroundStyle(row.isReadable ? theme.accentStrong : theme.ink3)
+                    HStack(spacing: 4) {
+                        if !FolkloreUnreadStore.shared.isRead(row.item), row.isReadable {
+                            Circle().fill(theme.accentStrong).frame(width: 5, height: 5)
+                        }
+                        Text(statusText(row)).d1Font(11, weight: .semibold)
+                            .foregroundStyle(row.isReadable ? theme.accentStrong : theme.ink3)
+                    }
                 }
                 Text(row.item.teaser).d1Font(12).foregroundStyle(theme.ink2).lineLimit(2)
                 Text(categoryLabel(row.item.category.first)).d1Font(10)
@@ -170,6 +175,9 @@ struct R14FolkloreDetailScreen: View {
         }
         .background(ScreenBackground())
         .toolbar(.hidden, for: .navigationBar)
+        .onAppear {
+            if let row, row.isReadable { FolkloreUnreadStore.shared.markRead(row.item) }
+        }
         .overlay(alignment: .topLeading) {
             Button { dismiss() } label: {
                 Image(systemName: "chevron.left").font(.system(size: 17, weight: .semibold))
