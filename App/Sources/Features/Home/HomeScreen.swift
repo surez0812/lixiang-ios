@@ -21,10 +21,10 @@ struct R14HomeScreen: View {
                     HStack(alignment: .top, spacing: 16) {
                         VStack(alignment: .leading, spacing: 14) { hero; HStack(alignment: .top, spacing: 10) { fortuneCard; weatherCard } }
                         VStack(alignment: .leading, spacing: 14) { almanacCard; monthCard }
-                    }.padding(.horizontal, 24).padding(.top, 20).padding(.bottom, 96)
+                    }.padding(.horizontal, 24).padding(.top, 20).padding(.bottom, 120)
                 } else {
                     VStack(alignment: .leading, spacing: 14) { hero; HStack(alignment: .top, spacing: 10) { fortuneCard; weatherCard }; almanacCard; monthCard }
-                        .padding(.horizontal, 16).padding(.vertical, 12).padding(.bottom, 96)
+                        .padding(.horizontal, 16).padding(.vertical, 12).padding(.bottom, 150)
                 }
             }
         }
@@ -106,7 +106,7 @@ struct R14HomeScreen: View {
             D1Card(padding: 12) {
                 VStack(alignment: .leading, spacing: 6) {
                     HStack(spacing: 8) { Image("fortune-cup").resizable().scaledToFit().frame(width: 26, height: 26)
-                        Text("每日一签").d1Font(14, weight: .semibold).foregroundStyle(theme.ink) }
+                        Text("每日一签").d1SerifFont(16, weight: .semibold).foregroundStyle(theme.ink) }
                     HStack { Text("静心，问今日").d1Font(11).foregroundStyle(theme.ink2); Spacer(); Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.ink3) }
                         .frame(minHeight: 44)
                 }.frame(maxWidth: .infinity, minHeight: 98, alignment: .topLeading)
@@ -172,7 +172,7 @@ struct R14HomeScreen: View {
         let inMonth = d.month == days.selectedDate.month
         return NavigationLink(value: R14Route.almanac(d)) {
             VStack(spacing: 1) {
-                Text("\(d.day)").d1Font(12, weight: isSel ? .semibold : .regular)
+                Text("\(d.day)").d1SerifFont(13, weight: isSel ? .semibold : .regular)
                     .foregroundStyle(isSel ? theme.cream : (inMonth ? theme.ink : theme.ink3))
                     .frame(width: 28, height: 24)
                     .background(isSel ? Color.r14Red : .clear, in: Circle())

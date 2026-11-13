@@ -86,21 +86,7 @@ struct R14AlmanacScreen: View {
                     Image(systemName: "leaf").d1Font(10)
                     Text(verbatim: "佛历纪元 \(fotoYear ?? 2570) 年").d1Font(10)
                 }.foregroundStyle(theme.cream.opacity(0.92))
-                if let festival = festival ?? days.almanac.solarTerm {
-                    NavigationLink(value: R14Route.folkloreDetail(id: state.contentID(for: days.selectedDate) ?? "xiezao", version: nil)) {
-                        HStack(spacing: 6) {
-                            Text("当日岁时").d1Font(9).foregroundStyle(theme.cream.opacity(0.8))
-                            Text(festival).d1SerifFont(14, weight: .semibold).foregroundStyle(theme.cream)
-                            Text(festivalCategory).d1Font(8).foregroundStyle(theme.cream.opacity(0.75))
-                                .padding(.horizontal, 6).padding(.vertical, 2)
-                                .background(theme.cream.opacity(0.15), in: Capsule())
-                            Spacer(minLength: 0)
-                            Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.cream.opacity(0.8))
-                        }
-                        .padding(.horizontal, 10).padding(.vertical, 8)
-                        .background(theme.cream.opacity(0.12), in: RoundedRectangle(cornerRadius: 12))
-                    }.buttonStyle(.plain).padding(.top, 2)
-                }
+                festivalRow
                 HStack(spacing: 10) {
                     Button { days.previousDay() } label: {
                         Text("前一天").d1Font(11, weight: .semibold).foregroundStyle(theme.cream)
@@ -117,6 +103,37 @@ struct R14AlmanacScreen: View {
         }
         .padding(16)
         .background(LinearGradient(colors: [Color.r14Red, Color.r14RedDeep], startPoint: .topLeading, endPoint: .bottomTrailing), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+    }
+
+    private var festivalRow: some View {
+        let hit = festival ?? days.almanac.solarTerm
+        return Group {
+            if let hit {
+                NavigationLink(value: R14Route.folkloreDetail(id: state.contentID(for: days.selectedDate) ?? "xiezao", version: nil)) {
+                    HStack(spacing: 6) {
+                        Text("当日岁时").d1Font(9).foregroundStyle(theme.cream.opacity(0.8))
+                        Text(hit).d1SerifFont(14, weight: .semibold).foregroundStyle(theme.cream)
+                        Text(days.almanac.solarTerm != nil && festival == nil ? "节气" : festivalCategory)
+                            .d1Font(8).foregroundStyle(theme.cream.opacity(0.75))
+                            .padding(.horizontal, 6).padding(.vertical, 2)
+                            .background(theme.cream.opacity(0.15), in: Capsule())
+                        Spacer(minLength: 0)
+                        Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.cream.opacity(0.8))
+                    }
+                    .padding(.horizontal, 10).padding(.vertical, 8)
+                    .background(theme.cream.opacity(0.12), in: RoundedRectangle(cornerRadius: 12))
+                }.buttonStyle(.plain).padding(.top, 2)
+            } else {
+                HStack(spacing: 6) {
+                    Text("当日岁时").d1Font(9).foregroundStyle(theme.cream.opacity(0.7))
+                    Text("今日无岁时").d1SerifFont(13).foregroundStyle(theme.cream.opacity(0.65))
+                    Spacer(minLength: 0)
+                }
+                .padding(.horizontal, 10).padding(.vertical, 9)
+                .background(theme.cream.opacity(0.08), in: RoundedRectangle(cornerRadius: 12))
+                .padding(.top, 2)
+            }
+        }
     }
 
     // MARK: 右列：宜忌卡 + 时辰
@@ -194,7 +211,7 @@ struct R14AlmanacScreen: View {
             }
             ForEach(Array(items.enumerated()), id: \.offset) { idx, term in
                 VStack(alignment: .leading, spacing: 3) {
-                    Text(term).d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
+                    Text(term).d1SerifFont(14, weight: .semibold).foregroundStyle(theme.ink)
                     if state.showVernacular {
                         let matched = state.plainLanguage.panelTermMatching(term)
                         let expl = matched?.detailText ?? matched?.zh

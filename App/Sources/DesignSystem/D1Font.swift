@@ -5,9 +5,13 @@ import SwiftUI
 /// 因此先按 PostScript 名探测，缺失时回退系统 serif，并在 DEBUG 输可用性。
 enum D1Typography {
     static let songtiPostScriptNames = [
+        "NotoSerifCJKsc-Bold", "NotoSerifCJKsc-Regular",
         "STSongti-SC-Bold", "STSongti-SC-Regular", "STSongti-SC-Light",
         "STSongtiSC-Bold", "STSongtiSC-Regular", "Songti SC"
     ]
+    /// 内置开源宋体（Noto Serif SC，SIL OFL 1.1）；字重分 Regular/Bold 两个静态字面。
+    static let notoSerifBold = "NotoSerifCJKsc-Bold"
+    static let notoSerifRegular = "NotoSerifCJKsc-Regular"
     static let kaitiPostScriptNames = [
         "Kaiti SC", "KaitiSC-Regular", "STKaiti", "STKaitiSC", "KaiTi", "Kaiti"
     ]
@@ -17,6 +21,12 @@ enum D1Typography {
     }
 
     static func serifFont(size: CGFloat, weight: Font.Weight) -> Font {
+        // 内置 Noto Serif SC：按 weight 选静态字面（Regular/Bold），避免 synthetic bold。
+        let isBold = weight == .bold || weight == .semibold || weight == .heavy || weight == .black
+        let noto = isBold ? [notoSerifBold, notoSerifRegular] : [notoSerifRegular, notoSerifBold]
+        if let name = availableFontName(from: noto) {
+            return .custom(name, size: size)
+        }
         if let name = availableFontName(from: songtiPostScriptNames) {
             return .custom(name, size: size).weight(weight)
         }
@@ -35,8 +45,8 @@ enum D1Typography {
             .filter { $0.localizedCaseInsensitiveContains("songti") || $0.localizedCaseInsensitiveContains("kaiti") || $0.localizedCaseInsensitiveContains("kai") }
             .sorted()
         let lines = families.map { fam in "\(fam): \(UIFont.fontNames(forFamilyName: fam).joined(separator: ","))" }
-        let chosen = availableFontName(from: songtiPostScriptNames) ?? "fallback:system-serif"
-        return "D1Typography fonts\n" + lines.joined(separator: "\n") + "\nsongti_chosen=\(chosen)"
+        let chosen = availableFontName(from: [notoSerifRegular]) ?? availableFontName(from: songtiPostScriptNames) ?? "fallback:system-serif"
+        return "D1Typography fonts\n" + lines.joined(separator: "\n") + "\nnoto_serif=\(UIFont(name: notoSerifRegular, size: 17) != nil)\nsongti_chosen=\(chosen)"
     }
 }
 
