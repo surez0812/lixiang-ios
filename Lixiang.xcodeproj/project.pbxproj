@@ -40,6 +40,7 @@
 		34AC68259657AD79C06097F8 /* index.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B0D4F502C5B8A786CA816CD /* index.json */; };
 		3573D1CD2174094EECE5F737 /* WebViewReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F1437119438744247A6E3 /* WebViewReader.swift */; };
 		38159DBD71848FB753FF36CD /* SelectionEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2285EB6A83A891427ED1AF /* SelectionEngineTests.swift */; };
+		397A00BF51B15E0CB7C4C4B1 /* R14SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9709EFE5F7BD42A69B233F6F /* R14SettingsScreen.swift */; };
 		39FF8AB136D23EB770A2BC4A /* DebugOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E56086DB32FA3B6F775654 /* DebugOptions.swift */; };
 		3A1D84911217C40499DF9FF2 /* term-dashu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = FA982517A1D0AECF514480F7 /* term-dashu-dark.webp */; };
 		3ABC80F5BA369812487AA63D /* FestivalsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D409C092D16755B254E3B6 /* FestivalsScreen.swift */; };
@@ -54,6 +55,7 @@
 		4C85C72CF4424B380152BFBF /* DailyClassics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C60C2822AEE9EFD59BAFE6 /* DailyClassics.swift */; };
 		53C956D926BCD244194C6AA0 /* term-bailu-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 389AF72D672C91DBCA828762 /* term-bailu-light.webp */; };
 		546FA2AA90BEEBA9A678A60D /* panel-terms.json in Resources */ = {isa = PBXBuildFile; fileRef = B46683D1B299DC8E45740FF0 /* panel-terms.json */; };
+		562FED771B84CE26883D9CD9 /* R14CountdownScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C24CF0BA42888A44D0302C9 /* R14CountdownScreen.swift */; };
 		5A6C298813051CC13C5D3BC5 /* FortuneEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCA767FE8687948B8B5D0DF /* FortuneEngineTests.swift */; };
 		5DC804F1EFB564515CFF5331 /* LixiangApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4253AFA341B81955B45311A4 /* LixiangApp.swift */; };
 		5FFF5FAE5E5A65AF03A97BAF /* confucian-365.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D79AB6BAEC69AAA4FFFE4 /* confucian-365.json */; };
@@ -244,10 +246,12 @@
 		8A255389BBDF673EABAC24B6 /* R14Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = R14Assets.xcassets; sourceTree = "<group>"; };
 		8B1057297CBC564642A08F8B /* FortuneScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneScreen.swift; sourceTree = "<group>"; };
 		8B78B618C8DAEDD12A50EF74 /* seal-round-01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seal-round-01@2x.png"; sourceTree = "<group>"; };
+		8C24CF0BA42888A44D0302C9 /* R14CountdownScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14CountdownScreen.swift; sourceTree = "<group>"; };
 		8E466F07982E0E749DF30BB5 /* term-mangzhong-light.webp */ = {isa = PBXFileReference; path = "term-mangzhong-light.webp"; sourceTree = "<group>"; };
 		9278E618C0610300D932BD3C /* term-xiaoman-light.webp */ = {isa = PBXFileReference; path = "term-xiaoman-light.webp"; sourceTree = "<group>"; };
 		9517FF8AB37CB329866032B4 /* term-hanlu-light.webp */ = {isa = PBXFileReference; path = "term-hanlu-light.webp"; sourceTree = "<group>"; };
 		959F210520429077B9C4352B /* PACK-NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "PACK-NOTES.md"; sourceTree = "<group>"; };
+		9709EFE5F7BD42A69B233F6F /* R14SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14SettingsScreen.swift; sourceTree = "<group>"; };
 		981C838D8BCA7964228E4D74 /* term-xiaoman-dark.webp */ = {isa = PBXFileReference; path = "term-xiaoman-dark.webp"; sourceTree = "<group>"; };
 		9A1B1F7CFD33642D4B58FBEB /* ApprovedMotionManifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ApprovedMotionManifest.json; sourceTree = "<group>"; };
 		9B2588121BE27A986FD5F923 /* QuoteSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteSheet.swift; sourceTree = "<group>"; };
@@ -386,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				B0972F77CF89DEA571919AB7 /* AboutScreen.swift */,
+				9709EFE5F7BD42A69B233F6F /* R14SettingsScreen.swift */,
 				69CA72858D41F13FE75567AF /* SettingsScreen.swift */,
 			);
 			path = Settings;
@@ -472,6 +477,14 @@
 				18A495372FE1481FE1F1B1DC /* LixiangUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		52E888A6A04356608B65ED50 /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				8C24CF0BA42888A44D0302C9 /* R14CountdownScreen.swift */,
+			);
+			path = Countdown;
 			sourceTree = "<group>";
 		};
 		5C440841D93EC543CCDDCA8E /* App */ = {
@@ -582,6 +595,7 @@
 				BBD8EC9D8FBABD1069988530 /* Calendar */,
 				20FE1509BED40A792E3B92F6 /* Compass */,
 				241B087D49B937E6CE3F10F5 /* Content */,
+				52E888A6A04356608B65ED50 /* Countdown */,
 				D55DA5605594E44649C4EF5E /* Daily */,
 				38999125256D48B1DC4D171B /* Day */,
 				7EB79160490018CA05327F30 /* Festivals */,
@@ -980,9 +994,11 @@
 				64FC9C5E7534E6985EA1E01B /* PlainLanguageLoader.swift in Sources */,
 				74F2ABD34D760AC952033AD7 /* PlainTermSheet.swift in Sources */,
 				04BA6016FEC090D5F71A7623 /* QuoteSheet.swift in Sources */,
+				562FED771B84CE26883D9CD9 /* R14CountdownScreen.swift in Sources */,
 				B91E2D5AB652E725E77AD375 /* R14PlaceholderPage.swift in Sources */,
 				17F1D38D07CDE3049419239E /* R14RootView.swift in Sources */,
 				D01671092318D28773D07AF8 /* R14RouteDestination.swift in Sources */,
+				397A00BF51B15E0CB7C4C4B1 /* R14SettingsScreen.swift in Sources */,
 				BB440E10DE36EC032893B9CB /* SeasonalArt.swift in Sources */,
 				8EC0A815C5B9E1271B935DCE /* SelectedDayStore.swift in Sources */,
 				D78B78F037BAF2894390E6B8 /* SelectionEngine.swift in Sources */,

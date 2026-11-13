@@ -108,8 +108,8 @@ struct R14RootView: View {
             tabStack(0) { R14HomeScreen() }
             tabStack(1) { FestivalsScreen() }
             tabStack(2) { R14PlaceholderPage(title: "择日", route: .selection) }
-            tabStack(3) { CountdownScreen() }
-            tabStack(4) { SettingsScreen() }
+            tabStack(3) { R14CountdownScreen() }
+            tabStack(4) { R14SettingsScreen() }
         }
     }
 
