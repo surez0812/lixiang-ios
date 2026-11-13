@@ -22,7 +22,7 @@ struct FortuneScreen: View {
 
     var body: some View {
         GeometryReader { geo in
-            let wide = geo.size.width > geo.size.height && geo.size.width >= 700
+            let wide = (geo.size.width > geo.size.height && geo.size.width >= 700) || R14WideProbe.force
             Group {
                 if wide { wideLayout(geo) } else { portraitLayout(geo) }
             }

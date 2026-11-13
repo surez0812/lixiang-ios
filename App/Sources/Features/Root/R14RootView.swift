@@ -258,3 +258,13 @@ private struct R14DebugTypeScale: ViewModifier {
         if let size { content.dynamicTypeSize(size) } else { content }
     }
 }
+
+
+#if DEBUG
+/// DEBUG 测试入口：`-LixiangForceWide` 在 iPad portrait 上强制宽屏布局（真机/QA 不需要）
+enum R14WideProbe {
+    static let force = ProcessInfo.processInfo.arguments.contains("-LixiangForceWide")
+}
+#else
+enum R14WideProbe { static let force = false }
+#endif

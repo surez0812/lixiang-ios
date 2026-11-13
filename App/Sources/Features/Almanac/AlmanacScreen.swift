@@ -24,7 +24,7 @@ struct R14AlmanacScreen: View {
     var body: some View {
         GeometryReader { geo in
             ScrollView {
-                if geo.size.width >= 744 {
+                if geo.size.width >= 744 || R14WideProbe.force {
                     HStack(alignment: .top, spacing: 20) {
                         ScrollView { VStack(alignment: .leading, spacing: 14) { leftColumn; yiJiCard } }
                             .frame(width: geo.size.width * 0.40)

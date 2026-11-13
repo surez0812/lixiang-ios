@@ -20,7 +20,7 @@ struct R14CompassScreen: View {
 
     var body: some View {
         GeometryReader { geo in
-            let wide = geo.size.width >= 744 && geo.size.width > geo.size.height
+            let wide = (geo.size.width >= 744 && geo.size.width > geo.size.height) || R14WideProbe.force
             if wide {
                 // R14 iPad Landscape：左控件、右罗盘+图例（各自滚动）
                 HStack(alignment: .top, spacing: 20) {

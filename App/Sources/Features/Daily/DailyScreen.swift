@@ -17,7 +17,7 @@ struct DailyScreen: View {
 
     var body: some View {
         GeometryReader { geo in
-            let wide = DailyLayout.isWide(geo.size)
+            let wide = DailyLayout.isWide(geo.size) || R14WideProbe.force
             if wide {
                 // R14 §4 iPad Landscape：左解释、右分享卡，各自独立滚动
                 HStack(alignment: .top, spacing: 20) {

@@ -26,7 +26,7 @@ struct SelectionScreen: View {
 
     var body: some View {
         GeometryReader { geo in
-            let wide = geo.size.width >= 744 && geo.size.width > geo.size.height
+            let wide = (geo.size.width >= 744 && geo.size.width > geo.size.height) || R14WideProbe.force
             if wide {
                 HStack(alignment: .top, spacing: 20) {
                     ScrollView(showsIndicators: false) { formColumn.padding(.leading, 24).padding(.vertical, 16) }
