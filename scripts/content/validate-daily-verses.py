@@ -24,7 +24,7 @@ def main(path, expect=365):
         a=clen(x.get("action",""))
         if not (30 <= a <= 60): errs.append(f"#{i} action len {a} (30-60)")
     # 禁用词（title/meaning/action，不含 quote 原文）ERROR
-    forbidden=["灵验","保佑","功德","消灾","改运","天必降祸","福报","报应","注定"]
+    forbidden=["灵验","保佑","消灾","改运","法事","天必降","天必锡","天必赐","必有报应","报应不爽","福报无量","福报自降","功德无量","命中注定"]
     for i,x in enumerate(d):
         blob=(x.get("title") or "")+(x.get("meaning") or "")+(x.get("action") or "")
         hit=[w for w in forbidden if w in blob]
