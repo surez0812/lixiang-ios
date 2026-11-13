@@ -42,7 +42,28 @@ xcrun simctl status_bar "$UDID" override --time "9:41" --batteryState charged --
 xcrun simctl launch --terminate-running-process "$UDID" "$BUNDLE" "${ARGS[@]}" >/dev/null 2>&1 || true
 sleep "${R14_LAUNCH_WAIT:-8}"
 SHOT="$EVID/${LABEL}.png"
-xcrun simctl io "$UDID" screenshot --type=png "$SHOT" >/dev/null 2>&1
+DISPLAY_ARG=()
+DISP=$(python3 - "$UDID" <<'PY2' 2>/dev/null || true
+import json,subprocess,sys
+out=subprocess.run(['xcrun','simctl','io',sys.argv[1],'enumerate'],capture_output=True,text=True).stdout
+cur={}; ports=[]
+for line in out.splitlines():
+    st=line.strip()
+    if st=='Port:':
+        if cur.get('uuid'): ports.append(cur)
+        cur={}
+    elif st.startswith('UUID:'): cur['uuid']=st.split(':',1)[1].strip()
+    elif st.startswith('Default width:'): cur['w']=int(st.split(':')[1])
+    elif st.startswith('Default height:'): cur['h']=int(st.split(':')[1])
+if cur.get('uuid'): ports.append(cur)
+ports=[p for p in ports if p.get('w') and p.get('h')]
+if len(ports)>1:
+    best=max(ports,key=lambda p:p['w']*p['h'])
+    print(best['uuid'])
+PY2
+)
+[ -n "$DISP" ] && DISPLAY_ARG=(--display="$DISP")
+xcrun simctl io "$UDID" screenshot --type=png "${DISPLAY_ARG[@]}" "$SHOT" >/dev/null 2>&1
 {
   echo "label=$LABEL"; echo "device=$NAME"; echo "udid=$UDID"; echo "runtime=$RUNTIME";
   echo "app=$APP"; echo "app_binary_sha256=$(shasum -a 256 "$APP/Lixiang" 2>/dev/null | awk '{print $1}')";

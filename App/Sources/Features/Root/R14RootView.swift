@@ -110,7 +110,10 @@ struct R14RootView: View {
             tabStack(1) { R14FolkloreScreen(onOpen: { id in
         var p = paths; p[1].append(R14Route.folkloreDetail(id: id, version: nil)); paths = p
     }) }
-            tabStack(2) { R14PlaceholderPage(title: "择日", route: .selection) }
+            tabStack(2) { SelectionScreen(initialDate: days.selectedDate) { date in
+                days.select(date)
+                var p = paths; p[2].append(R14Route.almanac(date)); paths = p
+            } }
             tabStack(3) { R14CountdownScreen() }
             tabStack(4) { R14SettingsScreen() }
         }
