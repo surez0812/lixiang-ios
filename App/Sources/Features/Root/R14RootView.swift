@@ -240,7 +240,7 @@ struct R14FloatingTabBar: View {
     @EnvironmentObject private var days: SelectedDayStore
     @ObservedObject private var unread = FolkloreUnreadStore.shared
 
-    private var folkloreUnread: Bool { unread.unreadCount(ContentFixtures.all) > 0 }
+    private var folkloreUnread: Bool { unread.unreadCount(ContentCatalog.all) > 0 }
 
     private var countdownBadge: String? {
         let n = state.countdownStore.items.filter { item in

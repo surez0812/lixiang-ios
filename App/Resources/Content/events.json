@@ -1,0 +1,246 @@
+{
+ "version": 1,
+ "items": [
+  {
+   "category": [
+    "festival",
+    "ritual"
+   ],
+   "dateRule": {
+    "lunar": {
+     "day": 23,
+     "dayFallback": "lastDay",
+     "leap": "nonLeap",
+     "month": 12
+    }
+   },
+   "id": "xiezao",
+   "license": "original",
+   "regionalDates": [
+    {
+     "dateRule": {
+      "lunar": {
+       "day": 23,
+       "dayFallback": "lastDay",
+       "leap": "nonLeap",
+       "month": 12
+      }
+     },
+     "id": "north",
+     "label": "北方做法 · 腊月廿三"
+    },
+    {
+     "dateRule": {
+      "lunar": {
+       "day": 24,
+       "dayFallback": "lastDay",
+       "leap": "nonLeap",
+       "month": 12
+      }
+     },
+     "id": "south",
+     "label": "南方做法 · 腊月廿四"
+    }
+   ],
+   "sections": [
+    {
+     "paragraphs": [
+      "P1 示例段落：谢灶是农历年末的家庭年俗，各地日期与做法不同。"
+     ],
+     "title": "这是什么日子",
+     "type": "intro"
+    },
+    {
+     "paragraphs": [
+      "P1 示例段落：以家庭常见物品为主，具体清单待内容团队定稿。"
+     ],
+     "title": "准备什么",
+     "type": "prepare"
+    },
+    {
+     "paragraphs": [
+      "P1 示例段落：本节仅作民俗文化记述，不提供明火/焚化操作细则。"
+     ],
+     "title": "传统做法（记述）",
+     "type": "steps"
+    },
+    {
+     "paragraphs": [
+      "请遵守当地消防与环保规定；不在禁火区域使用明火。"
+     ],
+     "title": "安全与环保",
+     "type": "safety"
+    },
+    {
+     "paragraphs": [
+      "各地做法不同，此处为常见做法记述；不涉及宗教场所与教职人员。"
+     ],
+     "title": "说明",
+     "type": "notes"
+    }
+   ],
+   "sources": [
+    {
+     "kind": "reference",
+     "note": "非最终内容；P2 由内容团队接入",
+     "title": "P1 示例正文（占位）"
+    }
+   ],
+   "teaser": "一年里送灶神上天的日子",
+   "title": "谢灶",
+   "version": 0
+  },
+  {
+   "category": [
+    "festival",
+    "solar_term",
+    "ancestor"
+   ],
+   "dateRule": {
+    "solarTerm": {
+     "term": "清明"
+    }
+   },
+   "id": "qingming",
+   "license": "original",
+   "sections": [
+    {
+     "paragraphs": [
+      "P1 示例段落：清明既是节气，也是祭祖与踏青的传统节日。"
+     ],
+     "title": "这是什么日子",
+     "type": "intro"
+    },
+    {
+     "paragraphs": [
+      "P1 示例段落：祭扫与踏青的传统做法记述，具体内容待内容团队定稿。"
+     ],
+     "title": "传统做法（记述）",
+     "type": "steps"
+    },
+    {
+     "paragraphs": [
+      "焚香烧纸请遵守墓园与防火规定；提倡无痕祭扫。"
+     ],
+     "title": "安全与环保",
+     "type": "safety"
+    },
+    {
+     "paragraphs": [
+      "只讲民俗文化，不做吉凶判断。"
+     ],
+     "title": "说明",
+     "type": "notes"
+    }
+   ],
+   "sources": [
+    {
+     "kind": "reference",
+     "note": "非最终内容；P2 由内容团队接入",
+     "title": "P1 示例正文（占位）"
+    }
+   ],
+   "teaser": "扫墓祭祖、踏青的日子",
+   "title": "清明",
+   "version": 0
+  },
+  {
+   "category": [
+    "festival"
+   ],
+   "dateRule": {
+    "lastDayOfLunarMonth": {
+     "month": 12
+    }
+   },
+   "id": "chuxi",
+   "license": "original",
+   "sections": [
+    {
+     "paragraphs": [
+      "P1 示例段落：除夕是农历腊月的最后一天（可能是廿九或三十）。"
+     ],
+     "title": "这是什么日子",
+     "type": "intro"
+    },
+    {
+     "paragraphs": [
+      "P1 示例段落：年夜饭、守岁等年俗的记述，具体内容待内容团队定稿。"
+     ],
+     "title": "传统做法（记述）",
+     "type": "steps"
+    },
+    {
+     "paragraphs": [
+      "遵守当地烟花爆竹禁放规定；注意用火用电与饮酒安全。"
+     ],
+     "title": "安全与环保",
+     "type": "safety"
+    },
+    {
+     "paragraphs": [
+      "各地做法不同，此处为常见做法记述。"
+     ],
+     "title": "说明",
+     "type": "notes"
+    }
+   ],
+   "sources": [
+    {
+     "kind": "reference",
+     "note": "非最终内容；P2 由内容团队接入",
+     "title": "P1 示例正文（占位）"
+    }
+   ],
+   "teaser": "一年最后一天，守岁迎新",
+   "title": "除夕",
+   "version": 0
+  },
+  {
+   "category": [
+    "festival",
+    "solar_term"
+   ],
+   "dateRule": {
+    "solarTerm": {
+     "term": "冬至"
+    }
+   },
+   "id": "dongzhi",
+   "license": "original",
+   "sections": [
+    {
+     "paragraphs": [
+      "P1 示例段落：冬至既是节气，也是传统节日，民间有“冬至大如年”的说法。"
+     ],
+     "title": "这是什么日子",
+     "type": "intro"
+    },
+    {
+     "paragraphs": [
+      "P1 示例段落：各地有吃饺子、汤圆等不同食俗，具体内容待内容团队定稿。"
+     ],
+     "title": "传统做法（记述）",
+     "type": "steps"
+    },
+    {
+     "paragraphs": [
+      "只讲民俗文化，不做吉凶判断。"
+     ],
+     "title": "说明",
+     "type": "notes"
+    }
+   ],
+   "sources": [
+    {
+     "kind": "reference",
+     "note": "非最终内容；P2 由内容团队接入",
+     "title": "P1 示例正文（占位）"
+    }
+   ],
+   "teaser": "冬至大如年，一年里夜最长的一天",
+   "title": "冬至",
+   "version": 0
+  }
+ ]
+}

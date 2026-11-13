@@ -42,7 +42,7 @@ struct SandboxContentSource: ContentSource {
     }
 
     private func manifestObject() -> ContentManifest {
-        let items = ContentFixtures.all.map { item -> ManifestEntry in
+        let items = ContentCatalog.all.map { item -> ManifestEntry in
             let html = html(for: item)
             return ManifestEntry(slug: item.id, title: item.title,
                                  unlockDate: unlockDate(for: item),
@@ -66,7 +66,7 @@ struct SandboxContentSource: ContentSource {
 
     func page(slug: String) async throws -> ContentPage {
         try await delayIfSlow()
-        guard let item = ContentFixtures.all.first(where: { $0.id == slug }) else { throw ContentSourceError.notPublished }
+        guard let item = ContentCatalog.all.first(where: { $0.id == slug }) else { throw ContentSourceError.notPublished }
         let unlock = unlockDate(for: item)
         // 服务端只发布已解锁正文：未解锁 → 404
         guard ContentUnlock.state(unlockDate: unlock, now: now) != .locked else { throw ContentSourceError.notPublished }

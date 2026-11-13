@@ -53,6 +53,16 @@ public struct ContentItem: Codable, Sendable, Hashable, Identifiable {
     public var sources: [ContentSource]
     public var license: String
     public var version: Int
+    /// 内容门禁：PM 交付 JSON 可选字段（draft/in_review/approved）；缺失/非 approved 不进入可读正文。
+    public var reviewStatus: String? = nil
+
+    public init(id: String, title: String, category: [String], dateRule: DateRule, regionalDates: [RegionalDate]?,
+                teaser: String, sections: [ContentSection], sources: [ContentSource], license: String,
+                version: Int, reviewStatus: String? = nil) {
+        self.id = id; self.title = title; self.category = category; self.dateRule = dateRule
+        self.regionalDates = regionalDates; self.teaser = teaser; self.sections = sections
+        self.sources = sources; self.license = license; self.version = version; self.reviewStatus = reviewStatus
+    }
 }
 
 public enum ContentState: String, Sendable, Hashable { case locked, unlocked, past }

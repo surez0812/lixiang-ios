@@ -99,7 +99,7 @@ final class AppState: ObservableObject {
 
     func resolutions() -> [ContentResolution] {
         if let cached = cachedResolutions { return cached }
-        let resolved = ContentResolver.resolve(items: ContentFixtures.all, now: today, engine: engine,
+        let resolved = ContentResolver.resolve(items: ContentCatalog.all, now: today, engine: engine,
                                                pastDays: 370, futureDays: 420)
         cachedResolutions = resolved
         return resolved
@@ -109,7 +109,7 @@ final class AppState: ObservableObject {
         ContentIndexBuilder.build(resolutions: resolutions(), now: today)
     }
 
-    func contentItem(id: String) -> ContentItem? { ContentFixtures.all.first { $0.id == id } }
+    func contentItem(id: String) -> ContentItem? { ContentCatalog.all.first { $0.id == id } }
     func resolution(id: String) -> ContentResolution? { resolutions().first { $0.item.id == id } }
 
     func nearestFestivalDays() -> (title: String, days: Int)? {

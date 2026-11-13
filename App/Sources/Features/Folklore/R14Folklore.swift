@@ -33,7 +33,7 @@ struct R14FolkloreScreen: View {
     var onOpen: (String) -> Void = { _ in }
 
     private var rows: [FolkloreRow] {
-        let resolved = ContentResolver.resolve(items: ContentFixtures.all, now: state.today, engine: state.engine)
+        let resolved = ContentResolver.resolve(items: ContentCatalog.all, now: state.today, engine: state.engine)
         return resolved.compactMap { r -> FolkloreRow? in
             guard let info = r.stateInfo(regionID: nil, now: state.today) else { return nil }
             // 过去内容不展示；未来按 T-10 解锁可读
@@ -165,12 +165,13 @@ struct R14FolkloreDetailScreen: View {
         guard let row else { return true }
         let item = row.item
         if item.version == 0 { return true }
+        if !ContentCatalog.isApproved(item) { return true }   // 草稿/未审核：内容准备中，不标读
         if item.sources.contains(where: { $0.title.contains("示例") || $0.note?.contains("非最终") == true }) { return true }
         return item.sections.contains { $0.paragraphs.contains { $0.contains("P1 示例") } }
     }
 
     private var row: FolkloreRow? {
-        let resolved = ContentResolver.resolve(items: ContentFixtures.all, now: state.today, engine: state.engine)
+        let resolved = ContentResolver.resolve(items: ContentCatalog.all, now: state.today, engine: state.engine)
         guard let r = resolved.first(where: { $0.item.id == id }), let info = r.stateInfo(regionID: nil, now: state.today) else { return nil }
         let days = info.isToday ? nil : info.daysUntil
         return FolkloreRow(resolution: r, state: info, daysUntil: days, isReadable: info.isToday || (days ?? 99) <= 10)

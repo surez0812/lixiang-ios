@@ -63,6 +63,7 @@
 		4955EEFFA8CD581D7FFA0A5C /* term-dahan-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 7265B869FEE42BA26C98C0BE /* term-dahan-light.webp */; };
 		4961A2C52973706909F582C0 /* SourceLicenseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5FAB3FD05EDDE5ACAA2B79 /* SourceLicenseScreen.swift */; };
 		4C85C72CF4424B380152BFBF /* DailyClassics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C60C2822AEE9EFD59BAFE6 /* DailyClassics.swift */; };
+		51D6736F0FA8160C7B75F636 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 62F01754C6DE4957ADE497E6 /* events.json */; };
 		53C956D926BCD244194C6AA0 /* term-bailu-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 389AF72D672C91DBCA828762 /* term-bailu-light.webp */; };
 		546FA2AA90BEEBA9A678A60D /* panel-terms.json in Resources */ = {isa = PBXBuildFile; fileRef = B46683D1B299DC8E45740FF0 /* panel-terms.json */; };
 		562FED771B84CE26883D9CD9 /* R14CountdownScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C24CF0BA42888A44D0302C9 /* R14CountdownScreen.swift */; };
@@ -95,8 +96,10 @@
 		87B2E99B4716578E1A332A70 /* term-xiazhi-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 12206DA975CCAA192C120378 /* term-xiazhi-dark.webp */; };
 		8869502A7E81924ECFA11DB5 /* ApprovedMotionManifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A1B1F7CFD33642D4B58FBEB /* ApprovedMotionManifest.json */; };
 		88AC02A604222A6B6DA56B13 /* explain-pages.json in Resources */ = {isa = PBXBuildFile; fileRef = 32D566C65C78A240C691BAE2 /* explain-pages.json */; };
+		8A715D42B01FCB511D0EF7ED /* ContentCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074CD042812F713771D38973 /* ContentCatalog.swift */; };
 		8BB451AA7F94B4A78B5DAB11 /* term-lidong-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = BBF1AB9B0EC5E4CE0D2509D2 /* term-lidong-light.webp */; };
 		8C25087652A4E1361E37BBB0 /* R14BootLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C34758C2801EAF4EDE24D /* R14BootLoadingView.swift */; };
+		8D0246AF8017C045532BA007 /* ContentCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41819744800A0168028C94E9 /* ContentCatalogTests.swift */; };
 		8EC0A815C5B9E1271B935DCE /* SelectedDayStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C1D3C9904793024373124 /* SelectedDayStore.swift */; };
 		907F2BA4D3277A3A8CE1347D /* DailyVerseDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BF5B7DAC670CF275F5EBE6 /* DailyVerseDetailScreen.swift */; };
 		9128527BA893D4502A4803D8 /* support.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E444FF645AE7F3A22E391DD /* support.md */; };
@@ -192,6 +195,7 @@
 		05C2FB9206EC78CFC935109F /* R14RouteDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14RouteDestination.swift; sourceTree = "<group>"; };
 		06490BB1018DF2765D0E79A8 /* SeasonalArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonalArt.swift; sourceTree = "<group>"; };
 		06939DF97090A6AE27F8D2B5 /* privacy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = privacy.md; sourceTree = "<group>"; };
+		074CD042812F713771D38973 /* ContentCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCatalog.swift; sourceTree = "<group>"; };
 		09DE9E543429892C5F51A010 /* term-xiaohan-dark.webp */ = {isa = PBXFileReference; path = "term-xiaohan-dark.webp"; sourceTree = "<group>"; };
 		0A3D79AB6BAEC69AAA4FFFE4 /* confucian-365.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "confucian-365.json"; sourceTree = "<group>"; };
 		0A786E1D2A93C1C738FF1D38 /* app-strings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "app-strings.json"; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 		394CECFF9A4B8BC313B10DFD /* CountdownDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownDetailScreen.swift; sourceTree = "<group>"; };
 		3A92AD321EBABAB28F289053 /* term-daxue-dark.webp */ = {isa = PBXFileReference; path = "term-daxue-dark.webp"; sourceTree = "<group>"; };
 		3B0D4F502C5B8A786CA816CD /* index.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = index.json; sourceTree = "<group>"; };
+		41819744800A0168028C94E9 /* ContentCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCatalogTests.swift; sourceTree = "<group>"; };
 		4253AFA341B81955B45311A4 /* LixiangApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LixiangApp.swift; sourceTree = "<group>"; };
 		43D4A9F73F823EBC2C499EB8 /* R14NotifySettingsReturnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14NotifySettingsReturnUITests.swift; sourceTree = "<group>"; };
 		443C1D3C9904793024373124 /* SelectedDayStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDayStore.swift; sourceTree = "<group>"; };
@@ -243,6 +248,7 @@
 		5CA2D75D50D2C9CC1E4ED5F8 /* CountdownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownUITests.swift; sourceTree = "<group>"; };
 		5EC233A3E5955B8F6BB809A7 /* R14RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14RootView.swift; sourceTree = "<group>"; };
 		62C07BADE4FF0093E5B4459A /* term-guyu-dark.webp */ = {isa = PBXFileReference; path = "term-guyu-dark.webp"; sourceTree = "<group>"; };
+		62F01754C6DE4957ADE497E6 /* events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		63B75D730AE8FA3E9F3E6772 /* AlmanacScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmanacScreen.swift; sourceTree = "<group>"; };
 		64D409C092D16755B254E3B6 /* FestivalsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalsScreen.swift; sourceTree = "<group>"; };
 		6517356A9CFB8C0E9703F1F4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -426,6 +432,7 @@
 		241B087D49B937E6CE3F10F5 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				074CD042812F713771D38973 /* ContentCatalog.swift */,
 				E1BD67E5E2CFFCBF2F70AD9D /* ContentRepository.swift */,
 				D11B7E10505799D2B48A8039 /* ContentScreen.swift */,
 				0F7FE011A7F78FA1D26FE887 /* ContentSources.swift */,
@@ -443,6 +450,14 @@
 				7EC3D35A18BB7E520F7DA264 /* DayPagerScreen.swift */,
 			);
 			path = Day;
+			sourceTree = "<group>";
+		};
+		3AE287C6EBC8952FAB83D0AA /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				62F01754C6DE4957ADE497E6 /* events.json */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 		43DEDB2A6FE976E0A69E96DE /* Settings */ = {
@@ -567,6 +582,7 @@
 		624BFDF8DB3915CA7387A581 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3AE287C6EBC8952FAB83D0AA /* Content */,
 				FDBEDE26ADF59E42BBA54999 /* daily-classics */,
 				19303D3E7FD8AAFEFA7F2AD5 /* Fonts */,
 				CB44FF078D03D57A7D61DFA6 /* Fortune */,
@@ -746,6 +762,7 @@
 			children = (
 				DE6427911F276D30E1BE1749 /* HomeAlmanacCompass */,
 				F78BD13F4B2267A8B87B91D9 /* AlmanacTermSemanticTests.swift */,
+				41819744800A0168028C94E9 /* ContentCatalogTests.swift */,
 				E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */,
 				8260A417BD1E7E17DA081925 /* FolkloreLoadStateTests.swift */,
 				A9A2E2EB5A29CCA23BD88DF9 /* FolkloreUnreadStoreTests.swift */,
@@ -970,6 +987,7 @@
 				FA392D3F4927DAD1B73975EB /* daily-verse-365.json in Resources */,
 				7E1D04E9F410BAC040786DD2 /* dao-365.json in Resources */,
 				8341D6E9A4D87EB31E3DC658 /* daodejing.json in Resources */,
+				51D6736F0FA8160C7B75F636 /* events.json in Resources */,
 				88AC02A604222A6B6DA56B13 /* explain-pages.json in Resources */,
 				FCB283D71879B496018AF4D2 /* fortune-samples.json in Resources */,
 				34AC68259657AD79C06097F8 /* index.json in Resources */,
@@ -1048,6 +1066,7 @@
 				AE756168FD87DC8D978F2005 /* AppState.swift in Sources */,
 				1A1E4569802C9C82B49DCD50 /* CompassScreen.swift in Sources */,
 				23248C8DCA4707C173FD42C0 /* Components.swift in Sources */,
+				8A715D42B01FCB511D0EF7ED /* ContentCatalog.swift in Sources */,
 				776F6261214379761CB1EF3E /* ContentRepository.swift in Sources */,
 				8037EF70A0164B9BF1595EA5 /* ContentScreen.swift in Sources */,
 				B4AFA6FB89EB581831636ABF /* ContentSources.swift in Sources */,
@@ -1110,6 +1129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17EB0408610F8B6DF3E188D1 /* AlmanacTermSemanticTests.swift in Sources */,
+				8D0246AF8017C045532BA007 /* ContentCatalogTests.swift in Sources */,
 				146166B7CABEC8AF3DB42FE9 /* CountdownLogicTests.swift in Sources */,
 				E949A7BC96DD410B34273F97 /* FolkloreLoadStateTests.swift in Sources */,
 				7511252EC8B5EA2A1FD87190 /* FolkloreUnreadStoreTests.swift in Sources */,
