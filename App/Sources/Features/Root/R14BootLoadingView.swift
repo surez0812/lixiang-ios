@@ -11,5 +11,6 @@ struct R14BootLoadingView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(theme.bg)
+        .onAppear { R14StartupProbe.log("boot.appear") }
     }
 }

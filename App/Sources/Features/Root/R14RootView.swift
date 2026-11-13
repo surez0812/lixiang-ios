@@ -142,7 +142,10 @@ struct R14RootView: View {
         .environmentObject(chrome)
         .onOpenURL { _ in }
         .task { await days.prepare() }
-        .onAppear { consumePendingRouteIfReady() }
+        .onAppear {
+            R14StartupProbe.log("root.appear")
+            consumePendingRouteIfReady()
+        }
         .onChange(of: days.ready) { _, ready in
             if ready {
                 R14StartupProbe.log("content.ready")

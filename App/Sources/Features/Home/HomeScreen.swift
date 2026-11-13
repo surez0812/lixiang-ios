@@ -29,6 +29,7 @@ struct R14HomeScreen: View {
             }
         }
         .background(ScreenBackground())
+        .onAppear { R14StartupProbe.log("home.appear") }
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
     }
