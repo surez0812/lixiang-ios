@@ -28,6 +28,7 @@ struct R14RootView: View {
     @State private var tab = 0
     @State private var paths = [NavigationPath](repeating: NavigationPath(), count: 5)
     @State private var pendingRoute: R14Route? = nil
+    @State private var debugTypeScale: DynamicTypeSize? = nil
 
     init() {
         let engine = LunarSwiftEngine(festivalScope: .cn)
@@ -39,6 +40,17 @@ struct R14RootView: View {
         #if DEBUG
         let args = ProcessInfo.processInfo.arguments
         if let i = args.firstIndex(of: "-LixiangTab"), i + 1 < args.count, let n = Int(args[i + 1]) { _tab = State(initialValue: n) }
+        if let i = args.firstIndex(of: "-LixiangTypeScale"), i + 1 < args.count {
+            switch args[i + 1] {
+            case "xl": _debugTypeScale = State(initialValue: .xLarge)
+            case "xxl": _debugTypeScale = State(initialValue: .xxLarge)
+            case "xxxl": _debugTypeScale = State(initialValue: .xxxLarge)
+            case "a1": _debugTypeScale = State(initialValue: .accessibility1)
+            case "a2": _debugTypeScale = State(initialValue: .accessibility2)
+            case "a3": _debugTypeScale = State(initialValue: .accessibility3)
+            default: break
+            }
+        }
         let routeName: String? = {
             guard let i = args.firstIndex(of: "-LixiangR14Route"), i + 1 < args.count else { return nil }
             return args[i + 1]
@@ -85,6 +97,7 @@ struct R14RootView: View {
         }
         }
         .tint(D1Theme.resolve(state.theme.colorScheme ?? .light).accent)
+        .modifier(R14DebugTypeScale(size: debugTypeScale))
         .environmentObject(days)
         .environmentObject(chrome)
         .onOpenURL { _ in }
@@ -199,5 +212,14 @@ struct R14SideTabBar: View {
         .padding(6)
         .background(.ultraThinMaterial, in: Capsule())
         .overlay(Capsule().strokeBorder(theme.line.opacity(0.6)))
+    }
+}
+
+
+/// DEBUG/QA 动态字体覆盖；生产 nil 时完全跟随系统。
+private struct R14DebugTypeScale: ViewModifier {
+    let size: DynamicTypeSize?
+    @ViewBuilder func body(content: Content) -> some View {
+        if let size { content.dynamicTypeSize(size) } else { content }
     }
 }
