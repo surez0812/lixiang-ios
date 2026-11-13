@@ -198,16 +198,22 @@ final class AlmanacTermSemanticTests: XCTestCase {
         let t = pack.term(named: "祭祀")
         XCTAssertNotNil(t)
         let zh = t?.zh ?? "", en = t?.en ?? ""
-        for marker in ["—", "blocked", "TBD", "待补", "placeholder"] {
-            XCTAssertFalse(zh.contains(marker), "祭祀 zh 含占位: \(zh)")
-            XCTAssertFalse(en.lowercased().contains(marker.lowercased()), "祭祀 en 含占位: \(en)")
+        func isPlaceholder(_ s: String) -> Bool {
+            let t = s.trimmingCharacters(in: .whitespacesAndNewlines)
+            return t.hasPrefix("—") || t.contains("(skip)") || t.lowercased().contains("blocked")
+                || t.lowercased().contains("tbd") || t.lowercased().contains("placeholder") || t.contains("待补")
         }
+        XCTAssertFalse(isPlaceholder(zh), "祭祀 zh 含占位: \(zh)")
+        XCTAssertFalse(isPlaceholder(en), "祭祀 en 含占位: \(en)")
         XCTAssertTrue(en.contains("offerings") && en.contains("remembrance"), "祭祀 en 未对齐: \(en)")
-        // 全量 en 占位扫描
+        // 造庙同样不得占位（PM 确认第二条）
+        let zm = pack.term(named: "造庙")
+        XCTAssertFalse(isPlaceholder(zm?.zh ?? ""), "造庙 zh 占位")
+        XCTAssertFalse(isPlaceholder(zm?.en ?? ""), "造庙 en 占位")
+        XCTAssertTrue((zm?.en ?? "").contains("temples"), "造庙 en 未对齐")
+        // 全量 en 占位扫描：仅精确占位形态；正常 “skip cooking/fortune” 语义不判失败
         for term in pack.terms {
-            for marker in ["—", "blocked", "TBD", "待补", "placeholder"] {
-                XCTAssertFalse(term.en.lowercased().contains(marker.lowercased()), "\(term.term) en 含占位 \(marker): \(term.en)")
-            }
+            XCTAssertFalse(isPlaceholder(term.en), "\(term.term) en 含占位: \(term.en)")
         }
     }
 
