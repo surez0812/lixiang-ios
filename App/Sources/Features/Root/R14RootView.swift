@@ -17,8 +17,13 @@ enum R14Route: Hashable {
     case settings
 }
 
+final class R14ChromeState: ObservableObject {
+    @Published var forceTabBarVisible = false
+}
+
 struct R14RootView: View {
     @EnvironmentObject private var state: AppState
+    @StateObject private var chrome = R14ChromeState()
     @StateObject private var days: SelectedDayStore
     @State private var tab = 0
     @State private var paths = [NavigationPath](repeating: NavigationPath(), count: 5)
@@ -80,6 +85,7 @@ struct R14RootView: View {
         }
         .tint(D1Theme.resolve(state.theme.colorScheme ?? .light).accent)
         .environmentObject(days)
+        .environmentObject(chrome)
         .onOpenURL { _ in }
         .onAppear {
             guard let r = pendingRoute else { return }
@@ -93,6 +99,7 @@ struct R14RootView: View {
     private var hideBar: Bool {
         // pushed 页隐藏 TabBar（各 Tab 栈 path 非空）
         guard paths.indices.contains(tab) else { return false }
+        if chrome.forceTabBarVisible { return false }
         return paths[tab].count > 0
     }
 

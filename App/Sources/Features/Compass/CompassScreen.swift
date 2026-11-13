@@ -1,10 +1,11 @@
 import SwiftUI
 import LixiangCalendarCore
 
-/// R14 罗盘（T3）：日/时切换、12 时辰、五吉神/煞方；独立页返回同日；宽屏两列
+/// R14 罗盘（T3）：对照 compass-phone-light 重做——盘面+五神方位+煞方+图例+12 时辰
 struct R14CompassScreen: View {
     @Environment(\.d1) private var theme
     @EnvironmentObject private var days: SelectedDayStore
+    @EnvironmentObject private var chrome: R14ChromeState
     let date: LocalDate
     let hour: Int?
     @State private var useHour = false
@@ -13,67 +14,137 @@ struct R14CompassScreen: View {
     private var layout: CompassLayout { CompassBuilder.layout(for: almanac) }
     private var selectedHour: LunarHour? {
         guard let hour else { return nil }
-        return almanac.hours.first { h in
-            minutes(h.startMinute) <= hour * 60 && hour * 60 <= minutes(h.endMinute)
-        }
+        return almanac.hours.first { h in minutes(h.startMinute) <= hour * 60 && hour * 60 <= minutes(h.endMinute) }
     }
-    private var currentSha: CompassDirection? {
-        if useHour, let h = selectedHour { return h.sha }
-        return almanac.sha
-    }
+    private var currentSha: CompassDirection? { useHour ? selectedHour?.sha : almanac.sha }
 
     var body: some View {
         GeometryReader { geo in
             ScrollView {
-                if geo.size.width >= 744 {
-                    HStack(alignment: .top, spacing: 16) { leftColumn; hoursCard }
-                        .padding(16)
-                } else {
-                    VStack(alignment: .leading, spacing: 12) { leftColumn; hoursCard }
-                        .padding(16)
+                VStack(alignment: .leading, spacing: 14) {
+                    header
+                    modePicker
+                    dial(size: min(geo.size.width - 40, 340))
+                    legend
+                    Text(verbatim: "\(useHour ? "时方位" : "日方位") · 五吉神方位与煞方；传统历法参考，非风水/吉凶预测。")
+                        .d1Font(9).foregroundStyle(theme.ink3).padding(.horizontal, 4)
+                    hoursCard
                 }
-                Text("方位为传统历法参考，非风水/吉凶预测。")
-                    .d1Font(9).foregroundStyle(theme.ink3).padding(.horizontal, 16)
+                .padding(.horizontal, 20).padding(.vertical, 12).padding(.bottom, 96)
             }
-            .padding(.bottom, 96)
         }
         .background(ScreenBackground())
-        .navigationTitle("值神罗盘")
+        .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar(.hidden, for: .tabBar)
-        .onAppear { if days.selectedDate != date { days.select(date) } }
+        .onAppear {
+            chrome.forceTabBarVisible = true
+            if days.selectedDate != date { days.select(date) }
+        }
+        .onDisappear { chrome.forceTabBarVisible = false }
     }
 
-    private var leftColumn: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Picker("", selection: $useHour) { Text("日方位").tag(false); Text("时方位").tag(true) }
-                .pickerStyle(.segmented)
-            D1Card(padding: 14) {
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(verbatim: "\(almanac.date.year)年\(almanac.date.month)月\(almanac.date.day)日 \(useHour ? "时" : "日")方位")
-                        .d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
-                    Text("正北固定底盘；\(useHour ? "当前时辰" : "当日")煞方：\(currentSha?.rawValue ?? "—")")
-                        .d1Font(11).foregroundStyle(theme.ink2)
-                    ForEach(layout.present, id: \.deity) { entry in
-                        HStack { Text(entry.deity.title).d1Font(12, weight: .semibold).foregroundStyle(theme.ink); Spacer(); Text(entry.direction.rawValue).d1Font(12).foregroundStyle(theme.ink2) }
-                    }
-                    ForEach(layout.missing, id: \.self) { deity in
-                        HStack { Text(deity.title).d1Font(11).foregroundStyle(theme.ink3); Spacer(); Text("本日不在此位").d1Font(10).foregroundStyle(theme.ink3) }
-                    }
-                }.frame(maxWidth: .infinity, alignment: .leading)
+    private var header: some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text("罗盘").d1SerifFont(26, weight: .semibold).foregroundStyle(theme.ink)
+            Text(verbatim: "\(almanac.date.year)年\(almanac.date.month)月\(almanac.date.day)日 · 农历\(almanac.lunar.monthDayText)")
+                .d1Font(11).foregroundStyle(theme.ink3)
+        }
+    }
+
+    private var modePicker: some View {
+        HStack(spacing: 8) {
+            modeButton("日方位", active: !useHour) { useHour = false }
+            modeButton("时方位", active: useHour) { useHour = true }
+            Spacer()
+        }
+    }
+    private func modeButton(_ title: String, active: Bool, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Text(title).d1Font(11, weight: .semibold)
+                .foregroundStyle(active ? theme.cream : theme.ink2)
+                .padding(.horizontal, 16).frame(minHeight: 36)
+                .background(active ? Color(hex: 0xB23A2A) : theme.paper, in: Capsule())
+                .overlay(Capsule().strokeBorder(theme.line.opacity(0.6)))
+        }.buttonStyle(.plain)
+    }
+
+    // MARK: 盘面
+    private func dial(size: CGFloat) -> some View {
+        let r = size / 2
+        return ZStack {
+            Image("compass-dial").resizable().scaledToFit().frame(width: size, height: size)
+                .clipShape(Circle())
+                .overlay(Circle().strokeBorder(Color(hex: 0x9C7A4B).opacity(0.5), lineWidth: 1))
+            if let sha = currentSha {
+                shaIndicator(direction: sha, radius: r * 0.62)
+            }
+            ForEach(layout.present, id: \.deity) { entry in
+                deityBadge(entry, radius: r * 0.74)
+            }
+            VStack(spacing: 2) {
+                Text("正北").d1Font(10, weight: .semibold).foregroundStyle(Color(hex: 0x9C7A4B))
+                Text("固定北向图").d1Font(8).foregroundStyle(theme.ink3)
+            }
+        }
+        .frame(width: size, height: size)
+        .frame(maxWidth: .infinity)
+    }
+
+    private func deityBadge(_ entry: CompassEntry, radius: CGFloat) -> some View {
+        let pt = point(for: entry.direction.angleDegrees, radius: radius)
+        return VStack(spacing: 0) {
+            Text(entry.deity.title.replacingOccurrences(of: "神", with: "")).d1Font(9, weight: .semibold).foregroundStyle(theme.ink)
+            Text(entry.direction.rawValue).d1Font(7).foregroundStyle(theme.ink3)
+        }
+        .padding(.horizontal, 5).padding(.vertical, 3)
+        .background(theme.cream, in: Capsule())
+        .overlay(Capsule().strokeBorder(Color(hex: 0x9C7A4B).opacity(0.6)))
+        .offset(x: pt.x, y: pt.y)
+    }
+
+    private func shaIndicator(direction: CompassDirection, radius: CGFloat) -> some View {
+        let pt = point(for: direction.angleDegrees, radius: radius)
+        return VStack(spacing: 0) {
+            Image(systemName: "arrowtriangle.down.fill").d1Font(10).foregroundStyle(Color(hex: 0xB23A2A))
+            Text("煞 \(direction.rawValue)").d1Font(8, weight: .semibold).foregroundStyle(Color(hex: 0xB23A2A))
+        }.offset(x: pt.x, y: pt.y)
+    }
+
+    private func point(for degrees: Double, radius: CGFloat) -> CGPoint {
+        let a = (degrees - 90) * .pi / 180
+        return CGPoint(x: cos(a) * radius, y: sin(a) * radius)
+    }
+
+    // MARK: 图例（两列）
+    private var legend: some View {
+        let cols = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
+        return LazyVGrid(columns: cols, alignment: .leading, spacing: 6) {
+            ForEach(layout.present, id: \.deity) { e in
+                HStack(spacing: 5) { Circle().fill(Color(hex: 0x9C7A4B)).frame(width: 6, height: 6); Text(e.deity.title).d1Font(11, weight: .semibold).foregroundStyle(theme.ink); Text(e.direction.rawValue).d1Font(10).foregroundStyle(theme.ink2) }
+            }
+            if let sha = currentSha {
+                HStack(spacing: 5) { Circle().fill(Color(hex: 0xB23A2A)).frame(width: 6, height: 6); Text("煞方").d1Font(11, weight: .semibold).foregroundStyle(theme.ink); Text(sha.rawValue).d1Font(10).foregroundStyle(theme.ink2) }
             }
         }
     }
 
     private var hoursCard: some View {
-        D1Card(padding: 12) {
-            VStack(alignment: .leading, spacing: 6) {
-                Text("十二时辰").d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
-                ForEach(Array(almanac.hours.prefix(12).enumerated()), id: \.offset) { _, h in
-                    HStack { Text("\(h.ganZhi)时").d1Font(10).foregroundStyle(theme.ink); Text("\(h.startMinute)–\(h.endMinute)").d1Font(9).foregroundStyle(theme.ink3); Spacer(); Text("煞\(h.sha?.rawValue ?? "—")").d1Font(9).foregroundStyle(theme.ink2); Text(h.tianShen).d1Font(9).foregroundStyle(theme.ink3) }
-                }
-            }.frame(maxWidth: .infinity, alignment: .leading)
+        VStack(alignment: .leading, spacing: 6) {
+            Text("十二时辰").d1SerifFont(18, weight: .semibold).foregroundStyle(theme.ink)
+            ForEach(Array(almanac.hours.prefix(12).enumerated()), id: \.offset) { _, h in
+                HStack {
+                    Text("\(h.ganZhi)时").d1Font(11).foregroundStyle(theme.ink)
+                    Text("\(h.startMinute)–\(h.endMinute)").d1Font(9).foregroundStyle(theme.ink3)
+                    Spacer()
+                    Text("煞\(h.sha?.rawValue ?? "—")").d1Font(10).foregroundStyle(theme.ink2)
+                    Text(h.tianShen).d1Font(9).foregroundStyle(theme.ink3)
+                }.padding(.vertical, 3)
+                Divider().overlay(theme.line.opacity(0.5))
+            }
         }
+        .padding(14)
+        .background(theme.paper, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(theme.line.opacity(0.6)))
     }
 
     private func minutes(_ hm: String) -> Int {
