@@ -28,12 +28,16 @@ def best_overlap(prev: Image.Image, nxt: Image.Image):
     # 在中心 40% 宽度上比较，避免边缘渐变/滚动条噪声
     x0, x1 = int(a.shape[1]*0.3), int(a.shape[1]*0.7)
     best = (float('inf'), 0)
-    for h in range(300, H - 200):
+    # 采集端固定拖动 ~0.55 屏：重叠约 0.40–0.75 H；收紧范围避免重复卡片/二维码误匹配
+    lo, hi = int(H * 0.30), int(H * 0.80)
+    for h in range(lo, hi):
         diff = np.abs(a[-h:, x0:x1] - b[:h, x0:x1]).mean()
-        # 惩罚过小的重叠，避免误判
-        score = diff + max(0, 300 - h) * 0.05
+        score = diff + max(0, lo - h) * 0.05
         if score < best[0]:
             best = (score, h)
+    # 低置信度回退到固定拖动几何（0.55 屏 → 重叠 0.45 H）
+    if best[0] > 10.0:
+        return int(H * 0.45)
     return best[1]
 
 def stitch(page: str, frames, out_dir: Path):
@@ -46,10 +50,15 @@ def stitch(page: str, frames, out_dir: Path):
     imgs = uniq
     canvas = imgs[0]
     offsets = [0]
+    join_errors = []
     for nxt in imgs[1:]:
         h = best_overlap(canvas, nxt)
         if h <= 0:
             h = int(canvas.height * 0.35)
+        # 连续性断言：重叠区平均像素差
+        a = np.asarray(canvas, dtype=np.int16); b = np.asarray(nxt, dtype=np.int16)
+        err = float(np.abs(a[-h:] - b[:h]).mean())
+        join_errors.append(round(err, 3))
         new = Image.new('RGB', (canvas.width, canvas.height + nxt.height - h), 'white')
         new.paste(canvas, (0, 0))
         new.paste(nxt.crop((0, h, nxt.width, nxt.height)), (0, canvas.height))
@@ -68,6 +77,8 @@ def stitch(page: str, frames, out_dir: Path):
         'pointHeight': round(canvas.height / 3, 1),
         'sha256': hashlib.sha256(out.read_bytes()).hexdigest(),
         'stitchedImage': str(out),
+        'joinErrors': join_errors,
+        'continuous': all(e < 12 for e in join_errors),
     }
     (out_dir / f'r14-{page}-long.manifest.json').write_text(json.dumps(data, ensure_ascii=False, indent=1))
     return data

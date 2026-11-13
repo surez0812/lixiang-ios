@@ -64,6 +64,12 @@ struct CountdownDetailScreen: View {
                         .accessibilityIdentifier("notify.deniedBanner")
                     }
                 }
+                if ProcessInfo.processInfo.arguments.contains(where: { $0.hasPrefix("-LixiangNotify") }) {
+                    Text("notify.status=\(notify.debugStatusText)")
+                        .d1Font(10, weight: .semibold)
+                        .foregroundStyle(notify.isDenied ? theme.red : theme.yiText)
+                        .accessibilityIdentifier("notify.statusMarker")
+                }
                 Text("倒计日只在本机保存；通知为本地通知，不上传。").d1Font(9).foregroundStyle(theme.ink3)
             }
             .padding(16)
@@ -90,6 +96,7 @@ struct CountdownDetailScreen: View {
         }
         .task {
             await notify.refresh()
+            notify.scheduleSettingsReturnSimulation()   // 详情创建完成后 3s 才迁移（QA 时序）
             if notify.isDenied {
                 var updated = current; updated.reminderEnabled = false
                 state.countdownStore.update(updated)   // banner/开关/持久化一致

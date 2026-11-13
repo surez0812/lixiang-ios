@@ -7,10 +7,10 @@ final class R14LongCaptureUITests: XCTestCase {
 
     private struct Page { let name: String; let args: [String]; let maxSwipes: Int; let readyMarkers: [String] }
     private let pages: [Page] = [
-        Page(name: "home", args: ["-LixiangTab", "0"], maxSwipes: 10, readyMarkers: ["今日黄历"]),
-        Page(name: "almanac", args: ["-LixiangTab", "0", "-LixiangR14Route", "almanac"], maxSwipes: 12, readyMarkers: ["宜忌"]),
-        Page(name: "daily", args: ["-LixiangTab", "0", "-LixiangR14Route", "daily"], maxSwipes: 28, readyMarkers: ["这篇句话在说什么", "这句话在说什么", "每日一句"]),
-        Page(name: "folklore-detail", args: ["-LixiangTab", "1", "-LixiangR14Route", "folkloreDetail"], maxSwipes: 10, readyMarkers: ["内容准备中", "一段来由 · 一点日常", "谢灶", "分享"]),
+        Page(name: "home", args: ["-LixiangTab", "0", "-LixiangCaptureMode"], maxSwipes: 10, readyMarkers: ["今日黄历"]),
+        Page(name: "almanac", args: ["-LixiangTab", "0", "-LixiangR14Route", "almanac", "-LixiangCaptureMode"], maxSwipes: 12, readyMarkers: ["宜忌"]),
+        Page(name: "daily", args: ["-LixiangTab", "0", "-LixiangR14Route", "daily", "-LixiangCaptureMode"], maxSwipes: 28, readyMarkers: ["这篇句话在说什么", "这句话在说什么", "每日一句"]),
+        Page(name: "folklore-detail", args: ["-LixiangTab", "1", "-LixiangR14Route", "folkloreDetail", "-LixiangCaptureMode"], maxSwipes: 10, readyMarkers: ["内容准备中", "一段来由 · 一点日常", "谢灶", "分享"]),
     ]
 
     private func waitForContent(_ page: Page, _ app: XCUIApplication) -> Bool {

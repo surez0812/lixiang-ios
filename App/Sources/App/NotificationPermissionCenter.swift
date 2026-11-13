@@ -24,16 +24,22 @@ final class NotificationPermissionCenter: ObservableObject {
         #if DEBUG
         print("LXNOTIFY mock=\(resolved)")
         #endif
-        if resolved == .settingsReturn {
-            // 可观察迁移：先 denied，3s 后模拟「从系统设置返回」→ authorized
-            Task { @MainActor in
-                try? await Task.sleep(nanoseconds: 3_000_000_000)
-                self.simulateSettingsReturn()
-            }
-        }
     }
 
     /// DEBUG 注入：模拟 scenePhase inactive→active 后重读设置。
+    var isSettingsReturnMock: Bool { mock == .settingsReturn }
+
+    /// 由详情 `onAppear/task` 在**视图创建完成后**调用，3s 后模拟 inactive→active 重读。
+    func scheduleSettingsReturnSimulation(after seconds: Double = 3.0) {
+        guard mock == .settingsReturn, !returnedFromSettings else { return }
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: UInt64(seconds * 1_000_000_000))
+            self.simulateSettingsReturn()
+        }
+    }
+
+    var debugStatusText: String { status == .authorized ? "authorized" : (status == .denied ? "denied" : "notDetermined") }
+
     func simulateSettingsReturn() {
         returnedFromSettings = true
         status = .authorized

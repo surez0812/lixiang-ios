@@ -126,12 +126,12 @@ struct R14RootView: View {
                 } else if duoSideBar {
                     HStack(spacing: 0) {
                         tabsContent
-                        if !hideBar { R14SideTabBar(selected: $tab).padding(.trailing, 8) }
+                        if !hideBar && !captureMode { R14SideTabBar(selected: $tab).padding(.trailing, 8) }
                     }
                 } else {
                     VStack(spacing: 0) {
                         tabsContent.frame(maxWidth: .infinity, maxHeight: .infinity)
-                        if !hideBar { R14FloatingTabBar(selected: $tab).padding(.bottom, 6) }
+                        if !hideBar && !captureMode { R14FloatingTabBar(selected: $tab).padding(.bottom, 6) }
                     }
                 }
             }
@@ -190,6 +190,14 @@ struct R14RootView: View {
                 }
             }
         }
+    }
+
+    private var captureMode: Bool {
+        #if DEBUG
+        ProcessInfo.processInfo.arguments.contains("-LixiangCaptureMode")
+        #else
+        false
+        #endif
     }
 
     private var hideBar: Bool {
