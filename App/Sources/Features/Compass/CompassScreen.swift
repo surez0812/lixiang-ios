@@ -9,14 +9,20 @@ struct R14CompassScreen: View {
     let date: LocalDate
     let hour: Int?
     @State private var useHour = false
+    @State private var hourIndex: Int? = nil
 
     private var almanac: AlmanacDay { days.almanac }
     private var layout: CompassLayout { CompassBuilder.layout(for: almanac) }
     private var selectedHour: LunarHour? {
+        if let hourIndex, let h = almanac.hours.first(where: { $0.index == hourIndex }) { return h }
         guard let hour else { return nil }
         return almanac.hours.first { h in minutes(h.startMinute) <= hour * 60 && hour * 60 <= minutes(h.endMinute) }
     }
     private var currentSha: CompassDirection? { useHour ? selectedHour?.sha : almanac.sha }
+    private func shichenName(index: Int) -> String {
+        let names = ["子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"]
+        return names[((index % 12) + 12) % 12] + "时"
+    }
 
     var body: some View {
         GeometryReader { geo in
@@ -27,6 +33,7 @@ struct R14CompassScreen: View {
                     VStack(alignment: .leading, spacing: 12) {
                         header
                         modePicker
+                        if useHour { hourSelector }
                         Text(verbatim: "\(useHour ? "所选时辰" : "所选日期")的\(useHour ? "时" : "日")方位").d1Font(11).foregroundStyle(theme.ink3)
                         Spacer(minLength: 0)
                     }
@@ -49,6 +56,7 @@ struct R14CompassScreen: View {
                     VStack(alignment: .leading, spacing: 14) {
                         header
                         modePicker
+                        if useHour { hourSelector }
                         dial(size: min(geo.size.width - 40, 340))
                         legend
                         Text(verbatim: "\(useHour ? "时方位" : "日方位") · 五吉神方位与煞方；传统历法参考，非风水/吉凶预测。")
@@ -66,7 +74,10 @@ struct R14CompassScreen: View {
             chrome.forceTabBarVisible = true
             if days.selectedDate != date { days.select(date) }
             #if DEBUG
-            if ProcessInfo.processInfo.arguments.contains("-LixiangCompassHour") { useHour = true }
+            if ProcessInfo.processInfo.arguments.contains("-LixiangCompassHour") {
+                useHour = true
+                if hourIndex == nil { hourIndex = selectedHour?.index }
+            }
             #endif
         }
         .onDisappear { chrome.forceTabBarVisible = false }
@@ -77,6 +88,33 @@ struct R14CompassScreen: View {
             Text("罗盘").d1SerifFont(26, weight: .semibold).foregroundStyle(theme.ink)
             Text(verbatim: "\(almanac.date.year)年\(almanac.date.month)月\(almanac.date.day)日 · 农历\(almanac.lunar.monthDayText)")
                 .d1Font(11).foregroundStyle(theme.ink3)
+        }
+    }
+
+    private var hourSelector: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack(spacing: 10) {
+                Text("选择时辰").d1Font(12).foregroundStyle(theme.ink2)
+                Menu {
+                    ForEach(almanac.hours, id: \.index) { h in
+                        Button("\(shichenName(index: h.index)) · \(h.ganZhi)") { hourIndex = h.index }
+                    }
+                } label: {
+                    HStack(spacing: 6) {
+                        Text(selectedHour.map { "\(shichenName(index: $0.index)) · \($0.ganZhi)" } ?? "选择时辰")
+                            .d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
+                        Spacer(minLength: 4)
+                        Image(systemName: "chevron.down").d1Font(9).foregroundStyle(theme.ink3)
+                    }
+                    .padding(.horizontal, 12).frame(minHeight: 40)
+                    .background(theme.paper, in: RoundedRectangle(cornerRadius: 12))
+                    .overlay(RoundedRectangle(cornerRadius: 12).strokeBorder(theme.line))
+                }
+            }
+            if let h = selectedHour {
+                Text(verbatim: "\(shichenName(index: h.index)) · \(h.startMinute)—\(h.endMinute)")
+                    .d1Font(11).foregroundStyle(theme.ink3)
+            }
         }
     }
 
