@@ -21,7 +21,7 @@ struct CountdownDetailScreen: View {
                             Text(current.title).d1SerifFont(26).foregroundStyle(theme.ink)
                         }
                         if let occ = occurrence {
-                            Text("\(occ.date.year)年\(occ.date.month)月\(occ.date.day)日")
+                            Text(verbatim: "\(occ.date.year)年\(occ.date.month)月\(occ.date.day)日")
                                 .d1Font(11).foregroundStyle(theme.ink3)
                             Text(occ.isToday ? "就是今天" : (occ.daysFromNow > 0 ? "还有 \(occ.daysFromNow) 天" : "已过 \(abs(occ.daysFromNow)) 天"))
                                 .d1Font(28, weight: .semibold).foregroundStyle(theme.accentStrong)

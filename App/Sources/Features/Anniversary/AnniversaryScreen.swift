@@ -38,7 +38,7 @@ struct CountdownScreen: View {
                 Text("还有 X 天 / 每年重复 / 已过 X 天；2/29 平年按 2/28 提醒（可改 3/1）。数据只在本机，无账号。")
                     .d1Font(9).foregroundStyle(theme.ink3)
             }
-            .padding(.horizontal, 16).padding(.top, 8).padding(.bottom, 24)
+            .padding(.horizontal, 16).padding(.top, 8).padding(.bottom, 140)
         }
         .background(ScreenBackground())
         .navigationTitle("倒计日")
@@ -94,7 +94,7 @@ struct CountdownScreen: View {
                 HStack(alignment: .bottom) {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(item.title).d1SerifFont(22).foregroundStyle(theme.ink)
-                        Text("\(occ.date.year)年\(occ.date.month)月\(occ.date.day)日 · \(calendarLabel(item))")
+                        Text(verbatim: "\(occ.date.year)年\(occ.date.month)月\(occ.date.day)日 · \(calendarLabel(item))")
                             .d1Font(10).foregroundStyle(theme.ink3)
                     }
                     Spacer()
