@@ -73,18 +73,93 @@ struct DailyScreen: View {
     }
 
     private var mainContent: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            header
-            if hasMultipleTraditions { traditionPicker }
-            if let verse {
-                verseBody(verse)
-            } else {
-                Text("今日经典暂缺，试试切换经典来源。")
-                    .d1Font(14).foregroundStyle(theme.ink2)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-            }
+        VStack(spacing: 16) {
+            articleCard
+            shareSection
         }
         .padding(.horizontal, 20)
+    }
+
+    private var articleCard: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack {
+                Button { dismiss() } label: {
+                    Image(systemName: "chevron.left").d1Font(16, weight: .semibold)
+                        .foregroundStyle(theme.ink).frame(width: 40, height: 40)
+                        .background(theme.soft, in: Circle())
+                }.buttonStyle(.plain)
+                Spacer()
+                traditionMenu
+            }
+            if let verse {
+                Text("每日一句 · \(classic.title)").d1Font(11).tracking(1.2).foregroundStyle(theme.ink3)
+                Text(verse.title).d1SerifFont(30, weight: .semibold).lineSpacing(4)
+                    .foregroundStyle(theme.ink).fixedSize(horizontal: false, vertical: true)
+                VStack(alignment: .leading, spacing: 8) {
+                    Text(verse.quote).d1Kaiti(24).foregroundStyle(theme.cream).lineSpacing(6)
+                    Text(verse.source).d1Font(10).foregroundStyle(theme.cream.opacity(0.8))
+                }
+                .padding(18).frame(maxWidth: .infinity, alignment: .leading)
+                .background(Color(hex: 0xB23A2A), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                Rectangle().fill(theme.line).frame(height: 1)
+                section("这句话在说什么", verse.meaning)
+                section(verse.actionTitle, verse.action)
+                Rectangle().fill(theme.line).frame(height: 1)
+                Text("先读解释，再把喜欢的一句分享出去。").d1Font(10).foregroundStyle(theme.ink3)
+            } else {
+                Text("今日经典暂缺，试试切换经典来源。").d1Font(14).foregroundStyle(theme.ink2)
+            }
+        }
+        .padding(20)
+        .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 24, style: .continuous).strokeBorder(theme.line, lineWidth: 1))
+    }
+
+    private func section(_ title: String, _ body: String) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(title).d1Font(15, weight: .semibold).foregroundStyle(theme.ink)
+            Text(body).d1Font(15).lineSpacing(7).foregroundStyle(theme.ink2)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+    }
+
+    private var traditionMenu: some View {
+        Menu {
+            ForEach(DailyClassic.allCases) { c in
+                Button(c.title) { state.dailyClassic = c.rawValue }
+            }
+        } label: {
+            HStack(spacing: 4) {
+                Text(classic.title).d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
+                Image(systemName: "chevron.down").d1Font(9).foregroundStyle(theme.ink3)
+            }
+            .padding(.horizontal, 12).frame(minHeight: 34)
+            .background(theme.soft, in: Capsule())
+        }
+    }
+
+    private var shareSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Text("今日分享卡").d1SerifFont(22, weight: .semibold).foregroundStyle(theme.ink)
+                Spacer()
+                Text("含二维码").d1Font(10).foregroundStyle(theme.ink2)
+                    .padding(.horizontal, 8).frame(minHeight: 24)
+                    .background(theme.soft, in: Capsule())
+            }
+            if let verse {
+                DailyShareCard(date: date, almanac: almanac, verse: verse, theme: theme)
+                    .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                Button { share(verse) } label: {
+                    Label("分享 / 保存", systemImage: "square.and.arrow.up")
+                        .d1Font(15, weight: .semibold).frame(maxWidth: .infinity, minHeight: 46)
+                }
+                .buttonStyle(.borderedProminent).tint(theme.accentStrong)
+            }
+        }
+        .padding(20)
+        .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 24, style: .continuous).strokeBorder(theme.line, lineWidth: 1))
     }
 
     /// iPad Landscape 右列：分享卡预览 + 分享按钮（不随左列滚动）
@@ -135,41 +210,6 @@ struct DailyScreen: View {
                 }
             }
             Spacer(minLength: 0)
-        }
-    }
-
-    private func verseBody(_ verse: R14DailyVerse) -> some View {
-        VStack(alignment: .leading, spacing: 14) {
-            VStack(alignment: .leading, spacing: 8) {
-                Text(verse.quote)
-                    .d1Kaiti(26)
-                    .foregroundStyle(theme.red)
-                    .lineSpacing(6)
-                    .fixedSize(horizontal: false, vertical: true)
-                Text(verse.source)
-                    .d1Font(12)
-                    .foregroundStyle(theme.ink3)
-            }
-            .padding(18)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(theme.paper, in: RoundedRectangle(cornerRadius: 22, style: .continuous))
-            .overlay(RoundedRectangle(cornerRadius: 22, style: .continuous).strokeBorder(theme.line, lineWidth: 1))
-
-            Text(verse.title).d1Font(17, weight: .semibold).foregroundStyle(theme.ink)
-            Text(verse.meaning).d1Font(15).lineSpacing(7).foregroundStyle(theme.ink2).fixedSize(horizontal: false, vertical: true)
-
-            Text(verse.actionTitle).d1Font(17, weight: .semibold).foregroundStyle(theme.ink)
-            Text(verse.action).d1Font(15).lineSpacing(7).foregroundStyle(theme.ink2).fixedSize(horizontal: false, vertical: true)
-
-            Button {
-                share(verse)
-            } label: {
-                Label("分享今日一句", systemImage: "square.and.arrow.up")
-                    .d1Font(15, weight: .semibold)
-                    .frame(maxWidth: .infinity, minHeight: 46)
-            }
-            .buttonStyle(.borderedProminent)
-            .tint(theme.accentStrong)
         }
     }
 

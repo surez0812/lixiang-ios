@@ -195,21 +195,26 @@ struct FortuneScreen: View {
 
     private var controls: some View {
         VStack(spacing: 10) {
-            Button(action: draw) {
-                Text(buttonTitle)
-                    .d1Font(16, weight: .semibold)
-                    .frame(maxWidth: .infinity, minHeight: 48)
-            }
-            .buttonStyle(.borderedProminent)
-            .tint(theme.accentStrong)
-            .disabled(phase == .running || done)
-            .opacity(done ? 0.55 : 1)
+            HStack(spacing: 10) {
+                Button(action: draw) {
+                    Text(buttonTitle)
+                        .d1Font(16, weight: .semibold)
+                        .frame(maxWidth: .infinity, minHeight: 48)
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(theme.accentStrong)
+                .disabled(phase == .running || done)
+                .opacity(done ? 0.55 : 1)
 
-            if phase == .running {
-                Button("跳过动画") { finish() }
-                    .d1Font(13)
-                    .foregroundStyle(theme.ink2)
-                    .frame(minHeight: 44)
+                Button("跳过动画") {
+                    if phase == .running { finish() }
+                    else if phase == .idle { draw(); finish() }
+                }
+                .d1Font(13).foregroundStyle(theme.ink2)
+                .frame(minWidth: 96, minHeight: 48)
+                .overlay(Capsule().strokeBorder(theme.line))
+                .opacity(done ? 0.4 : 1)
+                .disabled(done)
             }
             if phase == .result {
                 Button("回到待机") { reset() }

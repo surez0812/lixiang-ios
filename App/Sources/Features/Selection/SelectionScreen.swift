@@ -102,12 +102,21 @@ struct SelectionScreen: View {
     }
 
     private var header: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text("历象 · 把日子过成风景").d1Font(10, weight: .semibold).tracking(1.8).foregroundStyle(theme.ink3)
-            Text("择一日，做一事").d1SerifFont(30).foregroundStyle(theme.ink)
-            Text("让民俗参考，配合自己的安排。").d1Font(13).foregroundStyle(theme.ink2)
+        VStack(alignment: .leading, spacing: 8) {
+            Text("历象 · 把日子过成风景").d1Font(10, weight: .semibold).tracking(1.8)
+                .foregroundStyle(theme.cream.opacity(0.82))
+            Text("择一日，做一事").d1SerifFont(32, weight: .semibold).foregroundStyle(theme.cream)
+            Text("让民俗参考，配合自己的安排。").d1Font(13).foregroundStyle(theme.cream.opacity(0.88))
+            Rectangle().fill(theme.cream.opacity(0.28)).frame(height: 1).padding(.vertical, 4)
+            Text("从一件想做的事开始").d1SerifFont(20, weight: .semibold).foregroundStyle(theme.cream)
         }
-        .padding(.top, 6)
+        .padding(20)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            LinearGradient(colors: [Color(hex: 0x8E2D1C), Color(hex: 0xA63D26)],
+                           startPoint: .topLeading, endPoint: .bottomTrailing),
+            in: RoundedRectangle(cornerRadius: 22, style: .continuous)
+        )
     }
 
     private func card<Content: View>(title: String, @ViewBuilder content: () -> Content) -> some View {
