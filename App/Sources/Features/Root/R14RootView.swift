@@ -1,5 +1,6 @@
 import SwiftUI
 import LixiangCalendarCore
+import UIKit
 
 /// R14 五 Tab 路由（替代旧 day/pager 路由；旧 Route 仅供未迁移页编译）
 enum R14Route: Hashable {
@@ -20,8 +21,8 @@ struct R14RootView: View {
     @EnvironmentObject private var state: AppState
     @StateObject private var days: SelectedDayStore
     @State private var tab = 0
-    @State private var pendingRoute: R14Route? = nil
     @State private var paths = [NavigationPath](repeating: NavigationPath(), count: 5)
+    @State private var pendingRoute: R14Route? = nil
 
     init() {
         let engine = LunarSwiftEngine(festivalScope: .cn)
@@ -56,17 +57,25 @@ struct R14RootView: View {
     }
 
     var body: some View {
-        TabView(selection: $tab) {
-            NavigationStack(path: $paths[0]) { R14HomeScreen().navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) } }
-                .tabItem { Label("日历", image: "tab-calendar") }.tag(0)
-            NavigationStack(path: $paths[1]) { R14PlaceholderPage(title: "岁时", route: .folklore).navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) } }
-                .tabItem { Label("岁时", image: "tab-suishi") }.tag(1)
-            NavigationStack(path: $paths[2]) { R14PlaceholderPage(title: "择日", route: .selection).navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) } }
-                .tabItem { Label("择日", image: "TabSelection") }.tag(2)
-            NavigationStack(path: $paths[3]) { R14PlaceholderPage(title: "倒计日", route: .countdown).navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) } }
-                .tabItem { Label("倒计日", image: "tab-countdown") }.tag(3)
-            NavigationStack(path: $paths[4]) { R14PlaceholderPage(title: "设置", route: .settings).navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) } }
-                .tabItem { Label("设置", image: "tab-settings") }.tag(4)
+        GeometryReader { geo in
+            let canvas = R14DevicePolicy.canvas(size: geo.size, idiom: UIDevice.current.userInterfaceIdiom)
+            let duoSideBar = canvas == .duoOpenLandscape || (geo.size.width > geo.size.height && abs(geo.size.width - 951) < 24 && abs(geo.size.height - 669) < 24)
+            ZStack(alignment: duoSideBar ? .trailing : .bottom) {
+                tabsContent
+                    .safeAreaInset(edge: .bottom) {
+                        if !duoSideBar && !hideBar { Color.clear.frame(height: 84) }
+                    }
+                    .safeAreaInset(edge: .trailing) {
+                        if duoSideBar && !hideBar { Color.clear.frame(width: 76) }
+                    }
+                if !hideBar {
+                    if duoSideBar {
+                        R14SideTabBar(selected: $tab).padding(.trailing, 8).padding(.vertical, 24)
+                    } else {
+                        R14FloatingTabBar(selected: $tab).padding(.bottom, 6)
+                    }
+                }
+            }
         }
         .tint(D1Theme.resolve(state.theme.colorScheme ?? .light).accent)
         .environmentObject(days)
@@ -75,53 +84,83 @@ struct R14RootView: View {
             guard let r = pendingRoute else { return }
             pendingRoute = nil
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                var p = paths
-                p[0].append(r)
-                paths = p
+                var p = paths; p[0].append(r); paths = p
             }
         }
     }
+
+    private var hideBar: Bool {
+        // pushed 页隐藏 TabBar（各 Tab 栈 path 非空）
+        guard paths.indices.contains(tab) else { return false }
+        return paths[tab].count > 0
+    }
+
+    private var tabsContent: some View {
+        ZStack {
+            tabStack(0) { R14HomeScreen() }
+            tabStack(1) { R14PlaceholderPage(title: "岁时", route: .folklore) }
+            tabStack(2) { R14PlaceholderPage(title: "择日", route: .selection) }
+            tabStack(3) { R14PlaceholderPage(title: "倒计日", route: .countdown) }
+            tabStack(4) { R14PlaceholderPage(title: "设置", route: .settings) }
+        }
+    }
+
+    private func tabStack<Content: View>(_ index: Int, @ViewBuilder root: () -> Content) -> some View {
+        NavigationStack(path: $paths[index]) {
+            root().navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) }
+        }
+        .opacity(tab == index ? 1 : 0)
+        .allowsHitTesting(tab == index)
+        .accessibilityHidden(tab != index)
+    }
 }
 
-/// T1 空壳：显示画布/所选日/链路入口；页面实现由 T3–T5 替换
-struct R14PlaceholderPage: View {
+// MARK: - 自定义浮动 Tab（替代系统 TabView 形态）
+struct R14FloatingTabBar: View {
+    @Binding var selected: Int
     @Environment(\.d1) private var theme
-    @EnvironmentObject private var days: SelectedDayStore
-    let title: String
-    let route: R14Route
-
+    private let items: [(String, String)] = [("日历","tab-calendar"),("岁时","tab-suishi"),("择日","TabSelection"),("倒计日","tab-countdown"),("设置","tab-settings")]
     var body: some View {
-        GeometryReader { geo in
-            let canvas = R14DevicePolicy.canvas(size: geo.size, idiom: UIDevice.current.userInterfaceIdiom)
-            ScrollView {
-                VStack(alignment: .leading, spacing: 14) {
-                    Text(title).d1SerifFont(28, weight: .semibold).foregroundStyle(theme.ink)
-                    Text(verbatim: "画布 \(canvas.rawValue)（共享 \(canvas.sharedLayout.rawValue)）· \(Int(geo.size.width))×\(Int(geo.size.height))")
-                        .d1Font(11).foregroundStyle(theme.ink3)
-                    D1Card(padding: 14) {
-                        VStack(alignment: .leading, spacing: 6) {
-                            Text(verbatim: "\(days.selectedDate.year)年\(days.selectedDate.month)月\(days.selectedDate.day)日 · 农历\(days.lunar.monthDayText)")
-                                .d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
-                            Text("黄历链路：\(days.almanac.lunar.dayGanZhi)日 · 值神\(days.almanac.tianShen) · 煞\(days.sha?.rawValue ?? "—")")
-                                .d1Font(11).foregroundStyle(theme.ink2)
-                            Text("岁时命中：\(days.matchedFestivals.isEmpty ? "无（隐藏）" : days.matchedFestivals.joined(separator: "、"))")
-                                .d1Font(11).foregroundStyle(theme.ink3)
-                        }
+        HStack(spacing: 2) {
+            ForEach(Array(items.enumerated()), id: \.offset) { idx, item in
+                Button { selected = idx } label: {
+                    VStack(spacing: 2) {
+                        Image(item.1).renderingMode(.template).resizable().scaledToFit().frame(width: 22, height: 22)
+                        Text(item.0).d1Font(9, weight: selected == idx ? .semibold : .regular)
                     }
-                    HStack(spacing: 10) {
-                        Button("前一天") { days.previousDay() }.buttonStyle(.bordered)
-                        Button("今天") { days.selectToday() }.buttonStyle(.bordered)
-                        Button("后一天") { days.nextDay() }.buttonStyle(.bordered)
-                    }
-                    .frame(minHeight: 44)
-                    Text("T1 空壳：Home/Almanac/Compass 页面将由 T3 替换；此页仅验证 5Tab/画布/日期整组重算链路。")
-                        .d1Font(10).foregroundStyle(theme.ink3)
-                }
-                .padding(16)
+                    .foregroundStyle(selected == idx ? theme.accent : theme.ink3)
+                    .frame(maxWidth: .infinity, minHeight: 44)
+                    .background(selected == idx ? theme.accent.opacity(0.12) : .clear, in: Capsule())
+                }.buttonStyle(.plain)
+                .accessibilityLabel(item.0)
+                .accessibilityAddTraits(selected == idx ? .isSelected : [])
             }
         }
-        .background(ScreenBackground())
-        .navigationTitle("")
-        .navigationBarTitleDisplayMode(.inline)
+        .padding(.horizontal, 8).padding(.vertical, 6)
+        .background(.ultraThinMaterial, in: Capsule())
+        .overlay(Capsule().strokeBorder(theme.line.opacity(0.6)))
+        .padding(.horizontal, 18)
+        .frame(maxWidth: 520)
+    }
+}
+
+struct R14SideTabBar: View {
+    @Binding var selected: Int
+    @Environment(\.d1) private var theme
+    private let items: [(String, String)] = [("日历","tab-calendar"),("岁时","tab-suishi"),("择日","TabSelection"),("倒计日","tab-countdown"),("设置","tab-settings")]
+    var body: some View {
+        VStack(spacing: 4) {
+            ForEach(Array(items.enumerated()), id: \.offset) { idx, item in
+                Button { selected = idx } label: {
+                    Image(item.1).renderingMode(.template).resizable().scaledToFit().frame(width: 22, height: 22)
+                        .foregroundStyle(selected == idx ? theme.accent : theme.ink3)
+                        .frame(width: 44, height: 44)
+                        .background(selected == idx ? theme.accent.opacity(0.12) : .clear, in: Capsule())
+                }.buttonStyle(.plain).accessibilityLabel(item.0)
+            }
+        }
+        .padding(6)
+        .background(.ultraThinMaterial, in: Capsule())
+        .overlay(Capsule().strokeBorder(theme.line.opacity(0.6)))
     }
 }
