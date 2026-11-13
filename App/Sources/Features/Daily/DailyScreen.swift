@@ -56,6 +56,13 @@ struct DailyScreen: View {
         .toolbar(.hidden, for: .tabBar)
         .navigationTitle("每日一句")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            #if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("-LixiangDailyShare"), let verse {
+                sharePayload = SharePayload(verse: verse)
+            }
+            #endif
+        }
         .fullScreenCover(item: $sharePayload) { payload in
             DailySharePage(date: date, almanac: almanac, verse: payload.verse, theme: theme)
         }
@@ -264,6 +271,11 @@ private struct DailySharePage: View {
                 renderer.proposedSize = ProposedViewSize(width: 360, height: 450)
                 renderer.isOpaque = true
                 rendered = renderer.uiImage
+                #if DEBUG
+                if let img = rendered {
+                    print("LIXDAILY_EXPORT points=\(img.size.width)x\(img.size.height) px=\(img.size.width * img.scale)x\(img.size.height * img.scale)")
+                }
+                #endif
             }
         }
     }
@@ -301,7 +313,7 @@ struct DailyShareCard: View {
             }
         }
         .padding(22)
-        .frame(width: size.width, height: size.height, alignment: .topLeading)
+        .frame(maxWidth: .infinity, minHeight: size.height, alignment: .topLeading)
         .background(LinearGradient(colors: [Color(hex: 0xFFF8EC), Color(hex: 0xF6E8D1)], startPoint: .topLeading, endPoint: .bottomTrailing))
         .foregroundStyle(Color(hex: 0x35291F))
     }

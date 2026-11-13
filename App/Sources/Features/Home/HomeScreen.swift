@@ -188,12 +188,10 @@ struct R14HomeScreen: View {
     }
 
     private func lunarLabel(_ d: LocalDate) -> String {
-        let l = days.engine.almanac(d, hour: 12).lunar
-        if l.day == 1 { return "\(l.monthInChinese)月" }
-        return l.dayInChinese
+        days.meta(for: d).lunarMonthDay
     }
-    private func hasSolarTerm(_ d: LocalDate) -> Bool { days.engine.almanac(d, hour: 12).solarTerm != nil }
-    private func festivals(_ d: LocalDate) -> [String] { days.engine.almanac(d, hour: 12).festivals }
+    private func hasSolarTerm(_ d: LocalDate) -> Bool { days.meta(for: d).solarTerm != nil }
+    private func festivals(_ d: LocalDate) -> [String] { days.meta(for: d).festivals }
     private func hasAnniversary(_ d: LocalDate) -> Bool {
         state.countdownStore.items.contains { AnniversaryResolver.occurrence(for: $0, now: d, engine: days.engine)?.date == d }
     }

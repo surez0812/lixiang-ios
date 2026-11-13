@@ -29,6 +29,16 @@ enum R14DevicePolicy {
     static let splitViewExcluded = true   // v1.0 不实现 Split View/Stage Manager 特化
 
     /// Duo 屏幕点尺寸（外屏 466×678 / 内屏 669×951，随姿态互换）；用于设备识别（不依赖 UIDevice）
+    /// 旋转前 window 尺寸仍是竖屏，用 nativeBounds（Duo 外屏 1398×2034 / 内屏 2007×2853）兜底识别。
+    static func isDuoNative(screen: UIScreen) -> Bool {
+        let b = screen.nativeBounds.size
+        let pairs: [(CGFloat, CGFloat)] = [(1398, 2034), (2007, 2853)]
+        for (a, c) in pairs {
+            if (abs(b.width - a) <= 2 && abs(b.height - c) <= 2) || (abs(b.width - c) <= 2 && abs(b.height - a) <= 2) { return true }
+        }
+        return UIDevice.current.model.localizedCaseInsensitiveContains("Duo")
+    }
+
     static func isDuo(size: CGSize) -> Bool {
         let w = size.width, h = size.height
         let pairs: [(CGFloat, CGFloat)] = [(466, 678), (669, 951)]
@@ -76,7 +86,11 @@ final class R14AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .pad { return .all }
         let size = window?.windowScene?.screen.bounds.size ?? UIScreen.main.bounds.size
-        if R14DevicePolicy.isDuo(size: size) { return [.portrait, .landscapeLeft, .landscapeRight] }
+        let duo = R14DevicePolicy.isDuo(size: size) || R14DevicePolicy.isDuoNative(screen: window?.windowScene?.screen ?? .main)
+        #if DEBUG
+        print("LXDUO orientationMask size=\(size) native=\(UIScreen.main.nativeBounds.size) duo=\(duo)")
+        #endif
+        if duo { return .allButUpsideDown }
         return .portrait
     }
 }

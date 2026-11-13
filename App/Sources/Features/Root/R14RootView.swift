@@ -68,6 +68,7 @@ struct R14RootView: View {
             case "countdown": r = .countdown
             case "settings": r = .settings
             case "folkloreDetail": r = .folkloreDetail(id: "xiezao", version: nil)
+            case "countdownDetail": r = .countdownDetail(id: nil)
             case "countdownDetail": r = .countdownDetail(id: "first")
             default: r = .home
             }
@@ -108,7 +109,7 @@ struct R14RootView: View {
         GeometryReader { geo in
             let isDuo = R14DevicePolicy.isDuo(size: geo.size)
             let canvas = R14DevicePolicy.canvas(size: geo.size, idiom: UIDevice.current.userInterfaceIdiom, isDuo: isDuo)
-            let duoSideBar = R14DevicePolicy.isDuoOpenLandscape(size: geo.size)
+            let duoSideBar = R14DevicePolicy.isDuoOpenLandscape(size: geo.size) || (isDuo && geo.size.width > geo.size.height && min(geo.size.width, geo.size.height) >= 600)
             Group {
                 if !days.ready {
                     R14BootLoadingView()
@@ -125,6 +126,11 @@ struct R14RootView: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .onAppear {
+                #if DEBUG
+                print("LXDROOT canvas=\(canvas.rawValue) size=\(geo.size.width)x\(geo.size.height) duo=\(isDuo) rail=\(duoSideBar)")
+                #endif
+            }
         }
         }
         .tint(D1Theme.resolve(state.theme.colorScheme ?? .light).accent)
@@ -133,11 +139,11 @@ struct R14RootView: View {
         .environmentObject(chrome)
         .onOpenURL { _ in }
         .task { await days.prepare() }
-        .onAppear {
-            guard let r = pendingRoute else { return }
-            pendingRoute = nil
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                var p = paths; p[pendingTab].append(r); paths = p
+        .onAppear { consumePendingRouteIfReady() }
+        .onChange(of: days.ready) { _, ready in
+            if ready {
+                R14StartupProbe.log("content.ready")
+                consumePendingRouteIfReady()
             }
         }
     }
@@ -149,6 +155,25 @@ struct R14RootView: View {
         return p.count == 3 ? LocalDate(p[0], p[1], p[2]) : nil
     }
     #endif
+
+    /// 路由消费必须等 days.ready 且 NavigationStack 已挂载；!ready 时保留 pendingRoute，不清空。
+    private func consumePendingRouteIfReady() {
+        guard days.ready, let r = pendingRoute else { return }
+        pendingRoute = nil
+        DispatchQueue.main.async {
+            var p = paths
+            p[pendingTab].append(r)
+            paths = p
+            // 兜底：若下一帧仍未消费（栈尚未挂载），重试一次
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                if paths[pendingTab].isEmpty {
+                    var retry = paths
+                    retry[pendingTab].append(r)
+                    paths = retry
+                }
+            }
+        }
+    }
 
     private var hideBar: Bool {
         // pushed 页隐藏 TabBar（各 Tab 栈 path 非空）

@@ -213,10 +213,8 @@ struct R14AlmanacScreen: View {
                 VStack(alignment: .leading, spacing: 3) {
                     Text(term).d1SerifFont(14, weight: .semibold).foregroundStyle(theme.ink)
                     if state.showVernacular {
-                        let matched = state.plainLanguage.panelTermMatching(term)
-                        let expl = matched?.detailText ?? matched?.zh
-                            ?? "「\(term)」为传统黄历用语，是否适合仍需结合现实安排与参与者情况判断。"
-                        Text(expl).d1Font(10).foregroundStyle(theme.ink2).lineSpacing(2)
+                        Text(AlmanacTermSemantics.explanation(for: term, pack: state.plainLanguage))
+                            .d1Font(10).foregroundStyle(theme.ink2).lineSpacing(2)
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -246,4 +244,18 @@ struct R14AlmanacScreen: View {
 
 enum AlmanacLayout {
     static func columns(width: CGFloat) -> Int { width >= 744 ? 2 : 1 }
+}
+
+
+/// 宜忌词条语义解析：先专用 yi-ji 词条，再 panel 词条精确匹配，禁止 substring/contains 命中神煞/建除/星宿。
+enum AlmanacTermSemantics {
+    static func explanation(for term: String, pack: PlainLanguagePack) -> String {
+        if let yiji = pack.term(named: term)?.zh, !yiji.isEmpty { return yiji }
+        if let panel = pack.panelTerm(named: term) {
+            let text = panel.detailText
+            if !text.isEmpty { return text }
+            if !panel.zh.isEmpty { return panel.zh }
+        }
+        return "「\(term)」为传统黄历用语，是否适合仍需结合现实安排与参与者情况判断。"
+    }
 }

@@ -2,6 +2,18 @@ import Foundation
 import Combine
 import LixiangCalendarCore
 
+/// 冷启动打点（DEBUG 输出 LXSTARTUP 单行），用于 iPad/Duo 首启 profile。
+enum R14StartupProbe {
+    private static let t0 = ProcessInfo.processInfo.systemUptime
+    static func ms(_ v: Double) -> Double { (v - t0) * 1000 }
+    static func log(_ stage: String, _ detail: String = "") {
+        #if DEBUG
+        print(String(format: "LXSTARTUP %.0fms %@ %@", ms(ProcessInfo.processInfo.systemUptime), stage, detail))
+        #endif
+    }
+    static var elapsedMs: Double { ms(ProcessInfo.processInfo.systemUptime) }
+}
+
 /// R14 数据层：所选日唯一来源；改日整组重算（黄历/时辰/岁时/罗盘方向），不缓存旧值。
 @MainActor
 final class SelectedDayStore: ObservableObject {
@@ -50,13 +62,29 @@ final class SelectedDayStore: ObservableObject {
         let date = selectedDate
         let hour = hourProvider()
         let engine = self.engine
+        R14StartupProbe.log("prepare.start")
+        let started = ProcessInfo.processInfo.systemUptime
         let a = await Task.detached(priority: .userInitiated) {
-            engine.almanac(date, hour: hour)
+            let t = ProcessInfo.processInfo.systemUptime
+            let almanac = engine.almanac(date, hour: hour)
+            R14StartupProbe.log("prepare.engineAlmanac", String(format: "%.0fms", (ProcessInfo.processInfo.systemUptime - t) * 1000))
+            return almanac
         }.value
-        guard selectedDate == date else { return }
+        // 预热月历 42 格的黄历元数据（后台），避免首帧主线程 42×engine.almanac 卡顿
+        let prewarmStart = ProcessInfo.processInfo.systemUptime
+        let dates = Self.monthGridDates(for: date)
+        let engineForPrewarm = self.engine
+        let metas = await Task.detached(priority: .userInitiated) { () -> [(LocalDate, AlmanacDay)] in
+            dates.map { d in (d, engineForPrewarm.almanac(d, hour: 12)) }
+        }.value
+        for (d, a) in metas {
+            metaCache[d] = DayMeta(lunarMonthDay: a.lunar.monthDayText, solarTerm: a.solarTerm, festivals: a.festivals)
+        }
         cachedAlmanac = a
         festivals = a.festivals
         hourIndex = a.currentHourIndex
+        R14StartupProbe.log("prepare.done", String(format: "%.0fms prewarm=%.0fms", (ProcessInfo.processInfo.systemUptime - started) * 1000, (ProcessInfo.processInfo.systemUptime - prewarmStart) * 1000))
+        guard selectedDate == date else { return }
         ready = true
     }
 
@@ -81,6 +109,17 @@ final class SelectedDayStore: ObservableObject {
     /// 岁时按所选日严格匹配；无命中返回空（UI 隐藏，不留占位）
     var matchedFestivals: [String] { festivals }
 
+    /// 月历 42 格用：每日期只算一次 almanac，缓存避免每次渲染重复重算。
+    struct DayMeta { var lunarMonthDay: String; var solarTerm: String?; var festivals: [String] }
+    private var metaCache: [LocalDate: DayMeta] = [:]
+    func meta(for date: LocalDate) -> DayMeta {
+        if let cached = metaCache[date] { return cached }
+        let a = (date == selectedDate && cachedAlmanac != nil) ? almanac : engine.almanac(date, hour: 12)
+        let m = DayMeta(lunarMonthDay: a.lunar.monthDayText, solarTerm: a.solarTerm, festivals: a.festivals)
+        metaCache[date] = m
+        return m
+    }
+
     func compassHours() -> [LunarHour] { almanac.hours }
     func compassPositions(hour: Int?) -> DeityDirections? {
         guard let hour, let idx = almanac.hours.firstIndex(where: { h in
@@ -89,6 +128,18 @@ final class SelectedDayStore: ObservableObject {
         _ = idx
         return almanac.positions // 方位数据为日级；逐时煞/冲在 almanac.sha 上另行展示
     }
+    /// 与 Home 月历一致：周一开头 42 格
+    static func monthGridDates(for date: LocalDate) -> [LocalDate] {
+        let first = LocalDate(date.year, date.month, 1)
+        var cal = Calendar(identifier: .gregorian)
+        cal.timeZone = TimeZone(identifier: "Asia/Shanghai") ?? .current
+        let d0 = cal.date(from: DateComponents(year: first.year, month: first.month, day: 1)) ?? Date()
+        let w = cal.component(.weekday, from: d0)          // 1=Sun
+        let weekday = ((w + 5) % 7) + 1
+        let start = first.adding(days: -(weekday - 1))
+        return (0..<42).map { start.adding(days: $0) }
+    }
+
     private static func minutes(_ hm: String) -> Int {
         let p = hm.split(separator: ":").compactMap { Int($0) }
         return p.count == 2 ? p[0] * 60 + p[1] : 0
