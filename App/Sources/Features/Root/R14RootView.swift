@@ -132,6 +132,9 @@ struct R14FloatingTabBar: View {
     @Environment(\.d1) private var theme
     @EnvironmentObject private var state: AppState
     @EnvironmentObject private var days: SelectedDayStore
+    @ObservedObject private var unread = FolkloreUnreadStore.shared
+
+    private var folkloreUnread: Bool { unread.unreadCount(ContentFixtures.all) > 0 }
 
     private var countdownBadge: String? {
         let n = state.countdownStore.items.filter { item in
@@ -152,7 +155,7 @@ struct R14FloatingTabBar: View {
                     .frame(maxWidth: .infinity, minHeight: 44)
                     .background(selected == idx ? theme.accent.opacity(0.12) : .clear, in: Capsule())
                     .overlay(alignment: .topTrailing) {
-                        if idx == 1 {
+                        if idx == 1 && folkloreUnread {
                             Circle().fill(Color(hex: 0xB23A2A)).frame(width: 6, height: 6).padding(.top, 4).padding(.trailing, 18)
                         }
                         if idx == 3, let badge = countdownBadge {

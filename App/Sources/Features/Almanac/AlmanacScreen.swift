@@ -188,3 +188,7 @@ struct R14AlmanacScreen: View {
         .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6)))
     }
 }
+
+enum AlmanacLayout {
+    static func columns(width: CGFloat) -> Int { width >= 744 ? 2 : 1 }
+}

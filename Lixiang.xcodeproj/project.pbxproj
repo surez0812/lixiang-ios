@@ -49,6 +49,7 @@
 		40EA23282A681DF06B3AAECD /* daily-classics in Resources */ = {isa = PBXBuildFile; fileRef = 2BAE11DD178421748CB1455E /* daily-classics */; };
 		44E8A64DB0E88C01014E8C2C /* CountdownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2D75D50D2C9CC1E4ED5F8 /* CountdownUITests.swift */; };
 		4553A31FFB538DCA0FBDA0C2 /* term-daxue-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3A92AD321EBABAB28F289053 /* term-daxue-dark.webp */; };
+		483EA98598798BB84F07561E /* WeatherLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26FD46E139A57463DE3971 /* WeatherLocationProvider.swift */; };
 		484B6B5B2B3508BE82EDD3A7 /* FortuneEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCB104A9BE436ADFCB2DA7 /* FortuneEngine.swift */; };
 		4955EEFFA8CD581D7FFA0A5C /* term-dahan-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 7265B869FEE42BA26C98C0BE /* term-dahan-light.webp */; };
 		4961A2C52973706909F582C0 /* SourceLicenseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5FAB3FD05EDDE5ACAA2B79 /* SourceLicenseScreen.swift */; };
@@ -62,12 +63,15 @@
 		64C5D56B5EEA0B94FD4D1751 /* term-lidong-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6BA7F1CFC0ABE2C986E68A4C /* term-lidong-dark.webp */; };
 		64FC9C5E7534E6985EA1E01B /* PlainLanguageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A8C7FBB0FB0D22F603ACE5 /* PlainLanguageLoader.swift */; };
 		657BFD48F7F8BA7E0281D514 /* term-hanlu-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9517FF8AB37CB329866032B4 /* term-hanlu-light.webp */; };
+		69E7ECC521192B022FCBE682 /* FolkloreUnreadStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB376794904EFF6B35109FD8 /* FolkloreUnreadStore.swift */; };
 		6D69679309707D7AD4BB950B /* term-dongzhi-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = F542B8E0272440DFD678CF6E /* term-dongzhi-dark.webp */; };
 		6D9FA28414E5B8E3DA30956C /* term-xiaohan-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 09DE9E543429892C5F51A010 /* term-xiaohan-dark.webp */; };
 		6F1D9CEA807B4E1828C2B6E1 /* ART-NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = D15E21AB1DA5B1F2145579FD /* ART-NOTES.md */; };
 		6F39BFF37E0D4D42CE81F9B3 /* term-xiaoshu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = CC62CFDFEAF248607EFF182F /* term-xiaoshu-dark.webp */; };
 		73BD547C1D67F9DA50394AC5 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0972F77CF89DEA571919AB7 /* AboutScreen.swift */; };
 		74F2ABD34D760AC952033AD7 /* PlainTermSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18D4E9C43A87557F5B8AFB /* PlainTermSheet.swift */; };
+		7511252EC8B5EA2A1FD87190 /* FolkloreUnreadStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2E2EB5A29CCA23BD88DF9 /* FolkloreUnreadStoreTests.swift */; };
+		7655D23543282FA8AF4566FE /* HomeWeatherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0710686BD3D9EDD48310586 /* HomeWeatherCard.swift */; };
 		776F6261214379761CB1EF3E /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD67E5E2CFFCBF2F70AD9D /* ContentRepository.swift */; };
 		79D3CA12212D0B08D65B2AF6 /* LixiangCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9DC9A4CCDA5EEBBCD58D4361 /* LixiangCalendarCore */; };
 		7E1D04E9F410BAC040786DD2 /* dao-365.json in Resources */ = {isa = PBXBuildFile; fileRef = F5090AF9BBD20E743BA7E910 /* dao-365.json */; };
@@ -269,6 +273,8 @@
 		A67673C4C6D224600887711F /* DayDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailScreen.swift; sourceTree = "<group>"; };
 		A7E35CC6BD3E4FA162178AF1 /* DailyVerseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyVerseScreen.swift; sourceTree = "<group>"; };
 		A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryScreen.swift; sourceTree = "<group>"; };
+		A9A2E2EB5A29CCA23BD88DF9 /* FolkloreUnreadStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolkloreUnreadStoreTests.swift; sourceTree = "<group>"; };
+		AB376794904EFF6B35109FD8 /* FolkloreUnreadStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolkloreUnreadStore.swift; sourceTree = "<group>"; };
 		AD13A95C89E26C3DDB673171 /* term-lichun-dark.webp */ = {isa = PBXFileReference; path = "term-lichun-dark.webp"; sourceTree = "<group>"; };
 		ADAAB3BFDF1D630B7D7D5361 /* A11yOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A11yOrderTests.swift; sourceTree = "<group>"; };
 		B0972F77CF89DEA571919AB7 /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
@@ -289,6 +295,7 @@
 		D15E21AB1DA5B1F2145579FD /* ART-NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ART-NOTES.md"; sourceTree = "<group>"; };
 		D312BF7789D4CDD61EA0C5FD /* term-xiaoxue-dark.webp */ = {isa = PBXFileReference; path = "term-xiaoxue-dark.webp"; sourceTree = "<group>"; };
 		D421ECD4E84365F75CC9AE9A /* MonthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthScreen.swift; sourceTree = "<group>"; };
+		DA26FD46E139A57463DE3971 /* WeatherLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocationProvider.swift; sourceTree = "<group>"; };
 		DCCA767FE8687948B8B5D0DF /* FortuneEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneEngineTests.swift; sourceTree = "<group>"; };
 		DF000E8B3E2547A6EE42316D /* term-chunfen-light.webp */ = {isa = PBXFileReference; path = "term-chunfen-light.webp"; sourceTree = "<group>"; };
 		E1BD67E5E2CFFCBF2F70AD9D /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
@@ -301,6 +308,7 @@
 		EBEC52C3B831CECA16873A0B /* term-liqiu-light.webp */ = {isa = PBXFileReference; path = "term-liqiu-light.webp"; sourceTree = "<group>"; };
 		EC9492B2CCAF48E208A8A83E /* term-qingming-dark.webp */ = {isa = PBXFileReference; path = "term-qingming-dark.webp"; sourceTree = "<group>"; };
 		ED2285EB6A83A891427ED1AF /* SelectionEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionEngineTests.swift; sourceTree = "<group>"; };
+		F0710686BD3D9EDD48310586 /* HomeWeatherCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeatherCard.swift; sourceTree = "<group>"; };
 		F0CB1916448ADAA608EBB07F /* term-yushui-light.webp */ = {isa = PBXFileReference; path = "term-yushui-light.webp"; sourceTree = "<group>"; };
 		F5090AF9BBD20E743BA7E910 /* dao-365.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "dao-365.json"; sourceTree = "<group>"; };
 		F542B8E0272440DFD678CF6E /* term-dongzhi-dark.webp */ = {isa = PBXFileReference; path = "term-dongzhi-dark.webp"; sourceTree = "<group>"; };
@@ -535,6 +543,7 @@
 		78AD20B710B93866DBEBF075 /* Folklore */ = {
 			isa = PBXGroup;
 			children = (
+				AB376794904EFF6B35109FD8 /* FolkloreUnreadStore.swift */,
 				4B6D9052F53146203B14C60B /* R14Folklore.swift */,
 			);
 			path = Folklore;
@@ -673,6 +682,8 @@
 		A6FFE7DD64CD326AA605D42D /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				F0710686BD3D9EDD48310586 /* HomeWeatherCard.swift */,
+				DA26FD46E139A57463DE3971 /* WeatherLocationProvider.swift */,
 				EB4FE729CE209807C668F1D5 /* WeatherService.swift */,
 			);
 			path = Weather;
@@ -683,6 +694,7 @@
 			children = (
 				DE6427911F276D30E1BE1749 /* HomeAlmanacCompass */,
 				E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */,
+				A9A2E2EB5A29CCA23BD88DF9 /* FolkloreUnreadStoreTests.swift */,
 				DCCA767FE8687948B8B5D0DF /* FortuneEngineTests.swift */,
 				72CB69DB4CB6E4BFBB763053 /* R14SelectedDayTests.swift */,
 				ED2285EB6A83A891427ED1AF /* SelectionEngineTests.swift */,
@@ -990,12 +1002,14 @@
 				39FF8AB136D23EB770A2BC4A /* DebugOptions.swift in Sources */,
 				01117EB3016F04967E6CAFC9 /* DevicePolicy.swift in Sources */,
 				3ABC80F5BA369812487AA63D /* FestivalsScreen.swift in Sources */,
+				69E7ECC521192B022FCBE682 /* FolkloreUnreadStore.swift in Sources */,
 				484B6B5B2B3508BE82EDD3A7 /* FortuneEngine.swift in Sources */,
 				985FBB763F17969B9AB44613 /* FortuneModels.swift in Sources */,
 				85744A50CF1D91E9AD8EC02A /* FortuneScreen.swift in Sources */,
 				05C5E1385679BE460EAAFB01 /* GlossaryScreen.swift in Sources */,
 				A1211486934ACFD13BA23076 /* HeadingProvider.swift in Sources */,
 				9B8A6E3B32856FDD7A9CE62D /* HomeScreen.swift in Sources */,
+				7655D23543282FA8AF4566FE /* HomeWeatherCard.swift in Sources */,
 				1A36718274792A26F1C632C8 /* LegacyRoute.swift in Sources */,
 				5DC804F1EFB564515CFF5331 /* LixiangApp.swift in Sources */,
 				E0F78DB5AC67136FD14EF194 /* MergedDayCard.swift in Sources */,
@@ -1019,6 +1033,7 @@
 				E5D415369673F786EDD6C1FF /* ShareCard.swift in Sources */,
 				2D00D99D1387375BE42582B5 /* ShareSheetView.swift in Sources */,
 				4961A2C52973706909F582C0 /* SourceLicenseScreen.swift in Sources */,
+				483EA98598798BB84F07561E /* WeatherLocationProvider.swift in Sources */,
 				D1C64F907F59F9D179E53235 /* WeatherService.swift in Sources */,
 				3573D1CD2174094EECE5F737 /* WebViewReader.swift in Sources */,
 			);
@@ -1029,6 +1044,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				146166B7CABEC8AF3DB42FE9 /* CountdownLogicTests.swift in Sources */,
+				7511252EC8B5EA2A1FD87190 /* FolkloreUnreadStoreTests.swift in Sources */,
 				5A6C298813051CC13C5D3BC5 /* FortuneEngineTests.swift in Sources */,
 				DAFC6433507532C92327196F /* R14HomeAlmanacCompassTests.swift in Sources */,
 				3AC84F2AB6C0868251A4DCF3 /* R14SelectedDayTests.swift in Sources */,
