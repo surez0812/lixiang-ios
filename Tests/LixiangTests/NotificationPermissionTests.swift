@@ -22,13 +22,25 @@ final class NotificationPermissionTests: XCTestCase {
         XCTAssertEqual(c.status, .authorized)
     }
 
-    func testSettingsReturnReReadsAuthorization() async {
+    func testDeniedToggleCloseAndNoRepeatedSystemPrompt() async {
+        let c = NotificationPermissionCenter(mock: .denied)
+        await c.refresh()
+        XCTAssertFalse(c.canToggleReminder, "denied 时开关不可开启")
+        XCTAssertTrue(c.isDenied)
+        _ = await c.request()
+        _ = await c.request()
+        XCTAssertEqual(c.systemPromptAttempts, 0, "denied 注入下不重复触发系统弹窗")
+    }
+
+    func testSettingsReturnMigratesDeniedToAuthorized() async {
         let c = NotificationPermissionCenter(mock: .settingsReturn)
         await c.refresh()
-        XCTAssertTrue(c.isDenied, "从设置返回前为 denied")
-        await c.onSceneActive()
-        XCTAssertFalse(c.isDenied, "scenePhase active 后重读为 authorized")
+        XCTAssertTrue(c.isDenied, "初始为 denied")
+        XCTAssertFalse(c.canToggleReminder)
+        c.simulateSettingsReturn()          // 对应 scenePhase inactive→active 重读
+        XCTAssertFalse(c.isDenied)
         XCTAssertEqual(c.status, .authorized)
+        XCTAssertTrue(c.canToggleReminder)
     }
 
     func testPrepromptNotShownAutomatically() {

@@ -114,7 +114,7 @@ struct R14CountdownScreen: View {
             Text("\(item.calendar == .lunar ? "农历" : "公历") · \(repeatText(item)) · \(occ.date.iso)")
                 .d1Font(12).foregroundStyle(theme.ink3)
             HStack(spacing: 6) {
-                Text(item.reminderEnabled ? "提醒 \(String(format: "%02d:%02d", item.reminderHour, item.reminderMinute))" : "提醒未开启")
+                Text(notify.isDenied ? "通知未开启 · App 内提醒仍可见" : (item.reminderEnabled ? "提醒 \(String(format: "%02d:%02d", item.reminderHour, item.reminderMinute))" : "提醒未开启"))
                     .d1Font(11).foregroundStyle(theme.ink2)
                 Text("·").foregroundStyle(theme.ink3)
                 Text("App 内提醒\(item.reminderEnabled ? "已开启" : "未开启")").d1Font(11).foregroundStyle(theme.ink3)

@@ -9,6 +9,7 @@ final class NotificationPermissionCenter: ObservableObject {
 
     @Published private(set) var status: UNAuthorizationStatus = .notDetermined
     @Published var showPreprompt = false
+    @Published private(set) var systemPromptAttempts = 0
     private let mock: MockMode
     private var returnedFromSettings = false
 
@@ -23,6 +24,22 @@ final class NotificationPermissionCenter: ObservableObject {
         #if DEBUG
         print("LXNOTIFY mock=\(resolved)")
         #endif
+        if resolved == .settingsReturn {
+            // 可观察迁移：先 denied，3s 后模拟「从系统设置返回」→ authorized
+            Task { @MainActor in
+                try? await Task.sleep(nanoseconds: 3_000_000_000)
+                self.simulateSettingsReturn()
+            }
+        }
+    }
+
+    /// DEBUG 注入：模拟 scenePhase inactive→active 后重读设置。
+    func simulateSettingsReturn() {
+        returnedFromSettings = true
+        status = .authorized
+        #if DEBUG
+        print("LXNOTIFY simulateSettingsReturn -> authorized")
+        #endif
     }
 
     static func modeFromProcess() -> MockMode {
@@ -34,6 +51,9 @@ final class NotificationPermissionCenter: ObservableObject {
     }
 
     func refresh() async {
+        #if DEBUG
+        print("LXNOTIFY refresh mock=\(mock) returned=\(returnedFromSettings) status=\(status.rawValue)")
+        #endif
         switch mock {
         case .denied: status = .denied
         case .authorized: status = .authorized
@@ -53,6 +73,7 @@ final class NotificationPermissionCenter: ObservableObject {
             let settings = await center.notificationSettings()
             if settings.authorizationStatus == .authorized { status = .authorized; return true }
             if settings.authorizationStatus == .denied { status = .denied; return false }
+            systemPromptAttempts += 1
             let ok = (try? await center.requestAuthorization(options: [.alert, .sound, .badge])) ?? false
             status = ok ? .authorized : .denied
             return ok
@@ -71,4 +92,6 @@ final class NotificationPermissionCenter: ObservableObject {
     }
 
     var isDenied: Bool { status == .denied }
+    /// denined 时开关不可开启；UI 显示「系统已拒绝」并引导去设置。
+    var canToggleReminder: Bool { status != .denied }
 }

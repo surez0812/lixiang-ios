@@ -34,8 +34,9 @@ struct CountdownDetailScreen: View {
                 }
                 D1Card {
                     Toggle("本地通知提醒", isOn: Binding(
-                        get: { current.reminderEnabled },
+                        get: { notify.isDenied ? false : current.reminderEnabled },
                         set: { newValue in
+                            if notify.isDenied { return }
                             if newValue {
                                 notify.showPreprompt = true
                             } else {
@@ -45,8 +46,9 @@ struct CountdownDetailScreen: View {
                             }
                         }))
                         .d1Font(12)
+                        .disabled(notify.isDenied)
                         .accessibilityIdentifier("notify.toggle")
-                    Text(current.reminderEnabled ? "提醒时间 \(String(format: "%02d:%02d", current.reminderHour, current.reminderMinute))" : "未开启提醒")
+                    Text(notify.isDenied ? "系统通知已拒绝；开关不可开启，请去设置允许通知。" : (current.reminderEnabled ? "提醒时间 \(String(format: "%02d:%02d", current.reminderHour, current.reminderMinute))" : "未开启提醒"))
                         .d1Font(10).foregroundStyle(theme.ink3)
                     if notify.isDenied {
                         HStack(spacing: 8) {
@@ -88,6 +90,10 @@ struct CountdownDetailScreen: View {
         }
         .task {
             await notify.refresh()
+            if notify.isDenied {
+                var updated = current; updated.reminderEnabled = false
+                state.countdownStore.update(updated)   // banner/开关/持久化一致
+            }
             #if DEBUG
             if ProcessInfo.processInfo.arguments.contains("-LixiangNotifyPrepromptDetail") { notify.showPreprompt = true }
             #endif
