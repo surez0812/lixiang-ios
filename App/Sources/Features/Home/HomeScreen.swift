@@ -48,17 +48,15 @@ struct R14HomeScreen: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text(verbatim: "\(days.selectedDate.year)年\(days.selectedDate.month)月\(days.selectedDate.day)日 · 星期\(days.selectedDate.weekdayChinese)")
                     .d1SerifFont(24, weight: .semibold).foregroundStyle(theme.ink)
-                Text(verbatim: "农历\(days.lunar.monthDayText)").d1Font(12).foregroundStyle(theme.ink2)
-                Text(verbatim: "\(days.lunar.yearGanZhi)年  \(days.lunar.monthGanZhi)月  \(days.lunar.dayGanZhi)日").d1Font(12).foregroundStyle(theme.ink2)
+                Text(verbatim: "农历\(days.lunar.monthDayText)").d1SerifFont(14).foregroundStyle(theme.ink2)
+                Text(verbatim: "\(days.lunar.yearGanZhi)年  \(days.lunar.monthGanZhi)月  \(days.lunar.dayGanZhi)日").d1SerifFont(14).foregroundStyle(theme.ink2)
                 if let idx = days.hourIndex, days.shichen.indices.contains(idx) {
                     let h = days.shichen[idx]
-                    Text(verbatim: "\(h.ganZhi)时 · \(h.startMinute)–\(h.endMinute)").d1Font(11).foregroundStyle(theme.ink3)
+                    Text(verbatim: "\(h.ganZhi)时 · \(h.startMinute)–\(h.endMinute)").d1SerifFont(12).foregroundStyle(theme.ink3)
                 }
                 LazyVGrid(columns: [GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8)], spacing: 8) {
-                    if !days.matchedFestivals.isEmpty {
-                        heroChip("今日岁时", days.matchedFestivals.prefix(2).joined(separator: " "))
-                    }
-                    if let anniversary { heroChip("今日纪念", anniversary) }
+                    heroChip("今日岁时", days.matchedFestivals.isEmpty ? "暂无岁时" : days.matchedFestivals.prefix(2).joined(separator: " "), muted: days.matchedFestivals.isEmpty)
+                    heroChip("今日纪念", anniversary ?? "暂无纪念", muted: anniversary == nil)
                 }.padding(.top, 2)
                 quoteBlock.padding(.top, 4)
             }
@@ -69,11 +67,11 @@ struct R14HomeScreen: View {
         .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6)))
     }
 
-    private func heroChip(_ title: String, _ value: String) -> some View {
+    private func heroChip(_ title: String, _ value: String, muted: Bool = false) -> some View {
         NavigationLink(value: R14Route.almanac(days.selectedDate)) {
             HStack(spacing: 4) {
                 Text(title).d1Font(9).foregroundStyle(theme.ink3)
-                Text(value).d1Font(9, weight: .semibold).foregroundStyle(theme.ink).lineLimit(1)
+                Text(value).d1SerifFont(11, weight: .semibold).foregroundStyle(muted ? theme.ink3 : theme.ink).lineLimit(1)
                 Spacer(minLength: 0)
                 Image(systemName: "chevron.right").d1Font(7).foregroundStyle(theme.ink3)
             }
@@ -141,6 +139,7 @@ struct R14HomeScreen: View {
             }
             .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
             .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6)))
+            .padding(.bottom, 8)
         }.buttonStyle(.plain)
     }
 

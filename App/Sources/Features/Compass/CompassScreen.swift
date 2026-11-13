@@ -34,7 +34,7 @@ struct R14CompassScreen: View {
                         header
                         modePicker
                         if useHour { hourSelector }
-                        Text(verbatim: "\(useHour ? "所选时辰" : "所选日期")的\(useHour ? "时" : "日")方位").d1Font(11).foregroundStyle(theme.ink3)
+                        Text(verbatim: "\(useHour ? "所选时辰" : "所选日期")的\(useHour ? "时" : "日")方位").d1SerifFont(13).foregroundStyle(theme.ink3)
                         Spacer(minLength: 0)
                     }
                     .frame(width: geo.size.width * 0.34, alignment: .leading)
@@ -149,8 +149,8 @@ struct R14CompassScreen: View {
                 deityBadge(entry, radius: r * 0.74)
             }
             VStack(spacing: 2) {
-                Text("正北").d1Font(10, weight: .semibold).foregroundStyle(Color.r14Gold)
-                Text("固定北向图").d1Font(8).foregroundStyle(theme.ink3)
+                Text("正北").d1SerifFont(20, weight: .semibold).foregroundStyle(Color.r14Gold)
+                Text("固定北向图").d1SerifFont(9).foregroundStyle(theme.ink3)
             }
         }
         .frame(width: size, height: size)

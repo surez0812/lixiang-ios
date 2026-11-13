@@ -38,7 +38,7 @@ struct R14AlmanacScreen: View {
                 }
             }
         }
-        .background(ScreenBackground())
+        .background(theme.bg)
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(.hidden, for: .navigationBar)
@@ -59,7 +59,7 @@ struct R14AlmanacScreen: View {
                 Button { dismiss() } label: {
                     Image(systemName: "chevron.left").d1Font(14, weight: .semibold).foregroundStyle(theme.cream)
                         .frame(width: 40, height: 40)
-                        .background(theme.cream.opacity(0.15), in: Circle())
+                        .r14Glass(Circle())
                 }.buttonStyle(.plain).accessibilityLabel("返回")
                 Text("黄历").d1SerifFont(22, weight: .semibold).foregroundStyle(theme.cream)
                 Spacer()
@@ -76,7 +76,7 @@ struct R14AlmanacScreen: View {
                     .d1Font(11).foregroundStyle(theme.cream.opacity(0.9))
                 if let idx = days.hourIndex, days.shichen.indices.contains(idx) {
                     let h = days.shichen[idx]
-                    Text(verbatim: "\(h.ganZhi)时 \(h.startMinute)–\(h.endMinute)").d1Font(10).foregroundStyle(theme.cream.opacity(0.8))
+                    Text(verbatim: "\(h.ganZhi)时 \(h.startMinute)–\(h.endMinute)").d1SerifFont(12).foregroundStyle(theme.cream.opacity(0.8))
                 }
                 HStack(spacing: 6) {
                     Image(systemName: "sun.max").d1Font(10)
@@ -86,11 +86,11 @@ struct R14AlmanacScreen: View {
                     Image(systemName: "leaf").d1Font(10)
                     Text(verbatim: "佛历纪元 \(fotoYear ?? 2570) 年").d1Font(10)
                 }.foregroundStyle(theme.cream.opacity(0.92))
-                if let festival {
+                if let festival = festival ?? days.almanac.solarTerm {
                     NavigationLink(value: R14Route.folkloreDetail(id: state.contentID(for: days.selectedDate) ?? "xiezao", version: nil)) {
                         HStack(spacing: 6) {
                             Text("当日岁时").d1Font(9).foregroundStyle(theme.cream.opacity(0.8))
-                            Text(festival).d1Font(11, weight: .semibold).foregroundStyle(theme.cream)
+                            Text(festival).d1SerifFont(14, weight: .semibold).foregroundStyle(theme.cream)
                             Text(festivalCategory).d1Font(8).foregroundStyle(theme.cream.opacity(0.75))
                                 .padding(.horizontal, 6).padding(.vertical, 2)
                                 .background(theme.cream.opacity(0.15), in: Capsule())
@@ -196,11 +196,10 @@ struct R14AlmanacScreen: View {
                 VStack(alignment: .leading, spacing: 3) {
                     Text(term).d1Font(12, weight: .semibold).foregroundStyle(theme.ink)
                     if state.showVernacular {
-                        let expl = state.plainLanguage.panelTermMatching(term)?.detailText
-                            ?? state.plainLanguage.panelTermMatching(term)?.zh
-                        if let expl, !expl.isEmpty {
-                            Text(expl).d1Font(10).foregroundStyle(theme.ink2).lineSpacing(2)
-                        }
+                        let matched = state.plainLanguage.panelTermMatching(term)
+                        let expl = matched?.detailText ?? matched?.zh
+                            ?? "「\(term)」为传统黄历用语，是否适合仍需结合现实安排与参与者情况判断。"
+                        Text(expl).d1Font(10).foregroundStyle(theme.ink2).lineSpacing(2)
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)

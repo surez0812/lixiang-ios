@@ -37,7 +37,7 @@ struct R14RootView: View {
         let today = debug.date ?? LocalDate.beijingToday()
         _days = StateObject(wrappedValue: SelectedDayStore(engine: engine, today: today, hourProvider: {
             debug.hour ?? BeijingTime.hour(of: Date())
-        }))
+        }, deferCompute: true))
         #if DEBUG
         let args = ProcessInfo.processInfo.arguments
         if let i = args.firstIndex(of: "-LixiangTab"), i + 1 < args.count, let n = Int(args[i + 1]) { _tab = State(initialValue: n) }
@@ -106,10 +106,13 @@ struct R14RootView: View {
         ZStack {
         ScreenBackground().ignoresSafeArea()
         GeometryReader { geo in
-            let canvas = R14DevicePolicy.canvas(size: geo.size, idiom: UIDevice.current.userInterfaceIdiom)
-            let duoSideBar = canvas == .duoOpenLandscape || (geo.size.width > geo.size.height && abs(geo.size.width - 951) < 24 && abs(geo.size.height - 669) < 24)
+            let isDuo = R14DevicePolicy.isDuo(size: geo.size)
+            let canvas = R14DevicePolicy.canvas(size: geo.size, idiom: UIDevice.current.userInterfaceIdiom, isDuo: isDuo)
+            let duoSideBar = R14DevicePolicy.isDuoOpenLandscape(size: geo.size)
             Group {
-                if duoSideBar {
+                if !days.ready {
+                    R14BootLoadingView()
+                } else if duoSideBar {
                     HStack(spacing: 0) {
                         tabsContent
                         if !hideBar { R14SideTabBar(selected: $tab).padding(.trailing, 8) }
@@ -129,6 +132,7 @@ struct R14RootView: View {
         .environmentObject(days)
         .environmentObject(chrome)
         .onOpenURL { _ in }
+        .task { await days.prepare() }
         .onAppear {
             guard let r = pendingRoute else { return }
             pendingRoute = nil
@@ -223,8 +227,8 @@ struct R14FloatingTabBar: View {
             }
         }
         .padding(.horizontal, 8).padding(.vertical, 6)
-        .background(.ultraThinMaterial, in: Capsule())
-        .overlay(Capsule().strokeBorder(theme.line.opacity(0.6)))
+        .r14Glass(Capsule())
+        .overlay(Capsule().strokeBorder(theme.line.opacity(0.35)))
         .padding(.horizontal, 18)
         .frame(maxWidth: 520)
     }
@@ -246,8 +250,8 @@ struct R14SideTabBar: View {
             }
         }
         .padding(6)
-        .background(.ultraThinMaterial, in: Capsule())
-        .overlay(Capsule().strokeBorder(theme.line.opacity(0.6)))
+        .r14Glass(Capsule())
+        .overlay(Capsule().strokeBorder(theme.line.opacity(0.35)))
     }
 }
 

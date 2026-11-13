@@ -28,6 +28,21 @@ enum R14Canvas: String, CaseIterable {
 enum R14DevicePolicy {
     static let splitViewExcluded = true   // v1.0 不实现 Split View/Stage Manager 特化
 
+    /// Duo 屏幕点尺寸（外屏 466×678 / 内屏 669×951，随姿态互换）；用于设备识别（不依赖 UIDevice）
+    static func isDuo(size: CGSize) -> Bool {
+        let w = size.width, h = size.height
+        let pairs: [(CGFloat, CGFloat)] = [(466, 678), (669, 951)]
+        for (a, b) in pairs {
+            if (abs(w - a) <= 10 && abs(h - b) <= 10) || (abs(w - b) <= 10 && abs(h - a) <= 10) { return true }
+        }
+        return false
+    }
+
+    /// Open Landscape 右侧 rail：Duo 横屏且短边 ≥600（951×669）；Closed Landscape 678×466 仍用底部栏
+    static func isDuoOpenLandscape(size: CGSize) -> Bool {
+        isDuo(size: size) && size.width > size.height && min(size.width, size.height) >= 600
+    }
+
     static func canvas(size: CGSize, idiom: UIUserInterfaceIdiom, isDuo: Bool = false) -> R14Canvas {
         let short = min(size.width, size.height)
         let landscape = size.width > size.height
@@ -44,15 +59,24 @@ enum R14DevicePolicy {
         case .pad:
             return landscape ? .iPadLandscape : .iPadPortrait
         default:
+            if isDuo {
+                if size.width == 669 && size.height == 951 { return .duoOpenPortrait }
+                if size.width == 951 && size.height == 669 { return .duoOpenLandscape }
+                if size.width == 678 && size.height == 466 { return .duoTent }
+                if size.width == 466 && size.height == 678 { return .duoClosedPortrait }
+                return size.width > size.height ? .duoOpenLandscape : .duoOpenPortrait
+            }
             return .phonePortrait   // 普通 iPhone 仅竖屏
         }
     }
 }
 
-/// iPhone 仅 portrait；iPad 全方向。Duo/Split 特化在 R14DevicePolicy 内声明排除。
+/// iPhone 仅 portrait；iPad 全方向；Duo 放行横竖（按屏幕尺寸识别，不误伤普通 iPhone）。
 final class R14AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .pad { return .all }
+        let size = window?.windowScene?.screen.bounds.size ?? UIScreen.main.bounds.size
+        if R14DevicePolicy.isDuo(size: size) { return [.portrait, .landscapeLeft, .landscapeRight] }
         return .portrait
     }
 }

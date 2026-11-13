@@ -6,9 +6,18 @@ import LixiangCalendarCore
 @MainActor
 final class SelectedDayStore: ObservableObject {
     @Published private(set) var selectedDate: LocalDate
-    @Published private(set) var almanac: AlmanacDay
     @Published private(set) var festivals: [String]
     @Published private(set) var hourIndex: Int?
+    @Published private(set) var ready: Bool
+    private var cachedAlmanac: AlmanacDay?
+
+    /// 惰性黄历：deferCompute 启动时不在 init 主线程重算；首次访问才计算。
+    var almanac: AlmanacDay {
+        if let cachedAlmanac { return cachedAlmanac }
+        let a = engine.almanac(selectedDate, hour: hourProvider())
+        cachedAlmanac = a
+        return a
+    }
 
     let engine: any CalendarEngine
     let today: LocalDate
@@ -16,15 +25,39 @@ final class SelectedDayStore: ObservableObject {
 
     init(engine: any CalendarEngine = LunarSwiftEngine(festivalScope: .cn),
          today: LocalDate = .beijingToday(),
-         hourProvider: @escaping () -> Int = { BeijingTime.hour(of: Date()) }) {
+         hourProvider: @escaping () -> Int = { BeijingTime.hour(of: Date()) },
+         deferCompute: Bool = false) {
         self.engine = engine
         self.today = today
         self.hourProvider = hourProvider
         self.selectedDate = today
-        let a = engine.almanac(today, hour: hourProvider())
-        self.almanac = a
-        self.festivals = a.festivals
-        self.hourIndex = a.currentHourIndex
+        if deferCompute {
+            self.ready = false
+            self.festivals = []
+            self.hourIndex = nil
+        } else {
+            let a = engine.almanac(today, hour: hourProvider())
+            self.cachedAlmanac = a
+            self.ready = true
+            self.festivals = a.festivals
+            self.hourIndex = a.currentHourIndex
+        }
+    }
+
+    /// 冷启动：后台准备黄历/时辰/岁时，避免 Duo 首帧白屏；完成后 ready=true。
+    func prepare() async {
+        guard !ready else { return }
+        let date = selectedDate
+        let hour = hourProvider()
+        let engine = self.engine
+        let a = await Task.detached(priority: .userInitiated) {
+            engine.almanac(date, hour: hour)
+        }.value
+        guard selectedDate == date else { return }
+        cachedAlmanac = a
+        festivals = a.festivals
+        hourIndex = a.currentHourIndex
+        ready = true
     }
 
     /// 整组重算：一次 set 会更新 almanac/festivals/hourIndex；页面不得只改标题。
@@ -32,7 +65,7 @@ final class SelectedDayStore: ObservableObject {
         let hour = hourProvider()
         let a = engine.almanac(date, hour: hour)
         selectedDate = date
-        almanac = a
+        cachedAlmanac = a
         festivals = a.festivals
         hourIndex = a.currentHourIndex
     }

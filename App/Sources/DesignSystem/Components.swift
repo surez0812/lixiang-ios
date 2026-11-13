@@ -95,3 +95,22 @@ struct ScreenBackground: View {
             .ignoresSafeArea()
     }
 }
+
+
+/// R14 Liquid Glass 胶囊（导航层专用；非内容）。iOS 26+ 真玻璃，旧系统 ultraThinMaterial 回退。
+struct R14GlassBackground: ViewModifier {
+    var shape: AnyShape = AnyShape(Capsule())
+    func body(content: Content) -> some View {
+        if #available(iOS 26.0, *) {
+            content.glassEffect(.regular, in: shape)
+        } else {
+            content.background(.ultraThinMaterial, in: shape)
+        }
+    }
+}
+
+extension View {
+    func r14Glass<S: Shape>(_ shape: S = Capsule()) -> some View {
+        modifier(R14GlassBackground(shape: AnyShape(shape)))
+    }
+}
