@@ -42,7 +42,7 @@ struct R14HomeScreen: View {
                 if let badge = SolarTermPentad.badge(for: days.selectedDate, engine: days.engine) {
                     Text(badge).d1Font(10, weight: .semibold).foregroundStyle(theme.cream)
                         .padding(.horizontal, 10).padding(.vertical, 5)
-                        .background(Color(hex: 0xB23A2A), in: Capsule()).padding(12)
+                        .background(Color.r14Red, in: Capsule()).padding(12)
                 }
             }
             VStack(alignment: .leading, spacing: 5) {
@@ -98,7 +98,7 @@ struct R14HomeScreen: View {
             }
             .padding(14)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(LinearGradient(colors: [Color(hex: 0xB23A2A), Color(hex: 0x8B2A1A)], startPoint: .topLeading, endPoint: .bottomTrailing), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+            .background(LinearGradient(colors: [Color.r14Red, Color.r14RedDeep], startPoint: .topLeading, endPoint: .bottomTrailing), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
         }.buttonStyle(.plain)
     }
 
@@ -130,7 +130,7 @@ struct R14HomeScreen: View {
                 HStack {
                     Text("全项宜忌 · 十二时辰 · 罗盘").d1Font(10).foregroundStyle(theme.ink2)
                     Spacer()
-                    Text("展开今日 ›").d1Font(10, weight: .semibold).foregroundStyle(Color(hex: 0xB23A2A))
+                    Text("展开今日 ›").d1Font(10, weight: .semibold).foregroundStyle(Color.r14Red)
                 }.frame(minHeight: 44)
             }
             .padding(16)
@@ -176,11 +176,11 @@ struct R14HomeScreen: View {
                 Text("\(d.day)").d1Font(12, weight: isSel ? .semibold : .regular)
                     .foregroundStyle(isSel ? theme.cream : (inMonth ? theme.ink : theme.ink3))
                     .frame(width: 28, height: 24)
-                    .background(isSel ? Color(hex: 0xB23A2A) : .clear, in: Circle())
+                    .background(isSel ? Color.r14Red : .clear, in: Circle())
                 Text(lunarLabel(d)).d1Font(7.5).foregroundStyle(isSel ? theme.cream : theme.ink3).lineLimit(1)
                 HStack(spacing: 2) {
                     if hasSolarTerm(d) { Circle().fill(theme.solarTermText).frame(width: 3, height: 3) }
-                    if !festivals(d).isEmpty { Circle().fill(Color(hex: 0xB23A2A)).frame(width: 3, height: 3) }
+                    if !festivals(d).isEmpty { Circle().fill(Color.r14Red).frame(width: 3, height: 3) }
                     if hasAnniversary(d) { Circle().fill(theme.accent).frame(width: 3, height: 3) }
                 }.frame(height: 4)
             }

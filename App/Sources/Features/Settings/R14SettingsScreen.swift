@@ -58,7 +58,7 @@ struct R14SettingsScreen: View {
         .padding(20)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
-            LinearGradient(colors: [Color(hex: 0x8E2D1C), Color(hex: 0xA63D26)], startPoint: .topLeading, endPoint: .bottomTrailing),
+            LinearGradient(colors: [Color.r14RedDeep, Color.r14Red], startPoint: .topLeading, endPoint: .bottomTrailing),
             in: RoundedRectangle(cornerRadius: 24, style: .continuous)
         )
     }

@@ -32,7 +32,7 @@ struct DailyVerseSampleScreen: View {
                     let v = verses[index]
                     Text(quoteAttributed(v.quote))
                         .d1SerifFont(30, weight: .semibold)
-                        .foregroundStyle(Color(hex: 0xB23A2A))
+                        .foregroundStyle(Color.r14Red)
                     Text(v.source).d1Font(12).foregroundStyle(theme.ink3).lineLimit(1)
                     Divider().overlay(theme.line)
                     Text(v.title).d1Font(19, weight: .semibold).foregroundStyle(theme.ink).lineLimit(2)
@@ -111,7 +111,7 @@ private struct VerseShareCard: View {
         VStack(alignment: .leading, spacing: 9) {
             Text("历象").d1SerifFont(18, weight: .semibold).foregroundStyle(theme.accentStrong)
             Text(v.quote).d1SerifFont(24, weight: .semibold)
-                .foregroundStyle(Color(hex: 0xB23A2A)).lineSpacing(5)
+                .foregroundStyle(Color.r14Red).lineSpacing(5)
             Text(v.source).d1Font(10).foregroundStyle(theme.ink3)
             Divider().overlay(theme.line)
             Text(v.title).d1Font(15, weight: .semibold).foregroundStyle(theme.ink).lineLimit(2)

@@ -66,7 +66,7 @@ struct R14CompassScreen: View {
             Text(title).d1Font(11, weight: .semibold)
                 .foregroundStyle(active ? theme.cream : theme.ink2)
                 .padding(.horizontal, 16).frame(minHeight: 36)
-                .background(active ? Color(hex: 0xB23A2A) : theme.paper, in: Capsule())
+                .background(active ? Color.r14Red : theme.paper, in: Capsule())
                 .overlay(Capsule().strokeBorder(theme.line.opacity(0.6)))
         }.buttonStyle(.plain)
     }
@@ -77,7 +77,7 @@ struct R14CompassScreen: View {
         return ZStack {
             Image("compass-dial").resizable().scaledToFit().frame(width: size, height: size)
                 .clipShape(Circle())
-                .overlay(Circle().strokeBorder(Color(hex: 0x9C7A4B).opacity(0.5), lineWidth: 1))
+                .overlay(Circle().strokeBorder(Color.r14Gold.opacity(0.5), lineWidth: 1))
             if let sha = currentSha {
                 shaIndicator(direction: sha, radius: r * 0.62)
             }
@@ -85,7 +85,7 @@ struct R14CompassScreen: View {
                 deityBadge(entry, radius: r * 0.74)
             }
             VStack(spacing: 2) {
-                Text("正北").d1Font(10, weight: .semibold).foregroundStyle(Color(hex: 0x9C7A4B))
+                Text("正北").d1Font(10, weight: .semibold).foregroundStyle(Color.r14Gold)
                 Text("固定北向图").d1Font(8).foregroundStyle(theme.ink3)
             }
         }
@@ -101,15 +101,15 @@ struct R14CompassScreen: View {
         }
         .padding(.horizontal, 5).padding(.vertical, 3)
         .background(theme.cream, in: Capsule())
-        .overlay(Capsule().strokeBorder(Color(hex: 0x9C7A4B).opacity(0.6)))
+        .overlay(Capsule().strokeBorder(Color.r14Gold.opacity(0.6)))
         .offset(x: pt.x, y: pt.y)
     }
 
     private func shaIndicator(direction: CompassDirection, radius: CGFloat) -> some View {
         let pt = point(for: direction.angleDegrees, radius: radius)
         return VStack(spacing: 0) {
-            Image(systemName: "arrowtriangle.down.fill").d1Font(10).foregroundStyle(Color(hex: 0xB23A2A))
-            Text("煞 \(direction.rawValue)").d1Font(8, weight: .semibold).foregroundStyle(Color(hex: 0xB23A2A))
+            Image(systemName: "arrowtriangle.down.fill").d1Font(10).foregroundStyle(Color.r14Red)
+            Text("煞 \(direction.rawValue)").d1Font(8, weight: .semibold).foregroundStyle(Color.r14Red)
         }.offset(x: pt.x, y: pt.y)
     }
 
@@ -123,10 +123,10 @@ struct R14CompassScreen: View {
         let cols = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
         return LazyVGrid(columns: cols, alignment: .leading, spacing: 6) {
             ForEach(layout.present, id: \.deity) { e in
-                HStack(spacing: 5) { Circle().fill(Color(hex: 0x9C7A4B)).frame(width: 6, height: 6); Text(e.deity.title).d1Font(11, weight: .semibold).foregroundStyle(theme.ink); Text(e.direction.rawValue).d1Font(10).foregroundStyle(theme.ink2) }
+                HStack(spacing: 5) { Circle().fill(Color.r14Gold).frame(width: 6, height: 6); Text(e.deity.title).d1Font(11, weight: .semibold).foregroundStyle(theme.ink); Text(e.direction.rawValue).d1Font(10).foregroundStyle(theme.ink2) }
             }
             if let sha = currentSha {
-                HStack(spacing: 5) { Circle().fill(Color(hex: 0xB23A2A)).frame(width: 6, height: 6); Text("煞方").d1Font(11, weight: .semibold).foregroundStyle(theme.ink); Text(sha.rawValue).d1Font(10).foregroundStyle(theme.ink2) }
+                HStack(spacing: 5) { Circle().fill(Color.r14Red).frame(width: 6, height: 6); Text("煞方").d1Font(11, weight: .semibold).foregroundStyle(theme.ink); Text(sha.rawValue).d1Font(10).foregroundStyle(theme.ink2) }
             }
         }
     }

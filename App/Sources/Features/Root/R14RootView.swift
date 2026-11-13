@@ -207,12 +207,12 @@ struct R14FloatingTabBar: View {
                     .background(selected == idx ? theme.accent.opacity(0.12) : .clear, in: Capsule())
                     .overlay(alignment: .topTrailing) {
                         if idx == 1 && folkloreUnread {
-                            Circle().fill(Color(hex: 0xB23A2A)).frame(width: 6, height: 6).padding(.top, 4).padding(.trailing, 18)
+                            Circle().fill(Color.r14Red).frame(width: 6, height: 6).padding(.top, 4).padding(.trailing, 18)
                         }
                         if idx == 3, let badge = countdownBadge {
                             Text(badge).d1Font(8, weight: .bold).foregroundStyle(.white)
                                 .frame(minWidth: 16, minHeight: 16)
-                                .background(Color(hex: 0xB23A2A), in: Capsule())
+                                .background(Color.r14Red, in: Capsule())
                                 .padding(.top, 2).padding(.trailing, 12)
                         }
                     }

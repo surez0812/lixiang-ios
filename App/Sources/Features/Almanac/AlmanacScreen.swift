@@ -59,7 +59,7 @@ struct R14AlmanacScreen: View {
                 Text("黄历").d1SerifFont(22, weight: .semibold).foregroundStyle(theme.cream)
                 Spacer()
                 NavigationLink(value: R14Route.compass(days.selectedDate, hour: days.hourIndex)) {
-                    Text("值神罗盘").d1Font(11, weight: .semibold).foregroundStyle(Color(hex: 0xB23A2A))
+                    Text("值神罗盘").d1Font(11, weight: .semibold).foregroundStyle(Color.r14Red)
                         .padding(.horizontal, 12).frame(minHeight: 40)
                         .background(theme.cream, in: Capsule())
                 }.buttonStyle(.plain)
@@ -111,7 +111,7 @@ struct R14AlmanacScreen: View {
             }
         }
         .padding(16)
-        .background(LinearGradient(colors: [Color(hex: 0xB23A2A), Color(hex: 0x8B2A1A)], startPoint: .topLeading, endPoint: .bottomTrailing), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .background(LinearGradient(colors: [Color.r14Red, Color.r14RedDeep], startPoint: .topLeading, endPoint: .bottomTrailing), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
     }
 
     // MARK: 右列：宜忌卡 + 时辰
@@ -127,9 +127,9 @@ struct R14AlmanacScreen: View {
             HStack {
                 Text("宜忌").d1SerifFont(20, weight: .semibold).foregroundStyle(theme.ink)
                 Spacer()
-                Text("逐项可读").d1Font(9, weight: .semibold).foregroundStyle(Color(hex: 0xB23A2A))
+                Text("逐项可读").d1Font(9, weight: .semibold).foregroundStyle(Color.r14Red)
                     .padding(.horizontal, 8).padding(.vertical, 4)
-                    .overlay(Capsule().strokeBorder(Color(hex: 0xB23A2A).opacity(0.5)))
+                    .overlay(Capsule().strokeBorder(Color.r14Red.opacity(0.5)))
             }
             Toggle(isOn: $state.showVernacular) {
                 VStack(alignment: .leading, spacing: 1) {

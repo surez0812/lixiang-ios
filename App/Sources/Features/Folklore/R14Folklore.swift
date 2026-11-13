@@ -79,7 +79,7 @@ struct R14FolkloreScreen: View {
         }
         .padding(20)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(LinearGradient(colors: [Color(hex: 0x8E2D1C), Color(hex: 0xA63D26)], startPoint: .topLeading, endPoint: .bottomTrailing), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .background(LinearGradient(colors: [Color.r14RedDeep, Color.r14Red], startPoint: .topLeading, endPoint: .bottomTrailing), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
     }
 
     private var chips: some View {

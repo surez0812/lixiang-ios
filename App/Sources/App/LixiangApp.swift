@@ -13,11 +13,19 @@ struct LixiangApp: App {
 
     var body: some Scene {
         WindowGroup {
-            R14RootView()
+            D1ThemedRoot()
                 .environmentObject(state)
                 .preferredColorScheme(state.theme.colorScheme)
-                .environment(\.d1, D1Theme.resolve(state.theme.colorScheme ?? .light))
         }
+    }
+}
+
+/// 让 D1 token 跟随实际 colorScheme（system 模式时也能正确取深色，而不是恒定 light）。
+private struct D1ThemedRoot: View {
+    @Environment(\.colorScheme) private var scheme
+    var body: some View {
+        R14RootView()
+            .environment(\.d1, D1Theme.resolve(scheme))
     }
 }
 

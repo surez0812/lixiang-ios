@@ -41,14 +41,14 @@ struct D1Theme {
     var deityYin: Color
 
     static let light = D1Theme(
-        bg: Color(hex: 0xF7EBDC), bg1: Color(hex: 0xF7EBDC), bg2: Color(hex: 0xF1C795), bg3: Color(hex: 0xEBB878),
-        paper: Color(hex: 0xFFF8EC), red: Color(hex: 0xC0452C), amber: Color(hex: 0xE8A34B), cream: Color(hex: 0xFFF1D8),
-        quote1: Color(hex: 0xC0452C), quote2: Color(hex: 0xE07A3C),
-        card: Color(hex: 0xFFF8EC), soft: Color(hex: 0xF6E0C2),
-        ink: Color(hex: 0x3A2417), ink2: Color(hex: 0x7A4F35), ink3: Color(hex: 0xA67B58),
-        line: Color(hex: 0xE7C9A4), accent: Color(hex: 0xE07A3C), accentStrong: Color(hex: 0xC0452C),
-        jade: Color(hex: 0x93A98E), onAccent: .white,
-        jiChip: Color(hex: 0x7E6A58), onJiChip: .white,
+        bg: Color(hex: 0xFFF8EC), bg1: Color(hex: 0xFFF8EC), bg2: Color(hex: 0xF6E8D1), bg3: Color(hex: 0xEAD6B8),
+        paper: Color(hex: 0xFFFCF5), red: Color(hex: 0xA63D26), amber: Color(hex: 0xB3863D), cream: Color(hex: 0xFFFCF5),
+        quote1: Color(hex: 0xA63D26), quote2: Color(hex: 0xB3863D),
+        card: Color(hex: 0xFFFCF5), soft: Color(hex: 0xF6E8D1),
+        ink: Color(hex: 0x35291F), ink2: Color(hex: 0x79634D), ink3: Color(hex: 0x9A8570),
+        line: Color(hex: 0xE8D6BA), accent: Color(hex: 0xA63D26), accentStrong: Color(hex: 0xA63D26),
+        jade: Color(hex: 0x8FA58A), onAccent: .white,
+        jiChip: Color(hex: 0x8A7663), onJiChip: .white,
         yiText: Color(hex: 0x3F5A43), yiBg: Color(hex: 0xE7EFE3),
         jiText: Color(hex: 0x8A3E26), jiBg: Color(hex: 0xF6E2D8),
         solarTermText: Color(hex: 0x5E7358), festivalText: Color(hex: 0xA85E3E),
@@ -56,14 +56,14 @@ struct D1Theme {
         deityYang: Color(hex: 0x8FA3B8), deityYin: Color(hex: 0xB08CA8)
     )
     static let dark = D1Theme(
-        bg: Color(hex: 0x241710), bg1: Color(hex: 0x241710), bg2: Color(hex: 0x1D110C), bg3: Color(hex: 0x160D09),
-        paper: Color(hex: 0x2F2016), red: Color(hex: 0xF08A5C), amber: Color(hex: 0xF0B25C), cream: Color(hex: 0xFFEED4),
-        quote1: Color(hex: 0x731C0D), quote2: Color(hex: 0x8B2A1A),
-        card: Color(hex: 0x2F2016), soft: Color(hex: 0x3A281B),
-        ink: Color(hex: 0xF7E6CE), ink2: Color(hex: 0xD9B794), ink3: Color(hex: 0xB08A68),
-        line: Color(hex: 0x4A3322), accent: Color(hex: 0xFF9A5C), accentStrong: Color(hex: 0xF08A5C),
-        jade: Color(hex: 0xA9BCA3), onAccent: Color(hex: 0x241C16),
-        jiChip: Color(hex: 0xC7B5A2), onJiChip: Color(hex: 0x241C16),
+        bg: Color(hex: 0x211D19), bg1: Color(hex: 0x211D19), bg2: Color(hex: 0x403326), bg3: Color(hex: 0x2A231C),
+        paper: Color(hex: 0x30281F), red: Color(hex: 0xFFAC88), amber: Color(hex: 0xD9B675), cream: Color(hex: 0xF8ECD8),
+        quote1: Color(hex: 0xFFAC88), quote2: Color(hex: 0xD9B675),
+        card: Color(hex: 0x30281F), soft: Color(hex: 0x403326),
+        ink: Color(hex: 0xF8ECD8), ink2: Color(hex: 0xC9B69C), ink3: Color(hex: 0xA58F76),
+        line: Color(hex: 0x69523B), accent: Color(hex: 0xFFAC88), accentStrong: Color(hex: 0xFFAC88),
+        jade: Color(hex: 0xA9BCA3), onAccent: Color(hex: 0x211D19),
+        jiChip: Color(hex: 0xC7B5A2), onJiChip: Color(hex: 0x211D19),
         yiText: Color(hex: 0xC9DCC3), yiBg: Color(hex: 0x33402F),
         jiText: Color(hex: 0xF0B49A), jiBg: Color(hex: 0x3F2A22),
         solarTermText: Color(hex: 0xA9BCA3), festivalText: Color(hex: 0xE8A886),
@@ -99,5 +99,29 @@ extension Color {
                   green: Double((hex >> 8) & 0xFF) / 255,
                   blue: Double(hex & 0xFF) / 255,
                   opacity: 1)
+    }
+}
+
+// R14 精确色板（tokens.json）；按系统浅/深动态解析，避免视图里散落旧色值。
+extension Color {
+    static let r14Red = Color(uiColor: UIColor { trait in
+        trait.userInterfaceStyle == .dark ? UIColor.r14(0xFFAC88) : UIColor.r14(0xA63D26)
+    })
+    static let r14RedDeep = Color(uiColor: UIColor { trait in
+        trait.userInterfaceStyle == .dark ? UIColor.r14(0x7A2A1A) : UIColor.r14(0x8E2D1C)
+    })
+    static let r14Gold = Color(uiColor: UIColor { trait in
+        trait.userInterfaceStyle == .dark ? UIColor.r14(0xD9B675) : UIColor.r14(0xB3863D)
+    })
+    static let r14Ink = Color(uiColor: UIColor { trait in
+        trait.userInterfaceStyle == .dark ? UIColor.r14(0xF8ECD8) : UIColor.r14(0x35291F)
+    })
+}
+
+private extension UIColor {
+    static func r14(_ hex: UInt32) -> UIColor {
+        UIColor(red: CGFloat((hex >> 16) & 0xFF) / 255,
+                green: CGFloat((hex >> 8) & 0xFF) / 255,
+                blue: CGFloat(hex & 0xFF) / 255, alpha: 1)
     }
 }

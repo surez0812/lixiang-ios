@@ -1,6 +1,45 @@
 import UIKit
 import SwiftUI
 
+/// 字体解析：R14 设计期望宋体（Songti SC）。iOS 系统未必内置该字体，
+/// 因此先按 PostScript 名探测，缺失时回退系统 serif，并在 DEBUG 输可用性。
+enum D1Typography {
+    static let songtiPostScriptNames = [
+        "STSongti-SC-Bold", "STSongti-SC-Regular", "STSongti-SC-Light",
+        "STSongtiSC-Bold", "STSongtiSC-Regular", "Songti SC"
+    ]
+    static let kaitiPostScriptNames = [
+        "Kaiti SC", "KaitiSC-Regular", "STKaiti", "STKaitiSC", "KaiTi", "Kaiti"
+    ]
+
+    static func availableFontName(from candidates: [String]) -> String? {
+        candidates.first { UIFont(name: $0, size: 17) != nil }
+    }
+
+    static func serifFont(size: CGFloat, weight: Font.Weight) -> Font {
+        if let name = availableFontName(from: songtiPostScriptNames) {
+            return .custom(name, size: size).weight(weight)
+        }
+        return .system(size: size, weight: weight, design: .serif)
+    }
+
+    static func kaitiFont(size: CGFloat, weight: Font.Weight) -> Font {
+        if let name = availableFontName(from: kaitiPostScriptNames) {
+            return .custom(name, size: size).weight(weight)
+        }
+        return .system(size: size, weight: weight, design: .serif)
+    }
+
+    static func availabilityReport() -> String {
+        let families = UIFont.familyNames
+            .filter { $0.localizedCaseInsensitiveContains("songti") || $0.localizedCaseInsensitiveContains("kaiti") || $0.localizedCaseInsensitiveContains("kai") }
+            .sorted()
+        let lines = families.map { fam in "\(fam): \(UIFont.fontNames(forFamilyName: fam).joined(separator: ","))" }
+        let chosen = availableFontName(from: songtiPostScriptNames) ?? "fallback:system-serif"
+        return "D1Typography fonts\n" + lines.joined(separator: "\n") + "\nsongti_chosen=\(chosen)"
+    }
+}
+
 /// M-1 字号体系：语义字阶 + Dynamic Type（@ScaledMetric），标题类上限 1.4×。
 struct D1FontModifier: ViewModifier {
     @ScaledMetric private var scaled: CGFloat
@@ -18,7 +57,11 @@ struct D1FontModifier: ViewModifier {
     }
 
     func body(content: Content) -> some View {
-        content.font(.system(size: min(scaled, base * maxScale), weight: weight, design: design))
+        let size = min(scaled, base * maxScale)
+        if design == .serif {
+            return content.font(D1Typography.serifFont(size: size, weight: weight))
+        }
+        return content.font(.system(size: size, weight: weight, design: design))
     }
 }
 
@@ -48,7 +91,7 @@ extension Text {
         font(.system(size: size, weight: weight))
     }
     func d1SerifFont(_ size: CGFloat, weight: Font.Weight = .regular) -> Text {
-        font(.system(size: size, weight: weight, design: .serif))
+        font(D1Typography.serifFont(size: size, weight: weight))
     }
 }
 
@@ -64,14 +107,6 @@ struct D1KaitiModifier: ViewModifier {
     }
     func body(content: Content) -> some View {
         let size = min(scaled, base * 1.2)
-        let candidates = ["Kaiti SC", "KaitiSC", "STKaiti", "STKaitiSC", "KaiTi", "Kaiti"]
-        var resolved: String? = candidates.first(where: { UIFont(name: $0, size: size) != nil })
-        if resolved == nil,
-           let family = UIFont.familyNames.first(where: { $0.localizedCaseInsensitiveContains("Kaiti") || $0.localizedCaseInsensitiveContains("Kai") }),
-           let name = UIFont.fontNames(forFamilyName: family).first {
-            resolved = name
-        }
-        let kaiti: Font? = resolved.map { Font.custom($0, size: size) }
-        return content.font(kaiti.map { $0.weight(weight) } ?? .system(size: size, weight: weight, design: .serif))
+        return content.font(D1Typography.kaitiFont(size: size, weight: weight))
     }
 }

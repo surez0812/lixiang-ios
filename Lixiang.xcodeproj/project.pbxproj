@@ -97,6 +97,7 @@
 		9B8A6E3B32856FDD7A9CE62D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E1CACF3D8664353830985 /* HomeScreen.swift */; };
 		A1211486934ACFD13BA23076 /* HeadingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687253ACB0BDCBD36126D15B /* HeadingProvider.swift */; };
 		A6F73ACA8BC0B17CB711BEF6 /* ApprovedFortuneCore.js in Resources */ = {isa = PBXBuildFile; fileRef = 053D711052530830581FB346 /* ApprovedFortuneCore.js */; };
+		A973D52E2235B2F7F414AF68 /* FontAvailabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722116A2396BCC3C9567E355 /* FontAvailabilityTests.swift */; };
 		ADA6AB739A8E7012918F9FB6 /* SelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC3B77617C8ADADAE209B2 /* SelectionScreen.swift */; };
 		AE756168FD87DC8D978F2005 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788133271B6E5AF4FAB99C4D /* AppState.swift */; };
 		B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA72858D41F13FE75567AF /* SettingsScreen.swift */; };
@@ -233,6 +234,7 @@
 		6BA7F1CFC0ABE2C986E68A4C /* term-lidong-dark.webp */ = {isa = PBXFileReference; path = "term-lidong-dark.webp"; sourceTree = "<group>"; };
 		6D5FAB3FD05EDDE5ACAA2B79 /* SourceLicenseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLicenseScreen.swift; sourceTree = "<group>"; };
 		6F33B4CF88B56F5ECE472BFE /* term-dashu-light.webp */ = {isa = PBXFileReference; path = "term-dashu-light.webp"; sourceTree = "<group>"; };
+		722116A2396BCC3C9567E355 /* FontAvailabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAvailabilityTests.swift; sourceTree = "<group>"; };
 		7265B869FEE42BA26C98C0BE /* term-dahan-light.webp */ = {isa = PBXFileReference; path = "term-dahan-light.webp"; sourceTree = "<group>"; };
 		72CB69DB4CB6E4BFBB763053 /* R14SelectedDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14SelectedDayTests.swift; sourceTree = "<group>"; };
 		7407A833BE0DB0371BD5A3FF /* LegacyRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyRoute.swift; sourceTree = "<group>"; };
@@ -698,6 +700,7 @@
 				DE6427911F276D30E1BE1749 /* HomeAlmanacCompass */,
 				E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */,
 				A9A2E2EB5A29CCA23BD88DF9 /* FolkloreUnreadStoreTests.swift */,
+				722116A2396BCC3C9567E355 /* FontAvailabilityTests.swift */,
 				DCCA767FE8687948B8B5D0DF /* FortuneEngineTests.swift */,
 				72CB69DB4CB6E4BFBB763053 /* R14SelectedDayTests.swift */,
 				ED2285EB6A83A891427ED1AF /* SelectionEngineTests.swift */,
@@ -1048,6 +1051,7 @@
 			files = (
 				146166B7CABEC8AF3DB42FE9 /* CountdownLogicTests.swift in Sources */,
 				7511252EC8B5EA2A1FD87190 /* FolkloreUnreadStoreTests.swift in Sources */,
+				A973D52E2235B2F7F414AF68 /* FontAvailabilityTests.swift in Sources */,
 				5A6C298813051CC13C5D3BC5 /* FortuneEngineTests.swift in Sources */,
 				DAFC6433507532C92327196F /* R14HomeAlmanacCompassTests.swift in Sources */,
 				3AC84F2AB6C0868251A4DCF3 /* R14SelectedDayTests.swift in Sources */,
