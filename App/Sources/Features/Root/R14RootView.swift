@@ -28,6 +28,7 @@ struct R14RootView: View {
     @State private var tab = 0
     @State private var paths = [NavigationPath](repeating: NavigationPath(), count: 5)
     @State private var pendingRoute: R14Route? = nil
+    @State private var pendingTab = 0
     @State private var debugTypeScale: DynamicTypeSize? = nil
 
     init() {
@@ -71,6 +72,32 @@ struct R14RootView: View {
             }
             _pendingRoute = State(initialValue: r)
         }
+        if let link = debug.deepLink, let url = URL(string: link) {
+            let parts = url.pathComponents.filter { $0 != "/" }
+            var target = 0
+            var r: R14Route = .home
+            switch url.host {
+            case "ceremony", "folklore":
+                target = 1; r = .folkloreDetail(id: parts.first ?? "xiezao", version: nil)
+            case "almanac":
+                target = 0; r = .almanac(Self.parseDate(parts.first) ?? today)
+            case "compass":
+                target = 0; r = .compass(Self.parseDate(parts.first) ?? today, hour: debug.hour)
+            case "countdown":
+                target = 3; r = .countdownDetail(id: parts.first)
+            case "daily":
+                target = 0; r = .daily
+            case "selection":
+                target = 2; r = .selection
+            case "settings":
+                target = 4; r = .settings
+            default:
+                target = 0; r = .home
+            }
+            _tab = State(initialValue: target)
+            _pendingTab = State(initialValue: target)
+            _pendingRoute = State(initialValue: r)
+        }
         #endif
     }
 
@@ -105,10 +132,18 @@ struct R14RootView: View {
             guard let r = pendingRoute else { return }
             pendingRoute = nil
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                var p = paths; p[tab].append(r); paths = p
+                var p = paths; p[pendingTab].append(r); paths = p
             }
         }
     }
+
+    #if DEBUG
+    private static func parseDate(_ s: String?) -> LocalDate? {
+        guard let s else { return nil }
+        let p = s.split(separator: "-").compactMap { Int($0) }
+        return p.count == 3 ? LocalDate(p[0], p[1], p[2]) : nil
+    }
+    #endif
 
     private var hideBar: Bool {
         // pushed 页隐藏 TabBar（各 Tab 栈 path 非空）
