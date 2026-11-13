@@ -36,7 +36,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>用于罗盘指向真北（仅使用期间；拒绝则使用磁北或北朝上）。</string>
+	<string>用于显示本地天气与罗盘指向（仅使用期间；拒绝不影响其他功能）。</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

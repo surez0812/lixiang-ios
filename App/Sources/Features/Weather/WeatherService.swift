@@ -41,11 +41,28 @@ final class WeatherService: ObservableObject {
         }
     }
 
-    private static func fetch() async throws -> WeatherSnapshot {
+    func refresh(force: Bool = false, coordinate lat: Double, lng: Double, city: String?) async {
+        if let cached = loadCache(), !force, Date().timeIntervalSince(cached.updatedAt) < ttl {
+            state = .loaded(cached, cached: true); return
+        }
+        state = .loading
+        do {
+            let snap = try await Self.fetch(lat: lat, lng: lng, city: city)
+            saveCache(snap)
+            state = .loaded(snap, cached: false)
+        } catch {
+            if let cached = loadCache() { state = .loaded(cached, cached: true) }
+            else { state = .failed("天气暂不可用，请重试") }
+        }
+    }
+
+    private static func fetch() async throws -> WeatherSnapshot { try await fetch(lat: 31.2304, lng: 121.4737, city: "上海") }
+
+    private static func fetch(lat: Double, lng: Double, city: String?) async throws -> WeatherSnapshot {
         var comps = URLComponents(string: "https://api.open-meteo.com/v1/forecast")!
         comps.queryItems = [
-            .init(name: "latitude", value: "31.2304"),
-            .init(name: "longitude", value: "121.4737"),
+            .init(name: "latitude", value: String(lat)),
+            .init(name: "longitude", value: String(lng)),
             .init(name: "current", value: "temperature_2m,weather_code"),
             .init(name: "timezone", value: "Asia/Shanghai")
         ]
@@ -54,7 +71,7 @@ final class WeatherService: ObservableObject {
         guard let http = resp as? HTTPURLResponse, http.statusCode == 200 else { throw URLError(.badServerResponse) }
         struct R: Decodable { struct C: Decodable { let temperature_2m: Double; let weather_code: Int }; let current: C }
         let r = try JSONDecoder().decode(R.self, from: data)
-        return WeatherSnapshot(temperature: r.current.temperature_2m, code: r.current.weather_code, updatedAt: Date(), city: "上海")
+        return WeatherSnapshot(temperature: r.current.temperature_2m, code: r.current.weather_code, updatedAt: Date(), city: city ?? "当前位置")
     }
 
     /// 看门狗：10s 仍 loading → 失败态（缓存优先），避免无限 loading

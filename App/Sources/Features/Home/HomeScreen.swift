@@ -115,17 +115,7 @@ struct R14HomeScreen: View {
             }
         }.buttonStyle(.plain)
     }
-    private var weatherCard: some View {
-        D1Card(padding: 12) {
-            VStack(alignment: .leading, spacing: 6) {
-                HStack(spacing: 8) { Image(systemName: "cloud.sun.fill").d1Font(22).foregroundStyle(theme.accentStrong)
-                    Text("今日天气").d1Font(14, weight: .semibold).foregroundStyle(theme.ink) }
-                Button("开启定位") { }.d1Font(11, weight: .semibold).foregroundStyle(theme.ink)
-                    .frame(maxWidth: .infinity, minHeight: 44)
-                    .overlay(RoundedRectangle(cornerRadius: 22).strokeBorder(theme.line, lineWidth: 1))
-            }.frame(maxWidth: .infinity, minHeight: 98, alignment: .topLeading)
-        }
-    }
+    private var weatherCard: some View { HomeWeatherCard() }
 
     // MARK: 今日黄历卡
     private var almanacCard: some View {
