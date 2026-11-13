@@ -32,11 +32,25 @@
 | R16 | 真实数据/完整签库/ContentVersion；HTML fixture/10 样签/示意权限不冒充实现 | 数据来源表+测试 |
 | R17 | 188 状态矩阵逐项 PASS/FAIL/NOT RUN（区分真机/模拟器/设计） | QA 矩阵+截图/录屏 |
 
-## 2. 页面 → 状态（共 188，详见 `screens.json`）
-- home 17；almanac 30（含 plain-off/previous/next/winter/no-festival/长图）；compass 24（含 hour）；
-  daily 13（含长图）；fortune 24（含 result）；folklore 27；folklore-detail 12（含 today/offline/长图）；
-  selection 12；countdown 29；countdown-detail 12（含 new/preprompt/system-prompt/allowed/denied）；
-  settings 12。实际上表为 9 个基名，`folklore-detail`/`countdown-detail` 为第 10/11 类。
+## 2. 页面 → 状态（共 188，逐项以 `screens.json` 为准）
+按完整 page 字段分组（11 类，不合并前缀、不重复计详情页）：
+
+| page | 状态数 |
+|---|---:|
+| home | 17 |
+| almanac | 30 |
+| compass | 24 |
+| daily | 13 |
+| fortune | 24 |
+| folklore | 12 |
+| folklore-detail | 15 |
+| selection | 12 |
+| countdown | 12 |
+| countdown-detail | 17 |
+| settings | 12 |
+| **合计** | **188** |
+
+QA 矩阵必须从 `screens.json` 逐条生成（按 page/mode/state/file 唯一行），不得手工聚合或按前缀合并。
 
 ## 3. 阶段与里程碑
 | 阶段 | 内容 | 退出条件 |
