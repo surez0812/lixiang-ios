@@ -1,0 +1,1882 @@
+[
+  {
+    "page": "home",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "home-phone-light",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "home-phone-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "home-ipad-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "home-ipad-portrait-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "home-ipad-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "home-ipad-landscape-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "home-duo-closed-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "home-duo-closed-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "home-duo-tent",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "home-duo-open-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "home-duo-open-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "home-duo-tabletop",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "almanac-phone-light",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "almanac-phone-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "almanac-ipad-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "almanac-ipad-portrait-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "almanac-ipad-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "almanac-ipad-landscape-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "almanac-duo-closed-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "almanac-duo-closed-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "almanac-duo-tent",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "almanac-duo-open-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "almanac-duo-open-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "almanac-duo-tabletop",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "folklore-phone-light",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "folklore-phone-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "folklore-ipad-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "folklore-ipad-portrait-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "folklore-ipad-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "folklore-ipad-landscape-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "folklore-duo-closed-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "folklore-duo-closed-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "folklore-duo-tent",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "folklore-duo-open-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "folklore-duo-open-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "folklore-duo-tabletop",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "countdown-phone-light",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "countdown-phone-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "countdown-ipad-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "countdown-ipad-portrait-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "countdown-ipad-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "countdown-ipad-landscape-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "countdown-duo-closed-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "countdown-duo-closed-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "countdown-duo-tent",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "countdown-duo-open-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "countdown-duo-open-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "countdown-duo-tabletop",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "settings",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "settings-phone-light",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "settings",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "settings-phone-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "settings",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "settings-ipad-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "settings",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "settings-ipad-portrait-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "settings",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "settings-ipad-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "settings",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "settings-ipad-landscape-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "settings",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "settings-duo-closed-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "settings",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "settings-duo-closed-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "settings",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "settings-duo-tent",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "settings",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "settings-duo-open-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "settings",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "settings-duo-open-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "settings",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "settings-duo-tabletop",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "selection",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "selection-phone-light",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "selection",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "selection-phone-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "selection",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "selection-ipad-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "selection",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "selection-ipad-portrait-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "selection",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "selection-ipad-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "selection",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "selection-ipad-landscape-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "selection",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "selection-duo-closed-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "selection",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "selection-duo-closed-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "selection",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "selection-duo-tent",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "selection",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "selection-duo-open-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "selection",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "selection-duo-open-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "selection",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "selection-duo-tabletop",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "daily",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "daily-phone-light",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "daily",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "daily-phone-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "daily",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "daily-ipad-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "daily",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "daily-ipad-portrait-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "daily",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "daily-ipad-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "daily",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "daily-ipad-landscape-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "daily",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "daily-duo-closed-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "daily",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "daily-duo-closed-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "daily",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "daily-duo-tent",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "daily",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "daily-duo-open-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "daily",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "daily-duo-open-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "daily",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "daily-duo-tabletop",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "folklore-detail-phone-light",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "folklore-detail-phone-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "folklore-detail-ipad-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "folklore-detail-ipad-portrait-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "folklore-detail-ipad-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "folklore-detail-ipad-landscape-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "folklore-detail-duo-closed-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "folklore-detail-duo-closed-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "folklore-detail-duo-tent",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "folklore-detail-duo-open-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "folklore-detail-duo-open-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "folklore-detail-duo-tabletop",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "countdown-detail-phone-light",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "countdown-detail-phone-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "countdown-detail-ipad-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "countdown-detail-ipad-portrait-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "countdown-detail-ipad-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "countdown-detail-ipad-landscape-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "countdown-detail-duo-closed-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "countdown-detail-duo-closed-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "countdown-detail-duo-tent",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "countdown-detail-duo-open-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "countdown-detail-duo-open-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "countdown-detail-duo-tabletop",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "fortune-phone-light",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "fortune-phone-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "fortune-ipad-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "fortune-ipad-portrait-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "fortune-ipad-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "fortune-ipad-landscape-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "fortune-duo-closed-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "fortune-duo-closed-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "fortune-duo-tent",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "fortune-duo-open-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "fortune-duo-open-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "fortune-duo-tabletop",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "compass",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "compass-phone-light",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "compass",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "compass-phone-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "compass",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "compass-ipad-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "compass",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "compass-ipad-portrait-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "compass",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "compass-ipad-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "compass",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "compass-ipad-landscape-dark",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "compass",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "compass-duo-closed-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "compass",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "compass-duo-closed-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "compass",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "compass-duo-tent",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "compass",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "compass-duo-open-portrait",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "compass",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "compass-duo-open-landscape",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "compass",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "compass-duo-tabletop",
+    "state": "",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "fortune-phone-light-result",
+    "state": "result",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "almanac-phone-light-plain-off",
+    "state": "plain-off",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "fortune-phone-dark-result",
+    "state": "result",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "file": "almanac-phone-dark-plain-off",
+    "state": "plain-off",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "fortune-ipad-portrait-result",
+    "state": "result",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "file": "almanac-ipad-portrait-plain-off",
+    "state": "plain-off",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "fortune-ipad-portrait-dark-result",
+    "state": "result",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "file": "almanac-ipad-portrait-dark-plain-off",
+    "state": "plain-off",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "fortune-ipad-landscape-result",
+    "state": "result",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "file": "almanac-ipad-landscape-plain-off",
+    "state": "plain-off",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "fortune-ipad-landscape-dark-result",
+    "state": "result",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "file": "almanac-ipad-landscape-dark-plain-off",
+    "state": "plain-off",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "fortune-duo-closed-portrait-result",
+    "state": "result",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "file": "almanac-duo-closed-portrait-plain-off",
+    "state": "plain-off",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "fortune-duo-closed-landscape-result",
+    "state": "result",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "almanac-duo-closed-landscape-plain-off",
+    "state": "plain-off",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "fortune-duo-tent-result",
+    "state": "result",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "file": "almanac-duo-tent-plain-off",
+    "state": "plain-off",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "fortune-duo-open-portrait-result",
+    "state": "result",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "almanac-duo-open-portrait-plain-off",
+    "state": "plain-off",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "fortune-duo-open-landscape-result",
+    "state": "result",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "file": "almanac-duo-open-landscape-plain-off",
+    "state": "plain-off",
+    "full": false
+  },
+  {
+    "page": "fortune",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "fortune-duo-tabletop-result",
+    "state": "result",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "file": "almanac-duo-tabletop-plain-off",
+    "state": "plain-off",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "home-phone-light-no-matches",
+    "state": "no-matches",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "home-phone-light-weather-authorized",
+    "state": "weather-authorized",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "home-phone-light-weather-denied",
+    "state": "weather-denied",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "home-phone-light-weather-loading",
+    "state": "weather-loading",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "almanac-phone-light-no-festival",
+    "state": "no-festival",
+    "full": false
+  },
+  {
+    "page": "almanac",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "almanac-phone-light-winter",
+    "state": "winter",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "folklore-detail-phone-light-today",
+    "state": "today",
+    "full": false
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "folklore-detail-phone-light-offline",
+    "state": "offline",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "countdown-detail-phone-light-new",
+    "state": "new",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "countdown-detail-phone-light-preprompt",
+    "state": "preprompt",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "countdown-detail-phone-light-system-prompt",
+    "state": "system-prompt",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "countdown-detail-phone-light-allowed",
+    "state": "allowed",
+    "full": false
+  },
+  {
+    "page": "countdown-detail",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "file": "countdown-detail-phone-light-denied",
+    "state": "denied",
+    "full": false
+  },
+  {
+    "page": "home",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 2500,
+    "dark": false,
+    "file": "home-phone-light-full",
+    "state": "",
+    "full": true
+  },
+  {
+    "page": "almanac",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 12000,
+    "dark": false,
+    "file": "almanac-phone-light-full",
+    "state": "",
+    "full": true
+  },
+  {
+    "page": "almanac",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 6500,
+    "dark": false,
+    "file": "almanac-phone-light-plain-off-full",
+    "state": "plain-off",
+    "full": true
+  },
+  {
+    "page": "daily",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 1650,
+    "dark": false,
+    "file": "daily-phone-light-full",
+    "state": "",
+    "full": true
+  },
+  {
+    "page": "folklore-detail",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 2400,
+    "dark": false,
+    "file": "folklore-detail-phone-light-full",
+    "state": "",
+    "full": true
+  },
+  {
+    "page": "compass",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "state": "hour",
+    "full": false,
+    "file": "compass-phone-light-hour"
+  },
+  {
+    "page": "compass",
+    "mode": "phone-dark",
+    "width": 375,
+    "height": 930,
+    "dark": true,
+    "state": "hour",
+    "full": false,
+    "file": "compass-phone-dark-hour"
+  },
+  {
+    "page": "compass",
+    "mode": "ipad-portrait",
+    "width": 834,
+    "height": 1194,
+    "dark": false,
+    "state": "hour",
+    "full": false,
+    "file": "compass-ipad-portrait-hour"
+  },
+  {
+    "page": "compass",
+    "mode": "ipad-portrait-dark",
+    "width": 834,
+    "height": 1194,
+    "dark": true,
+    "state": "hour",
+    "full": false,
+    "file": "compass-ipad-portrait-dark-hour"
+  },
+  {
+    "page": "compass",
+    "mode": "ipad-landscape",
+    "width": 1194,
+    "height": 834,
+    "dark": false,
+    "state": "hour",
+    "full": false,
+    "file": "compass-ipad-landscape-hour"
+  },
+  {
+    "page": "compass",
+    "mode": "ipad-landscape-dark",
+    "width": 1194,
+    "height": 834,
+    "dark": true,
+    "state": "hour",
+    "full": false,
+    "file": "compass-ipad-landscape-dark-hour"
+  },
+  {
+    "page": "compass",
+    "mode": "duo-closed-portrait",
+    "width": 466,
+    "height": 678,
+    "dark": false,
+    "state": "hour",
+    "full": false,
+    "file": "compass-duo-closed-portrait-hour"
+  },
+  {
+    "page": "compass",
+    "mode": "duo-closed-landscape",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "state": "hour",
+    "full": false,
+    "file": "compass-duo-closed-landscape-hour"
+  },
+  {
+    "page": "compass",
+    "mode": "duo-tent",
+    "width": 678,
+    "height": 466,
+    "dark": false,
+    "state": "hour",
+    "full": false,
+    "file": "compass-duo-tent-hour"
+  },
+  {
+    "page": "compass",
+    "mode": "duo-open-portrait",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "state": "hour",
+    "full": false,
+    "file": "compass-duo-open-portrait-hour"
+  },
+  {
+    "page": "compass",
+    "mode": "duo-open-landscape",
+    "width": 951,
+    "height": 669,
+    "dark": false,
+    "state": "hour",
+    "full": false,
+    "file": "compass-duo-open-landscape-hour"
+  },
+  {
+    "page": "compass",
+    "mode": "duo-tabletop",
+    "width": 669,
+    "height": 951,
+    "dark": false,
+    "state": "hour",
+    "full": false,
+    "file": "compass-duo-tabletop-hour"
+  },
+  {
+    "page": "almanac",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "state": "previous",
+    "full": false,
+    "file": "almanac-phone-light-previous"
+  },
+  {
+    "page": "almanac",
+    "mode": "phone-light",
+    "width": 375,
+    "height": 930,
+    "dark": false,
+    "state": "next",
+    "full": false,
+    "file": "almanac-phone-light-next"
+  }
+]

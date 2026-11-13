@@ -1,0 +1,12 @@
+page,phone-light,phone-dark,ipad-portrait,ipad-portrait-dark,ipad-landscape,ipad-landscape-dark,duo-closed-portrait,duo-closed-landscape,duo-tent,duo-open-portrait,duo-open-landscape,duo-tabletop
+home,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓
+almanac,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓
+compass,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓
+daily,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓
+fortune,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓
+folklore,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓
+folklore-detail,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓
+selection,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓
+countdown,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓
+countdown-detail,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓
+settings,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓,✓
