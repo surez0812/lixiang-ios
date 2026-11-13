@@ -134,6 +134,59 @@ final class AlmanacTermSemanticTests: XCTestCase {
         // 本次范围 5 条已修；其它活动式词条（如 山头火）留待 PM 追加审校，不在此断言全量
     }
 
+    func testPMEditorApprovedRound4FullScan33() {
+        let pack = PlainLanguageLoader.load()
+        let nayin = ["大林木","大海水","天上火","山头火","海中金","路旁土","大驿土","沙中土","钗钏金"]
+        let festivals = ["上巳节","下元节","中元节","元宵节","劳动节","社日节","端午节","观莲节","重阳节","龙头节"]
+        let terms = ["金匮","玄武","玉堂","闭","开","收","参","奎","室","心","氐","鬼","鸣吠","母仓"]
+        let activity = ["爬山","逛公园","散步","看日出","捡贝壳","游泳","晒被子","出门","收拾","整理","戴首饰","堆沙堡","打疫苗","催收","跑步","车站","赏花","赏菊","陪长辈","去"]
+        for term in nayin {
+            let zh = pack.term(named: term)?.zh ?? ""
+            let en = pack.term(named: term)?.en ?? ""
+            XCTAssertTrue(zh.contains("纳音") && zh.contains("活动无关"), "\(term) 纳音释义不完整: \(zh)")
+            XCTAssertTrue(en.lowercased().contains("nayin") && en.lowercased().contains("not an activity"), "\(term) en 不完整: \(en)")
+            for a in activity { XCTAssertFalse(zh.contains(a), "\(term) 仍含活动短语 \(a): \(zh)") }
+        }
+        for term in festivals {
+            let zh = pack.term(named: term)?.zh ?? ""
+            let en = pack.term(named: term)?.en ?? ""
+            XCTAssertTrue(zh.contains("传统节日") || zh.contains("公共节日"), "\(term) 非节日释义: \(zh)")
+            XCTAssertTrue(en.lowercased().contains("traditional festival") || en.lowercased().contains("public holiday"), "\(term) en 非节日: \(en)")
+            for a in ["去", "陪", "赏", "逛"] { XCTAssertFalse(zh.contains(a), "\(term) 仍含活动建议 \(a): \(zh)") }
+        }
+        for term in terms {
+            let zh = pack.term(named: term)?.zh ?? ""
+            let en = pack.term(named: term)?.en ?? ""
+            XCTAssertTrue(zh.contains("传统历法术语") || zh.contains("传统择日"), "\(term) 非术语释义: \(zh)")
+            XCTAssertFalse(zh.contains("宜做") || zh.contains("宜 "), "\(term) 写成宜做某事: \(zh)")
+            XCTAssertTrue(en.lowercased().contains("traditional almanac term"), "\(term) en 非术语: \(en)")
+        }
+        // 全量分类扫描：纳音/值神/28宿/建除不得写成活动句
+        let nayinAll = ["海中金","炉中火","大林木","路旁土","剑锋金","山头火","涧下水","城头土","白蜡金","杨柳木","泉中水","屋上土","霹雳火","松柏木","长流水","沙中金","山下火","平地木","壁上土","金箔金","覆灯火","天河水","大驿土","钗钏金","桑柘木","大溪水","沙中土","天上火","石榴木","大海水"]
+        for term in nayinAll {
+            let zh = pack.term(named: term)?.zh ?? ""
+            XCTAssertTrue(zh.contains("纳音") && zh.contains("活动无关"), "\(term) 纳音仍漂移: \(zh)")
+        }
+        let valueGods = ["青龙","明堂","天刑","朱雀","金匮","天德","白虎","玉堂","天牢","玄武","司命","勾陈"]
+        for term in valueGods {
+            let zh = pack.term(named: term)?.zh ?? ""
+            XCTAssertTrue(zh.contains("值神名") || zh.contains("传统历法术语"), "\(term) 值神仍漂移: \(zh)")
+        }
+        let mansions = Array("角亢氐房心尾箕斗牛女虚危室壁奎娄胃昴毕觜参井鬼柳星张翼轸").map(String.init)
+        let officers = ["建","除","满","平","定","执","破","危","成","收","开","闭"]
+        for term in mansions + officers where term != "危" {
+            let zh = pack.term(named: term)?.zh ?? ""
+            XCTAssertTrue(zh.contains("传统历法术语"), "\(term) 星宿/建除仍漂移: \(zh)")
+        }
+        let activityVerbs = ["去","陪","逛","散步","爬山","收拾","整理","赏花","赏菊","出门"]
+        for t in pack.terms {
+            XCTAssertFalse(t.zh.isEmpty || t.en.isEmpty, "\(t.term) zh/en 为空")
+            if nayinAll.contains(t.term) || valueGods.contains(t.term) || mansions.contains(t.term) || officers.contains(t.term) {
+                for v in activityVerbs { XCTAssertFalse(t.zh.contains(v), "\(t.term) 仍含活动动词 \(v): \(t.zh)") }
+            }
+        }
+    }
+
     func testFallbackIsNeutral() {
         let text = AlmanacTermSemantics.explanation(for: "不存在的词条XYZ", pack: pack)
         XCTAssertTrue(text.contains("传统黄历用语"))

@@ -16,8 +16,8 @@
  },
  {
   "term": "上巳节",
-  "zh": "传统节日，农历三月初三；旧俗临水祓禊、踏青游春，各地做法不同；此处仅作文化说明。",
-  "en": "Traditional festival on the third day of the third lunar month; old customs include riverside purification and spring outings; cultural note only."
+  "zh": "传统节日，农历三月初三；旧俗包括临水祓禊、春游踏青等，各地做法不同；仅作文化说明。",
+  "en": "Traditional festival on the third day of the third lunar month; old customs include riverside purification and spring outings, varying by region; cultural note only."
  },
  {
   "term": "上梁",
@@ -31,8 +31,8 @@
  },
  {
   "term": "下元节",
-  "zh": "整理房间犒劳自己",
-  "en": "Tidy up and treat yourself well"
+  "zh": "传统节日，农历十月十五；民间有祭祀、修斋等旧俗，各地做法不同；仅作文化说明。",
+  "en": "Traditional festival on the fifteenth day of the tenth lunar month; folk customs include offerings and rites, varying by region; cultural note only."
  },
  {
   "term": "不将",
@@ -51,8 +51,8 @@
  },
  {
   "term": "中元节",
-  "zh": "回老家陪长辈吃顿饭",
-  "en": "Visit elders and share a meal"
+  "zh": "传统节日，农历七月十五；旧俗包括祭祖、放河灯等，各地做法不同；仅作文化说明。",
+  "en": "Traditional festival on the fifteenth day of the seventh lunar month; old customs include ancestor remembrance and river lanterns, varying by region; cultural note only."
  },
  {
   "term": "中秋节",
@@ -76,13 +76,13 @@
  },
  {
   "term": "井",
-  "zh": "打扫房间清理杂物",
-  "en": "Clean rooms and clear out clutter"
+  "zh": "二十八宿之一（井宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "亢",
-  "zh": "找朋友聊聊心里话",
-  "en": "Talk openly with a close friend"
+  "zh": "二十八宿之一（亢宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "交易",
@@ -136,8 +136,8 @@
  },
  {
   "term": "元宵节",
-  "zh": "煮碗汤圆逛灯会猜谜",
-  "en": "Cook tangyuan and visit a lantern fair"
+  "zh": "传统节日，农历正月十五；旧俗包括灯会、汤圆等，各地做法不同；仅作文化说明。",
+  "en": "Traditional festival on the fifteenth day of the first lunar month; old customs include lantern fairs and sweet rice balls, varying by region; cultural note only."
  },
  {
   "term": "入学",
@@ -186,8 +186,8 @@
  },
  {
   "term": "剑锋金",
-  "zh": "磨刀具，修剪指甲和头发",
-  "en": "Sharpen knives, trim nails and hair"
+  "zh": "六十甲子纳音之一，属金类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) metal-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "割蜜",
@@ -201,13 +201,13 @@
  },
  {
   "term": "劳动节",
-  "zh": "放下工作，出门放松一天",
-  "en": "Take a day off and relax"
+  "zh": "公共节日，公历五月一日；纪念劳动与国际劳动者团结背景，各地庆祝方式不同；仅作文化说明。",
+  "en": "Public holiday on May 1; commemorates labor and international workers solidarity, with varied observances; cultural note only."
  },
  {
   "term": "勾陈",
-  "zh": "理清旧账，还清拖欠的款项",
-  "en": "Settle old debts, pay what you owe"
+  "zh": "值神名（勾陈），传统历法术语（黄历值神）；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "午不苫盖屋主更张",
@@ -221,13 +221,13 @@
  },
  {
   "term": "危",
-  "zh": "别冒险投资，走稳当路线",
-  "en": "Skip risky bets, stick to safe moves"
+  "zh": "传统历法术语（危宿/危日），用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion / day officer); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "参",
-  "zh": "出门跑步锻炼身体",
-  "en": "Go outside for a run or workout"
+  "zh": "二十八宿之一（参宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "取渔",
@@ -236,8 +236,8 @@
  },
  {
   "term": "司命",
-  "zh": "安排日程，列出待办清单",
-  "en": "Plan your schedule, make to-do list"
+  "zh": "值神名（司命），传统历法术语（黄历值神）；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "合寿木",
@@ -281,8 +281,8 @@
  },
  {
   "term": "城头土",
-  "zh": "检查门锁，加固阳台护栏",
-  "en": "Check door locks, secure balcony rails"
+  "zh": "六十甲子纳音之一，属土类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) earth-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "塑绘",
@@ -301,13 +301,13 @@
  },
  {
   "term": "壁",
-  "zh": "安静读书充实自己",
-  "en": "Read quietly and learn something new"
+  "zh": "二十八宿之一（壁宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "壁上土",
-  "zh": "补墙面裂缝，刷一层新漆",
-  "en": "Patch wall cracks, apply fresh paint"
+  "zh": "六十甲子纳音之一，属土类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) earth-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "壬不泱水更难提防",
@@ -316,38 +316,38 @@
  },
  {
   "term": "大林木",
-  "zh": "六十甲子纳音之一，传统五行分类名称，用于纪年/文化标识；与日常活动无关。",
-  "en": "A nayin (sexagenary cycle) element name, a traditional Five-Elements classification label; not an activity."
+  "zh": "六十甲子纳音之一，属木类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) wood-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "大海水",
-  "zh": "去游泳，多喝水润身体",
-  "en": "Go swimming, drink more water"
+  "zh": "六十甲子纳音之一，属水类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) water-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "大溪水",
-  "zh": "到溪边踩水玩耍",
-  "en": "Go splash around by the creek"
+  "zh": "六十甲子纳音之一，属水类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) water-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "大驿土",
-  "zh": "去车站规划出行路线",
-  "en": "Plan your travel route at the station"
+  "zh": "六十甲子纳音之一，属土类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) earth-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "天上火",
-  "zh": "晴天出门晒被子",
-  "en": "Hang quilts outside on sunny days"
+  "zh": "六十甲子纳音之一，属火类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) fire-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "天刑",
-  "zh": "核对合同，逐条看清条款",
-  "en": "Review contracts, read every clause carefully"
+  "zh": "值神名（天刑），传统历法术语（黄历值神）；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "天德",
-  "zh": "帮邻居搭把手，做件小善事",
-  "en": "Help a neighbor with something small"
+  "zh": "值神名（天德），传统历法术语（黄历值神）；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "天恩",
@@ -356,13 +356,13 @@
  },
  {
   "term": "天河水",
-  "zh": "下雨天检查屋顶漏水",
-  "en": "Check roof for leaks when it rains"
+  "zh": "六十甲子纳音之一，属水类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) water-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "天牢",
-  "zh": "别签长期合同，先缓一缓",
-  "en": "Hold off on long-term contracts"
+  "zh": "值神名（天牢），传统历法术语（黄历值神）；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "天穿节",
@@ -371,18 +371,18 @@
  },
  {
   "term": "奎",
-  "zh": "整理书桌规划本周",
-  "en": "Tidy your desk and plan the week"
+  "zh": "二十八宿之一（奎宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "女",
-  "zh": "动手缝补或做手工",
-  "en": "Sew, mend, or make something by hand"
+  "zh": "二十八宿之一（女宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "娄",
-  "zh": "约朋友聚餐，联络老同事",
-  "en": "Invite friends to dinner, catch up"
+  "zh": "二十八宿之一（娄宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "嫁娶",
@@ -431,8 +431,8 @@
  },
  {
   "term": "定",
-  "zh": "敲定计划、确认日程安排",
-  "en": "Lock in plans and confirm your schedule"
+  "zh": "建除十二神之一（定），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day officer of the twelve duties); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "定磉",
@@ -441,8 +441,8 @@
  },
  {
   "term": "室",
-  "zh": "收拾卧室换洗床品",
-  "en": "Make your bed and change the sheets"
+  "zh": "二十八宿之一（室宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "寅不祭祀神鬼不尝",
@@ -461,8 +461,8 @@
  },
  {
   "term": "尾",
-  "zh": "复盘收尾完成待办",
-  "en": "Wrap up tasks and finish what's pending"
+  "zh": "二十八宿之一（尾宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "尾牙",
@@ -471,18 +471,18 @@
  },
  {
   "term": "屋上土",
-  "zh": "修补房顶裂缝和瓦片",
-  "en": "Patch cracks and fix roof tiles"
+  "zh": "六十甲子纳音之一，属土类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) earth-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "山下火",
-  "zh": "傍晚在院子里点篝火",
-  "en": "Light a bonfire in the yard at dusk"
+  "zh": "六十甲子纳音之一，属火类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) fire-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "山头火",
-  "zh": "早起爬山看日出",
-  "en": "Hike up early to watch the sunrise"
+  "zh": "六十甲子纳音之一，属火类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) fire-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "己不破券二比并亡",
@@ -496,13 +496,13 @@
  },
  {
   "term": "平",
-  "zh": "修补路面，找平墙面地面",
-  "en": "Patch roads, level walls and floors"
+  "zh": "建除十二神之一（平），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day officer of the twelve duties); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "平地木",
-  "zh": "在空地上种一排树",
-  "en": "Plant a row of trees on open ground"
+  "zh": "六十甲子纳音之一，属木类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) wood-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "平治道涂",
@@ -516,13 +516,13 @@
  },
  {
   "term": "建",
-  "zh": "动手装修，搭新项目框架",
-  "en": "Start renovations, set up projects"
+  "zh": "建除十二神之一（建），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day officer of the twelve duties); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "开",
-  "zh": "出门办事，开启新计划",
-  "en": "Go out and start new plans"
+  "zh": "建除十二神之一（开），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day officer of the twelve duties); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "开仓",
@@ -566,8 +566,8 @@
  },
  {
   "term": "张",
-  "zh": "挂窗帘装晾衣架",
-  "en": "Hang curtains or drying racks"
+  "zh": "二十八宿之一（张宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "归宁",
@@ -581,8 +581,8 @@
  },
  {
   "term": "心",
-  "zh": "整理卧室换床品",
-  "en": "Tidy bedroom, change bedding"
+  "zh": "二十八宿之一（心宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "戊不受田田主不祥",
@@ -596,8 +596,8 @@
  },
  {
   "term": "成",
-  "zh": "签合同，敲定合作项目",
-  "en": "Sign contracts, finalize deals"
+  "zh": "建除十二神之一（成），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day officer of the twelve duties); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "成服",
@@ -606,13 +606,13 @@
  },
  {
   "term": "房",
-  "zh": "打扫房间修门窗",
-  "en": "Clean rooms, fix doors and windows"
+  "zh": "二十八宿之一（房宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "执",
-  "zh": "推进手头项目，盯紧细节",
-  "en": "Push your project forward, check details"
+  "zh": "建除十二神之一（执），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day officer of the twelve duties); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "扫舍",
@@ -646,8 +646,8 @@
  },
  {
   "term": "收",
-  "zh": "催收尾款，整理归档文件",
-  "en": "Collect payments, file documents"
+  "zh": "建除十二神之一（收），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day officer of the twelve duties); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "放水",
@@ -671,8 +671,8 @@
  },
  {
   "term": "斗",
-  "zh": "清点库存理账目",
-  "en": "Count stock and sort accounts"
+  "zh": "二十八宿之一（斗宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "断蚁",
@@ -686,13 +686,13 @@
  },
  {
   "term": "明堂",
-  "zh": "打扫客厅，开窗通风换气",
-  "en": "Clean living room, open windows for air"
+  "zh": "值神名（明堂），传统历法术语（黄历值神）；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "星",
-  "zh": "缝补衣服钉纽扣",
-  "en": "Mend clothes and sew buttons"
+  "zh": "二十八宿之一（星宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "春社",
@@ -706,8 +706,8 @@
  },
  {
   "term": "昴",
-  "zh": "擦窗户擦亮镜子",
-  "en": "Wipe windows, polish mirrors"
+  "zh": "二十八宿之一（昴宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "普渡",
@@ -741,18 +741,18 @@
  },
  {
   "term": "朱雀",
-  "zh": "少发群消息，说话前先想",
-  "en": "Think before you speak or post"
+  "zh": "值神名（朱雀），传统历法术语（黄历值神）；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "杨柳木",
-  "zh": "给窗边的垂柳浇水修剪",
-  "en": "Water and trim willows by the window"
+  "zh": "六十甲子纳音之一，属木类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) wood-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "松柏木",
-  "zh": "给门口的松树松土施肥",
-  "en": "Loosen soil and feed pines by the door"
+  "zh": "六十甲子纳音之一，属木类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) wood-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "架马",
@@ -761,8 +761,8 @@
  },
  {
   "term": "柳",
-  "zh": "修剪花草浇盆栽",
-  "en": "Trim plants and water pots"
+  "zh": "二十八宿之一（柳宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "栽种",
@@ -771,23 +771,23 @@
  },
  {
   "term": "桑柘木",
-  "zh": "修剪院子里的树枝",
-  "en": "Trim the branches in your yard"
+  "zh": "六十甲子纳音之一，属木类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) wood-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "母仓",
-  "zh": "整理厨房囤好食材",
-  "en": "Stock kitchen with groceries"
+  "zh": "吉神名（母仓），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (auspicious deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "毕",
-  "zh": "修补篱笆围院墙",
-  "en": "Patch fences and garden walls"
+  "zh": "二十八宿之一（毕宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "氐",
-  "zh": "整理房间，归置杂物",
-  "en": "Tidy your room and sort clutter"
+  "zh": "二十八宿之一（氐宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "求医",
@@ -816,13 +816,13 @@
  },
  {
   "term": "沙中土",
-  "zh": "带孩子去沙坑堆沙堡",
-  "en": "Build sandcastles with kids"
+  "zh": "六十甲子纳音之一，属土类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) earth-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "沙中金",
-  "zh": "淘洗旧物挑出值钱的",
-  "en": "Sort old stuff, keep valuables"
+  "zh": "六十甲子纳音之一，属金类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) metal-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "治病",
@@ -831,33 +831,33 @@
  },
  {
   "term": "泉中水",
-  "zh": "接壶好水泡茶慢慢喝",
-  "en": "Brew tea with fresh water"
+  "zh": "六十甲子纳音之一，属水类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) water-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "海中金",
-  "zh": "六十甲子纳音之一，传统五行分类名称，用于纪年/文化标识；与日常活动无关。",
-  "en": "A nayin element name, traditional classification label; not an activity."
+  "zh": "六十甲子纳音之一，属金类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) metal-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "涧下水",
-  "zh": "找条小溪踩水凉快一下",
-  "en": "Find a stream, cool your feet"
+  "zh": "六十甲子纳音之一，属水类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) water-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "满",
-  "zh": "盘点库存，把货架补齐",
-  "en": "Check inventory, restock shelves"
+  "zh": "建除十二神之一（满），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day officer of the twelve duties); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "炉中火",
-  "zh": "开火做顿热乎饭",
-  "en": "Cook yourself a hot meal"
+  "zh": "六十甲子纳音之一，属火类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) fire-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "牛",
-  "zh": "喂养宠物，打理花草",
-  "en": "Feed pets and tend your plants"
+  "zh": "二十八宿之一（牛宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "牧养",
@@ -866,13 +866,13 @@
  },
  {
   "term": "玄武",
-  "zh": "检查门锁，关好门窗再出门",
-  "en": "Check door locks before leaving home"
+  "zh": "值神名（玄武），传统历法术语（黄历值神）；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "玉堂",
-  "zh": "收拾书桌，把文件归类放好",
-  "en": "Tidy desk, sort and file documents"
+  "zh": "值神名（玉堂），传统历法术语（黄历值神）；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "理发",
@@ -901,13 +901,13 @@
  },
  {
   "term": "白虎",
-  "zh": "避开争执，运动注意防护",
-  "en": "Avoid conflicts; warm up before exercise"
+  "zh": "值神名（白虎），传统历法术语（黄历值神）；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "白蜡金",
-  "zh": "给皮具上油擦亮",
-  "en": "Polish leather goods till they shine"
+  "zh": "六十甲子纳音之一，属金类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) metal-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "盖屋",
@@ -916,13 +916,13 @@
  },
  {
   "term": "石榴木",
-  "zh": "买盆绿植摆桌上",
-  "en": "Get a plant for your desk"
+  "zh": "六十甲子纳音之一，属木类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) wood-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "破",
-  "zh": "拆旧物，清理废弃杂物",
-  "en": "Tear down old stuff, clear junk"
+  "zh": "建除十二神之一（破），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day officer of the twelve duties); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "破土",
@@ -941,8 +941,8 @@
  },
  {
   "term": "社日节",
-  "zh": "带菜去邻居家聚餐",
-  "en": "Bring a dish to share with neighbors"
+  "zh": "传统节日，分春社与秋社，约在立春/立秋后第五个戊日；旧俗包括祭祀土地、聚饮等，各地不同；仅作文化说明。",
+  "en": "Traditional festival with spring and autumn she altars, around the fifth wu day after the start of spring or autumn; old customs include land offerings and gatherings, varying by region; cultural note only."
  },
  {
   "term": "祈福",
@@ -986,8 +986,8 @@
  },
  {
   "term": "端午节",
-  "zh": "包粽子，去看龙舟赛",
-  "en": "Wrap rice dumplings, watch boat races"
+  "zh": "传统节日，农历五月初五；旧俗包括龙舟、粽子、艾草等，各地做法不同；仅作文化说明。",
+  "en": "Traditional festival on the fifth day of the fifth lunar month; old customs include dragon boats, rice dumplings and mugwort, varying by region; cultural note only."
  },
  {
   "term": "筑堤",
@@ -1001,8 +1001,8 @@
  },
  {
   "term": "箕",
-  "zh": "清扫角落，通风换气",
-  "en": "Sweep corners and air out rooms"
+  "zh": "二十八宿之一（箕宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "纳婿",
@@ -1041,13 +1041,13 @@
  },
  {
   "term": "翼",
-  "zh": "学一门新手艺或技能",
-  "en": "Pick up a new craft or skill"
+  "zh": "二十八宿之一（翼宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "胃",
-  "zh": "采购食材，做顿好饭",
-  "en": "Stock up groceries and cook well"
+  "zh": "二十八宿之一（胃宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "腊八节",
@@ -1056,8 +1056,8 @@
  },
  {
   "term": "虚",
-  "zh": "停下来休息，别硬撑",
-  "en": "Take a break, don't push yourself"
+  "zh": "二十八宿之一（虚宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "行丧",
@@ -1081,23 +1081,23 @@
  },
  {
   "term": "覆灯火",
-  "zh": "睡前点盏小灯读几页书",
-  "en": "Light a lamp, read before bed"
+  "zh": "六十甲子纳音之一，属火类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) fire-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "观莲节",
-  "zh": "去公园池塘边赏荷花",
-  "en": "Visit the park pond to see lotus blooms"
+  "zh": "传统节日，农历六月二十四；旧俗与荷花生日、观莲活动相关，江南地区较流行；仅作文化说明。",
+  "en": "Traditional festival on the twenty-fourth day of the sixth lunar month; associated with the lotus birthday and lotus viewing, especially in Jiangnan; cultural note only."
  },
  {
   "term": "角",
-  "zh": "动手开启一个新计划",
-  "en": "Start working on a new plan"
+  "zh": "二十八宿之一（角宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "觜",
-  "zh": "少说多做，管住嘴巴",
-  "en": "Talk less and focus on doing"
+  "zh": "二十八宿之一（觜宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "解除",
@@ -1136,13 +1136,13 @@
  },
  {
   "term": "路旁土",
-  "zh": "六十甲子纳音之一，传统五行分类名称，用于纪年/文化标识；与日常活动无关。",
-  "en": "A nayin element name, traditional classification label; not an activity."
+  "zh": "六十甲子纳音之一，属土类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) earth-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "轸",
-  "zh": "检查车辆，安排短途出行",
-  "en": "Check your car, plan a short trip"
+  "zh": "二十八宿之一（轸宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "辛不合酱主人不尝",
@@ -1201,18 +1201,18 @@
  },
  {
   "term": "重阳节",
-  "zh": "传统节日，农历九月初九；旧俗登高、赏菊、敬老，现代延续敬老文化；仅作民俗文化说明。",
-  "en": "Traditional festival on the ninth day of the ninth lunar month; old customs include climbing, chrysanthemum viewing and honoring elders; cultural note."
+  "zh": "传统节日，农历九月初九；旧俗包括登高、菊花文化、敬老等，各地做法不同；仅作文化说明。",
+  "en": "Traditional festival on the ninth day of the ninth lunar month; old customs include climbing, chrysanthemum culture and honoring elders, varying by region; cultural note only."
  },
  {
   "term": "金匮",
-  "zh": "整理钱包，清点存款",
-  "en": "Organize wallet, check savings"
+  "zh": "值神名（金匮），传统历法术语（黄历值神）；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "金箔金",
-  "zh": "给小物件贴金装饰",
-  "en": "Add gold trim to small crafts"
+  "zh": "六十甲子纳音之一，属金类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) metal-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "针灸",
@@ -1221,18 +1221,18 @@
  },
  {
   "term": "钗钏金",
-  "zh": "戴上首饰出门约会",
-  "en": "Wear jewelry for a night out"
+  "zh": "六十甲子纳音之一，属金类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) metal-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "长流水",
-  "zh": "打开水龙头冲洗地面",
-  "en": "Turn on the tap, rinse the floor"
+  "zh": "六十甲子纳音之一，属水类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) water-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "闭",
-  "zh": "收拾房间、整理旧文件",
-  "en": "Clean your space and sort old files"
+  "zh": "建除十二神之一（闭），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day officer of the twelve duties); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "问名",
@@ -1241,8 +1241,8 @@
  },
  {
   "term": "除",
-  "zh": "大扫除，扔掉过期物品",
-  "en": "Deep clean, toss expired items"
+  "zh": "建除十二神之一（除），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day officer of the twelve duties); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "除夕",
@@ -1266,13 +1266,13 @@
  },
  {
   "term": "霹雳火",
-  "zh": "检查家中电路和插座",
-  "en": "Check home wiring and outlets"
+  "zh": "六十甲子纳音之一，属火类，是传统五行分类与纪年标识；与日常活动无关，仅作文化知识。",
+  "en": "A nayin (sexagenary cycle) fire-type element name; a traditional Five-Elements classification label, not an activity."
  },
  {
   "term": "青龙",
-  "zh": "适合谈合作、见新客户",
-  "en": "Good day to pitch or meet clients"
+  "zh": "值神名（青龙），传统历法术语（黄历值神）；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (day deity); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "馀事勿取",
@@ -1281,13 +1281,13 @@
  },
  {
   "term": "鬼",
-  "zh": "整理旧物，打扫房间角落",
-  "en": "Sort old stuff, clean room corners"
+  "zh": "二十八宿之一（鬼宿），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (lunar mansion); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "鸣吠",
-  "zh": "带宠物去打疫苗",
-  "en": "Take pet for vaccination"
+  "zh": "传统择日神煞术语（鸣吠），传统历法术语；用于纪日/择日文化标识，非活动建议。",
+  "en": "A traditional almanac term (traditional day-selection spirit term); calendar/cultural classification, not an activity suggestion."
  },
  {
   "term": "鸣吠对",
@@ -1296,7 +1296,7 @@
  },
  {
   "term": "龙头节",
-  "zh": "今天去理发换个新发型",
-  "en": "Get a fresh haircut today"
+  "zh": "传统节日，农历二月初二；旧俗包括春耕开始、理发等，各地做法不同；仅作文化说明。",
+  "en": "Traditional festival on the second day of the second lunar month; old customs include the start of spring farming and haircuts, varying by region; cultural note only."
  }
 ]
