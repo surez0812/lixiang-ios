@@ -23,6 +23,13 @@ def main(path, expect=365):
         if not (4 <= q <= 48): errs.append(f"#{i} quote len {q} (4-48)")
         a=clen(x.get("action",""))
         if not (30 <= a <= 60): errs.append(f"#{i} action len {a} (30-60)")
+    # 同一字段内重复分句（模板退化）ERROR
+    import collections as _c
+    for i,x in enumerate(d):
+        for k in ("meaning","action"):
+            sents=[t for t in re.split(r"[。！？；\n]", x.get(k,"")) if clen(t)>=6]
+            dup=[t for t,c in _c.Counter(sents).items() if c>=2]
+            if dup: errs.append(f"#{i} {k} repeated sentence x{len(dup)}")
     dates=[x.get("date") for x in d]; quotes=[x.get("quote") for x in d]
     if len(set(dates))!=n: errs.append(f"date duplicates: {n-len(set(dates))}")
     if len(set(quotes))!=len(quotes): errs.append(f"quote dups: {len(quotes)-len(set(quotes))}")
