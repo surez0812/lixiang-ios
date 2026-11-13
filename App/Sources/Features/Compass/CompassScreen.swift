@@ -20,17 +20,43 @@ struct R14CompassScreen: View {
 
     var body: some View {
         GeometryReader { geo in
-            ScrollView {
-                VStack(alignment: .leading, spacing: 14) {
-                    header
-                    modePicker
-                    dial(size: min(geo.size.width - 40, 340))
-                    legend
-                    Text(verbatim: "\(useHour ? "时方位" : "日方位") · 五吉神方位与煞方；传统历法参考，非风水/吉凶预测。")
-                        .d1Font(9).foregroundStyle(theme.ink3).padding(.horizontal, 4)
-                    hoursCard
+            let wide = geo.size.width >= 744 && geo.size.width > geo.size.height
+            if wide {
+                // R14 iPad Landscape：左控件、右罗盘+图例（各自滚动）
+                HStack(alignment: .top, spacing: 20) {
+                    VStack(alignment: .leading, spacing: 12) {
+                        header
+                        modePicker
+                        Text(verbatim: "\(useHour ? "所选时辰" : "所选日期")的\(useHour ? "时" : "日")方位").d1Font(11).foregroundStyle(theme.ink3)
+                        Spacer(minLength: 0)
+                    }
+                    .frame(width: geo.size.width * 0.34, alignment: .leading)
+                    .padding(.leading, 24).padding(.top, 16)
+                    ScrollView {
+                        VStack(spacing: 12) {
+                            dial(size: min(geo.size.width * 0.38, 360))
+                            legendCard
+                            Text("固定北向图 · 上方为正北").d1Font(9).foregroundStyle(theme.ink3)
+                        }.padding(16)
+                    }
+                    .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+                    .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6)))
+                    .padding(.trailing, 28).padding(.top, 16)
                 }
-                .padding(.horizontal, 20).padding(.vertical, 12).padding(.bottom, 150)
+                .padding(.bottom, 120)
+            } else {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 14) {
+                        header
+                        modePicker
+                        dial(size: min(geo.size.width - 40, 340))
+                        legend
+                        Text(verbatim: "\(useHour ? "时方位" : "日方位") · 五吉神方位与煞方；传统历法参考，非风水/吉凶预测。")
+                            .d1Font(9).foregroundStyle(theme.ink3).padding(.horizontal, 4)
+                        hoursCard
+                    }
+                    .padding(.horizontal, 20).padding(.vertical, 12).padding(.bottom, 150)
+                }
             }
         }
         .background(ScreenBackground())
@@ -127,6 +153,20 @@ struct R14CompassScreen: View {
             }
             if let sha = currentSha {
                 HStack(spacing: 5) { Circle().fill(Color.r14Red).frame(width: 6, height: 6); Text("煞方").d1Font(11, weight: .semibold).foregroundStyle(theme.ink); Text(sha.rawValue).d1Font(10).foregroundStyle(theme.ink2) }
+            }
+        }
+    }
+
+    private var legendCard: some View {
+        VStack(spacing: 0) {
+            ForEach(layout.present, id: \.deity) { e in
+                HStack { Text(e.deity.title).d1Font(13).foregroundStyle(theme.ink); Spacer(); Text(e.direction.rawValue).d1Font(13, weight: .semibold).foregroundStyle(theme.ink2) }
+                    .frame(minHeight: 40)
+                Divider().overlay(theme.line.opacity(0.6))
+            }
+            if let sha = currentSha {
+                HStack { Text("煞方").d1Font(13).foregroundStyle(theme.ink); Spacer(); Text(sha.rawValue).d1Font(13, weight: .semibold).foregroundStyle(Color(hex: 0xB23A2A)) }
+                    .frame(minHeight: 40)
             }
         }
     }

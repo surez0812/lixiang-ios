@@ -25,34 +25,80 @@ struct SelectionScreen: View {
     }
 
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack(alignment: .leading, spacing: 18) {
-                header
-                card(title: "想安排的事") { matterRow }
-                card(title: "从哪天开始") { dateRow($startDate, label: "开始") }
-                card(title: "看到哪一天") { dateRow($endDate, label: "结束") }
-                card(title: "偏好") { preferences }
-                Button(action: search) {
-                    Text("看看可参考的日期")
-                        .d1Font(16, weight: .semibold)
-                        .frame(maxWidth: .infinity, minHeight: 48)
+        GeometryReader { geo in
+            let wide = geo.size.width >= 744 && geo.size.width > geo.size.height
+            if wide {
+                HStack(alignment: .top, spacing: 20) {
+                    ScrollView(showsIndicators: false) { formColumn.padding(.leading, 24).padding(.vertical, 16) }
+                        .frame(width: geo.size.width * 0.40)
+                    ScrollView(showsIndicators: false) { resultsColumn.padding(.trailing, 28).padding(.vertical, 16) }
+                        .frame(maxWidth: .infinity)
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(theme.accentStrong)
-                if spanTooLong {
-                    Text("范围最长 366 天，请缩小后再试。").d1Font(12).foregroundStyle(theme.ink2)
+            } else {
+                ScrollView(showsIndicators: false) {
+                    VStack(alignment: .leading, spacing: 18) {
+                        header
+                        card(title: "想安排的事") { matterRow }
+                        card(title: "从哪天开始") { dateRow($startDate, label: "开始") }
+                        card(title: "看到哪一天") { dateRow($endDate, label: "结束") }
+                        card(title: "偏好") { preferences }
+                        searchButton
+                        if spanTooLong { spanWarning }
+                        if searched { resultsSection }
+                        footerNote
+                    }
+                    .padding(.horizontal, 20).padding(.vertical, 12)
                 }
-                if searched {
-                    resultsSection
-                }
-                Text("按事项与日期范围整理，最终也请结合天气、时间和参与者安排。")
-                    .d1Font(11).foregroundStyle(theme.ink3).lineSpacing(4)
-                    .padding(.top, 4)
             }
-            .padding(.horizontal, 20)
-            .padding(.vertical, 12)
         }
         .background(ScreenBackground())
+    }
+
+    private var formColumn: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            header
+            card(title: "想安排的事") { matterRow }
+            card(title: "从哪天开始") { dateRow($startDate, label: "开始") }
+            card(title: "看到哪一天") { dateRow($endDate, label: "结束") }
+            card(title: "偏好") { preferences }
+            searchButton
+            if spanTooLong { spanWarning }
+        }
+    }
+
+    private var resultsColumn: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Text("可参考的日期").d1SerifFont(22, weight: .semibold).foregroundStyle(theme.ink)
+                Spacer()
+                Text("\(matter.rawValue) · \(results.count) 天").d1Font(10, weight: .semibold).foregroundStyle(theme.accentStrong)
+                    .padding(.horizontal, 10).padding(.vertical, 5)
+                    .background(theme.accent.opacity(0.10), in: Capsule())
+            }
+            Text("按事项与日期范围整理，最终也请结合天气、时间和参与者安排。").d1Font(11).foregroundStyle(theme.ink3)
+            if searched {
+                resultsSection
+            } else {
+                Text("设置好左侧条件后，点击「看看可参考的日期」。").d1Font(12).foregroundStyle(theme.ink3)
+                    .frame(maxWidth: .infinity, minHeight: 120)
+            }
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, minHeight: 200, alignment: .topLeading)
+        .background(theme.paper, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(theme.line.opacity(0.6)))
+    }
+
+    private var searchButton: some View {
+        Button(action: search) {
+            Text("看看可参考的日期").d1Font(16, weight: .semibold).frame(maxWidth: .infinity, minHeight: 48)
+        }
+        .buttonStyle(.borderedProminent).tint(theme.accentStrong)
+    }
+    private var spanWarning: some View { Text("范围最长 366 天，请缩小后再试。").d1Font(12).foregroundStyle(theme.ink2) }
+    private var footerNote: some View {
+        Text("按事项与日期范围整理，最终也请结合天气、时间和参与者安排。")
+            .d1Font(11).foregroundStyle(theme.ink3).lineSpacing(4).padding(.top, 4)
     }
 
     private var header: some View {

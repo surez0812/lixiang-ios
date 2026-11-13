@@ -5,6 +5,7 @@ import LixiangCalendarCore
 struct DailyScreen: View {
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
+    @Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var days: SelectedDayStore
     @State private var sharePayload: SharePayload?
 
@@ -20,12 +21,34 @@ struct DailyScreen: View {
             if wide {
                 // R14 §4 iPad Landscape：左解释、右分享卡，各自独立滚动
                 HStack(alignment: .top, spacing: 20) {
-                    ScrollView(showsIndicators: false) { mainContent.padding(.vertical, 12) }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    ScrollView(showsIndicators: false) { shareColumn.padding(.vertical, 12) }
-                        .frame(width: min(geo.size.width * 0.42, 460))
+                    ScrollView(showsIndicators: false) {
+                        VStack(alignment: .leading, spacing: 10) {
+                            wideBackRow
+                            mainContent
+                        }.padding(.vertical, 12)
+                    }
+                    .padding(.horizontal, 20)
+                    .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+                    .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6)))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    ScrollView(showsIndicators: false) {
+                        VStack(alignment: .leading, spacing: 10) {
+                            HStack {
+                                Text("今日分享卡").d1SerifFont(22, weight: .semibold).foregroundStyle(theme.ink)
+                                Spacer()
+                                Text("含二维码").d1Font(9, weight: .semibold).foregroundStyle(theme.accentStrong)
+                                    .padding(.horizontal, 8).padding(.vertical, 4)
+                                    .background(theme.accent.opacity(0.10), in: Capsule())
+                            }
+                            shareColumn
+                        }.padding(.vertical, 12)
+                    }
+                    .padding(.horizontal, 20)
+                    .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+                    .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6)))
+                    .frame(width: min(geo.size.width * 0.42, 460))
                 }
-                .padding(.horizontal, 28).padding(.bottom, 40)
+                .padding(.horizontal, 28).padding(.top, 16).padding(.bottom, 40)
             } else {
                 ScrollView(showsIndicators: false) { mainContent.padding(.vertical, 12).padding(.bottom, 100) }
             }
@@ -36,6 +59,16 @@ struct DailyScreen: View {
         .navigationBarTitleDisplayMode(.inline)
         .fullScreenCover(item: $sharePayload) { payload in
             DailySharePage(date: date, almanac: almanac, verse: payload.verse, theme: theme)
+        }
+    }
+
+    private var wideBackRow: some View {
+        HStack {
+            Button { dismiss() } label: {
+                Image(systemName: "chevron.left").d1Font(13, weight: .semibold).foregroundStyle(theme.ink2)
+                    .frame(width: 40, height: 40).background(theme.card, in: Circle())
+            }.buttonStyle(.plain).accessibilityLabel("返回")
+            Spacer()
         }
     }
 

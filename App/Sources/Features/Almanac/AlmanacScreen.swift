@@ -25,8 +25,13 @@ struct R14AlmanacScreen: View {
         GeometryReader { geo in
             ScrollView {
                 if geo.size.width >= 744 {
-                    HStack(alignment: .top, spacing: 16) { leftColumn; rightColumn }
-                        .padding(.horizontal, 24).padding(.top, 16).padding(.bottom, 120)
+                    HStack(alignment: .top, spacing: 20) {
+                        ScrollView { VStack(alignment: .leading, spacing: 14) { leftColumn; yiJiCard } }
+                            .frame(width: geo.size.width * 0.40)
+                        ScrollView { wideHoursColumn }
+                            .frame(maxWidth: .infinity)
+                    }
+                    .padding(.horizontal, 24).padding(.top, 16).padding(.bottom, 120)
                 } else {
                     VStack(alignment: .leading, spacing: 14) { leftColumn; rightColumn }
                         .padding(.horizontal, 16).padding(.top, 8).padding(.bottom, 120)
@@ -115,6 +120,40 @@ struct R14AlmanacScreen: View {
     }
 
     // MARK: 右列：宜忌卡 + 时辰
+    private var wideHoursColumn: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("一日十二辰 · 各有次序").d1Font(10, weight: .semibold).tracking(1.4).foregroundStyle(theme.ink3)
+            Text("把一天，慢慢展开").d1SerifFont(26, weight: .semibold).foregroundStyle(theme.ink)
+            Text("十二时辰在同一列表中，上下滑动查看。时段按北京时间。").d1Font(10).foregroundStyle(theme.ink3)
+            Divider().overlay(theme.line)
+            ForEach(Array(days.shichen.prefix(12).enumerated()), id: \.offset) { _, h in
+                VStack(alignment: .leading, spacing: 5) {
+                    HStack { Text("\(h.ganZhi)时").d1SerifFont(18, weight: .semibold).foregroundStyle(theme.ink)
+                        Text("\(h.startMinute)—\(h.endMinute)").d1Font(10).foregroundStyle(theme.ink3)
+                        Spacer()
+                        Text(h.luck).d1Font(9, weight: .semibold).foregroundStyle(h.luck == "吉" ? theme.yiText : theme.red)
+                            .padding(.horizontal, 8).padding(.vertical, 3)
+                            .background((h.luck == "吉" ? theme.yiText : theme.red).opacity(0.10), in: Capsule())
+                    }
+                    Text(verbatim: "\(h.tianShen) · \(h.chongDesc) · 煞\(h.sha?.rawValue ?? "—")").d1Font(10).foregroundStyle(theme.ink2)
+                    HStack(alignment: .top, spacing: 8) {
+                        Text("宜").d1Font(11, weight: .semibold).foregroundStyle(theme.yiText).frame(width: 18)
+                        Text(h.yi.prefix(6).joined(separator: "  ")).d1Font(10).foregroundStyle(theme.ink2)
+                    }
+                    HStack(alignment: .top, spacing: 8) {
+                        Text("忌").d1Font(11, weight: .semibold).foregroundStyle(theme.red).frame(width: 18)
+                        Text(h.ji.prefix(6).joined(separator: "  ")).d1Font(10).foregroundStyle(theme.ink2)
+                    }
+                }
+                .padding(.vertical, 6)
+                Divider().overlay(theme.line.opacity(0.5))
+            }
+        }
+        .padding(16)
+        .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6)))
+    }
+
     private var rightColumn: some View {
         VStack(alignment: .leading, spacing: 14) {
             yiJiCard

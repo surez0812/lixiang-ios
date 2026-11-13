@@ -61,20 +61,39 @@ struct FortuneScreen: View {
     }
 
     private func wideLayout(_ geo: GeometryProxy) -> some View {
-        HStack(alignment: .center, spacing: 24) {
-            VStack(alignment: .leading, spacing: 10) {
-                header(alignment: .leading)
-                Spacer(minLength: 0)
-                resultArea
-                Spacer(minLength: 0)
-                controls
+        VStack(spacing: 12) {
+            HStack(alignment: .center, spacing: 24) {
+                VStack(alignment: .leading, spacing: 10) {
+                    header(alignment: .leading)
+                    Spacer(minLength: 0)
+                    resultArea
+                    Spacer(minLength: 0)
+                }
+                .frame(width: geo.size.width * 0.40, alignment: .leading)
+                visualArea(height: min(geo.size.height * 0.60, 460))
+                    .frame(maxWidth: .infinity)
             }
-            .frame(width: geo.size.width * 0.42, alignment: .leading)
-            visualArea(height: min(geo.size.height * 0.7, 520))
-                .frame(maxWidth: .infinity)
+            // 底部全宽主按钮 + 右侧跳过（R14 iPad Landscape 稿）
+            HStack(spacing: 12) {
+                Button(action: draw) {
+                    Text(buttonTitle).d1Font(16, weight: .semibold).frame(maxWidth: .infinity, minHeight: 50)
+                }
+                .buttonStyle(.borderedProminent).tint(theme.accentStrong)
+                .disabled(phase == .running || done)
+                .opacity(done ? 0.55 : 1)
+                Button("跳过动画") { finish() }
+                    .d1Font(14).foregroundStyle(theme.ink2)
+                    .frame(minWidth: 110, minHeight: 50)
+                    .overlay(Capsule().strokeBorder(theme.line))
+                    .disabled(phase != .running)
+                    .opacity(phase == .running ? 1 : 0.4)
+            }
+            .frame(maxWidth: 900)
+            Text("同一天，保留同一结果。").d1Font(10).foregroundStyle(theme.ink3)
         }
-        .padding(.horizontal, 28)
-        .padding(.vertical, 16)
+        .padding(.horizontal, 32)
+        .padding(.vertical, 14)
+        .frame(maxWidth: .infinity)
     }
 
     private func header(alignment: HorizontalAlignment) -> some View {
