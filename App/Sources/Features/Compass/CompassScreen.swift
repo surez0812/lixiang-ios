@@ -160,8 +160,10 @@ struct R14CompassScreen: View {
     private func deityBadge(_ entry: CompassEntry, radius: CGFloat) -> some View {
         let pt = point(for: entry.direction.angleDegrees, radius: radius)
         return VStack(spacing: 0) {
-            Text(entry.deity.title.replacingOccurrences(of: "神", with: "")).d1Font(9, weight: .semibold).foregroundStyle(theme.ink)
-            Text(entry.direction.rawValue).d1Font(7).foregroundStyle(theme.ink3)
+            Text(entry.deity.title.replacingOccurrences(of: "神", with: "")).d1Font(9, weight: .semibold)
+                .foregroundStyle(Color(hex: 0x35291F))
+            Text(entry.direction.rawValue).d1Font(7)
+                .foregroundStyle(Color(hex: 0x79634D))
         }
         .padding(.horizontal, 5).padding(.vertical, 3)
         .background(theme.cream, in: Capsule())
