@@ -178,6 +178,12 @@ final class AlmanacTermSemanticTests: XCTestCase {
             let zh = pack.term(named: term)?.zh ?? ""
             XCTAssertTrue(zh.contains("传统历法术语"), "\(term) 星宿/建除仍漂移: \(zh)")
         }
+        // en 祈使动词开头 = 0（Go/See/Get/Visit/Take/Make/Try/Enjoy）
+        let imperative = try! NSRegularExpression(pattern: "^\\s*(Go|See|Get|Visit|Take|Make|Try|Enjoy)\\b", options: [.caseInsensitive])
+        for t in pack.terms {
+            let r = NSRange(t.en.startIndex..<t.en.endIndex, in: t.en)
+            XCTAssertNil(imperative.firstMatch(in: t.en, options: [], range: r), "\(t.term) en 以祈使动词开头: \(t.en)")
+        }
         let activityVerbs = ["去","陪","逛","散步","爬山","收拾","整理","赏花","赏菊","出门"]
         for t in pack.terms {
             XCTAssertFalse(t.zh.isEmpty || t.en.isEmpty, "\(t.term) zh/en 为空")

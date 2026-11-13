@@ -72,7 +72,7 @@
  {
   "term": "五合",
   "zh": "约朋友一起聚个餐",
-  "en": "Get friends together for dinner"
+  "en": "Traditional almanac term for a harmonious combination; cultural note."
  },
  {
   "term": "井",
@@ -102,7 +102,7 @@
  {
   "term": "会亲友",
   "zh": "约亲戚朋友吃饭叙旧",
-  "en": "Get together with family and friends"
+  "en": "Traditional term for gathering with family and friends; a customary social activity."
  },
  {
   "term": "作梁",
@@ -117,7 +117,7 @@
  {
   "term": "修坟",
   "zh": "清理墓地杂草、修整墓碑的民俗活动。",
-  "en": "Tidy the grave and clear weeds"
+  "en": "Traditional term for tending a grave and clearing weeds; a customary maintenance practice."
  },
  {
   "term": "修造",
@@ -142,7 +142,7 @@
  {
   "term": "入学",
   "zh": "到新学校报到注册的入学流程。",
-  "en": "Register and start at a new school"
+  "en": "Traditional term for enrolling at a new school; an educational milestone."
  },
  {
   "term": "入宅",
@@ -167,7 +167,7 @@
  {
   "term": "出行",
   "zh": "出门旅行或出差办事",
-  "en": "Go on a trip or travel for work"
+  "en": "Traditional term for travel or business trips; a customary activity."
  },
  {
   "term": "出货财",
@@ -192,7 +192,7 @@
  {
   "term": "割蜜",
   "zh": "采收蜂蜜的传统农事活动。",
-  "en": "Harvest fresh honey from beehives"
+  "en": "Traditional term for harvesting honey from beehives; an agricultural practice."
  },
  {
   "term": "动土",
@@ -232,7 +232,7 @@
  {
   "term": "取渔",
   "zh": "带上渔具去河边钓鱼",
-  "en": "Go fishing by the river"
+  "en": "Traditional term for fishing; a customary livelihood activity."
  },
  {
   "term": "司命",
@@ -572,7 +572,7 @@
  {
   "term": "归宁",
   "zh": "回娘家看望爸妈",
-  "en": "Visit your parents' home"
+  "en": "Traditional term for a married woman's visit to her parents' home; a customary family practice."
  },
  {
   "term": "归岫",
@@ -632,7 +632,7 @@
  {
   "term": "捕捉",
   "zh": "捕捉鱼虾等小动物的传统劳作。",
-  "en": "Go fishing or catch shrimp"
+  "en": "Traditional term for fishing or catching small animals; a customary livelihood activity."
  },
  {
   "term": "掘井",
@@ -642,7 +642,7 @@
  {
   "term": "探病",
   "zh": "看望病人、问候康复的日常礼节。",
-  "en": "Visit someone who is sick"
+  "en": "Traditional term for visiting and checking on a sick person; a customary courtesy."
  },
  {
   "term": "收",
@@ -697,7 +697,7 @@
  {
   "term": "春社",
   "zh": "约邻居聚一聚，联络感情",
-  "en": "Get together with neighbors and catch up"
+  "en": "Traditional spring community festival with neighborhood gatherings; cultural note."
  },
  {
   "term": "春节",
@@ -792,12 +792,12 @@
  {
   "term": "求医",
   "zh": "就医问诊、检查身体的日常行为。",
-  "en": "See a doctor and get medical checkups"
+  "en": "Traditional term for seeking medical help and checkups; cultural note, not medical advice."
  },
  {
   "term": "求医疗病",
   "zh": "传统民俗中指求医问诊、处理疾病相关事务；不替代专业医疗建议。",
-  "en": "See a doctor or start medical treatment"
+  "en": "Traditional term for seeking medical help; cultural note, not medical advice."
  },
  {
   "term": "求嗣",
@@ -812,7 +812,7 @@
  {
   "term": "沐浴",
   "zh": "泡个澡好好放松一下",
-  "en": "Take a relaxing bath"
+  "en": "Traditional term for bathing and cleansing; a customary personal-care practice."
  },
  {
   "term": "沙中土",
@@ -827,7 +827,7 @@
  {
   "term": "治病",
   "zh": "检查治疗身体不适的健康行为；民俗参考不替代专业医疗建议。",
-  "en": "See a doctor for checkup"
+  "en": "Traditional term for treating illness and checkups; cultural note, not medical advice."
  },
  {
   "term": "泉中水",
@@ -877,7 +877,7 @@
  {
   "term": "理发",
   "zh": "修剪头发、打理发型。",
-  "en": "Get a haircut"
+  "en": "Traditional term for cutting and grooming hair; a customary personal-care activity."
  },
  {
   "term": "甲不开仓财物耗散",
@@ -892,7 +892,7 @@
  {
   "term": "畋猎",
   "zh": "户外捕猎的传统劳作。",
-  "en": "Go fishing or hunting outdoors"
+  "en": "Traditional term for hunting outdoors; a customary livelihood activity."
  },
  {
   "term": "癸不词讼理弱敌强",
@@ -1027,7 +1027,7 @@
  {
   "term": "经络",
   "zh": "传统医学概念，指人体气血运行的通路；作为文化知识了解。",
-  "en": "Get a massage or physical therapy"
+  "en": "Traditional medical concept referring to pathways of qi and blood; cultural knowledge only."
  },
  {
   "term": "结网",
@@ -1246,8 +1246,8 @@
  },
  {
   "term": "除夕",
-  "zh": "做年夜饭，守岁聊天",
-  "en": "Make reunion dinner, stay up chatting"
+  "zh": "农历除夕；有年夜饭、守岁等年俗文化。",
+  "en": "Traditional New Year's Eve custom of reunion dinner and staying up late; cultural note."
  },
  {
   "term": "除服",
