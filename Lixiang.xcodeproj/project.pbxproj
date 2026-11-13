@@ -23,6 +23,7 @@
 		146166B7CABEC8AF3DB42FE9 /* CountdownLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */; };
 		1514DB9BFA1BDF1BEF79D353 /* term-guyu-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = C535385772329F09B4B4E2C4 /* term-guyu-light.webp */; };
 		1629C356400EA80AC0230377 /* term-chunfen-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9E46D276C8454B5F2B627E9D /* term-chunfen-dark.webp */; };
+		17D1A76AE2A47C652F10D350 /* R14NotifySettingsReturnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D4A9F73F823EBC2C499EB8 /* R14NotifySettingsReturnUITests.swift */; };
 		17EB0408610F8B6DF3E188D1 /* AlmanacTermSemanticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BD13F4B2267A8B87B91D9 /* AlmanacTermSemanticTests.swift */; };
 		17F1D38D07CDE3049419239E /* R14RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC233A3E5955B8F6BB809A7 /* R14RootView.swift */; };
 		1A1E4569802C9C82B49DCD50 /* CompassScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E3D415B91FC17BB2DC101 /* CompassScreen.swift */; };
@@ -225,6 +226,7 @@
 		3A92AD321EBABAB28F289053 /* term-daxue-dark.webp */ = {isa = PBXFileReference; path = "term-daxue-dark.webp"; sourceTree = "<group>"; };
 		3B0D4F502C5B8A786CA816CD /* index.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = index.json; sourceTree = "<group>"; };
 		4253AFA341B81955B45311A4 /* LixiangApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LixiangApp.swift; sourceTree = "<group>"; };
+		43D4A9F73F823EBC2C499EB8 /* R14NotifySettingsReturnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14NotifySettingsReturnUITests.swift; sourceTree = "<group>"; };
 		443C1D3C9904793024373124 /* SelectedDayStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDayStore.swift; sourceTree = "<group>"; };
 		493E10C2B5747A8960FA078A /* LixiangCalendarCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LixiangCalendarCore; path = packages/LixiangCalendarCore; sourceTree = SOURCE_ROOT; };
 		4B6D9052F53146203B14C60B /* R14Folklore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14Folklore.swift; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 				5CA2D75D50D2C9CC1E4ED5F8 /* CountdownUITests.swift */,
 				CBCDBA1EF72210DED08FDB80 /* R14LongCaptureUITests.swift */,
 				A08E55A1B642A7D216DBE463 /* R14MatrixUITests.swift */,
+				43D4A9F73F823EBC2C499EB8 /* R14NotifySettingsReturnUITests.swift */,
 				F7AFE3737C095E0827C301ED /* R14StateCaptureUITests.swift */,
 			);
 			path = LixiangUITests;
@@ -1129,6 +1132,7 @@
 				44E8A64DB0E88C01014E8C2C /* CountdownUITests.swift in Sources */,
 				332A5A6EDC9B0CC386194820 /* R14LongCaptureUITests.swift in Sources */,
 				35EFB6ADC5EE15C2AEFE6EDE /* R14MatrixUITests.swift in Sources */,
+				17D1A76AE2A47C652F10D350 /* R14NotifySettingsReturnUITests.swift in Sources */,
 				F8A3B3033A8CBE207E014050 /* R14StateCaptureUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
