@@ -56,16 +56,18 @@ struct DailyScreen: View {
         .toolbar(.hidden, for: .tabBar)
         .navigationTitle("每日一句")
         .navigationBarTitleDisplayMode(.inline)
-        .onAppear {
-            #if DEBUG
-            if ProcessInfo.processInfo.arguments.contains("-LixiangDailyShare"), let verse {
-                sharePayload = SharePayload(verse: verse)
-            }
-            #endif
-        }
+        .onAppear { autoOpenShareIfNeeded() }
+        .onChange(of: verse?.title) { _, _ in autoOpenShareIfNeeded() }
         .fullScreenCover(item: $sharePayload) { payload in
             DailySharePage(date: date, almanac: almanac, verse: payload.verse, theme: theme)
         }
+    }
+
+    private func autoOpenShareIfNeeded() {
+        #if DEBUG
+        guard sharePayload == nil, ProcessInfo.processInfo.arguments.contains("-LixiangDailyShare"), let verse else { return }
+        sharePayload = SharePayload(verse: verse)
+        #endif
     }
 
     private var wideBackRow: some View {
@@ -273,7 +275,14 @@ private struct DailySharePage: View {
                 rendered = renderer.uiImage
                 #if DEBUG
                 if let img = rendered {
-                    print("LIXDAILY_EXPORT points=\(img.size.width)x\(img.size.height) px=\(img.size.width * img.scale)x\(img.size.height * img.scale)")
+                    let pxW = Int(img.size.width * img.scale), pxH = Int(img.size.height * img.scale)
+                    print("LIXDAILY_EXPORT points=\(img.size.width)x\(img.size.height) scale=\(img.scale) px=\(pxW)x\(pxH)")
+                    if let png = img.pngData(),
+                       let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                        let url = dir.appendingPathComponent("r14-share-export.png")
+                        try? png.write(to: url)
+                        print("LIXDAILY_EXPORT_FILE path=\(url.path) px=\(pxW)x\(pxH) bytes=\(png.count)")
+                    }
                 }
                 #endif
             }
