@@ -9,16 +9,35 @@ struct R14HomeScreen: View {
     private let calendar = R14CalendarGrid()
 
     var body: some View {
+        GeometryReader { geo in
         ScrollView {
-            VStack(alignment: .leading, spacing: 14) {
-                hero
-                if !days.matchedFestivals.isEmpty { festivalsCard }
-                dailyCard
-                HStack(alignment: .top, spacing: 10) { fortuneCard; weatherCard }
-                almanacSummary
-                monthGrid
+            if geo.size.width >= 744 {
+                HStack(alignment: .top, spacing: 16) {
+                    VStack(alignment: .leading, spacing: 14) {
+                        hero
+                        if !days.matchedFestivals.isEmpty { festivalsCard }
+                        dailyCard
+                        HStack(alignment: .top, spacing: 10) { fortuneCard; weatherCard }
+                        almanacSummary
+                    }
+                    VStack(alignment: .leading, spacing: 14) {
+                        monthGrid
+                        Text("iPad 宽屏双列（左内容 / 右月历）").d1Font(9).foregroundStyle(theme.ink3)
+                    }
+                }
+                .padding(.horizontal, 20).padding(.vertical, 14).padding(.bottom, 96)
+            } else {
+                VStack(alignment: .leading, spacing: 14) {
+                    hero
+                    if !days.matchedFestivals.isEmpty { festivalsCard }
+                    dailyCard
+                    HStack(alignment: .top, spacing: 10) { fortuneCard; weatherCard }
+                    almanacSummary
+                    monthGrid
+                }
+                .padding(.horizontal, 16).padding(.vertical, 12).padding(.bottom, 96)
             }
-            .padding(.horizontal, 16).padding(.vertical, 12).padding(.bottom, 96)
+        }
         }
         .background(ScreenBackground())
         .navigationTitle("")
