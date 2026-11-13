@@ -39,6 +39,7 @@
 		3393FA89FB1D82F90A208A1E /* term-xiaoman-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 981C838D8BCA7964228E4D74 /* term-xiaoman-dark.webp */; };
 		34AC68259657AD79C06097F8 /* index.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B0D4F502C5B8A786CA816CD /* index.json */; };
 		3573D1CD2174094EECE5F737 /* WebViewReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F1437119438744247A6E3 /* WebViewReader.swift */; };
+		38159DBD71848FB753FF36CD /* SelectionEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2285EB6A83A891427ED1AF /* SelectionEngineTests.swift */; };
 		39FF8AB136D23EB770A2BC4A /* DebugOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E56086DB32FA3B6F775654 /* DebugOptions.swift */; };
 		3A1D84911217C40499DF9FF2 /* term-dashu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = FA982517A1D0AECF514480F7 /* term-dashu-dark.webp */; };
 		3ABC80F5BA369812487AA63D /* FestivalsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D409C092D16755B254E3B6 /* FestivalsScreen.swift */; };
@@ -108,6 +109,7 @@
 		D507607132B54CE0FA8FB68F /* term-jingzhe-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2FD914FFECCDF37F1AC1E7A7 /* term-jingzhe-light.webp */; };
 		D6BB3E4557832EDA34A4049A /* term-qingming-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 81A39542DB40883A371F0FA4 /* term-qingming-light.webp */; };
 		D72938DE70C223F16FFA2BA2 /* term-qiufen-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 82A7FE90A6AE81510C21B7EA /* term-qiufen-dark.webp */; };
+		D78B78F037BAF2894390E6B8 /* SelectionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C01351F82D58E292C7182 /* SelectionEngine.swift */; };
 		D829CC2393B232E519F47E52 /* verse-sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 68C53940B804042FB239F5C4 /* verse-sample.json */; };
 		D8BD6F43DAA9EA7ED2998655 /* term-qingming-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = EC9492B2CCAF48E208A8A83E /* term-qingming-dark.webp */; };
 		D90FC705F554FCAFD68504B4 /* AnimationTimeline.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C94CC9BA5F73D88409FE257 /* AnimationTimeline.json */; };
@@ -193,6 +195,7 @@
 		4C1C5648B77B83D4BF81E684 /* term-xiaoshu-light.webp */ = {isa = PBXFileReference; path = "term-xiaoshu-light.webp"; sourceTree = "<group>"; };
 		4E01E5FD3A472709A3070703 /* term-liqiu-dark.webp */ = {isa = PBXFileReference; path = "term-liqiu-dark.webp"; sourceTree = "<group>"; };
 		52FB17E2AF5C589BEC33442D /* MergedDayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergedDayCard.swift; sourceTree = "<group>"; };
+		532C01351F82D58E292C7182 /* SelectionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionEngine.swift; sourceTree = "<group>"; };
 		53440398036BA0EDC34D3233 /* term-lichun-light.webp */ = {isa = PBXFileReference; path = "term-lichun-light.webp"; sourceTree = "<group>"; };
 		577100ECF4EF8C4A8E8C7720 /* daily-verse-365.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "daily-verse-365.json"; sourceTree = "<group>"; };
 		58F5934239AE0A120AB9897D /* NotFoundScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundScreen.swift; sourceTree = "<group>"; };
@@ -275,6 +278,7 @@
 		EB4FE729CE209807C668F1D5 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		EBEC52C3B831CECA16873A0B /* term-liqiu-light.webp */ = {isa = PBXFileReference; path = "term-liqiu-light.webp"; sourceTree = "<group>"; };
 		EC9492B2CCAF48E208A8A83E /* term-qingming-dark.webp */ = {isa = PBXFileReference; path = "term-qingming-dark.webp"; sourceTree = "<group>"; };
+		ED2285EB6A83A891427ED1AF /* SelectionEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionEngineTests.swift; sourceTree = "<group>"; };
 		F0CB1916448ADAA608EBB07F /* term-yushui-light.webp */ = {isa = PBXFileReference; path = "term-yushui-light.webp"; sourceTree = "<group>"; };
 		F5090AF9BBD20E743BA7E910 /* dao-365.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "dao-365.json"; sourceTree = "<group>"; };
 		F542B8E0272440DFD678CF6E /* term-dongzhi-dark.webp */ = {isa = PBXFileReference; path = "term-dongzhi-dark.webp"; sourceTree = "<group>"; };
@@ -303,6 +307,14 @@
 				5CA2D75D50D2C9CC1E4ED5F8 /* CountdownUITests.swift */,
 			);
 			path = LixiangUITests;
+			sourceTree = "<group>";
+		};
+		1D9F664F308BF7037D16B91A /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				532C01351F82D58E292C7182 /* SelectionEngine.swift */,
+			);
+			path = Selection;
 			sourceTree = "<group>";
 		};
 		20FE1509BED40A792E3B92F6 /* Compass */ = {
@@ -548,6 +560,7 @@
 				9258FBD4E617D0769D3A930A /* PlainLanguage */,
 				8920B47FF6A86C27E9FA6FBC /* Root */,
 				D91064416199FE16C03AF681 /* Seasonal */,
+				1D9F664F308BF7037D16B91A /* Selection */,
 				43DEDB2A6FE976E0A69E96DE /* Settings */,
 				A6FFE7DD64CD326AA605D42D /* Weather */,
 			);
@@ -608,6 +621,7 @@
 				E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */,
 				DCCA767FE8687948B8B5D0DF /* FortuneEngineTests.swift */,
 				72CB69DB4CB6E4BFBB763053 /* R14SelectedDayTests.swift */,
+				ED2285EB6A83A891427ED1AF /* SelectionEngineTests.swift */,
 			);
 			path = LixiangTests;
 			sourceTree = "<group>";
@@ -909,6 +923,7 @@
 				124CF875588EF60300DE3EBB /* RootView.swift in Sources */,
 				BB440E10DE36EC032893B9CB /* SeasonalArt.swift in Sources */,
 				8EC0A815C5B9E1271B935DCE /* SelectedDayStore.swift in Sources */,
+				D78B78F037BAF2894390E6B8 /* SelectionEngine.swift in Sources */,
 				B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */,
 				E5D415369673F786EDD6C1FF /* ShareCard.swift in Sources */,
 				2D00D99D1387375BE42582B5 /* ShareSheetView.swift in Sources */,
@@ -925,6 +940,7 @@
 				146166B7CABEC8AF3DB42FE9 /* CountdownLogicTests.swift in Sources */,
 				5A6C298813051CC13C5D3BC5 /* FortuneEngineTests.swift in Sources */,
 				3AC84F2AB6C0868251A4DCF3 /* R14SelectedDayTests.swift in Sources */,
+				38159DBD71848FB753FF36CD /* SelectionEngineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

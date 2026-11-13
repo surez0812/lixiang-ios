@@ -67,11 +67,11 @@ struct R14PlaceholderPage: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 14) {
                     Text(title).d1SerifFont(28, weight: .semibold).foregroundStyle(theme.ink)
-                    Text("画布 \(canvas.rawValue)（共享 \(canvas.sharedLayout.rawValue)）· \(Int(geo.size.width))×\(Int(geo.size.height))")
+                    Text(verbatim: "画布 \(canvas.rawValue)（共享 \(canvas.sharedLayout.rawValue)）· \(Int(geo.size.width))×\(Int(geo.size.height))")
                         .d1Font(11).foregroundStyle(theme.ink3)
                     D1Card(padding: 14) {
                         VStack(alignment: .leading, spacing: 6) {
-                            Text("\(days.selectedDate.year)年\(days.selectedDate.month)月\(days.selectedDate.day)日 · 农历\(days.lunar.monthDayText)")
+                            Text(verbatim: "\(days.selectedDate.year)年\(days.selectedDate.month)月\(days.selectedDate.day)日 · 农历\(days.lunar.monthDayText)")
                                 .d1Font(13, weight: .semibold).foregroundStyle(theme.ink)
                             Text("黄历链路：\(days.almanac.lunar.dayGanZhi)日 · 值神\(days.almanac.tianShen) · 煞\(days.sha?.rawValue ?? "—")")
                                 .d1Font(11).foregroundStyle(theme.ink2)
