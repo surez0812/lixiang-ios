@@ -21,7 +21,7 @@ struct R14HomeScreen: View {
                     HStack(alignment: .top, spacing: 16) {
                         VStack(alignment: .leading, spacing: 14) { hero; HStack(alignment: .top, spacing: 10) { fortuneCard; weatherCard } }
                         VStack(alignment: .leading, spacing: 14) { almanacCard; monthCard }
-                    }.padding(.horizontal, 20).padding(.vertical, 14).padding(.bottom, 96)
+                    }.padding(.horizontal, 24).padding(.top, 20).padding(.bottom, 96)
                 } else {
                     VStack(alignment: .leading, spacing: 14) { hero; HStack(alignment: .top, spacing: 10) { fortuneCard; weatherCard }; almanacCard; monthCard }
                         .padding(.horizontal, 16).padding(.vertical, 12).padding(.bottom, 96)

@@ -57,25 +57,26 @@ struct R14RootView: View {
     }
 
     var body: some View {
+        ZStack {
+        ScreenBackground().ignoresSafeArea()
         GeometryReader { geo in
             let canvas = R14DevicePolicy.canvas(size: geo.size, idiom: UIDevice.current.userInterfaceIdiom)
             let duoSideBar = canvas == .duoOpenLandscape || (geo.size.width > geo.size.height && abs(geo.size.width - 951) < 24 && abs(geo.size.height - 669) < 24)
-            ZStack(alignment: duoSideBar ? .trailing : .bottom) {
-                tabsContent
-                    .safeAreaInset(edge: .bottom) {
-                        if !duoSideBar && !hideBar { Color.clear.frame(height: 84) }
+            Group {
+                if duoSideBar {
+                    HStack(spacing: 0) {
+                        tabsContent
+                        if !hideBar { R14SideTabBar(selected: $tab).padding(.trailing, 8) }
                     }
-                    .safeAreaInset(edge: .trailing) {
-                        if duoSideBar && !hideBar { Color.clear.frame(width: 76) }
-                    }
-                if !hideBar {
-                    if duoSideBar {
-                        R14SideTabBar(selected: $tab).padding(.trailing, 8).padding(.vertical, 24)
-                    } else {
-                        R14FloatingTabBar(selected: $tab).padding(.bottom, 6)
+                } else {
+                    VStack(spacing: 0) {
+                        tabsContent.frame(maxWidth: .infinity, maxHeight: .infinity)
+                        if !hideBar { R14FloatingTabBar(selected: $tab).padding(.bottom, 6) }
                     }
                 }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
         }
         .tint(D1Theme.resolve(state.theme.colorScheme ?? .light).accent)
         .environmentObject(days)
