@@ -108,4 +108,29 @@ final class R14StateCaptureUITests: XCTestCase {
         }
     }
 
+
+    func testSeededCountdownDetailRoute() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-LixiangSeedCountdown", "1", "-LixiangR14Route", "countdownDetail"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 25))
+        sleep(4)
+        XCTAssertTrue(app.staticTexts["生日"].waitForExistence(timeout: 20), "seeded countdownDetail 未进入真实详情")
+        XCTAssertFalse(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "页面待实现")).firstMatch.exists, "仍显示占位页")
+    }
+
+    func testCountdownListTapDetail() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-LixiangTab", "3", "-LixiangSeedCountdown", "1"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 25))
+        sleep(4)
+        let card = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "生日")).firstMatch
+        XCTAssertTrue(card.waitForExistence(timeout: 10), "列表未见生日卡")
+        card.tap()
+        sleep(3)
+        XCTAssertTrue(app.staticTexts["生日"].waitForExistence(timeout: 10), "列表点击未进入详情")
+        XCTAssertFalse(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "页面待实现")).firstMatch.exists)
+    }
+
 }
