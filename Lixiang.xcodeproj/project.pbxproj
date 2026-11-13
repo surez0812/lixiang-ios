@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01117EB3016F04967E6CAFC9 /* DevicePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E718226079E51BAABC4EC0 /* DevicePolicy.swift */; };
 		01A30CE8E171928F97BF0D0E /* PACK-NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 959F210520429077B9C4352B /* PACK-NOTES.md */; };
 		04BA6016FEC090D5F71A7623 /* QuoteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2588121BE27A986FD5F923 /* QuoteSheet.swift */; };
 		05C5E1385679BE460EAAFB01 /* GlossaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */; };
@@ -23,6 +24,7 @@
 		146166B7CABEC8AF3DB42FE9 /* CountdownLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */; };
 		1514DB9BFA1BDF1BEF79D353 /* term-guyu-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = C535385772329F09B4B4E2C4 /* term-guyu-light.webp */; };
 		1629C356400EA80AC0230377 /* term-chunfen-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9E46D276C8454B5F2B627E9D /* term-chunfen-dark.webp */; };
+		17F1D38D07CDE3049419239E /* R14RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC233A3E5955B8F6BB809A7 /* R14RootView.swift */; };
 		1A1E4569802C9C82B49DCD50 /* CompassScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E3D415B91FC17BB2DC101 /* CompassScreen.swift */; };
 		1C3E44270BD730F9387A2EB0 /* term-lichun-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = AD13A95C89E26C3DDB673171 /* term-lichun-dark.webp */; };
 		1F63527EDE38F66DB0136B34 /* DayPagerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3D35A18BB7E520F7DA264 /* DayPagerScreen.swift */; };
@@ -40,15 +42,18 @@
 		39FF8AB136D23EB770A2BC4A /* DebugOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E56086DB32FA3B6F775654 /* DebugOptions.swift */; };
 		3A1D84911217C40499DF9FF2 /* term-dashu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = FA982517A1D0AECF514480F7 /* term-dashu-dark.webp */; };
 		3ABC80F5BA369812487AA63D /* FestivalsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D409C092D16755B254E3B6 /* FestivalsScreen.swift */; };
+		3AC84F2AB6C0868251A4DCF3 /* R14SelectedDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CB69DB4CB6E4BFBB763053 /* R14SelectedDayTests.swift */; };
 		3DF210EE773FBEEDEDA6E5C6 /* term-xiaoxue-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = D312BF7789D4CDD61EA0C5FD /* term-xiaoxue-dark.webp */; };
 		40EA23282A681DF06B3AAECD /* daily-classics in Resources */ = {isa = PBXBuildFile; fileRef = 2BAE11DD178421748CB1455E /* daily-classics */; };
 		44E8A64DB0E88C01014E8C2C /* CountdownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2D75D50D2C9CC1E4ED5F8 /* CountdownUITests.swift */; };
 		4553A31FFB538DCA0FBDA0C2 /* term-daxue-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3A92AD321EBABAB28F289053 /* term-daxue-dark.webp */; };
+		484B6B5B2B3508BE82EDD3A7 /* FortuneEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCB104A9BE436ADFCB2DA7 /* FortuneEngine.swift */; };
 		4955EEFFA8CD581D7FFA0A5C /* term-dahan-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 7265B869FEE42BA26C98C0BE /* term-dahan-light.webp */; };
 		4961A2C52973706909F582C0 /* SourceLicenseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5FAB3FD05EDDE5ACAA2B79 /* SourceLicenseScreen.swift */; };
 		4C85C72CF4424B380152BFBF /* DailyClassics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C60C2822AEE9EFD59BAFE6 /* DailyClassics.swift */; };
 		53C956D926BCD244194C6AA0 /* term-bailu-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 389AF72D672C91DBCA828762 /* term-bailu-light.webp */; };
 		546FA2AA90BEEBA9A678A60D /* panel-terms.json in Resources */ = {isa = PBXBuildFile; fileRef = B46683D1B299DC8E45740FF0 /* panel-terms.json */; };
+		5A6C298813051CC13C5D3BC5 /* FortuneEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCA767FE8687948B8B5D0DF /* FortuneEngineTests.swift */; };
 		5DC804F1EFB564515CFF5331 /* LixiangApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4253AFA341B81955B45311A4 /* LixiangApp.swift */; };
 		5FFF5FAE5E5A65AF03A97BAF /* confucian-365.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D79AB6BAEC69AAA4FFFE4 /* confucian-365.json */; };
 		64C5D56B5EEA0B94FD4D1751 /* term-lidong-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6BA7F1CFC0ABE2C986E68A4C /* term-lidong-dark.webp */; };
@@ -68,15 +73,18 @@
 		8037EF70A0164B9BF1595EA5 /* ContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11B7E10505799D2B48A8039 /* ContentScreen.swift */; };
 		827C8C621B416FEA419FC57E /* seal-round-01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4978AAFCA6560B6F952E90 /* seal-round-01@3x.png */; };
 		8341D6E9A4D87EB31E3DC658 /* daodejing.json in Resources */ = {isa = PBXBuildFile; fileRef = 802AC8FB41F46CD669710BC0 /* daodejing.json */; };
+		85744A50CF1D91E9AD8EC02A /* FortuneScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1057297CBC564642A08F8B /* FortuneScreen.swift */; };
 		87B2E99B4716578E1A332A70 /* term-xiazhi-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 12206DA975CCAA192C120378 /* term-xiazhi-dark.webp */; };
 		8869502A7E81924ECFA11DB5 /* ApprovedMotionManifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A1B1F7CFD33642D4B58FBEB /* ApprovedMotionManifest.json */; };
 		88AC02A604222A6B6DA56B13 /* explain-pages.json in Resources */ = {isa = PBXBuildFile; fileRef = 32D566C65C78A240C691BAE2 /* explain-pages.json */; };
 		8BB451AA7F94B4A78B5DAB11 /* term-lidong-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = BBF1AB9B0EC5E4CE0D2509D2 /* term-lidong-light.webp */; };
+		8EC0A815C5B9E1271B935DCE /* SelectedDayStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C1D3C9904793024373124 /* SelectedDayStore.swift */; };
 		907F2BA4D3277A3A8CE1347D /* DailyVerseDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BF5B7DAC670CF275F5EBE6 /* DailyVerseDetailScreen.swift */; };
 		9128527BA893D4502A4803D8 /* support.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E444FF645AE7F3A22E391DD /* support.md */; };
 		92074A4284A05F5901632EEA /* user-terms.md in Resources */ = {isa = PBXBuildFile; fileRef = C2D792603555272E28D9B5A9 /* user-terms.md */; };
 		93C793A1B1C540AF14C3916C /* privacy.md in Resources */ = {isa = PBXBuildFile; fileRef = 06939DF97090A6AE27F8D2B5 /* privacy.md */; };
 		95BE8E56E129430C849F1CB3 /* term-chushu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = C9E219B0ADA5BD66F0ACF994 /* term-chushu-dark.webp */; };
+		985FBB763F17969B9AB44613 /* FortuneModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB58EF2EB50DD2B3F0FE6B /* FortuneModels.swift */; };
 		A1211486934ACFD13BA23076 /* HeadingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687253ACB0BDCBD36126D15B /* HeadingProvider.swift */; };
 		A6F73ACA8BC0B17CB711BEF6 /* ApprovedFortuneCore.js in Resources */ = {isa = PBXBuildFile; fileRef = 053D711052530830581FB346 /* ApprovedFortuneCore.js */; };
 		AE756168FD87DC8D978F2005 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788133271B6E5AF4FAB99C4D /* AppState.swift */; };
@@ -120,6 +128,7 @@
 		F981B4DE21313B9FEF498D8F /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB9C4AE5A725053B6669BE /* NotificationScheduler.swift */; };
 		FA392D3F4927DAD1B73975EB /* daily-verse-365.json in Resources */ = {isa = PBXBuildFile; fileRef = 577100ECF4EF8C4A8E8C7720 /* daily-verse-365.json */; };
 		FBC728FB875915DBE3258CC4 /* term-daxue-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 753B33F7EB21F8D8EDB08902 /* term-daxue-light.webp */; };
+		FCB283D71879B496018AF4D2 /* fortune-samples.json in Resources */ = {isa = PBXBuildFile; fileRef = C461CA7AF0D2543A23BEB268 /* fortune-samples.json */; };
 		FD8A1B4315AA9DCFB96590A4 /* term-dongzhi-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = A0647A04C25ED1304C0F512D /* term-dongzhi-light.webp */; };
 		FE19DF04A322B214D41B8214 /* term-xiaoxue-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = A534A57307D77F8FF056755E /* term-xiaoxue-light.webp */; };
 		FF703C8CF73DECD2F7FB7F0E /* term-guyu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 62C07BADE4FF0093E5B4459A /* term-guyu-dark.webp */; };
@@ -179,6 +188,7 @@
 		3A92AD321EBABAB28F289053 /* term-daxue-dark.webp */ = {isa = PBXFileReference; path = "term-daxue-dark.webp"; sourceTree = "<group>"; };
 		3B0D4F502C5B8A786CA816CD /* index.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = index.json; sourceTree = "<group>"; };
 		4253AFA341B81955B45311A4 /* LixiangApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LixiangApp.swift; sourceTree = "<group>"; };
+		443C1D3C9904793024373124 /* SelectedDayStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDayStore.swift; sourceTree = "<group>"; };
 		493E10C2B5747A8960FA078A /* LixiangCalendarCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LixiangCalendarCore; path = packages/LixiangCalendarCore; sourceTree = SOURCE_ROOT; };
 		4C1C5648B77B83D4BF81E684 /* term-xiaoshu-light.webp */ = {isa = PBXFileReference; path = "term-xiaoshu-light.webp"; sourceTree = "<group>"; };
 		4E01E5FD3A472709A3070703 /* term-liqiu-dark.webp */ = {isa = PBXFileReference; path = "term-liqiu-dark.webp"; sourceTree = "<group>"; };
@@ -188,6 +198,7 @@
 		58F5934239AE0A120AB9897D /* NotFoundScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundScreen.swift; sourceTree = "<group>"; };
 		5AB42F14E1F9EB220E08ABBA /* term-qiufen-light.webp */ = {isa = PBXFileReference; path = "term-qiufen-light.webp"; sourceTree = "<group>"; };
 		5CA2D75D50D2C9CC1E4ED5F8 /* CountdownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownUITests.swift; sourceTree = "<group>"; };
+		5EC233A3E5955B8F6BB809A7 /* R14RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14RootView.swift; sourceTree = "<group>"; };
 		62C07BADE4FF0093E5B4459A /* term-guyu-dark.webp */ = {isa = PBXFileReference; path = "term-guyu-dark.webp"; sourceTree = "<group>"; };
 		64D409C092D16755B254E3B6 /* FestivalsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalsScreen.swift; sourceTree = "<group>"; };
 		66274F8F8CC6405B34C0B2B3 /* term-hanlu-dark.webp */ = {isa = PBXFileReference; path = "term-hanlu-dark.webp"; sourceTree = "<group>"; };
@@ -198,11 +209,13 @@
 		6D5FAB3FD05EDDE5ACAA2B79 /* SourceLicenseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLicenseScreen.swift; sourceTree = "<group>"; };
 		6F33B4CF88B56F5ECE472BFE /* term-dashu-light.webp */ = {isa = PBXFileReference; path = "term-dashu-light.webp"; sourceTree = "<group>"; };
 		7265B869FEE42BA26C98C0BE /* term-dahan-light.webp */ = {isa = PBXFileReference; path = "term-dahan-light.webp"; sourceTree = "<group>"; };
+		72CB69DB4CB6E4BFBB763053 /* R14SelectedDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14SelectedDayTests.swift; sourceTree = "<group>"; };
 		753B33F7EB21F8D8EDB08902 /* term-daxue-light.webp */ = {isa = PBXFileReference; path = "term-daxue-light.webp"; sourceTree = "<group>"; };
 		76E56086DB32FA3B6F775654 /* DebugOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugOptions.swift; sourceTree = "<group>"; };
 		788133271B6E5AF4FAB99C4D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		79A2A855655307AEE28CA382 /* term-lixia-light.webp */ = {isa = PBXFileReference; path = "term-lixia-light.webp"; sourceTree = "<group>"; };
 		7B9C20186EACBA4CB717F53C /* AnniversaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryScreen.swift; sourceTree = "<group>"; };
+		7BAB58EF2EB50DD2B3F0FE6B /* FortuneModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneModels.swift; sourceTree = "<group>"; };
 		7EC3D35A18BB7E520F7DA264 /* DayPagerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPagerScreen.swift; sourceTree = "<group>"; };
 		7FFB1AB9AD6D73783C65CF8F /* term-shuangjiang-light.webp */ = {isa = PBXFileReference; path = "term-shuangjiang-light.webp"; sourceTree = "<group>"; };
 		802AC8FB41F46CD669710BC0 /* daodejing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = daodejing.json; sourceTree = "<group>"; };
@@ -211,6 +224,7 @@
 		81F89938CBAE6DCFF2EC664C /* LixiangTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LixiangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A7FE90A6AE81510C21B7EA /* term-qiufen-dark.webp */ = {isa = PBXFileReference; path = "term-qiufen-dark.webp"; sourceTree = "<group>"; };
 		8A255389BBDF673EABAC24B6 /* R14Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = R14Assets.xcassets; sourceTree = "<group>"; };
+		8B1057297CBC564642A08F8B /* FortuneScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneScreen.swift; sourceTree = "<group>"; };
 		8B78B618C8DAEDD12A50EF74 /* seal-round-01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seal-round-01@2x.png"; sourceTree = "<group>"; };
 		8E466F07982E0E749DF30BB5 /* term-mangzhong-light.webp */ = {isa = PBXFileReference; path = "term-mangzhong-light.webp"; sourceTree = "<group>"; };
 		9278E618C0610300D932BD3C /* term-xiaoman-light.webp */ = {isa = PBXFileReference; path = "term-xiaoman-light.webp"; sourceTree = "<group>"; };
@@ -227,18 +241,21 @@
 		A0647A04C25ED1304C0F512D /* term-dongzhi-light.webp */ = {isa = PBXFileReference; path = "term-dongzhi-light.webp"; sourceTree = "<group>"; };
 		A4C31060949F18440152CA0C /* yi-ji-mapping.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "yi-ji-mapping.json"; sourceTree = "<group>"; };
 		A534A57307D77F8FF056755E /* term-xiaoxue-light.webp */ = {isa = PBXFileReference; path = "term-xiaoxue-light.webp"; sourceTree = "<group>"; };
+		A5BCB104A9BE436ADFCB2DA7 /* FortuneEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneEngine.swift; sourceTree = "<group>"; };
 		A67673C4C6D224600887711F /* DayDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailScreen.swift; sourceTree = "<group>"; };
 		A7E35CC6BD3E4FA162178AF1 /* DailyVerseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyVerseScreen.swift; sourceTree = "<group>"; };
 		A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryScreen.swift; sourceTree = "<group>"; };
 		AD13A95C89E26C3DDB673171 /* term-lichun-dark.webp */ = {isa = PBXFileReference; path = "term-lichun-dark.webp"; sourceTree = "<group>"; };
 		ADAAB3BFDF1D630B7D7D5361 /* A11yOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A11yOrderTests.swift; sourceTree = "<group>"; };
 		B0972F77CF89DEA571919AB7 /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
+		B3E718226079E51BAABC4EC0 /* DevicePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePolicy.swift; sourceTree = "<group>"; };
 		B46683D1B299DC8E45740FF0 /* panel-terms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "panel-terms.json"; sourceTree = "<group>"; };
 		B7192674760DC8C1A098029B /* term-yushui-dark.webp */ = {isa = PBXFileReference; path = "term-yushui-dark.webp"; sourceTree = "<group>"; };
 		BB8990536CE22FCB0076EB82 /* term-xiazhi-light.webp */ = {isa = PBXFileReference; path = "term-xiazhi-light.webp"; sourceTree = "<group>"; };
 		BBF1AB9B0EC5E4CE0D2509D2 /* term-lidong-light.webp */ = {isa = PBXFileReference; path = "term-lidong-light.webp"; sourceTree = "<group>"; };
 		BF18D4E9C43A87557F5B8AFB /* PlainTermSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTermSheet.swift; sourceTree = "<group>"; };
 		C2D792603555272E28D9B5A9 /* user-terms.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "user-terms.md"; sourceTree = "<group>"; };
+		C461CA7AF0D2543A23BEB268 /* fortune-samples.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "fortune-samples.json"; sourceTree = "<group>"; };
 		C535385772329F09B4B4E2C4 /* term-guyu-light.webp */ = {isa = PBXFileReference; path = "term-guyu-light.webp"; sourceTree = "<group>"; };
 		C9E219B0ADA5BD66F0ACF994 /* term-chushu-dark.webp */ = {isa = PBXFileReference; path = "term-chushu-dark.webp"; sourceTree = "<group>"; };
 		CC62CFDFEAF248607EFF182F /* term-xiaoshu-dark.webp */ = {isa = PBXFileReference; path = "term-xiaoshu-dark.webp"; sourceTree = "<group>"; };
@@ -247,6 +264,7 @@
 		D15E21AB1DA5B1F2145579FD /* ART-NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ART-NOTES.md"; sourceTree = "<group>"; };
 		D312BF7789D4CDD61EA0C5FD /* term-xiaoxue-dark.webp */ = {isa = PBXFileReference; path = "term-xiaoxue-dark.webp"; sourceTree = "<group>"; };
 		D421ECD4E84365F75CC9AE9A /* MonthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthScreen.swift; sourceTree = "<group>"; };
+		DCCA767FE8687948B8B5D0DF /* FortuneEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneEngineTests.swift; sourceTree = "<group>"; };
 		DF000E8B3E2547A6EE42316D /* term-chunfen-light.webp */ = {isa = PBXFileReference; path = "term-chunfen-light.webp"; sourceTree = "<group>"; };
 		DF9F8074A131889FFB85A95D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		E1BD67E5E2CFFCBF2F70AD9D /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
@@ -441,6 +459,7 @@
 			isa = PBXGroup;
 			children = (
 				FDBEDE26ADF59E42BBA54999 /* daily-classics */,
+				CB44FF078D03D57A7D61DFA6 /* Fortune */,
 				82211D53D09E86107383F779 /* Legal */,
 				4D8A08A49AA259FCCBA9DF2F /* PlainLanguage */,
 				7BA3BCD39119E0C6636D97D2 /* Seals */,
@@ -510,6 +529,7 @@
 		8920B47FF6A86C27E9FA6FBC /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				5EC233A3E5955B8F6BB809A7 /* R14RootView.swift */,
 				DF9F8074A131889FFB85A95D /* RootView.swift */,
 			);
 			path = Root;
@@ -524,6 +544,7 @@
 				241B087D49B937E6CE3F10F5 /* Content */,
 				38999125256D48B1DC4D171B /* Day */,
 				7EB79160490018CA05327F30 /* Festivals */,
+				9702A59EBC2BAFA7C883AE71 /* Fortune */,
 				9258FBD4E617D0769D3A930A /* PlainLanguage */,
 				8920B47FF6A86C27E9FA6FBC /* Root */,
 				D91064416199FE16C03AF681 /* Seasonal */,
@@ -546,6 +567,16 @@
 				FF88D426CDEE2991E113D3FF /* ShareCard.swift */,
 			);
 			path = PlainLanguage;
+			sourceTree = "<group>";
+		};
+		9702A59EBC2BAFA7C883AE71 /* Fortune */ = {
+			isa = PBXGroup;
+			children = (
+				A5BCB104A9BE436ADFCB2DA7 /* FortuneEngine.swift */,
+				7BAB58EF2EB50DD2B3F0FE6B /* FortuneModels.swift */,
+				8B1057297CBC564642A08F8B /* FortuneScreen.swift */,
+			);
+			path = Fortune;
 			sourceTree = "<group>";
 		};
 		9CF155100DF864F8BE868162 /* DesignSystem */ = {
@@ -575,6 +606,8 @@
 			isa = PBXGroup;
 			children = (
 				E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */,
+				DCCA767FE8687948B8B5D0DF /* FortuneEngineTests.swift */,
+				72CB69DB4CB6E4BFBB763053 /* R14SelectedDayTests.swift */,
 			);
 			path = LixiangTests;
 			sourceTree = "<group>";
@@ -585,6 +618,14 @@
 				D421ECD4E84365F75CC9AE9A /* MonthScreen.swift */,
 			);
 			path = Calendar;
+			sourceTree = "<group>";
+		};
+		CB44FF078D03D57A7D61DFA6 /* Fortune */ = {
+			isa = PBXGroup;
+			children = (
+				C461CA7AF0D2543A23BEB268 /* fortune-samples.json */,
+			);
+			path = Fortune;
 			sourceTree = "<group>";
 		};
 		D6FFF1C924FCAEB6E01ABE0E /* Tests */ = {
@@ -620,8 +661,10 @@
 				E4B41AF2DA2B791A5B93B941 /* AnniversaryStore.swift */,
 				788133271B6E5AF4FAB99C4D /* AppState.swift */,
 				76E56086DB32FA3B6F775654 /* DebugOptions.swift */,
+				B3E718226079E51BAABC4EC0 /* DevicePolicy.swift */,
 				4253AFA341B81955B45311A4 /* LixiangApp.swift */,
 				1BDB9C4AE5A725053B6669BE /* NotificationScheduler.swift */,
+				443C1D3C9904793024373124 /* SelectedDayStore.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -758,6 +801,7 @@
 				7E1D04E9F410BAC040786DD2 /* dao-365.json in Resources */,
 				8341D6E9A4D87EB31E3DC658 /* daodejing.json in Resources */,
 				88AC02A604222A6B6DA56B13 /* explain-pages.json in Resources */,
+				FCB283D71879B496018AF4D2 /* fortune-samples.json in Resources */,
 				34AC68259657AD79C06097F8 /* index.json in Resources */,
 				283B625826F644EB439047DF /* panel-terms-v2.json in Resources */,
 				546FA2AA90BEEBA9A678A60D /* panel-terms.json in Resources */,
@@ -846,7 +890,11 @@
 				E297799EA5E91021225B8A5D /* DayDetailScreen.swift in Sources */,
 				1F63527EDE38F66DB0136B34 /* DayPagerScreen.swift in Sources */,
 				39FF8AB136D23EB770A2BC4A /* DebugOptions.swift in Sources */,
+				01117EB3016F04967E6CAFC9 /* DevicePolicy.swift in Sources */,
 				3ABC80F5BA369812487AA63D /* FestivalsScreen.swift in Sources */,
+				484B6B5B2B3508BE82EDD3A7 /* FortuneEngine.swift in Sources */,
+				985FBB763F17969B9AB44613 /* FortuneModels.swift in Sources */,
+				85744A50CF1D91E9AD8EC02A /* FortuneScreen.swift in Sources */,
 				05C5E1385679BE460EAAFB01 /* GlossaryScreen.swift in Sources */,
 				A1211486934ACFD13BA23076 /* HeadingProvider.swift in Sources */,
 				5DC804F1EFB564515CFF5331 /* LixiangApp.swift in Sources */,
@@ -857,8 +905,10 @@
 				64FC9C5E7534E6985EA1E01B /* PlainLanguageLoader.swift in Sources */,
 				74F2ABD34D760AC952033AD7 /* PlainTermSheet.swift in Sources */,
 				04BA6016FEC090D5F71A7623 /* QuoteSheet.swift in Sources */,
+				17F1D38D07CDE3049419239E /* R14RootView.swift in Sources */,
 				124CF875588EF60300DE3EBB /* RootView.swift in Sources */,
 				BB440E10DE36EC032893B9CB /* SeasonalArt.swift in Sources */,
+				8EC0A815C5B9E1271B935DCE /* SelectedDayStore.swift in Sources */,
 				B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */,
 				E5D415369673F786EDD6C1FF /* ShareCard.swift in Sources */,
 				2D00D99D1387375BE42582B5 /* ShareSheetView.swift in Sources */,
@@ -873,6 +923,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				146166B7CABEC8AF3DB42FE9 /* CountdownLogicTests.swift in Sources */,
+				5A6C298813051CC13C5D3BC5 /* FortuneEngineTests.swift in Sources */,
+				3AC84F2AB6C0868251A4DCF3 /* R14SelectedDayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

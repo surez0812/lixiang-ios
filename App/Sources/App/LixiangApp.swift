@@ -4,6 +4,7 @@ import LixiangCalendarCore
 
 @main
 struct LixiangApp: App {
+    @UIApplicationDelegateAdaptor(R14AppDelegate.self) private var appDelegate
     @StateObject private var state = AppState()
 
     init() {
@@ -12,7 +13,7 @@ struct LixiangApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootView()
+            R14RootView()
                 .environmentObject(state)
                 .preferredColorScheme(state.theme.colorScheme)
                 .environment(\.d1, D1Theme.resolve(state.theme.colorScheme ?? .light))
