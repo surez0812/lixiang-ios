@@ -148,6 +148,14 @@ struct R14FolkloreDetailScreen: View {
     @Environment(\.dismiss) private var dismiss
     @State private var showShare = false
 
+    private var isPlaceholder: Bool {
+        guard let row else { return true }
+        let item = row.item
+        if item.version == 0 { return true }
+        if item.sources.contains(where: { $0.title.contains("示例") || $0.note?.contains("非最终") == true }) { return true }
+        return item.sections.contains { $0.paragraphs.contains { $0.contains("P1 示例") } }
+    }
+
     private var row: FolkloreRow? {
         let resolved = ContentResolver.resolve(items: ContentFixtures.all, now: state.today, engine: state.engine)
         guard let r = resolved.first(where: { $0.item.id == id }), let info = r.stateInfo(regionID: nil, now: state.today) else { return nil }
@@ -163,7 +171,11 @@ struct R14FolkloreDetailScreen: View {
                     if row.isReadable {
                         Image("winter").resizable().scaledToFill().frame(height: 220).clipped()
                             .overlay(LinearGradient(colors: [.clear, .black.opacity(0.12)], startPoint: .top, endPoint: .bottom))
-                        article(row.item)
+                        if isPlaceholder {
+                            contentPendingCard
+                        } else {
+                            article(row.item)
+                        }
                     } else {
                         lockedCard(row)
                     }
@@ -176,7 +188,7 @@ struct R14FolkloreDetailScreen: View {
         .background(ScreenBackground())
         .toolbar(.hidden, for: .navigationBar)
         .onAppear {
-            if let row, row.isReadable { FolkloreUnreadStore.shared.markRead(row.item) }
+            if let row, row.isReadable, !isPlaceholder { FolkloreUnreadStore.shared.markRead(row.item) }
         }
         .overlay(alignment: .topLeading) {
             Button { dismiss() } label: {
@@ -228,6 +240,16 @@ struct R14FolkloreDetailScreen: View {
                 .d1Font(10).foregroundStyle(theme.ink3)
         }
         .padding(18)
+    }
+
+    private var contentPendingCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("内容准备中").d1SerifFont(22).foregroundStyle(theme.ink)
+            Text("这篇岁时正文仍是示例稿，正式版本上线后会在此展示。")
+                .d1Font(14).foregroundStyle(theme.ink2).lineSpacing(5)
+        }
+        .padding(18)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private func lockedCard(_ row: FolkloreRow) -> some View {
