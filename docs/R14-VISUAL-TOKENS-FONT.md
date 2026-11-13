@@ -50,3 +50,11 @@ songti_chosen=fallback:system-serif
 ## 5. 验收口径
 - 每页按 `screens.json` 188 状态逐项对照 HTML/PNG；PASS 必须有原生截图 + 设备/系统/commit 证据；未测标 NOT RUN。
 - 团队非作者 QA（calendar-qa / superwebqa）独立复核；Lead/Codex 最终 review。
+
+
+## 6. Fortune 关键帧说明（QA 零交叉）
+按 `ApprovedFortuneCore.js`：
+- 180ms：`angle = 5*sin(0) = 0`，press≈1 → 与 0ms 画面相同（边界零帧）。
+- 600ms：`s = 1`，`sin(4π) = 0`，lift 从 600ms 开始为 0 → 与 0ms 画面相同（边界零帧）。
+- 运动证据用 300ms（正向轻摇）、450ms（反向）、800ms（升签中段）、900ms（接近升起）、1050ms（reveal 开始）、1450ms（结果）。
+- 180/600 的“同图”是冻结动画数学的必然结果，不是帧注入失败；不因此改动画核心/素材。
