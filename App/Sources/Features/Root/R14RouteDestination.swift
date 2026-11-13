@@ -4,6 +4,7 @@ import LixiangCalendarCore
 /// 路由目标：T3 已接 Home/Almanac/Compass；其余为 T4/T5 占位（接口不变）
 struct R14RouteDestination: View {
     @EnvironmentObject private var days: SelectedDayStore
+    @EnvironmentObject private var state: AppState
     let route: R14Route
 
     var body: some View {
@@ -20,8 +21,8 @@ struct R14RouteDestination: View {
             FortuneScreen()
         case .folklore:
             R14PlaceholderPage(title: "岁时", route: .folklore)
-        case .folkloreDetail(let id, let version):
-            R14PlaceholderPage(title: "岁时详情 \(id)@\(version ?? "-")", route: .folklore)
+        case .folkloreDetail(let id, _):
+            ContentScreen(contentID: id)
                 .toolbar(.hidden, for: .tabBar)
         case .selection:
             SelectionScreen(initialDate: days.selectedDate) { date in
@@ -30,8 +31,12 @@ struct R14RouteDestination: View {
         case .countdown:
             R14PlaceholderPage(title: "倒计日", route: .countdown)
         case .countdownDetail(let id):
-            R14PlaceholderPage(title: "倒计日详情 \(id ?? "-")", route: .countdown)
-                .toolbar(.hidden, for: .tabBar)
+            if let item = state.countdownStore.items.first(where: { $0.id.uuidString == id }) {
+                CountdownDetailScreen(item: item).toolbar(.hidden, for: .tabBar)
+            } else {
+                R14PlaceholderPage(title: "倒计日详情 \(id ?? "-")", route: .countdown)
+                    .toolbar(.hidden, for: .tabBar)
+            }
         case .settings:
             R14PlaceholderPage(title: "设置", route: .settings)
         }

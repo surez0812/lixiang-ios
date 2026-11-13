@@ -106,10 +106,10 @@ struct R14RootView: View {
     private var tabsContent: some View {
         ZStack {
             tabStack(0) { R14HomeScreen() }
-            tabStack(1) { R14PlaceholderPage(title: "岁时", route: .folklore) }
+            tabStack(1) { FestivalsScreen() }
             tabStack(2) { R14PlaceholderPage(title: "择日", route: .selection) }
-            tabStack(3) { R14PlaceholderPage(title: "倒计日", route: .countdown) }
-            tabStack(4) { R14PlaceholderPage(title: "设置", route: .settings) }
+            tabStack(3) { CountdownScreen() }
+            tabStack(4) { SettingsScreen() }
         }
     }
 
