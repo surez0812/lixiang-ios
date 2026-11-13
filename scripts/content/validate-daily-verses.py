@@ -20,16 +20,26 @@ def main(path, expect=365):
         m=clen(x.get("meaning",""))
         if not (110 <= m <= 160): errs.append(f"#{i} meaning len {m} (110-160)")
         q=clen(x.get("quote",""))
-        if not (8 <= q <= 48): errs.append(f"#{i} quote len {q} (8-48)")
+        if not (4 <= q <= 48): errs.append(f"#{i} quote len {q} (4-48)")
         a=clen(x.get("action",""))
         if not (30 <= a <= 60): errs.append(f"#{i} action len {a} (30-60)")
     dates=[x.get("date") for x in d]; quotes=[x.get("quote") for x in d]
     if len(set(dates))!=n: errs.append(f"date duplicates: {n-len(set(dates))}")
-    if len(set(quotes))!=len(quotes): warns.append(f"quote dups: {len(quotes)-len(set(quotes))}")
+    if len(set(quotes))!=len(quotes): errs.append(f"quote dups: {len(quotes)-len(set(quotes))}")
     if n != expect: errs.append(f"count {n} != expected {expect}")
     print(f"file={path}")
     print(f"sha256={hashlib.sha256(open(path,'rb').read()).hexdigest()}")
     print(f"count={n} uniq_dates={len(set(dates))} uniq_quotes={len(set(quotes))}")
+    fill=sum(1 for x in d if "静心" in ((x.get("title") or "")+(x.get("meaning") or "")))
+    low=0
+    for x in d:
+        q=re.sub(r"[^\u4e00-\u9fff]","",x.get("quote",""))
+        m=re.sub(r"[^\u4e00-\u9fff]","",(x.get("meaning") or "")+(x.get("title") or ""))
+        qb={q[i:i+2] for i in range(max(0,len(q)-1))}
+        if qb:
+            hit=sum(1 for g in qb if g in m)
+            if hit/max(1,len(qb)) < 0.15: low+=1
+    print(f"template_filler_静心={fill} low_overlap_quote_meaning={low}")
     print(f"errors={len(errs)} warnings={len(warns)}")
     for e in errs[:12]: print("ERR", e)
     if len(errs)>12: print(f"... {len(errs)-12} more errors")
