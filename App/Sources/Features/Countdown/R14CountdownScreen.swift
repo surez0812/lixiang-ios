@@ -5,6 +5,8 @@ import LixiangCalendarCore
 struct R14CountdownScreen: View {
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
+    @Environment(\.scenePhase) private var scenePhase
+    @StateObject private var notify = NotificationPermissionCenter()
     @State private var showNew = false
 
     private var items: [(Anniversary, AnniversaryOccurrence)] {
@@ -21,6 +23,21 @@ struct R14CountdownScreen: View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading, spacing: 14) {
                 brandCard
+                if notify.isDenied {
+                    HStack(spacing: 8) {
+                        Image(systemName: "bell.slash").foregroundStyle(theme.accentStrong)
+                        Text("通知未开启；App 内提醒仍可见。").d1Font(11).foregroundStyle(theme.ink2)
+                        Spacer(minLength: 0)
+                        Button("去设置") { notify.openSettings() }
+                            .d1Font(11, weight: .semibold).foregroundStyle(theme.accentStrong).frame(minHeight: 44)
+                            .accessibilityIdentifier("notify.openSettings")
+                    }
+                    .padding(12)
+                    .background(theme.soft, in: RoundedRectangle(cornerRadius: 14))
+                    .accessibilityElement(children: .contain)
+                    .accessibilityLabel("通知未开启，App 内提醒仍可见")
+                    .accessibilityIdentifier("notify.deniedBanner")
+                }
                 Button { showNew = true } label: {
                     Text("记下一个日子").d1Font(16, weight: .semibold).frame(maxWidth: .infinity, minHeight: 48)
                 }
@@ -43,12 +60,31 @@ struct R14CountdownScreen: View {
         .sheet(isPresented: $showNew) {
             CountdownForm(item: nil) { item in
                 state.countdownStore.add(item)
+                notify.showPreprompt = true   // 保存后先说明，用户确认才请求系统权限
+            }
+        }
+        .alert("开启纪念日提醒？", isPresented: $notify.showPreprompt) {
+            Button("暂不开启", role: .cancel) {
+                state.countdownStore.markNotificationDenied(false)   // 主动跳过 ≠ 系统拒绝
+            }
+            Button("去开启") {
                 Task {
-                    let granted = await NotificationScheduler.requestAuthorization()
+                    let granted = await notify.request()
                     state.countdownStore.markNotificationDenied(!granted)
                     await NotificationScheduler.reschedule(items: state.countdownStore.items, engine: state.engine, now: state.today)
                 }
             }
+        } message: {
+            Text("允许通知后，历象会在设定的时间提醒你；暂不允许，也会在 App 内展示临近的日子。")
+        }
+        .task {
+            await notify.refresh()
+            #if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("-LixiangNotifyPreprompt") { notify.showPreprompt = true }
+            #endif
+        }
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active { Task { await notify.onSceneActive() } }
         }
     }
 

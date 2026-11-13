@@ -4,6 +4,8 @@ import LixiangCalendarCore
 struct CountdownDetailScreen: View {
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
+    @Environment(\.scenePhase) private var scenePhase
+    @StateObject private var notify = NotificationPermissionCenter()
     let item: Anniversary
 
     private var current: Anniversary { state.countdownStore.items.first { $0.id == item.id } ?? item }
@@ -34,12 +36,31 @@ struct CountdownDetailScreen: View {
                     Toggle("本地通知提醒", isOn: Binding(
                         get: { current.reminderEnabled },
                         set: { newValue in
-                            var updated = current; updated.reminderEnabled = newValue
-                            state.countdownStore.update(updated)
+                            if newValue {
+                                notify.showPreprompt = true
+                            } else {
+                                var updated = current; updated.reminderEnabled = false
+                                state.countdownStore.update(updated)
+                                Task { await NotificationScheduler.reschedule(items: state.countdownStore.items, engine: state.engine, now: state.today) }
+                            }
                         }))
                         .d1Font(12)
+                        .accessibilityIdentifier("notify.toggle")
                     Text(current.reminderEnabled ? "提醒时间 \(String(format: "%02d:%02d", current.reminderHour, current.reminderMinute))" : "未开启提醒")
                         .d1Font(10).foregroundStyle(theme.ink3)
+                    if notify.isDenied {
+                        HStack(spacing: 8) {
+                            Image(systemName: "bell.slash").foregroundStyle(theme.accentStrong)
+                            Text("通知未开启；App 内提醒仍可见。").d1Font(10).foregroundStyle(theme.ink2)
+                            Spacer(minLength: 0)
+                            Button("去设置") { notify.openSettings() }
+                                .d1Font(10, weight: .semibold).foregroundStyle(theme.accentStrong).frame(minHeight: 44)
+                                .accessibilityIdentifier("notify.openSettings")
+                        }
+                        .accessibilityElement(children: .contain)
+                        .accessibilityLabel("通知未开启，App 内提醒仍可见")
+                        .accessibilityIdentifier("notify.deniedBanner")
+                    }
                 }
                 Text("倒计日只在本机保存；通知为本地通知，不上传。").d1Font(9).foregroundStyle(theme.ink3)
             }
@@ -48,5 +69,31 @@ struct CountdownDetailScreen: View {
         .background(ScreenBackground())
         .navigationTitle("倒计日")
         .navigationBarTitleDisplayMode(.inline)
+        .alert("开启本地通知提醒？", isPresented: $notify.showPreprompt) {
+            Button("暂不开启", role: .cancel) {
+                var updated = current; updated.reminderEnabled = false
+                state.countdownStore.update(updated)
+            }
+            Button("去开启") {
+                Task {
+                    let granted = await notify.request()
+                    var updated = current; updated.reminderEnabled = granted
+                    state.countdownStore.update(updated)
+                    state.countdownStore.markNotificationDenied(!granted)
+                    await NotificationScheduler.reschedule(items: state.countdownStore.items, engine: state.engine, now: state.today)
+                }
+            }
+        } message: {
+            Text("允许通知后，历象会在设定的时间提醒你；暂不允许，App 内仍会显示临近的日子。")
+        }
+        .task {
+            await notify.refresh()
+            #if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("-LixiangNotifyPrepromptDetail") { notify.showPreprompt = true }
+            #endif
+        }
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active { Task { await notify.onSceneActive() } }
+        }
     }
 }

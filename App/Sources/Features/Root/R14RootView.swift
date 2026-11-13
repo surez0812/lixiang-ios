@@ -45,7 +45,10 @@ struct R14RootView: View {
             let term = args[i + 1]
             _debugTerm = State(initialValue: term)
         }
-        if let i = args.firstIndex(of: "-LixiangTab"), i + 1 < args.count, let n = Int(args[i + 1]) { _tab = State(initialValue: n) }
+        if let i = args.firstIndex(of: "-LixiangTab"), i + 1 < args.count, let n = Int(args[i + 1]) {
+            _tab = State(initialValue: n)
+            _pendingTab = State(initialValue: n)   // debug route 应压入当前 Tab
+        }
         if let i = args.firstIndex(of: "-LixiangTypeScale"), i + 1 < args.count {
             switch args[i + 1] {
             case "xl": _debugTypeScale = State(initialValue: .xLarge)

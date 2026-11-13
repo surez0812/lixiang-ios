@@ -102,6 +102,7 @@
 		93C793A1B1C540AF14C3916C /* privacy.md in Resources */ = {isa = PBXBuildFile; fileRef = 06939DF97090A6AE27F8D2B5 /* privacy.md */; };
 		95BE8E56E129430C849F1CB3 /* term-chushu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = C9E219B0ADA5BD66F0ACF994 /* term-chushu-dark.webp */; };
 		985FBB763F17969B9AB44613 /* FortuneModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB58EF2EB50DD2B3F0FE6B /* FortuneModels.swift */; };
+		9892B3DF61D5751612CB2F4C /* NotificationPermissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9986AD40046BF6E176CF50 /* NotificationPermissionTests.swift */; };
 		9B8A6E3B32856FDD7A9CE62D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E1CACF3D8664353830985 /* HomeScreen.swift */; };
 		A1211486934ACFD13BA23076 /* HeadingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687253ACB0BDCBD36126D15B /* HeadingProvider.swift */; };
 		A6F73ACA8BC0B17CB711BEF6 /* ApprovedFortuneCore.js in Resources */ = {isa = PBXBuildFile; fileRef = 053D711052530830581FB346 /* ApprovedFortuneCore.js */; };
@@ -123,6 +124,7 @@
 		C1B98895E926C69E63714686 /* term-shuangjiang-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 7FFB1AB9AD6D73783C65CF8F /* term-shuangjiang-light.webp */; };
 		C33D67B3B7B567D861447032 /* R14Folklore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D9052F53146203B14C60B /* R14Folklore.swift */; };
 		C42DA4FFA18E4643BBF3DAB8 /* D1Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C26FF99F8DAD23254156A9 /* D1Motion.swift */; };
+		C81A8B96C9AAAEFBB88A6F59 /* NotificationPermissionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B5AF175511081E948B7C7 /* NotificationPermissionCenter.swift */; };
 		C9B83D27C0DFD1FFE57EE07D /* app-strings.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A786E1D2A93C1C738FF1D38 /* app-strings.json */; };
 		CCE41F2022685487E2690E72 /* buddhist-365.json in Resources */ = {isa = PBXBuildFile; fileRef = 16D78BCFFB01C0E4353422B6 /* buddhist-365.json */; };
 		D01671092318D28773D07AF8 /* R14RouteDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C2FB9206EC78CFC935109F /* R14RouteDestination.swift */; };
@@ -193,6 +195,7 @@
 		0A786E1D2A93C1C738FF1D38 /* app-strings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "app-strings.json"; sourceTree = "<group>"; };
 		0BF92BA24C3F132137773A22 /* term-jingzhe-dark.webp */ = {isa = PBXFileReference; path = "term-jingzhe-dark.webp"; sourceTree = "<group>"; };
 		0F7FE011A7F78FA1D26FE887 /* ContentSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSources.swift; sourceTree = "<group>"; };
+		0F9986AD40046BF6E176CF50 /* NotificationPermissionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermissionTests.swift; sourceTree = "<group>"; };
 		112D5AC77547C464607855CB /* term-shuangjiang-dark.webp */ = {isa = PBXFileReference; path = "term-shuangjiang-dark.webp"; sourceTree = "<group>"; };
 		12206DA975CCAA192C120378 /* term-xiazhi-dark.webp */ = {isa = PBXFileReference; path = "term-xiazhi-dark.webp"; sourceTree = "<group>"; };
 		16D78BCFFB01C0E4353422B6 /* buddhist-365.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "buddhist-365.json"; sourceTree = "<group>"; };
@@ -271,6 +274,7 @@
 		858D2CAEB7D13410E7C423DB /* R14DuoRailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14DuoRailTests.swift; sourceTree = "<group>"; };
 		8A255389BBDF673EABAC24B6 /* R14Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = R14Assets.xcassets; sourceTree = "<group>"; };
 		8B1057297CBC564642A08F8B /* FortuneScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneScreen.swift; sourceTree = "<group>"; };
+		8B3B5AF175511081E948B7C7 /* NotificationPermissionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermissionCenter.swift; sourceTree = "<group>"; };
 		8B78B618C8DAEDD12A50EF74 /* seal-round-01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seal-round-01@2x.png"; sourceTree = "<group>"; };
 		8C24CF0BA42888A44D0302C9 /* R14CountdownScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14CountdownScreen.swift; sourceTree = "<group>"; };
 		8C3369F8C714C5B69B76CEF5 /* R14FolkloreLoadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14FolkloreLoadModel.swift; sourceTree = "<group>"; };
@@ -741,6 +745,7 @@
 				A9A2E2EB5A29CCA23BD88DF9 /* FolkloreUnreadStoreTests.swift */,
 				722116A2396BCC3C9567E355 /* FontAvailabilityTests.swift */,
 				DCCA767FE8687948B8B5D0DF /* FortuneEngineTests.swift */,
+				0F9986AD40046BF6E176CF50 /* NotificationPermissionTests.swift */,
 				72CB69DB4CB6E4BFBB763053 /* R14SelectedDayTests.swift */,
 				ED2285EB6A83A891427ED1AF /* SelectionEngineTests.swift */,
 			);
@@ -817,6 +822,7 @@
 				76E56086DB32FA3B6F775654 /* DebugOptions.swift */,
 				B3E718226079E51BAABC4EC0 /* DevicePolicy.swift */,
 				4253AFA341B81955B45311A4 /* LixiangApp.swift */,
+				8B3B5AF175511081E948B7C7 /* NotificationPermissionCenter.swift */,
 				1BDB9C4AE5A725053B6669BE /* NotificationScheduler.swift */,
 				443C1D3C9904793024373124 /* SelectedDayStore.swift */,
 			);
@@ -1066,6 +1072,7 @@
 				E0F78DB5AC67136FD14EF194 /* MergedDayCard.swift in Sources */,
 				254DCB71305786C25EDC249A /* MonthScreen.swift in Sources */,
 				E15412DFF5DEED7D78DC1F05 /* NotFoundScreen.swift in Sources */,
+				C81A8B96C9AAAEFBB88A6F59 /* NotificationPermissionCenter.swift in Sources */,
 				F981B4DE21313B9FEF498D8F /* NotificationScheduler.swift in Sources */,
 				64FC9C5E7534E6985EA1E01B /* PlainLanguageLoader.swift in Sources */,
 				74F2ABD34D760AC952033AD7 /* PlainTermSheet.swift in Sources */,
@@ -1102,6 +1109,7 @@
 				7511252EC8B5EA2A1FD87190 /* FolkloreUnreadStoreTests.swift in Sources */,
 				A973D52E2235B2F7F414AF68 /* FontAvailabilityTests.swift in Sources */,
 				5A6C298813051CC13C5D3BC5 /* FortuneEngineTests.swift in Sources */,
+				9892B3DF61D5751612CB2F4C /* NotificationPermissionTests.swift in Sources */,
 				413F441010F89BC84A207429 /* R14DailyLayoutTests.swift in Sources */,
 				7042D981925B6A15E52C6CA6 /* R14DuoRailTests.swift in Sources */,
 				DAFC6433507532C92327196F /* R14HomeAlmanacCompassTests.swift in Sources */,
