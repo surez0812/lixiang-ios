@@ -15,21 +15,20 @@ struct DailyScreen: View {
     private var hasMultipleTraditions: Bool { DailyClassic.allCases.filter { R14DailyVerseStore.shared.hasContent($0) }.count > 1 }
 
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack(alignment: .leading, spacing: 16) {
-                header
-                if hasMultipleTraditions { traditionPicker }
-                if let verse {
-                    verseBody(verse)
-                } else {
-                    Text("今日经典暂缺，试试切换经典来源。")
-                        .d1Font(14).foregroundStyle(theme.ink2)
+        GeometryReader { geo in
+            let wide = DailyLayout.isWide(geo.size)
+            if wide {
+                // R14 §4 iPad Landscape：左解释、右分享卡，各自独立滚动
+                HStack(alignment: .top, spacing: 20) {
+                    ScrollView(showsIndicators: false) { mainContent.padding(.vertical, 12) }
                         .frame(maxWidth: .infinity, alignment: .leading)
+                    ScrollView(showsIndicators: false) { shareColumn.padding(.vertical, 12) }
+                        .frame(width: min(geo.size.width * 0.42, 460))
                 }
+                .padding(.horizontal, 28).padding(.bottom, 40)
+            } else {
+                ScrollView(showsIndicators: false) { mainContent.padding(.vertical, 12).padding(.bottom, 100) }
             }
-            .padding(.horizontal, 20)
-            .padding(.vertical, 12)
-            .padding(.bottom, 100)
         }
         .background(ScreenBackground())
         .toolbar(.hidden, for: .tabBar)
@@ -38,6 +37,45 @@ struct DailyScreen: View {
         .fullScreenCover(item: $sharePayload) { payload in
             DailySharePage(date: date, almanac: almanac, verse: payload.verse, theme: theme)
         }
+    }
+
+    private var mainContent: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            header
+            if hasMultipleTraditions { traditionPicker }
+            if let verse {
+                verseBody(verse)
+            } else {
+                Text("今日经典暂缺，试试切换经典来源。")
+                    .d1Font(14).foregroundStyle(theme.ink2)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
+        .padding(.horizontal, 20)
+    }
+
+    /// iPad Landscape 右列：分享卡预览 + 分享按钮（不随左列滚动）
+    private var shareColumn: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("分享卡").d1Font(12, weight: .semibold).tracking(1.6).foregroundStyle(theme.ink3)
+            if let verse {
+                DailyShareCard(date: date, almanac: almanac, verse: verse, theme: theme)
+                    .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                    .shadow(color: .black.opacity(0.08), radius: 12, y: 4)
+                Button { share(verse) } label: {
+                    Label("分享 / 保存", systemImage: "square.and.arrow.up")
+                        .d1Font(15, weight: .semibold)
+                        .frame(maxWidth: .infinity, minHeight: 46)
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(theme.accentStrong)
+                Text("分享卡仅亮色、无印章；系统分享可保存图片。")
+                    .d1Font(10).foregroundStyle(theme.ink3)
+            } else {
+                Text("今日经典暂缺").d1Font(12).foregroundStyle(theme.ink3)
+            }
+        }
+        .padding(.horizontal, 20)
     }
 
     private var header: some View {
@@ -194,5 +232,13 @@ struct DailyShareCard: View {
         .frame(width: size.width, height: size.height, alignment: .topLeading)
         .background(LinearGradient(colors: [Color(hex: 0xFFF8EC), Color(hex: 0xF6E8D1)], startPoint: .topLeading, endPoint: .bottomTrailing))
         .foregroundStyle(Color(hex: 0x35291F))
+    }
+}
+
+
+enum DailyLayout {
+    /// R14 §4：iPad Landscape 双列（≥900 且横屏）；iPhone 保持单列
+    static func isWide(_ size: CGSize) -> Bool {
+        size.width >= 900 && size.width > size.height
     }
 }

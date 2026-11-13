@@ -10,7 +10,8 @@ if len(rows)!=188: bad.append(f'rows={len(rows)} expected 188')
 else:
     for i,x in enumerate(screens,1):
         if not rows[i-1].startswith(f'| {i} |'): bad.append(f'row {i} mismatch')
-counts={k:md.count(f'**{k}**') for k in ['PASS','FAIL','NOT RUN']}
+rt='\n'.join(rows)
+counts={k:rt.count(f'**{k}**') for k in ['PASS','FAIL','NOT RUN']}
 expected=collections.Counter(x['page'] for x in screens)
 actual=collections.Counter()
 for l in rows:

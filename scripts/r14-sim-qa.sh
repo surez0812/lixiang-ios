@@ -53,10 +53,11 @@ for line in out.splitlines():
         if cur.get('uuid'): ports.append(cur)
         cur={}
     elif st.startswith('UUID:'): cur['uuid']=st.split(':',1)[1].strip()
+    elif st.startswith('Class:'): cur['class']=st.split(':',1)[1].strip()
     elif st.startswith('Default width:'): cur['w']=int(st.split(':')[1])
     elif st.startswith('Default height:'): cur['h']=int(st.split(':')[1])
 if cur.get('uuid'): ports.append(cur)
-ports=[p for p in ports if p.get('w') and p.get('h')]
+ports=[p for p in ports if p.get('class')=='Display' and p.get('w') and p.get('h')]
 if len(ports)>1:
     best=max(ports,key=lambda p:p['w']*p['h'])
     print(best['uuid'])

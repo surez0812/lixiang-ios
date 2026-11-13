@@ -18,5 +18,35 @@ for i,x in enumerate(s,1):
  ov=OVERRIDES.get(str(i),{}); status=ov.get('status','NOT RUN'); evidence=ov.get('evidence','待证；'+ev)
  marks={k:('**'+k+'**' if k==status else '—') for k in ['PASS','FAIL','NOT RUN']}
  lines.append(f"| {i} | {p} {pn.get(p,'')} | {canvas} | {dim} | {label} | {entry.get(p,'')} | {exp.get(p,'')} | {marks['PASS']} | {marks['FAIL']} | {marks['NOT RUN']} | {evidence} |")
-lines += ['','## 汇总','- 总行数：188（screens.json 校验）。','- 结果：PASS 0 / FAIL 0 / NOT RUN 188。','- 出口：每行至少 1 张原生截图；失败保留日志/设备/commit；未实现或真机不可得写 NOT RUN。']
+# 补充：动态字体不属于设计 188 行，单列避免计数污染
+lines += ['','## 补充 · 动态字体 xLarge（不计入 188）','','| ID | 页面 | 启动 | 结果 | 证据 |','|---|---|---|---|---|',
+ '| X-01 | Home | `-LixiangTypeScale xl` | **PASS** | `qa/evidence/dynamic-v2/xl-home.png` |',
+ '| X-02 | Almanac | `-LixiangTypeScale xl` | **PASS** | `qa/evidence/dynamic-v2/xl-almanac.png` |',
+ '| X-03 | Compass | `-LixiangTypeScale xl` | **PASS** | `qa/evidence/dynamic-v2/xl-compass.png` |',
+ '| X-04 | Daily | `-LixiangTypeScale xl` | **PASS** | `qa/evidence/dynamic-v2/xl-daily.png` |',
+ '| X-05 | Folklore detail | `-LixiangTypeScale xl` | **PASS** | `qa/evidence/dynamic-v2/xl-folklore-detail.png` |',
+ '','- 说明：只验字体放大布局；VoiceOver/a1/旋转组合 NOT RUN；详见 `qa/DYNAMIC-TYPE.md`。','- 字体未找到 Songti/Kaiti，回退系统 serif；设计字体差异记为已知偏差，不标 PASS。']
+# 补充：天气六态（不计入 188；initial 用 v2 home）
+lines += ['','## 补充 · Home 天气六态','','| ID | 状态 | 结果 | 证据 |','|---|---|---|---|',
+ '| W-01 | initial | **PASS** | `qa/evidence/firstbatch-v2/iPhone16Pro-tab0.png` |',
+ '| W-02 | locating | **PASS** | `qa/evidence/weather-fortune/r14-home-weather-locating.png` |',
+ '| W-03 | denied | **PASS** | `qa/evidence/weather-fortune/r14-home-weather-denied.png` |',
+ '| W-04 | failed | **PASS** | `qa/evidence/weather-fortune/r14-home-weather-failed.png` |',
+ '| W-05 | loaded | **PASS** | `qa/evidence/weather-fortune/r14-home-weather-loaded.png` |',
+ '| W-06 | denied→系统设置返回 | **NOT RUN** | 需系统设置返回重读权限；未测 |']
+# 补充：Fortune 1450ms 关键帧
+lines += ['','## 补充 · Fortune 1450ms 关键帧','','| ID | 时间 | 结果 | 证据/判断 |','|---|---|---|---|',
+ '| F-01 | 0ms | **PASS** | `qa/evidence/weather-fortune/r14-fortune-frame0.png`；待机/标题常驻 |',
+ '| F-02 | 180ms | **NOTE** | 数学零交叉；与 0ms 同 SHA `aaf6270f…`，非缺陷 |',
+ '| F-03 | 600ms | **NOTE** | 数学零交叉；与 0ms 同 SHA `aaf6270f…`，非缺陷 |',
+ '| F-04 | 1050ms | **PASS** | `r14-fortune-frame1050.png`；签筒升起动作 |',
+ '| F-05 | 1450ms | **PASS** | `r14-fortune-frame1450.png`；结果全显、标题常驻 |','',
+ '- 说明：180/600 为 ApprovedFortuneCore 零交叉边界，与 0ms 同图属正确数学；不标 FAIL。','', '### 运动关键帧（补充）','', '| ID | 时间 | 结果 | 证据 |','|---|---|---|---|','| M-01 | 300ms | **PASS** | `qa/evidence/weather-fortune/r14-fortune-frame300.png` |','| M-02 | 450ms | **PASS** | `qa/evidence/weather-fortune/r14-fortune-frame450.png` |','| M-03 | 800ms | **PASS** | `qa/evidence/weather-fortune/r14-fortune-frame800.png` |','| M-04 | 900ms | **PASS** | `qa/evidence/weather-fortune/r14-fortune-frame900.png` |']
+# 补充：交互状态（不属于 188 设计行）
+lines += ['','## 补充 · 交互状态','','| ID | 状态 | 结果 | 证据 |','|---|---|---|---|',
+ '| S-01 | Selection 结果列表 | **PASS** | `qa/evidence/portrait-states/r14-iphone-selection-results.png`；2026 年份无千分位、含日期/宜/忌/看当日 |','| D-01 | Daily 分享页 | **PASS** | `qa/evidence/portrait-states/r14-iphone-daily-share.png`；全屏分享卡（经文/标题/白话/出处/二维码）+系统分享，不再空白 |','',
+ '- Countdown 详情已对应设计行 97；Selection 结果无独立设计行，单列 S-01。','- Folklore 详情正文暂为「内容准备中」，不标读；正式 12 条内容接入前按内容缺口处理，不作 PASS。']
+lines += ['','## 汇总','- 总行数：188（screens.json 校验）。','- 结果：PASS 37 / FAIL 5 / NOT RUN 146；另 X-01..X-05 动态字体 PASS、F 3 PASS/2 NOTE、M-01..M-04 PASS、W 5 PASS/1 NOT RUN、S-01 PASS、D-01 PASS。','- 出口：每行至少 1 张原生截图；失败保留日志/设备/commit；未实现或真机不可得写 NOT RUN。']
+OUT.write_text('\n'.join(lines)+'\n')
+OUT.write_text('\n'.join(lines)+'\n')
 OUT.write_text('\n'.join(lines)+'\n'); print(f'wrote {OUT} rows={len(s)} sha={sha}')

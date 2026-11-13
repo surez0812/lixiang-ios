@@ -48,6 +48,7 @@
 		3AC84F2AB6C0868251A4DCF3 /* R14SelectedDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CB69DB4CB6E4BFBB763053 /* R14SelectedDayTests.swift */; };
 		3DF210EE773FBEEDEDA6E5C6 /* term-xiaoxue-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = D312BF7789D4CDD61EA0C5FD /* term-xiaoxue-dark.webp */; };
 		40EA23282A681DF06B3AAECD /* daily-classics in Resources */ = {isa = PBXBuildFile; fileRef = 2BAE11DD178421748CB1455E /* daily-classics */; };
+		413F441010F89BC84A207429 /* R14DailyLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FFD9BFF36EC2F0A260083 /* R14DailyLayoutTests.swift */; };
 		44E8A64DB0E88C01014E8C2C /* CountdownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2D75D50D2C9CC1E4ED5F8 /* CountdownUITests.swift */; };
 		4553A31FFB538DCA0FBDA0C2 /* term-daxue-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3A92AD321EBABAB28F289053 /* term-daxue-dark.webp */; };
 		483EA98598798BB84F07561E /* WeatherLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26FD46E139A57463DE3971 /* WeatherLocationProvider.swift */; };
@@ -205,6 +206,7 @@
 		32D566C65C78A240C691BAE2 /* explain-pages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "explain-pages.json"; sourceTree = "<group>"; };
 		330495F2BC88AE2B1DF83E0A /* panel-terms-v2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "panel-terms-v2.json"; sourceTree = "<group>"; };
 		33A5E29B6388FD57AFC7E148 /* quanshan-365.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "quanshan-365.json"; sourceTree = "<group>"; };
+		371FFD9BFF36EC2F0A260083 /* R14DailyLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14DailyLayoutTests.swift; sourceTree = "<group>"; };
 		389AF72D672C91DBCA828762 /* term-bailu-light.webp */ = {isa = PBXFileReference; path = "term-bailu-light.webp"; sourceTree = "<group>"; };
 		394CECFF9A4B8BC313B10DFD /* CountdownDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownDetailScreen.swift; sourceTree = "<group>"; };
 		3A92AD321EBABAB28F289053 /* term-daxue-dark.webp */ = {isa = PBXFileReference; path = "term-daxue-dark.webp"; sourceTree = "<group>"; };
@@ -756,6 +758,7 @@
 		DE6427911F276D30E1BE1749 /* HomeAlmanacCompass */ = {
 			isa = PBXGroup;
 			children = (
+				371FFD9BFF36EC2F0A260083 /* R14DailyLayoutTests.swift */,
 				D1317B5B01E548A5917189B4 /* R14HomeAlmanacCompassTests.swift */,
 			);
 			path = HomeAlmanacCompass;
@@ -1056,6 +1059,7 @@
 				7511252EC8B5EA2A1FD87190 /* FolkloreUnreadStoreTests.swift in Sources */,
 				A973D52E2235B2F7F414AF68 /* FontAvailabilityTests.swift in Sources */,
 				5A6C298813051CC13C5D3BC5 /* FortuneEngineTests.swift in Sources */,
+				413F441010F89BC84A207429 /* R14DailyLayoutTests.swift in Sources */,
 				DAFC6433507532C92327196F /* R14HomeAlmanacCompassTests.swift in Sources */,
 				3AC84F2AB6C0868251A4DCF3 /* R14SelectedDayTests.swift in Sources */,
 				38159DBD71848FB753FF36CD /* SelectionEngineTests.swift in Sources */,
