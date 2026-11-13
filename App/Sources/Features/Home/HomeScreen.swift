@@ -38,6 +38,9 @@ struct R14HomeScreen: View {
     private var hero: some View {
         VStack(alignment: .leading, spacing: 0) {
             ZStack(alignment: .topLeading) {
+                // 首帧骨架：图片解码前用暖色渐变占位，避免冷启动出现空白区域
+                LinearGradient(colors: [Color(hex: 0xF1E3C8), Color(hex: 0xEADCC4)], startPoint: .top, endPoint: .bottom)
+                    .frame(height: 210)
                 Image("winter").resizable().scaledToFill().frame(height: 210).clipped()
                     .overlay(LinearGradient(colors: [.clear, theme.paper.opacity(0.9), theme.paper], startPoint: .center, endPoint: .bottom))
                 if let badge = SolarTermPentad.badge(for: days.selectedDate, engine: days.engine) {
