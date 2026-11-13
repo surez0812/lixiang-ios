@@ -6,7 +6,20 @@ struct CountdownDetailScreen: View {
     @Environment(\.d1) private var theme
     @Environment(\.scenePhase) private var scenePhase
     @StateObject private var notify = NotificationPermissionCenter()
+    @State private var reminderOn: Bool
     let item: Anniversary
+
+    init(item: Anniversary) {
+        self.item = item
+        _reminderOn = State(initialValue: item.reminderEnabled)
+    }
+
+    private func persistReminder(_ on: Bool) {
+        var updated = current
+        updated.reminderEnabled = on
+        state.countdownStore.update(updated)
+        Task { await NotificationScheduler.reschedule(items: state.countdownStore.items, engine: state.engine, now: state.today) }
+    }
 
     private var current: Anniversary { state.countdownStore.items.first { $0.id == item.id } ?? item }
     private var occurrence: AnniversaryOccurrence? {
@@ -34,21 +47,20 @@ struct CountdownDetailScreen: View {
                 }
                 D1Card {
                     Toggle("本地通知提醒", isOn: Binding(
-                        get: { notify.isDenied ? false : current.reminderEnabled },
+                        get: { reminderOn },
                         set: { newValue in
                             if notify.isDenied { return }
                             if newValue {
                                 notify.showPreprompt = true
                             } else {
-                                var updated = current; updated.reminderEnabled = false
-                                state.countdownStore.update(updated)
-                                Task { await NotificationScheduler.reschedule(items: state.countdownStore.items, engine: state.engine, now: state.today) }
+                                reminderOn = false
+                                persistReminder(false)
                             }
                         }))
                         .d1Font(12)
                         .disabled(notify.isDenied)
                         .accessibilityIdentifier("notify.toggle")
-                    Text(notify.isDenied ? "系统通知已拒绝；开关不可开启，请去设置允许通知。" : (current.reminderEnabled ? "提醒时间 \(String(format: "%02d:%02d", current.reminderHour, current.reminderMinute))" : "未开启提醒"))
+                    Text(notify.isDenied ? "系统通知已拒绝；开关不可开启，请去设置允许通知。" : (reminderOn ? "提醒时间 \(String(format: "%02d:%02d", current.reminderHour, current.reminderMinute))" : "未开启提醒"))
                         .d1Font(10).foregroundStyle(theme.ink3)
                     if notify.isDenied {
                         HStack(spacing: 8) {
@@ -65,7 +77,7 @@ struct CountdownDetailScreen: View {
                     }
                 }
                 if ProcessInfo.processInfo.arguments.contains(where: { $0.hasPrefix("-LixiangNotify") }) {
-                    Text("notify.status=\(notify.debugStatusText)")
+                    Text("notify.status=\(notify.debugStatusText) toggle=\(reminderOn ? 1 : 0)")
                         .d1Font(10, weight: .semibold)
                         .foregroundStyle(notify.isDenied ? theme.red : theme.yiText)
                         .accessibilityIdentifier("notify.statusMarker")
@@ -79,16 +91,15 @@ struct CountdownDetailScreen: View {
         .navigationBarTitleDisplayMode(.inline)
         .alert("开启本地通知提醒？", isPresented: $notify.showPreprompt) {
             Button("暂不开启", role: .cancel) {
-                var updated = current; updated.reminderEnabled = false
-                state.countdownStore.update(updated)
+                reminderOn = false
+                persistReminder(false)
             }
             Button("去开启") {
                 Task {
                     let granted = await notify.request()
-                    var updated = current; updated.reminderEnabled = granted
-                    state.countdownStore.update(updated)
+                    reminderOn = granted
+                    persistReminder(granted)
                     state.countdownStore.markNotificationDenied(!granted)
-                    await NotificationScheduler.reschedule(items: state.countdownStore.items, engine: state.engine, now: state.today)
                 }
             }
         } message: {
@@ -98,8 +109,10 @@ struct CountdownDetailScreen: View {
             await notify.refresh()
             notify.scheduleSettingsReturnSimulation()   // 详情创建完成后 3s 才迁移（QA 时序）
             if notify.isDenied {
-                var updated = current; updated.reminderEnabled = false
-                state.countdownStore.update(updated)   // banner/开关/持久化一致
+                reminderOn = false
+                persistReminder(false)                  // banner/开关/持久化一致
+            } else {
+                reminderOn = current.reminderEnabled
             }
             #if DEBUG
             if ProcessInfo.processInfo.arguments.contains("-LixiangNotifyPrepromptDetail") { notify.showPreprompt = true }
@@ -109,15 +122,16 @@ struct CountdownDetailScreen: View {
             if phase == .active { Task { await notify.onSceneActive() } }
         }
         .onChange(of: notify.status) { _, newStatus in
-            // settingsReturn：denied→authorized 后恢复提醒意图，保证开关=开且可操作
-            if newStatus == .authorized, !current.reminderEnabled {
-                var updated = current
-                updated.reminderEnabled = true
-                state.countdownStore.update(updated)
-                Task { await NotificationScheduler.reschedule(items: state.countdownStore.items, engine: state.engine, now: state.today) }
+            // settingsReturn：denied→authorized 后本地开关 + 持久化 + reschedule 三者同步
+            if newStatus == .authorized {
+                reminderOn = true
+                persistReminder(true)
                 #if DEBUG
                 print("LXNOTIFY restoreReminder enabled=true after authorized")
                 #endif
+            } else if newStatus == .denied {
+                reminderOn = false
+                persistReminder(false)
             }
         }
     }
