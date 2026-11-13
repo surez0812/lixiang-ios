@@ -29,6 +29,7 @@ struct R14FolkloreScreen: View {
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
     @State private var filter: FolkloreFilter = .all
+    @StateObject private var load = R14FolkloreLoadController(mode: R14FolkloreLoadController.modeFromProcess())
     var onOpen: (String) -> Void = { _ in }
 
     private var rows: [FolkloreRow] {
@@ -50,13 +51,24 @@ struct R14FolkloreScreen: View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading, spacing: 14) {
                 brandCard
-                chips
-                ForEach(visible) { row in
-                    Button { onOpen(row.item.id) } label: { rowCard(row) }
-                        .buttonStyle(.plain)
-                }
-                if visible.isEmpty {
-                    Text("这个分类下暂时没有岁时内容。").d1Font(13).foregroundStyle(theme.ink2).padding(.vertical, 8)
+                switch load.state {
+                case .loading:
+                    R14FolkloreStateBanner(state: .loading, retry: {})
+                case .failed:
+                    R14FolkloreStateBanner(state: .failed, retry: { load.retry() })
+                case .offline:
+                    R14FolkloreStateBanner(state: .offline, retry: { load.retry() })
+                    chips
+                    ForEach(visible) { row in Button { onOpen(row.item.id) } label: { rowCard(row) }.buttonStyle(.plain) }
+                case .loaded:
+                    chips
+                    ForEach(visible) { row in
+                        Button { onOpen(row.item.id) } label: { rowCard(row) }
+                            .buttonStyle(.plain)
+                    }
+                    if visible.isEmpty {
+                        Text("这个分类下暂时没有岁时内容。").d1Font(13).foregroundStyle(theme.ink2).padding(.vertical, 8)
+                    }
                 }
             }
             .padding(.horizontal, 18)
@@ -147,6 +159,7 @@ struct R14FolkloreDetailScreen: View {
     let id: String
     @Environment(\.dismiss) private var dismiss
     @State private var showShare = false
+    @StateObject private var load = R14FolkloreLoadController(mode: R14FolkloreLoadController.modeFromProcess())
 
     private var isPlaceholder: Bool {
         guard let row else { return true }
@@ -165,7 +178,14 @@ struct R14FolkloreDetailScreen: View {
 
     var body: some View {
         ScrollView(showsIndicators: false) {
-            if let row {
+            VStack(alignment: .leading, spacing: 12) {
+                if load.state != .loaded {
+                    R14FolkloreStateBanner(state: load.state, retry: { load.retry() })
+                        .padding(.horizontal, 16).padding(.top, 8)
+                }
+                if load.state == .failed || load.state == .loading {
+                    EmptyView()
+                } else if let row {
                 VStack(alignment: .leading, spacing: 0) {
                     header(row)
                     if row.isReadable {
@@ -181,14 +201,17 @@ struct R14FolkloreDetailScreen: View {
                     }
                 }
                 .padding(.bottom, 150)
-            } else {
-                Text("没找到这个岁时内容。").d1Font(14).foregroundStyle(theme.ink2).padding(24)
+                } else {
+                    Text("没找到这个岁时内容。").d1Font(14).foregroundStyle(theme.ink2).padding(24)
+                }
             }
         }
         .background(ScreenBackground())
         .toolbar(.hidden, for: .navigationBar)
         .onAppear {
-            if let row, row.isReadable, !isPlaceholder { FolkloreUnreadStore.shared.markRead(row.item) }
+            if load.state == .loaded, let row, row.isReadable, !isPlaceholder {
+                FolkloreUnreadStore.shared.markRead(row.item)
+            }
         }
         .overlay(alignment: .topLeading) {
             Button { dismiss() } label: {

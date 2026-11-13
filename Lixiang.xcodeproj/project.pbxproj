@@ -108,6 +108,7 @@
 		A973D52E2235B2F7F414AF68 /* FontAvailabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722116A2396BCC3C9567E355 /* FontAvailabilityTests.swift */; };
 		ADA6AB739A8E7012918F9FB6 /* SelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC3B77617C8ADADAE209B2 /* SelectionScreen.swift */; };
 		AE756168FD87DC8D978F2005 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788133271B6E5AF4FAB99C4D /* AppState.swift */; };
+		B2816DE5A7B741DB9BACAA3B /* R14FolkloreLoadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3369F8C714C5B69B76CEF5 /* R14FolkloreLoadModel.swift */; };
 		B3E0E29679CAE07683A02093 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA72858D41F13FE75567AF /* SettingsScreen.swift */; };
 		B4AFA6FB89EB581831636ABF /* ContentSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7FE011A7F78FA1D26FE887 /* ContentSources.swift */; };
 		B553048E5509D06909019C20 /* term-dahan-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = A02AE7595C6928AE7720E1A8 /* term-dahan-dark.webp */; };
@@ -147,6 +148,7 @@
 		E71711846DEB60C937631580 /* DailyVerseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7782EBB3336B05F1FBEC4F /* DailyVerseStore.swift */; };
 		E7442BA38E4D02D147A0BBF9 /* term-bailu-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 1EAB5A46223FEE61B2436B89 /* term-bailu-dark.webp */; };
 		E8BCF05ACF99CE149BA62397 /* term-mangzhong-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2F45670C7EBCED160EB64043 /* term-mangzhong-dark.webp */; };
+		E949A7BC96DD410B34273F97 /* FolkloreLoadStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260A417BD1E7E17DA081925 /* FolkloreLoadStateTests.swift */; };
 		EEBBCDC7C99A7DC33D9C188C /* DailyVerseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E35CC6BD3E4FA162178AF1 /* DailyVerseScreen.swift */; };
 		F07A61DBBD9A1D0BDD7BDB96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C64D67EB5AF32E2A27AD8D4 /* Assets.xcassets */; };
 		F3CF09131452D1FCE3C34BE9 /* AnniversaryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B41AF2DA2B791A5B93B941 /* AnniversaryStore.swift */; };
@@ -263,6 +265,7 @@
 		81A39542DB40883A371F0FA4 /* term-qingming-light.webp */ = {isa = PBXFileReference; path = "term-qingming-light.webp"; sourceTree = "<group>"; };
 		81A8C7FBB0FB0D22F603ACE5 /* PlainLanguageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainLanguageLoader.swift; sourceTree = "<group>"; };
 		81F89938CBAE6DCFF2EC664C /* LixiangTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LixiangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8260A417BD1E7E17DA081925 /* FolkloreLoadStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolkloreLoadStateTests.swift; sourceTree = "<group>"; };
 		82A7FE90A6AE81510C21B7EA /* term-qiufen-dark.webp */ = {isa = PBXFileReference; path = "term-qiufen-dark.webp"; sourceTree = "<group>"; };
 		849C34758C2801EAF4EDE24D /* R14BootLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14BootLoadingView.swift; sourceTree = "<group>"; };
 		858D2CAEB7D13410E7C423DB /* R14DuoRailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14DuoRailTests.swift; sourceTree = "<group>"; };
@@ -270,6 +273,7 @@
 		8B1057297CBC564642A08F8B /* FortuneScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneScreen.swift; sourceTree = "<group>"; };
 		8B78B618C8DAEDD12A50EF74 /* seal-round-01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seal-round-01@2x.png"; sourceTree = "<group>"; };
 		8C24CF0BA42888A44D0302C9 /* R14CountdownScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14CountdownScreen.swift; sourceTree = "<group>"; };
+		8C3369F8C714C5B69B76CEF5 /* R14FolkloreLoadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14FolkloreLoadModel.swift; sourceTree = "<group>"; };
 		8E466F07982E0E749DF30BB5 /* term-mangzhong-light.webp */ = {isa = PBXFileReference; path = "term-mangzhong-light.webp"; sourceTree = "<group>"; };
 		9278E618C0610300D932BD3C /* term-xiaoman-light.webp */ = {isa = PBXFileReference; path = "term-xiaoman-light.webp"; sourceTree = "<group>"; };
 		9517FF8AB37CB329866032B4 /* term-hanlu-light.webp */ = {isa = PBXFileReference; path = "term-hanlu-light.webp"; sourceTree = "<group>"; };
@@ -581,6 +585,7 @@
 			children = (
 				AB376794904EFF6B35109FD8 /* FolkloreUnreadStore.swift */,
 				4B6D9052F53146203B14C60B /* R14Folklore.swift */,
+				8C3369F8C714C5B69B76CEF5 /* R14FolkloreLoadModel.swift */,
 			);
 			path = Folklore;
 			sourceTree = "<group>";
@@ -732,6 +737,7 @@
 				DE6427911F276D30E1BE1749 /* HomeAlmanacCompass */,
 				F78BD13F4B2267A8B87B91D9 /* AlmanacTermSemanticTests.swift */,
 				E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */,
+				8260A417BD1E7E17DA081925 /* FolkloreLoadStateTests.swift */,
 				A9A2E2EB5A29CCA23BD88DF9 /* FolkloreUnreadStoreTests.swift */,
 				722116A2396BCC3C9567E355 /* FontAvailabilityTests.swift */,
 				DCCA767FE8687948B8B5D0DF /* FortuneEngineTests.swift */,
@@ -1067,6 +1073,7 @@
 				8C25087652A4E1361E37BBB0 /* R14BootLoadingView.swift in Sources */,
 				562FED771B84CE26883D9CD9 /* R14CountdownScreen.swift in Sources */,
 				C33D67B3B7B567D861447032 /* R14Folklore.swift in Sources */,
+				B2816DE5A7B741DB9BACAA3B /* R14FolkloreLoadModel.swift in Sources */,
 				B91E2D5AB652E725E77AD375 /* R14PlaceholderPage.swift in Sources */,
 				17F1D38D07CDE3049419239E /* R14RootView.swift in Sources */,
 				D01671092318D28773D07AF8 /* R14RouteDestination.swift in Sources */,
@@ -1091,6 +1098,7 @@
 			files = (
 				17EB0408610F8B6DF3E188D1 /* AlmanacTermSemanticTests.swift in Sources */,
 				146166B7CABEC8AF3DB42FE9 /* CountdownLogicTests.swift in Sources */,
+				E949A7BC96DD410B34273F97 /* FolkloreLoadStateTests.swift in Sources */,
 				7511252EC8B5EA2A1FD87190 /* FolkloreUnreadStoreTests.swift in Sources */,
 				A973D52E2235B2F7F414AF68 /* FontAvailabilityTests.swift in Sources */,
 				5A6C298813051CC13C5D3BC5 /* FortuneEngineTests.swift in Sources */,
