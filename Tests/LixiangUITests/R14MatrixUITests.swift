@@ -21,6 +21,23 @@ final class R14MatrixUITests: XCTestCase {
         XCUIDevice.shared.orientation = .portrait
     }
 
+    func testIPadCompassHour() throws {
+        for (orientation, name) in [(UIDeviceOrientation.portrait, "portrait"), (UIDeviceOrientation.landscapeRight, "landscape")] {
+            XCUIDevice.shared.orientation = orientation
+            let app = XCUIApplication()
+            app.launchArguments = ["-LixiangR14Route", "compass", "-LixiangCompassHour"]
+            app.launch()
+            XCTAssertTrue(app.wait(for: .runningForeground, timeout: 25))
+            sleep(6)
+            let a = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+            a.name = "ipad-\(name)-compass-hour"
+            a.lifetime = .keepAlways
+            add(a)
+            app.terminate()
+        }
+        XCUIDevice.shared.orientation = .portrait
+    }
+
     func testCompassDay() throws {
         let app = XCUIApplication()
         app.launchArguments = ["-LixiangR14Route", "compass"]

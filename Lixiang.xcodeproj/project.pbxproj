@@ -23,6 +23,7 @@
 		146166B7CABEC8AF3DB42FE9 /* CountdownLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */; };
 		1514DB9BFA1BDF1BEF79D353 /* term-guyu-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = C535385772329F09B4B4E2C4 /* term-guyu-light.webp */; };
 		1629C356400EA80AC0230377 /* term-chunfen-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9E46D276C8454B5F2B627E9D /* term-chunfen-dark.webp */; };
+		17EB0408610F8B6DF3E188D1 /* AlmanacTermSemanticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BD13F4B2267A8B87B91D9 /* AlmanacTermSemanticTests.swift */; };
 		17F1D38D07CDE3049419239E /* R14RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC233A3E5955B8F6BB809A7 /* R14RootView.swift */; };
 		1A1E4569802C9C82B49DCD50 /* CompassScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E3D415B91FC17BB2DC101 /* CompassScreen.swift */; };
 		1A36718274792A26F1C632C8 /* LegacyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407A833BE0DB0371BD5A3FF /* LegacyRoute.swift */; };
@@ -329,6 +330,7 @@
 		F0CB1916448ADAA608EBB07F /* term-yushui-light.webp */ = {isa = PBXFileReference; path = "term-yushui-light.webp"; sourceTree = "<group>"; };
 		F5090AF9BBD20E743BA7E910 /* dao-365.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "dao-365.json"; sourceTree = "<group>"; };
 		F542B8E0272440DFD678CF6E /* term-dongzhi-dark.webp */ = {isa = PBXFileReference; path = "term-dongzhi-dark.webp"; sourceTree = "<group>"; };
+		F78BD13F4B2267A8B87B91D9 /* AlmanacTermSemanticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmanacTermSemanticTests.swift; sourceTree = "<group>"; };
 		F7AFE3737C095E0827C301ED /* R14StateCaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14StateCaptureUITests.swift; sourceTree = "<group>"; };
 		FA982517A1D0AECF514480F7 /* term-dashu-dark.webp */ = {isa = PBXFileReference; path = "term-dashu-dark.webp"; sourceTree = "<group>"; };
 		FC5CD61AB7918A75644AF7DC /* D1Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1Theme.swift; sourceTree = "<group>"; };
@@ -726,6 +728,7 @@
 			isa = PBXGroup;
 			children = (
 				DE6427911F276D30E1BE1749 /* HomeAlmanacCompass */,
+				F78BD13F4B2267A8B87B91D9 /* AlmanacTermSemanticTests.swift */,
 				E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */,
 				A9A2E2EB5A29CCA23BD88DF9 /* FolkloreUnreadStoreTests.swift */,
 				722116A2396BCC3C9567E355 /* FontAvailabilityTests.swift */,
@@ -1083,6 +1086,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EB0408610F8B6DF3E188D1 /* AlmanacTermSemanticTests.swift in Sources */,
 				146166B7CABEC8AF3DB42FE9 /* CountdownLogicTests.swift in Sources */,
 				7511252EC8B5EA2A1FD87190 /* FolkloreUnreadStoreTests.swift in Sources */,
 				A973D52E2235B2F7F414AF68 /* FontAvailabilityTests.swift in Sources */,
