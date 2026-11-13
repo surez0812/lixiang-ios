@@ -20,6 +20,7 @@ struct R14RootView: View {
     @EnvironmentObject private var state: AppState
     @StateObject private var days: SelectedDayStore
     @State private var tab = 0
+    @State private var pendingRoute: R14Route? = nil
     @State private var paths = [NavigationPath](repeating: NavigationPath(), count: 5)
 
     init() {
@@ -49,34 +50,36 @@ struct R14RootView: View {
             case "settings": r = .settings
             default: r = .home
             }
-            var initial = [NavigationPath](repeating: NavigationPath(), count: 5)
-            initial[0] = NavigationPath([r])
-            _paths = State(initialValue: initial)
+            _pendingRoute = State(initialValue: r)
         }
         #endif
     }
 
     var body: some View {
         TabView(selection: $tab) {
-            NavigationStack(path: $paths[0]) { R14HomeScreen() }
-                .navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) }
+            NavigationStack(path: $paths[0]) { R14HomeScreen().navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) } }
                 .tabItem { Label("日历", image: "tab-calendar") }.tag(0)
-            NavigationStack(path: $paths[1]) { R14PlaceholderPage(title: "岁时", route: .folklore) }
-                .navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) }
+            NavigationStack(path: $paths[1]) { R14PlaceholderPage(title: "岁时", route: .folklore).navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) } }
                 .tabItem { Label("岁时", image: "tab-suishi") }.tag(1)
-            NavigationStack(path: $paths[2]) { R14PlaceholderPage(title: "择日", route: .selection) }
-                .navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) }
+            NavigationStack(path: $paths[2]) { R14PlaceholderPage(title: "择日", route: .selection).navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) } }
                 .tabItem { Label("择日", image: "TabSelection") }.tag(2)
-            NavigationStack(path: $paths[3]) { R14PlaceholderPage(title: "倒计日", route: .countdown) }
-                .navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) }
+            NavigationStack(path: $paths[3]) { R14PlaceholderPage(title: "倒计日", route: .countdown).navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) } }
                 .tabItem { Label("倒计日", image: "tab-countdown") }.tag(3)
-            NavigationStack(path: $paths[4]) { R14PlaceholderPage(title: "设置", route: .settings) }
-                .navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) }
+            NavigationStack(path: $paths[4]) { R14PlaceholderPage(title: "设置", route: .settings).navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) } }
                 .tabItem { Label("设置", image: "tab-settings") }.tag(4)
         }
         .tint(D1Theme.resolve(state.theme.colorScheme ?? .light).accent)
         .environmentObject(days)
         .onOpenURL { _ in }
+        .onAppear {
+            guard let r = pendingRoute else { return }
+            pendingRoute = nil
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                var p = paths
+                p[0].append(r)
+                paths = p
+            }
+        }
     }
 }
 
