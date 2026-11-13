@@ -58,6 +58,36 @@ final class AlmanacTermSemanticTests: XCTestCase {
         XCTAssertFalse(zhenjiu.contains("理疗"), zhenjiu)
     }
 
+    func testAnzangAndCangDefinitions() {
+        let pack = PlainLanguageLoader.load()
+        let anzang = pack.term(named: "安葬")?.zh ?? ""
+        XCTAssertTrue(anzang.contains("下葬") || anzang.contains("入土"), anzang)
+        XCTAssertFalse(anzang.contains("整理") || anzang.contains("遗物") || anzang.contains("收纳"), anzang)
+        let cang = pack.term(named: "造仓")?.zh ?? ""
+        XCTAssertTrue(cang.contains("仓库") || cang.contains("储存"), cang)
+        XCTAssertFalse(cang.contains("收纳柜") || cang.contains("储物间"), cang)
+    }
+
+    func testPMEditorApprovedRound2() {
+        let pack = PlainLanguageLoader.load()
+        let checks: [(String, [String], [String])] = [
+            ("安葬", ["安葬", "入土", "墓地"], ["整理遗物", "收纳"]),
+            ("祈福", ["祈愿", "祝福", "心愿"], ["散步", "放松"]),
+            ("谢土", ["答谢土地"], ["新房清扫", "清扫整理收尾"]),
+            ("开光", ["启用仪式", "不构成宗教劝诱"], ["首次清洁", "清洁启用"]),
+            ("求嗣", ["祈求子嗣", "家族延续"], ["备孕"]),
+        ]
+        for (term, musts, forbidden) in checks {
+            let zh = pack.term(named: term)?.zh ?? ""
+            XCTAssertFalse(zh.isEmpty, "缺词条: \(term)")
+            for m in musts { XCTAssertTrue(zh.contains(m), "\(term) 缺关键词 \(m): \(zh)") }
+            for f in forbidden { XCTAssertFalse(zh.contains(f), "\(term) 含错误措辞 \(f): \(zh)") }
+        }
+        let all = pack.terms.map(\.zh)
+        let bad = all.filter { z in ["整理遗物", "散步放松", "新房清扫", "首次清洁启用", "备孕计划"].contains { z.contains($0) } }
+        XCTAssertTrue(bad.isEmpty, "全量仍有错误释义: \(bad)")
+    }
+
     func testFallbackIsNeutral() {
         let text = AlmanacTermSemantics.explanation(for: "不存在的词条XYZ", pack: pack)
         XCTAssertTrue(text.contains("传统黄历用语"))
