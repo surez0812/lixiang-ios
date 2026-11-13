@@ -119,6 +119,15 @@ struct R14RootView: View {
 struct R14FloatingTabBar: View {
     @Binding var selected: Int
     @Environment(\.d1) private var theme
+    @EnvironmentObject private var state: AppState
+    @EnvironmentObject private var days: SelectedDayStore
+
+    private var countdownBadge: String? {
+        let n = state.countdownStore.items.filter { item in
+            AnniversaryResolver.occurrence(for: item, now: days.selectedDate, engine: days.engine)?.date == days.selectedDate
+        }.count
+        return n > 0 ? "\(n)" : "0"
+    }
     private let items: [(String, String)] = [("日历","tab-calendar"),("岁时","tab-suishi"),("择日","TabSelection"),("倒计日","tab-countdown"),("设置","tab-settings")]
     var body: some View {
         HStack(spacing: 2) {
@@ -131,6 +140,17 @@ struct R14FloatingTabBar: View {
                     .foregroundStyle(selected == idx ? theme.accent : theme.ink3)
                     .frame(maxWidth: .infinity, minHeight: 44)
                     .background(selected == idx ? theme.accent.opacity(0.12) : .clear, in: Capsule())
+                    .overlay(alignment: .topTrailing) {
+                        if idx == 1 {
+                            Circle().fill(Color(hex: 0xB23A2A)).frame(width: 6, height: 6).padding(.top, 4).padding(.trailing, 18)
+                        }
+                        if idx == 3, let badge = countdownBadge {
+                            Text(badge).d1Font(8, weight: .bold).foregroundStyle(.white)
+                                .frame(minWidth: 16, minHeight: 16)
+                                .background(Color(hex: 0xB23A2A), in: Capsule())
+                                .padding(.top, 2).padding(.trailing, 12)
+                        }
+                    }
                 }.buttonStyle(.plain)
                 .accessibilityLabel(item.0)
                 .accessibilityAddTraits(selected == idx ? .isSelected : [])
