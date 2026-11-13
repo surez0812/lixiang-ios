@@ -13,6 +13,7 @@ struct FortuneScreen: View {
     @State private var sign: FortuneSign?
     @State private var done = false
     @State private var showReduceNote = false
+    @State private var debugFrame: Double? = nil
     var onBack: (() -> Void)? = nil
 
     enum Phase: Equatable { case idle, running, result }
@@ -28,7 +29,20 @@ struct FortuneScreen: View {
         }
         .background(ScreenBackground())
         .toolbar(.hidden, for: .tabBar)
-        .onAppear { engine.load() }
+        .onAppear {
+            engine.load()
+            #if DEBUG
+            let args = ProcessInfo.processInfo.arguments
+            if let i = args.firstIndex(of: "-LixiangFortuneFrame"), i + 1 < args.count, let ms = Double(args[i + 1]) {
+                debugFrame = ms
+                sign = engine.sign(for: Date())
+                phase = ms >= 1450 ? .result : .running
+                if ms >= 1450 { done = true }
+            } else if args.contains("-LixiangFortuneAuto") {
+                draw()
+            }
+            #endif
+        }
     }
 
     // MARK: layouts
@@ -235,6 +249,7 @@ struct FortuneScreen: View {
     }
 
     private func elapsedMs(_ date: Date) -> Double {
+        if let debugFrame { return debugFrame }
         guard let startedAt else { return phase == .result ? 1450 : 0 }
         return min(1450, max(0, date.timeIntervalSince(startedAt) * 1000))
     }
