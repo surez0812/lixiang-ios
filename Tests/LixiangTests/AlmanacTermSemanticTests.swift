@@ -193,6 +193,24 @@ final class AlmanacTermSemanticTests: XCTestCase {
         }
     }
 
+    func testJisiEnglishNotBlocked() {
+        let pack = PlainLanguageLoader.load()
+        let t = pack.term(named: "祭祀")
+        XCTAssertNotNil(t)
+        let zh = t?.zh ?? "", en = t?.en ?? ""
+        for marker in ["—", "blocked", "TBD", "待补", "placeholder"] {
+            XCTAssertFalse(zh.contains(marker), "祭祀 zh 含占位: \(zh)")
+            XCTAssertFalse(en.lowercased().contains(marker.lowercased()), "祭祀 en 含占位: \(en)")
+        }
+        XCTAssertTrue(en.contains("offerings") && en.contains("remembrance"), "祭祀 en 未对齐: \(en)")
+        // 全量 en 占位扫描
+        for term in pack.terms {
+            for marker in ["—", "blocked", "TBD", "待补", "placeholder"] {
+                XCTAssertFalse(term.en.lowercased().contains(marker.lowercased()), "\(term.term) en 含占位 \(marker): \(term.en)")
+            }
+        }
+    }
+
     func testFallbackIsNeutral() {
         let text = AlmanacTermSemantics.explanation(for: "不存在的词条XYZ", pack: pack)
         XCTAssertTrue(text.contains("传统黄历用语"))
