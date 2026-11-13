@@ -32,20 +32,46 @@ struct R14RootView: View {
         #if DEBUG
         let args = ProcessInfo.processInfo.arguments
         if let i = args.firstIndex(of: "-LixiangTab"), i + 1 < args.count, let n = Int(args[i + 1]) { _tab = State(initialValue: n) }
+        let routeName: String? = {
+            guard let i = args.firstIndex(of: "-LixiangR14Route"), i + 1 < args.count else { return nil }
+            return args[i + 1]
+        }()
+        if let routeName {
+            let r: R14Route
+            switch routeName {
+            case "almanac": r = .almanac(today)
+            case "compass": r = .compass(today, hour: debug.hour ?? 12)
+            case "daily": r = .daily
+            case "fortune": r = .fortune
+            case "selection": r = .selection
+            case "folklore": r = .folklore
+            case "countdown": r = .countdown
+            case "settings": r = .settings
+            default: r = .home
+            }
+            var initial = [NavigationPath](repeating: NavigationPath(), count: 5)
+            initial[0] = NavigationPath([r])
+            _paths = State(initialValue: initial)
+        }
         #endif
     }
 
     var body: some View {
         TabView(selection: $tab) {
-            NavigationStack(path: $paths[0]) { R14PlaceholderPage(title: "日历", route: .home) }
+            NavigationStack(path: $paths[0]) { R14HomeScreen() }
+                .navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) }
                 .tabItem { Label("日历", image: "tab-calendar") }.tag(0)
             NavigationStack(path: $paths[1]) { R14PlaceholderPage(title: "岁时", route: .folklore) }
+                .navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) }
                 .tabItem { Label("岁时", image: "tab-suishi") }.tag(1)
             NavigationStack(path: $paths[2]) { R14PlaceholderPage(title: "择日", route: .selection) }
+                .navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) }
                 .tabItem { Label("择日", image: "TabSelection") }.tag(2)
             NavigationStack(path: $paths[3]) { R14PlaceholderPage(title: "倒计日", route: .countdown) }
+                .navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) }
                 .tabItem { Label("倒计日", image: "tab-countdown") }.tag(3)
             NavigationStack(path: $paths[4]) { R14PlaceholderPage(title: "设置", route: .settings) }
+                .navigationDestination(for: R14Route.self) { R14RouteDestination(route: $0) }
                 .tabItem { Label("设置", image: "tab-settings") }.tag(4)
         }
         .tint(D1Theme.resolve(state.theme.colorScheme ?? .light).accent)

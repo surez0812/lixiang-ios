@@ -1,9 +1,10 @@
 # 历象 R14 · 188 状态 QA 矩阵
 
-- 设计目录：`/Users/surezhang/work/ZhaoYao/work/lixiang-design-handoff-20261113/docs/design`；`screens.json` SHA256 `ea505be157c6ceb3bc57eabe0fb00feef3eaf7d990fa6d2b8ad22264224e7409`；设计条目 188 条；**设计稿 ≠ 实现/验收通过**。
-- 使用：每行先按 `screens.json` 对应设计 PNG 自查（设计对照），再在模拟器/真机跑同状态；结果只允许 PASS/FAIL/NOT RUN；证据列写截图/日志/设备。
+- 生成器：`scripts/r14-matrix-gen.py`；权威源：`screens.json` SHA256 `ea505be157c6ceb3bc57eabe0fb00feef3eaf7d990fa6d2b8ad22264224e7409`；设计条目 188 条；**设计稿 ≠ 实现/验收通过**。
+- 每行先按对应设计 PNG 自查，再在模拟器/真机跑同状态；结果只允许 PASS/FAIL/NOT RUN；证据列写截图/日志/设备。
 - 当前阶段：**全部 NOT RUN**（开发自测未交；未测未就绪页面，不用设计图代替原生结果）。
 - 12 画布：phone light/dark 375×930；iPad 834×1194、1194×834 ×亮暗；Duo 六姿态；Tabletop=OpenPortrait 669×951。
+- page 分组不合并：home/almanac/compass/daily/fortune/folklore/folklore-detail/selection/countdown/countdown-detail/settings。
 
 | # | 页面 | 模式/画布 | 尺寸 | 状态 | 入口 | 期望 | PASS | FAIL | NOT RUN | 证据 |
 |---:|---|---|---|---|---|---|---|---|---|---|
