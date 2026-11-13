@@ -23,8 +23,7 @@ struct DailyScreen: View {
                 HStack(alignment: .top, spacing: 20) {
                     ScrollView(showsIndicators: false) {
                         VStack(alignment: .leading, spacing: 10) {
-                            wideBackRow
-                            mainContent
+                            articleCard
                         }.padding(.vertical, 12)
                     }
                     .padding(.horizontal, 20)
@@ -281,19 +280,19 @@ struct DailyShareCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
-                Text("历象").d1SerifFont(20, weight: .semibold).foregroundStyle(theme.accentStrong)
+                Text("历象").d1SerifFont(20, weight: .semibold).foregroundStyle(D1Theme.light.accentStrong)
                 Spacer()
-                Text("\(date.month)月\(date.day)日 · \(almanac.lunar.monthDayText)").d1Font(11).foregroundStyle(theme.ink3)
+                Text("\(date.month)月\(date.day)日 · \(almanac.lunar.monthDayText)").d1Font(11).foregroundStyle(D1Theme.light.ink3)
             }
-            Text(verse.quote).d1Kaiti(24).foregroundStyle(theme.ink).lineLimit(3)
-            Text(verse.title).d1Font(13, weight: .semibold).foregroundStyle(theme.ink2)
-            Text(verse.meaning).d1Font(11).foregroundStyle(theme.ink2).lineLimit(3)
-            Text(verse.source).d1Font(9).foregroundStyle(theme.ink3)
+            Text(verse.quote).d1Kaiti(24).foregroundStyle(D1Theme.light.ink).lineLimit(3)
+            Text(verse.title).d1Font(13, weight: .semibold).foregroundStyle(D1Theme.light.ink2)
+            Text(verse.meaning).d1Font(11).foregroundStyle(D1Theme.light.ink2).lineLimit(3)
+            Text(verse.source).d1Font(9).foregroundStyle(D1Theme.light.ink3)
             Spacer()
             HStack(alignment: .bottom) {
                 VStack(alignment: .leading, spacing: 3) {
-                    Text("历象 · 每日一句").d1Font(10, weight: .semibold).foregroundStyle(theme.ink2)
-                    Text("App Store 搜索「历象」").d1Font(9).foregroundStyle(theme.ink3)
+                    Text("历象 · 每日一句").d1Font(10, weight: .semibold).foregroundStyle(D1Theme.light.ink2)
+                    Text("App Store 搜索「历象」").d1Font(9).foregroundStyle(D1Theme.light.ink3)
                 }
                 Spacer()
                 if let qr = ShareCardRenderer.qrImage(text: "https://apps.apple.com/app/id6833252283", size: 110) {
