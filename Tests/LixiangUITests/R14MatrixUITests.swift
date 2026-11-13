@@ -7,6 +7,20 @@ final class R14MatrixUITests: XCTestCase {
         continueAfterFailure = false
     }
 
+    func testIPadLandscapeFortuneResult() throws {
+        XCUIDevice.shared.orientation = .landscapeRight
+        let app = XCUIApplication()
+        app.launchArguments = ["-LixiangR14Route", "fortune", "-LixiangFortuneFrame", "1450"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 25))
+        sleep(5)
+        let a = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        a.name = "ipad-landscape-fortune-result"
+        a.lifetime = .keepAlways
+        add(a)
+        XCUIDevice.shared.orientation = .portrait
+    }
+
     func testIPadPortraitRoutes() throws {
         XCUIDevice.shared.orientation = .portrait
         let routes: [(String, String)] = [
