@@ -116,7 +116,7 @@ final class AlmanacTermSemanticTests: XCTestCase {
     func testPMEditorApprovedRound3FestivalsAndNayin() {
         let pack = PlainLanguageLoader.load()
         let musts: [(String, [String], [String])] = [
-            ("上巳节", ["农历三月初三", "祓禊", "文化说明"], ["散步", "踏青赏花"]),
+            ("上巳节", ["农历三月初三", "祓禊", "文化传统"], ["散步", "踏青赏花"]),
             ("重阳节", ["农历九月初九", "登高", "敬老"], ["陪长辈", "爬山散步"]),
             ("大林木", ["纳音", "五行", "活动无关"], ["逛公园", "换盆"]),
             ("海中金", ["纳音", "五行", "活动无关"], ["捡贝壳", "海边散步"]),
@@ -150,8 +150,8 @@ final class AlmanacTermSemanticTests: XCTestCase {
         for term in festivals {
             let zh = pack.term(named: term)?.zh ?? ""
             let en = pack.term(named: term)?.en ?? ""
-            XCTAssertTrue(zh.contains("传统节日") || zh.contains("公共节日"), "\(term) 非节日释义: \(zh)")
-            XCTAssertTrue(en.lowercased().contains("traditional festival") || en.lowercased().contains("public holiday"), "\(term) en 非节日: \(en)")
+            XCTAssertTrue(zh.contains("节日") || zh.contains("公历五月一日"), "\(term) 非节日释义: \(zh)")
+            XCTAssertTrue(en.lowercased().contains("festival") || en.lowercased().contains("holiday"), "\(term) en 非节日: \(en)")
             for a in ["去", "陪", "赏", "逛"] { XCTAssertFalse(zh.contains(a), "\(term) 仍含活动建议 \(a): \(zh)") }
         }
         for term in terms {

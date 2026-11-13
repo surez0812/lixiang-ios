@@ -16,8 +16,8 @@
  },
  {
   "term": "上巳节",
-  "zh": "传统节日，农历三月初三；旧俗包括临水祓禊、春游踏青等，各地做法不同；仅作文化说明。",
-  "en": "Traditional festival on the third day of the third lunar month; old customs include riverside purification and spring outings, varying by region; cultural note only."
+  "zh": "传统节日，农历三月初三；旧俗临水祓禊、春游踏青等文化传统。",
+  "en": "Traditional festival on the third day of the third lunar month; old customs include riverside purification and spring outings."
  },
  {
   "term": "上梁",
@@ -31,8 +31,8 @@
  },
  {
   "term": "下元节",
-  "zh": "传统节日，农历十月十五；民间有祭祀、修斋等旧俗，各地做法不同；仅作文化说明。",
-  "en": "Traditional festival on the fifteenth day of the tenth lunar month; folk customs include offerings and rites, varying by region; cultural note only."
+  "zh": "传统道历节日，农历十月十五；民俗文化说明。",
+  "en": "Traditional Taoist-calendar festival on the fifteenth day of the tenth lunar month; cultural note."
  },
  {
   "term": "不将",
@@ -51,8 +51,8 @@
  },
  {
   "term": "中元节",
-  "zh": "传统节日，农历七月十五；旧俗包括祭祖、放河灯等，各地做法不同；仅作文化说明。",
-  "en": "Traditional festival on the fifteenth day of the seventh lunar month; old customs include ancestor remembrance and river lanterns, varying by region; cultural note only."
+  "zh": "传统民俗节日，农历七月十五；祭祖追思、河灯等传统民俗。",
+  "en": "Traditional folk festival on the fifteenth day of the seventh lunar month; ancestral remembrance and river lanterns."
  },
  {
   "term": "中秋节",
@@ -116,7 +116,7 @@
  },
  {
   "term": "修坟",
-  "zh": "去墓地清理杂草、修整墓碑",
+  "zh": "清理墓地杂草、修整墓碑的民俗活动。",
   "en": "Tidy the grave and clear weeds"
  },
  {
@@ -136,12 +136,12 @@
  },
  {
   "term": "元宵节",
-  "zh": "传统节日，农历正月十五；旧俗包括灯会、汤圆等，各地做法不同；仅作文化说明。",
-  "en": "Traditional festival on the fifteenth day of the first lunar month; old customs include lantern fairs and sweet rice balls, varying by region; cultural note only."
+  "zh": "传统节日，农历正月十五；汤圆、灯会、猜谜等节令文化。",
+  "en": "Traditional festival on the fifteenth day of the first lunar month; seasonal culture of tangyuan and lantern fairs."
  },
  {
   "term": "入学",
-  "zh": "去新学校报到注册",
+  "zh": "到新学校报到注册的入学流程。",
   "en": "Register and start at a new school"
  },
  {
@@ -191,7 +191,7 @@
  },
  {
   "term": "割蜜",
-  "zh": "去蜂箱采收新鲜蜂蜜",
+  "zh": "采收蜂蜜的传统农事活动。",
   "en": "Harvest fresh honey from beehives"
  },
  {
@@ -201,8 +201,8 @@
  },
  {
   "term": "劳动节",
-  "zh": "公共节日，公历五月一日；纪念劳动与国际劳动者团结背景，各地庆祝方式不同；仅作文化说明。",
-  "en": "Public holiday on May 1; commemorates labor and international workers solidarity, with varied observances; cultural note only."
+  "zh": "公历五月一日；劳动与休憩的现代节日文化。",
+  "en": "Modern holiday on May 1; culture of work and rest."
  },
  {
   "term": "勾陈",
@@ -631,7 +631,7 @@
  },
  {
   "term": "捕捉",
-  "zh": "去池塘河边抓鱼捞虾",
+  "zh": "捕捉鱼虾等小动物的传统劳作。",
   "en": "Go fishing or catch shrimp"
  },
  {
@@ -641,7 +641,7 @@
  },
  {
   "term": "探病",
-  "zh": "去医院或家里看望病人",
+  "zh": "看望病人、问候康复的日常礼节。",
   "en": "Visit someone who is sick"
  },
  {
@@ -791,7 +791,7 @@
  },
  {
   "term": "求医",
-  "zh": "去医院挂号看病做检查",
+  "zh": "就医问诊、检查身体的日常行为。",
   "en": "See a doctor and get medical checkups"
  },
  {
@@ -826,7 +826,7 @@
  },
  {
   "term": "治病",
-  "zh": "去医院检查治疗身体不适",
+  "zh": "检查治疗身体不适的健康行为；民俗参考不替代专业医疗建议。",
   "en": "See a doctor for checkup"
  },
  {
@@ -876,7 +876,7 @@
  },
  {
   "term": "理发",
-  "zh": "去理发店剪个新发型",
+  "zh": "修剪头发、打理发型。",
   "en": "Get a haircut"
  },
  {
@@ -891,7 +891,7 @@
  },
  {
   "term": "畋猎",
-  "zh": "去郊外钓鱼或户外捕猎",
+  "zh": "户外捕猎的传统劳作。",
   "en": "Go fishing or hunting outdoors"
  },
  {
@@ -941,8 +941,8 @@
  },
  {
   "term": "社日节",
-  "zh": "传统节日，分春社与秋社，约在立春/立秋后第五个戊日；旧俗包括祭祀土地、聚饮等，各地不同；仅作文化说明。",
-  "en": "Traditional festival with spring and autumn she altars, around the fifth wu day after the start of spring or autumn; old customs include land offerings and gatherings, varying by region; cultural note only."
+  "zh": "传统民俗节日，春社/秋社；邻里聚会、社祭等传统民俗文化。",
+  "en": "Traditional spring/autumn community festival; neighborhood gatherings and local rites."
  },
  {
   "term": "祈福",
@@ -986,8 +986,8 @@
  },
  {
   "term": "端午节",
-  "zh": "传统节日，农历五月初五；旧俗包括龙舟、粽子、艾草等，各地做法不同；仅作文化说明。",
-  "en": "Traditional festival on the fifth day of the fifth lunar month; old customs include dragon boats, rice dumplings and mugwort, varying by region; cultural note only."
+  "zh": "传统节日，农历五月初五；粽子、龙舟、艾草等节令文化。",
+  "en": "Traditional festival on the fifth day of the fifth lunar month; seasonal culture of zongzi, dragon boats and mugwort."
  },
  {
   "term": "筑堤",
@@ -1086,8 +1086,8 @@
  },
  {
   "term": "观莲节",
-  "zh": "传统节日，农历六月二十四；旧俗与荷花生日、观莲活动相关，江南地区较流行；仅作文化说明。",
-  "en": "Traditional festival on the twenty-fourth day of the sixth lunar month; associated with the lotus birthday and lotus viewing, especially in Jiangnan; cultural note only."
+  "zh": "传统民俗节日，农历六月廿四；荷花与夏日民俗文化。",
+  "en": "Traditional folk festival on the twenty-fourth day of the sixth lunar month; lotus and summer folk culture."
  },
  {
   "term": "角",
@@ -1201,8 +1201,8 @@
  },
  {
   "term": "重阳节",
-  "zh": "传统节日，农历九月初九；旧俗包括登高、菊花文化、敬老等，各地做法不同；仅作文化说明。",
-  "en": "Traditional festival on the ninth day of the ninth lunar month; old customs include climbing, chrysanthemum culture and honoring elders, varying by region; cultural note only."
+  "zh": "传统节日，农历九月初九；旧俗登高、菊花、敬老等文化传统；现代延续敬老文化。",
+  "en": "Traditional festival on the ninth day of the ninth lunar month; old customs include climbing, chrysanthemums and honoring elders."
  },
  {
   "term": "金匮",
@@ -1296,7 +1296,7 @@
  },
  {
   "term": "龙头节",
-  "zh": "传统节日，农历二月初二；旧俗包括春耕开始、理发等，各地做法不同；仅作文化说明。",
-  "en": "Traditional festival on the second day of the second lunar month; old customs include the start of spring farming and haircuts, varying by region; cultural note only."
+  "zh": "传统民俗节日，农历二月初二；理发、春耕等传统民俗文化。",
+  "en": "Traditional folk festival on the second day of the second lunar month; haircuts and spring farming customs."
  }
 ]
