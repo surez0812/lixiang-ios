@@ -116,7 +116,7 @@ struct R14FolkloreScreen: View {
                         .foregroundStyle(row.isReadable ? theme.accentStrong : theme.ink3)
                 }
                 Text(row.item.teaser).d1Font(12).foregroundStyle(theme.ink2).lineLimit(2)
-                Text(row.item.category.first ?? "民俗").d1Font(10)
+                Text(categoryLabel(row.item.category.first)).d1Font(10)
                     .foregroundStyle(theme.ink3)
                     .padding(.horizontal, 8).padding(.vertical, 3)
                     .background(theme.soft, in: Capsule())
@@ -140,6 +140,7 @@ struct R14FolkloreDetailScreen: View {
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
     let id: String
+    @Environment(\.dismiss) private var dismiss
     @State private var showShare = false
 
     private var row: FolkloreRow? {
@@ -169,16 +170,25 @@ struct R14FolkloreDetailScreen: View {
         }
         .background(ScreenBackground())
         .toolbar(.hidden, for: .navigationBar)
+        .overlay(alignment: .topLeading) {
+            Button { dismiss() } label: {
+                Image(systemName: "chevron.left").font(.system(size: 17, weight: .semibold))
+                    .frame(width: 44, height: 44)
+                    .background(.ultraThinMaterial, in: Circle())
+            }
+            .foregroundStyle(theme.ink)
+            .padding(.leading, 14).padding(.top, 6)
+        }
     }
 
     private func header(_ row: FolkloreRow) -> some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(row.item.category.first ?? "民俗").d1Font(10).foregroundStyle(theme.ink3)
+            Text(categoryLabel(row.item.category.first)).d1Font(10).foregroundStyle(theme.ink3)
                 .padding(.horizontal, 8).padding(.vertical, 3).background(theme.soft, in: Capsule())
             Text(row.item.title).d1SerifFont(34).foregroundStyle(theme.ink)
             Text(row.item.teaser).d1Font(13).foregroundStyle(theme.ink2).lineSpacing(4)
             HStack {
-                Text("\(row.state.anchor.year)年\(row.state.anchor.month)月\(row.state.anchor.day)日")
+                Text(verbatim: String(format: "%d年%d月%d日", row.state.anchor.year, row.state.anchor.month, row.state.anchor.day))
                     .d1Font(12).foregroundStyle(theme.ink3)
                 Text(row.state.isToday ? "· 今天" : "· 还有\(row.daysUntil ?? 0)天")
                     .d1Font(12).foregroundStyle(theme.accentStrong)
@@ -219,5 +229,19 @@ struct R14FolkloreDetailScreen: View {
             Text("到日子再来读这段岁时故事。").d1Font(12).foregroundStyle(theme.ink3)
         }
         .frame(maxWidth: .infinity).padding(.vertical, 60)
+    }
+}
+
+
+private func categoryLabel(_ raw: String?) -> String {
+    switch raw {
+    case "festival": return "传统节日"
+    case "solar_term": return "节气"
+    case "tao": return "道历节日"
+    case "foto", "buddhist": return "佛历节日"
+    case "ritual": return "民俗科仪"
+    case "ancestor": return "祭祖纪念"
+    case "traditional": return "传统节日"
+    default: return raw ?? "民俗"
     }
 }
