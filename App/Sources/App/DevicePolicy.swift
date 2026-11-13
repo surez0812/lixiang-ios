@@ -29,14 +29,18 @@ enum R14DevicePolicy {
     static let splitViewExcluded = true   // v1.0 不实现 Split View/Stage Manager 特化
 
     /// Duo 屏幕点尺寸（外屏 466×678 / 内屏 669×951，随姿态互换）；用于设备识别（不依赖 UIDevice）
-    /// 旋转前 window 尺寸仍是竖屏，用 nativeBounds（Duo 外屏 1398×2034 / 内屏 2007×2853）兜底识别。
-    static func isDuoNative(screen: UIScreen) -> Bool {
-        let b = screen.nativeBounds.size
-        let pairs: [(CGFloat, CGFloat)] = [(1398, 2034), (2007, 2853)]
-        for (a, c) in pairs {
-            if (abs(b.width - a) <= 2 && abs(b.height - c) <= 2) || (abs(b.width - c) <= 2 && abs(b.height - a) <= 2) { return true }
+    /// 共享设备身份：Duo 由 nativeBounds（外屏 1398×2034 / 内屏 2007×2853）或 model 判定；
+    /// 姿态（开合/横竖）只由内容/scene 几何决定，身份不参与姿态判断。
+    @MainActor
+    enum R14DeviceIdentity {
+        static var isDuo: Bool {
+            let b = UIScreen.main.nativeBounds.size
+            let pairs: [(CGFloat, CGFloat)] = [(1398, 2034), (2007, 2853)]
+            for (a, c) in pairs {
+                if (abs(b.width - a) <= 2 && abs(b.height - c) <= 2) || (abs(b.width - c) <= 2 && abs(b.height - a) <= 2) { return true }
+            }
+            return UIDevice.current.model.localizedCaseInsensitiveContains("Duo")
         }
-        return UIDevice.current.model.localizedCaseInsensitiveContains("Duo")
     }
 
     static func isDuo(size: CGSize) -> Bool {
@@ -54,28 +58,18 @@ enum R14DevicePolicy {
     }
 
     static func canvas(size: CGSize, idiom: UIUserInterfaceIdiom, isDuo: Bool = false) -> R14Canvas {
-        let short = min(size.width, size.height)
         let landscape = size.width > size.height
-        if isDuo || short >= 600 && short <= 700 && (abs(size.width-669)<2 || abs(size.height-669)<2 || abs(size.width-678)<2) {
-            // 设计画布识别：Duo 669/678 组
-            if size.width == 669 && size.height == 951 { return .duoOpenPortrait }
-            if size.width == 951 && size.height == 669 { return .duoOpenLandscape }
-            if size.width == 678 && size.height == 466 { return .duoTent }
-            if size.width == 466 && size.height == 678 { return .duoClosedPortrait }
-            if size.width == 678 { return .duoClosedLandscape }
-            return size.width > size.height ? .duoOpenLandscape : .duoOpenPortrait
+        let shortSide = min(size.width, size.height)
+        if isDuo {
+            // 姿态只由当前内容/scene 几何决定；设备身份只回答“是不是 Duo”。
+            // 内屏可用短边 ≥600（867×635）→ Open；外屏闭合（606×432）→ Closed。
+            if landscape { return shortSide >= 600 ? .duoOpenLandscape : .duoClosedLandscape }
+            return shortSide >= 600 ? .duoOpenPortrait : .duoClosedPortrait
         }
         switch idiom {
         case .pad:
             return landscape ? .iPadLandscape : .iPadPortrait
         default:
-            if isDuo {
-                if size.width == 669 && size.height == 951 { return .duoOpenPortrait }
-                if size.width == 951 && size.height == 669 { return .duoOpenLandscape }
-                if size.width == 678 && size.height == 466 { return .duoTent }
-                if size.width == 466 && size.height == 678 { return .duoClosedPortrait }
-                return size.width > size.height ? .duoOpenLandscape : .duoOpenPortrait
-            }
             return .phonePortrait   // 普通 iPhone 仅竖屏
         }
     }
@@ -86,7 +80,7 @@ final class R14AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .pad { return .all }
         let size = window?.windowScene?.screen.bounds.size ?? UIScreen.main.bounds.size
-        let duo = R14DevicePolicy.isDuo(size: size) || R14DevicePolicy.isDuoNative(screen: window?.windowScene?.screen ?? .main)
+        let duo = R14DevicePolicy.isDuo(size: size) || R14DevicePolicy.R14DeviceIdentity.isDuo
         #if DEBUG
         print("LXDUO orientationMask size=\(size) native=\(UIScreen.main.nativeBounds.size) duo=\(duo)")
         #endif

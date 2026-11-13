@@ -107,9 +107,12 @@ struct R14RootView: View {
         ZStack {
         ScreenBackground().ignoresSafeArea()
         GeometryReader { geo in
-            let isDuo = R14DevicePolicy.isDuo(size: geo.size)
+            let isDuo = R14DevicePolicy.R14DeviceIdentity.isDuo
             let canvas = R14DevicePolicy.canvas(size: geo.size, idiom: UIDevice.current.userInterfaceIdiom, isDuo: isDuo)
-            let duoSideBar = R14DevicePolicy.isDuoOpenLandscape(size: geo.size) || (isDuo && geo.size.width > geo.size.height && min(geo.size.width, geo.size.height) >= 600)
+            let landscape = geo.size.width > geo.size.height
+            let shortSide = min(geo.size.width, geo.size.height)
+            let innerLike = shortSide >= 600
+            let duoSideBar = isDuo && landscape && innerLike
             Group {
                 if !days.ready {
                     R14BootLoadingView()
@@ -128,7 +131,8 @@ struct R14RootView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .onAppear {
                 #if DEBUG
-                print("LXDROOT canvas=\(canvas.rawValue) size=\(geo.size.width)x\(geo.size.height) duo=\(isDuo) rail=\(duoSideBar)")
+                let scene = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.first
+                print("LXDROOT isDuo=\(isDuo) landscape=\(landscape) shortSide=\(Int(shortSide)) innerLike=\(innerLike) native=\(UIScreen.main.nativeBounds.size) scene=\(scene?.screen.bounds.size ?? .zero) geo=\(geo.size.width)x\(geo.size.height) canvas=\(canvas.rawValue) rail=\(duoSideBar)")
                 #endif
             }
         }
