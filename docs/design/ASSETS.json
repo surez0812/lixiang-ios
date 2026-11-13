@@ -1,0 +1,83 @@
+{
+  "base": "work/lixiang-design-handoff-20261113/docs/design/r14-final",
+  "tab_icons": {
+    "dir": "assets/tab-icons",
+    "canvas_pt": 28,
+    "stroke_pt": 1.8,
+    "template_rendering": true,
+    "icons": [
+      "tab-calendar",
+      "tab-suishi",
+      "tab-selection",
+      "tab-countdown",
+      "tab-settings"
+    ],
+    "formats": [
+      "svg",
+      "pdf",
+      "png@1x/2x/3x"
+    ],
+    "xcassets": "ios-handoff/LixiangAssets.xcassets/",
+    "note": "design README says 4; R14 has 5 tabs incl selection"
+  },
+  "fortune": {
+    "assets": {
+      "fortune-cup": {
+        "file": "assets/fortune-cup.png",
+        "sha256": "e581f193a6243219d022cb8aae2cd34a4c79754f7411dccea74fa46f73bd914a"
+      },
+      "fortune-stick": {
+        "file": "assets/fortune-stick.png",
+        "sha256": "69386dd57e90f3650f3dabc7d8c585ba3d42d8667245e990578dbc88a78bda26"
+      },
+      "fortune-paper": {
+        "file": "assets/fortune-paper.png",
+        "sha256": "9741cf8667a3d9f98ede942d59206ed008d59508eca3aec50e19ffa285a67e66"
+      }
+    },
+    "motion_manifest": {
+      "file": "ApprovedMotionManifest.json",
+      "durationMs": 1450,
+      "scriptSHA256": "e05161ade7050d35af8ac2a9dca423a9a803f38ab988825c46f73f01a7a96c4b"
+    },
+    "timeline": {
+      "file": "ios-handoff/AnimationTimeline.json",
+      "sha256": "83c1b6db35fc6635791d5a06a097b532ee7ff9100977abe1f5767c08f12159fe",
+      "phases": {
+        "press": [
+          0,
+          180
+        ],
+        "shake": [
+          180,
+          600
+        ],
+        "lift": [
+          600,
+          1050
+        ],
+        "reveal": [
+          1050,
+          1450
+        ]
+      },
+      "reducedMotion": "opacity-only 150ms"
+    },
+    "core": "ApprovedFortuneCore.js",
+    "samples": "ios-handoff/fortune-samples.json",
+    "xcassets": "ios-handoff/LixiangAssets.xcassets/",
+    "swift_refs": [
+      "ios-handoff/FortuneAnimationView.swift",
+      "ios-handoff/FortuneAdaptiveDemoView.swift",
+      "ios-handoff/DailyDrawStore.swift"
+    ],
+    "rule": "do not modify assets/math; verify 5 key timepoints natively"
+  },
+  "other": {
+    "compass_dial": "assets/compass-dial.png",
+    "templates": "templates/",
+    "webpages": "webpages/",
+    "festival_css": "templates/festival-article.css"
+  },
+  "no_stamp": true
+}

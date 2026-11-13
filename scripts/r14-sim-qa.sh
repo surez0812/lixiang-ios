@@ -10,6 +10,7 @@ while [ $# -gt 0 ]; do
     --device) DEVICE="${2:-}"; shift 2;;
     --label) LABEL="${2:-}"; shift 2;;
     --launch-args) shift; while [ $# -gt 0 ] && [ "${1#--}" = "$1" ]; do ARGS+=("$1"); shift; done;;
+    --) shift; ARGS+=("$@"); break;;
     -h|--help) sed -n '2,10p' "$0"; exit 0;;
     *) ARGS+=("$1"); shift;;
   esac

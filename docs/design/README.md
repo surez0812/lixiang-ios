@@ -17,3 +17,8 @@
 | `SCREEN-SUMMARY.md` | 12 画布 × 188 状态计数与重点风险 |
 
 状态：设计稿/PNG 为离线合成，不是原生截图；真实设备 safe area/玻璃/动态字体需原生验证。设计侧只读，不写产品代码。
+
+## 路径约定
+- 设计 PNG/HTML 基址：`work/lixiang-design-handoff-20261113/docs/design/r14-final/`
+- CSV 中 `design_html`/`design_png` 均为该基址下的相对路径。
+- 本目录（`work/lixiang-r14/docs/design/`）为设计侧只读交付；不写 App 产品代码。
