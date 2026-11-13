@@ -88,6 +88,31 @@ final class AlmanacTermSemanticTests: XCTestCase {
         XCTAssertTrue(bad.isEmpty, "全量仍有错误释义: \(bad)")
     }
 
+    func testEnglishNeutralAndAligned() {
+        let pack = PlainLanguageLoader.load()
+        let must: [(String, [String])] = [
+            ("安葬", ["burying", "cemetery"]), ("祈福", ["blessings", "wishes"]),
+            ("谢土", ["thanks to the land"]), ("开光", ["consecrating"]),
+            ("求嗣", ["children", "family continuity"]), ("造仓", ["granary"]),
+        ]
+        for (term, words) in must {
+            let en = pack.term(named: term)?.en ?? ""
+            XCTAssertFalse(en.isEmpty, "\(term) 缺英文")
+            for w in words { XCTAssertTrue(en.lowercased().contains(w.lowercased()), "\(term) 英文缺 \(w): \(en)") }
+        }
+        let forbiddenEN = ["Sort and store", "Take a relaxing walk", "Set up shelves", "cleaning", "preparing for pregnancy"]
+        let all = pack.terms.map(\.en)
+        for f in forbiddenEN {
+            XCTAssertFalse(all.contains { $0.localizedCaseInsensitiveContains(f) }, "全量 en 仍含旧措辞: \(f)")
+        }
+        // zh/en 同义性最低要求：已修正的 6 条 en 不引入宗教劝诱/吉凶/医疗指令
+        let forbiddenMeaning = ["religious promotion", "fortune-telling", "medical advice"]
+        for term in ["安葬","祈福","谢土","开光","求嗣","造仓"] {
+            let en = pack.term(named: term)?.en ?? ""
+            XCTAssertFalse(forbiddenMeaning.contains { en.localizedCaseInsensitiveContains($0) && !en.localizedCaseInsensitiveContains("without") && !en.localizedCaseInsensitiveContains("not") && !en.localizedCaseInsensitiveContains("does not") }, "\(term) en 含劝诱/预测/医疗指令: \(en)")
+        }
+    }
+
     func testFallbackIsNeutral() {
         let text = AlmanacTermSemantics.explanation(for: "不存在的词条XYZ", pack: pack)
         XCTAssertTrue(text.contains("传统黄历用语"))

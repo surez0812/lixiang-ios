@@ -29,6 +29,7 @@ struct R14RootView: View {
     @State private var paths = [NavigationPath](repeating: NavigationPath(), count: 5)
     @State private var pendingRoute: R14Route? = nil
     @State private var pendingTab = 0
+    @State private var debugTerm: String? = nil
     @State private var debugTypeScale: DynamicTypeSize? = nil
 
     init() {
@@ -40,6 +41,10 @@ struct R14RootView: View {
         }, deferCompute: true))
         #if DEBUG
         let args = ProcessInfo.processInfo.arguments
+        if let i = args.firstIndex(of: "-LixiangPlainTerm"), i + 1 < args.count {
+            let term = args[i + 1]
+            _debugTerm = State(initialValue: term)
+        }
         if let i = args.firstIndex(of: "-LixiangTab"), i + 1 < args.count, let n = Int(args[i + 1]) { _tab = State(initialValue: n) }
         if let i = args.firstIndex(of: "-LixiangTypeScale"), i + 1 < args.count {
             switch args[i + 1] {
@@ -140,6 +145,9 @@ struct R14RootView: View {
         .modifier(R14DebugTypeScale(size: debugTypeScale))
         .environmentObject(days)
         .environmentObject(chrome)
+        .sheet(isPresented: Binding(get: { debugTerm != nil }, set: { if !$0 { debugTerm = nil } })) {
+            if let t = debugTerm { PlainTermSheet(term: t) }
+        }
         .onOpenURL { _ in }
         .task { await days.prepare() }
         .onAppear {

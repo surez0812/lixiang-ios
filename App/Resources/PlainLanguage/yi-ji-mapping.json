@@ -417,7 +417,7 @@
  {
   "term": "安葬",
   "zh": "传统民俗中指将逝者安葬入土、或安置于墓地的仪式；各地做法不同，此处仅作文化说明，不涉及宗教劝诱或吉凶预测。",
-  "en": "Sort and store departed one's belongings"
+  "en": "Traditional funerary rite of burying the deceased or placing them in a cemetery; regional customs vary; cultural note only."
  },
  {
   "term": "安门",
@@ -532,7 +532,7 @@
  {
   "term": "开光",
   "zh": "神像/器物启用仪式；作为民俗文化了解，不构成宗教劝诱。",
-  "en": "Clean and activate a new item"
+  "en": "Traditional rite of consecrating a statue or ritual object; cultural knowledge only, not religious persuasion."
  },
  {
   "term": "开厕",
@@ -802,7 +802,7 @@
  {
   "term": "求嗣",
   "zh": "祈求子嗣、家族延续的传统民俗表述，不作医疗建议。",
-  "en": "Discuss family planning with partner"
+  "en": "Traditional folk wish for children and family continuity; a cultural expression of family planning."
  },
  {
   "term": "求财",
@@ -947,7 +947,7 @@
  {
   "term": "祈福",
   "zh": "祈愿祝福、表达心愿的民俗行为，不预测结果。",
-  "en": "Take a relaxing walk outdoors"
+  "en": "Traditional folk practice of offering blessings and wishes; a cultural expression of hope, not religious persuasion or prediction."
  },
  {
   "term": "祭祀",
@@ -1122,7 +1122,7 @@
  {
   "term": "谢土",
   "zh": "建房/工程完成后答谢土地的民俗仪式。",
-  "en": "Clean up after construction is done"
+  "en": "Traditional rite of giving thanks to the land after building or construction is completed; a cultural closing custom."
  },
  {
   "term": "赴任",
@@ -1162,7 +1162,7 @@
  {
   "term": "造仓",
   "zh": "传统民俗中指建造仓库、储存粮食的场所。",
-  "en": "Set up shelves, organize storage room"
+  "en": "Traditional term for building a granary or storehouse; modern equivalent: constructing storage space."
  },
  {
   "term": "造庙",
