@@ -27,6 +27,7 @@ struct FortuneScreen: View {
             }
         }
         .background(ScreenBackground())
+        .toolbar(.hidden, for: .tabBar)
         .onAppear { engine.load() }
     }
 

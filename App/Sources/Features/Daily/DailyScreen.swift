@@ -33,6 +33,7 @@ struct DailyScreen: View {
             .padding(.bottom, 100)
         }
         .background(ScreenBackground())
+        .toolbar(.hidden, for: .tabBar)
         .navigationTitle("每日一句")
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showShare) {
