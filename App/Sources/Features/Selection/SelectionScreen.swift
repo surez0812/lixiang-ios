@@ -139,7 +139,7 @@ struct SelectionScreen: View {
             }
             .frame(width: 44)
             VStack(alignment: .leading, spacing: 6) {
-                Text("\(result.date.year)年\(result.date.month)月").d1Font(11).foregroundStyle(theme.ink3)
+                Text(verbatim: String(format: "%d年%d月", result.date.year, result.date.month)).d1Font(11).foregroundStyle(theme.ink3)
                 HStack(spacing: 6) {
                     Text("宜").d1Font(10, weight: .semibold).foregroundStyle(theme.yiText)
                     Text(result.yi.prefix(4).joined(separator: " · ")).d1Font(12).foregroundStyle(theme.ink2).lineLimit(1)

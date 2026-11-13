@@ -31,7 +31,8 @@ struct R14RouteDestination: View {
         case .countdown:
             R14PlaceholderPage(title: "倒计日", route: .countdown)
         case .countdownDetail(let id):
-            if let item = state.countdownStore.items.first(where: { $0.id.uuidString == id }) {
+            let target = id == "first" ? state.countdownStore.items.first : state.countdownStore.items.first(where: { $0.id.uuidString == id })
+            if let item = target {
                 CountdownDetailScreen(item: item).toolbar(.hidden, for: .tabBar)
             } else {
                 R14PlaceholderPage(title: "倒计日详情 \(id ?? "-")", route: .countdown)
