@@ -7,6 +7,7 @@ struct HomeWeatherCard: View {
     @Environment(\.openURL) private var openURL
     @StateObject private var location = WeatherLocationProvider()
     @StateObject private var service = WeatherService()
+    @State private var forcedState: String? = nil
 
     var body: some View {
         D1Card(padding: 12) {
@@ -22,7 +23,9 @@ struct HomeWeatherCard: View {
         .onAppear {
             location.refreshAuthorization()
             #if DEBUG
-            if ProcessInfo.processInfo.arguments.contains("-LixiangWeatherAuto") { location.requestLocation() }
+            let args = ProcessInfo.processInfo.arguments
+            if let i = args.firstIndex(of: "-LixiangWeatherState"), i + 1 < args.count { forcedState = args[i + 1] }
+            if args.contains("-LixiangWeatherAuto") { location.requestLocation() }
             #endif
         }
         .onChange(of: location.authorization) { _, new in
@@ -36,6 +39,32 @@ struct HomeWeatherCard: View {
     }
 
     @ViewBuilder private var content: some View {
+        #if DEBUG
+        if let forcedState {
+            switch forcedState {
+            case "locating":
+                HStack(spacing: 8) { ProgressView().controlSize(.small); Text("定位中…").d1Font(11).foregroundStyle(theme.ink2) }
+                    .frame(maxWidth: .infinity, minHeight: 44)
+            case "denied", "restricted":
+                action("去设置开启") { if let url = URL(string: UIApplication.openSettingsURLString) { openURL(url) } }
+                Text("定位未开启，不影响其他功能").d1Font(10).foregroundStyle(theme.ink3)
+            case "failed":
+                action("重新定位") { location.requestLocation() }
+                Text("定位失败，请重试或检查系统设置。").d1Font(10).foregroundStyle(theme.ink3).lineLimit(2)
+            case "loaded":
+                weatherBody
+            default:
+                authContent
+            }
+        } else {
+            authContent
+        }
+        #else
+        authContent
+        #endif
+    }
+
+    @ViewBuilder private var authContent: some View {
         switch location.authorization {
         case .notDetermined:
             action("开启定位") { location.requestLocation() }
