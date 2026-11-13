@@ -19,7 +19,12 @@ struct HomeWeatherCard: View {
             }
             .frame(maxWidth: .infinity, minHeight: 98, alignment: .topLeading)
         }
-        .onAppear { location.refreshAuthorization() }
+        .onAppear {
+            location.refreshAuthorization()
+            #if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("-LixiangWeatherAuto") { location.requestLocation() }
+            #endif
+        }
         .onChange(of: location.authorization) { _, new in
             guard new == .authorized, let c = location.coordinate else { return }
             Task { await service.refresh(coordinate: c.latitude, lng: c.longitude, city: location.city) }
