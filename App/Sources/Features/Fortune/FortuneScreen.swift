@@ -47,16 +47,56 @@ struct FortuneScreen: View {
 
     // MARK: layouts
     private func portraitLayout(_ geo: GeometryProxy) -> some View {
-        ScrollView(showsIndicators: false) {
-            VStack(spacing: 18) {
-                header(alignment: .center)
+        VStack(spacing: 12) {
+            header(alignment: .center)
+            if phase == .result {
+                paperResult
+                    .frame(height: min(geo.size.height * 0.60, geo.size.width * 1.70))
+            } else {
                 visualArea(height: min(geo.size.height * 0.34, 300))
                 resultArea
-                controls
             }
-            .padding(.horizontal, 20)
-            .padding(.vertical, 12)
-            .frame(maxWidth: .infinity)
+            Spacer(minLength: 0)
+            controls
+        }
+        .padding(.horizontal, 20)
+        .padding(.vertical, 10)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
+
+    /// 红绳卷轴结果纸（R14 设计：结果态用 fortune-paper 承托，全显不内部滚动）
+    private var paperResult: some View {
+        GeometryReader { g in
+            let paperW = min(g.size.width, g.size.height / 1.697)
+            ZStack {
+                Image("fortune-paper").resizable()
+                    .frame(width: paperW, height: paperW * 1.697)
+                if let sign {
+                    let s = max(0.62, min(1.0, paperW / 335))
+                    VStack(spacing: 6 * s) {
+                        Text("第\(sign.no)签 · \(sign.level)").d1Font(11 * s, weight: .semibold)
+                            .foregroundStyle(Color(hex: 0x79634D))
+                        Text(sign.title).d1SerifFont(26 * s, weight: .semibold)
+                            .foregroundStyle(Color(hex: 0xB23A2A))
+                        ForEach(sign.poem, id: \.self) { line in
+                            Text(line).d1SerifFont(17 * s).foregroundStyle(Color(hex: 0x35291F))
+                        }
+                        .padding(.top, 2 * s)
+                        VStack(alignment: .leading, spacing: 3 * s) {
+                            Text("签意").d1Font(10 * s, weight: .semibold).foregroundStyle(Color(hex: 0xB23A2A))
+                            Text(sign.explain).d1Font(13 * s).lineSpacing(3 * s).foregroundStyle(Color(hex: 0x35291F))
+                            Text("今日可做").d1Font(10 * s, weight: .semibold).foregroundStyle(Color(hex: 0xB23A2A))
+                                .padding(.top, 3 * s)
+                            Text(sign.advice).d1Font(13 * s).lineSpacing(3 * s).foregroundStyle(Color(hex: 0x35291F))
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.top, 6 * s)
+                    }
+                    .frame(width: paperW * 0.76)
+                    .multilineTextAlignment(.center)
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
 
@@ -66,12 +106,16 @@ struct FortuneScreen: View {
                 VStack(alignment: .leading, spacing: 10) {
                     header(alignment: .leading)
                     Spacer(minLength: 0)
-                    resultArea
-                    Spacer(minLength: 0)
                 }
-                .frame(width: geo.size.width * 0.40, alignment: .leading)
-                visualArea(height: min(geo.size.height * 0.60, 460))
-                    .frame(maxWidth: .infinity)
+                .frame(width: geo.size.width * 0.30, alignment: .leading)
+                Group {
+                    if phase == .result {
+                        paperResult
+                    } else {
+                        visualArea(height: min(geo.size.height * 0.60, 460))
+                    }
+                }
+                .frame(maxWidth: .infinity)
             }
             // 底部全宽主按钮 + 右侧跳过（R14 iPad Landscape 稿）
             HStack(spacing: 12) {
