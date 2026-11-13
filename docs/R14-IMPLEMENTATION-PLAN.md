@@ -90,3 +90,17 @@
 - 源码 `feat/r14-implementation` 精确 commit + diff；App 路径/SHA256/版本/build。
 - 构建复现命令与依赖；冻结素材 SHA 核对；已知缺陷/NOT RUN 清单；回滚点。
 - 作者自测 + 非作者 QA + Lead review；团队通过后交 Codex 独立 review，再等 Sure 验收。不提审/不发布。
+
+## 5. P0 执行状态（2026-11-13）
+- 设计资产**只读**导入：`App/Sources/DesignSystem/R14Assets.xcassets`（tab-calendar/tab-suishi/TabSelection/tab-countdown/tab-settings/compass-dial/fortune-cup/paper/stick）+ `R14Design/{ApprovedMotionManifest,AnimationTimeline,ApprovedFortuneCore.js}`；设计工作树未修改。
+- 构建验证：xcodegen + xcodebuild Debug **BUILD SUCCEEDED**；`Assets.car` 已含上述 imageset。
+- 矩阵：`docs/R14-SCREEN-MATRIX.csv`（188 状态，11 页面 × 12 画布）、`docs/R14-CANVAS-MATRIX.csv`（脚本 `scripts/gen-r14-canvas.sh`，只读设计树）、`docs/R14-REQUIREMENTS-MATRIX.csv`（R01–R17 → task/owner/证据）。
+- 基线：`feat/r14-implementation` @ `98c5c0a`（worktree `work/lixiang-r14`）；不改 build13/不 merge。
+- T1/T2 下一里程碑：5-Tab Root + Route + DevicePolicy 根壳（12 画布空壳）+ 单元测试（selectedDate 整组重算）。
+
+## 6. 设备/路由政策（实现口径）
+- iPhone：仅 portrait（`UIDevice` 不做横屏；`supportedInterfaceOrientations` 只 portrait）。
+- iPad：portrait/landscape 均支持；宽屏（≥744pt 短边序）双列布局。
+- Duo：closed-portrait 466×678 / closed-landscape 678×466 / tent 678×466 / open-portrait 669×951 / open-landscape 951×669 / tabletop 669×951；Tabletop 使用 OpenPortrait 布局容器，切换保留 selectedDate/tab/滚动状态。
+- Split View/Stage Manager：v1.0 排除（不实现）。
+- 5 Tab：日历/岁时/择日/倒计日/设置；路由 `home, almanac(date), compass(date, hour), daily, fortune, folklore, folklore-detail(eventID,version), selection, countdown, countdown-detail(id), settings`；无旧 day/pager 路由。
