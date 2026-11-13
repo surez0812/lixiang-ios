@@ -1,0 +1,223 @@
+import SwiftUI
+import LixiangCalendarCore
+
+enum FolkloreFilter: String, CaseIterable, Identifiable {
+    case all = "全部", festival = "传统节日", tao = "道历节日", foto = "佛历节日", ritual = "民俗科仪"
+    var id: String { rawValue }
+    func matches(_ item: ContentItem) -> Bool {
+        switch self {
+        case .all: return true
+        case .festival: return item.category.contains("festival") || item.category.contains("solar_term") || item.category.contains("traditional")
+        case .tao: return item.category.contains("tao")
+        case .foto: return item.category.contains("foto") || item.category.contains("buddhist")
+        case .ritual: return item.category.contains("ritual") || item.category.contains("ancestor")
+        }
+    }
+}
+
+struct FolkloreRow: Identifiable {
+    var id: String { resolution.item.id }
+    let resolution: ContentResolution
+    let state: ContentStateInfo
+    let daysUntil: Int?      // nil = 已解锁/今天
+    let isReadable: Bool
+    var item: ContentItem { resolution.item }
+}
+
+/// R14 岁时列表：品牌卡 + 类别筛选 + 日期卡。
+struct R14FolkloreScreen: View {
+    @EnvironmentObject private var state: AppState
+    @Environment(\.d1) private var theme
+    @State private var filter: FolkloreFilter = .all
+    var onOpen: (String) -> Void = { _ in }
+
+    private var rows: [FolkloreRow] {
+        let resolved = ContentResolver.resolve(items: ContentFixtures.all, now: state.today, engine: state.engine)
+        return resolved.compactMap { r -> FolkloreRow? in
+            guard let info = r.stateInfo(regionID: nil, now: state.today) else { return nil }
+            // 过去内容不展示；未来按 T-10 解锁可读
+            if info.state == .past { return nil }
+            let days = info.isToday ? nil : info.daysUntil
+            let readable = info.isToday || (days ?? 99) <= 10
+            return FolkloreRow(resolution: r, state: info, daysUntil: days, isReadable: readable)
+        }
+        .sorted { ($0.state.anchor, $0.item.id) < ($1.state.anchor, $1.item.id) }
+    }
+    private var visible: [FolkloreRow] { rows.filter { filter.matches($0.item) } }
+    private var nearest: FolkloreRow? { rows.first }
+
+    var body: some View {
+        ScrollView(showsIndicators: false) {
+            VStack(alignment: .leading, spacing: 14) {
+                brandCard
+                chips
+                ForEach(visible) { row in
+                    Button { onOpen(row.item.id) } label: { rowCard(row) }
+                        .buttonStyle(.plain)
+                }
+                if visible.isEmpty {
+                    Text("这个分类下暂时没有岁时内容。").d1Font(13).foregroundStyle(theme.ink2).padding(.vertical, 8)
+                }
+            }
+            .padding(.horizontal, 18)
+            .padding(.top, 10)
+            .padding(.bottom, 150)
+        }
+        .background(ScreenBackground())
+    }
+
+    private var brandCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("历象 · 把日子过成风景").d1Font(10, weight: .semibold).tracking(1.6).foregroundStyle(.white.opacity(0.8))
+            Text("岁时有约").d1SerifFont(30).foregroundStyle(.white)
+            Text("未到来的日子，也值得期待。").d1Font(13).foregroundStyle(.white.opacity(0.85))
+            if let n = nearest {
+                Text("\(n.item.title) · \(n.isReadable ? "新内容已解锁" : "还有\(n.daysUntil ?? 0)天")")
+                    .d1SerifFont(20).foregroundStyle(.white).padding(.top, 4)
+                Text(n.isReadable ? "先读一段冬日故事。" : "到日子再来读。").d1Font(12).foregroundStyle(.white.opacity(0.8))
+            }
+        }
+        .padding(20)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(LinearGradient(colors: [Color(hex: 0x8E2D1C), Color(hex: 0xA63D26)], startPoint: .topLeading, endPoint: .bottomTrailing), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+    }
+
+    private var chips: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                ForEach(FolkloreFilter.allCases) { f in
+                    Button { filter = f } label: {
+                        Text(f.rawValue)
+                            .d1Font(13, weight: filter == f ? .semibold : .regular)
+                            .foregroundStyle(filter == f ? .white : theme.ink2)
+                            .padding(.horizontal, 14).frame(minHeight: 38)
+                            .background(filter == f ? theme.accentStrong : theme.paper, in: Capsule())
+                            .overlay(Capsule().strokeBorder(filter == f ? .clear : theme.line, lineWidth: 1))
+                    }.buttonStyle(.plain)
+                }
+            }
+            .padding(.vertical, 2)
+        }
+    }
+
+    private func rowCard(_ row: FolkloreRow) -> some View {
+        HStack(alignment: .top, spacing: 12) {
+            VStack(spacing: 2) {
+                Text("\(row.state.anchor.month)月").d1Font(10).foregroundStyle(theme.ink3)
+                Text("\(row.state.anchor.day)").d1SerifFont(30).foregroundStyle(theme.ink)
+                Text(row.state.isToday ? "今日" : "还有\(row.daysUntil ?? 0)天").d1Font(10).foregroundStyle(theme.ink3)
+            }
+            .frame(width: 54)
+            VStack(alignment: .leading, spacing: 5) {
+                HStack {
+                    Text(row.item.title).d1SerifFont(20).foregroundStyle(theme.ink)
+                    Spacer()
+                    Text(statusText(row)).d1Font(11, weight: .semibold)
+                        .foregroundStyle(row.isReadable ? theme.accentStrong : theme.ink3)
+                }
+                Text(row.item.teaser).d1Font(12).foregroundStyle(theme.ink2).lineLimit(2)
+                Text(row.item.category.first ?? "民俗").d1Font(10)
+                    .foregroundStyle(theme.ink3)
+                    .padding(.horizontal, 8).padding(.vertical, 3)
+                    .background(theme.soft, in: Capsule())
+            }
+            Image(systemName: "chevron.right").font(.system(size: 11, weight: .semibold)).foregroundStyle(theme.ink3).padding(.top, 6)
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(theme.paper, in: RoundedRectangle(cornerRadius: 22, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 22, style: .continuous).strokeBorder(theme.line, lineWidth: 1))
+    }
+
+    private func statusText(_ row: FolkloreRow) -> String {
+        if row.state.isToday { return "已解锁" }
+        return row.isReadable ? "新解锁" : "未解锁"
+    }
+}
+
+/// R14 岁时详情：紧凑头 + 插画 + 正文（原生渲染；后续可切 WKWebView 内容服务）。
+struct R14FolkloreDetailScreen: View {
+    @EnvironmentObject private var state: AppState
+    @Environment(\.d1) private var theme
+    let id: String
+    @State private var showShare = false
+
+    private var row: FolkloreRow? {
+        let resolved = ContentResolver.resolve(items: ContentFixtures.all, now: state.today, engine: state.engine)
+        guard let r = resolved.first(where: { $0.item.id == id }), let info = r.stateInfo(regionID: nil, now: state.today) else { return nil }
+        let days = info.isToday ? nil : info.daysUntil
+        return FolkloreRow(resolution: r, state: info, daysUntil: days, isReadable: info.isToday || (days ?? 99) <= 10)
+    }
+
+    var body: some View {
+        ScrollView(showsIndicators: false) {
+            if let row {
+                VStack(alignment: .leading, spacing: 0) {
+                    header(row)
+                    if row.isReadable {
+                        Image("winter").resizable().scaledToFill().frame(height: 220).clipped()
+                            .overlay(LinearGradient(colors: [.clear, .black.opacity(0.12)], startPoint: .top, endPoint: .bottom))
+                        article(row.item)
+                    } else {
+                        lockedCard(row)
+                    }
+                }
+                .padding(.bottom, 150)
+            } else {
+                Text("没找到这个岁时内容。").d1Font(14).foregroundStyle(theme.ink2).padding(24)
+            }
+        }
+        .background(ScreenBackground())
+        .toolbar(.hidden, for: .navigationBar)
+    }
+
+    private func header(_ row: FolkloreRow) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(row.item.category.first ?? "民俗").d1Font(10).foregroundStyle(theme.ink3)
+                .padding(.horizontal, 8).padding(.vertical, 3).background(theme.soft, in: Capsule())
+            Text(row.item.title).d1SerifFont(34).foregroundStyle(theme.ink)
+            Text(row.item.teaser).d1Font(13).foregroundStyle(theme.ink2).lineSpacing(4)
+            HStack {
+                Text("\(row.state.anchor.year)年\(row.state.anchor.month)月\(row.state.anchor.day)日")
+                    .d1Font(12).foregroundStyle(theme.ink3)
+                Text(row.state.isToday ? "· 今天" : "· 还有\(row.daysUntil ?? 0)天")
+                    .d1Font(12).foregroundStyle(theme.accentStrong)
+                Spacer()
+                Button { showShare = true } label: {
+                    Label("分享", systemImage: "square.and.arrow.up").d1Font(13, weight: .semibold)
+                }.foregroundStyle(theme.accentStrong).frame(minHeight: 44)
+            }
+        }
+        .padding(18)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(theme.paper)
+    }
+
+    private func article(_ item: ContentItem) -> some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text("一段来由 · 一点日常").d1Font(10, weight: .semibold).tracking(1.6).foregroundStyle(theme.ink3)
+            Text(item.sections.first?.paragraphs.first ?? item.teaser)
+                .d1SerifFont(28).foregroundStyle(theme.ink).fixedSize(horizontal: false, vertical: true)
+            ForEach(item.sections, id: \.id) { section in
+                VStack(alignment: .leading, spacing: 8) {
+                    Text(section.title).d1SerifFont(20).foregroundStyle(theme.ink)
+                    ForEach(section.paragraphs, id: \.self) { p in
+                        Text(p).d1Font(15).lineSpacing(8).foregroundStyle(theme.ink2).fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+            }
+            Text("来源：\(item.sources.first?.title ?? "公版参考") · 更新于 v\(item.version)")
+                .d1Font(10).foregroundStyle(theme.ink3)
+        }
+        .padding(18)
+    }
+
+    private func lockedCard(_ row: FolkloreRow) -> some View {
+        VStack(spacing: 8) {
+            Image(systemName: "lock").font(.system(size: 26)).foregroundStyle(theme.accentStrong)
+            Text("还有\(row.daysUntil ?? 0)天解锁").d1Font(16, weight: .semibold).foregroundStyle(theme.ink)
+            Text("到日子再来读这段岁时故事。").d1Font(12).foregroundStyle(theme.ink3)
+        }
+        .frame(maxWidth: .infinity).padding(.vertical, 60)
+    }
+}
