@@ -26,6 +26,38 @@ final class R14StateCaptureUITests: XCTestCase {
         shot("iphone-selection-results")
     }
 
+    func testCountdownNotificationPrompt() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-LixiangDeepLink", "lixiang://countdown/first", "-LixiangSeedCountdown", "1"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 25))
+        sleep(4)
+        let toggle = app.switches["本地通知提醒"]
+        if toggle.waitForExistence(timeout: 8) {
+            toggle.tap()
+            sleep(2)
+            shot("countdown-notification-prompt")
+        } else {
+            shot("countdown-notification-missing")
+        }
+    }
+
+    func testWeatherDeniedToSettings() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-LixiangWeatherState", "denied"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 25))
+        sleep(4)
+        let button = app.buttons["去设置开启"]
+        if button.waitForExistence(timeout: 8) {
+            button.tap()
+            sleep(3)
+            shot("weather-denied-settings")
+        } else {
+            shot("weather-denied-button-missing")
+        }
+    }
+
     func testDailySharePreview() throws {
         let app = XCUIApplication()
         app.launchArguments = ["-LixiangR14Route", "daily"]
@@ -55,4 +87,25 @@ final class R14StateCaptureUITests: XCTestCase {
         sleep(3)
         shot("iphone-countdown-detail")
     }
+
+    func testCountdownNewForm() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-LixiangTab", "3"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 25))
+        sleep(4)
+        let add = app.buttons["记下一个日子"]
+        XCTAssertTrue(add.waitForExistence(timeout: 8), "新增按钮未出现")
+        add.tap()
+        sleep(3)
+        shot("countdown-new-form-empty")
+        let field = app.textFields["例如：生日、结婚纪念日"]
+        if field.waitForExistence(timeout: 6) {
+            field.tap()
+            field.typeText("测试纪念日")
+            sleep(1)
+            shot("countdown-new-form-filled")
+        }
+    }
+
 }
