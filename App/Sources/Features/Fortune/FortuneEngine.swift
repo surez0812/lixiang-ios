@@ -11,7 +11,7 @@ final class FortuneEngine: ObservableObject {
     private let packageName: String
     private let cachePrefix = "fortune.draw.v1."
 
-    static let timeZone = TimeZone(identifier: "Asia/Shanghai") ?? .current
+    nonisolated static let timeZone = TimeZone(identifier: "Asia/Shanghai") ?? .current
 
     init(defaults: UserDefaults = .standard, packageName: String = "fortune-samples") {
         self.defaults = defaults
@@ -34,7 +34,7 @@ final class FortuneEngine: ObservableObject {
     }
 
     /// 北京时间 yyyy-MM-dd
-    static func dayKey(for date: Date) -> String {
+    nonisolated static func dayKey(for date: Date) -> String {
         let f = DateFormatter()
         f.calendar = Calendar(identifier: .gregorian)
         f.timeZone = timeZone
@@ -52,17 +52,25 @@ final class FortuneEngine: ObservableObject {
            let cached = package.signs.first(where: { $0.id == cachedID }) {
             return cached
         }
-        let seed = key + "|lixiang-v1|" + package.contentVersion
-        let digest = SHA256.hash(data: Data(seed.utf8))
-        var value: UInt64 = 0
-        for byte in digest.prefix(8) { value = (value << 8) + UInt64(byte) }
-        let signs = package.signs.sorted { $0.id < $1.id }
-        let chosen = signs[Int(value % UInt64(signs.count))]
+        guard let chosen = Self.pick(dayKey: key, contentVersion: package.contentVersion, signs: package.signs) else { return nil }
         defaults.set(chosen.id, forKey: cachePrefix + key)
         return chosen
     }
 
     func cachedSignID(for date: Date) -> String? {
         defaults.string(forKey: cachePrefix + Self.dayKey(for: date))
+    }
+}
+
+extension FortuneEngine {
+    /// 纯函数，便于单测：北京时间日键 + contentVersion → 固定签。
+    nonisolated static func pick(dayKey: String, contentVersion: String, signs: [FortuneSign]) -> FortuneSign? {
+        guard !signs.isEmpty else { return nil }
+        let seed = dayKey + "|lixiang-v1|" + contentVersion
+        let digest = SHA256.hash(data: Data(seed.utf8))
+        var value: UInt64 = 0
+        for byte in digest.prefix(8) { value = (value << 8) + UInt64(byte) }
+        let sorted = signs.sorted { $0.id < $1.id }
+        return sorted[Int(value % UInt64(sorted.count))]
     }
 }
