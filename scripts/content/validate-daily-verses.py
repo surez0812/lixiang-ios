@@ -23,6 +23,12 @@ def main(path, expect=365):
         if not (4 <= q <= 48): errs.append(f"#{i} quote len {q} (4-48)")
         a=clen(x.get("action",""))
         if not (30 <= a <= 60): errs.append(f"#{i} action len {a} (30-60)")
+    # 禁用词（title/meaning/action，不含 quote 原文）ERROR
+    forbidden=["灵验","保佑","功德","消灾","改运","天必降祸","福报","报应","注定"]
+    for i,x in enumerate(d):
+        blob=(x.get("title") or "")+(x.get("meaning") or "")+(x.get("action") or "")
+        hit=[w for w in forbidden if w in blob]
+        if hit: errs.append(f"#{i} forbidden terms {hit}")
     # 同一字段内重复分句（模板退化）ERROR
     import collections as _c
     for i,x in enumerate(d):
