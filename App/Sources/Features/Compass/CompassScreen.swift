@@ -30,7 +30,7 @@ struct R14CompassScreen: View {
                         .d1Font(9).foregroundStyle(theme.ink3).padding(.horizontal, 4)
                     hoursCard
                 }
-                .padding(.horizontal, 20).padding(.vertical, 12).padding(.bottom, 96)
+                .padding(.horizontal, 20).padding(.vertical, 12).padding(.bottom, 150)
             }
         }
         .background(ScreenBackground())
@@ -39,6 +39,9 @@ struct R14CompassScreen: View {
         .onAppear {
             chrome.forceTabBarVisible = true
             if days.selectedDate != date { days.select(date) }
+            #if DEBUG
+            if ProcessInfo.processInfo.arguments.contains("-LixiangCompassHour") { useHour = true }
+            #endif
         }
         .onDisappear { chrome.forceTabBarVisible = false }
     }
