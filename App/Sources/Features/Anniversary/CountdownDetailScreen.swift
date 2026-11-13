@@ -101,5 +101,17 @@ struct CountdownDetailScreen: View {
         .onChange(of: scenePhase) { _, phase in
             if phase == .active { Task { await notify.onSceneActive() } }
         }
+        .onChange(of: notify.status) { _, newStatus in
+            // settingsReturn：denied→authorized 后恢复提醒意图，保证开关=开且可操作
+            if newStatus == .authorized, !current.reminderEnabled {
+                var updated = current
+                updated.reminderEnabled = true
+                state.countdownStore.update(updated)
+                Task { await NotificationScheduler.reschedule(items: state.countdownStore.items, engine: state.engine, now: state.today) }
+                #if DEBUG
+                print("LXNOTIFY restoreReminder enabled=true after authorized")
+                #endif
+            }
+        }
     }
 }

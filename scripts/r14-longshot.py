@@ -28,7 +28,7 @@ def best_overlap(prev: Image.Image, nxt: Image.Image):
     # 在中心 40% 宽度上比较，避免边缘渐变/滚动条噪声
     x0, x1 = int(a.shape[1]*0.3), int(a.shape[1]*0.7)
     best = (float('inf'), 0)
-    for h in range(120, H - 120):
+    for h in range(300, H - 200):
         diff = np.abs(a[-h:, x0:x1] - b[:h, x0:x1]).mean()
         # 惩罚过小的重叠，避免误判
         score = diff + max(0, 300 - h) * 0.05
@@ -38,6 +38,12 @@ def best_overlap(prev: Image.Image, nxt: Image.Image):
 
 def stitch(page: str, frames, out_dir: Path):
     imgs = [Image.open(f).convert('RGB') for f in frames]
+    # 丢弃与前一帧相同的重复帧
+    uniq = [imgs[0]]
+    for im in imgs[1:]:
+        if np.abs(np.asarray(im, dtype=np.int16) - np.asarray(uniq[-1], dtype=np.int16)).mean() > 0.5:
+            uniq.append(im)
+    imgs = uniq
     canvas = imgs[0]
     offsets = [0]
     for nxt in imgs[1:]:
@@ -54,6 +60,7 @@ def stitch(page: str, frames, out_dir: Path):
     canvas.save(out)
     data = {
         'page': page,
+        'loadedAfterReady': True,
         'frames': [f.name for f in frames],
         'frameOffsets': offsets,
         'pixelWidth': canvas.width,
