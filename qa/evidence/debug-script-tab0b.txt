@@ -1,0 +1,10 @@
+label=debug-script-tab0b
+device=iPhone 16 Pro
+udid=0975B8A6-A868-424A-BDA7-EC40F97D823B
+runtime=com.apple.CoreSimulator.SimRuntime.iOS-18-6
+app=/Users/surezhang/work/ZhaoYao/work/lixiang-r14/DerivedData/Build/Products/Debug-iphonesimulator/Lixiang.app
+app_binary_sha256=6a504c896e0a14f5f245a117bffdd4c3ac0e7ba6399e3e1da837b9d0a0f38df8
+screenshot=/Users/surezhang/work/ZhaoYao/work/lixiang-r14/qa/evidence/debug-script-tab0b.png
+screenshot_sha256=9a837b4c2b38950c8a97eaa66263544b3730775c137e91efb3cc31b2ecea9424
+launch_args=-LixiangTab 0
+captured_at=2026-11-13T21:10:47+08:00

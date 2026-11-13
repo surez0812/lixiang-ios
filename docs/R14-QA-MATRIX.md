@@ -8,16 +8,16 @@
 
 | # | 页面 | 模式/画布 | 尺寸 | 状态 | 入口 | 期望 | PASS | FAIL | NOT RUN | 证据 |
 |---:|---|---|---|---|---|---|---|---|---|---|
-| 1 | home 首页/日历 | phone-light·浅色 | 375×930 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | 待证；`r14-final/home-phone-light.png` |
+| 1 | home 首页/日历 | phone-light·浅色 | 375×930 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | **PASS** | — | — | qa/evidence/firstbatch/iPhone16Pro-tab0-retry.png (sha 00499e3e…); iPhone 16 Pro iOS18.6; 20s |
 | 2 | home 首页/日历 | phone-dark·深色 | 375×930 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | 待证；`r14-final/home-phone-dark.png` |
 | 3 | home 首页/日历 | ipad-portrait·浅色 | 834×1194 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | 待证；`r14-final/home-ipad-portrait.png` |
 | 4 | home 首页/日历 | ipad-portrait-dark·深色 | 834×1194 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | 待证；`r14-final/home-ipad-portrait-dark.png` |
-| 5 | home 首页/日历 | ipad-landscape·浅色 | 1194×834 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | 待证；`r14-final/home-ipad-landscape.png` |
+| 5 | home 首页/日历 | ipad-landscape·浅色 | 1194×834 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | **PASS** | — | — | qa/evidence/firstbatch/iPadPro13-tab0-20s.png (c46a5676…); iPad Pro 13 iOS18.6 landscape |
 | 6 | home 首页/日历 | ipad-landscape-dark·深色 | 1194×834 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | 待证；`r14-final/home-ipad-landscape-dark.png` |
 | 7 | home 首页/日历 | duo-closed-portrait·浅色 | 466×678 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | 待证；`r14-final/home-duo-closed-portrait.png` |
 | 8 | home 首页/日历 | duo-closed-landscape·浅色 | 678×466 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | 待证；`r14-final/home-duo-closed-landscape.png` |
 | 9 | home 首页/日历 | duo-tent·浅色 | 678×466 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | 待证；`r14-final/home-duo-tent.png` |
-| 10 | home 首页/日历 | duo-open-portrait·浅色 | 669×951 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | 待证；`r14-final/home-duo-open-portrait.png` |
+| 10 | home 首页/日历 | duo-open-portrait·浅色 | 669×951 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | qa/evidence/firstbatch/DuoInner-tab0.png (fcff7a2e…); inner display 2007×2853 black; simulator posture/display unsupported |
 | 11 | home 首页/日历 | duo-open-landscape·浅色 | 951×669 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | 待证；`r14-final/home-duo-open-landscape.png` |
 | 12 | home 首页/日历 | duo-tabletop·浅色 | 669×951 | 默认 | 日历根 Tab；经文/签/岁时/摘要/月历入口 | Hero 日期/节气/农历/宜忌摘要；双卡等高；月历；真实数据；点击路由正确 | — | — | **NOT RUN** | 待证；`r14-final/home-duo-tabletop.png` |
 | 13 | almanac 黄历 | phone-light·浅色 | 375×930 | 默认 | 首页/月历/择日/前后日/罗盘返回 | 日期/农历/干支/宜忌/值神/冲煞/星宿/时辰/岁时；改日整组重算；白话开关；无独立大日期 | — | — | **NOT RUN** | 待证；`r14-final/almanac-phone-light.png` |
@@ -32,52 +32,52 @@
 | 22 | almanac 黄历 | duo-open-portrait·浅色 | 669×951 | 默认 | 首页/月历/择日/前后日/罗盘返回 | 日期/农历/干支/宜忌/值神/冲煞/星宿/时辰/岁时；改日整组重算；白话开关；无独立大日期 | — | — | **NOT RUN** | 待证；`r14-final/almanac-duo-open-portrait.png` |
 | 23 | almanac 黄历 | duo-open-landscape·浅色 | 951×669 | 默认 | 首页/月历/择日/前后日/罗盘返回 | 日期/农历/干支/宜忌/值神/冲煞/星宿/时辰/岁时；改日整组重算；白话开关；无独立大日期 | — | — | **NOT RUN** | 待证；`r14-final/almanac-duo-open-landscape.png` |
 | 24 | almanac 黄历 | duo-tabletop·浅色 | 669×951 | 默认 | 首页/月历/择日/前后日/罗盘返回 | 日期/农历/干支/宜忌/值神/冲煞/星宿/时辰/岁时；改日整组重算；白话开关；无独立大日期 | — | — | **NOT RUN** | 待证；`r14-final/almanac-duo-tabletop.png` |
-| 25 | folklore 岁时列表 | phone-light·浅色 | 375×930 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | 待证；`r14-final/folklore-phone-light.png` |
+| 25 | folklore 岁时列表 | phone-light·浅色 | 375×930 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | **PASS** | — | — | qa/evidence/firstbatch/iPhone16Pro-tab1-20s.png (49b4a182…); 20s |
 | 26 | folklore 岁时列表 | phone-dark·深色 | 375×930 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | 待证；`r14-final/folklore-phone-dark.png` |
 | 27 | folklore 岁时列表 | ipad-portrait·浅色 | 834×1194 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | 待证；`r14-final/folklore-ipad-portrait.png` |
 | 28 | folklore 岁时列表 | ipad-portrait-dark·深色 | 834×1194 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | 待证；`r14-final/folklore-ipad-portrait-dark.png` |
-| 29 | folklore 岁时列表 | ipad-landscape·浅色 | 1194×834 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | 待证；`r14-final/folklore-ipad-landscape.png` |
+| 29 | folklore 岁时列表 | ipad-landscape·浅色 | 1194×834 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | **PASS** | — | — | qa/evidence/firstbatch/iPadPro13-tab1-20s.png (c6b22638…) |
 | 30 | folklore 岁时列表 | ipad-landscape-dark·深色 | 1194×834 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | 待证；`r14-final/folklore-ipad-landscape-dark.png` |
 | 31 | folklore 岁时列表 | duo-closed-portrait·浅色 | 466×678 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | 待证；`r14-final/folklore-duo-closed-portrait.png` |
 | 32 | folklore 岁时列表 | duo-closed-landscape·浅色 | 678×466 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | 待证；`r14-final/folklore-duo-closed-landscape.png` |
 | 33 | folklore 岁时列表 | duo-tent·浅色 | 678×466 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | 待证；`r14-final/folklore-duo-tent.png` |
-| 34 | folklore 岁时列表 | duo-open-portrait·浅色 | 669×951 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | 待证；`r14-final/folklore-duo-open-portrait.png` |
+| 34 | folklore 岁时列表 | duo-open-portrait·浅色 | 669×951 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | qa/evidence/firstbatch/DuoInner-tab1.png (fcff7a2e…); black inner display |
 | 35 | folklore 岁时列表 | duo-open-landscape·浅色 | 951×669 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | 待证；`r14-final/folklore-duo-open-landscape.png` |
 | 36 | folklore 岁时列表 | duo-tabletop·浅色 | 669×951 | 默认 | 岁时根 Tab；列表活动 | 列表类别/日期/剩余/解锁/未读；未解锁不泄正文 | — | — | **NOT RUN** | 待证；`r14-final/folklore-duo-tabletop.png` |
-| 37 | countdown 倒计日 | phone-light·浅色 | 375×930 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | 待证；`r14-final/countdown-phone-light.png` |
+| 37 | countdown 倒计日 | phone-light·浅色 | 375×930 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | **PASS** | — | — | qa/evidence/firstbatch/iPhone16Pro-tab3-20s.png (2193a5dd…); empty countdown state |
 | 38 | countdown 倒计日 | phone-dark·深色 | 375×930 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | 待证；`r14-final/countdown-phone-dark.png` |
 | 39 | countdown 倒计日 | ipad-portrait·浅色 | 834×1194 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | 待证；`r14-final/countdown-ipad-portrait.png` |
 | 40 | countdown 倒计日 | ipad-portrait-dark·深色 | 834×1194 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | 待证；`r14-final/countdown-ipad-portrait-dark.png` |
-| 41 | countdown 倒计日 | ipad-landscape·浅色 | 1194×834 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | 待证；`r14-final/countdown-ipad-landscape.png` |
+| 41 | countdown 倒计日 | ipad-landscape·浅色 | 1194×834 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | **PASS** | — | — | qa/evidence/firstbatch/iPadPro13-tab3-20s.png (14f4a1ef…) |
 | 42 | countdown 倒计日 | ipad-landscape-dark·深色 | 1194×834 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | 待证；`r14-final/countdown-ipad-landscape-dark.png` |
 | 43 | countdown 倒计日 | duo-closed-portrait·浅色 | 466×678 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | 待证；`r14-final/countdown-duo-closed-portrait.png` |
 | 44 | countdown 倒计日 | duo-closed-landscape·浅色 | 678×466 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | 待证；`r14-final/countdown-duo-closed-landscape.png` |
 | 45 | countdown 倒计日 | duo-tent·浅色 | 678×466 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | 待证；`r14-final/countdown-duo-tent.png` |
-| 46 | countdown 倒计日 | duo-open-portrait·浅色 | 669×951 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | 待证；`r14-final/countdown-duo-open-portrait.png` |
+| 46 | countdown 倒计日 | duo-open-portrait·浅色 | 669×951 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | qa/evidence/firstbatch/DuoInner-tab3.png (fcff7a2e…); black inner display |
 | 47 | countdown 倒计日 | duo-open-landscape·浅色 | 951×669 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | 待证；`r14-final/countdown-duo-open-landscape.png` |
 | 48 | countdown 倒计日 | duo-tabletop·浅色 | 669×951 | 默认 | 倒计日根 Tab；新增/已有条目 | 多条列表；Tab 最近天数（0 显示字符串）；新增/编辑/删除；通知 | — | — | **NOT RUN** | 待证；`r14-final/countdown-duo-tabletop.png` |
-| 49 | settings 设置 | phone-light·浅色 | 375×930 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | 待证；`r14-final/settings-phone-light.png` |
+| 49 | settings 设置 | phone-light·浅色 | 375×930 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | **PASS** | — | — | qa/evidence/firstbatch/iPhone16Pro-tab4-20s.png (f224c128…) |
 | 50 | settings 设置 | phone-dark·深色 | 375×930 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | 待证；`r14-final/settings-phone-dark.png` |
 | 51 | settings 设置 | ipad-portrait·浅色 | 834×1194 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | 待证；`r14-final/settings-ipad-portrait.png` |
 | 52 | settings 设置 | ipad-portrait-dark·深色 | 834×1194 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | 待证；`r14-final/settings-ipad-portrait-dark.png` |
-| 53 | settings 设置 | ipad-landscape·浅色 | 1194×834 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | 待证；`r14-final/settings-ipad-landscape.png` |
+| 53 | settings 设置 | ipad-landscape·浅色 | 1194×834 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | **PASS** | — | — | qa/evidence/firstbatch/iPadPro13-tab4-20s.png (334c119a…) |
 | 54 | settings 设置 | ipad-landscape-dark·深色 | 1194×834 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | 待证；`r14-final/settings-ipad-landscape-dark.png` |
 | 55 | settings 设置 | duo-closed-portrait·浅色 | 466×678 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | 待证；`r14-final/settings-duo-closed-portrait.png` |
 | 56 | settings 设置 | duo-closed-landscape·浅色 | 678×466 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | 待证；`r14-final/settings-duo-closed-landscape.png` |
 | 57 | settings 设置 | duo-tent·浅色 | 678×466 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | 待证；`r14-final/settings-duo-tent.png` |
-| 58 | settings 设置 | duo-open-portrait·浅色 | 669×951 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | 待证；`r14-final/settings-duo-open-portrait.png` |
+| 58 | settings 设置 | duo-open-portrait·浅色 | 669×951 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | qa/evidence/firstbatch/DuoInner-tab4.png (fcff7a2e…); black inner display |
 | 59 | settings 设置 | duo-open-landscape·浅色 | 951×669 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | 待证；`r14-final/settings-duo-open-landscape.png` |
 | 60 | settings 设置 | duo-tabletop·浅色 | 669×951 | 默认 | 设置根 Tab；子流程返回 | 外观/历法/经典偏好/术语/提醒/许可/版本；重启持久化 | — | — | **NOT RUN** | 待证；`r14-final/settings-duo-tabletop.png` |
-| 61 | selection 择日 | phone-light·浅色 | 375×930 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | 待证；`r14-final/selection-phone-light.png` |
+| 61 | selection 择日 | phone-light·浅色 | 375×930 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | **FAIL** | — | qa/evidence/firstbatch/iPhone16Pro-tab2-20s.png (2a4f2533…); shows placeholder「页面待实现(T3-T5)」 |
 | 62 | selection 择日 | phone-dark·深色 | 375×930 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | 待证；`r14-final/selection-phone-dark.png` |
 | 63 | selection 择日 | ipad-portrait·浅色 | 834×1194 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | 待证；`r14-final/selection-ipad-portrait.png` |
 | 64 | selection 择日 | ipad-portrait-dark·深色 | 834×1194 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | 待证；`r14-final/selection-ipad-portrait-dark.png` |
-| 65 | selection 择日 | ipad-landscape·浅色 | 1194×834 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | 待证；`r14-final/selection-ipad-landscape.png` |
+| 65 | selection 择日 | ipad-landscape·浅色 | 1194×834 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | **FAIL** | — | qa/evidence/firstbatch/iPadPro13-tab2-20s.png (b2dca945…); placeholder「页面待实现(T3-T5)」 |
 | 66 | selection 择日 | ipad-landscape-dark·深色 | 1194×834 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | 待证；`r14-final/selection-ipad-landscape-dark.png` |
 | 67 | selection 择日 | duo-closed-portrait·浅色 | 466×678 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | 待证；`r14-final/selection-duo-closed-portrait.png` |
 | 68 | selection 择日 | duo-closed-landscape·浅色 | 678×466 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | 待证；`r14-final/selection-duo-closed-landscape.png` |
 | 69 | selection 择日 | duo-tent·浅色 | 678×466 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | 待证；`r14-final/selection-duo-tent.png` |
-| 70 | selection 择日 | duo-open-portrait·浅色 | 669×951 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | 待证；`r14-final/selection-duo-open-portrait.png` |
+| 70 | selection 择日 | duo-open-portrait·浅色 | 669×951 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | qa/evidence/firstbatch/DuoInner-tab2.png (fcff7a2e…); black inner display |
 | 71 | selection 择日 | duo-open-landscape·浅色 | 951×669 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | 待证；`r14-final/selection-duo-open-landscape.png` |
 | 72 | selection 择日 | duo-tabletop·浅色 | 669×951 | 默认 | 择日根 Tab | 事项/起止/周末/纪念冲突；空态/倒序提示；结果进黄历 | — | — | **NOT RUN** | 待证；`r14-final/selection-duo-tabletop.png` |
 | 73 | daily 每日一句 | phone-light·浅色 | 375×930 | 默认 | 首页每日一句 | 完整经文/出处/含义/应用；四传统偏好；长文可读；分享卡 | — | — | **NOT RUN** | 待证；`r14-final/daily-phone-light.png` |

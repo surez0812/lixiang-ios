@@ -1,0 +1,10 @@
+label=firstbatch-script-iphone-tab0
+device=iPhone 16 Pro
+udid=0975B8A6-A868-424A-BDA7-EC40F97D823B
+runtime=com.apple.CoreSimulator.SimRuntime.iOS-18-6
+app=/Users/surezhang/work/ZhaoYao/work/lixiang-r14/DerivedData/Build/Products/Debug-iphonesimulator/Lixiang.app
+app_binary_sha256=6a504c896e0a14f5f245a117bffdd4c3ac0e7ba6399e3e1da837b9d0a0f38df8
+screenshot=/Users/surezhang/work/ZhaoYao/work/lixiang-r14/qa/evidence/firstbatch-script-iphone-tab0.png
+screenshot_sha256=05e33f7e79da0ab3fa70e77cf61df5705d4a0698162afab66ae7d31a0c57c6d0
+launch_args=-LixiangTab 0
+captured_at=2026-11-13T21:10:26+08:00

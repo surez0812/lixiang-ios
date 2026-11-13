@@ -1,0 +1,17 @@
+{
+  "1": {"status":"PASS","evidence":"qa/evidence/firstbatch/iPhone16Pro-tab0-retry.png (sha 00499e3e…); iPhone 16 Pro iOS18.6; 20s"},
+  "5": {"status":"PASS","evidence":"qa/evidence/firstbatch/iPadPro13-tab0-20s.png (c46a5676…); iPad Pro 13 iOS18.6 landscape"},
+  "10": {"status":"NOT RUN","evidence":"qa/evidence/firstbatch/DuoInner-tab0.png (fcff7a2e…); inner display 2007×2853 black; simulator posture/display unsupported"},
+  "25": {"status":"PASS","evidence":"qa/evidence/firstbatch/iPhone16Pro-tab1-20s.png (49b4a182…); 20s"},
+  "29": {"status":"PASS","evidence":"qa/evidence/firstbatch/iPadPro13-tab1-20s.png (c6b22638…)"},
+  "34": {"status":"NOT RUN","evidence":"qa/evidence/firstbatch/DuoInner-tab1.png (fcff7a2e…); black inner display"},
+  "37": {"status":"PASS","evidence":"qa/evidence/firstbatch/iPhone16Pro-tab3-20s.png (2193a5dd…); empty countdown state"},
+  "41": {"status":"PASS","evidence":"qa/evidence/firstbatch/iPadPro13-tab3-20s.png (14f4a1ef…)"},
+  "46": {"status":"NOT RUN","evidence":"qa/evidence/firstbatch/DuoInner-tab3.png (fcff7a2e…); black inner display"},
+  "49": {"status":"PASS","evidence":"qa/evidence/firstbatch/iPhone16Pro-tab4-20s.png (f224c128…)"},
+  "53": {"status":"PASS","evidence":"qa/evidence/firstbatch/iPadPro13-tab4-20s.png (334c119a…)"},
+  "58": {"status":"NOT RUN","evidence":"qa/evidence/firstbatch/DuoInner-tab4.png (fcff7a2e…); black inner display"},
+  "61": {"status":"FAIL","evidence":"qa/evidence/firstbatch/iPhone16Pro-tab2-20s.png (2a4f2533…); shows placeholder「页面待实现(T3-T5)」"},
+  "65": {"status":"FAIL","evidence":"qa/evidence/firstbatch/iPadPro13-tab2-20s.png (b2dca945…); placeholder「页面待实现(T3-T5)」"},
+  "70": {"status":"NOT RUN","evidence":"qa/evidence/firstbatch/DuoInner-tab2.png (fcff7a2e…); black inner display"}
+}
