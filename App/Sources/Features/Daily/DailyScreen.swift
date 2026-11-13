@@ -6,8 +6,7 @@ struct DailyScreen: View {
     @EnvironmentObject private var state: AppState
     @Environment(\.d1) private var theme
     @EnvironmentObject private var days: SelectedDayStore
-    @State private var showShare = false
-    @State private var shareImage: UIImage?
+    @State private var sharePayload: SharePayload?
 
     private var classic: DailyClassic { DailyClassic(rawValue: state.dailyClassic) ?? .dao }
     private var date: LocalDate { days.selectedDate }
@@ -36,10 +35,8 @@ struct DailyScreen: View {
         .toolbar(.hidden, for: .tabBar)
         .navigationTitle("每日一句")
         .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $showShare) {
-            if let shareImage {
-                DailySharePreview(image: shareImage)
-            }
+        .fullScreenCover(item: $sharePayload) { payload in
+            DailySharePage(date: date, almanac: almanac, verse: payload.verse, theme: theme)
         }
     }
 
@@ -106,34 +103,58 @@ struct DailyScreen: View {
     }
 
     private func share(_ verse: R14DailyVerse) {
-        let view = DailyShareCard(date: date, almanac: almanac, verse: verse, theme: theme)
-        let renderer = ImageRenderer(content: view)
-        renderer.scale = 3
-        renderer.proposedSize = ProposedViewSize(width: 360, height: 450)
-        renderer.isOpaque = true
-        shareImage = renderer.uiImage
-        showShare = shareImage != nil
+        sharePayload = SharePayload(verse: verse)
     }
 }
 
-private struct DailySharePreview: View {
-    let image: UIImage
+private struct SharePayload: Identifiable {
+    let id = UUID()
+    let verse: R14DailyVerse
+}
+
+private struct DailySharePage: View {
+    let date: LocalDate
+    let almanac: AlmanacDay
+    let verse: R14DailyVerse
+    let theme: D1Theme
     @Environment(\.dismiss) private var dismiss
+    @State private var rendered: UIImage?
+
     var body: some View {
-        VStack(spacing: 14) {
-            Image(uiImage: image).resizable().scaledToFit()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .padding(20)
-                .background(Color.white)
-                .accessibilityIdentifier("daily-share-image")
-            HStack(spacing: 12) {
-                ShareLink(item: Image(uiImage: image), preview: SharePreview("历象 · 每日一句", image: Image(uiImage: image))) {
-                    Label("系统分享", systemImage: "square.and.arrow.up").d1Font(15, weight: .semibold)
+        NavigationStack {
+            ScrollView {
+                VStack(spacing: 16) {
+                    Text("分享卡").d1Font(12, weight: .semibold).tracking(1.6).foregroundStyle(theme.ink3)
+                    DailyShareCard(date: date, almanac: almanac, verse: verse, theme: theme)
+                        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                        .shadow(color: .black.opacity(0.08), radius: 12, y: 4)
+                    if let rendered {
+                        ShareLink(item: Image(uiImage: rendered), preview: SharePreview("历象 · 每日一句", image: Image(uiImage: rendered))) {
+                            Label("系统分享", systemImage: "square.and.arrow.up")
+                                .d1Font(15, weight: .semibold)
+                                .frame(maxWidth: .infinity, minHeight: 46)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .tint(theme.accentStrong)
+                    }
+                    Button("关闭") { dismiss() }.d1Font(14).foregroundStyle(theme.ink2).frame(minHeight: 44)
                 }
-                .buttonStyle(.borderedProminent)
-                Button("关闭") { dismiss() }.d1Font(15)
+                .padding(20)
             }
-            .padding(.bottom, 20)
+            .background(ScreenBackground())
+            .navigationTitle("每日一句 · 分享")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) { Button("关闭") { dismiss() } }
+            }
+            .task {
+                let view = DailyShareCard(date: date, almanac: almanac, verse: verse, theme: theme)
+                let renderer = ImageRenderer(content: view)
+                renderer.scale = 3
+                renderer.proposedSize = ProposedViewSize(width: 360, height: 450)
+                renderer.isOpaque = true
+                rendered = renderer.uiImage
+            }
         }
     }
 }
