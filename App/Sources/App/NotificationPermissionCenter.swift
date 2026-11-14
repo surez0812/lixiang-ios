@@ -101,3 +101,11 @@ final class NotificationPermissionCenter: ObservableObject {
     /// denined 时开关不可开启；UI 显示「系统已拒绝」并引导去设置。
     var canToggleReminder: Bool { status != .denied }
 }
+
+
+/// 逐条提醒意图：全局授权只影响 effective；不得因查看详情改写用户主动关闭的 desiredReminder。
+enum ReminderIntentPolicy {
+    static func effective(desired: Bool, isDenied: Bool) -> Bool { desired && !isDenied }
+    /// 仅当用户逐条意图本身为 true 时，authorized 后可写回持久化/排程。
+    static func persistOnAuthorized(desired: Bool) -> Bool { desired }
+}
