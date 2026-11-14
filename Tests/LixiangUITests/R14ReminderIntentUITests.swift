@@ -7,6 +7,61 @@ final class R14ReminderIntentUITests: XCTestCase {
         a.name = name; a.lifetime = .keepAlways; add(a)
     }
 
+    /// settingsReturn：初始 denied →（详情创建后 3s）authorized；desired=false 仍不得开启
+    func testSettingsReturnDoesNotEnableUserDisabledItem() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-LixiangTab", "3", "-LixiangR14Route", "countdownDetail",
+                               "-LixiangSeedCountdown", "1", "-LixiangSeedReminderOff",
+                               "-LixiangNotifySettingsReturn"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 30))
+        let marker = app.staticTexts.matching(NSPredicate(format: "label CONTAINS 'notify.status=authorized' AND label CONTAINS 'item=0'")).firstMatch
+        XCTAssertTrue(marker.waitForExistence(timeout: 50), "settingsReturn 迁移后不得覆写 false item")
+        let toggle = app.switches["notify.toggle"]
+        XCTAssertEqual(toggle.value as? String, "0")
+        XCTAssertTrue(toggle.isEnabled)
+        shot("reminder-intent-settingsreturn-off")
+    }
+
+    /// settingsReturn：desired=true（用户原开启）→ authorized 后恢复为开
+    func testSettingsReturnRestoresDesiredTrueItem() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-LixiangTab", "3", "-LixiangR14Route", "countdownDetail",
+                               "-LixiangSeedCountdown", "1", "-LixiangNotifySettingsReturn"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 30))
+        let marker = app.staticTexts.matching(NSPredicate(format: "label CONTAINS 'notify.status=authorized' AND label CONTAINS 'toggle=1' AND label CONTAINS 'item=1'")).firstMatch
+        XCTAssertTrue(marker.waitForExistence(timeout: 50), "desired=true 应在 authorized 后恢复")
+        XCTAssertEqual(app.switches["notify.toggle"].value as? String, "1")
+        shot("reminder-intent-settingsreturn-on")
+    }
+
+    /// 手动开启后重启（不 seed）仍保持 item=1
+    func testManualEnablePersistsAcrossRelaunch() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-LixiangTab", "3", "-LixiangR14Route", "countdownDetail",
+                               "-LixiangSeedCountdown", "1", "-LixiangSeedReminderOff",
+                               "-LixiangNotifyAuthorized"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 30))
+        let toggle = app.switches["notify.toggle"]
+        XCTAssertTrue(toggle.waitForExistence(timeout: 40))
+        toggle.tap()
+        let allow = app.alerts.buttons["去开启"]
+        XCTAssertTrue(allow.waitForExistence(timeout: 10)); allow.tap()
+        let onMarker = app.staticTexts.matching(NSPredicate(format: "label CONTAINS 'toggle=1' AND label CONTAINS 'item=1'")).firstMatch
+        XCTAssertTrue(onMarker.waitForExistence(timeout: 15))
+        // 重启（不 seed，读磁盘）
+        app.terminate()
+        app.launchArguments = ["-LixiangTab", "3", "-LixiangR14Route", "countdownDetail", "-LixiangNotifyAuthorized"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 30))
+        let persisted = app.staticTexts.matching(NSPredicate(format: "label CONTAINS 'item=1'")).firstMatch
+        XCTAssertTrue(persisted.waitForExistence(timeout: 30), "重启后 item=1 应持久化")
+        XCTAssertEqual(app.switches["notify.toggle"].value as? String, "1")
+        shot("reminder-intent-relaunch-persisted")
+    }
+
     func testAuthorizedDoesNotOverrideSeededReminderOff() throws {
         let app = XCUIApplication()
         app.launchArguments = ["-LixiangTab", "3", "-LixiangR14Route", "countdownDetail",
@@ -24,19 +79,8 @@ final class R14ReminderIntentUITests: XCTestCase {
         XCTAssertTrue(toggle.isEnabled)
         shot("reminder-intent-initial-off")
 
-        // 手动开启 → preprompt → 去开启（注入 authorized）
-        toggle.tap()
-        let alert = app.alerts.firstMatch
-        XCTAssertTrue(alert.waitForExistence(timeout: 10), "未出现请求前说明")
-        shot("reminder-intent-preprompt")
-        let allow = alert.buttons["去开启"]
-        XCTAssertTrue(allow.waitForExistence(timeout: 5))
-        allow.tap()
-
-        let onMarker = app.staticTexts.matching(NSPredicate(format: "label CONTAINS 'toggle=1' AND label CONTAINS 'item=1'")).firstMatch
-        XCTAssertTrue(onMarker.waitForExistence(timeout: 15), "手动开启后未持久化 item=1")
-        XCTAssertEqual(toggle.value as? String, "1")
-        shot("reminder-intent-enabled")
+        // 手动开启路径与持久化由 testManualEnablePersistsAcrossRelaunch 覆盖
+        shot("reminder-intent-authorized-off")
 
         // 手动关闭 → 持久化 false
         toggle.tap()
