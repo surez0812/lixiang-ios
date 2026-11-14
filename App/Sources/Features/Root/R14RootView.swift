@@ -122,17 +122,27 @@ struct R14RootView: View {
             let innerLike = shortSide >= 600
             let duoSideBar = isDuo && landscape && innerLike
             let showBar = !hideBar && !captureMode
+            let safe = windowSafeInsets
             Group {
                 if !days.ready {
                     R14BootLoadingView()
                 } else if duoSideBar {
-                    // UI-001：页面占满内容区，侧栏浮在内容上；仅给滚动内容留出可点击余量
+                    // Duo OpenLandscape：页面占满内容区；侧栏按设计几何浮于右侧保留区
                     tabsContent
                         .safeAreaInset(edge: .trailing) {
-                            if showBar { Color.clear.frame(width: 76) }
+                            if showBar { Color.clear.frame(width: R14SideRail.reservedWidth) }
                         }
-                        .overlay(alignment: .trailing) {
-                            if showBar { R14SideTabBar(selected: $tab).padding(.trailing, 8) }
+                        .overlay(alignment: .topTrailing) {
+                            if showBar {
+                                R14SideTabBar(selected: $tab)
+                                    .padding(.top, R14SideRail.top - safe.top)
+                                    .padding(.trailing, R14SideRail.right - safe.right)
+                                    .onAppear {
+                                        #if DEBUG
+                                        print("LXRAIL design top=\(R14SideRail.top) right=\(R14SideRail.right) size=\(R14SideRail.width)x\(R14SideRail.height) reserved=\(R14SideRail.reservedWidth) windowInsets=\(safe) geo=\(geo.size)")
+                                        #endif
+                                    }
+                            }
                         }
                 } else {
                     // UI-001：bottom tab 胶囊 overlay 在页面上，禁止 VStack 顺序占位/全宽纯色底板
@@ -187,6 +197,14 @@ struct R14RootView: View {
         return p.count == 3 ? LocalDate(p[0], p[1], p[2]) : nil
     }
     #endif
+
+    /// 真实屏幕安全区（GeometryReader 可能已被父级消账，取 key window 的 insets）。
+    private var windowSafeInsets: UIEdgeInsets {
+        UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .flatMap { $0.windows }
+            .first(where: { $0.isKeyWindow })?.safeAreaInsets ?? .zero
+    }
 
     /// 路由消费必须等 days.ready 且 NavigationStack 已挂载；!ready 时保留 pendingRoute，不清空。
     private func consumePendingRouteIfReady() {
@@ -299,24 +317,52 @@ struct R14FloatingTabBar: View {
     }
 }
 
+/// Duo OpenLandscape 侧栏设计几何（docs/design/r14-final/home-duo-open-landscape）：
+/// right=23, width=50, height=252, top=401；5×48 slot、tab 44、icon 25；内容右侧 reserve。
+enum R14SideRail {
+    static let width: CGFloat = 50
+    static let height: CGFloat = 252
+    static let top: CGFloat = 401
+    static let right: CGFloat = 23
+    static let slotHeight: CGFloat = 48
+    static let tabWidth: CGFloat = 44
+    static let icon: CGFloat = 25
+    static let horizontalPadding: CGFloat = 3
+    static let verticalPadding: CGFloat = 6
+    static let reservedWidth: CGFloat = width + 8
+}
+
 struct R14SideTabBar: View {
     @Binding var selected: Int
     @Environment(\.d1) private var theme
     private let items: [(String, String)] = [("日历","tab-calendar"),("岁时","tab-suishi"),("择日","TabSelection"),("倒计日","tab-countdown"),("设置","tab-settings")]
+
     var body: some View {
-        VStack(spacing: 4) {
+        VStack(spacing: 0) {
             ForEach(Array(items.enumerated()), id: \.offset) { idx, item in
                 Button { selected = idx } label: {
-                    Image(item.1).renderingMode(.template).resizable().scaledToFit().frame(width: 22, height: 22)
+                    Image(item.1).renderingMode(.template).resizable().scaledToFit()
+                        .frame(width: R14SideRail.icon, height: R14SideRail.icon)
                         .foregroundStyle(selected == idx ? theme.accent : theme.ink3)
-                        .frame(width: 44, height: 44)
+                        .frame(width: R14SideRail.tabWidth, height: R14SideRail.slotHeight)
                         .background(selected == idx ? theme.accent.opacity(0.12) : .clear, in: Capsule())
-                }.buttonStyle(.plain).accessibilityLabel(item.0)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(item.0)
             }
         }
-        .padding(6)
+        .padding(.horizontal, R14SideRail.horizontalPadding)
+        .padding(.vertical, R14SideRail.verticalPadding)
+        .frame(width: R14SideRail.width, height: R14SideRail.height)
         .r14Glass(Capsule())
         .overlay(Capsule().strokeBorder(theme.line.opacity(0.35)))
+        .background(GeometryReader { p in
+            Color.clear.onAppear {
+                #if DEBUG
+                print("LXRAIL frame=\(p.frame(in: .global)) size=\(p.size)")
+                #endif
+            }
+        })
     }
 }
 
