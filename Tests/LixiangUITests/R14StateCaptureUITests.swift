@@ -133,4 +133,21 @@ final class R14StateCaptureUITests: XCTestCase {
         XCTAssertFalse(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "页面待实现")).firstMatch.exists)
     }
 
+
+    private func assertPlainTermNoPlaceholder(_ term: String, expectedEnglish: String) {
+        let app = XCUIApplication()
+        app.launchArguments = ["-LixiangPlainTerm", term]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 25))
+        sleep(5)
+        XCTAssertFalse(app.staticTexts.containing(NSPredicate(format: "label CONTAINS[c] %@", "blocked")).firstMatch.exists, "\(term) 仍含 blocked")
+        XCTAssertFalse(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "— (")).firstMatch.exists, "\(term) 仍含占位")
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS[c] %@", expectedEnglish)).firstMatch.waitForExistence(timeout: 10), "\(term) 英文未命中")
+    }
+
+    func testJisiAndZaomiaoEnglishNotBlocked() throws {
+        assertPlainTermNoPlaceholder("祭祀", expectedEnglish: "Traditional folk practice of preparing offerings")
+        assertPlainTermNoPlaceholder("造庙", expectedEnglish: "Traditional folk and historical practice of building temples")
+    }
+
 }
