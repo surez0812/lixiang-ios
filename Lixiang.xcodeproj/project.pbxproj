@@ -101,6 +101,7 @@
 		8BB451AA7F94B4A78B5DAB11 /* term-lidong-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = BBF1AB9B0EC5E4CE0D2509D2 /* term-lidong-light.webp */; };
 		8C25087652A4E1361E37BBB0 /* R14BootLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C34758C2801EAF4EDE24D /* R14BootLoadingView.swift */; };
 		8D0246AF8017C045532BA007 /* ContentCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41819744800A0168028C94E9 /* ContentCatalogTests.swift */; };
+		8DF7840246DD099D599BE5B4 /* FolklorePastReadabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B1D2FBA3A51942CBF6DDA /* FolklorePastReadabilityTests.swift */; };
 		8EC0A815C5B9E1271B935DCE /* SelectedDayStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C1D3C9904793024373124 /* SelectedDayStore.swift */; };
 		907F2BA4D3277A3A8CE1347D /* DailyVerseDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BF5B7DAC670CF275F5EBE6 /* DailyVerseDetailScreen.swift */; };
 		9128527BA893D4502A4803D8 /* support.md in Resources */ = {isa = PBXBuildFile; fileRef = 2E444FF645AE7F3A22E391DD /* support.md */; };
@@ -194,6 +195,7 @@
 
 /* Begin PBXFileReference section */
 		02C26FF99F8DAD23254156A9 /* D1Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D1Motion.swift; sourceTree = "<group>"; };
+		038B1D2FBA3A51942CBF6DDA /* FolklorePastReadabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolklorePastReadabilityTests.swift; sourceTree = "<group>"; };
 		050E981F9B0FFBAB3B2E4DC9 /* R14PlaceholderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14PlaceholderPage.swift; sourceTree = "<group>"; };
 		053D711052530830581FB346 /* ApprovedFortuneCore.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = ApprovedFortuneCore.js; sourceTree = "<group>"; };
 		05C2FB9206EC78CFC935109F /* R14RouteDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14RouteDestination.swift; sourceTree = "<group>"; };
@@ -775,6 +777,7 @@
 				E4742E23ABDE84D8596FE0AB /* CountdownLogicTests.swift */,
 				CBAFC1B8B1475DB7D2F2C0EF /* DailyShareExportTests.swift */,
 				8260A417BD1E7E17DA081925 /* FolkloreLoadStateTests.swift */,
+				038B1D2FBA3A51942CBF6DDA /* FolklorePastReadabilityTests.swift */,
 				A9A2E2EB5A29CCA23BD88DF9 /* FolkloreUnreadStoreTests.swift */,
 				722116A2396BCC3C9567E355 /* FontAvailabilityTests.swift */,
 				DCCA767FE8687948B8B5D0DF /* FortuneEngineTests.swift */,
@@ -1145,6 +1148,7 @@
 				146166B7CABEC8AF3DB42FE9 /* CountdownLogicTests.swift in Sources */,
 				A70BF6380870D5621D6F6466 /* DailyShareExportTests.swift in Sources */,
 				E949A7BC96DD410B34273F97 /* FolkloreLoadStateTests.swift in Sources */,
+				8DF7840246DD099D599BE5B4 /* FolklorePastReadabilityTests.swift in Sources */,
 				7511252EC8B5EA2A1FD87190 /* FolkloreUnreadStoreTests.swift in Sources */,
 				A973D52E2235B2F7F414AF68 /* FontAvailabilityTests.swift in Sources */,
 				5A6C298813051CC13C5D3BC5 /* FortuneEngineTests.swift in Sources */,

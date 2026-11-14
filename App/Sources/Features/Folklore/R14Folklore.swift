@@ -15,6 +15,22 @@ enum FolkloreFilter: String, CaseIterable, Identifiable {
     }
 }
 
+/// 岁时可读性/日期文案：过去节日（30 天内）应可读，不显示“还有0天解锁”。
+enum FolkloreReadability {
+    static func isReadable(_ info: ContentStateInfo) -> Bool {
+        info.isToday || info.state == .past || (info.daysUntil ?? 99) <= 10
+    }
+    static func offsetText(_ info: ContentStateInfo) -> String {
+        if info.isToday { return "今日" }
+        if info.state == .past { return "已过去" }
+        return "还有\(info.daysUntil ?? 0)天"
+    }
+    static func statusText(isReadable: Bool, info: ContentStateInfo) -> String {
+        if info.isToday || info.state == .past { return "已解锁" }
+        return isReadable ? "新解锁" : "未解锁"
+    }
+}
+
 struct FolkloreRow: Identifiable {
     var id: String { resolution.item.id }
     let resolution: ContentResolution
@@ -36,10 +52,9 @@ struct R14FolkloreScreen: View {
         let resolved = ContentResolver.resolve(items: ContentCatalog.all, now: state.today, engine: state.engine)
         return resolved.compactMap { r -> FolkloreRow? in
             guard let info = r.stateInfo(regionID: nil, now: state.today) else { return nil }
-            // 过去内容不展示；未来按 T-10 解锁可读
-            if info.state == .past { return nil }
+            // 过去 30 天内的节日仍可读（不再被误判 locked）；未来按 T-10 解锁
             let days = info.isToday ? nil : info.daysUntil
-            let readable = info.isToday || (days ?? 99) <= 10
+            let readable = FolkloreReadability.isReadable(info)
             return FolkloreRow(resolution: r, state: info, daysUntil: days, isReadable: readable)
         }
         .sorted { ($0.state.anchor, $0.item.id) < ($1.state.anchor, $1.item.id) }
@@ -117,7 +132,7 @@ struct R14FolkloreScreen: View {
             VStack(spacing: 2) {
                 Text("\(row.state.anchor.month)月").d1Font(10).foregroundStyle(theme.ink3)
                 Text("\(row.state.anchor.day)").d1SerifFont(30).foregroundStyle(theme.ink)
-                Text(row.state.isToday ? "今日" : "还有\(row.daysUntil ?? 0)天").d1Font(10).foregroundStyle(theme.ink3)
+                Text(FolkloreReadability.offsetText(row.state)).d1Font(10).foregroundStyle(theme.ink3)
             }
             .frame(width: 54)
             VStack(alignment: .leading, spacing: 5) {
@@ -147,8 +162,7 @@ struct R14FolkloreScreen: View {
     }
 
     private func statusText(_ row: FolkloreRow) -> String {
-        if row.state.isToday { return "已解锁" }
-        return row.isReadable ? "新解锁" : "未解锁"
+        FolkloreReadability.statusText(isReadable: row.isReadable, info: row.state)
     }
 }
 
@@ -174,7 +188,7 @@ struct R14FolkloreDetailScreen: View {
         let resolved = ContentResolver.resolve(items: ContentCatalog.all, now: state.today, engine: state.engine)
         guard let r = resolved.first(where: { $0.item.id == id }), let info = r.stateInfo(regionID: nil, now: state.today) else { return nil }
         let days = info.isToday ? nil : info.daysUntil
-        return FolkloreRow(resolution: r, state: info, daysUntil: days, isReadable: info.isToday || (days ?? 99) <= 10)
+        return FolkloreRow(resolution: r, state: info, daysUntil: days, isReadable: FolkloreReadability.isReadable(info))
     }
 
     var body: some View {
@@ -234,7 +248,7 @@ struct R14FolkloreDetailScreen: View {
             HStack {
                 Text(verbatim: String(format: "%d年%d月%d日", row.state.anchor.year, row.state.anchor.month, row.state.anchor.day))
                     .d1Font(12).foregroundStyle(theme.ink3)
-                Text(row.state.isToday ? "· 今天" : "· 还有\(row.daysUntil ?? 0)天")
+                Text(row.state.isToday ? "· 今天" : (row.state.state == .past ? "· 已过去 · 已解锁" : "· 还有\(row.daysUntil ?? 0)天"))
                     .d1Font(12).foregroundStyle(theme.accentStrong)
                 Spacer()
                 Button { showShare = true } label: {
@@ -260,8 +274,15 @@ struct R14FolkloreDetailScreen: View {
                     }
                 }
             }
-            Text("来源：\(item.sources.first?.title ?? "公版参考") · 更新于 v\(item.version)")
-                .d1Font(10).foregroundStyle(theme.ink3)
+            VStack(alignment: .leading, spacing: 4) {
+                Text("来源").d1Font(10, weight: .semibold).foregroundStyle(theme.ink3)
+                ForEach(Array(item.sources.enumerated()), id: \.offset) { _, src in
+                    Text(verbatim: "· \(src.title)\(src.note.map { " — \($0)" } ?? "")")
+                        .d1Font(10).foregroundStyle(theme.ink3)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Text(verbatim: "更新于 v\(item.version)").d1Font(9).foregroundStyle(theme.ink3)
+            }
         }
         .padding(18)
     }
