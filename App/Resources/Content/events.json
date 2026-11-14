@@ -1,246 +1,848 @@
 {
- "version": 1,
- "items": [
-  {
-   "category": [
-    "festival",
-    "ritual"
-   ],
-   "dateRule": {
-    "lunar": {
-     "day": 23,
-     "dayFallback": "lastDay",
-     "leap": "nonLeap",
-     "month": 12
-    }
-   },
-   "id": "xiezao",
-   "license": "original",
-   "regionalDates": [
+  "version": 1,
+  "items": [
     {
-     "dateRule": {
-      "lunar": {
-       "day": 23,
-       "dayFallback": "lastDay",
-       "leap": "nonLeap",
-       "month": 12
-      }
-     },
-     "id": "north",
-     "label": "北方做法 · 腊月廿三"
+      "id": "dongzhi",
+      "title": "冬至",
+      "category": [
+        "festival",
+        "solar_term"
+      ],
+      "dateRule": {
+        "solarTerm": {
+          "term": "冬至"
+        }
+      },
+      "regionalDates": null,
+      "teaser": "冬至大如年，夜最长、阳气初生。",
+      "sections": [
+        {
+          "type": "intro",
+          "title": "这是什么日子",
+          "paragraphs": [
+            "冬至是二十四节气之一，也是传统节日。北半球白昼最短、夜晚最长，此后白昼渐长；民间有“冬至大如年”的说法，核心是团聚与休养。"
+          ]
+        },
+        {
+          "type": "customs",
+          "title": "传统习俗（记述）",
+          "paragraphs": [
+            "北方多地吃饺子，南方多地吃汤圆，也有地方喝羊肉汤、吃年糕；习俗因地域与家庭而异，本文只作民俗记述。"
+          ]
+        },
+        {
+          "type": "notes",
+          "title": "说明",
+          "paragraphs": [
+            "各地做法不同，可按家庭习惯安排；内容为文化说明，不作吉凶判断。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "title": "維基百科·冬至",
+          "note": "https://zh.wikipedia.org/wiki/冬至 · 访问日期 2026-11-14 · 文章级参考"
+        },
+        {
+          "kind": "reference",
+          "title": "維基百科·二十四節氣",
+          "note": "https://zh.wikipedia.org/wiki/二十四節氣 · 访问日期 2026-11-14 · 文章级参考"
+        }
+      ],
+      "license": "original",
+      "version": 1,
+      "reviewStatus": "approved",
+      "hero": {
+        "path": "/events/dongzhi/images/hero.webp",
+        "status": "pending-design",
+        "alt": "冬至节气/节令主视觉",
+        "aspect": "16:9",
+        "maxBytes": 122880
+      },
+      "unlockOffset": 10,
+      "licenseNote": "正文为 PM 原创文化说明；引用页面仅作事实核对参考（维基百科 CC BY-SA / 机构页面），不复用其文本"
     },
     {
-     "dateRule": {
-      "lunar": {
-       "day": 24,
-       "dayFallback": "lastDay",
-       "leap": "nonLeap",
-       "month": 12
-      }
-     },
-     "id": "south",
-     "label": "南方做法 · 腊月廿四"
-    }
-   ],
-   "sections": [
-    {
-     "paragraphs": [
-      "P1 示例段落：谢灶是农历年末的家庭年俗，各地日期与做法不同。"
-     ],
-     "title": "这是什么日子",
-     "type": "intro"
+      "id": "qingming",
+      "title": "清明",
+      "category": [
+        "festival",
+        "solar_term",
+        "ancestor"
+      ],
+      "dateRule": {
+        "solarTerm": {
+          "term": "清明"
+        }
+      },
+      "regionalDates": null,
+      "teaser": "气清景明，扫墓追思，也踏青迎春。",
+      "sections": [
+        {
+          "type": "intro",
+          "title": "这是什么日子",
+          "paragraphs": [
+            "清明既是节气，也是祭祖追思与踏青的传统节日。气温回升、草木萌发，民间有扫墓、踏青、插柳等习俗。"
+          ]
+        },
+        {
+          "type": "customs",
+          "title": "传统习俗（记述）",
+          "paragraphs": [
+            "常见做法包括扫墓祭祖、踏青郊游、插柳、放风筝、吃青团；各地形式不同，本文只作民俗文化记述。"
+          ]
+        },
+        {
+          "type": "safety",
+          "title": "安全与环保",
+          "paragraphs": [
+            "祭扫请遵守墓园与当地防火规定，提倡无烟祭扫、鲜花祭扫；不在禁火区域使用明火。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "title": "維基百科·清明",
+          "note": "https://zh.wikipedia.org/wiki/清明 · 访问日期 2026-11-14 · 文章级参考"
+        },
+        {
+          "kind": "reference",
+          "title": "維基百科·寒食",
+          "note": "https://zh.wikipedia.org/wiki/寒食 · 访问日期 2026-11-14 · 文章级参考"
+        }
+      ],
+      "license": "original",
+      "version": 1,
+      "reviewStatus": "approved",
+      "hero": {
+        "path": "/events/qingming/images/hero.webp",
+        "status": "pending-design",
+        "alt": "清明节气/节令主视觉",
+        "aspect": "16:9",
+        "maxBytes": 122880
+      },
+      "unlockOffset": 10,
+      "licenseNote": "正文为 PM 原创文化说明；引用页面仅作事实核对参考（维基百科 CC BY-SA / 机构页面），不复用其文本"
     },
     {
-     "paragraphs": [
-      "P1 示例段落：以家庭常见物品为主，具体清单待内容团队定稿。"
-     ],
-     "title": "准备什么",
-     "type": "prepare"
+      "id": "chunjie",
+      "title": "春节",
+      "category": [
+        "festival"
+      ],
+      "dateRule": {
+        "lunar": {
+          "month": 1,
+          "day": 1,
+          "leap": "nonLeap",
+          "dayFallback": "lastDay"
+        }
+      },
+      "regionalDates": null,
+      "teaser": "一年之始，团圆守岁，拜年纳福。",
+      "sections": [
+        {
+          "type": "intro",
+          "title": "这是什么日子",
+          "paragraphs": [
+            "春节是农历正月初一，传统上从除夕延续到元宵。核心是家庭团聚、辞旧迎新，常见守岁、拜年、贴春联、发红包等习俗。"
+          ]
+        },
+        {
+          "type": "customs",
+          "title": "传统习俗（记述）",
+          "paragraphs": [
+            "年夜饭、守岁、拜年、红包、贴春联、放鞭炮（依当地规定）；各地食俗不同，如饺子、年糕、汤圆、鱼等。本文只作民俗记述。"
+          ]
+        },
+        {
+          "type": "notes",
+          "title": "说明",
+          "paragraphs": [
+            "走亲访友注意作息与饮酒适度；遵守当地烟花爆竹燃放规定。内容为文化说明。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "title": "維基百科·春節",
+          "note": "https://zh.wikipedia.org/wiki/春節 · 访问日期 2026-11-14 · 文章级参考"
+        },
+        {
+          "kind": "reference",
+          "title": "維基百科·年夜飯",
+          "note": "https://zh.wikipedia.org/wiki/年夜飯 · 访问日期 2026-11-14 · 文章级参考"
+        }
+      ],
+      "license": "original",
+      "version": 1,
+      "reviewStatus": "approved",
+      "hero": {
+        "path": "/events/chunjie/images/hero.webp",
+        "status": "pending-design",
+        "alt": "春节节气/节令主视觉",
+        "aspect": "16:9",
+        "maxBytes": 122880
+      },
+      "unlockOffset": 10,
+      "licenseNote": "正文为 PM 原创文化说明；引用页面仅作事实核对参考（维基百科 CC BY-SA / 机构页面），不复用其文本"
     },
     {
-     "paragraphs": [
-      "P1 示例段落：本节仅作民俗文化记述，不提供明火/焚化操作细则。"
-     ],
-     "title": "传统做法（记述）",
-     "type": "steps"
+      "id": "zhongqiu",
+      "title": "中秋",
+      "category": [
+        "festival"
+      ],
+      "dateRule": {
+        "lunar": {
+          "month": 8,
+          "day": 15,
+          "leap": "nonLeap",
+          "dayFallback": "lastDay"
+        }
+      },
+      "regionalDates": null,
+      "teaser": "月满人圆，赏月吃月饼，把想念说给家人。",
+      "sections": [
+        {
+          "type": "intro",
+          "title": "这是什么日子",
+          "paragraphs": [
+            "中秋节在农历八月十五，传统上以月圆象征团圆。常见习俗有赏月、吃月饼、提灯笼、家人聚餐，部分地区有拜月、舞火龙等民俗。"
+          ]
+        },
+        {
+          "type": "customs",
+          "title": "传统习俗（记述）",
+          "paragraphs": [
+            "月饼有广式、苏式、京式等不同风味；各地还有柚子、芋头、桂花酒等节令食物。本文只作民俗文化记述。"
+          ]
+        },
+        {
+          "type": "notes",
+          "title": "说明",
+          "paragraphs": [
+            "月饼与节令食品注意适量；夜间赏月注意安全。内容为文化说明，不作吉凶判断。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "title": "維基百科·中秋節",
+          "note": "https://zh.wikipedia.org/wiki/中秋節 · 访问日期 2026-11-14 · 文章级参考"
+        },
+        {
+          "kind": "reference",
+          "title": "維基百科·月餅",
+          "note": "https://zh.wikipedia.org/wiki/月餅 · 访问日期 2026-11-14 · 文章级参考"
+        }
+      ],
+      "license": "original",
+      "version": 1,
+      "reviewStatus": "approved",
+      "hero": {
+        "path": "/events/zhongqiu/images/hero.webp",
+        "status": "pending-design",
+        "alt": "中秋节气/节令主视觉",
+        "aspect": "16:9",
+        "maxBytes": 122880
+      },
+      "unlockOffset": 10,
+      "licenseNote": "正文为 PM 原创文化说明；引用页面仅作事实核对参考（维基百科 CC BY-SA / 机构页面），不复用其文本"
     },
     {
-     "paragraphs": [
-      "请遵守当地消防与环保规定；不在禁火区域使用明火。"
-     ],
-     "title": "安全与环保",
-     "type": "safety"
+      "id": "xiayuan",
+      "title": "下元节",
+      "category": [
+        "tao",
+        "festival"
+      ],
+      "dateRule": {
+        "lunar": {
+          "month": 10,
+          "day": 15,
+          "leap": "nonLeap",
+          "dayFallback": "lastDay"
+        }
+      },
+      "regionalDates": null,
+      "teaser": "下元节：农历十月十五的传统信仰民俗。",
+      "sections": [
+        {
+          "type": "intro",
+          "title": "这是什么日子",
+          "paragraphs": [
+            "下元节在农历十月十五，是传统道历中的三元节之一。民间有祭水官、解厄、修斋等旧俗；这些属于传统信仰民俗说法，并非客观效果，各地做法不同。"
+          ]
+        },
+        {
+          "type": "customs",
+          "title": "传统习俗（记述）",
+          "paragraphs": [
+            "旧俗包括祭水官、祈福、解厄等传统信仰活动；这些属于传统信仰民俗说法，并非客观效果。本文只作民俗文化记述，不涉及宗教劝诱，也不作吉凶预测。"
+          ]
+        },
+        {
+          "type": "notes",
+          "title": "说明",
+          "paragraphs": [
+            "如参与相关民俗活动，请尊重当地习俗与公共安全规定；内容仅作文化了解。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "title": "維基百科·下元節",
+          "note": "https://zh.wikipedia.org/wiki/下元節 · 访问日期 2026-11-14 · 文章级参考"
+        },
+        {
+          "kind": "reference",
+          "title": "維基百科·道教",
+          "note": "https://zh.wikipedia.org/wiki/道教 · 访问日期 2026-11-14 · 文章级参考"
+        }
+      ],
+      "license": "original",
+      "version": 1,
+      "reviewStatus": "approved",
+      "hero": {
+        "path": "/events/xiayuan/images/hero.webp",
+        "status": "pending-design",
+        "alt": "下元节节气/节令主视觉",
+        "aspect": "16:9",
+        "maxBytes": 122880
+      },
+      "unlockOffset": 10,
+      "licenseNote": "正文为 PM 原创文化说明；引用页面仅作事实核对参考（维基百科 CC BY-SA / 机构页面），不复用其文本"
     },
     {
-     "paragraphs": [
-      "各地做法不同，此处为常见做法记述；不涉及宗教场所与教职人员。"
-     ],
-     "title": "说明",
-     "type": "notes"
-    }
-   ],
-   "sources": [
-    {
-     "kind": "reference",
-     "note": "非最终内容；P2 由内容团队接入",
-     "title": "P1 示例正文（占位）"
-    }
-   ],
-   "teaser": "一年里送灶神上天的日子",
-   "title": "谢灶",
-   "version": 0
-  },
-  {
-   "category": [
-    "festival",
-    "solar_term",
-    "ancestor"
-   ],
-   "dateRule": {
-    "solarTerm": {
-     "term": "清明"
-    }
-   },
-   "id": "qingming",
-   "license": "original",
-   "sections": [
-    {
-     "paragraphs": [
-      "P1 示例段落：清明既是节气，也是祭祖与踏青的传统节日。"
-     ],
-     "title": "这是什么日子",
-     "type": "intro"
+      "id": "zhongyuan",
+      "title": "中元节",
+      "category": [
+        "tao",
+        "festival",
+        "ancestor"
+      ],
+      "dateRule": {
+        "lunar": {
+          "month": 7,
+          "day": 15,
+          "leap": "nonLeap",
+          "dayFallback": "lastDay"
+        }
+      },
+      "regionalDates": null,
+      "teaser": "中元祭祖追思，传统民俗节日，重在慎终追远。",
+      "sections": [
+        {
+          "type": "intro",
+          "title": "这是什么日子",
+          "paragraphs": [
+            "中元节在农历七月十五，民间又称七月半。传统上有祭祖、追思、放河灯等习俗，各地形式不同，核心是纪念先人与家族记忆。"
+          ]
+        },
+        {
+          "type": "customs",
+          "title": "传统习俗（记述）",
+          "paragraphs": [
+            "常见做法包括祭祖、供奉、放河灯、焚香烧纸（依当地规定）；本文只作民俗文化记述，不涉及宗教劝诱。"
+          ]
+        },
+        {
+          "type": "safety",
+          "title": "安全与环保",
+          "paragraphs": [
+            "焚香烧纸请遵守当地消防与环保规定，提倡鲜花、网络等无烟祭扫；注意水域与夜间安全。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "title": "維基百科·中元節",
+          "note": "https://zh.wikipedia.org/wiki/中元節 · 访问日期 2026-11-14 · 文章级参考"
+        },
+        {
+          "kind": "reference",
+          "title": "維基百科·祭祖",
+          "note": "https://zh.wikipedia.org/wiki/祭祖 · 访问日期 2026-11-14 · 文章级参考"
+        }
+      ],
+      "license": "original",
+      "version": 1,
+      "reviewStatus": "approved",
+      "hero": {
+        "path": "/events/zhongyuan/images/hero.webp",
+        "status": "pending-design",
+        "alt": "中元节节气/节令主视觉",
+        "aspect": "16:9",
+        "maxBytes": 122880
+      },
+      "unlockOffset": 10,
+      "licenseNote": "正文为 PM 原创文化说明；引用页面仅作事实核对参考（维基百科 CC BY-SA / 机构页面），不复用其文本"
     },
     {
-     "paragraphs": [
-      "P1 示例段落：祭扫与踏青的传统做法记述，具体内容待内容团队定稿。"
-     ],
-     "title": "传统做法（记述）",
-     "type": "steps"
+      "id": "laba",
+      "title": "腊八",
+      "category": [
+        "buddhist",
+        "festival"
+      ],
+      "dateRule": {
+        "lunar": {
+          "month": 12,
+          "day": 8,
+          "leap": "nonLeap",
+          "dayFallback": "lastDay"
+        }
+      },
+      "regionalDates": null,
+      "teaser": "腊八喝粥，年味渐起，也是传统佛成道日。",
+      "sections": [
+        {
+          "type": "intro",
+          "title": "这是什么日子",
+          "paragraphs": [
+            "腊八节在农历十二月初八。民间有喝腊八粥、泡腊八蒜等习俗；传统上也是佛教的佛成道日，相关记载属宗教文化知识，本文仅作文化说明。"
+          ]
+        },
+        {
+          "type": "customs",
+          "title": "传统习俗（记述）",
+          "paragraphs": [
+            "腊八粥常以米、豆、枣、果仁等熬制，各地配方不同；部分地区有腊八蒜、腊八面等食俗。本文只作民俗记述，不涉及宗教劝诱。"
+          ]
+        },
+        {
+          "type": "notes",
+          "title": "说明",
+          "paragraphs": [
+            "腊八粥食材可按家庭习惯搭配；注意糖分与过敏原。内容为文化说明。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "title": "維基百科·臘八節",
+          "note": "https://zh.wikipedia.org/wiki/臘八節 · 访问日期 2026-11-14 · 文章级参考"
+        },
+        {
+          "kind": "reference",
+          "title": "維基百科·臘八粥",
+          "note": "https://zh.wikipedia.org/wiki/臘八粥 · 访问日期 2026-11-14 · 文章级参考"
+        }
+      ],
+      "license": "original",
+      "version": 1,
+      "reviewStatus": "approved",
+      "hero": {
+        "path": "/events/laba/images/hero.webp",
+        "status": "pending-design",
+        "alt": "腊八节气/节令主视觉",
+        "aspect": "16:9",
+        "maxBytes": 122880
+      },
+      "unlockOffset": 10,
+      "licenseNote": "正文为 PM 原创文化说明；引用页面仅作事实核对参考（维基百科 CC BY-SA / 机构页面），不复用其文本"
     },
     {
-     "paragraphs": [
-      "焚香烧纸请遵守墓园与防火规定；提倡无痕祭扫。"
-     ],
-     "title": "安全与环保",
-     "type": "safety"
+      "id": "yulanpen",
+      "title": "盂兰盆",
+      "category": [
+        "buddhist",
+        "festival",
+        "ancestor"
+      ],
+      "dateRule": {
+        "lunar": {
+          "month": 7,
+          "day": 15,
+          "leap": "nonLeap",
+          "dayFallback": "lastDay"
+        }
+      },
+      "regionalDates": null,
+      "teaser": "盂兰盆供僧报亲恩，传统佛教节日，重在孝亲。",
+      "sections": [
+        {
+          "type": "intro",
+          "title": "这是什么日子",
+          "paragraphs": [
+            "盂兰盆节在农历七月十五，是佛教传统节日之一，核心意涵为孝亲、报恩与追思。相关经典与仪式属宗教文化知识，本文仅作文化说明，不涉及宗教劝诱。"
+          ]
+        },
+        {
+          "type": "customs",
+          "title": "传统习俗（记述）",
+          "paragraphs": [
+            "佛教传统中有供僧、诵经等仪式；地方民俗中常见放河灯、祭祖等形式。两者来源不同，本文并列记述，不混同。"
+          ]
+        },
+        {
+          "type": "notes",
+          "title": "说明",
+          "paragraphs": [
+            "如参与寺院活动，请遵守场所规定；内容仅作文化了解，不作吉凶预测。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "title": "維基百科·盂蘭盆節",
+          "note": "https://zh.wikipedia.org/wiki/盂蘭盆節 · 访问日期 2026-11-14 · 文章级参考"
+        },
+        {
+          "kind": "reference",
+          "title": "維基百科·目連救母",
+          "note": "https://zh.wikipedia.org/wiki/目連救母 · 访问日期 2026-11-14 · 文章级参考"
+        }
+      ],
+      "license": "original",
+      "version": 1,
+      "reviewStatus": "approved",
+      "hero": {
+        "path": "/events/yulanpen/images/hero.webp",
+        "status": "pending-design",
+        "alt": "盂兰盆节气/节令主视觉",
+        "aspect": "16:9",
+        "maxBytes": 122880
+      },
+      "unlockOffset": 10,
+      "licenseNote": "正文为 PM 原创文化说明；引用页面仅作事实核对参考（维基百科 CC BY-SA / 机构页面），不复用其文本"
     },
     {
-     "paragraphs": [
-      "只讲民俗文化，不做吉凶判断。"
-     ],
-     "title": "说明",
-     "type": "notes"
-    }
-   ],
-   "sources": [
-    {
-     "kind": "reference",
-     "note": "非最终内容；P2 由内容团队接入",
-     "title": "P1 示例正文（占位）"
-    }
-   ],
-   "teaser": "扫墓祭祖、踏青的日子",
-   "title": "清明",
-   "version": 0
-  },
-  {
-   "category": [
-    "festival"
-   ],
-   "dateRule": {
-    "lastDayOfLunarMonth": {
-     "month": 12
-    }
-   },
-   "id": "chuxi",
-   "license": "original",
-   "sections": [
-    {
-     "paragraphs": [
-      "P1 示例段落：除夕是农历腊月的最后一天（可能是廿九或三十）。"
-     ],
-     "title": "这是什么日子",
-     "type": "intro"
+      "id": "xiezao",
+      "title": "谢灶",
+      "category": [
+        "festival",
+        "ritual"
+      ],
+      "dateRule": {
+        "lunar": {
+          "month": 12,
+          "day": 23,
+          "leap": "nonLeap",
+          "dayFallback": "lastDay"
+        }
+      },
+      "regionalDates": [
+        {
+          "id": "north",
+          "label": "常见做法 · 北方腊月廿三",
+          "dateRule": {
+            "lunar": {
+              "month": 12,
+              "day": 23,
+              "leap": "nonLeap",
+              "dayFallback": "lastDay"
+            }
+          }
+        },
+        {
+          "id": "south",
+          "label": "常见做法 · 南方腊月廿四",
+          "dateRule": {
+            "lunar": {
+              "month": 12,
+              "day": 24,
+              "leap": "nonLeap",
+              "dayFallback": "lastDay"
+            }
+          }
+        }
+      ],
+      "teaser": "送灶神上天言好事，南北日期不同，扫尘迎新年。",
+      "sections": [
+        {
+          "type": "intro",
+          "title": "这是什么日子",
+          "paragraphs": [
+            "谢灶是农历年末的家庭年俗，多在腊月廿三或廿四，民间又称小年。核心是打扫厨房、送灶、准备过年，南北日期与做法不同。"
+          ]
+        },
+        {
+          "type": "prepare",
+          "title": "准备什么",
+          "paragraphs": [
+            "常见准备包括清扫厨房与灶台、备糖瓜或甜食、整理年货；以家庭习惯与当地习俗为准。南北日期仅为常见说法，并非穷尽。"
+          ]
+        },
+        {
+          "type": "steps",
+          "title": "传统做法（记述）",
+          "paragraphs": [
+            "常见流程为清扫厨房、摆供、送灶、吃糖瓜；本文只作民俗文化记述，不提供明火或焚化操作细则。"
+          ]
+        },
+        {
+          "type": "safety",
+          "title": "安全与环保",
+          "paragraphs": [
+            "厨房清扫注意用电用气安全；如使用明火或焚香，请遵守当地消防与环保规定，不在禁火区域使用明火。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "title": "維基百科·祭灶節",
+          "note": "https://zh.wikipedia.org/wiki/祭灶節 · 访问日期 2026-11-14 · 文章级参考"
+        },
+        {
+          "kind": "reference",
+          "title": "維基百科·小年",
+          "note": "https://zh.wikipedia.org/wiki/小年 · 访问日期 2026-11-14 · 文章级参考"
+        }
+      ],
+      "license": "original",
+      "version": 1,
+      "reviewStatus": "approved",
+      "hero": {
+        "path": "/events/xiezao/images/hero.webp",
+        "status": "pending-design",
+        "alt": "谢灶节气/节令主视觉",
+        "aspect": "16:9",
+        "maxBytes": 122880
+      },
+      "unlockOffset": 10,
+      "licenseNote": "正文为 PM 原创文化说明；引用页面仅作事实核对参考（维基百科 CC BY-SA / 机构页面），不复用其文本"
     },
     {
-     "paragraphs": [
-      "P1 示例段落：年夜饭、守岁等年俗的记述，具体内容待内容团队定稿。"
-     ],
-     "title": "传统做法（记述）",
-     "type": "steps"
+      "id": "jizu",
+      "title": "祭祖",
+      "category": [
+        "ritual",
+        "ancestor"
+      ],
+      "dateRule": {
+        "lunar": {
+          "month": 7,
+          "day": 15,
+          "leap": "nonLeap",
+          "dayFallback": "lastDay"
+        }
+      },
+      "regionalDates": [
+        {
+          "id": "qingming",
+          "label": "清明祭扫",
+          "dateRule": {
+            "solarTerm": {
+              "term": "清明"
+            }
+          }
+        },
+        {
+          "id": "zhongyuan",
+          "label": "中元祭祖",
+          "dateRule": {
+            "lunar": {
+              "month": 7,
+              "day": 15,
+              "leap": "nonLeap",
+              "dayFallback": "lastDay"
+            }
+          }
+        },
+        {
+          "id": "chuxi",
+          "label": "除夕祭祖",
+          "dateRule": {
+            "lastDayOfLunarMonth": {
+              "month": 12
+            }
+          }
+        }
+      ],
+      "teaser": "祭祖是记得来处：扫墓、供饭、说说话，安全第一。",
+      "sections": [
+        {
+          "type": "intro",
+          "title": "这是什么日子",
+          "paragraphs": [
+            "祭祖是慎终追远、表达家族记忆的传统民俗。默认按中元（农历七月十五）显示；清明、除夕等为常见地区日期，各地实际日期与形式不同。"
+          ]
+        },
+        {
+          "type": "prepare",
+          "title": "准备什么",
+          "paragraphs": [
+            "常见准备包括清扫墓地或供桌、鲜花、供品、纸钱（依当地规定）；以家庭习惯与当地习俗为准。"
+          ]
+        },
+        {
+          "type": "steps",
+          "title": "传统做法（记述）",
+          "paragraphs": [
+            "常见流程为清扫、摆供、行礼、追思、清理现场；本文只作民俗文化记述，不提供宗教仪轨指导。"
+          ]
+        },
+        {
+          "type": "safety",
+          "title": "安全与环保",
+          "paragraphs": [
+            "山林、墓园严禁违规用火；提倡鲜花祭扫、无烟祭扫；注意防火、环保与出行安全，遵守当地规定。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "title": "維基百科·祭祖",
+          "note": "https://zh.wikipedia.org/wiki/祭祖 · 访问日期 2026-11-14 · 文章级参考"
+        },
+        {
+          "kind": "reference",
+          "title": "維基百科·中元節",
+          "note": "https://zh.wikipedia.org/wiki/中元節 · 访问日期 2026-11-14 · 文章级参考"
+        }
+      ],
+      "license": "original",
+      "version": 1,
+      "reviewStatus": "approved",
+      "hero": {
+        "path": "/events/jizu/images/hero.webp",
+        "status": "pending-design",
+        "alt": "祭祖节气/节令主视觉",
+        "aspect": "16:9",
+        "maxBytes": 122880
+      },
+      "unlockOffset": 10,
+      "licenseNote": "正文为 PM 原创文化说明；引用页面仅作事实核对参考（维基百科 CC BY-SA / 机构页面），不复用其文本"
     },
     {
-     "paragraphs": [
-      "遵守当地烟花爆竹禁放规定；注意用火用电与饮酒安全。"
-     ],
-     "title": "安全与环保",
-     "type": "safety"
+      "id": "shangsi",
+      "title": "上巳节",
+      "category": [
+        "festival"
+      ],
+      "dateRule": {
+        "lunar": {
+          "month": 3,
+          "day": 3,
+          "leap": "nonLeap",
+          "dayFallback": "lastDay"
+        }
+      },
+      "regionalDates": null,
+      "teaser": "上巳三月三，临水祓禊、春游踏青的传统节日。",
+      "sections": [
+        {
+          "type": "intro",
+          "title": "这是什么日子",
+          "paragraphs": [
+            "上巳节在农历三月初三，古时有临水祓禊、踏青游春的习俗，部分地区至今保留相关民俗活动。本文只作民俗文化说明。"
+          ]
+        },
+        {
+          "type": "customs",
+          "title": "传统习俗（记述）",
+          "paragraphs": [
+            "旧俗包括临水祓禊、春游、佩兰、吃荠菜花煮蛋；各地做法不同，本文只作文化记述。"
+          ]
+        },
+        {
+          "type": "notes",
+          "title": "说明",
+          "paragraphs": [
+            "如参与春游踏青，请注意天气与出行安全；内容为文化说明，不作吉凶判断。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "title": "維基百科·上巳節",
+          "note": "https://zh.wikipedia.org/wiki/上巳節 · 访问日期 2026-11-14 · 文章级参考"
+        },
+        {
+          "kind": "reference",
+          "title": "維基百科·祓禊",
+          "note": "https://zh.wikipedia.org/wiki/祓禊 · 访问日期 2026-11-14 · 文章级参考"
+        }
+      ],
+      "license": "original",
+      "version": 1,
+      "reviewStatus": "approved",
+      "hero": {
+        "path": "/events/shangsi/images/hero.webp",
+        "status": "pending-design",
+        "alt": "上巳节节气/节令主视觉",
+        "aspect": "16:9",
+        "maxBytes": 122880
+      },
+      "unlockOffset": 10,
+      "licenseNote": "正文为 PM 原创文化说明；引用页面仅作事实核对参考（维基百科 CC BY-SA / 机构页面），不复用其文本"
     },
     {
-     "paragraphs": [
-      "各地做法不同，此处为常见做法记述。"
-     ],
-     "title": "说明",
-     "type": "notes"
+      "id": "chongyang",
+      "title": "重阳节",
+      "category": [
+        "festival"
+      ],
+      "dateRule": {
+        "lunar": {
+          "month": 9,
+          "day": 9,
+          "leap": "nonLeap",
+          "dayFallback": "lastDay"
+        }
+      },
+      "regionalDates": null,
+      "teaser": "重阳九月九，登高敬老、菊花文化。",
+      "sections": [
+        {
+          "type": "intro",
+          "title": "这是什么日子",
+          "paragraphs": [
+            "重阳节在农历九月初九，又称重九。传统上有登高、菊花、敬老、饮菊花酒等习俗，现代更强调敬老爱老。本文只作民俗文化说明。"
+          ]
+        },
+        {
+          "type": "customs",
+          "title": "传统习俗（记述）",
+          "paragraphs": [
+            "常见习俗包括登高、菊花文化、敬老慰问、吃重阳糕；各地做法不同，本文只作文化记述。"
+          ]
+        },
+        {
+          "type": "notes",
+          "title": "说明",
+          "paragraphs": [
+            "登高与秋游注意天气、体力和出行安全；内容为文化说明，不作吉凶判断。"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "kind": "reference",
+          "title": "維基百科·重陽節",
+          "note": "https://zh.wikipedia.org/wiki/重陽節 · 访问日期 2026-11-14 · 文章级参考"
+        },
+        {
+          "kind": "reference",
+          "title": "維基百科·菊花",
+          "note": "https://zh.wikipedia.org/wiki/菊花 · 访问日期 2026-11-14 · 文章级参考"
+        }
+      ],
+      "license": "original",
+      "version": 1,
+      "reviewStatus": "approved",
+      "hero": {
+        "path": "/events/chongyang/images/hero.webp",
+        "status": "pending-design",
+        "alt": "重阳节节气/节令主视觉",
+        "aspect": "16:9",
+        "maxBytes": 122880
+      },
+      "unlockOffset": 10,
+      "licenseNote": "正文为 PM 原创文化说明；引用页面仅作事实核对参考（维基百科 CC BY-SA / 机构页面），不复用其文本"
     }
-   ],
-   "sources": [
-    {
-     "kind": "reference",
-     "note": "非最终内容；P2 由内容团队接入",
-     "title": "P1 示例正文（占位）"
-    }
-   ],
-   "teaser": "一年最后一天，守岁迎新",
-   "title": "除夕",
-   "version": 0
-  },
-  {
-   "category": [
-    "festival",
-    "solar_term"
-   ],
-   "dateRule": {
-    "solarTerm": {
-     "term": "冬至"
-    }
-   },
-   "id": "dongzhi",
-   "license": "original",
-   "sections": [
-    {
-     "paragraphs": [
-      "P1 示例段落：冬至既是节气，也是传统节日，民间有“冬至大如年”的说法。"
-     ],
-     "title": "这是什么日子",
-     "type": "intro"
-    },
-    {
-     "paragraphs": [
-      "P1 示例段落：各地有吃饺子、汤圆等不同食俗，具体内容待内容团队定稿。"
-     ],
-     "title": "传统做法（记述）",
-     "type": "steps"
-    },
-    {
-     "paragraphs": [
-      "只讲民俗文化，不做吉凶判断。"
-     ],
-     "title": "说明",
-     "type": "notes"
-    }
-   ],
-   "sources": [
-    {
-     "kind": "reference",
-     "note": "非最终内容；P2 由内容团队接入",
-     "title": "P1 示例正文（占位）"
-    }
-   ],
-   "teaser": "冬至大如年，一年里夜最长的一天",
-   "title": "冬至",
-   "version": 0
-  }
- ]
+  ]
 }
