@@ -9,6 +9,7 @@ enum ContentCatalog {
         var items: [ContentItem]
         var approvedIDs: Set<String>
         var source: String
+        var version: Int? = nil
     }
 
     static let result: LoadResult = load()
@@ -43,7 +44,9 @@ enum ContentCatalog {
         }
         guard !items.isEmpty else { return nil }
         let approved = Set(items.filter { isApproved($0) }.map { $0.id })
-        return LoadResult(items: items, approvedIDs: approved, source: "events.json")
+        let version: Int?
+        if let env = try? JSONDecoder().decode(Envelope.self, from: data) { version = env.version } else { version = nil }
+        return LoadResult(items: items, approvedIDs: approved, source: "events.json", version: version)
     }
 
     private struct Envelope: Decodable {

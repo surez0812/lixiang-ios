@@ -44,10 +44,27 @@ final class ContentCatalogTests: XCTestCase {
         XCTAssertTrue(ContentCatalog.isApproved(item(id: "ok", version: 1, review: "approved")))
     }
 
-    func testBundledResourceIsEnvelopeAndDraftGated() {
+    func testBundledResourceIsApproved12() {
         let r = ContentCatalog.load()
         XCTAssertEqual(r.source, "events.json")
-        XCTAssertEqual(r.items.count, 4, "当前资源为 4 条示例；PM 12 条 JSON 可直接替换 envelope")
-        XCTAssertTrue(r.approvedIDs.isEmpty, "示例/未标 approved 不得作为正式正文")
+        XCTAssertEqual(r.version, 1, "envelope version 必须为 1")
+        XCTAssertEqual(r.items.count, 12, "已批准接入 12 条岁时内容")
+        XCTAssertEqual(r.approvedIDs.count, 12, "12/12 approved")
+        XCTAssertEqual(Set(r.items.map(\.id)), r.approvedIDs, "approvedIDs 应覆盖全部条目")
+    }
+
+    func testDraftAndMissingReviewStatusStayPending() throws {
+        // 保留门禁：draft/缺失 reviewStatus 不进入 approved，详情仍 pending
+        let items = [item(id: "draft", version: 1, review: "draft"),
+                     item(id: "missing", version: 1, review: nil),
+                     item(id: "ok", version: 1, review: "approved")]
+        struct Env: Encodable { let version = 1; let items: [ContentItem] }
+        let data = try JSONEncoder().encode(Env(items: items))
+        let r = try XCTUnwrap(ContentCatalog.parse(data))
+        XCTAssertEqual(r.approvedIDs, ["ok"], "draft/缺失不得进入可读正文")
+        XCTAssertFalse(ContentCatalog.isApproved(item(id: "draft", version: 1, review: "draft")))
+        XCTAssertFalse(ContentCatalog.isApproved(item(id: "missing", version: 1, review: nil)))
+        XCTAssertTrue(ContentCatalog.isApproved(item(id: "ok", version: 1, review: "approved")))
+        XCTAssertEqual(r.version, 1)
     }
 }
