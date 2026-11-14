@@ -11,7 +11,8 @@ enum R14HomeLayoutMode: Equatable {
 
     static func mode(width: CGFloat, height: CGFloat, forceCompact: Bool = false) -> R14HomeLayoutMode {
         if forceCompact { return .compact }
-        if width >= 744 { return .wide }
+        // iPad 竖屏（1032×1376）必须单列；仅横屏两栏
+        if width >= 744 && width > height { return .wide }
         if width >= 480 && width > height { return .compact }
         return .standard
     }
@@ -42,7 +43,7 @@ struct R14HomeScreen: View {
                     HStack(alignment: .top, spacing: 16) {
                         VStack(alignment: .leading, spacing: 14) { hero; toolsRow }
                         VStack(alignment: .leading, spacing: 14) { almanacCard; monthCard }
-                    }.padding(.horizontal, 24).padding(.top, 20).padding(.bottom, 120)
+                    }.padding(.horizontal, 20).padding(.top, 24).padding(.bottom, 120)
                 } else if layoutMode == .compact {
                     // Home duo-closed-landscape compact：左 Hero+tools，右黄历+月历（保留底部 Tab 规则）
                     ScrollView(showsIndicators: false) {

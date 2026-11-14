@@ -14,9 +14,15 @@ final class HomeLayoutModeTests: XCTestCase {
         XCTAssertEqual(R14HomeLayoutMode.mode(width: 479, height: 320), .standard)
     }
 
-    func testWideIPadUsesWide() {
-        XCTAssertEqual(R14HomeLayoutMode.mode(width: 744, height: 1024), .wide)
+    func testWideIPadLandscapeUsesWide() {
         XCTAssertEqual(R14HomeLayoutMode.mode(width: 1024, height: 768), .wide)
+        XCTAssertEqual(R14HomeLayoutMode.mode(width: 1376, height: 1032), .wide)
+        XCTAssertEqual(R14HomeLayoutMode.mode(width: 744, height: 500), .wide)
+    }
+
+    func testIPadPortraitStaysSingleColumn() {
+        XCTAssertEqual(R14HomeLayoutMode.mode(width: 1032, height: 1376), .standard)
+        XCTAssertEqual(R14HomeLayoutMode.mode(width: 744, height: 1024), .standard)
     }
 
     func testDebugForceOnly() {
