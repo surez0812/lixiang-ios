@@ -204,7 +204,8 @@ struct R14FolkloreDetailScreen: View {
                 VStack(alignment: .leading, spacing: 0) {
                     header(row)
                     if row.isReadable {
-                        Image("winter").resizable().scaledToFill().frame(height: 220).clipped()
+                        R14ContentHero.image(for: row.item.id).resizable().scaledToFill().frame(height: 220).clipped()
+                            .accessibilityLabel(Text(R14ContentHero.accessibilityLabel(for: row.item.id)))
                             .overlay(LinearGradient(colors: [.clear, .black.opacity(0.12)], startPoint: .top, endPoint: .bottom))
                         if isPlaceholder {
                             contentPendingCard
