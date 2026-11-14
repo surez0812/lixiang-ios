@@ -94,18 +94,6 @@ extension View {
     }
 }
 
-// 兼容 Text/Image 直接链式调用（这些位置由外层 View 的 Dynamic Type 语义字阶覆盖不完整，
-// 后续 M-1 收尾时统一改为容器级语义字阶；此处保证可编译并保留原字号）。
-extension Text {
-    func d1Font(_ size: CGFloat, weight: Font.Weight = .regular) -> Text {
-        font(.system(size: size, weight: weight))
-    }
-    func d1SerifFont(_ size: CGFloat, weight: Font.Weight = .regular) -> Text {
-        font(D1Typography.serifFont(size: size, weight: weight))
-    }
-}
-
-
 /// 楷体（Kaiti SC）：R2-rich 大日期/quote 专用；上限 1.2×
 struct D1KaitiModifier: ViewModifier {
     @ScaledMetric private var scaled: CGFloat
