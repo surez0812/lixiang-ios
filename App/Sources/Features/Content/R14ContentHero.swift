@@ -30,6 +30,15 @@ enum R14ContentHero {
 
     static var ids: [String] { mapping.keys.sorted() }
 
+    /// DEBUG：强制无 hero，用于 fallback winter 运行时截图（不影响生产）。
+    static var forceMissing: Bool {
+        #if DEBUG
+        ProcessInfo.processInfo.arguments.contains("-LixiangForceMissingHero")
+        #else
+        false
+        #endif
+    }
+
     static func alt(for id: String, language: String = "zh") -> String? {
         guard let meta = mapping[id] else { return nil }
         return language.hasPrefix("en") ? meta.altEN : meta.altZH
@@ -37,7 +46,8 @@ enum R14ContentHero {
 
     static func assetName(for id: String) -> String? { mapping[id]?.assetName }
 
-    static func uiImage(for id: String, bundle: Bundle = .main) -> UIImage? {
+    static func uiImage(for id: String, bundle: Bundle = .main, forceMissing: Bool? = nil) -> UIImage? {
+        if forceMissing ?? R14ContentHero.forceMissing { return nil }
         guard let meta = mapping[id] else { return nil }
         if let cached = cache.object(forKey: id as NSString) { return cached }
         let candidates: [URL?] = [

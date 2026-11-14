@@ -28,6 +28,13 @@ final class ContentHeroTests: XCTestCase {
         }
     }
 
+    func testForceMissingReturnsNilForAnyID() throws {
+        for id in R14ContentHero.ids {
+            XCTAssertNil(R14ContentHero.uiImage(for: id, forceMissing: true), "\(id) forced missing 应返回 nil")
+        }
+        XCTAssertFalse(R14ContentHero.forceMissing, "正常运行不得处于 forced missing")
+    }
+
     func testMissingHeroFallsBackToWinter() {
         XCTAssertNil(R14ContentHero.uiImage(for: "not-a-content-id"))
         XCTAssertNil(R14ContentHero.alt(for: "not-a-content-id"))
