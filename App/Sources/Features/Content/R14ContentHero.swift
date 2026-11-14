@@ -62,13 +62,25 @@ enum R14ContentHero {
         return image
     }
 
-    /// fallback：缺失/解码失败时回退 Home 冬季插画，不出现空图。
-    static func image(for id: String, bundle: Bundle = .main) -> Image {
-        if let ui = uiImage(for: id, bundle: bundle) { return Image(uiImage: ui) }
-        return Image(fallbackAsset)
+    static let fallbackLabel = "岁时插画"
+
+    struct ResolvedHero {
+        let image: Image
+        let label: String
+        let isFallback: Bool
     }
 
-    static func accessibilityLabel(for id: String, language: String = "zh") -> String {
-        alt(for: id, language: language) ?? "岁时插画"
+    /// 图片与 accessibility label 一起解析：只有图片成功才用原 alt；fallback 时用中性 label。
+    static func resolve(for id: String, bundle: Bundle = .main, forceMissing: Bool? = nil,
+                        language: String = "zh") -> ResolvedHero {
+        if let ui = uiImage(for: id, bundle: bundle, forceMissing: forceMissing) {
+            return ResolvedHero(image: Image(uiImage: ui), label: alt(for: id, language: language) ?? fallbackLabel, isFallback: false)
+        }
+        return ResolvedHero(image: Image(fallbackAsset), label: fallbackLabel, isFallback: true)
+    }
+
+    /// fallback：缺失/解码失败时回退 Home 冬季插画，不出现空图。
+    static func image(for id: String, bundle: Bundle = .main) -> Image {
+        resolve(for: id, bundle: bundle).image
     }
 }

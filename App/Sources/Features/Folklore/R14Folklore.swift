@@ -204,18 +204,19 @@ struct R14FolkloreDetailScreen: View {
                 VStack(alignment: .leading, spacing: 0) {
                     header(row)
                     if row.isReadable {
+                        let hero = R14ContentHero.resolve(for: row.item.id)
                         // 宽度派生 16:9 容器（不固定 220 裁切）；fill 只裁边不拉伸
                         Color.clear
                             .aspectRatio(16.0 / 9.0, contentMode: .fit)
                             .overlay {
-                                R14ContentHero.image(for: row.item.id)
+                                hero.image
                                     .resizable()
                                     .scaledToFill()
                             }
                             .clipped()
                             .overlay(LinearGradient(colors: [.clear, .black.opacity(0.12)], startPoint: .top, endPoint: .bottom))
                             .accessibilityElement(children: .ignore)
-                            .accessibilityLabel(Text(R14ContentHero.accessibilityLabel(for: row.item.id)))
+                            .accessibilityLabel(Text(hero.label))
                         if isPlaceholder {
                             contentPendingCard
                         } else {

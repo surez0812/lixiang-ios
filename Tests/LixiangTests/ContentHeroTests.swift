@@ -15,7 +15,7 @@ final class ContentHeroTests: XCTestCase {
             let en = R14ContentHero.alt(for: id, language: "en")
             XCTAssertNotNil(zh); XCTAssertFalse(zh!.isEmpty, "\(id) zh alt 为空")
             XCTAssertNotNil(en); XCTAssertFalse(en!.isEmpty, "\(id) en alt 为空")
-            XCTAssertFalse(R14ContentHero.accessibilityLabel(for: id).isEmpty)
+            XCTAssertFalse(R14ContentHero.resolve(for: id).label.isEmpty)
         }
     }
 
@@ -38,9 +38,27 @@ final class ContentHeroTests: XCTestCase {
     func testMissingHeroFallsBackToWinter() {
         XCTAssertNil(R14ContentHero.uiImage(for: "not-a-content-id"))
         XCTAssertNil(R14ContentHero.alt(for: "not-a-content-id"))
-        XCTAssertEqual(R14ContentHero.accessibilityLabel(for: "not-a-content-id"), "岁时插画")
-        // Image 不崩溃且使用 winter fallback（类型无法直接断言，覆盖分支）
-        _ = R14ContentHero.image(for: "not-a-content-id")
+        let r = R14ContentHero.resolve(for: "not-a-content-id")
+        XCTAssertTrue(r.isFallback)
+        XCTAssertEqual(r.label, R14ContentHero.fallbackLabel)
+        _ = r.image
+    }
+
+    func testResolvedLabelMatchesImage() {
+        // 正常 knownID：原 alt
+        for id in R14ContentHero.ids {
+            let r = R14ContentHero.resolve(for: id)
+            XCTAssertFalse(r.isFallback, "\(id) 应成功解码")
+            XCTAssertEqual(r.label, R14ContentHero.alt(for: id))
+        }
+        // knownID + forceMissing：图片 fallback → 中性 label，不得播报原 alt
+        for id in R14ContentHero.ids {
+            let r = R14ContentHero.resolve(for: id, forceMissing: true)
+            XCTAssertTrue(r.isFallback, "\(id) forced missing 应为 fallback")
+            XCTAssertEqual(r.label, R14ContentHero.fallbackLabel, "\(id) fallback 时 label 必须中性")
+        }
+        // unknown：中性
+        XCTAssertEqual(R14ContentHero.resolve(for: "unknown").label, R14ContentHero.fallbackLabel)
     }
 
     func testCacheReturnsSameImage() throws {
