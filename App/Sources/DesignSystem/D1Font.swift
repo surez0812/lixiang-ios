@@ -24,18 +24,19 @@ enum D1Typography {
         // 内置 Noto Serif SC：按 weight 选静态字面（Regular/Bold），避免 synthetic bold。
         let isBold = weight == .bold || weight == .semibold || weight == .heavy || weight == .black
         let noto = isBold ? [notoSerifBold, notoSerifRegular] : [notoSerifRegular, notoSerifBold]
+        // size 已由 @ScaledMetric 手动缩放并 cap；custom(name:size:) 会再自动缩放一次 → 用 fixedSize 避免二次缩放。
         if let name = availableFontName(from: noto) {
-            return .custom(name, size: size)
+            return .custom(name, fixedSize: size)
         }
         if let name = availableFontName(from: songtiPostScriptNames) {
-            return .custom(name, size: size).weight(weight)
+            return .custom(name, fixedSize: size)
         }
         return .system(size: size, weight: weight, design: .serif)
     }
 
     static func kaitiFont(size: CGFloat, weight: Font.Weight) -> Font {
         if let name = availableFontName(from: kaitiPostScriptNames) {
-            return .custom(name, size: size).weight(weight)
+            return .custom(name, fixedSize: size)   // 同上：避免 @ScaledMetric 与 custom 二次缩放
         }
         return .system(size: size, weight: weight, design: .serif)
     }
