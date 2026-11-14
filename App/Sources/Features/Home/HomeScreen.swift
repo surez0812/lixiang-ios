@@ -21,6 +21,7 @@ struct R14HomeScreen: View {
     @Environment(\.d1) private var theme
     @EnvironmentObject private var state: AppState
     @EnvironmentObject private var days: SelectedDayStore
+    @State private var didLogFirstContentFrame = false
     private let calendar = R14CalendarGrid()
 
     private var anniversary: String? {
@@ -49,7 +50,7 @@ struct R14HomeScreen: View {
                             VStack(alignment: .leading, spacing: 12) { compactHero; toolsRow }
                             VStack(alignment: .leading, spacing: 12) { almanacCard; monthCard }
                         }
-                        .padding(.horizontal, 12).padding(.top, 8).padding(.bottom, 120)
+                        .padding(.horizontal, 12).padding(.top, 8).padding(.bottom, 160)   // tab capsule + spacing
                     }
                 } else {
                     VStack(alignment: .leading, spacing: 14) { hero; toolsRow; almanacCard; monthCard }
@@ -58,7 +59,14 @@ struct R14HomeScreen: View {
             }
         }
         .background(ScreenBackground())
-        .onAppear { R14StartupProbe.log("home.appear") }
+        .onAppear {
+            R14StartupProbe.log("home.appear")
+            if !didLogFirstContentFrame {
+                didLogFirstContentFrame = true
+                // 下一 runloop：Home 内容已参与布局/绘制（区分 content.ready 与首帧）
+                DispatchQueue.main.async { R14StartupProbe.log("firstContentFrame") }
+            }
+        }
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -141,6 +149,7 @@ struct R14HomeScreen: View {
                 weatherCard.frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
+        .fixedSize(horizontal: false, vertical: true)   // 内容自适应，禁止在 compact 高列中被拉伸出空白
         .padding(.bottom, 2)   // + 外层 spacing 14 ≈ 16pt
     }
 
