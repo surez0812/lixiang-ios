@@ -121,19 +121,32 @@ struct R14RootView: View {
             let shortSide = min(geo.size.width, geo.size.height)
             let innerLike = shortSide >= 600
             let duoSideBar = isDuo && landscape && innerLike
+            let showBar = !hideBar && !captureMode
             Group {
                 if !days.ready {
                     R14BootLoadingView()
                 } else if duoSideBar {
-                    HStack(spacing: 0) {
-                        tabsContent
-                        if !hideBar && !captureMode { R14SideTabBar(selected: $tab).padding(.trailing, 8) }
-                    }
+                    // UI-001：页面占满内容区，侧栏浮在内容上；仅给滚动内容留出可点击余量
+                    tabsContent
+                        .safeAreaInset(edge: .trailing) {
+                            if showBar { Color.clear.frame(width: 76) }
+                        }
+                        .overlay(alignment: .trailing) {
+                            if showBar { R14SideTabBar(selected: $tab).padding(.trailing, 8) }
+                        }
                 } else {
-                    VStack(spacing: 0) {
-                        tabsContent.frame(maxWidth: .infinity, maxHeight: .infinity)
-                        if !hideBar && !captureMode { R14FloatingTabBar(selected: $tab).padding(.bottom, 6) }
-                    }
+                    // UI-001：bottom tab 胶囊 overlay 在页面上，禁止 VStack 顺序占位/全宽纯色底板
+                    tabsContent
+                        .safeAreaInset(edge: .bottom) {
+                            if showBar { Color.clear.frame(height: 84) }
+                        }
+                        .overlay(alignment: .bottom) {
+                            if showBar {
+                                R14FloatingTabBar(selected: $tab)
+                                    .padding(.bottom, 6)
+                                    .background(Color.clear)
+                            }
+                        }
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
