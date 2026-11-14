@@ -87,6 +87,7 @@
 		5666541B64687226B9A8D530 /* term-dongzhi.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6CCCA778A372D6C03FE77572 /* term-dongzhi.webp */; };
 		5969F373429316C92CA69239 /* fest-zhongyuan.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3963C7DD0A2ED364F4CA8D27 /* fest-zhongyuan.webp */; };
 		5A6C298813051CC13C5D3BC5 /* FortuneEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCA767FE8687948B8B5D0DF /* FortuneEngineTests.swift */; };
+		5AD7556669ECE620B98BEC67 /* R14HomeToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EE181E95A26E377C6576E0 /* R14HomeToolsUITests.swift */; };
 		5DC804F1EFB564515CFF5331 /* LixiangApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4253AFA341B81955B45311A4 /* LixiangApp.swift */; };
 		5FFF5FAE5E5A65AF03A97BAF /* confucian-365.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D79AB6BAEC69AAA4FFFE4 /* confucian-365.json */; };
 		640478E4BE985EC74C3EB0C3 /* term-dashu.webp in Resources */ = {isa = PBXBuildFile; fileRef = FB028ADE6C3EB4AE08D3189A /* term-dashu.webp */; };
@@ -304,6 +305,7 @@
 		532C01351F82D58E292C7182 /* SelectionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionEngine.swift; sourceTree = "<group>"; };
 		53440398036BA0EDC34D3233 /* term-lichun-light.webp */ = {isa = PBXFileReference; path = "term-lichun-light.webp"; sourceTree = "<group>"; };
 		577100ECF4EF8C4A8E8C7720 /* daily-verse-365.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "daily-verse-365.json"; sourceTree = "<group>"; };
+		57EE181E95A26E377C6576E0 /* R14HomeToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14HomeToolsUITests.swift; sourceTree = "<group>"; };
 		584E1CACF3D8664353830985 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		58F5934239AE0A120AB9897D /* NotFoundScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundScreen.swift; sourceTree = "<group>"; };
 		5AB42F14E1F9EB220E08ABBA /* term-qiufen-light.webp */ = {isa = PBXFileReference; path = "term-qiufen-light.webp"; sourceTree = "<group>"; };
@@ -478,6 +480,7 @@
 				ADAAB3BFDF1D630B7D7D5361 /* A11yOrderTests.swift */,
 				5CA2D75D50D2C9CC1E4ED5F8 /* CountdownUITests.swift */,
 				69ACB34270F6D3D4F31D791D /* R14FolkloreSourcesUITests.swift */,
+				57EE181E95A26E377C6576E0 /* R14HomeToolsUITests.swift */,
 				CBCDBA1EF72210DED08FDB80 /* R14LongCaptureUITests.swift */,
 				A08E55A1B642A7D216DBE463 /* R14MatrixUITests.swift */,
 				43D4A9F73F823EBC2C499EB8 /* R14NotifySettingsReturnUITests.swift */,
@@ -1344,6 +1347,7 @@
 				0902E2445F46B7FA0B213970 /* A11yOrderTests.swift in Sources */,
 				44E8A64DB0E88C01014E8C2C /* CountdownUITests.swift in Sources */,
 				19DBFC36BAB517758E8BF5AC /* R14FolkloreSourcesUITests.swift in Sources */,
+				5AD7556669ECE620B98BEC67 /* R14HomeToolsUITests.swift in Sources */,
 				332A5A6EDC9B0CC386194820 /* R14LongCaptureUITests.swift in Sources */,
 				35EFB6ADC5EE15C2AEFE6EDE /* R14MatrixUITests.swift in Sources */,
 				17D1A76AE2A47C652F10D350 /* R14NotifySettingsReturnUITests.swift in Sources */,

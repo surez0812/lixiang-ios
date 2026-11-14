@@ -338,3 +338,12 @@ enum R14WideProbe {
 #else
 enum R14WideProbe { static let force = false }
 #endif
+
+#if DEBUG
+/// DEBUG：强制 closed-landscape compact 布局（仅结构证据，不代表真实姿态 PASS）
+enum R14LayoutProbe {
+    static let forceCompactLandscape = ProcessInfo.processInfo.arguments.contains("-LixiangForceCompactLandscape")
+}
+#else
+enum R14LayoutProbe { static let forceCompactLandscape = false }
+#endif

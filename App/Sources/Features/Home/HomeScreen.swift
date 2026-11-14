@@ -14,16 +14,33 @@ struct R14HomeScreen: View {
         }.first
     }
 
+    private var compact: Bool {
+        #if DEBUG
+        if R14LayoutProbe.forceCompactLandscape { return true }
+        #endif
+        return false
+    }
+
     var body: some View {
         GeometryReader { geo in
+            let compact = compact
             ScrollView {
                 if geo.size.width >= 744 {
                     HStack(alignment: .top, spacing: 16) {
-                        VStack(alignment: .leading, spacing: 14) { hero; HStack(alignment: .top, spacing: 10) { fortuneCard; weatherCard } }
+                        VStack(alignment: .leading, spacing: 14) { hero; toolsRow }
                         VStack(alignment: .leading, spacing: 14) { almanacCard; monthCard }
                     }.padding(.horizontal, 24).padding(.top, 20).padding(.bottom, 120)
+                } else if compact {
+                    // Home duo-closed-landscape compact：左 Hero+tools，右黄历+月历（保留底部 Tab 规则）
+                    ScrollView(showsIndicators: false) {
+                        HStack(alignment: .top, spacing: 12) {
+                            VStack(alignment: .leading, spacing: 12) { compactHero; toolsRow }
+                            VStack(alignment: .leading, spacing: 12) { almanacCard; monthCard }
+                        }
+                        .padding(.horizontal, 12).padding(.top, 8).padding(.bottom, 120)
+                    }
                 } else {
-                    VStack(alignment: .leading, spacing: 14) { hero; HStack(alignment: .top, spacing: 10) { fortuneCard; weatherCard }; almanacCard; monthCard }
+                    VStack(alignment: .leading, spacing: 14) { hero; toolsRow; almanacCard; monthCard }
                         .padding(.horizontal, 16).padding(.vertical, 12).padding(.bottom, 150)
                 }
             }
@@ -104,16 +121,58 @@ struct R14HomeScreen: View {
         }.buttonStyle(.plain)
     }
 
-    // MARK: 双卡
+    // MARK: 双卡（等高、行对齐、内容自适应）
+    private var toolsRow: some View {
+        Grid(horizontalSpacing: 10, verticalSpacing: 0) {
+            GridRow {
+                fortuneCard.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                weatherCard.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+            }
+        }
+        .padding(.bottom, 2)   // + 外层 spacing 14 ≈ 16pt
+    }
+
+    /// Closed Landscape 紧凑 Hero（同一信息层级，图片更矮）
+    private var compactHero: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            ZStack(alignment: .topLeading) {
+                LinearGradient(colors: [Color(hex: 0xF1E3C8), Color(hex: 0xEADCC4)], startPoint: .top, endPoint: .bottom)
+                    .frame(height: 108)
+                Image("winter").resizable().scaledToFill().frame(height: 108).clipped()
+                    .overlay(LinearGradient(colors: [.clear, theme.paper.opacity(0.9), theme.paper], startPoint: .center, endPoint: .bottom))
+                if let badge = SolarTermPentad.badge(for: days.selectedDate, engine: days.engine) {
+                    Text(badge).d1Font(9, weight: .semibold).foregroundStyle(theme.cream)
+                        .padding(.horizontal, 8).padding(.vertical, 4)
+                        .background(Color.r14Red, in: Capsule()).padding(8)
+                }
+            }
+            VStack(alignment: .leading, spacing: 4) {
+                Text(verbatim: "\(days.selectedDate.year)年\(days.selectedDate.month)月\(days.selectedDate.day)日 · 星期\(days.selectedDate.weekdayChinese)")
+                    .d1SerifFont(18, weight: .semibold).foregroundStyle(theme.ink).fixedSize(horizontal: false, vertical: true)
+                Text(verbatim: "农历\(days.lunar.monthDayText) · \(days.lunar.dayGanZhi)日").d1SerifFont(11).foregroundStyle(theme.ink2)
+                LazyVGrid(columns: [GridItem(.flexible(), spacing: 8), GridItem(.flexible(), spacing: 8)], spacing: 8) {
+                    heroChip("今日岁时", days.matchedFestivals.isEmpty ? "暂无岁时" : days.matchedFestivals.prefix(2).joined(separator: " "), muted: days.matchedFestivals.isEmpty)
+                    heroChip("今日纪念", anniversary ?? "暂无纪念", muted: anniversary == nil)
+                }
+                quoteBlock.padding(.top, 2)
+            }
+            .padding(.horizontal, 12).padding(.bottom, 12)
+        }
+        .background(theme.paper)
+        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(theme.line.opacity(0.6)))
+    }
+
     private var fortuneCard: some View {
         NavigationLink(value: R14Route.fortune) {
             D1Card(padding: 12) {
                 VStack(alignment: .leading, spacing: 6) {
-                    HStack(spacing: 8) { Image("fortune-cup").resizable().scaledToFit().frame(width: 26, height: 26)
+                    HStack(spacing: 8) { Image("fortune-cup").resizable().scaledToFit().frame(width: 24, height: 24)
                         Text("每日一签").d1SerifFont(16, weight: .semibold).foregroundStyle(theme.ink) }
+                        .frame(minHeight: 28, alignment: .leading)
                     HStack { Text("静心，问今日").d1Font(11).foregroundStyle(theme.ink2); Spacer(); Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.ink3) }
                         .frame(minHeight: 44)
-                }.frame(maxWidth: .infinity, minHeight: 98, alignment: .topLeading)
+                }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
             }
         }.buttonStyle(.plain)
     }

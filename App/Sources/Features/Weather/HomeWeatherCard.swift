@@ -14,11 +14,12 @@ struct HomeWeatherCard: View {
             VStack(alignment: .leading, spacing: 6) {
                 HStack(spacing: 8) {
                     Image(systemName: icon).d1Font(22).foregroundStyle(theme.accentStrong)
-                    Text("今日天气").d1Font(14, weight: .semibold).foregroundStyle(theme.ink)
+                    Text("今日天气").d1SerifFont(16, weight: .semibold).foregroundStyle(theme.ink)
                 }
+                .frame(minHeight: 28, alignment: .leading)
                 content
             }
-            .frame(maxWidth: .infinity, minHeight: 98, alignment: .topLeading)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         }
         .onAppear {
             location.refreshAuthorization()
@@ -100,8 +101,10 @@ struct HomeWeatherCard: View {
             HStack(spacing: 6) {
                 Text("\(snap.city)\(cached ? " · 缓存" : "")").d1Font(10).foregroundStyle(theme.ink3)
                 Spacer()
-                Button("刷新") { refresh() }.d1Font(10, weight: .semibold).foregroundStyle(theme.accentStrong)
-                    .frame(minHeight: 32)
+                Button { refresh() } label: {
+                    Text("刷新").d1Font(10, weight: .semibold).foregroundStyle(theme.accentStrong)
+                        .frame(minHeight: 44).contentShape(Rectangle())
+                }
             }
         case .failed(let message):
             action("重试") { refresh() }
@@ -115,10 +118,13 @@ struct HomeWeatherCard: View {
     }
 
     private func action(_ title: String, _ run: @escaping () -> Void) -> some View {
-        Button(title, action: run)
-            .d1Font(11, weight: .semibold).foregroundStyle(theme.ink)
-            .frame(maxWidth: .infinity, minHeight: 44)
-            .overlay(RoundedRectangle(cornerRadius: 22).strokeBorder(theme.line, lineWidth: 1))
+        Button(action: run) {
+            Text(title)
+                .d1Font(11, weight: .semibold).foregroundStyle(theme.ink)
+                .frame(maxWidth: .infinity, minHeight: 44)
+                .contentShape(Rectangle())
+        }
+        .overlay(RoundedRectangle(cornerRadius: 22).strokeBorder(theme.line, lineWidth: 1))
     }
 
     private var icon: String {
