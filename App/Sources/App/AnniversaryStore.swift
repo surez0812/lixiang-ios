@@ -55,6 +55,15 @@ final class AnniversaryStore: ObservableObject {
             Anniversary(title: "出行", calendar: .gregorian, month: 11, day: 20, repeatRule: .yearly,
                         reminderEnabled: false, icon: "airplane")
         ]
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("-LixiangSeedReminderOff") {
+            items = items.map { item in
+                var copy = item
+                copy.reminderEnabled = false
+                return copy
+            }
+        }
+        #endif
         save()
     }
 }

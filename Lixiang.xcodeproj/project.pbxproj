@@ -122,6 +122,7 @@
 		B553048E5509D06909019C20 /* term-dahan-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = A02AE7595C6928AE7720E1A8 /* term-dahan-dark.webp */; };
 		B668AB8E6D28CB01980E620D /* yi-ji-mapping.json in Resources */ = {isa = PBXBuildFile; fileRef = A4C31060949F18440152CA0C /* yi-ji-mapping.json */; };
 		B66B7CB3C24367AD7205410A /* seal-round-01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B78B618C8DAEDD12A50EF74 /* seal-round-01@2x.png */; };
+		B90D70590417BFCA6CAD7DF5 /* R14ReminderIntentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806D3851C2EC25B1AC3D69F /* R14ReminderIntentUITests.swift */; };
 		B91E2D5AB652E725E77AD375 /* R14PlaceholderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050E981F9B0FFBAB3B2E4DC9 /* R14PlaceholderPage.swift */; };
 		B97C788C0AF0893919684B9C /* DailyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620EC16815DD68A5B7540C0 /* DailyScreen.swift */; };
 		BB440E10DE36EC032893B9CB /* SeasonalArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06490BB1018DF2765D0E79A8 /* SeasonalArt.swift */; };
@@ -217,6 +218,7 @@
 		1EAB5A46223FEE61B2436B89 /* term-bailu-dark.webp */ = {isa = PBXFileReference; path = "term-bailu-dark.webp"; sourceTree = "<group>"; };
 		1FD38CFAD18DCF9C80D198F2 /* term-xiaohan-light.webp */ = {isa = PBXFileReference; path = "term-xiaohan-light.webp"; sourceTree = "<group>"; };
 		23223E2D5C2083126F80B9B8 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		2806D3851C2EC25B1AC3D69F /* R14ReminderIntentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14ReminderIntentUITests.swift; sourceTree = "<group>"; };
 		2A4978AAFCA6560B6F952E90 /* seal-round-01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seal-round-01@3x.png"; sourceTree = "<group>"; };
 		2BAE11DD178421748CB1455E /* daily-classics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "daily-classics"; path = "App/Resources/daily-classics"; sourceTree = SOURCE_ROOT; };
 		2E444FF645AE7F3A22E391DD /* support.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = support.md; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 				CBCDBA1EF72210DED08FDB80 /* R14LongCaptureUITests.swift */,
 				A08E55A1B642A7D216DBE463 /* R14MatrixUITests.swift */,
 				43D4A9F73F823EBC2C499EB8 /* R14NotifySettingsReturnUITests.swift */,
+				2806D3851C2EC25B1AC3D69F /* R14ReminderIntentUITests.swift */,
 				F7AFE3737C095E0827C301ED /* R14StateCaptureUITests.swift */,
 			);
 			path = LixiangUITests;
@@ -1165,6 +1168,7 @@
 				332A5A6EDC9B0CC386194820 /* R14LongCaptureUITests.swift in Sources */,
 				35EFB6ADC5EE15C2AEFE6EDE /* R14MatrixUITests.swift in Sources */,
 				17D1A76AE2A47C652F10D350 /* R14NotifySettingsReturnUITests.swift in Sources */,
+				B90D70590417BFCA6CAD7DF5 /* R14ReminderIntentUITests.swift in Sources */,
 				F8A3B3033A8CBE207E014050 /* R14StateCaptureUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

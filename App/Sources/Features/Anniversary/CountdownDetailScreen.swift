@@ -79,7 +79,7 @@ struct CountdownDetailScreen: View {
                     }
                 }
                 if ProcessInfo.processInfo.arguments.contains(where: { $0.hasPrefix("-LixiangNotify") }) {
-                    Text("notify.status=\(notify.debugStatusText) toggle=\(effectiveReminder ? 1 : 0)")
+                    Text("notify.status=\(notify.debugStatusText) toggle=\(effectiveReminder ? 1 : 0) item=\(current.reminderEnabled ? 1 : 0)")
                         .d1Font(10, weight: .semibold)
                         .foregroundStyle(notify.isDenied ? theme.red : theme.yiText)
                         .accessibilityIdentifier("notify.statusMarker")
