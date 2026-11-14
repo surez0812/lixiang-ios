@@ -20,6 +20,22 @@ enum D1Typography {
         candidates.first { UIFont(name: $0, size: 17) != nil }
     }
 
+    /// DEBUG 强制定位 fallback（禁用 Noto/Songti），用于 fallback 视觉证据。
+    static var forceSerifFallback: Bool {
+        #if DEBUG
+        ProcessInfo.processInfo.arguments.contains("-LixiangForceSerifFallback")
+        #else
+        false
+        #endif
+    }
+
+    static var serifStrategy: String {
+        if forceSerifFallback { return "system-serif-forced" }
+        if availableFontName(from: [notoSerifRegular]) != nil { return "NotoSerifCJKsc-fixedSize" }
+        if availableFontName(from: songtiPostScriptNames) != nil { return "Songti-fixedSize" }
+        return "system-serif-fallback"
+    }
+
     static func serifFont(size: CGFloat, weight: Font.Weight) -> Font {
         // 内置 Noto Serif SC：按 weight 选静态字面（Regular/Bold），避免 synthetic bold。
         let isBold = weight == .bold || weight == .semibold || weight == .heavy || weight == .black
@@ -28,14 +44,14 @@ enum D1Typography {
         if let name = availableFontName(from: noto) {
             return .custom(name, fixedSize: size)
         }
-        if let name = availableFontName(from: songtiPostScriptNames) {
+        if !forceSerifFallback, let name = availableFontName(from: songtiPostScriptNames) {
             return .custom(name, fixedSize: size)
         }
         return .system(size: size, weight: weight, design: .serif)
     }
 
     static func kaitiFont(size: CGFloat, weight: Font.Weight) -> Font {
-        if let name = availableFontName(from: kaitiPostScriptNames) {
+        if !forceSerifFallback, let name = availableFontName(from: kaitiPostScriptNames) {
             return .custom(name, fixedSize: size)   // 同上：避免 @ScaledMetric 与 custom 二次缩放
         }
         return .system(size: size, weight: weight, design: .serif)

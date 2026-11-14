@@ -140,6 +140,7 @@ struct R14RootView: View {
             .onAppear {
                 #if DEBUG
                 let scene = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.first
+                print("LXFONT serifStrategy=\(D1Typography.serifStrategy) forceFallback=\(D1Typography.forceSerifFallback)")
                 print("LXDROOT isDuo=\(isDuo) landscape=\(landscape) shortSide=\(Int(shortSide)) innerLike=\(innerLike) native=\(UIScreen.main.nativeBounds.size) scene=\(scene?.screen.bounds.size ?? .zero) geo=\(geo.size.width)x\(geo.size.height) canvas=\(canvas.rawValue) rail=\(duoSideBar)")
                 #endif
             }

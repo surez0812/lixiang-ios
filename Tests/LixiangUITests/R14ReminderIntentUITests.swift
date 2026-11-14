@@ -62,6 +62,37 @@ final class R14ReminderIntentUITests: XCTestCase {
         shot("reminder-intent-relaunch-persisted")
     }
 
+    /// 1→0 关闭持久化：seed reminder on → 断言 1 → 手动关 → 断言 0 → 重启无 seed 仍 0
+    func testManualDisablePersistsAcrossRelaunch() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-LixiangTab", "3", "-LixiangR14Route", "countdownDetail",
+                               "-LixiangSeedCountdown", "1", "-LixiangNotifyAuthorized"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 30))
+        let toggle = app.switches["notify.toggle"]
+        XCTAssertTrue(toggle.waitForExistence(timeout: 40))
+        let onMarker = app.staticTexts.matching(NSPredicate(format: "label CONTAINS 'toggle=1' AND label CONTAINS 'item=1'")).firstMatch
+        XCTAssertTrue(onMarker.waitForExistence(timeout: 20), "初始应为 ON（seed reminderOn）")
+        XCTAssertEqual(toggle.value as? String, "1")
+        shot("reminder-intent-disable-start-on")
+
+        toggle.tap()   // 1 → 0，用户明确关闭
+        let offMarker = app.staticTexts.matching(NSPredicate(format: "label CONTAINS 'toggle=0' AND label CONTAINS 'item=0'")).firstMatch
+        XCTAssertTrue(offMarker.waitForExistence(timeout: 10), "手动关闭后应立即持久化 item=0")
+        XCTAssertEqual(toggle.value as? String, "0")
+        shot("reminder-intent-disabled")
+
+        // 重启（不 seed，读磁盘）
+        app.terminate()
+        app.launchArguments = ["-LixiangTab", "3", "-LixiangR14Route", "countdownDetail", "-LixiangNotifyAuthorized"]
+        app.launch()
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 30))
+        let persistedOff = app.staticTexts.matching(NSPredicate(format: "label CONTAINS 'toggle=0' AND label CONTAINS 'item=0'")).firstMatch
+        XCTAssertTrue(persistedOff.waitForExistence(timeout: 30), "重启后仍应为 item=0")
+        XCTAssertEqual(app.switches["notify.toggle"].value as? String, "0")
+        shot("reminder-intent-relaunch-off-persisted")
+    }
+
     func testAuthorizedDoesNotOverrideSeededReminderOff() throws {
         let app = XCUIApplication()
         app.launchArguments = ["-LixiangTab", "3", "-LixiangR14Route", "countdownDetail",
