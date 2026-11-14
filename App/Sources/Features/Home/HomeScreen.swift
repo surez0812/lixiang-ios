@@ -125,8 +125,8 @@ struct R14HomeScreen: View {
     private var toolsRow: some View {
         Grid(horizontalSpacing: 10, verticalSpacing: 0) {
             GridRow {
-                fortuneCard.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                weatherCard.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                fortuneCard.frame(maxWidth: .infinity, maxHeight: .infinity)
+                weatherCard.frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
         .padding(.bottom, 2)   // + 外层 spacing 14 ≈ 16pt
@@ -165,16 +165,25 @@ struct R14HomeScreen: View {
 
     private var fortuneCard: some View {
         NavigationLink(value: R14Route.fortune) {
-            D1Card(padding: 12) {
-                VStack(alignment: .leading, spacing: 6) {
-                    HStack(spacing: 8) { Image("fortune-cup").resizable().scaledToFit().frame(width: 24, height: 24)
-                        Text("每日一签").d1SerifFont(16, weight: .semibold).foregroundStyle(theme.ink) }
-                        .frame(minHeight: 28, alignment: .leading)
-                    HStack { Text("静心，问今日").d1Font(11).foregroundStyle(theme.ink2); Spacer(); Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.ink3) }
-                        .frame(minHeight: 44)
-                }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+            D1Card(padding: 8) {
+                VStack(spacing: 2) {
+                    HStack(spacing: 8) {
+                        Image("fortune-cup").resizable().scaledToFit().frame(width: 22, height: 22)
+                        Text("每日一签").d1SerifFont(14, weight: .semibold).foregroundStyle(theme.ink)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    HStack(spacing: 4) {
+                        Text("静心，问今日").d1Font(11).foregroundStyle(theme.ink2)
+                        Image(systemName: "chevron.right").d1Font(9).foregroundStyle(theme.ink3)
+                    }
+                    .frame(maxWidth: .infinity, minHeight: 44, alignment: .center)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             }
-        }.buttonStyle(.plain)
+        }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("home.tool.fortune")
+        .buttonStyle(.plain)
     }
     private var weatherCard: some View { HomeWeatherCard() }
 
@@ -203,7 +212,10 @@ struct R14HomeScreen: View {
             .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
             .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line.opacity(0.6)))
             .padding(.bottom, 8)
-        }.buttonStyle(.plain)
+        }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("home.card.almanac")
+        .buttonStyle(.plain)
     }
 
     private func largeYiJi(_ label: String, _ items: [String], color: Color) -> some View {

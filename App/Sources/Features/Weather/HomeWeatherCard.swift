@@ -10,17 +10,19 @@ struct HomeWeatherCard: View {
     @State private var forcedState: String? = nil
 
     var body: some View {
-        D1Card(padding: 12) {
-            VStack(alignment: .leading, spacing: 6) {
+        D1Card(padding: 8) {
+            VStack(spacing: 2) {
                 HStack(spacing: 8) {
-                    Image(systemName: icon).d1Font(22).foregroundStyle(theme.accentStrong)
-                    Text("今日天气").d1SerifFont(16, weight: .semibold).foregroundStyle(theme.ink)
+                    Image(systemName: icon).d1Font(22).foregroundStyle(theme.accentStrong).frame(width: 22, height: 22)
+                    Text("今日天气").d1SerifFont(14, weight: .semibold).foregroundStyle(theme.ink)
                 }
-                .frame(minHeight: 28, alignment: .leading)
+                .frame(maxWidth: .infinity, alignment: .center)
                 content
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("home.tool.weather")
         .onAppear {
             location.refreshAuthorization()
             #if DEBUG
@@ -45,13 +47,13 @@ struct HomeWeatherCard: View {
             switch forcedState {
             case "locating":
                 HStack(spacing: 8) { ProgressView().controlSize(.small); Text("定位中…").d1Font(11).foregroundStyle(theme.ink2) }
-                    .frame(maxWidth: .infinity, minHeight: 44)
+                    .frame(maxWidth: .infinity, minHeight: 44, alignment: .center)
             case "denied", "restricted":
                 action("去设置开启") { if let url = URL(string: UIApplication.openSettingsURLString) { openURL(url) } }
-                Text("定位未开启，不影响其他功能").d1Font(10).foregroundStyle(theme.ink3)
+                Text("定位未开启，不影响其他功能").d1Font(10).foregroundStyle(theme.ink3).multilineTextAlignment(.center).frame(maxWidth: .infinity, alignment: .center)
             case "failed":
                 action("重新定位") { location.requestLocation() }
-                Text("定位失败，请重试或检查系统设置。").d1Font(10).foregroundStyle(theme.ink3).lineLimit(2)
+                Text("定位失败，请重试或检查系统设置。").d1Font(10).foregroundStyle(theme.ink3).lineLimit(2).multilineTextAlignment(.center).frame(maxWidth: .infinity, alignment: .center)
             case "loaded":
                 weatherBody
             default:
@@ -73,14 +75,14 @@ struct HomeWeatherCard: View {
             action("去设置开启") {
                 if let url = URL(string: UIApplication.openSettingsURLString) { openURL(url) }
             }
-            Text("定位未开启，不影响其他功能").d1Font(10).foregroundStyle(theme.ink3)
+            Text("定位未开启，不影响其他功能").d1Font(10).foregroundStyle(theme.ink3).multilineTextAlignment(.center).frame(maxWidth: .infinity, alignment: .center)
         case .authorized:
             if location.locating {
                 HStack(spacing: 8) { ProgressView().controlSize(.small); Text("定位中…").d1Font(11).foregroundStyle(theme.ink2) }
-                    .frame(maxWidth: .infinity, minHeight: 44)
+                    .frame(maxWidth: .infinity, minHeight: 44, alignment: .center)
             } else if let error = location.locationError {
                 action("重新定位") { location.requestLocation() }
-                Text(error).d1Font(10).foregroundStyle(theme.ink3).lineLimit(2)
+                Text(error).d1Font(10).foregroundStyle(theme.ink3).lineLimit(2).multilineTextAlignment(.center).frame(maxWidth: .infinity, alignment: .center)
             } else {
                 weatherBody
             }
@@ -91,7 +93,7 @@ struct HomeWeatherCard: View {
         switch service.state {
         case .idle, .loading:
             HStack(spacing: 8) { ProgressView().controlSize(.small); Text("天气加载中…").d1Font(11).foregroundStyle(theme.ink2) }
-                .frame(maxWidth: .infinity, minHeight: 44)
+                .frame(maxWidth: .infinity, minHeight: 44, alignment: .center)
         case .loaded(let snap, let cached):
             HStack(alignment: .firstTextBaseline, spacing: 6) {
                 Text("\(Int(snap.temperature.rounded()))°").d1SerifFont(26).foregroundStyle(theme.ink)
@@ -108,7 +110,7 @@ struct HomeWeatherCard: View {
             }
         case .failed(let message):
             action("重试") { refresh() }
-            Text(message).d1Font(10).foregroundStyle(theme.ink3).lineLimit(2)
+            Text(message).d1Font(10).foregroundStyle(theme.ink3).lineLimit(2).multilineTextAlignment(.center).frame(maxWidth: .infinity, alignment: .center)
         }
     }
 
