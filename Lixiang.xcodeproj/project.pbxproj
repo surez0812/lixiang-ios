@@ -27,6 +27,7 @@
 		17D1A76AE2A47C652F10D350 /* R14NotifySettingsReturnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D4A9F73F823EBC2C499EB8 /* R14NotifySettingsReturnUITests.swift */; };
 		17EB0408610F8B6DF3E188D1 /* AlmanacTermSemanticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78BD13F4B2267A8B87B91D9 /* AlmanacTermSemanticTests.swift */; };
 		17F1D38D07CDE3049419239E /* R14RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC233A3E5955B8F6BB809A7 /* R14RootView.swift */; };
+		19DBFC36BAB517758E8BF5AC /* R14FolkloreSourcesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ACB34270F6D3D4F31D791D /* R14FolkloreSourcesUITests.swift */; };
 		1A1E4569802C9C82B49DCD50 /* CompassScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E3D415B91FC17BB2DC101 /* CompassScreen.swift */; };
 		1A36718274792A26F1C632C8 /* LegacyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7407A833BE0DB0371BD5A3FF /* LegacyRoute.swift */; };
 		1C3E44270BD730F9387A2EB0 /* term-lichun-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = AD13A95C89E26C3DDB673171 /* term-lichun-dark.webp */; };
@@ -262,6 +263,7 @@
 		66274F8F8CC6405B34C0B2B3 /* term-hanlu-dark.webp */ = {isa = PBXFileReference; path = "term-hanlu-dark.webp"; sourceTree = "<group>"; };
 		687253ACB0BDCBD36126D15B /* HeadingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingProvider.swift; sourceTree = "<group>"; };
 		68C53940B804042FB239F5C4 /* verse-sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "verse-sample.json"; sourceTree = "<group>"; };
+		69ACB34270F6D3D4F31D791D /* R14FolkloreSourcesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14FolkloreSourcesUITests.swift; sourceTree = "<group>"; };
 		69CA72858D41F13FE75567AF /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		6BA7F1CFC0ABE2C986E68A4C /* term-lidong-dark.webp */ = {isa = PBXFileReference; path = "term-lidong-dark.webp"; sourceTree = "<group>"; };
 		6D5FAB3FD05EDDE5ACAA2B79 /* SourceLicenseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLicenseScreen.swift; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 			children = (
 				ADAAB3BFDF1D630B7D7D5361 /* A11yOrderTests.swift */,
 				5CA2D75D50D2C9CC1E4ED5F8 /* CountdownUITests.swift */,
+				69ACB34270F6D3D4F31D791D /* R14FolkloreSourcesUITests.swift */,
 				CBCDBA1EF72210DED08FDB80 /* R14LongCaptureUITests.swift */,
 				A08E55A1B642A7D216DBE463 /* R14MatrixUITests.swift */,
 				43D4A9F73F823EBC2C499EB8 /* R14NotifySettingsReturnUITests.swift */,
@@ -1169,6 +1172,7 @@
 			files = (
 				0902E2445F46B7FA0B213970 /* A11yOrderTests.swift in Sources */,
 				44E8A64DB0E88C01014E8C2C /* CountdownUITests.swift in Sources */,
+				19DBFC36BAB517758E8BF5AC /* R14FolkloreSourcesUITests.swift in Sources */,
 				332A5A6EDC9B0CC386194820 /* R14LongCaptureUITests.swift in Sources */,
 				35EFB6ADC5EE15C2AEFE6EDE /* R14MatrixUITests.swift in Sources */,
 				17D1A76AE2A47C652F10D350 /* R14NotifySettingsReturnUITests.swift in Sources */,
