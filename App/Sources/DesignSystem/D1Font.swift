@@ -29,25 +29,34 @@ enum D1Typography {
         #endif
     }
 
-    static var serifStrategy: String {
-        if forceSerifFallback { return "system-serif-forced" }
-        if availableFontName(from: [notoSerifRegular]) != nil { return "NotoSerifCJKsc-fixedSize" }
-        if availableFontName(from: songtiPostScriptNames) != nil { return "Songti-fixedSize" }
-        return "system-serif-fallback"
-    }
-
-    static func serifFont(size: CGFloat, weight: Font.Weight) -> Font {
-        // 内置 Noto Serif SC：按 weight 选静态字面（Regular/Bold），避免 synthetic bold。
+    /// 实际 serif 字体解析（可注入 forceFallback，便于测试断言真实选择）。
+    static func serifFontName(weight: Font.Weight, forceFallback: Bool) -> String? {
+        if forceFallback { return nil }
         let isBold = weight == .bold || weight == .semibold || weight == .heavy || weight == .black
         let noto = isBold ? [notoSerifBold, notoSerifRegular] : [notoSerifRegular, notoSerifBold]
-        // size 已由 @ScaledMetric 手动缩放并 cap；custom(name:size:) 会再自动缩放一次 → 用 fixedSize 避免二次缩放。
-        if let name = availableFontName(from: noto) {
-            return .custom(name, fixedSize: size)
+        if let name = availableFontName(from: noto) { return name }
+        return availableFontName(from: songtiPostScriptNames)
+    }
+
+    static func serifStrategy(forceFallback: Bool) -> String {
+        guard let name = serifFontName(weight: .regular, forceFallback: forceFallback) else {
+            return forceFallback ? "system-serif-forced" : "system-serif-fallback"
         }
-        if !forceSerifFallback, let name = availableFontName(from: songtiPostScriptNames) {
+        return name.hasPrefix("NotoSerif") ? "NotoSerifCJKsc-fixedSize" : "Songti-fixedSize"
+    }
+
+    static var serifStrategy: String { serifStrategy(forceFallback: forceSerifFallback) }
+
+    static func serifFont(size: CGFloat, weight: Font.Weight, forceFallback: Bool) -> Font {
+        // size 已由 @ScaledMetric 手动缩放并 cap；custom(name:size:) 会再自动缩放一次 → 用 fixedSize 避免二次缩放。
+        if let name = serifFontName(weight: weight, forceFallback: forceFallback) {
             return .custom(name, fixedSize: size)
         }
         return .system(size: size, weight: weight, design: .serif)
+    }
+
+    static func serifFont(size: CGFloat, weight: Font.Weight) -> Font {
+        serifFont(size: size, weight: weight, forceFallback: forceSerifFallback)
     }
 
     static func kaitiFont(size: CGFloat, weight: Font.Weight) -> Font {
@@ -62,7 +71,7 @@ enum D1Typography {
             .filter { $0.localizedCaseInsensitiveContains("songti") || $0.localizedCaseInsensitiveContains("kaiti") || $0.localizedCaseInsensitiveContains("kai") }
             .sorted()
         let lines = families.map { fam in "\(fam): \(UIFont.fontNames(forFamilyName: fam).joined(separator: ","))" }
-        let chosen = availableFontName(from: [notoSerifRegular]) ?? availableFontName(from: songtiPostScriptNames) ?? "fallback:system-serif"
+        let chosen = serifFontName(weight: .regular, forceFallback: forceSerifFallback) ?? "fallback:system-serif"
         return "D1Typography fonts\n" + lines.joined(separator: "\n") + "\nnoto_serif=\(UIFont(name: notoSerifRegular, size: 17) != nil)\nsongti_chosen=\(chosen)"
     }
 }

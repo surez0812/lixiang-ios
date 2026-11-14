@@ -11,5 +11,13 @@ final class FontAvailabilityTests: XCTestCase {
         XCTAssertTrue(report.contains("noto_serif=true"), "字体报告应显示 Noto Serif 可用")
         XCTAssertEqual(D1Typography.serifStrategy, "NotoSerifCJKsc-fixedSize", "实际应加载 Noto Serif 且 fixedSize 路径")
         XCTAssertFalse(D1Typography.forceSerifFallback)
+
+        // forced fallback：实际字体解析必须为 nil → 使用 system serif（不只断言 strategy）
+        XCTAssertNil(D1Typography.serifFontName(weight: .regular, forceFallback: true))
+        XCTAssertEqual(D1Typography.serifStrategy(forceFallback: true), "system-serif-forced")
+        let forcedFont = D1Typography.serifFont(size: 17, weight: .regular, forceFallback: true)
+        XCTAssertEqual(forcedFont, .system(size: 17, weight: .regular, design: .serif), "forced 时实际 Font 必须为 system serif")
+        XCTAssertNotNil(D1Typography.serifFontName(weight: .regular, forceFallback: false), "正常时应有实际自定义字体")
+        XCTAssertEqual(D1Typography.serifStrategy(forceFallback: false), "NotoSerifCJKsc-fixedSize")
     }
 }
