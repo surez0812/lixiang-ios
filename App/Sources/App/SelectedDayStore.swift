@@ -22,6 +22,9 @@ final class SelectedDayStore: ObservableObject {
     @Published private(set) var hourIndex: Int?
     @Published private(set) var ready: Bool
     private var cachedAlmanac: AlmanacDay?
+    /// 代际 token：select 时自增；prepare 的 detached 结果只在代际/日期未变时写回。
+    private var generation = 0
+    private var prepareInFlight = false
 
     /// 惰性黄历：deferCompute 启动时不在 init 主线程重算；首次访问才计算。
     var almanac: AlmanacDay {
@@ -58,8 +61,11 @@ final class SelectedDayStore: ObservableObject {
 
     /// 冷启动：后台准备黄历/时辰/岁时，避免 Duo 首帧白屏；完成后 ready=true。
     func prepare() async {
-        guard !ready else { return }
+        guard !ready, !prepareInFlight else { return }
+        prepareInFlight = true
+        defer { prepareInFlight = false }
         let date = selectedDate
+        let gen = generation
         let hour = hourProvider()
         let engine = self.engine
         R14StartupProbe.log("prepare.start")
@@ -70,6 +76,10 @@ final class SelectedDayStore: ObservableObject {
             R14StartupProbe.log("prepare.engineAlmanac", String(format: "%.0fms", (ProcessInfo.processInfo.systemUptime - t) * 1000))
             return almanac
         }.value
+        guard selectedDate == date, generation == gen else {
+            R14StartupProbe.log("prepare.discardedStale", "date=\(date.month)-\(date.day) gen=\(gen)")
+            return
+        }
         // 预热月历 42 格的黄历元数据（后台），避免首帧主线程 42×engine.almanac 卡顿
         let prewarmStart = ProcessInfo.processInfo.systemUptime
         let dates = Self.monthGridDates(for: date)
@@ -77,6 +87,10 @@ final class SelectedDayStore: ObservableObject {
         let metas = await Task.detached(priority: .userInitiated) { () -> [(LocalDate, AlmanacDay)] in
             dates.map { d in (d, engineForPrewarm.almanac(d, hour: 12)) }
         }.value
+        guard selectedDate == date, generation == gen else {
+            R14StartupProbe.log("prepare.discardedStale", "phase=prewarm")
+            return
+        }
         for (d, a) in metas {
             metaCache[d] = DayMeta(lunarMonthDay: a.lunar.monthDayText, solarTerm: a.solarTerm, festivals: a.festivals)
         }
@@ -84,18 +98,19 @@ final class SelectedDayStore: ObservableObject {
         festivals = a.festivals
         hourIndex = a.currentHourIndex
         R14StartupProbe.log("prepare.done", String(format: "%.0fms prewarm=%.0fms", (ProcessInfo.processInfo.systemUptime - started) * 1000, (ProcessInfo.processInfo.systemUptime - prewarmStart) * 1000))
-        guard selectedDate == date else { return }
         ready = true
     }
 
     /// 整组重算：一次 set 会更新 almanac/festivals/hourIndex；页面不得只改标题。
     func select(_ date: LocalDate) {
+        generation += 1                 // 使在途 prepare 结果失效
         let hour = hourProvider()
         let a = engine.almanac(date, hour: hour)
         selectedDate = date
         cachedAlmanac = a
         festivals = a.festivals
         hourIndex = a.currentHourIndex
+        ready = true                    // select 已同步算出所选日，无需等旧 prepare
     }
 
     func selectToday() { select(today) }

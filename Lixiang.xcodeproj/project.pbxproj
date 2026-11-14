@@ -148,6 +148,7 @@
 		D90FC705F554FCAFD68504B4 /* AnimationTimeline.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C94CC9BA5F73D88409FE257 /* AnimationTimeline.json */; };
 		DAFC6433507532C92327196F /* R14HomeAlmanacCompassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1317B5B01E548A5917189B4 /* R14HomeAlmanacCompassTests.swift */; };
 		DB399901F304F065E3786A65 /* term-lixia-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 79A2A855655307AEE28CA382 /* term-lixia-light.webp */; };
+		DBF9B4CC98E4AD09117A6A4D /* SelectedDayPrepareRaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8419A628DB108A837BC44FB /* SelectedDayPrepareRaceTests.swift */; };
 		E05FA66FE85242F9A338E215 /* term-mangzhong-light.webp in Resources */ = {isa = PBXBuildFile; fileRef = 8E466F07982E0E749DF30BB5 /* term-mangzhong-light.webp */; };
 		E0F78DB5AC67136FD14EF194 /* MergedDayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB17E2AF5C589BEC33442D /* MergedDayCard.swift */; };
 		E15412DFF5DEED7D78DC1F05 /* NotFoundScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F5934239AE0A120AB9897D /* NotFoundScreen.swift */; };
@@ -326,6 +327,7 @@
 		C2D792603555272E28D9B5A9 /* user-terms.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "user-terms.md"; sourceTree = "<group>"; };
 		C461CA7AF0D2543A23BEB268 /* fortune-samples.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "fortune-samples.json"; sourceTree = "<group>"; };
 		C535385772329F09B4B4E2C4 /* term-guyu-light.webp */ = {isa = PBXFileReference; path = "term-guyu-light.webp"; sourceTree = "<group>"; };
+		C8419A628DB108A837BC44FB /* SelectedDayPrepareRaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDayPrepareRaceTests.swift; sourceTree = "<group>"; };
 		C9E219B0ADA5BD66F0ACF994 /* term-chushu-dark.webp */ = {isa = PBXFileReference; path = "term-chushu-dark.webp"; sourceTree = "<group>"; };
 		CBAFC1B8B1475DB7D2F2C0EF /* DailyShareExportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyShareExportTests.swift; sourceTree = "<group>"; };
 		CBCDBA1EF72210DED08FDB80 /* R14LongCaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14LongCaptureUITests.swift; sourceTree = "<group>"; };
@@ -776,6 +778,7 @@
 				0F9986AD40046BF6E176CF50 /* NotificationPermissionTests.swift */,
 				823D2F3B6B8384F538BDAF19 /* NotificationReminderIntentTests.swift */,
 				72CB69DB4CB6E4BFBB763053 /* R14SelectedDayTests.swift */,
+				C8419A628DB108A837BC44FB /* SelectedDayPrepareRaceTests.swift */,
 				ED2285EB6A83A891427ED1AF /* SelectionEngineTests.swift */,
 			);
 			path = LixiangTests;
@@ -1148,6 +1151,7 @@
 				7042D981925B6A15E52C6CA6 /* R14DuoRailTests.swift in Sources */,
 				DAFC6433507532C92327196F /* R14HomeAlmanacCompassTests.swift in Sources */,
 				3AC84F2AB6C0868251A4DCF3 /* R14SelectedDayTests.swift in Sources */,
+				DBF9B4CC98E4AD09117A6A4D /* SelectedDayPrepareRaceTests.swift in Sources */,
 				38159DBD71848FB753FF36CD /* SelectionEngineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
