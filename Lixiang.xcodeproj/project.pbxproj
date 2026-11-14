@@ -13,6 +13,7 @@
 		04BA6016FEC090D5F71A7623 /* QuoteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2588121BE27A986FD5F923 /* QuoteSheet.swift */; };
 		052ADD596E1657F8EDB1A02B /* fest-yuanxiao.webp in Resources */ = {isa = PBXBuildFile; fileRef = BAFF0DE594C0A5BACC2C6643 /* fest-yuanxiao.webp */; };
 		05C5E1385679BE460EAAFB01 /* GlossaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A10F9CC69AA2907F0A687D /* GlossaryScreen.swift */; };
+		076C8C6D77C3B6F4E44802CD /* SideRailMetricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779CB9B34652962C4CFB34E /* SideRailMetricsTests.swift */; };
 		07F0FF2F2359E04C77D5F630 /* NotificationReminderIntentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D2F3B6B8384F538BDAF19 /* NotificationReminderIntentTests.swift */; };
 		0902E2445F46B7FA0B213970 /* A11yOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAAB3BFDF1D630B7D7D5361 /* A11yOrderTests.swift */; };
 		09E70162F6FD14147FE5E059 /* zhongyuan.webp in Resources */ = {isa = PBXBuildFile; fileRef = 8C350A624D0DCAC3D92576FD /* zhongyuan.webp */; };
@@ -120,6 +121,7 @@
 		776F6261214379761CB1EF3E /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD67E5E2CFFCBF2F70AD9D /* ContentRepository.swift */; };
 		782BB8835047EA6D66DC6427 /* fest-zhongqiu.webp in Resources */ = {isa = PBXBuildFile; fileRef = F6C64221715D3C3D6D028184 /* fest-zhongqiu.webp */; };
 		79D3CA12212D0B08D65B2AF6 /* LixiangCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9DC9A4CCDA5EEBBCD58D4361 /* LixiangCalendarCore */; };
+		7C47F6C3B95752BA764C4C14 /* R14IPadLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37D34AC0B7B04A489105E55 /* R14IPadLayoutUITests.swift */; };
 		7DA206BB1E1631A86DA591B0 /* term-lixia.webp in Resources */ = {isa = PBXBuildFile; fileRef = D7DB0750AF56E8BF0F0B2A9B /* term-lixia.webp */; };
 		7E1D04E9F410BAC040786DD2 /* dao-365.json in Resources */ = {isa = PBXBuildFile; fileRef = F5090AF9BBD20E743BA7E910 /* dao-365.json */; };
 		7EAF732C3F31D501F5755CBD /* AlmanacScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B75D730AE8FA3E9F3E6772 /* AlmanacScreen.swift */; };
@@ -218,6 +220,7 @@
 		E8BCF05ACF99CE149BA62397 /* term-mangzhong-dark.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2F45670C7EBCED160EB64043 /* term-mangzhong-dark.webp */; };
 		E949A7BC96DD410B34273F97 /* FolkloreLoadStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260A417BD1E7E17DA081925 /* FolkloreLoadStateTests.swift */; };
 		EA04A8964E0121681982111E /* term-xiaohan.webp in Resources */ = {isa = PBXBuildFile; fileRef = 12536CCC2C3F02AAE7321DFC /* term-xiaohan.webp */; };
+		ECB5A0135913F0C8F939B76A /* R14IPadThreeStatesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207AA9C88748F7AEC14101E /* R14IPadThreeStatesUITests.swift */; };
 		EEBBCDC7C99A7DC33D9C188C /* DailyVerseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E35CC6BD3E4FA162178AF1 /* DailyVerseScreen.swift */; };
 		F07A61DBBD9A1D0BDD7BDB96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C64D67EB5AF32E2A27AD8D4 /* Assets.xcassets */; };
 		F27D0449ADC2C5B8F61797B3 /* shangsi.webp in Resources */ = {isa = PBXBuildFile; fileRef = 44D8B9EE759B84F04010EC3E /* shangsi.webp */; };
@@ -294,11 +297,13 @@
 		2FD6BD4029A2CD7592D87F9D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		2FD914FFECCDF37F1AC1E7A7 /* term-jingzhe-light.webp */ = {isa = PBXFileReference; path = "term-jingzhe-light.webp"; sourceTree = "<group>"; };
 		30BF5B7DAC670CF275F5EBE6 /* DailyVerseDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyVerseDetailScreen.swift; sourceTree = "<group>"; };
+		3207AA9C88748F7AEC14101E /* R14IPadThreeStatesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14IPadThreeStatesUITests.swift; sourceTree = "<group>"; };
 		32D566C65C78A240C691BAE2 /* explain-pages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "explain-pages.json"; sourceTree = "<group>"; };
 		330495F2BC88AE2B1DF83E0A /* panel-terms-v2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "panel-terms-v2.json"; sourceTree = "<group>"; };
 		33A5E29B6388FD57AFC7E148 /* quanshan-365.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "quanshan-365.json"; sourceTree = "<group>"; };
 		35E787A14C4F69CDD1A8E306 /* fest-chuxi.webp */ = {isa = PBXFileReference; path = "fest-chuxi.webp"; sourceTree = "<group>"; };
 		371FFD9BFF36EC2F0A260083 /* R14DailyLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14DailyLayoutTests.swift; sourceTree = "<group>"; };
+		3779CB9B34652962C4CFB34E /* SideRailMetricsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideRailMetricsTests.swift; sourceTree = "<group>"; };
 		389AF72D672C91DBCA828762 /* term-bailu-light.webp */ = {isa = PBXFileReference; path = "term-bailu-light.webp"; sourceTree = "<group>"; };
 		38EE93FEF6CC454B7EFD0614 /* term-bailu.webp */ = {isa = PBXFileReference; path = "term-bailu.webp"; sourceTree = "<group>"; };
 		394CECFF9A4B8BC313B10DFD /* CountdownDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownDetailScreen.swift; sourceTree = "<group>"; };
@@ -416,6 +421,7 @@
 		ADAAB3BFDF1D630B7D7D5361 /* A11yOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A11yOrderTests.swift; sourceTree = "<group>"; };
 		B0972F77CF89DEA571919AB7 /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
 		B2454E4F5B4655F7AC19948F /* fest-laba.webp */ = {isa = PBXFileReference; path = "fest-laba.webp"; sourceTree = "<group>"; };
+		B37D34AC0B7B04A489105E55 /* R14IPadLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R14IPadLayoutUITests.swift; sourceTree = "<group>"; };
 		B3A1FFC744BFDCEFCEB5EE38 /* zhongqiu.webp */ = {isa = PBXFileReference; path = zhongqiu.webp; sourceTree = "<group>"; };
 		B3E718226079E51BAABC4EC0 /* DevicePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePolicy.swift; sourceTree = "<group>"; };
 		B46683D1B299DC8E45740FF0 /* panel-terms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "panel-terms.json"; sourceTree = "<group>"; };
@@ -516,6 +522,8 @@
 				69ACB34270F6D3D4F31D791D /* R14FolkloreSourcesUITests.swift */,
 				ED983C1BB70D623669268CC8 /* R14HeroAccessibilityUITests.swift */,
 				57EE181E95A26E377C6576E0 /* R14HomeToolsUITests.swift */,
+				B37D34AC0B7B04A489105E55 /* R14IPadLayoutUITests.swift */,
+				3207AA9C88748F7AEC14101E /* R14IPadThreeStatesUITests.swift */,
 				CBCDBA1EF72210DED08FDB80 /* R14LongCaptureUITests.swift */,
 				A08E55A1B642A7D216DBE463 /* R14MatrixUITests.swift */,
 				43D4A9F73F823EBC2C499EB8 /* R14NotifySettingsReturnUITests.swift */,
@@ -963,6 +971,7 @@
 				72CB69DB4CB6E4BFBB763053 /* R14SelectedDayTests.swift */,
 				C8419A628DB108A837BC44FB /* SelectedDayPrepareRaceTests.swift */,
 				ED2285EB6A83A891427ED1AF /* SelectionEngineTests.swift */,
+				3779CB9B34652962C4CFB34E /* SideRailMetricsTests.swift */,
 			);
 			path = LixiangTests;
 			sourceTree = "<group>";
@@ -1412,6 +1421,7 @@
 				3AC84F2AB6C0868251A4DCF3 /* R14SelectedDayTests.swift in Sources */,
 				DBF9B4CC98E4AD09117A6A4D /* SelectedDayPrepareRaceTests.swift in Sources */,
 				38159DBD71848FB753FF36CD /* SelectionEngineTests.swift in Sources */,
+				076C8C6D77C3B6F4E44802CD /* SideRailMetricsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1424,6 +1434,8 @@
 				19DBFC36BAB517758E8BF5AC /* R14FolkloreSourcesUITests.swift in Sources */,
 				E0A58C87904CB45547E7C7F4 /* R14HeroAccessibilityUITests.swift in Sources */,
 				5AD7556669ECE620B98BEC67 /* R14HomeToolsUITests.swift in Sources */,
+				7C47F6C3B95752BA764C4C14 /* R14IPadLayoutUITests.swift in Sources */,
+				ECB5A0135913F0C8F939B76A /* R14IPadThreeStatesUITests.swift in Sources */,
 				332A5A6EDC9B0CC386194820 /* R14LongCaptureUITests.swift in Sources */,
 				35EFB6ADC5EE15C2AEFE6EDE /* R14MatrixUITests.swift in Sources */,
 				17D1A76AE2A47C652F10D350 /* R14NotifySettingsReturnUITests.swift in Sources */,

@@ -192,7 +192,12 @@ struct R14FolkloreDetailScreen: View {
     }
 
     var body: some View {
+        GeometryReader { geo in
+        let wide = geo.size.width >= 744 && geo.size.width > geo.size.height
         ScrollView(showsIndicators: false) {
+            if wide, load.state == .loaded, let row {
+                wideBody(row)
+            } else {
             VStack(alignment: .leading, spacing: 12) {
                 if load.state != .loaded {
                     R14FolkloreStateBanner(state: load.state, retry: { load.retry() })
@@ -204,19 +209,7 @@ struct R14FolkloreDetailScreen: View {
                 VStack(alignment: .leading, spacing: 0) {
                     header(row)
                     if row.isReadable {
-                        let hero = R14ContentHero.resolve(for: row.item.id)
-                        // 宽度派生 16:9 容器（不固定 220 裁切）；fill 只裁边不拉伸
-                        Color.clear
-                            .aspectRatio(16.0 / 9.0, contentMode: .fit)
-                            .overlay {
-                                hero.image
-                                    .resizable()
-                                    .scaledToFill()
-                            }
-                            .clipped()
-                            .overlay(LinearGradient(colors: [.clear, .black.opacity(0.12)], startPoint: .top, endPoint: .bottom))
-                            .accessibilityElement(children: .ignore)
-                            .accessibilityLabel(Text(hero.label))
+                        heroView(row)
                         if isPlaceholder {
                             contentPendingCard
                         } else {
@@ -231,6 +224,8 @@ struct R14FolkloreDetailScreen: View {
                     Text("没找到这个岁时内容。").d1Font(14).foregroundStyle(theme.ink2).padding(24)
                 }
             }
+            }
+        }
         }
         .background(ScreenBackground())
         .toolbar(.hidden, for: .navigationBar)
@@ -248,6 +243,60 @@ struct R14FolkloreDetailScreen: View {
             .foregroundStyle(theme.ink)
             .padding(.leading, 14).padding(.top, 6)
         }
+    }
+
+    /// iPad landscape：左侧 summary，右侧 hero+正文（不回退为全宽 hero）。
+    private func wideBody(_ row: FolkloreRow) -> some View {
+        HStack(alignment: .top, spacing: 20) {
+            summaryCard(row)
+                .frame(maxWidth: .infinity, alignment: .top)
+            VStack(alignment: .leading, spacing: 0) {
+                if row.isReadable {
+                    heroView(row)
+                    if isPlaceholder { contentPendingCard } else { article(row.item) }
+                } else {
+                    lockedCard(row)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .top)
+        }
+        .padding(.horizontal, 20).padding(.top, 16).padding(.bottom, 120)
+    }
+
+    private func summaryCard(_ row: FolkloreRow) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(categoryLabel(row.item.category.first)).d1Font(10).foregroundStyle(theme.ink3)
+                .padding(.horizontal, 8).padding(.vertical, 3).background(theme.soft, in: Capsule())
+            Text(row.item.title).d1SerifFont(34).foregroundStyle(theme.ink)
+            Text(row.item.teaser).d1Font(13).foregroundStyle(theme.ink2).lineSpacing(4)
+            Text(verbatim: String(format: "%d年%d月%d日", row.state.anchor.year, row.state.anchor.month, row.state.anchor.day))
+                .d1Font(12).foregroundStyle(theme.ink3)
+            HStack(spacing: 10) {
+                Text(row.state.isToday ? "今天 · 已解锁" : (row.state.state == .past ? "已过去 · 已解锁" : (row.isReadable ? "已解锁" : "还有\(row.daysUntil ?? 0)天")))
+                    .d1Font(12, weight: .semibold).foregroundStyle(theme.accentStrong)
+                Spacer()
+                Button { showShare = true } label: {
+                    Label("分享", systemImage: "square.and.arrow.up").d1Font(13, weight: .semibold)
+                }.foregroundStyle(theme.accentStrong).frame(minHeight: 44)
+            }
+            .padding(.top, 4)
+        }
+        .padding(20)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(theme.paper, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(theme.line, lineWidth: 1))
+    }
+
+    private func heroView(_ row: FolkloreRow) -> some View {
+        let hero = R14ContentHero.resolve(for: row.item.id)
+        // 宽度派生 16:9 容器（不固定 220 裁切）；fill 只裁边不拉伸
+        return Color.clear
+            .aspectRatio(16.0 / 9.0, contentMode: .fit)
+            .overlay { hero.image.resizable().scaledToFill() }
+            .clipped()
+            .overlay(LinearGradient(colors: [.clear, .black.opacity(0.12)], startPoint: .top, endPoint: .bottom))
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel(Text(hero.label))
     }
 
     private func header(_ row: FolkloreRow) -> some View {
