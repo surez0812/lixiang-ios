@@ -2,6 +2,21 @@ import SwiftUI
 import LixiangCalendarCore
 
 /// R14 首页（T3）：对照 home-phone-light / home-ipad-landscape 实现
+/// Home 响应式选择器：iPad 宽屏 / Closed Landscape compact / iPhone 竖排。
+/// 真实 Closed Landscape geo≈594×~360 → compact；不能依赖 DEBUG force。
+enum R14HomeLayoutMode: Equatable {
+    case wide
+    case compact
+    case standard
+
+    static func mode(width: CGFloat, height: CGFloat, forceCompact: Bool = false) -> R14HomeLayoutMode {
+        if forceCompact { return .compact }
+        if width >= 744 { return .wide }
+        if width >= 480 && width > height { return .compact }
+        return .standard
+    }
+}
+
 struct R14HomeScreen: View {
     @Environment(\.d1) private var theme
     @EnvironmentObject private var state: AppState
@@ -14,23 +29,20 @@ struct R14HomeScreen: View {
         }.first
     }
 
-    private var compact: Bool {
-        #if DEBUG
-        if R14LayoutProbe.forceCompactLandscape { return true }
-        #endif
-        return false
-    }
-
     var body: some View {
         GeometryReader { geo in
-            let compact = compact
+            let layoutMode = R14HomeLayoutMode.mode(
+                width: geo.size.width,
+                height: geo.size.height,
+                forceCompact: R14LayoutProbe.forceCompactLandscape
+            )
             ScrollView {
-                if geo.size.width >= 744 {
+                if layoutMode == .wide {
                     HStack(alignment: .top, spacing: 16) {
                         VStack(alignment: .leading, spacing: 14) { hero; toolsRow }
                         VStack(alignment: .leading, spacing: 14) { almanacCard; monthCard }
                     }.padding(.horizontal, 24).padding(.top, 20).padding(.bottom, 120)
-                } else if compact {
+                } else if layoutMode == .compact {
                     // Home duo-closed-landscape compact：左 Hero+tools，右黄历+月历（保留底部 Tab 规则）
                     ScrollView(showsIndicators: false) {
                         HStack(alignment: .top, spacing: 12) {
