@@ -17,3 +17,8 @@
 - 权限分支/编辑/删除/通知实际到达 **NOT RUN**。
 
 - 矩阵：188 行 32 PASS/0 FAIL/156 NOT RUN + S-01；不 merge/发布/提审。
+
+## Selection 结果 dark（补充 S-02）
+- **PASS**：`qa/evidence/portrait-states/r14-iphone-selection-results-dark.png` `fd5fdeef…`。
+- 深底可读；日期/2026 年月份/宜/忌/「看当日」完整；无千分位年份。
+- 与 light 结果列表结构一致；无新增偏差。

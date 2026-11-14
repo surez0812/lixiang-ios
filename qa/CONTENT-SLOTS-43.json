@@ -1,0 +1,394 @@
+{
+ "version": 1,
+ "count": 43,
+ "rule": "B：清明双挂；term-qingming 与 fest-qingming 各 1 坑",
+ "slots": [
+  {
+   "slug": "term-lichun",
+   "name": "立春",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(立春)",
+   "heroPromptSubject": "willow buds, thin ice, pale distant sun",
+   "contentPromptSubject": "立春：柳芽、薄冰、早春水岸"
+  },
+  {
+   "slug": "term-yushui",
+   "name": "雨水",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(雨水)",
+   "heroPromptSubject": "spring rain, wet stone path, budding branches",
+   "contentPromptSubject": "雨水：春雨、湿润石径、新芽"
+  },
+  {
+   "slug": "term-jingzhe",
+   "name": "惊蛰",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(惊蛰)",
+   "heroPromptSubject": "spring thunder, awakening insects, fresh grass",
+   "contentPromptSubject": "惊蛰：春雷、苏醒的虫、新草"
+  },
+  {
+   "slug": "term-chunfen",
+   "name": "春分",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(春分)",
+   "heroPromptSubject": "spring equinox, swallows, peach blossoms",
+   "contentPromptSubject": "春分：燕子、桃花、昼夜平分"
+  },
+  {
+   "slug": "term-qingming",
+   "name": "清明",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(清明)",
+   "heroPromptSubject": "weeping willow, misty hills, gentle rain",
+   "contentPromptSubject": "清明：垂柳、青山、细雨"
+  },
+  {
+   "slug": "term-guyu",
+   "name": "谷雨",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(谷雨)",
+   "heroPromptSubject": "grain rain, young rice shoots, drizzle",
+   "contentPromptSubject": "谷雨：秧苗、细雨、暮春"
+  },
+  {
+   "slug": "term-lixia",
+   "name": "立夏",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(立夏)",
+   "heroPromptSubject": "early summer lotus leaves, warm green",
+   "contentPromptSubject": "立夏：荷叶、初夏绿意"
+  },
+  {
+   "slug": "term-xiaoman",
+   "name": "小满",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(小满)",
+   "heroPromptSubject": "wheat field, soft sunlight",
+   "contentPromptSubject": "小满：麦田、柔和日光"
+  },
+  {
+   "slug": "term-mangzhong",
+   "name": "芒种",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(芒种)",
+   "heroPromptSubject": "rice paddies, busy green",
+   "contentPromptSubject": "芒种：水田、农忙绿意"
+  },
+  {
+   "slug": "term-xiazhi",
+   "name": "夏至",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(夏至)",
+   "heroPromptSubject": "lotus pond, strong sun shadow",
+   "contentPromptSubject": "夏至：荷塘、烈日树影"
+  },
+  {
+   "slug": "term-xiaoshu",
+   "name": "小暑",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(小暑)",
+   "heroPromptSubject": "cicada, shade, warm breeze",
+   "contentPromptSubject": "小暑：蝉鸣、树荫、暖风"
+  },
+  {
+   "slug": "term-dashu",
+   "name": "大暑",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(大暑)",
+   "heroPromptSubject": "summer sun, watermelon, deep shade",
+   "contentPromptSubject": "大暑：烈日、西瓜、浓荫"
+  },
+  {
+   "slug": "term-liqiu",
+   "name": "立秋",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(立秋)",
+   "heroPromptSubject": "falling leaves, golden light",
+   "contentPromptSubject": "立秋：落叶、金色光线"
+  },
+  {
+   "slug": "term-chushu",
+   "name": "处暑",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(处暑)",
+   "heroPromptSubject": "cool grass, evening clouds",
+   "contentPromptSubject": "处暑：凉草、晚云"
+  },
+  {
+   "slug": "term-bailu",
+   "name": "白露",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(白露)",
+   "heroPromptSubject": "dew on grass, morning mist",
+   "contentPromptSubject": "白露：草叶露水、晨雾"
+  },
+  {
+   "slug": "term-qiufen",
+   "name": "秋分",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(秋分)",
+   "heroPromptSubject": "persimmons, balanced light",
+   "contentPromptSubject": "秋分：柿子、均衡光线"
+  },
+  {
+   "slug": "term-hanlu",
+   "name": "寒露",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(寒露)",
+   "heroPromptSubject": "chrysanthemum, dew on leaves",
+   "contentPromptSubject": "寒露：菊花、叶上冷露"
+  },
+  {
+   "slug": "term-shuangjiang",
+   "name": "霜降",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(霜降)",
+   "heroPromptSubject": "red maple, frost on ground",
+   "contentPromptSubject": "霜降：红枫、地面初霜"
+  },
+  {
+   "slug": "term-lidong",
+   "name": "立冬",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(立冬)",
+   "heroPromptSubject": "bare branches, first frost, warm lantern",
+   "contentPromptSubject": "立冬：枯枝、初霜、暖灯"
+  },
+  {
+   "slug": "term-xiaoxue",
+   "name": "小雪",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(小雪)",
+   "heroPromptSubject": "light snow, grey sky, warm window",
+   "contentPromptSubject": "小雪：薄雪、灰天、暖窗"
+  },
+  {
+   "slug": "term-daxue",
+   "name": "大雪",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(大雪)",
+   "heroPromptSubject": "heavy snow, warm lamp, quiet courtyard",
+   "contentPromptSubject": "大雪：厚雪、暖灯、静院"
+  },
+  {
+   "slug": "term-dongzhi",
+   "name": "冬至",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(冬至)",
+   "heroPromptSubject": "winter solstice, dumplings, warm lantern",
+   "contentPromptSubject": "冬至：汤圆/饺子、暖灯、长夜"
+  },
+  {
+   "slug": "term-xiaohan",
+   "name": "小寒",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(小寒)",
+   "heroPromptSubject": "plum blossoms, snow patches",
+   "contentPromptSubject": "小寒：梅花、残雪"
+  },
+  {
+   "slug": "term-dahan",
+   "name": "大寒",
+   "type": "term",
+   "lunarRule": "—（节气）",
+   "dateRule": "solarTerm(大寒)",
+   "heroPromptSubject": "icy river, bare tree, cold light",
+   "contentPromptSubject": "大寒：冰河、枯树、清冷光"
+  },
+  {
+   "slug": "fest-chunjie",
+   "name": "春节",
+   "type": "festival",
+   "lunarRule": "lunar(1,1)",
+   "dateRule": "lunar(1,1)",
+   "heroPromptSubject": "red lanterns, reunion table",
+   "contentPromptSubject": "春节：红灯笼、团圆饭"
+  },
+  {
+   "slug": "fest-yuanxiao",
+   "name": "元宵",
+   "type": "festival",
+   "lunarRule": "lunar(1,15)",
+   "dateRule": "lunar(1,15)",
+   "heroPromptSubject": "round lanterns, tangyuan",
+   "contentPromptSubject": "元宵：圆灯、汤圆、灯会"
+  },
+  {
+   "slug": "fest-qingming",
+   "name": "清明",
+   "type": "festival",
+   "lunarRule": "solarTerm(清明)",
+   "dateRule": "solarTerm(清明)",
+   "heroPromptSubject": "willow, green hills, gentle rain",
+   "contentPromptSubject": "清明：垂柳、青山、细雨"
+  },
+  {
+   "slug": "fest-duanwu",
+   "name": "端午",
+   "type": "festival",
+   "lunarRule": "lunar(5,5)",
+   "dateRule": "lunar(5,5)",
+   "heroPromptSubject": "dragon boat, zongzi, mugwort",
+   "contentPromptSubject": "端午：龙舟、粽子、艾草"
+  },
+  {
+   "slug": "fest-qixi",
+   "name": "七夕",
+   "type": "festival",
+   "lunarRule": "lunar(7,7)",
+   "dateRule": "lunar(7,7)",
+   "heroPromptSubject": "magpie bridge, stars, silk ribbons",
+   "contentPromptSubject": "七夕：鹊桥、星空、丝带"
+  },
+  {
+   "slug": "fest-zhongyuan",
+   "name": "中元",
+   "type": "festival",
+   "lunarRule": "lunar(7,15)",
+   "dateRule": "lunar(7,15)",
+   "heroPromptSubject": "river lanterns, quiet water at dusk",
+   "contentPromptSubject": "中元：河灯、暮色水面"
+  },
+  {
+   "slug": "fest-zhongqiu",
+   "name": "中秋",
+   "type": "festival",
+   "lunarRule": "lunar(8,15)",
+   "dateRule": "lunar(8,15)",
+   "heroPromptSubject": "full moon, mooncakes, osmanthus",
+   "contentPromptSubject": "中秋：满月、月饼、桂花"
+  },
+  {
+   "slug": "fest-chongyang",
+   "name": "重阳",
+   "type": "festival",
+   "lunarRule": "lunar(9,9)",
+   "dateRule": "lunar(9,9)",
+   "heroPromptSubject": "chrysanthemums, autumn hills",
+   "contentPromptSubject": "重阳：菊花、秋山、敬老"
+  },
+  {
+   "slug": "fest-laba",
+   "name": "腊八",
+   "type": "festival",
+   "lunarRule": "lunar(12,8)",
+   "dateRule": "lunar(12,8)",
+   "heroPromptSubject": "laba porridge, red beans, warm kitchen",
+   "contentPromptSubject": "腊八：腊八粥、红豆、暖厨房"
+  },
+  {
+   "slug": "fest-xiezao",
+   "name": "谢灶",
+   "type": "festival",
+   "lunarRule": "lunar(12,23)/lunar(12,24) 南北",
+   "dateRule": "lunar(12,23)/lunar(12,24) 南北",
+   "heroPromptSubject": "kitchen stove, candy, teapot",
+   "contentPromptSubject": "谢灶：灶台、糖瓜、茶壶"
+  },
+  {
+   "slug": "fest-chuxi",
+   "name": "除夕",
+   "type": "festival",
+   "lunarRule": "lastDayOfLunarMonth(12)",
+   "dateRule": "lastDayOfLunarMonth(12)",
+   "heroPromptSubject": "red lanterns, reunion dinner, night",
+   "contentPromptSubject": "除夕：红灯笼、年夜饭、守岁"
+  },
+  {
+   "slug": "fest-shangsi",
+   "name": "上巳",
+   "type": "festival",
+   "lunarRule": "lunar(3,3)",
+   "dateRule": "lunar(3,3)",
+   "heroPromptSubject": "riverside willows, spring water",
+   "contentPromptSubject": "上巳：水边柳枝、春水"
+  },
+  {
+   "slug": "fest-xiayuan",
+   "name": "下元",
+   "type": "festival",
+   "lunarRule": "lunar(10,15)",
+   "dateRule": "lunar(10,15)",
+   "heroPromptSubject": "late autumn river, lanterns, quiet water",
+   "contentPromptSubject": "下元：晚秋水岸、暖灯"
+  },
+  {
+   "slug": "fest-jizu",
+   "name": "祭祖",
+   "type": "festival",
+   "lunarRule": "solarTerm(清明)/lunar(7,15)/lastDayOfLunarMonth(12)",
+   "dateRule": "solarTerm(清明)/lunar(7,15)/lastDayOfLunarMonth(12)",
+   "heroPromptSubject": "family memorial table, chrysanthemums, courtyard",
+   "contentPromptSubject": "祭祖：供桌、白菊、庭院"
+  },
+  {
+   "slug": "fest-yulanpen",
+   "name": "盂兰盆",
+   "type": "festival",
+   "lunarRule": "lunar(7,15)",
+   "dateRule": "lunar(7,15)",
+   "heroPromptSubject": "lotus pond at dusk, white lotus",
+   "contentPromptSubject": "盂兰盆：荷塘白莲、暮色"
+  },
+  {
+   "slug": "fest-hanshi",
+   "name": "寒食",
+   "type": "festival",
+   "lunarRule": "清明前1日",
+   "dateRule": "清明前1日",
+   "heroPromptSubject": "cold spring dishes, willow branches",
+   "contentPromptSubject": "寒食：冷食、柳枝、春寒"
+  },
+  {
+   "slug": "fest-longtaitou",
+   "name": "龙抬头",
+   "type": "festival",
+   "lunarRule": "lunar(2,2)",
+   "dateRule": "lunar(2,2)",
+   "heroPromptSubject": "early spring fields, dragon motif, haircut",
+   "contentPromptSubject": "龙抬头：春耕田野、龙纹"
+  },
+  {
+   "slug": "fest-sheri",
+   "name": "社日",
+   "type": "festival",
+   "lunarRule": "立春后第五个戊日（春社）/立秋后第五个戊日（秋社）",
+   "dateRule": "立春后第五个戊日（春社）/立秋后第五个戊日（秋社）",
+   "heroPromptSubject": "village gathering, spring fields, community",
+   "contentPromptSubject": "社日：村落聚会、春社田野"
+  },
+  {
+   "slug": "fest-guanlian",
+   "name": "观莲",
+   "type": "festival",
+   "lunarRule": "lunar(6,24)",
+   "dateRule": "lunar(6,24)",
+   "heroPromptSubject": "lotus flowers, summer pond",
+   "contentPromptSubject": "观莲：荷花、夏日池塘"
+  }
+ ]
+}

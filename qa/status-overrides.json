@@ -8,8 +8,8 @@
     "evidence": "qa/evidence/firstbatch-v2/iPadPro13-tab0.png (a465f368…); new build; iPad landscape"
   },
   "10": {
-    "status": "NOT RUN",
-    "evidence": "qa/evidence/firstbatch/DuoInner-tab0.png (fcff7a2e…); inner display 2007×2853 black; simulator posture/display unsupported"
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-portrait/home: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
   },
   "25": {
     "status": "PASS",
@@ -20,8 +20,8 @@
     "evidence": "qa/evidence/firstbatch-v2/iPadPro13-tab1.png (c73b0b36…); new build"
   },
   "34": {
-    "status": "NOT RUN",
-    "evidence": "qa/evidence/firstbatch/DuoInner-tab1.png (fcff7a2e…); black inner display"
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-portrait/folklore: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
   },
   "37": {
     "status": "PASS",
@@ -32,8 +32,8 @@
     "evidence": "qa/evidence/firstbatch-v2/iPadPro13-tab3.png (d939a5b9…); new build"
   },
   "46": {
-    "status": "NOT RUN",
-    "evidence": "qa/evidence/firstbatch/DuoInner-tab3.png (fcff7a2e…); black inner display"
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-portrait/countdown: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
   },
   "49": {
     "status": "PASS",
@@ -44,20 +44,20 @@
     "evidence": "qa/evidence/firstbatch-v2/iPadPro13-tab4.png (0b424bff…); new build"
   },
   "58": {
-    "status": "NOT RUN",
-    "evidence": "qa/evidence/firstbatch/DuoInner-tab4.png (fcff7a2e…); black inner display"
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-portrait/settings: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
   },
   "61": {
     "status": "PASS",
     "evidence": "qa/evidence/firstbatch-v2/iPhone16Pro-tab2.png (8a2eb101…); new build selection"
   },
   "65": {
-    "status": "FAIL",
-    "evidence": "qa/evidence/ipad-landscape/r14-ipad-landscape-selection.png；设计左表单/右结果两列；实现单列，无结果列"
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape/r14-ipad-landscape-selection-real.png (c73e1afe…); 左表单/右结果双列，结果空态正常"
   },
   "70": {
-    "status": "NOT RUN",
-    "evidence": "qa/evidence/firstbatch/DuoInner-tab2.png (fcff7a2e…); black inner display"
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-portrait/selection: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
   },
   "7": {
     "status": "PASS",
@@ -77,11 +77,11 @@
   },
   "67": {
     "status": "PASS",
-    "evidence": "qa/evidence/firstbatch-v2/DuoClosed-tab2.png (835794a6…); new build selection"
+    "evidence": "qa/evidence/duo-closed-routes/r14-duo-closed-selection.png; 单列表单"
   },
   "2": {
     "status": "PASS",
-    "evidence": "qa/evidence/visual-v2/dark-home.png (654d07d3…); new build; dark tokens"
+    "evidence": "qa/evidence/home-full/r14-home-full-dark.png (a7b676c6…); 冬至/纪念/经文/双卡/黄历/倒计日1"
   },
   "14": {
     "status": "PASS",
@@ -89,7 +89,7 @@
   },
   "122": {
     "status": "PASS",
-    "evidence": "qa/evidence/visual-v2/dark-compass.png (f5222991…); new build dark"
+    "evidence": "qa/evidence/compass-day/r14-compass-day-dark-uitest.png (62f45f2f…); dark 日方位/五神+煞方+十二时辰"
   },
   "26": {
     "status": "PASS",
@@ -121,7 +121,7 @@
   },
   "133": {
     "status": "PASS",
-    "evidence": "qa/evidence/weather-fortune/r14-fortune-frame1450.png (731ff0aa…); result full, title visible"
+    "evidence": "qa/evidence/fortune-result/r14-fortune-result-paper-phone-light.png (d5d7ef79…); 红绳卷轴，红色主按钮「收好今日一签」"
   },
   "157": {
     "status": "PASS",
@@ -133,7 +133,7 @@
   },
   "175": {
     "status": "PASS",
-    "evidence": "qa/evidence/portrait-states/r14-compass-hour{3,9,15,21}.png（4e/47/67/86…）；时方位 03/09/15/21，煞方变化"
+    "evidence": "qa/evidence/compass-selector/r14-compass-selector-light.png (2c73fc84…); 时方位+选择时辰+时间范围，五神标签可见"
   },
   "187": {
     "status": "PASS",
@@ -145,7 +145,7 @@
   },
   "97": {
     "status": "PASS",
-    "evidence": "qa/evidence/portrait-states/r14-iphone-countdown-detail.png (9334afc4…); 生日/2027-02-06/85天/农历每年/提醒09:00"
+    "evidence": "qa/evidence/countdown-detail-phone/r14-countdown-detail-phone-light.png (04bcdbb6…); 生日/2027-02-06/85天/农历每年/提醒09:00"
   },
   "162": {
     "status": "PASS",
@@ -169,22 +169,586 @@
   },
   "63": {
     "status": "PASS",
-    "evidence": "qa/evidence/ipad-portrait/r14-ipad-portrait-tab2.png; iPad portrait 2064×2752"
+    "evidence": "qa/evidence/ipad-portrait-routes/r14-ipad-portrait-selection-light.png; iPad portrait 834×1194"
   },
   "17": {
-    "status": "FAIL",
-    "evidence": "qa/evidence/ipad-landscape/r14-ipad-landscape-almanac.png；设计左Hero+宜忌/右十二时辰；实现左Hero空、右宜忌+时辰"
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape/r14-ipad-landscape-almanac-real.png (fb8ec289…); XCUITest 2752×2064 双列"
   },
   "77": {
-    "status": "FAIL",
-    "evidence": "qa/evidence/ipad-landscape/r14-ipad-landscape-daily.png；设计左解释/右分享两列；实现单列"
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape/r14-ipad-landscape-light-daily-v3.png (42974f9d…); 左解释/右分享卡，无重复"
   },
   "113": {
-    "status": "FAIL",
-    "evidence": "qa/evidence/ipad-landscape/r14-ipad-landscape-fortune.png；设计左标题/右签筒/底部全宽按钮+跳过；实现按钮偏小/跳过缺失"
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape/r14-ipad-landscape-fortune-real.png (402f7a0e…); 左标题/右签筒/底部全宽按钮+跳过"
   },
   "125": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape/r14-ipad-landscape-compass-real.png (ab5ff4cd…); 左控件/右盘面+竖排 legend"
+  },
+  "62": {
+    "status": "PASS",
+    "evidence": "qa/evidence/dark-pages/r14-selection-redesign-dark.png (33f40991…); 品牌 Hero 已加；表单 chip/独立卡为单独偏差"
+  },
+  "74": {
+    "status": "PASS",
+    "evidence": "qa/evidence/dark-pages/r14-daily-redesign-dark.png (b86c10a3…); 设计卡结构+分享卡已现"
+  },
+  "110": {
+    "status": "PASS",
+    "evidence": "qa/evidence/dark-pages/r14-fortune-redesign-dark.png (c0091914…); 主按钮旁常显跳过动画"
+  },
+  "176": {
+    "status": "PASS",
+    "evidence": "qa/evidence/compass-selector/r14-compass-selector-dark-v2.png (4a1cb98c…); 五神 pill 深墨可见+煞方"
+  },
+  "4": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-dark/r14-ipad-portrait-dark-tab0.png; iPad portrait dark 2064×2752"
+  },
+  "28": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-dark/r14-ipad-portrait-dark-tab1.png; iPad portrait dark 2064×2752"
+  },
+  "40": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-dark/r14-ipad-portrait-dark-tab3.png; iPad portrait dark 2064×2752"
+  },
+  "52": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-dark/r14-ipad-portrait-dark-tab4.png; iPad portrait dark 2064×2752"
+  },
+  "64": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-routes/r14-ipad-portrait-selection-dark.png; iPad portrait 834×1194"
+  },
+  "6": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape-dark/r14-ipad-landscape-dark-tab0.png; iPad landscape dark 2752×2064"
+  },
+  "30": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape-dark/r14-ipad-landscape-dark-tab1.png; iPad landscape dark 2752×2064"
+  },
+  "42": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape-dark/r14-ipad-landscape-dark-tab3.png; iPad landscape dark 2752×2064"
+  },
+  "54": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape-dark/r14-ipad-landscape-dark-tab4.png; iPad landscape dark 2752×2064"
+  },
+  "66": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape-dark/r14-ipad-landscape-dark-selection.png; 双列表单/空结果"
+  },
+  "18": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape-dark/r14-ipad-landscape-dark-almanac.png; 双列"
+  },
+  "126": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape-dark/r14-ipad-landscape-dark-compass.png; 左控件/右盘+legend"
+  },
+  "114": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape-dark/r14-ipad-landscape-dark-fortune.png; 左标题/右筒/全宽按钮+跳过"
+  },
+  "78": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-landscape-dark/r14-ipad-landscape-dark-daily-v3.png (5032ccb0…); 分享卡强制亮色 token，文字可读，已移除左列重复块"
+  },
+  "15": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-routes/r14-ipad-portrait-almanac-light.png; iPad portrait 834×1194"
+  },
+  "16": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-routes/r14-ipad-portrait-almanac-dark.png; iPad portrait 834×1194"
+  },
+  "123": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-routes/r14-ipad-portrait-compass-light.png; iPad portrait 834×1194"
+  },
+  "124": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-routes/r14-ipad-portrait-compass-dark.png; iPad portrait 834×1194"
+  },
+  "75": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-routes/r14-ipad-portrait-daily-light.png; iPad portrait 834×1194"
+  },
+  "76": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-routes/r14-ipad-portrait-daily-dark.png; iPad portrait 834×1194"
+  },
+  "111": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-routes/r14-ipad-portrait-fortune-light.png; iPad portrait 834×1194"
+  },
+  "112": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-portrait-routes/r14-ipad-portrait-fortune-dark.png; iPad portrait 834×1194"
+  },
+  "19": {
+    "status": "PASS",
+    "evidence": "qa/evidence/duo-closed-routes/r14-duo-closed-almanac.png (a99b1734…); 单列 Hero→宜忌，符合设计"
+  },
+  "127": {
+    "status": "PASS",
+    "evidence": "qa/evidence/duo-closed-routes/r14-duo-closed-compass.png (b5d25601…); 单列 控件→盘面→图例，符合设计"
+  },
+  "79": {
+    "status": "PASS",
+    "evidence": "qa/evidence/duo-closed-routes/r14-duo-closed-daily.png; 单列解释"
+  },
+  "115": {
+    "status": "PASS",
+    "evidence": "qa/evidence/duo-closed-routes/r14-duo-closed-fortune.png; 单列签筒/按钮"
+  },
+  "91": {
+    "status": "PASS",
+    "evidence": "qa/evidence/duo-closed-routes/r14-duo-closed-folklore-detail.png; 紧凑头/满宽"
+  },
+  "103": {
+    "status": "PASS",
+    "evidence": "qa/evidence/duo-closed-routes/r14-duo-closed-countdown-detail.png; 单列详情"
+  },
+  "13": {
+    "status": "PASS",
+    "evidence": "qa/evidence/almanac-plain-off/r14-tokens-almanac-light.png (eaf1cc78…); 黄历主态，底色/字段完整"
+  },
+  "138": {
+    "status": "PASS",
+    "evidence": "qa/evidence/almanac-plain-off/r14-ipad-portrait-almanac-light.png; 白话全解关闭，宜忌紧凑字段保留"
+  },
+  "140": {
+    "status": "PASS",
+    "evidence": "qa/evidence/almanac-plain-off/r14-ipad-portrait-almanac-dark.png; 白话全解关闭，宜忌紧凑字段保留"
+  },
+  "142": {
+    "status": "PASS",
+    "evidence": "qa/evidence/almanac-plain-off/r14-ipad-landscape-almanac-real.png; 白话全解关闭，宜忌紧凑字段保留"
+  },
+  "144": {
+    "status": "PASS",
+    "evidence": "qa/evidence/almanac-plain-off/r14-ipad-landscape-dark-almanac-v2.png; 白话全解关闭，宜忌紧凑字段保留"
+  },
+  "146": {
+    "status": "PASS",
+    "evidence": "qa/evidence/almanac-plain-off/r14-duo-closed-almanac.png; 白话全解关闭，宜忌紧凑字段保留"
+  },
+  "137": {
+    "status": "PASS",
+    "evidence": "qa/evidence/fortune-result/r14-ipad-portrait-light-fortune-result-v3.png (e63496f6…); 卷轴居中/结果全显/红按钮"
+  },
+  "141": {
+    "status": "PASS",
+    "evidence": "qa/evidence/fortune-result/r14-ipad-landscape-light-fortune-result-v3.png (fc56f4b5…); 左标题/右卷轴/红按钮"
+  },
+  "143": {
+    "status": "PASS",
+    "evidence": "qa/evidence/fortune-result/r14-ipad-landscape-dark-fortune-result-v3.png (e253249c…); dark 左标题/右卷轴/红按钮"
+  },
+  "145": {
+    "status": "PASS",
+    "evidence": "qa/evidence/fortune-result/r14-duo-closed-fortune-result-v3.png (a34197b2…); 卷轴/结果全显/红按钮"
+  },
+  "135": {
+    "status": "PASS",
+    "evidence": "qa/evidence/fortune-result/r14-fortune-result-paper-phone-dark.png (ce5f98a8…); dark 红绳卷轴/结果全显/红按钮"
+  },
+  "139": {
+    "status": "PASS",
+    "evidence": "qa/evidence/fortune-result/r14-ipad-portrait-dark-fortune-result-v3.png (4a6a007f…); dark 卷轴/结果全显/红按钮"
+  },
+  "134": {
+    "status": "PASS",
+    "evidence": "qa/evidence/almanac-plain-off/r14-almanac-plain-off-phone-light.png (cd6638e1…); 白话开关灰/关，紧凑逐项保留"
+  },
+  "136": {
+    "status": "PASS",
+    "evidence": "qa/evidence/almanac-plain-off/r14-almanac-plain-off-phone-dark.png (93b5eed5…); dark 白话关，紧凑逐项保留"
+  },
+  "98": {
+    "status": "PASS",
+    "evidence": "qa/evidence/countdown-detail-phone/r14-countdown-detail-phone-dark.png (6b7c74d4…); dark 同字段可读"
+  },
+  "73": {
+    "status": "PASS",
+    "evidence": "qa/evidence/daily-redesign/r14-daily-redesign-light.png (5cd55ffe…); 新卡片：经文/出处/含义/应用/分享卡"
+  },
+  "121": {
+    "status": "PASS",
+    "evidence": "qa/evidence/compass-day/r14-compass-day-light-uitest.png (67df00b8…); 日方位选中/无选择时辰/五神+煞方+十二时辰"
+  },
+  "99": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-countdown-detail/r14-ipad-portrait-countdown-detail-light.png (36e82602…); 生日/2027-02-06/85天/农历每年/提醒09:00"
+  },
+  "100": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-countdown-detail/r14-ipad-portrait-countdown-detail-dark.png (8b20b8ca…); dark 同字段"
+  },
+  "101": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-countdown-detail/r14-ipad-landscape-countdown-detail-light.png (5a93d0dd…); 同字段"
+  },
+  "102": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-countdown-detail/r14-ipad-landscape-countdown-detail-dark.png (a69be861…); dark 同字段"
+  },
+  "177": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-compass-hour/r14-ipad-portrait-compass-hour-light.png (03899119…); 时方位+选择时辰/时间范围+五神+煞方+十二时辰"
+  },
+  "178": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-compass-hour/r14-ipad-portrait-compass-hour-dark.png (2b07f387…); 时方位+选择时辰/时间范围+五神+煞方+十二时辰"
+  },
+  "179": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-compass-hour/r14-ipad-landscape-compass-hour-light.png (3311ed7a…); 时方位+选择时辰/时间范围+五神+煞方+十二时辰"
+  },
+  "180": {
+    "status": "PASS",
+    "evidence": "qa/evidence/ipad-compass-hour/r14-ipad-landscape-compass-hour-dark.png (245c741a…); 时方位+选择时辰/时间范围+五神+煞方+十二时辰"
+  },
+  "85": {
+    "status": "NOT RUN",
+    "evidence": "内容门禁：WD 正文为 P1 示例段落/内容准备中，正式内容未接入，不能评正文可读"
+  },
+  "86": {
+    "status": "NOT RUN",
+    "evidence": "同 85 内容缺口；dark 默认无有效详情证据（现有图误为 Home/旧 2027 千分位）"
+  },
+  "87": {
+    "status": "NOT RUN",
+    "evidence": "内容缺口同 85；且无 iPad portrait 详情证据"
+  },
+  "88": {
+    "status": "NOT RUN",
+    "evidence": "内容缺口同 85；且无 iPad portrait dark 详情证据"
+  },
+  "89": {
+    "status": "NOT RUN",
+    "evidence": "内容缺口同 85；且无 iPad landscape 详情证据"
+  },
+  "90": {
+    "status": "NOT RUN",
+    "evidence": "内容缺口同 85；且无 iPad landscape dark 详情证据"
+  },
+  "163": {
+    "status": "NOT RUN",
+    "evidence": "今日解锁仅有 P1 示例段落（5天），正文为占位稿，不能评正文/已读边界"
+  },
+  "164": {
+    "status": "NOT RUN",
+    "evidence": "离线/加载失败态需断网注入，当前无独立证据，保持 NOT RUN"
+  },
+  "165": {
+    "status": "PASS",
+    "evidence": "qa/evidence/countdown-new-form/r14-countdown-new-form-empty.png (01872ae6…) + filled (d2eaf443…); 名称空保存灰禁用/取消可用；输入名称保存红可用"
+  },
+  "166": {
+    "status": "NOT RUN",
+    "evidence": "请求前说明/权限前置无可复用证据，需人工/XCUITest 交互，保持 NOT RUN"
+  },
+  "167": {
+    "status": "NOT RUN",
+    "evidence": "系统权限弹窗无法在无 GUI 的 CLI 稳定截取，需 XCUITest/真机，保持 NOT RUN"
+  },
+  "168": {
+    "status": "NOT RUN",
+    "evidence": "允许后安排提醒需系统通知授权与等待，当前未覆盖，保持 NOT RUN"
+  },
+  "169": {
+    "status": "NOT RUN",
+    "evidence": "拒绝后设置返回重读需系统设置交互，当前未覆盖，保持 NOT RUN"
+  },
+  "170": {
+    "status": "NOT RUN",
+    "evidence": "设计 375×2500 长图；现有仅 375×930 首屏，不能冒充长图 PASS"
+  },
+  "171": {
+    "status": "NOT RUN",
+    "evidence": "设计 375×2500 长图；无长图证据，保持 NOT RUN"
+  },
+  "172": {
+    "status": "NOT RUN",
+    "evidence": "设计 375×2500 长图；无长图证据，保持 NOT RUN"
+  },
+  "173": {
+    "status": "NOT RUN",
+    "evidence": "设计 375×2500 长图；现有为 375×930 首屏，保持 NOT RUN"
+  },
+  "174": {
+    "status": "NOT RUN",
+    "evidence": "设计 375×2500 长图；无长图证据，保持 NOT RUN"
+  },
+  "8": {
     "status": "FAIL",
-    "evidence": "qa/evidence/ipad-landscape/r14-ipad-landscape-compass.png；设计左控件/右罗盘+图例；实现全宽居中单列"
+    "evidence": "Codex cases.csv duo-closed-landscape/home: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "9": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "11": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-landscape/home: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "12": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "20": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-closed-landscape/almanac: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "21": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "22": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-portrait/almanac: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "23": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-landscape/almanac: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "24": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "32": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-closed-landscape/folklore: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "33": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "35": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-landscape/folklore: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "36": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "44": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-closed-landscape/countdown: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "45": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "47": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-landscape/countdown: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "48": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "56": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-closed-landscape/settings: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "57": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "59": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-landscape/settings: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "60": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "68": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-closed-landscape/selection: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "69": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "71": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-landscape/selection: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "72": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "80": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-closed-landscape/daily: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "81": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "82": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-portrait/daily: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "83": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-landscape/daily: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "84": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "92": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-closed-landscape/folklore-detail: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "93": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "94": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-portrait/folklore-detail: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "95": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-landscape/folklore-detail: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "96": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "104": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-closed-landscape/countdown-detail: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "105": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "106": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-portrait/countdown-detail: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "107": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-landscape/countdown-detail: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "108": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "116": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-closed-landscape/fortune: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "117": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "118": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-portrait/fortune: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "119": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-landscape/fortune: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "120": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "128": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-closed-landscape/compass: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "129": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "130": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-portrait/compass: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "131": {
+    "status": "FAIL",
+    "evidence": "Codex cases.csv duo-open-landscape/compass: FAIL_AT_OBSERVATION（6s 空白/route 返 home）；archive 690a26b6…"
+  },
+  "132": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "147": {
+    "status": "NOT RUN",
+    "evidence": "Codex 未覆盖 Duo 额外状态"
+  },
+  "148": {
+    "status": "NOT RUN",
+    "evidence": "Codex 未覆盖 Duo 额外状态"
+  },
+  "149": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "150": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "151": {
+    "status": "NOT RUN",
+    "evidence": "Codex 未覆盖 Duo 额外状态"
+  },
+  "152": {
+    "status": "NOT RUN",
+    "evidence": "Codex 未覆盖 Duo 额外状态"
+  },
+  "153": {
+    "status": "NOT RUN",
+    "evidence": "Codex 未覆盖 Duo 额外状态"
+  },
+  "154": {
+    "status": "NOT RUN",
+    "evidence": "Codex 未覆盖 Duo 额外状态"
+  },
+  "155": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "156": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "181": {
+    "status": "NOT RUN",
+    "evidence": "Codex 未覆盖 Duo 额外状态（cases.csv 只 5 tab+7 路由）"
+  },
+  "182": {
+    "status": "NOT RUN",
+    "evidence": "Codex 未覆盖 Duo 额外状态"
+  },
+  "183": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
+  },
+  "184": {
+    "status": "NOT RUN",
+    "evidence": "Codex 未覆盖 Duo 额外状态"
+  },
+  "185": {
+    "status": "NOT RUN",
+    "evidence": "Codex 未覆盖 Duo 额外状态"
+  },
+  "186": {
+    "status": "NOT RUN",
+    "evidence": "Codex cases.csv: Tabletop/Tent 无 Device Hub 物理姿态控件，NOT RUN"
   }
 }

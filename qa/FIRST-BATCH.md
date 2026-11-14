@@ -2,7 +2,8 @@
 
 ## 构建/安装
 - `scripts/r14-build.sh` 仍 **exit 74**：xcodebuild 无法写 `~/Library/Caches/org.swift.swiftpm/...`（Operation not permitted）；加 `HOME/.qa` 后仍被本机环境拦，非产品编译错误。
-- 使用新 dev build：`/private/tmp/lx-r14-dd/.../Lixiang.app`，1.0(13)，`Lixiang` SHA `f62b1ec3…`（21:41 构建，HEAD 284ebd0 颜色/字体修复后）；`r14-sim-qa.sh` 安装/启动流程已跑通。
+- 交付包（非代码变更）HEAD `bf5fa110`；tar SHA `742a1af4…`；同次构建二进制 `2f24610a…`，1.0(13)；演示录屏 `shots/r14-demo-iphone.mp4`。
+- 验证使用 dev build 1.0(13)；`r14-sim-qa.sh` 安装/启动流程已跑通。
 - 新 HEAD `b95ee61` 的修复（SelectionScreen）通过 dev 证据 `r14-iphone-tab2.png` / `r14-ipad-landscape-tab2.png` 复核；本机未重打新 app。
 
 ## 五 Tab 首屏
@@ -25,7 +26,7 @@
 - 不纳入 188 设计状态计数；VoiceOver/a1/组合姿态 NOT RUN。
 
 ## 矩阵
-- `docs/R14-QA-MATRIX.md`：**37 PASS / 5 FAIL / 146 NOT RUN**（另 X-01..X-05 动态字体 PASS），SHA `a1cf7da0…`；计数检查 `docs/R14-QA-COUNT-CHECK.md` 一致。
+- `docs/R14-QA-MATRIX.md`：**100 PASS / 33 FAIL / 55 NOT RUN**（另 X-01..X-05 动态字体 PASS），SHA `0e5b4998…`；计数检查 `docs/R14-QA-COUNT-CHECK.md` 一致。
 
 ## 未测
 - 天气六态（仅 initial）、VoiceOver、E2E 16 场景、Duo 其余姿态：NOT RUN。
@@ -52,7 +53,7 @@
 - 天气 initial/locating/denied/failed/loaded **5 PASS**；denied→系统设置返回 **NOT RUN**。
 - Fortune 0ms/1050ms/1450ms 与结果态 **PASS**；180/600 为数学零交叉 NOTE；300/450/800/900 运动帧 PASS。
 - 证据 `qa/evidence/weather-fortune/`；详见 `qa/WEATHER-FORTUNE.md`。
-- 矩阵：37 PASS / 5 FAIL / 146 NOT RUN + X5 + W5/W1 + F3 PASS/2 NOTE + M4 PASS。
+- 矩阵：100 PASS / 33 FAIL / 55 NOT RUN + X5 + W5/W1 + F3 PASS/2 NOTE + M4 PASS。
 
 
 ## iPhone portrait 新状态
@@ -80,4 +81,74 @@
 
 
 ## iPad landscape 路由视觉对照
-- almanac/compass/daily/fortune/selection 5 页均与设计两列布局不符，矩阵标 **FAIL/偏差**（详见 `qa/IPAD-LANDSCAPE.md`）。
+- almanac/compass/daily/fortune/selection 真实横向截图均与设计双列布局一致，矩阵已改 **PASS**（详见 `qa/IPAD-LANDSCAPE.md`）。
+
+
+## 深色页对照
+- Selection/Daily/Fortune dark 已按 redesign 证据复评 PASS；Selection 表单下拉卡差异单列；详见 `qa/DARK-PAGES.md`。
+
+
+## Selection 结果 dark
+- 补充 S-02 **PASS**：深底可读、日期/宜/忌/看当日完整；证据 `qa/evidence/portrait-states/r14-iphone-selection-results-dark.png`。
+
+
+## Compass 12 时辰证据核验
+- 以 QA v2 目录复核：8 图均 Compass，11 时辰采样点覆盖 12 时辰；选择器/时间范围/煞方变化均 PASS（五神固定待设计确认）。
+
+
+## Home 完整/多内容态
+- 首屏 H-01/H-02 **PASS**（冬至 badge/日期/纪念/经文/双卡/黄历/倒计日1，亮暗可读）；行 170 的 375×2500 长图仍 NOT RUN。
+
+
+## Compass 选择时辰
+- Light 行175 PASS；**Dark 行176 FAIL/偏差**：下拉/时间范围在，但 dial 五神标签缺失（设计深色应有）。详见 `qa/COMPASS-SELECTOR.md`。
+
+
+## Compass selector dark / iPad portrait dark
+- Compass 行176 已修 **PASS**（五神 pill 可见）；iPad portrait dark 5 Tab 行 4/28/64/40/52 **PASS**。
+
+
+## iPad landscape dark
+- 5 Tab + almanac/compass/fortune/selection PASS；**daily 行78 已修 PASS**：右分享卡亮色 token 可读、左重复块移除。
+
+
+## iPad portrait routes
+- almanac/compass/daily/fortune/selection light+dark 全 PASS（单列 portrait）；行 15/16/123/124/75/76/111/112/63/64。
+
+
+## Duo Closed Portrait routes
+- 以 v2 目录复核：7 页全部 PASS（almanac/compass 均单列；此前两列判断系旧副本误判）。详见 `qa/DUO-CLOSED-ROUTES.md`。
+
+
+## Duo folklore-detail T-10/T-9
+- 两态均「内容准备中」，示例稿 version=0 被门禁拦截，正文不可读 → **NOTE/内容缺口，不标 PASS**；其余 7 路由 PASS。
+
+
+## Almanac plain-off / Fortune result
+- Almanac 行13 PASS；plain-off 行134/136/138/140/142/144/146 全部 PASS（phone 新图开关灰/关）。
+- Fortune 结果态 v3 七行 **PASS**（133/135/137/139/141/143/145）：红绳卷轴、红底主按钮、结果全显、dark 正常。详见 `qa/FORTUNE-RESULT.md`。
+
+
+## Countdown/Daily/Compass phone
+- countdown-detail 行97/98/99-102 PASS；daily 行73 PASS；compass 行121/122 日方位 PASS（XCUITest）。
+
+
+## iPad Compass hour
+- 行177-180 PASS（portrait/landscape light/dark；时方位+选择时辰+时间范围+五神+煞方+十二时辰）。Duo UDID B77A… 未触碰。
+
+
+## 最终 QA 总结（Duo 前）
+- `qa/FINAL-QA-SUMMARY.md`：188 行 **100 PASS / 33 FAIL / 55 NOT RUN**；Duo 71 行待 Codex；非 Duo 18 行原因已写。
+- `qa/EVIDENCE-INDEX.md`：证据目录索引。
+
+
+## Countdown 新建/校验
+- 行165 **PASS**：名称空保存灰禁用/取消可用；输入名称保存红可用。行166-169 权限仍 NOT RUN。
+
+
+## Duo Codex 中期
+- 36 用例未通过，不标 PASS；Tabletop/Tent NOT RUN；Closed/Open Landscape 白屏/rail 缺失待 dev 修；未操作 R14-Duo。
+
+
+## Duo Codex 最终映射
+- 36 case observations FAIL；matrix 唯一行 33 FAIL（selection tab/route 同页重复）；Tabletop/Tent 28 行（14 对）NOT RUN；13 既有 closed-portrait PASS 保留。实际 100 PASS/33 FAIL/55 NOT RUN；归档 690a26b6…，修复后 2314dd8e… 待重跑。

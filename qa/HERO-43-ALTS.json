@@ -1,0 +1,265 @@
+{
+ "version": 1,
+ "count": 43,
+ "note": "hero alt zh/en；与 43 槽同 slug",
+ "items": [
+  {
+   "slug": "term-lichun",
+   "name": "立春",
+   "alt_zh": "willow buds, thin ice, pale distant sun，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term lichun: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-yushui",
+   "name": "雨水",
+   "alt_zh": "spring rain, wet stone path, budding branches，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term yushui: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-jingzhe",
+   "name": "惊蛰",
+   "alt_zh": "spring thunder, awakening insects, fresh grass，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term jingzhe: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-chunfen",
+   "name": "春分",
+   "alt_zh": "spring equinox, swallows, peach blossoms，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term chunfen: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-qingming",
+   "name": "清明",
+   "alt_zh": "weeping willow, misty hills, gentle rain，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term qingming: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-guyu",
+   "name": "谷雨",
+   "alt_zh": "grain rain, young rice shoots, drizzle，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term guyu: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-lixia",
+   "name": "立夏",
+   "alt_zh": "early summer lotus leaves, warm green，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term lixia: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-xiaoman",
+   "name": "小满",
+   "alt_zh": "wheat field, soft sunlight，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term xiaoman: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-mangzhong",
+   "name": "芒种",
+   "alt_zh": "rice paddies, busy green，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term mangzhong: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-xiazhi",
+   "name": "夏至",
+   "alt_zh": "lotus pond, strong sun shadow，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term xiazhi: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-xiaoshu",
+   "name": "小暑",
+   "alt_zh": "cicada, shade, warm breeze，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term xiaoshu: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-dashu",
+   "name": "大暑",
+   "alt_zh": "summer sun, watermelon, deep shade，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term dashu: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-liqiu",
+   "name": "立秋",
+   "alt_zh": "falling leaves, golden light，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term liqiu: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-chushu",
+   "name": "处暑",
+   "alt_zh": "cool grass, evening clouds，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term chushu: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-bailu",
+   "name": "白露",
+   "alt_zh": "dew on grass, morning mist，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term bailu: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-qiufen",
+   "name": "秋分",
+   "alt_zh": "persimmons, balanced light，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term qiufen: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-hanlu",
+   "name": "寒露",
+   "alt_zh": "chrysanthemum, dew on leaves，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term hanlu: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-shuangjiang",
+   "name": "霜降",
+   "alt_zh": "red maple, frost on ground，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term shuangjiang: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-lidong",
+   "name": "立冬",
+   "alt_zh": "bare branches, first frost, warm lantern，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term lidong: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-xiaoxue",
+   "name": "小雪",
+   "alt_zh": "light snow, grey sky, warm window，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term xiaoxue: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-daxue",
+   "name": "大雪",
+   "alt_zh": "heavy snow, warm lamp, quiet courtyard，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term daxue: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-dongzhi",
+   "name": "冬至",
+   "alt_zh": "winter solstice, dumplings, warm lantern，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term dongzhi: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-xiaohan",
+   "name": "小寒",
+   "alt_zh": "plum blossoms, snow patches，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term xiaohan: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "term-dahan",
+   "name": "大寒",
+   "alt_zh": "icy river, bare tree, cold light，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "term dahan: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-chunjie",
+   "name": "春节",
+   "alt_zh": "red lanterns, reunion table，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest chunjie: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-yuanxiao",
+   "name": "元宵",
+   "alt_zh": "round lanterns, tangyuan，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest yuanxiao: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-qingming",
+   "name": "清明",
+   "alt_zh": "willow, green hills, gentle rain，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest qingming: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-duanwu",
+   "name": "端午",
+   "alt_zh": "dragon boat, zongzi, mugwort，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest duanwu: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-qixi",
+   "name": "七夕",
+   "alt_zh": "magpie bridge, stars, silk ribbons，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest qixi: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-zhongyuan",
+   "name": "中元",
+   "alt_zh": "river lanterns, quiet water at dusk，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest zhongyuan: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-zhongqiu",
+   "name": "中秋",
+   "alt_zh": "full moon, mooncakes, osmanthus，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest zhongqiu: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-chongyang",
+   "name": "重阳",
+   "alt_zh": "chrysanthemums, autumn hills，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest chongyang: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-laba",
+   "name": "腊八",
+   "alt_zh": "laba porridge, red beans, warm kitchen，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest laba: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-xiezao",
+   "name": "谢灶",
+   "alt_zh": "kitchen stove, candy, teapot，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest xiezao: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-chuxi",
+   "name": "除夕",
+   "alt_zh": "red lanterns, reunion dinner, night，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest chuxi: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-shangsi",
+   "name": "上巳",
+   "alt_zh": "riverside willows, spring water，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest shangsi: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-xiayuan",
+   "name": "下元",
+   "alt_zh": "late autumn river, lanterns, quiet water，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest xiayuan: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-jizu",
+   "name": "祭祖",
+   "alt_zh": "family memorial table, chrysanthemums, courtyard，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest jizu: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-yulanpen",
+   "name": "盂兰盆",
+   "alt_zh": "lotus pond at dusk, white lotus，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest yulanpen: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-hanshi",
+   "name": "寒食",
+   "alt_zh": "cold spring dishes, willow branches，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest hanshi: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-longtaitou",
+   "name": "龙抬头",
+   "alt_zh": "early spring fields, dragon motif, haircut，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest longtaitou: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-sheri",
+   "name": "社日",
+   "alt_zh": "village gathering, spring fields, community，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest sheri: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  },
+  {
+   "slug": "fest-guanlian",
+   "name": "观莲",
+   "alt_zh": "lotus flowers, summer pond，宋制点景人物，宣和院体工笔矿物彩",
+   "alt_en": "fest guanlian: Song-dynasty court painting style, elegant staffage figures, mineral pigments on aged silk"
+  }
+ ]
+}

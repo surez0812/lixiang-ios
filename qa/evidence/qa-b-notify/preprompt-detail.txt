@@ -1,0 +1,7 @@
+label=preprompt-detail
+udid=0B71AEF4-1E34-47A3-937A-3A097A0D0362
+tar_sha256=fc9068b724a494638289e99d9b557582d707eb52d190d5472b10c5727072aede
+binary_sha256=b111ad1ad28a6725621df1a29fde1bf1969a7aa8218ad6f85c19e7ffb983aeea
+args=-LixiangNotifyPrepromptDetail -LixiangR14Route countdownDetail
+captured=2026-11-14T02:50:53+08:00
+note=injected simulation; not native system permission proof

@@ -26,3 +26,11 @@ Secrets.xcconfig
 Local.xcconfig
 # Logs
 *.log
+
+# R14 QA/build temporary artifacts (never commit)
+.qa/
+DerivedData-*/
+DerivedData-r14-*/
+node_modules/
+*.xcresult/
+*.orig.webp

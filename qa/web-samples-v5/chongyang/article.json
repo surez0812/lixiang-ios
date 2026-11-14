@@ -1,0 +1,42 @@
+{
+ "eventID": "chongyang",
+ "contentVersion": "1",
+ "title": "重阳节",
+ "articleHeadline": "重阳：登高之后，记得敬老",
+ "heroImageURL": "./heroes/chongyang.webp",
+ "heroAlt": "重阳，菊花与秋山",
+ "kicker": "一段来由 · 一点日常",
+ "intro": "重阳在农历九月初九，又称重九。传统上有登高、菊花、敬老、饮菊花酒等习俗，现代更强调敬老爱老，也适合在秋天出门走走。",
+ "sections": [
+  {
+   "heading": "重阳的文化含义",
+   "paragraphs": [
+    "重阳在秋季，九为阳数，两九相重，故称重阳。",
+    "常见习俗包括登高、菊花文化、敬老慰问、吃重阳糕；各地做法不同。"
+   ]
+  },
+  {
+   "heading": "今天可以这样过",
+   "paragraphs": [
+    "敬老不只在节日，但节日可以提醒我们表达。"
+   ],
+   "steps": [
+    "给长辈打个电话，问问最近的身体与心情",
+    "陪家人走一段平缓的路，量力而行",
+    "吃一块重阳糕或应季的秋果"
+   ]
+  }
+ ],
+ "note": "登高与秋游注意天气与体力；本文为文化说明，不作吉凶判断。",
+ "sources": [
+  {
+   "label": "维基百科·重陽節",
+   "url": "https://zh.wikipedia.org/wiki/重陽節"
+  },
+  {
+   "label": "维基百科·菊花",
+   "url": "https://zh.wikipedia.org/wiki/菊花"
+  }
+ ],
+ "updatedAt": "2026-11-14T14:00:00+08:00"
+}

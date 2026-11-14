@@ -1,0 +1,42 @@
+{
+ "eventID": "zhongqiu",
+ "contentVersion": "1",
+ "title": "中秋",
+ "articleHeadline": "中秋：把想念，放在一轮月亮里",
+ "heroImageURL": "../assets/heroes/zhongqiu.webp",
+ "heroAlt": "中秋，满月与月饼",
+ "kicker": "一段来由 · 一点日常",
+ "intro": "中秋在农历八月十五，传统上以月圆象征团圆。赏月、吃月饼、提灯笼、家人聚餐是常见习俗，部分地区还有拜月、舞火龙等活动。",
+ "sections": [
+  {
+   "heading": "中秋为什么重要",
+   "paragraphs": [
+    "中秋在秋季正中，是家人团聚的节日；月饼与月亮是核心意象。",
+    "月饼有广式、苏式、京式等不同风味；各地还有柚子、芋头、桂花酒等节令食物。"
+   ]
+  },
+  {
+   "heading": "今天可以这样过",
+   "paragraphs": [
+    "团圆不必完美，能联系上就很好。"
+   ],
+   "steps": [
+    "给家人打一个电话，或一起吃顿饭",
+    "分食一块月饼，聊聊最近的事",
+    "如果独自过节，也给自己留一点安静时间"
+   ]
+  }
+ ],
+ "note": "月饼与节令食品注意适量；本文为文化说明。",
+ "sources": [
+  {
+   "label": "维基百科·中秋節",
+   "url": "https://zh.wikipedia.org/wiki/中秋節"
+  },
+  {
+   "label": "维基百科·月餅",
+   "url": "https://zh.wikipedia.org/wiki/月餅"
+  }
+ ],
+ "updatedAt": "2026-11-14T14:00:00+08:00"
+}

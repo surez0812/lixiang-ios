@@ -44,9 +44,42 @@ lines += ['','## 补充 · Fortune 1450ms 关键帧','','| ID | 时间 | 结果 
  '- 说明：180/600 为 ApprovedFortuneCore 零交叉边界，与 0ms 同图属正确数学；不标 FAIL。','', '### 运动关键帧（补充）','', '| ID | 时间 | 结果 | 证据 |','|---|---|---|---|','| M-01 | 300ms | **PASS** | `qa/evidence/weather-fortune/r14-fortune-frame300.png` |','| M-02 | 450ms | **PASS** | `qa/evidence/weather-fortune/r14-fortune-frame450.png` |','| M-03 | 800ms | **PASS** | `qa/evidence/weather-fortune/r14-fortune-frame800.png` |','| M-04 | 900ms | **PASS** | `qa/evidence/weather-fortune/r14-fortune-frame900.png` |']
 # 补充：交互状态（不属于 188 设计行）
 lines += ['','## 补充 · 交互状态','','| ID | 状态 | 结果 | 证据 |','|---|---|---|---|',
- '| S-01 | Selection 结果列表 | **PASS** | `qa/evidence/portrait-states/r14-iphone-selection-results.png`；2026 年份无千分位、含日期/宜/忌/看当日 |','| D-01 | Daily 分享页 | **PASS** | `qa/evidence/portrait-states/r14-iphone-daily-share.png`；全屏分享卡（经文/标题/白话/出处/二维码）+系统分享，不再空白 |','',
+ '| S-01 | Selection 结果列表 light | **PASS** | `qa/evidence/portrait-states/r14-iphone-selection-results.png`；2026 年份无千分位、含日期/宜/忌/看当日 |','| S-02 | Selection 结果列表 dark | **PASS** | `qa/evidence/portrait-states/r14-iphone-selection-results-dark.png`；深底可读、日期/宜/忌/看当日 |','| D-01 | Daily 分享页 | **PASS** | `qa/evidence/portrait-states/r14-iphone-daily-share.png`；全屏分享卡（经文/标题/白话/出处/二维码）+系统分享，不再空白 |','',
  '- Countdown 详情已对应设计行 97；Selection 结果无独立设计行，单列 S-01。','- Folklore 详情正文暂为「内容准备中」，不标读；正式 12 条内容接入前按内容缺口处理，不作 PASS。']
-lines += ['','## 汇总','- 总行数：188（screens.json 校验）。','- 结果：PASS 37 / FAIL 5 / NOT RUN 146；另 X-01..X-05 动态字体 PASS、F 3 PASS/2 NOTE、M-01..M-04 PASS、W 5 PASS/1 NOT RUN、S-01 PASS、D-01 PASS。','- 出口：每行至少 1 张原生截图；失败保留日志/设备/commit；未实现或真机不可得写 NOT RUN。']
-OUT.write_text('\n'.join(lines)+'\n')
-OUT.write_text('\n'.join(lines)+'\n')
+# 补充：Compass 12 时辰
+lines += ['','## 补充 · Compass 12 时辰','','| ID | 时辰 | 结果 | 证据 |','|---|---|---|---|',
+ '| C-00 | 00 | **PASS** | `qa/evidence/compass-hours/r14-compass-hour0.png`；子时 |',
+ '| C-01 | 01 | **PASS** | `qa/evidence/compass-hours/r14-compass-hour1.png`（dev 图，01:00） |',
+ '| C-03 | 03 | **PASS** | `qa/evidence/compass-hours/r14-compass-hour3.png` |',
+ '| C-05 | 05 | **PASS** | `qa/evidence/compass-hours/r14-compass-hour5.png`；卯时·辛卯 05:00—06:59，煞西 |',
+ '| C-06 | 06 | **PASS** | `r14-compass-hour6.png`；卯时边界（旧截） |',
+ '| C-07 | 07 | **PASS** | `r14-compass-hour7.png`；辰时·壬辰 07:00—08:59，煞南 |',
+ '| C-09 | 09 | **PASS** | `r14-compass-hour9.png` |',
+ '| C-11 | 11 | **PASS** | `r14-compass-hour11.png`；午时·甲午 11:00—12:59，煞北 |',
+ '| C-13 | 13 | **PASS** | `r14-compass-hour13.png` |',
+ '| C-15 | 15 | **PASS** | `r14-compass-hour15.png` |',
+ '| C-17 | 17 | **PASS** | `r14-compass-hour17.png`；酉时·丁酉 17:00—18:59，煞东 |',
+ '| C-18 | 18 | **PASS** | `r14-compass-hour18.png`；酉时边界（旧截） |',
+ '| C-19 | 19 | **PASS** | `r14-compass-hour19.png`；戌时·戊戌 19:00—20:59，煞北 |',
+ '| C-21 | 21 | **PASS** | `r14-compass-hour21.png` |',
+ '| C-23 | 23 | **PASS** | `r14-compass-hour23.png`；子时·庚子 23:00—23:59，煞南 |']
+# 12 时辰覆盖不全，不宣称全量 PASS
+# 补充：Home 完整态可见内容
+lines += ['','## 补充 · Home 完整/多内容态','','| ID | 状态 | 结果 | 证据 |','|---|---|---|---|',
+ '| H-01 | Home 完整 light | **PASS** | `qa/evidence/home-full/r14-home-full-light.png`；冬至一候/日期/纪念/经文/双卡/黄历/倒计日1 可见 |',
+ '| H-02 | Home 完整 dark | **PASS** | `qa/evidence/home-full/r14-home-full-dark.png`；同内容深色可读 |','',
+ '- 注：两张为 375×930 首屏证据，不是设计 375×2500 长图；screens.json 行 170 的长图全量仍 **NOT RUN**。']
+# 补充：Duo folklore-detail T-10/T-9 内容缺口
+lines += ['','## 补充 · Duo folklore-detail T-10/T-9','','| ID | 状态 | 结果 | 证据 |','|---|---|---|---|',
+ '| T-10 | 还有10天 | **NOTE/内容缺口** | `qa/evidence/duo-closed-routes/r14-folklore-detail-t10.png`；显示「内容准备中」，正文不可读 |',
+ '| T-09 | 还有9天 | **NOTE/内容缺口** | `qa/evidence/duo-closed-routes/r14-folklore-detail-t9.png`；显示「内容准备中」 |','',
+ '- 示例稿 version=0 被内容门禁拦截，T-10 正文可读性无法验证；不标 PASS。']
+# 补充：Duo Codex 中期
+lines += ['','## 补充 · Duo Codex 中期','',
+ '- Codex 中期 **36 用例未通过**，不标 PASS；最终证据到后统一复评。',
+ '- Tabletop/Tent 无 Device Hub 控件 → NOT RUN。',
+ '- Closed Landscape / Open Landscape 有白屏/rail 缺失，dev 修复中。',
+ '- 最终映射：36 case observations FAIL；唯一 matrix 行 33 FAIL（selection tab/route 重复）；Tabletop/Tent 24 NOT RUN；closed-portrait 13 既有 PASS 保留；额外状态 NOT RUN。实际 100 PASS/33 FAIL/55 NOT RUN，未硬凑 36/35。',
+ '- 归档 690a26b6…；修复后 2314dd8e… 尚未重跑 Duo；未操作 R14-Duo `B77A…`。']
+lines += ['','## 汇总','- 总行数：188（screens.json 校验）。','- 结果：PASS 100 / FAIL 33 / NOT RUN 55；另 X-01..X-05 动态字体 PASS、F 3 PASS/2 NOTE、M-01..M-04 PASS、W 5 PASS/1 NOT RUN、S-01 PASS、S-02 PASS、D-01 PASS；C-00..C-23 采样 15 个时点覆盖 12 时辰，全部 PASS；五神固定按设计结构待确认；H-01/H-02 首屏完整态 PASS；T-10/T-9 NOTE。','- 出口：每行至少 1 张原生截图；失败保留日志/设备/commit；未实现或真机不可得写 NOT RUN。']
 OUT.write_text('\n'.join(lines)+'\n'); print(f'wrote {OUT} rows={len(s)} sha={sha}')

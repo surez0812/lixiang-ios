@@ -1,0 +1,10 @@
+label=r14-ipad-portrait-folklore-detail-dark
+device=iPad Pro 13-inch (M4)
+udid=91DA70AC-C500-40CF-A339-30B5CD3177A8
+runtime=com.apple.CoreSimulator.SimRuntime.iOS-18-6
+app=/tmp/lx-r14-dd/Build/Products/Debug-iphonesimulator/Lixiang.app
+app_binary_sha256=f62b1ec3b01f706af8f4e7ac870673a516275c1778193e39776443bdff364f1e
+screenshot=/Users/surezhang/work/ZhaoYao/work/lixiang-r14/qa/evidence/r14-ipad-portrait-folklore-detail-dark.png
+screenshot_sha256=96aef7b12e0a8a0d133be13b6ff503db3bf76703989890b6089b40a3b3dbb042
+launch_args=-LixiangR14Route folkloreDetail -LixiangTheme dark
+captured_at=2026-11-13T23:56:35+08:00

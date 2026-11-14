@@ -1,0 +1,7 @@
+label=folklore-detail
+udid=0B71AEF4-1E34-47A3-937A-3A097A0D0362
+tar_sha256=7b5b6dbb35c9d5a29cc1d87936176f62efeccec569a8507c399ba051b2486ad8
+binary_sha256=a036b0bc65c9a0ab1e2ca067b558bb3290f14d581c16a893477d0689da1b8488
+launch_args=-LixiangR14Route folkloreDetail -AppleLanguages (zh-Hans) -AppleLocale zh_CN
+captured_at=2026-11-14T02:39:25+08:00
+note=no injection baseline probe

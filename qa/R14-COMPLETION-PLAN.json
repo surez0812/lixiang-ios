@@ -1,0 +1,352 @@
+{
+  "updated": "2026-11-14",
+  "summary": {
+    "matrix_total": 188,
+    "pass": 100,
+    "fail": 33,
+    "not_run": 55,
+    "ui_fail": 33,
+    "note": "计数来自 R14 FAIL/NOT-RUN 计划与 Codex/QA 最新轮；未把设计稿/示例/局部截图当 PASS"
+  },
+  "rows": [
+    {
+      "id": "A1",
+      "category": "矩阵-FAIL",
+      "title": "Duo Closed Landscape / Open Portrait / Open Landscape × 11 页（33 行）",
+      "status": "FAIL（33）",
+      "evidence": "Codex A/B 任务：最新 clean 包 clean-38b34c5a 逐行复验",
+      "gap": "需在 clean-38b34c5a 上逐行复验；旧包/设计稿不算",
+      "owner": "Codex + QA",
+      "dependencies": "clean-38b34c5a",
+      "acceptance": "33/33 行 PASS，截图/录屏留档",
+      "priority": "P0",
+      "eta": "3 天"
+    },
+    {
+      "id": "A2",
+      "category": "矩阵-Tabletop/Tent",
+      "title": "Tabletop/Tent 28 行：physical=Partially Open + rotation / design=OpenPortrait；Tent≡Closed Landscape（复用）",
+      "status": "NOT RUN（28）",
+      "evidence": "按约定：Tabletop physical=Partially Open+rotation，design=OpenPortrait；Tent≡Closed Landscape（复用不独立测）",
+      "gap": "剩余 28 行逐行实测/复用证据；不是「Device Hub 无入口」",
+      "owner": "QA + Codex",
+      "dependencies": "设备/姿态窗口",
+      "acceptance": "28/28 逐行 PASS 或如实 NOT RUN 原因",
+      "priority": "P0",
+      "eta": "2 天"
+    },
+    {
+      "id": "A3",
+      "category": "矩阵-Duo状态",
+      "title": "10 个 Duo 状态：147/148/151/152/153/154/181/182/184/185",
+      "status": "NOT RUN（10）",
+      "evidence": "既有 rail/pose 截图不完整",
+      "gap": "修复后未按姿态复验",
+      "owner": "QA + Codex",
+      "dependencies": "clean-38b34c5a（Codex A/B 任务）",
+      "acceptance": "10/10 逐行 PASS",
+      "priority": "P0",
+      "eta": "2 天"
+    },
+    {
+      "id": "A4",
+      "category": "矩阵-非Duo",
+      "title": "17 行非 Duo：85-90 内容详情、163、164、166-169、170-174",
+      "status": "NOT RUN（17）",
+      "evidence": "内容/权限/长图证据缺",
+      "gap": "详情 read/重试/跨日/version/权限/长图未验",
+      "owner": "QA + dev + PM",
+      "dependencies": "内容接入/测试账号/长图方案",
+      "acceptance": "17/17 行 PASS",
+      "priority": "P1",
+      "eta": "3 天"
+    },
+    {
+      "id": "B1",
+      "category": "UI",
+      "title": "UI-001 iPhone light/dark 已 scoped；iPad/Duo real、dark current build、UI-001 全设备未全验",
+      "status": "PARTIAL",
+      "evidence": "PM 二轮 UI 差异报告 + r14-pm-* 截图；serif 已用 Noto 修复、almanac 当日岁时已存在",
+      "gap": "iPad/Duo real、dark current build、UI-001 light/dark 全设备未全验",
+      "owner": "designer + dev + QA",
+      "dependencies": "最新 clean 包",
+      "acceptance": "iPhone/iPad/Duo 亮暗全验，视觉清单关闭",
+      "priority": "P0",
+      "eta": "2 天"
+    },
+    {
+      "id": "B2",
+      "category": "UI",
+      "title": "HOME-TOOLS：17 状态、天气加载/失败/拒绝、长城市名、Dynamic 全档",
+      "status": "NOT RUN/PARTIAL",
+      "evidence": "17 首页状态离线检查（旧）",
+      "gap": "真实构建/权限/长城市名/动态字体未全验",
+      "owner": "dev + QA",
+      "dependencies": "权限/网络注入",
+      "acceptance": "17 状态 + 全分支 PASS",
+      "priority": "P0",
+      "eta": "2 天"
+    },
+    {
+      "id": "B3",
+      "category": "UI",
+      "title": "Closed compact：真实 Duo Closed/iPad/rail 未验",
+      "status": "NOT RUN",
+      "evidence": "无真实设备证据",
+      "gap": "compact/rail 仅设计/模拟",
+      "owner": "QA + Codex",
+      "dependencies": "真实 Duo/iPad",
+      "acceptance": "Closed/iPad/rail PASS",
+      "priority": "P0",
+      "eta": "2 天"
+    },
+    {
+      "id": "B4",
+      "category": "UI",
+      "title": "Liquid Glass：iOS27 原生/真机/Reduce Transparency 未验",
+      "status": "NOT RUN",
+      "evidence": "仅截图观感；无真机材质/降透明证据",
+      "gap": "玻璃真实性、导航/底栏、深色未验",
+      "owner": "dev + QA",
+      "dependencies": "真机 iOS27",
+      "acceptance": "真机 + Reduce Transparency PASS",
+      "priority": "P0",
+      "eta": "3 天"
+    },
+    {
+      "id": "C1",
+      "category": "Hero",
+      "title": "12 条内容 hero 已接 App；但 events-12.json hero.status 仍 pending-design",
+      "status": "PARTIAL",
+      "evidence": "12 条 hero 已接 App；QA/Codex 已完成资产/映射/12 详情/16:9/fallback/label scoped 复核",
+      "gap": "events-12.json hero.status 仍 pending-design；39 可用资产仅 12 条接 App；24 节气/其余节日页面接入未决；无 dark/iPad/Duo 专用变体；EN accessibility/locale NOT RUN",
+      "owner": "PM + dev + QA",
+      "dependencies": "hero status/接入决策",
+      "acceptance": "12 hero status 转正且 QA PASS",
+      "priority": "P0",
+      "eta": "1 天"
+    },
+    {
+      "id": "C2",
+      "category": "Hero",
+      "title": "39 可用资产仅 12 条接入；24 节气/其余节日是否接页面未定；无 dark/iPad/Duo 专用变体",
+      "status": "PARTIAL",
+      "evidence": "candidates 39 可用（24+15）+1 test",
+      "gap": "映射/页面接入未决；无 dark/iPad/Duo 变体",
+      "owner": "PM + designer + dev",
+      "dependencies": "页面需求确认",
+      "acceptance": "接入清单+变体策略确认",
+      "priority": "P1",
+      "eta": "3 天"
+    },
+    {
+      "id": "C3",
+      "category": "Hero",
+      "title": "39 可用中 12 条 hero 已接 App；其余资产逐张 QA/页面映射未完成",
+      "status": "PARTIAL",
+      "evidence": "首批 33 PASS / 3 待修 / 1 test；后修复 3 + 补 2；12 hero 已接 App",
+      "gap": "其余 27 资产逐张 QA/页面映射未完成；EN accessibility NOT RUN",
+      "owner": "QA + PM",
+      "dependencies": "QA 复核",
+      "acceptance": "39 张逐张 PASS/弃用记录；EN alt 验",
+      "priority": "P1",
+      "eta": "2 天"
+    },
+    {
+      "id": "D1",
+      "category": "内容",
+      "title": "12 条文审通过并接入；若设计覆盖 24 节气/更多节日，文案未全量",
+      "status": "PARTIAL",
+      "evidence": "Codex ALL_12_APPROVED",
+      "gap": "24 节气/更多节日正文未生产；仅 12 条",
+      "owner": "PM + 内容",
+      "dependencies": "设计范围确认",
+      "acceptance": "覆盖范围确定且正文齐",
+      "priority": "P1",
+      "eta": "TBD（内容生产）"
+    },
+    {
+      "id": "D2",
+      "category": "内容",
+      "title": "内容行 85-90/163/174 的 read/重试/跨日/eventID/version/alt 未验",
+      "status": "NOT RUN",
+      "evidence": "内容接入完成但行为未验",
+      "gap": "read/失败重试/跨日/版本/alt 未测",
+      "owner": "QA + dev",
+      "dependencies": "内容服务/注入",
+      "acceptance": "6 项行为 PASS",
+      "priority": "P1",
+      "eta": "2 天"
+    },
+    {
+      "id": "E1",
+      "category": "设备/证据",
+      "title": "iPad landscape 真实窗口、Duo real compact、dark",
+      "status": "NOT RUN",
+      "evidence": "r14-pm-ipad-* 仅部分页",
+      "gap": "真实窗口/compact/dark 未全验",
+      "owner": "QA",
+      "dependencies": "真实设备/窗口",
+      "acceptance": "设备矩阵证据齐",
+      "priority": "P0",
+      "eta": "2 天"
+    },
+    {
+      "id": "E2",
+      "category": "设备/证据",
+      "title": "166-169 真机通知（前置/允许/拒绝/设置返回）",
+      "status": "NOT RUN",
+      "evidence": "无真机权限证据",
+      "gap": "权限全分支未测",
+      "owner": "QA",
+      "dependencies": "真机/新装",
+      "acceptance": "4 行 PASS",
+      "priority": "P0",
+      "eta": "2 天"
+    },
+    {
+      "id": "E3",
+      "category": "设备/证据",
+      "title": "170-174 长图口径/采集（2500/1650/12000）",
+      "status": "NOT RUN",
+      "evidence": "长图方案未定",
+      "gap": "采集工具/拼接/口径未定",
+      "owner": "QA",
+      "dependencies": "长图方案",
+      "acceptance": "5 行长图证据 PASS",
+      "priority": "P1",
+      "eta": "2 天"
+    },
+    {
+      "id": "E4",
+      "category": "设备/证据",
+      "title": "QA pty/SwiftPM 无法跑 UI test 的替代方案",
+      "status": "NOT RUN",
+      "evidence": "环境限制已知",
+      "gap": "需替代测试路径（XCUITest/真机手工）",
+      "owner": "QA + Lead",
+      "dependencies": "工具/权限决策",
+      "acceptance": "替代方案确定并可复现",
+      "priority": "P1",
+      "eta": "2 天"
+    },
+    {
+      "id": "F1",
+      "category": "交付",
+      "title": "最新 clean 包/版本递增/签名/归档脚本；最终 build-only 无测试插件",
+      "status": "PARTIAL",
+      "evidence": "clean 包 clean-38b34c5a 与构建记录",
+      "gap": "版本/签名/归档脚本未最终化；测试插件需移除",
+      "owner": "dev + Lead",
+      "dependencies": "clean-38b34c5a",
+      "acceptance": "build-only 包可复现且签名/归档齐",
+      "priority": "P0",
+      "eta": "2 天"
+    },
+    {
+      "id": "F2",
+      "category": "交付",
+      "title": "source bundle/INDEX/QA 文档更新到最新 HEAD",
+      "status": "PARTIAL",
+      "evidence": "文档多处旧 HEAD",
+      "gap": "需统一到最新 HEAD",
+      "owner": "PM + QA",
+      "dependencies": "最新 HEAD",
+      "acceptance": "文档一致、SHA 可核",
+      "priority": "P1",
+      "eta": "1 天"
+    },
+    {
+      "id": "F3",
+      "category": "交付",
+      "title": "byte-identical 复现",
+      "status": "NOT PASS（未解决）",
+      "evidence": "构建可复现性未达 byte-identical",
+      "gap": "产物元数据/时间戳导致差异；无法逐字节复现",
+      "owner": "dev + Lead",
+      "dependencies": "构建流水线",
+      "acceptance": "byte-identical 或明确不可达结论",
+      "priority": "P0",
+      "eta": "TBD"
+    },
+    {
+      "id": "F4",
+      "category": "交付",
+      "title": "不发布/不提审/不合并；不做 TestFlight、不提供测试包",
+      "status": "POLICY（持续）",
+      "evidence": "Lead/Sure 指令",
+      "gap": "所有未完成项关闭前不提供测试包",
+      "owner": "全体",
+      "dependencies": "完成门禁",
+      "acceptance": "Gate 关闭后才生成测试包",
+      "priority": "P0",
+      "eta": "持续"
+    }
+  ],
+  "phases": [
+    {
+      "phase": "第 1–2 天",
+      "focus": "关闭 A1/A3/B1–B4/E1–E2/C1 证据；Duo 33 FAIL 在 clean-38b34c5a 上逐行复验启动",
+      "owner": "Codex + QA + dev + PM"
+    },
+    {
+      "phase": "第 3–4 天",
+      "focus": "A2 Tabletop/Tent、A4 非 Duo 17 行、C2/C3 资产/映射、E3 长图（设备窗口依赖）",
+      "owner": "QA + PM + designer"
+    },
+    {
+      "phase": "第 5–6 天",
+      "focus": "D1/D2 内容行为、B2 全分支、F1 构建/签名/归档（设备证据依赖窗口）",
+      "owner": "dev + QA + PM"
+    },
+    {
+      "phase": "第 7–8 天",
+      "focus": "F2 文档统一、E4 替代测试、F3 复现结论、全量回归（真机证据依赖设备窗口）",
+      "owner": "QA + Lead"
+    },
+    {
+      "phase": "第 9 天",
+      "focus": "完成门禁评审：188 行 PASS/批准 NOT RUN；仅此之后生成测试包",
+      "owner": "Lead + QA"
+    }
+  ],
+  "gate": [
+    "矩阵 188 行：PASS 或经 Lead 批准的 NOT RUN（不得用设计稿/示例替代）",
+    "33 FAIL 全部关闭；55 NOT RUN 逐行有证据或批准原因",
+    "UI/视觉 B1–B4 + Hero C1–C3 关闭；12 hero status 转正且 QA PASS",
+    "内容 D1/D2 覆盖与行为验完；read/重试/跨日/version/alt PASS",
+    "设备证据 E1–E4 齐；真机通知/长图/替代测试方案落地",
+    "交付 F1/F2 完成；F3 byte-identical 有结论；无测试插件、build-only 包就绪",
+    "以上全部关闭后，才生成测试包/给 Sure；否则不提供"
+  ],
+  "policy": "不做 TestFlight/不提供测试包，直到全部关闭",
+  "baseline": "38b34c5a",
+  "baseline_tag": "clean-38b34c5a",
+  "new_scope_20261114": {
+    "C4_hero_full": {
+      "status": "NOT DONE",
+      "scope": "24 solar terms + all traditional festivals",
+      "generator": "Aliyun wanx normal image API key",
+      "budget_cny_max": 50,
+      "spent_cny": 11.4,
+      "remaining_cny": 38.6,
+      "acceptance": "generate all, PM/QA review, 16:9 webp <=120KB, no text/watermark/person/religious site, key_source/usage"
+    },
+    "D3_web_content_full": {
+      "status": "NOT DONE",
+      "scope": "24 solar terms + all traditional festivals",
+      "generator": "qwen4",
+      "first_deliverable": "prompt template + 3-5 samples for Sure review",
+      "template_refs": [
+        "templates/CONTENT-PROMPT.md",
+        "templates/festival-article.schema.json",
+        "webpages/template-sample.html",
+        "webpages/winter.html",
+        "webpages/daily-kindness.html",
+        "templates/festival-article.css"
+      ],
+      "note": "final HTML via template/renderer; hero header not inside webpage; App supplies hero"
+    },
+    "gate": "C4+D3 complete and other A/B/C/D/E/F closed before test package; no TestFlight/no test package before gate"
+  }
+}

@@ -9,3 +9,7 @@
   - settings 行 51：`f0df85ad…`
 - 非空、Tab 正常、两列/留白布局可见；portrait 其余状态/横屏 revert 不做额外推断。
 - 不 merge/发布/提审。
+
+
+## Dark 5 Tab（补充）
+- home/folklore/selection/countdown/settings dark 全部 **PASS**（行 4/28/64/40/52）；2064×2752；证据 `qa/evidence/ipad-portrait-dark/`。

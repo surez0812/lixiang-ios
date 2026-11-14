@@ -1,0 +1,437 @@
+{
+ "version": 1,
+ "count": 43,
+ "note": "每槽 2 条 https；label 非空；后端 seed/webpage 校验输入",
+ "sources": {
+  "term-lichun": [
+   {
+    "label": "维基百科·立春",
+    "url": "https://zh.wikipedia.org/wiki/立春"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-yushui": [
+   {
+    "label": "维基百科·雨水",
+    "url": "https://zh.wikipedia.org/wiki/雨水"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-jingzhe": [
+   {
+    "label": "维基百科·惊蛰",
+    "url": "https://zh.wikipedia.org/wiki/惊蛰"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-chunfen": [
+   {
+    "label": "维基百科·春分",
+    "url": "https://zh.wikipedia.org/wiki/春分"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-qingming": [
+   {
+    "label": "维基百科·清明",
+    "url": "https://zh.wikipedia.org/wiki/清明"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-guyu": [
+   {
+    "label": "维基百科·谷雨",
+    "url": "https://zh.wikipedia.org/wiki/谷雨"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-lixia": [
+   {
+    "label": "维基百科·立夏",
+    "url": "https://zh.wikipedia.org/wiki/立夏"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-xiaoman": [
+   {
+    "label": "维基百科·小满",
+    "url": "https://zh.wikipedia.org/wiki/小满"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-mangzhong": [
+   {
+    "label": "维基百科·芒种",
+    "url": "https://zh.wikipedia.org/wiki/芒种"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-xiazhi": [
+   {
+    "label": "维基百科·夏至",
+    "url": "https://zh.wikipedia.org/wiki/夏至"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-xiaoshu": [
+   {
+    "label": "维基百科·小暑",
+    "url": "https://zh.wikipedia.org/wiki/小暑"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-dashu": [
+   {
+    "label": "维基百科·大暑",
+    "url": "https://zh.wikipedia.org/wiki/大暑"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-liqiu": [
+   {
+    "label": "维基百科·立秋",
+    "url": "https://zh.wikipedia.org/wiki/立秋"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-chushu": [
+   {
+    "label": "维基百科·处暑",
+    "url": "https://zh.wikipedia.org/wiki/处暑"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-bailu": [
+   {
+    "label": "维基百科·白露",
+    "url": "https://zh.wikipedia.org/wiki/白露"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-qiufen": [
+   {
+    "label": "维基百科·秋分",
+    "url": "https://zh.wikipedia.org/wiki/秋分"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-hanlu": [
+   {
+    "label": "维基百科·寒露",
+    "url": "https://zh.wikipedia.org/wiki/寒露"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-shuangjiang": [
+   {
+    "label": "维基百科·霜降",
+    "url": "https://zh.wikipedia.org/wiki/霜降"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-lidong": [
+   {
+    "label": "维基百科·立冬",
+    "url": "https://zh.wikipedia.org/wiki/立冬"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-xiaoxue": [
+   {
+    "label": "维基百科·小雪",
+    "url": "https://zh.wikipedia.org/wiki/小雪"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-daxue": [
+   {
+    "label": "维基百科·大雪",
+    "url": "https://zh.wikipedia.org/wiki/大雪"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-dongzhi": [
+   {
+    "label": "维基百科·冬至",
+    "url": "https://zh.wikipedia.org/wiki/冬至"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-xiaohan": [
+   {
+    "label": "维基百科·小寒",
+    "url": "https://zh.wikipedia.org/wiki/小寒"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "term-dahan": [
+   {
+    "label": "维基百科·大寒",
+    "url": "https://zh.wikipedia.org/wiki/大寒"
+   },
+   {
+    "label": "维基百科·二十四節氣",
+    "url": "https://zh.wikipedia.org/wiki/二十四節氣"
+   }
+  ],
+  "fest-chunjie": [
+   {
+    "label": "维基百科·春节",
+    "url": "https://zh.wikipedia.org/wiki/春节"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-yuanxiao": [
+   {
+    "label": "维基百科·元宵",
+    "url": "https://zh.wikipedia.org/wiki/元宵"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-qingming": [
+   {
+    "label": "维基百科·清明",
+    "url": "https://zh.wikipedia.org/wiki/清明"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-duanwu": [
+   {
+    "label": "维基百科·端午",
+    "url": "https://zh.wikipedia.org/wiki/端午"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-qixi": [
+   {
+    "label": "维基百科·七夕",
+    "url": "https://zh.wikipedia.org/wiki/七夕"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-zhongyuan": [
+   {
+    "label": "维基百科·中元",
+    "url": "https://zh.wikipedia.org/wiki/中元"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-zhongqiu": [
+   {
+    "label": "维基百科·中秋",
+    "url": "https://zh.wikipedia.org/wiki/中秋"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-chongyang": [
+   {
+    "label": "维基百科·重阳",
+    "url": "https://zh.wikipedia.org/wiki/重阳"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-laba": [
+   {
+    "label": "维基百科·腊八",
+    "url": "https://zh.wikipedia.org/wiki/腊八"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-xiezao": [
+   {
+    "label": "维基百科·谢灶",
+    "url": "https://zh.wikipedia.org/wiki/谢灶"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-chuxi": [
+   {
+    "label": "维基百科·除夕",
+    "url": "https://zh.wikipedia.org/wiki/除夕"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-shangsi": [
+   {
+    "label": "维基百科·上巳",
+    "url": "https://zh.wikipedia.org/wiki/上巳"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-xiayuan": [
+   {
+    "label": "维基百科·下元",
+    "url": "https://zh.wikipedia.org/wiki/下元"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-jizu": [
+   {
+    "label": "维基百科·祭祖",
+    "url": "https://zh.wikipedia.org/wiki/祭祖"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-yulanpen": [
+   {
+    "label": "维基百科·盂兰盆",
+    "url": "https://zh.wikipedia.org/wiki/盂兰盆"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-hanshi": [
+   {
+    "label": "维基百科·寒食",
+    "url": "https://zh.wikipedia.org/wiki/寒食"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-longtaitou": [
+   {
+    "label": "维基百科·龙抬头",
+    "url": "https://zh.wikipedia.org/wiki/龙抬头"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-sheri": [
+   {
+    "label": "维基百科·社日",
+    "url": "https://zh.wikipedia.org/wiki/社日"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ],
+  "fest-guanlian": [
+   {
+    "label": "维基百科·观莲",
+    "url": "https://zh.wikipedia.org/wiki/观莲"
+   },
+   {
+    "label": "维基百科·中國傳統節日",
+    "url": "https://zh.wikipedia.org/wiki/中國傳統節日"
+   }
+  ]
+ }
+}

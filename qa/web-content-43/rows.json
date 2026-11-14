@@ -1,0 +1,346 @@
+[
+ {
+  "id": "lichun",
+  "slug": "lichun",
+  "name": "立春",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 1
+ },
+ {
+  "id": "yushui",
+  "slug": "yushui",
+  "name": "雨水",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 2
+ },
+ {
+  "id": "jingzhe",
+  "slug": "jingzhe",
+  "name": "惊蛰",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 3
+ },
+ {
+  "id": "chunfen",
+  "slug": "chunfen",
+  "name": "春分",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 4
+ },
+ {
+  "id": "qingming",
+  "slug": "qingming",
+  "name": "清明",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 5
+ },
+ {
+  "id": "guyu",
+  "slug": "guyu",
+  "name": "谷雨",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 6
+ },
+ {
+  "id": "lixia",
+  "slug": "lixia",
+  "name": "立夏",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 7
+ },
+ {
+  "id": "xiaoman",
+  "slug": "xiaoman",
+  "name": "小满",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 8
+ },
+ {
+  "id": "mangzhong",
+  "slug": "mangzhong",
+  "name": "芒种",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 9
+ },
+ {
+  "id": "xiazhi",
+  "slug": "xiazhi",
+  "name": "夏至",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 10
+ },
+ {
+  "id": "xiaoshu",
+  "slug": "xiaoshu",
+  "name": "小暑",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 11
+ },
+ {
+  "id": "dashu",
+  "slug": "dashu",
+  "name": "大暑",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 12
+ },
+ {
+  "id": "liqiu",
+  "slug": "liqiu",
+  "name": "立秋",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 13
+ },
+ {
+  "id": "chushu",
+  "slug": "chushu",
+  "name": "处暑",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 14
+ },
+ {
+  "id": "bailu",
+  "slug": "bailu",
+  "name": "白露",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 15
+ },
+ {
+  "id": "qiufen",
+  "slug": "qiufen",
+  "name": "秋分",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 16
+ },
+ {
+  "id": "hanlu",
+  "slug": "hanlu",
+  "name": "寒露",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 17
+ },
+ {
+  "id": "shuangjiang",
+  "slug": "shuangjiang",
+  "name": "霜降",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 18
+ },
+ {
+  "id": "lidong",
+  "slug": "lidong",
+  "name": "立冬",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 19
+ },
+ {
+  "id": "xiaoxue",
+  "slug": "xiaoxue",
+  "name": "小雪",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 20
+ },
+ {
+  "id": "daxue",
+  "slug": "daxue",
+  "name": "大雪",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 21
+ },
+ {
+  "id": "dongzhi",
+  "slug": "dongzhi",
+  "name": "冬至",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 22
+ },
+ {
+  "id": "xiaohan",
+  "slug": "xiaohan",
+  "name": "小寒",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 23
+ },
+ {
+  "id": "dahan",
+  "slug": "dahan",
+  "name": "大寒",
+  "type": "solarTerm",
+  "kind": "term",
+  "idx": 24
+ },
+ {
+  "id": "chunjie",
+  "slug": "chunjie",
+  "name": "春节",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 1
+ },
+ {
+  "id": "yuanxiao",
+  "slug": "yuanxiao",
+  "name": "元宵",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 2
+ },
+ {
+  "id": "qingming-festival",
+  "slug": "qingming-festival",
+  "name": "清明",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 3
+ },
+ {
+  "id": "duanwu",
+  "slug": "duanwu",
+  "name": "端午",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 4
+ },
+ {
+  "id": "qixi",
+  "slug": "qixi",
+  "name": "七夕",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 5
+ },
+ {
+  "id": "zhongyuan",
+  "slug": "zhongyuan",
+  "name": "中元",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 6
+ },
+ {
+  "id": "zhongqiu",
+  "slug": "zhongqiu",
+  "name": "中秋",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 7
+ },
+ {
+  "id": "chongyang",
+  "slug": "chongyang",
+  "name": "重阳",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 8
+ },
+ {
+  "id": "laba",
+  "slug": "laba",
+  "name": "腊八",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 9
+ },
+ {
+  "id": "xiezao",
+  "slug": "xiezao",
+  "name": "谢灶",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 10
+ },
+ {
+  "id": "chuxi",
+  "slug": "chuxi",
+  "name": "除夕",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 11
+ },
+ {
+  "id": "shangsi",
+  "slug": "shangsi",
+  "name": "上巳",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 12
+ },
+ {
+  "id": "xiayuan",
+  "slug": "xiayuan",
+  "name": "下元",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 13
+ },
+ {
+  "id": "jizu",
+  "slug": "jizu",
+  "name": "祭祖",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 14
+ },
+ {
+  "id": "yulanpen",
+  "slug": "yulanpen",
+  "name": "盂兰盆",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 15
+ },
+ {
+  "id": "hanshi",
+  "slug": "hanshi",
+  "name": "寒食",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 16
+ },
+ {
+  "id": "longtaitou",
+  "slug": "longtaitou",
+  "name": "龙抬头",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 17
+ },
+ {
+  "id": "sheri",
+  "slug": "sheri",
+  "name": "社日",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 18
+ },
+ {
+  "id": "guanlian",
+  "slug": "guanlian",
+  "name": "观莲",
+  "type": "festival",
+  "kind": "fest",
+  "idx": 19
+ }
+]

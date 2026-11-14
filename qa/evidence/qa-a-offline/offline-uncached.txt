@@ -1,0 +1,6 @@
+label=offline-uncached
+udid=0B71AEF4-1E34-47A3-937A-3A097A0D0362
+tar_sha256=1645f8349f06a4c57f1688ac449791ff7ad60102ac34ab2a04c93d607a733818
+binary_sha256=00f751fc0aaa97ce79c2664c1308dbe459517543a3d9a44ed0ebad677f3c6e11
+args=-LixiangR14Route folkloreDetail -LixiangForceOffline
+captured=2026-11-14T02:42:01+08:00

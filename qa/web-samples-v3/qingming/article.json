@@ -1,0 +1,42 @@
+{
+ "eventID": "qingming",
+ "contentVersion": "1",
+ "title": "清明",
+ "articleHeadline": "清明：记得来处，也照顾当下",
+ "heroImageURL": "./heroes/qingming.webp",
+ "heroAlt": "清明，垂柳与青山",
+ "kicker": "一段来由 · 一点日常",
+ "intro": "清明既是节气，也是祭祖追思与踏青的传统节日。气温回升、草木萌发，人们扫墓、踏青、插柳，在追思与春游之间安放情绪。",
+ "sections": [
+  {
+   "heading": "清明在做什么",
+   "paragraphs": [
+    "清明在公历四月上旬，兼具节气与节日双重身份。",
+    "常见习俗有扫墓祭祖、踏青、插柳、放风筝、吃青团；各地形式不同。"
+   ]
+  },
+  {
+   "heading": "今天可以这样过",
+   "paragraphs": [
+    "追思不必宏大，照顾好自己的情绪更重要。"
+   ],
+   "steps": [
+    "给想念的人留几分钟，写下一句话",
+    "去附近走一走，看看新叶",
+    "如去祭扫，优先选择鲜花、无烟方式"
+   ]
+  }
+ ],
+ "note": "祭扫请遵守墓园与防火规定；本文为文化说明。",
+ "sources": [
+  {
+   "label": "维基百科·清明",
+   "url": "https://zh.wikipedia.org/wiki/清明"
+  },
+  {
+   "label": "维基百科·寒食",
+   "url": "https://zh.wikipedia.org/wiki/寒食"
+  }
+ ],
+ "updatedAt": "2026-11-14T14:00:00+08:00"
+}

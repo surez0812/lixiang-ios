@@ -1,14 +1,24 @@
-# iPad landscape 路由视觉对照（HEAD 新证据）
+# iPad landscape 路由视觉对照（真实 XCUITest 旋转）
 
-- 证据：`qa/evidence/ipad-landscape/r14-ipad-landscape-{almanac,compass,daily,fortune,selection}.png`；2752×2064。
-- **结论：5 页均存在布局偏差，矩阵均标 FAIL（视觉偏差，不是崩溃）。**
+- 证据：`qa/evidence/ipad-landscape/r14-ipad-landscape-*-real.png`；真实 2752×2064。
+- **HEAD 5e9f98d 后 5 页均与设计双列构图一致 → PASS。**
 
-| 页面 | 矩阵行 | 设计合同 | 实现 | 判定 |
-|---|---:|---|---|---|
-| almanac | 17 | 左 Hero+宜忌；右十二时辰 | 左 Hero 空；右宜忌+时辰 | **FAIL/偏差** |
-| compass | 125 | 左控件；右罗盘+图例 | 全宽居中单列，控件在上 | **FAIL/偏差** |
-| daily | 77 | 左解释；右分享卡两列 | 单列全宽，无右分享列 | **FAIL/偏差** |
-| fortune | 113 | 左标题；右签筒；底部全宽按钮+跳过 | 标题左上、签筒右、按钮偏小、跳过缺失 | **FAIL/偏差** |
-| selection | 65 | 左表单；右结果两列 | 单列全宽，结果不在右列 | **FAIL/偏差** |
+| 页面 | 矩阵行 | 结果 | 依据 |
+|---|---:|---|---|
+| almanac | 17 | **PASS** | 左 Hero+宜忌 / 右十二时辰列表 |
+| compass | 125 | **PASS** | 左控件 / 右盘面+竖排 legend |
+| daily | 77 | **PASS** | 左解释 / 右分享卡+双按钮 |
+| fortune | 113 | **PASS** | 左标题 / 右签筒 / 底部全宽按钮+跳过 |
+| selection | 65 | **PASS** | 左表单 / 右结果双列；未提交时为空态提示 |
 
-- 不 merge/发布/提审；等 dev 修后按同一设计图复评。
+- 旧 force-flag 截图的 FAIL 已作废；不 merge/发布/提审。
+
+## Dark（新证据）
+- 5 Tab dark PASS（行 6/30/66/42/54）：home/岁时/择日/倒计日/设置。
+- 路由 dark：
+  - almanac 行18 PASS（双列）
+  - compass 行126 PASS（左控件/右盘+legend）
+  - fortune 行114 PASS（左标题/右筒/底部全宽+跳过）
+  - selection 行66 PASS（双列，空结果提示）
+  - **daily 行78 PASS**：右列分享卡强制亮色 token，卡内文字可读；左列重复分享卡已移除。
+- 证据：`qa/evidence/ipad-landscape-dark/`。
