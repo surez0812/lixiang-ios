@@ -133,14 +133,18 @@ struct R14RootView: View {
                         .safeAreaInset(edge: .trailing) {
                             if showBar { Color.clear.frame(width: R14SideRail.reservedWidth) }
                         }
-                        .overlay(alignment: .topTrailing) {
+                        .overlay(alignment: .topLeading) {
                             if showBar {
+                                // 显式局部坐标：x = geoW + safeRight - width - right（= 场景 sceneW-width-23 减去左侧原点）
+                                let railLocalX = geo.size.width + safeRight - R14SideRail.width - R14SideRail.right
                                 R14SideTabBar(selected: $tab)
                                     .padding(.top, R14SideRail.top - safeTop)
-                                    .padding(.trailing, R14SideRail.right - safeRight)
+                                    .offset(x: railLocalX)
                                     .onAppear {
                                         #if DEBUG
-                                        print("LXRAIL design top=\(R14SideRail.top) right=\(R14SideRail.right) size=\(R14SideRail.width)x\(R14SideRail.height) reserved=\(R14SideRail.reservedWidth) safeTop=\(safeTop) safeRight=\(safeRight) geo=\(geo.size)")
+                                        let expectedX = geo.size.width + geo.safeAreaInsets.leading + safeRight
+                                            - R14SideRail.width - R14SideRail.right
+                                        print("LXRAIL design top=\(R14SideRail.top) right=\(R14SideRail.right) size=\(R14SideRail.width)x\(R14SideRail.height) reserved=\(R14SideRail.reservedWidth) safeTop=\(safeTop) safeRight=\(safeRight) expectedX=\(expectedX) geoOriginX=\(geo.safeAreaInsets.leading) geo=\(geo.size)")
                                         #endif
                                     }
                             }
@@ -323,6 +327,9 @@ enum R14SideRail {
     static let horizontalPadding: CGFloat = 3
     static let verticalPadding: CGFloat = 6
     static let reservedWidth: CGFloat = width + 8
+
+    /// 场景坐标：右侧 23pt 的侧栏左边 x（设计 951 → 878）。
+    static func expectedX(sceneWidth: CGFloat) -> CGFloat { sceneWidth - width - right }
 }
 
 struct R14SideTabBar: View {

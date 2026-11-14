@@ -12,6 +12,11 @@ final class SideRailMetricsTests: XCTestCase {
         XCTAssertEqual(R14SideRail.icon, 25)
     }
 
+    func testExpectedXSceneCoordinates() {
+        XCTAssertEqual(R14SideRail.expectedX(sceneWidth: 951), 878, "设计 scene 951：x=878（right=23）")
+        XCTAssertEqual(R14SideRail.expectedX(sceneWidth: 1032), 959)
+    }
+
     func testDerivedTotalsMatchDesign() {
         // 5 slots 等高 + 上下 padding = 252
         XCTAssertEqual(R14SideRail.slotHeight * 5 + R14SideRail.verticalPadding * 2, R14SideRail.height)
