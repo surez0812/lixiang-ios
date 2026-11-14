@@ -122,7 +122,8 @@ struct R14RootView: View {
             let innerLike = shortSide >= 600
             let duoSideBar = isDuo && landscape && innerLike
             let showBar = !hideBar && !captureMode
-            let safe = windowSafeInsets
+            let safeTop = geo.safeAreaInsets.top
+            let safeRight = geo.safeAreaInsets.trailing
             Group {
                 if !days.ready {
                     R14BootLoadingView()
@@ -135,11 +136,11 @@ struct R14RootView: View {
                         .overlay(alignment: .topTrailing) {
                             if showBar {
                                 R14SideTabBar(selected: $tab)
-                                    .padding(.top, R14SideRail.top - safe.top)
-                                    .padding(.trailing, R14SideRail.right - safe.right)
+                                    .padding(.top, R14SideRail.top - safeTop)
+                                    .padding(.trailing, R14SideRail.right - safeRight)
                                     .onAppear {
                                         #if DEBUG
-                                        print("LXRAIL design top=\(R14SideRail.top) right=\(R14SideRail.right) size=\(R14SideRail.width)x\(R14SideRail.height) reserved=\(R14SideRail.reservedWidth) windowInsets=\(safe) geo=\(geo.size)")
+                                        print("LXRAIL design top=\(R14SideRail.top) right=\(R14SideRail.right) size=\(R14SideRail.width)x\(R14SideRail.height) reserved=\(R14SideRail.reservedWidth) safeTop=\(safeTop) safeRight=\(safeRight) geo=\(geo.size)")
                                         #endif
                                     }
                             }
@@ -197,14 +198,6 @@ struct R14RootView: View {
         return p.count == 3 ? LocalDate(p[0], p[1], p[2]) : nil
     }
     #endif
-
-    /// 真实屏幕安全区（GeometryReader 可能已被父级消账，取 key window 的 insets）。
-    private var windowSafeInsets: UIEdgeInsets {
-        UIApplication.shared.connectedScenes
-            .compactMap { $0 as? UIWindowScene }
-            .flatMap { $0.windows }
-            .first(where: { $0.isKeyWindow })?.safeAreaInsets ?? .zero
-    }
 
     /// 路由消费必须等 days.ready 且 NavigationStack 已挂载；!ready 时保留 pendingRoute，不清空。
     private func consumePendingRouteIfReady() {
